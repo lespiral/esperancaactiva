@@ -116,7 +116,7 @@ for city in cities:
 
 env = Environment(loader=FileSystemLoader(SRC / "templates"), autoescape=select_autoescape(["html"]), trim_blocks=True, lstrip_blocks=True)
 env.globals.update(icon=icon, site=site, noindex=NOINDEX, version=str(int(time.time())),
-                   logo=(SRC / "img" / "logo-sol.png").exists(),
+                   logo=(SRC / "img" / "logo.png").exists(),
                    partners_logo=(SRC / "img" / "lespiral-elara.png").exists(),
                    summaries=summaries, course_summaries=course_summaries,
                    h=site["home"], cc=site["course_common"])

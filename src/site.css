@@ -308,7 +308,7 @@ details[open] > summary .faq__caret { transform: rotate(180deg); }
 
 /* ---------- Una iniciativa de ---------- */
 .initiative { display: flex; align-items: center; justify-content: center; gap: 28px; text-align: left; flex-wrap: wrap; }
-.initiative__logo { max-width: 240px; height: auto; }
+.initiative__logo { width: 300px; max-width: 100%; height: auto; background: #fff; padding: 10px 14px; border-radius: 14px; border: 1px solid var(--line); }
 .initiative__h { font-size: 1rem; color: var(--green-600); margin-bottom: 4px; }
 .initiative p { margin: 0; max-width: 520px; color: var(--muted); }
 
