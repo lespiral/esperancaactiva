@@ -11,7 +11,7 @@
     {% if r.address %}<p class="route__addr">{{ icon('pin') }}<span{% if '[' in r.address %} class="pending"{% endif %}>{{ r.address }}</span></p>{% endif %}
     {% if r.note %}<p class="route__note{% if '[' in r.note %} pending{% endif %}">{{ r.note }}</p>{% endif %}
     {% if r.desc %}<p class="route__desc">{{ r.desc }}</p>{% endif %}
-    <a class="route__go" href="{{ r.url }}" target="_blank" rel="noopener">{{ icon('nav') }}Com arribar-hi</a>
+    <a class="route__go" href="{{ r.map_url }}" target="_blank" rel="noopener" aria-label="Obre el mapa de la ruta {{ r.n }} ({{ r.map_title }})">{{ icon('map') }}Obre el mapa</a>
   </div>
 </li>
 {%- endmacro %}

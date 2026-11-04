@@ -18,14 +18,16 @@
               "title": "El Prat · circuits del centre i el nord (1, 2, 8–13)",
               "ll": "41.3276,2.0965",
               "z": 15,
-              "label": "Centre i nord · circuits 1, 2 i 8 a 13"
+              "label": "Centre i nord · circuits 1, 2 i 8 a 13",
+              "routes": [1, 2, 8, 9, 10, 11, 12, 13]
             },
             {
               "mid": "1GNmL1AS4U95g3CBT5uvu771vMEOIFM8",
               "title": "El Prat · circuits del sud, la Ribera Baixa i Llevant (3–7, 14–17)",
               "ll": "41.3210,2.0946",
               "z": 15,
-              "label": "Sud, Ribera Baixa i Llevant · circuits 3 a 7 i 14 a 17"
+              "label": "Sud, Ribera Baixa i Llevant · circuits 3 a 7 i 14 a 17",
+              "routes": [3, 4, 5, 6, 7, 14, 15, 16, 17]
             }
           ],
           "routes": [

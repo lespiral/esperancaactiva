@@ -34,8 +34,24 @@ def slugify(s):
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
 
-def directions(dest):
-    return "https://www.google.com/maps/dir/?api=1&destination=" + quote(dest, safe="")
+def map_viewer(mid):
+    return "https://www.google.com/maps/d/viewer?mid=" + quote(mid, safe="")
+
+
+def assign_maps(g, routes):
+    """Cada ruta porta l'enllaç al mapa de My Maps on és (botó «Obre el mapa»).
+    Si el grup té un sol mapa, totes hi són. Si en té diversos, cada mapa diu
+    quines rutes té amb "routes": [1, 2, ...]."""
+    maps = g.get("maps") or []
+    for r in routes:
+        if len(maps) == 1:
+            m = maps[0]
+        else:
+            found = [m for m in maps if r["n"] in (m.get("routes") or [])]
+            assert len(found) == 1, f"la ruta {r['n']} de «{g['title']}» ha de ser en un sol mapa (posa-la a \"routes\" del mapa)"
+            m = found[0]
+        r["map_url"] = map_viewer(m["mid"])
+        r["map_title"] = m["title"]
 
 
 site = json.loads((DATA / "site.json").read_text(encoding="utf-8"))
@@ -80,7 +96,7 @@ for c in site["cities"]:
                     s["id"] = slugify(s["title"])
                     for r in s["routes"]:
                         r["id"] = f"{s['id']}-ruta-{r['n']}"
-                        r["url"] = directions(r["dest"])
+                    assign_maps(g, s["routes"])
                 g["count"] = sum(len(s["routes"]) for s in g["sections"])
             else:
                 g["id"] = g.get("id") or (f"{course['anchor']}-rutes" if len(groups) == 1 else slugify(g["title"]))
@@ -88,7 +104,7 @@ for c in site["cities"]:
                 prefix = course["anchor"] if len(groups) == 1 else g["id"]
                 for r in g["routes"]:
                     r["id"] = f"{prefix}-ruta-{r['n']}"
-                    r["url"] = directions(r["dest"])
+                assign_maps(g, g["routes"])
                 g["count"] = len(g["routes"])
             total += g["count"]
         b["groups"] = groups

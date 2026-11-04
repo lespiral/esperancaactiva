@@ -2,12 +2,65 @@
   "slug": "vic",
   "name": "Vic",
   "region": "Osona",
-  "summary": "23 rutes curtes i circulars pels parcs i espais verds.",
+  "summary": "28 rutes curtes i circulars, pels parcs i des dels CAP i hospitals.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
   "blocks": [
     {
       "course": "vida",
-      "text": "Encara no hi ha rutes d'aquest curs a Vic. Mentrestant, pots fer el temps de reflexió de cada passa caminant pel teu barri o en un lloc tranquil."
+      "text": "5 rutes circulars curtes, d'uns 2 km i mitja hora caminant, que surten dels centres d'atenció primària (CAP) i dels hospitals de Vic. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
+      "groups": [
+        {
+          "title": "Les 5 rutes",
+          "maps": [
+            {
+              "mid": "1JXzA3SJbwXPhumtYZk-fgSzgvWjgFUs",
+              "title": "Vic · rutes des dels CAP i hospitals",
+              "ll": "41.9310,2.2542",
+              "z": 14,
+              "label": "5 rutes des dels CAP i hospitals"
+            }
+          ],
+          "routes": [
+            {
+              "n": 24,
+              "name": "CAP Osona (Vic Nord)",
+              "info": "2,20 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+              "address": "Plaça de la Divina Pastora, Vic",
+              "dest": "41.93098,2.2611"
+            },
+            {
+              "n": 25,
+              "name": "CAP El Remei (Vic Sud)",
+              "info": "2,18 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+              "address": "[ADREÇA PENDENT]",
+              "note": "Té un tram d'uns 400 m de sauló, vora el Mèder.",
+              "dest": "41.92115,2.25119"
+            },
+            {
+              "n": 26,
+              "name": "Hospital Universitari de Vic",
+              "info": "2,12 km · 25–32 min caminant · 35–50 min amb pauses · circular",
+              "address": "Carrer d'en Francesc Pla «el Vigatà», 1, Vic",
+              "dest": "41.93632,2.26071"
+            },
+            {
+              "n": 27,
+              "name": "Hospital Universitari de la Santa Creu",
+              "info": "2,24 km · 27–34 min caminant · 40–50 min amb pauses · circular",
+              "address": "[ADREÇA PENDENT]",
+              "dest": "41.92792,2.25216"
+            },
+            {
+              "n": 28,
+              "name": "Clínica de Vic",
+              "info": "2,18 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+              "address": "Ronda de Francesc Camprodon, 4, Vic",
+              "dest": "41.93442,2.25646"
+            }
+          ]
+        }
+      ],
+      "summary": "5 rutes des dels CAP i hospitals"
     },
     {
       "course": "cuidar",
@@ -25,21 +78,24 @@
               "title": "Vic · parcs, rutes 1-10",
               "ll": "41.9285,2.2579",
               "z": 14,
-              "label": "Rutes 1 a 10"
+              "label": "Rutes 1 a 10",
+              "routes": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
             },
             {
               "mid": "1m_kpfFrRlgEIgT8WZ2aw_f-WQMgvs7A",
               "title": "Vic · parcs, rutes 11-20",
               "ll": "41.9310,2.2451",
               "z": 14,
-              "label": "Rutes 11 a 20"
+              "label": "Rutes 11 a 20",
+              "routes": [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
             },
             {
               "mid": "1dyQTIUHZMgoRjPud47NjRO7SZc74FNw",
               "title": "Vic · parcs, rutes 21-23",
               "ll": "41.9345,2.2564",
               "z": 14,
-              "label": "Rutes 21 a 23"
+              "label": "Rutes 21 a 23",
+              "routes": [21, 22, 23]
             }
           ],
           "routes": [
