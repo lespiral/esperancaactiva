@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://lespiral.github.io/esperancaactiva/sitemap.xml

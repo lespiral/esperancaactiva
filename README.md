@@ -15,7 +15,7 @@ Es publica amb GitHub Pages des de la carpeta `docs/`.
 ## Com es fa un canvi
 
 1. Canvia el text o la ruta al fitxer de `data/`.
-2. Genera la web: `python3 build.py` (o `python3 build.py --index` quan ja sigui al domini definitiu, perquè els cercadors la puguin trobar).
+2. Genera la web: `python3 build.py`. L'adreça pública i si surt als cercadors es configuren a `data/site.json`, a `publish`. Quan hi hagi domini propi: canvia-hi `url`, crea el fitxer `CNAME` amb el domini i torna a generar la web.
 3. Desa i puja els canvis. GitHub Pages actualitza la web en un o dos minuts.
 
 ## Afegir una ciutat

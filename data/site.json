@@ -1,5 +1,9 @@
 {
   "name": "Camins d'Esperança [Activa]",
+  "publish": {
+    "url": "https://lespiral.github.io/esperancaactiva/",
+    "index": true
+  },
   "description": "Cursos digitals gratuïts de 7 passes i rutes a peu per la teva ciutat. Una pràctica, una caminada, un petit pas.",
   "contact": {
     "email": "elarasocial.com@gmail.com",

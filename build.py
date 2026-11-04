@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Genera la web estàtica de Camins d'Esperança [Activa] a la carpeta docs/.
 
-Ús:  python3 build.py            (vista prèvia: amb noindex)
-     python3 build.py --index    (quan la web ja és al domini definitiu)
-     python3 build.py --base /esperancaactiva/   (adreça base per a la pàgina 404)
+Ús:  python3 build.py
+
+L'adreça pública de la web i si ha de sortir als cercadors es configuren a
+data/site.json, a "publish": {"url": ..., "index": true/false}.
 
 Els textos són a data/site.json i les rutes a data/<ciutat>.json.
 """
@@ -16,9 +17,7 @@ from markupsafe import Markup
 ROOT = Path(__file__).resolve().parent
 DATA, SRC, OUT = ROOT / "data", ROOT / "src", ROOT / "docs"
 
-args = sys.argv[1:]
-NOINDEX = "--index" not in args
-BASE = args[args.index("--base") + 1] if "--base" in args else "/"
+from urllib.parse import urlparse
 
 ICONS = json.loads((SRC / "icons.json").read_text(encoding="utf-8"))
 
@@ -40,6 +39,9 @@ def directions(dest):
 
 
 site = json.loads((DATA / "site.json").read_text(encoding="utf-8"))
+SITE_URL = site["publish"]["url"].rstrip("/") + "/"
+NOINDEX = not site["publish"].get("index", False)
+BASE = urlparse(SITE_URL).path or "/"   # p. ex. /esperancaactiva/ a GitHub Pages, / amb domini propi
 courses = {c["key"]: c for c in site["courses"]}
 
 # HTML fields (written by us in site.json) are trusted markup
@@ -122,10 +124,16 @@ env.globals.update(icon=icon, site=site, noindex=NOINDEX, version=str(int(time.t
                    h=site["home"], cc=site["course_common"])
 
 
+PAGES = []
+
+
 def render(template, path, **ctx):
     depth = len([p for p in path.split("/") if p])
     root = ctx.pop("root", "../" * depth)
-    html = env.get_template(template).render(root=root, **ctx)
+    canonical = None if path.endswith(".html") else SITE_URL + (path + "/" if path else "")
+    if canonical:
+        PAGES.append(canonical)
+    html = env.get_template(template).render(root=root, canonical=canonical, **ctx)
     dest = OUT / path / "index.html" if not path.endswith(".html") else OUT / path
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(html, encoding="utf-8")
@@ -151,8 +159,14 @@ shutil.copy(SRC / "site.js", OUT / "assets" / "site.js")
 if (SRC / "img").exists():
     shutil.copytree(SRC / "img", OUT / "assets" / "img")
 (OUT / ".nojekyll").write_text("")
-(OUT / "robots.txt").write_text("User-agent: *\n" + ("Disallow: /\n" if NOINDEX else "Allow: /\n"))
+if NOINDEX:
+    (OUT / "robots.txt").write_text("User-agent: *\nDisallow: /\n")
+else:
+    (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}sitemap.xml\n")
+    today = time.strftime("%Y-%m-%d")
+    urls = "".join(f"  <url><loc>{u}</loc><lastmod>{today}</lastmod></url>\n" for u in PAGES)
+    (OUT / "sitemap.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n', encoding="utf-8")
 if (ROOT / "CNAME").exists():
     shutil.copy(ROOT / "CNAME", OUT / "CNAME")
 
-print(f"Fet: {len(cities)} ciutats, {n_routes} rutes, {sum(len(g['maps']) for c in cities for b in c['blocks'] for g in b['groups'])} mapes. noindex={NOINDEX}")
+print(f"Fet: {len(cities)} ciutats, {n_routes} rutes, {sum(len(g['maps']) for c in cities for b in c['blocks'] for g in b['groups'])} mapes. adreça={SITE_URL} cercadors={'no' if NOINDEX else 'sí'}")
