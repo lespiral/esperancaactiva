@@ -2,23 +2,47 @@
   "slug": "olot",
   "name": "Olot",
   "region": "Garrotxa",
-  "summary": "4 rutes curtes i circulars, des dels CAP i l'hospital.",
+  "summary": "13 rutes curtes i circulars, des dels CAP, l'hospital, places, ponts i parcs.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
   "blocks": [
     {
       "course": "vida",
-      "text": "4 rutes circulars curtes, d'1 a 2,5 km (de 15 a 35 minuts caminant), que surten dels centres d'atenció primària (CAP) i de l'hospital d'Olot. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
-      "summary": "4 rutes des dels CAP i l'hospital",
+      "text": "13 rutes circulars curtes, de 0,6 a 3,2 km (de 7 a 47 minuts caminant). Les rutes 1 a 4 surten dels centres d'atenció primària (CAP) i de l'hospital d'Olot. Les rutes 5 a 13 s'inspiren en les rutes saludables del PAFES (Pla d'Activitat Física, Esport i Salut) i surten de places, ponts i parcs de la ciutat. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
+      "summary": "13 rutes des dels CAP, l'hospital, places i parcs",
       "groups": [
         {
-          "title": "Les 4 rutes",
+          "title": "Les 13 rutes",
           "maps": [
             {
               "mid": "193ToP5UhLxsghlPc6U75e2rW1vt8mgg",
               "title": "Olot · rutes des dels CAP i l'hospital",
               "ll": "42.1848,2.4832",
               "z": 14,
-              "label": "4 rutes des dels CAP i l'hospital"
+              "label": "Rutes 1 a 4 · des dels CAP i l'hospital",
+              "routes": [
+                1,
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "mid": "1OzONz_790ARxkF-3TEuEOlMr3MBZXcg",
+              "title": "Olot · rutes saludables PAFES",
+              "ll": "42.1762,2.4793",
+              "z": 14,
+              "label": "Rutes 5 a 13 · rutes saludables PAFES",
+              "routes": [
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
             }
           ],
           "routes": [
@@ -47,6 +71,69 @@
               "name": "CAP Olot Nord",
               "info": "2,10 km · 25–31 min caminant · 35–50 min amb pauses · circular",
               "address": "Carrer del Rei Martí l'Humà, cantonada amb el carrer de l'Abat Racimir, Olot"
+            },
+            {
+              "n": 5,
+              "name": "Plaça Major · centre d'Olot",
+              "info": "2,36 km · 28–35 min caminant · 40–55 min amb pauses · circular",
+              "address": "Plaça Major, Olot",
+              "note": "Passa pel centre i el nucli antic, amb carrers estrets: vigila on comparteixes l'espai amb els cotxes."
+            },
+            {
+              "n": 6,
+              "name": "Pont de Sant Roc · els Tossols",
+              "info": "2,25 km · 27–34 min caminant · 35–55 min amb pauses · circular",
+              "address": "Pont de Sant Roc, Olot",
+              "note": "Té uns 650 m de pista de terra i el camí dels Tossols: porta calçat còmode."
+            },
+            {
+              "n": 7,
+              "name": "Parc de les Mores · Pla de Llacs",
+              "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+              "address": "Parc de les Mores, carretera del Triai, a prop de l'avinguda de Sant Jordi, Olot",
+              "note": "Té trams de pista de terra i de carretera local (la del Triai i la de la Moixina): camina pel marge i vigila el trànsit."
+            },
+            {
+              "n": 8,
+              "name": "Parc de les Mores · el Triai",
+              "info": "3,16 km · 38–47 min caminant · 50–65 min amb pauses · circular",
+              "address": "Parc de les Mores, carretera del Triai, a prop de l'avinguda de Sant Jordi, Olot",
+              "note": "És la més llarga. Va sobretot per carreteres locals (la del Triai, la de la Deu i la de la Moixina), amb un tram de pista de terra: camina pel marge i vigila el trànsit."
+            },
+            {
+              "n": 9,
+              "name": "Paratges de la Moixina",
+              "info": "1,42 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+              "address": "Avinguda de Sant Jordi, cruïlla amb el camí dels Tres Roures, Olot",
+              "note": "Va per pista de terra, camins i la carretera de la Deu: a la carretera, camina pel marge i vigila el trànsit."
+            },
+            {
+              "n": 10,
+              "name": "Plaça Amèrica · Parc Nou",
+              "info": "1,23 km · 15–18 min caminant · 25–40 min amb pauses · circular",
+              "address": "Plaça Amèrica, avinguda de l'Equador, Olot",
+              "note": "El tram central passa per dins del Parc Nou: comprova que és obert abans d'anar-hi."
+            },
+            {
+              "n": 11,
+              "name": "Pont de Colom · pont de Ferro",
+              "info": "0,58 km · 7–9 min caminant · 15–30 min amb pauses · circular",
+              "address": "Pont de Colom, avinguda de les Balears, Olot",
+              "note": "Es pot allargar enllaçant-la amb la ruta 3, al pont de Ferro, o amb la 12, al pont de Colom."
+            },
+            {
+              "n": 12,
+              "name": "Pont de les Mores · pont de Colom",
+              "info": "0,98 km · 12–15 min caminant · 20–35 min amb pauses · circular",
+              "address": "Pont de les Mores, avinguda d'Astúries, Olot",
+              "note": "Es pot allargar enllaçant-la amb la ruta 11, al pont de Colom."
+            },
+            {
+              "n": 13,
+              "name": "Parc atlètic dels Tossols · via verda",
+              "info": "1,18 km · 14–18 min caminant · 25–40 min amb pauses · circular",
+              "address": "Parc atlètic dels Tossols, via verda Olot–Girona, Olot",
+              "note": "Un tram va per la via verda, que es comparteix amb bicicletes: vigila-les."
             }
           ]
         }

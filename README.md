@@ -38,7 +38,7 @@ Cada bloc de curs d'una ciutat té una adreça pròpia:
 - `/barcelona/#quan-la-vida` (rutes des dels CAP), `/barcelona/#quan-cuidar-nos`
 - `/el-prat/#quan-la-vida`, `/el-prat/#quan-cuidar-nos`, `/el-prat/#quan-el-mon`
 - `/vic/#quan-la-vida` (rutes des dels CAP i hospitals, 24 a 28), `/vic/#quan-el-mon`
-- `/olot/#quan-la-vida` (rutes des dels CAP i l'hospital, 1 a 4)
+- `/olot/#quan-la-vida` (rutes des dels CAP i l'hospital, 1 a 4, i rutes saludables PAFES, 5 a 13)
 
 I cada ruta, la seva (el desplegable s'obre sol):
 
@@ -50,7 +50,7 @@ Altres: `/vic/#quan-el-mon-rutes-21-a-23` (un mapa de Vic), `/vic/#quan-el-mon-r
 
 ## El botó «Obre el mapa»
 
-Cada ruta té un botó que obre, a pantalla completa, el mapa de My Maps on és (amb totes les rutes d'aquell mapa). Si un grup té un sol mapa, totes les rutes hi van. Si en té diversos, cada mapa diu quines rutes té amb `"routes": [1, 2, ...]` (com Vic «Quan el món» i el Prat «Quan la vida»); si en falta alguna, `build.py` avisa. El camp `dest` de les rutes ja no es fa servir.
+Cada ruta té un botó que obre, a pantalla completa, el mapa de My Maps on és (amb totes les rutes d'aquell mapa). Si un grup té un sol mapa, totes les rutes hi van. Si en té diversos, cada mapa diu quines rutes té amb `"routes": [1, 2, ...]` (com Vic «Quan el món», el Prat «Quan la vida» i Olot «Quan la vida»); si en falta alguna, `build.py` avisa. El camp `dest` de les rutes ja no es fa servir.
 
 ## Dades
 
