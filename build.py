@@ -84,8 +84,10 @@ for c in site["cities"]:
                 g["count"] = sum(len(s["routes"]) for s in g["sections"])
             else:
                 g["id"] = g.get("id") or (f"{course['anchor']}-rutes" if len(groups) == 1 else slugify(g["title"]))
+                # Un sol grup: /vic/#quan-el-mon-ruta-5. Diversos grups (p. ex. un per districte): /barcelona/#cap-gracia-ruta-6
+                prefix = course["anchor"] if len(groups) == 1 else g["id"]
                 for r in g["routes"]:
-                    r["id"] = f"{course['anchor']}-ruta-{r['n']}"
+                    r["id"] = f"{prefix}-ruta-{r['n']}"
                     r["url"] = directions(r["dest"])
                 g["count"] = len(g["routes"])
             total += g["count"]

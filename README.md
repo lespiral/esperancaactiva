@@ -28,14 +28,15 @@ Es publica amb GitHub Pages des de la carpeta `docs/`.
 
 Cada bloc de curs d'una ciutat té una adreça pròpia:
 
-- `/barcelona/#quan-cuidar-nos`
+- `/barcelona/#quan-la-vida` (rutes des dels CAP), `/barcelona/#quan-cuidar-nos`
 - `/el-prat/#quan-la-vida`, `/el-prat/#quan-cuidar-nos`, `/el-prat/#quan-el-mon`
 - `/vic/#quan-el-mon`
 
 I cada ruta, la seva (el desplegable s'obre sol):
 
 - `/vic/#quan-el-mon-ruta-5`, `/el-prat/#quan-la-vida-ruta-12`
-- Barcelona, per districte: `/barcelona/#ciutat-vella-ruta-1`, `/barcelona/#gracia-ruta-3`
+- Barcelona, per districte: `/barcelona/#ciutat-vella-ruta-1`, `/barcelona/#gracia-ruta-3` (Quan cuidar-nos)
+- Barcelona, rutes des dels CAP (Quan la vida): `/barcelona/#cap-gracia-ruta-6`; el mapa i el desplegable d'un districte: `/barcelona/#cap-gracia`
 
 Altres: `/vic/#quan-el-mon-rutes` (la llista de rutes), `/barcelona/#sants-montjuic-i-les-corts` (un grup de districtes), `/preguntes/#es-realment-gratuit` (una pregunta).
 
