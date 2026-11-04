@@ -1,0 +1,299 @@
+{
+  "slug": "el-prat",
+  "name": "El Prat de Llobregat",
+  "title": "Caminar pel Prat de Llobregat",
+  "region": "Baix Llobregat",
+  "summary": "17 circuits urbans, 7 rutes des dels equipaments i 9 rutes pel Delta del Llobregat.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
+  "blocks": [
+    {
+      "course": "vida",
+      "text": "17 circuits urbans curts, de 10 a 15 minuts caminant, que surten de places, parcs i jardins de tots els barris del Prat. Són ideals per fer el temps de reflexió de cada passa a prop de casa.",
+      "groups": [
+        {
+          "title": "Els 17 circuits",
+          "maps": [
+            {
+              "mid": "1IUccFO9XCFUO8GfJ6bjCM2PG79cvubs",
+              "title": "El Prat · circuits del centre i el nord (1, 2, 8–13)",
+              "ll": "41.3276,2.0965",
+              "z": 15,
+              "label": "Centre i nord · circuits 1, 2 i 8 a 13"
+            },
+            {
+              "mid": "1GNmL1AS4U95g3CBT5uvu771vMEOIFM8",
+              "title": "El Prat · circuits del sud, la Ribera Baixa i Llevant (3–7, 14–17)",
+              "ll": "41.3210,2.0946",
+              "z": 15,
+              "label": "Sud, Ribera Baixa i Llevant · circuits 3 a 7 i 14 a 17"
+            }
+          ],
+          "routes": [
+            {
+              "n": 1,
+              "name": "Plaça de Catalunya",
+              "info": "0,87 km · 10–13 min caminant · 20–35 min amb pauses · circular",
+              "dest": "41.32256,2.09237"
+            },
+            {
+              "n": 2,
+              "name": "Parc del Fondo d'en Peixo",
+              "info": "0,83 km · 10–13 min caminant · 20–35 min amb pauses · circular",
+              "dest": "41.32775,2.09089"
+            },
+            {
+              "n": 3,
+              "name": "Parc Nou",
+              "info": "0,86 km · 10–13 min caminant · 20–35 min amb pauses · circular",
+              "dest": "41.31413,2.0903"
+            },
+            {
+              "n": 4,
+              "name": "Plaça del Disset de Setembre",
+              "info": "0,79 km · 9–12 min caminant · 20–30 min amb pauses · circular",
+              "dest": "41.32141,2.09614"
+            },
+            {
+              "n": 5,
+              "name": "Jardins del Cruz",
+              "info": "0,73 km · 9–11 min caminant · 20–30 min amb pauses · circular",
+              "dest": "41.32203,2.09856"
+            },
+            {
+              "n": 6,
+              "name": "Plaça de Blanes",
+              "info": "0,80 km · 10–12 min caminant · 20–30 min amb pauses · circular",
+              "dest": "41.32421,2.09907"
+            },
+            {
+              "n": 7,
+              "name": "Plaça de Louis Braille",
+              "info": "0,86 km · 10–13 min caminant · 20–35 min amb pauses · circular",
+              "dest": "41.32571,2.10242"
+            },
+            {
+              "n": 8,
+              "name": "La Capsa",
+              "info": "0,88 km · 11–13 min caminant · 20–35 min amb pauses · circular",
+              "dest": "41.32979,2.10338"
+            },
+            {
+              "n": 9,
+              "name": "Parc Yolanda Ramos",
+              "info": "0,91 km · 11–14 min caminant · 20–35 min amb pauses · circular",
+              "dest": "41.33092,2.10054"
+            },
+            {
+              "n": 10,
+              "name": "Jardins d'Àngel Guimerà",
+              "info": "0,91 km · 11–14 min caminant · 20–35 min amb pauses · circular",
+              "dest": "41.32974,2.0945"
+            },
+            {
+              "n": 11,
+              "name": "Jardins de l'Hort de la Virtudes",
+              "info": "0,86 km · 10–13 min caminant · 20–35 min amb pauses · circular",
+              "dest": "41.33027,2.09603"
+            },
+            {
+              "n": 12,
+              "name": "Plaça de l'Església",
+              "info": "0,88 km · 11–13 min caminant · 20–35 min amb pauses · circular",
+              "dest": "41.33086,2.09248"
+            },
+            {
+              "n": 13,
+              "name": "Plaça de Pau Casals",
+              "info": "0,90 km · 11–14 min caminant · 20–35 min amb pauses · circular",
+              "dest": "41.32584,2.09388"
+            },
+            {
+              "n": 14,
+              "name": "Plaça de Sant Jordi",
+              "info": "0,91 km · 11–14 min caminant · 20–35 min amb pauses · circular",
+              "dest": "41.32057,2.08706"
+            },
+            {
+              "n": 15,
+              "name": "Parc de la Solidaritat",
+              "info": "0,71 km · 9–11 min caminant · 20–30 min amb pauses · circular",
+              "dest": "41.32229,2.0845"
+            },
+            {
+              "n": 16,
+              "name": "Jardins d'Andalusia",
+              "info": "0,92 km · 11–14 min caminant · 20–35 min amb pauses · circular",
+              "dest": "41.32691,2.10522"
+            },
+            {
+              "n": 17,
+              "name": "Plaça d'Ovidi Montllor",
+              "info": "0,92 km · 11–14 min caminant · 20–35 min amb pauses · circular",
+              "dest": "41.32637,2.10385"
+            }
+          ]
+        }
+      ],
+      "summary": "17 circuits urbans curts"
+    },
+    {
+      "course": "cuidar",
+      "text": "7 rutes des dels equipaments municipals. Cada ruta comença i acaba en un equipament on pots descobrir activitats i recursos de la comunitat.",
+      "groups": [
+        {
+          "title": "Les 7 rutes",
+          "maps": [
+            {
+              "mid": "17V5YycYafrICAis2xD_Kx0dAiEgL66k",
+              "title": "El Prat · rutes des dels equipaments",
+              "ll": "41.3240,2.0971",
+              "z": 14
+            }
+          ],
+          "routes": [
+            {
+              "n": 1,
+              "name": "Centre Cívic Palmira Domènech",
+              "info": "3,37 km · 40–51 min caminant · 55–70 min amb pauses · circular",
+              "address": "[ADREÇA PENDENT]",
+              "desc": "Equipament obert a totes les edats, amb activitats culturals i formatives, tallers i propostes artístiques.",
+              "dest": "Centre Cívic Palmira Domènech, El Prat de Llobregat"
+            },
+            {
+              "n": 2,
+              "name": "Centre Cívic Jardins de la Pau",
+              "info": "1,92 km · 23–29 min caminant · 35–45 min amb pauses · circular",
+              "address": "Jardins de la Pau, 1",
+              "desc": "Espai de trobada amb tallers, exposicions, teatre familiar, fotografia, dansa i lectura.",
+              "dest": "Centre Cívic Jardins de la Pau, Jardins de la Pau 1, El Prat de Llobregat"
+            },
+            {
+              "n": 3,
+              "name": "Centre Cívic Sant Jordi – Ribera Baixa",
+              "info": "2,46 km · 30–37 min caminant · 40–55 min amb pauses · circular",
+              "address": "Carrer de Dolores Ibárruri, 45",
+              "desc": "Teatre i circ, arts visuals, gastronomia, cultura digital i projectes comunitaris del barri.",
+              "dest": "Centre Cívic Sant Jordi Ribera Baixa, Carrer de Dolores Ibárruri 45, El Prat de Llobregat"
+            },
+            {
+              "n": 4,
+              "name": "Equipament Cívic Delta del Llobregat",
+              "info": "1,62 km · 19–24 min caminant · 30–40 min amb pauses · circular",
+              "address": "Carrer del Riu Llobregat, 94",
+              "desc": "Casal cívic i casal de gent gran: tallers, cursos i trobades per mantenir-te actiu i connectat.",
+              "dest": "Carrer del Riu Llobregat 94, El Prat de Llobregat"
+            },
+            {
+              "n": 5,
+              "name": "Cases d'en Puig – Serveis de Ciutadania",
+              "info": "2,41 km · 29–36 min caminant · 40–55 min amb pauses · circular",
+              "address": "Plaça de l'Agricultura, 4",
+              "desc": "Participació, voluntariat i acollida. Aquí pots demanar informació sobre l'Espai Situa't, un servei gratuït i confidencial d'orientació en salut mental.",
+              "dest": "Plaça de l'Agricultura 4, El Prat de Llobregat"
+            },
+            {
+              "n": 6,
+              "name": "El Lloro – Serveis de Joventut",
+              "info": "1,57 km · 19–24 min caminant · 30–40 min amb pauses · circular",
+              "address": "Carrer del Mariscal Joffre, 3",
+              "desc": "Per a joves de 12 a 30 anys, amb orientació personal gratuïta per al benestar emocional.",
+              "dest": "Carrer del Mariscal Joffre 3, El Prat de Llobregat"
+            },
+            {
+              "n": 7,
+              "name": "Cèntric Espai Cultural",
+              "info": "2,03 km · 24–31 min caminant · 35–50 min amb pauses · circular",
+              "address": "Plaça de Catalunya, 39–41",
+              "desc": "Biblioteca, arxiu, auditori i exposicions, amb conferències, concerts i tallers.",
+              "dest": "Cèntric Espai Cultural, Plaça de Catalunya 39, El Prat de Llobregat"
+            }
+          ]
+        }
+      ],
+      "summary": "7 rutes des dels equipaments"
+    },
+    {
+      "course": "mon",
+      "text": "9 rutes pels espais naturals del Delta del Llobregat: el riu, les llacunes, la platja i el Parc Agrari. N'hi ha de circulars i d'altres que van d'un punt a un altre. Abans d'anar-hi, comprova els horaris d'obertura dels espais naturals.",
+      "groups": [
+        {
+          "title": "Les 9 rutes",
+          "maps": [
+            {
+              "mid": "162QFCCQxjc7iS3CG5gvnN-OIbIruDPs",
+              "title": "Delta del Llobregat · 9 rutes",
+              "ll": "41.3133,2.0893",
+              "z": 13
+            }
+          ],
+          "routes": [
+            {
+              "n": 1,
+              "name": "Riu – Cal Tet",
+              "start": "Inici i final: Punt d'informació dels Espais Naturals del Riu",
+              "info": "3,01 km · 36–45 min caminant · 45–65 min amb pauses · circular",
+              "dest": "41.31262,2.11598"
+            },
+            {
+              "n": 2,
+              "name": "Riu – Ca l'Arana – Cal Tet",
+              "start": "Inici i final: Punt d'informació dels Espais Naturals del Riu",
+              "info": "5,17 km · 62–78 min caminant · 70–100 min amb pauses · circular",
+              "dest": "41.31262,2.11598"
+            },
+            {
+              "n": 3,
+              "name": "La Bunyola – Carrabiners – Semàfor",
+              "start": "Inici i final: Punt d'informació dels Espais Naturals del Riu",
+              "info": "5,77 km · 69–87 min caminant · 80–105 min amb pauses · circular",
+              "dest": "41.31262,2.11598"
+            },
+            {
+              "n": 4,
+              "name": "Maresma de les Filipines",
+              "start": "Inici i final: Centre d'informació de l'Espai Natural del Remolar-Filipines",
+              "info": "1,47 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+              "dest": "41.27883,2.06374"
+            },
+            {
+              "n": 5,
+              "name": "Basses de Can Dimoni",
+              "start": "Inici i final: Entrada de les basses de Can Dimoni",
+              "info": "0,69 km · 8–10 min caminant · 20–30 min amb pauses · circular",
+              "dest": "41.31036,2.04914"
+            },
+            {
+              "n": 6,
+              "name": "Litoral Prat – Remolar",
+              "start": "Inici: Aparcament de l'inici de la platja del Prat · Final: Centre d'informació de l'Espai Natural del Remolar-Filipines",
+              "info": "3,98 km · 48–60 min caminant · 60–80 min amb pauses · lineal",
+              "dest": "41.28632,2.10225"
+            },
+            {
+              "n": 7,
+              "name": "Tomb pel camp",
+              "start": "Inici: Pas de vianants del carrer de Tarragona amb la Ronda de Llevant · Final: Masia de Can Comes, seu del Parc Agrari del Baix Llobregat",
+              "info": "3,91 km · 47–59 min caminant · 55–80 min amb pauses · lineal",
+              "dest": "41.32483,2.10638"
+            },
+            {
+              "n": 8,
+              "name": "Cor del Delta",
+              "start": "Inici: Aparcament de Cal Gana · Final: Punt d'informació dels Espais Naturals del Riu",
+              "info": "3,07 km · 37–46 min caminant · 45–65 min amb pauses · lineal",
+              "dest": "41.32258,2.10196"
+            },
+            {
+              "n": 9,
+              "name": "Ruta dels Carrabiners",
+              "start": "Inici: Aparcament de Cal Gana · Final: Edifici del Semàfor",
+              "info": "4,95 km · 59–74 min caminant · 70–95 min amb pauses · lineal",
+              "dest": "41.32258,2.10196"
+            }
+          ]
+        }
+      ],
+      "summary": "9 rutes pel Delta del Llobregat"
+    }
+  ]
+}

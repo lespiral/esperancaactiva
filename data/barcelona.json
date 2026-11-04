@@ -1,0 +1,392 @@
+{
+  "slug": "barcelona",
+  "name": "Barcelona",
+  "region": "Barcelonès",
+  "summary": "42 rutes repartides pels 10 districtes de la ciutat.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
+  "blocks": [
+    {
+      "course": "vida",
+      "text": "Encara no hi ha rutes d'aquest curs a Barcelona. Mentrestant, pots fer el temps de reflexió de cada passa caminant pel teu barri o en un lloc tranquil."
+    },
+    {
+      "course": "cuidar",
+      "text": "42 rutes repartides pels 10 districtes de la ciutat, gairebé totes circulars, que surten de places, parcs i equipaments. Tria el teu districte i obre'n la llista.",
+      "groups": [
+        {
+          "title": "Ciutat Vella i Eixample",
+          "maps": [
+            {
+              "mid": "1zpIwaRMa-fMSpxdQx2-ByxrVhKpIeYw",
+              "title": "Barcelona · Ciutat Vella i Eixample",
+              "ll": "41.3967,2.1699",
+              "z": 14
+            }
+          ],
+          "sections": [
+            {
+              "title": "Ciutat Vella",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de la Ciutadella",
+                  "info": "3,45 km · 41–52 min caminant · 55–70 min amb pauses · circular",
+                  "dest": "Parc de la Ciutadella, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Plaça de Pau Vila",
+                  "info": "4,4 km · 53–66 min caminant · 65–85 min amb pauses · circular",
+                  "dest": "Plaça de Pau Vila, Barcelona"
+                },
+                {
+                  "n": 3,
+                  "name": "Plaça de Catalunya",
+                  "info": "3,75 km · 45–56 min caminant · 55–75 min amb pauses · circular",
+                  "dest": "Plaça de Catalunya, Barcelona"
+                },
+                {
+                  "n": 4,
+                  "name": "Plaça del Portal de la Pau",
+                  "info": "5,04 km · 60–76 min caminant · 70–95 min amb pauses · circular",
+                  "dest": "Plaça del Portal de la Pau, Barcelona"
+                }
+              ]
+            },
+            {
+              "title": "Eixample",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Plaça de la Universitat",
+                  "info": "3,61 km · 43–54 min caminant · 55–70 min amb pauses · circular",
+                  "dest": "Plaça de la Universitat, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Parc de Joan Miró",
+                  "info": "4,47 km · 54–67 min caminant · 65–85 min amb pauses · circular",
+                  "dest": "Parc de Joan Miró, Barcelona"
+                },
+                {
+                  "n": 3,
+                  "name": "Plaça del Cinc d'Oros",
+                  "info": "4,44 km · 53–67 min caminant · 65–85 min amb pauses · circular",
+                  "dest": "Plaça del Cinc d'Oros, Barcelona"
+                },
+                {
+                  "n": 4,
+                  "name": "Plaça d'Urquinaona",
+                  "info": "3,9 km · 47–59 min caminant · 60–75 min amb pauses · circular",
+                  "dest": "Plaça d'Urquinaona, Barcelona"
+                },
+                {
+                  "n": 5,
+                  "name": "Plaça de la Sagrada Família",
+                  "info": "5,52 km · 66–83 min caminant · 80–100 min amb pauses · circular",
+                  "dest": "Plaça de la Sagrada Família, Barcelona"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sants-Montjuïc i Les Corts",
+          "maps": [
+            {
+              "mid": "1829F0jHRDRGKyxJ0U7KbMSfAHQ_lecw",
+              "title": "Barcelona · Sants-Montjuïc i Les Corts",
+              "ll": "41.3806,2.1355",
+              "z": 14
+            }
+          ],
+          "sections": [
+            {
+              "title": "Sants-Montjuïc",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Castell de Montjuïc",
+                  "info": "2,97 km · 36–45 min caminant · 50–60 min amb pauses · circular",
+                  "dest": "Castell de Montjuïc, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Estació superior del funicular de Montjuïc",
+                  "info": "3,15 km · 38–47 min caminant · 50–65 min amb pauses · circular",
+                  "dest": "Estació superior del funicular de Montjuïc, Barcelona"
+                },
+                {
+                  "n": 3,
+                  "name": "Avinguda de l'Estadi",
+                  "info": "2,77 km · 33–41 min caminant · 45–60 min amb pauses · circular",
+                  "dest": "Avinguda de l'Estadi, Barcelona"
+                },
+                {
+                  "n": 4,
+                  "name": "Plaça de Carles Buïgas",
+                  "info": "3,4 km · 41–51 min caminant · 55–70 min amb pauses · circular",
+                  "dest": "Plaça de Carles Buïgas, Barcelona"
+                },
+                {
+                  "n": 5,
+                  "name": "Plaça d'Espanya",
+                  "info": "5 km · 60–75 min caminant · 70–90 min amb pauses · circular",
+                  "dest": "Plaça d'Espanya, Barcelona"
+                },
+                {
+                  "n": 6,
+                  "name": "Parc de l'Espanya Industrial",
+                  "info": "4,13 km · 50–62 min caminant · 60–80 min amb pauses · circular",
+                  "dest": "Parc de l'Espanya Industrial, Barcelona"
+                }
+              ]
+            },
+            {
+              "title": "Les Corts",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc i Roserar de Cervantes",
+                  "info": "6,38 km · 77–96 min caminant · 90–115 min amb pauses · circular",
+                  "dest": "Parc i Roserar de Cervantes, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Facultat d'Economia i Empresa",
+                  "info": "4,03 km · 48–60 min caminant · 60–75 min amb pauses · circular",
+                  "dest": "Facultat d'Economia i Empresa, Barcelona"
+                },
+                {
+                  "n": 3,
+                  "name": "Plaça de la Reina Maria Cristina",
+                  "info": "4,92 km · 59–74 min caminant · 70–90 min amb pauses · circular",
+                  "dest": "Plaça de la Reina Maria Cristina, Barcelona"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sarrià-Sant Gervasi i Gràcia",
+          "maps": [
+            {
+              "mid": "17jvwLIRLwUAqbomUoHrsueBLzajHtGc",
+              "title": "Barcelona · Sarrià-Sant Gervasi i Gràcia",
+              "ll": "41.4088,2.1366",
+              "z": 14
+            }
+          ],
+          "sections": [
+            {
+              "title": "Sarrià-Sant Gervasi",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Plaça de Borràs",
+                  "info": "6,03 km · 72–91 min caminant · 85–110 min amb pauses · circular",
+                  "dest": "Plaça de Borràs, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Plaça del Xiprer",
+                  "info": "4,11 km · 49–62 min caminant · 60–80 min amb pauses · circular",
+                  "dest": "Plaça del Xiprer, Barcelona"
+                },
+                {
+                  "n": 3,
+                  "name": "Plaça de Molina",
+                  "info": "6,19 km · 74–93 min caminant · 85–110 min amb pauses · circular",
+                  "dest": "Plaça de Molina, Barcelona"
+                },
+                {
+                  "n": 4,
+                  "name": "Plaça de John F. Kennedy",
+                  "info": "5,19 km · 62–78 min caminant · 75–95 min amb pauses · circular",
+                  "dest": "Plaça de John F. Kennedy, Barcelona"
+                },
+                {
+                  "n": 5,
+                  "name": "Plaça del Carril",
+                  "info": "6,02 km · 72–90 min caminant · 85–105 min amb pauses · circular",
+                  "dest": "Plaça del Carril, Barcelona"
+                }
+              ]
+            },
+            {
+              "title": "Gràcia",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Plaça del Cinc d'Oros",
+                  "info": "4,82 km · 58–72 min caminant · 70–90 min amb pauses · circular",
+                  "dest": "Plaça del Cinc d'Oros, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Plaça de Joanic",
+                  "info": "3,25 km · 39–49 min caminant · 50–65 min amb pauses · circular",
+                  "dest": "Plaça de Joanic, Barcelona"
+                },
+                {
+                  "n": 3,
+                  "name": "Plaça de Lesseps",
+                  "info": "3,22 km · 39–48 min caminant · 50–65 min amb pauses · circular",
+                  "dest": "Plaça de Lesseps, Barcelona"
+                },
+                {
+                  "n": 4,
+                  "name": "Viaducte de Vallcarca",
+                  "info": "3,49 km · 42–52 min caminant · 55–70 min amb pauses · circular",
+                  "dest": "Viaducte de Vallcarca, Barcelona"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Horta-Guinardó i Nou Barris",
+          "maps": [
+            {
+              "mid": "1mWzTFrDRcxZuMooQFsbySzJtZXpO158",
+              "title": "Barcelona · Horta-Guinardó i Nou Barris",
+              "ll": "41.4313,2.1614",
+              "z": 13
+            }
+          ],
+          "sections": [
+            {
+              "title": "Horta-Guinardó",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc del Laberint d'Horta",
+                  "info": "7,11 km · 85–107 min caminant · 95–125 min amb pauses · circular",
+                  "dest": "Parc del Laberint d'Horta, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Plaça d'Eivissa",
+                  "info": "5,24 km · 63–79 min caminant · 75–95 min amb pauses · circular",
+                  "dest": "Plaça d'Eivissa, Barcelona"
+                },
+                {
+                  "n": 3,
+                  "name": "Plaça d'Eivissa",
+                  "info": "4,11 km · 49–62 min caminant · 60–80 min amb pauses · circular",
+                  "dest": "Plaça d'Eivissa, Barcelona"
+                },
+                {
+                  "n": 4,
+                  "name": "Plaça d'Alfons el Savi",
+                  "info": "5,32 km · 64–80 min caminant · 75–95 min amb pauses · circular",
+                  "dest": "Plaça d'Alfons el Savi, Barcelona"
+                }
+              ]
+            },
+            {
+              "title": "Nou Barris",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Estació de Sant Andreu Arenal",
+                  "info": "6,93 km · 83–104 min caminant · 95–120 min amb pauses · circular",
+                  "dest": "Estació de Sant Andreu Arenal, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Plaça de Llucmajor",
+                  "info": "2,81 km · 34–42 min caminant · 45–60 min amb pauses · circular",
+                  "dest": "Plaça de Llucmajor, Barcelona"
+                },
+                {
+                  "n": 3,
+                  "name": "Plaça de Llucmajor",
+                  "info": "4,06 km · 49–61 min caminant · 60–80 min amb pauses · circular",
+                  "dest": "Plaça de Llucmajor, Barcelona"
+                },
+                {
+                  "n": 4,
+                  "name": "Via Favència",
+                  "info": "5,79 km · 69–87 min caminant · 80–105 min amb pauses · circular",
+                  "dest": "Via Favència, Barcelona"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sant Andreu i Sant Martí",
+          "maps": [
+            {
+              "mid": "1_yrvexXhnmh2KBoreZyUn9GHIzkutqs",
+              "title": "Barcelona · Sant Andreu i Sant Martí",
+              "ll": "41.4226,2.1991",
+              "z": 13
+            }
+          ],
+          "sections": [
+            {
+              "title": "Sant Andreu",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Plaça d'Orfila",
+                  "info": "6,83 km · 82–102 min caminant · 95–120 min amb pauses · circular",
+                  "dest": "Plaça d'Orfila, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Parc de la Pegaso",
+                  "info": "5,58 km · 67–84 min caminant · 80–100 min amb pauses · circular",
+                  "dest": "Parc de la Pegaso, Barcelona"
+                },
+                {
+                  "n": 3,
+                  "name": "Plaça dels Indians",
+                  "info": "4,93 km · 59–74 min caminant · 70–90 min amb pauses · circular",
+                  "dest": "Plaça dels Indians, Barcelona"
+                }
+              ]
+            },
+            {
+              "title": "Sant Martí",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Plaça dels Voluntaris",
+                  "info": "4,07 km · 49–61 min caminant · 60–80 min amb pauses · lineal",
+                  "dest": "Plaça dels Voluntaris, Barcelona",
+                  "start": "Inici: Plaça dels Voluntaris · Final: Plaça d'Ernest Lluch i Martín"
+                },
+                {
+                  "n": 2,
+                  "name": "Parc de Carles I",
+                  "info": "5,7 km · 68–85 min caminant · 80–100 min amb pauses · circular",
+                  "dest": "Parc de Carles I, Barcelona"
+                },
+                {
+                  "n": 3,
+                  "name": "Plaça de les Glòries Catalanes",
+                  "info": "5,7 km · 68–86 min caminant · 80–105 min amb pauses · circular",
+                  "dest": "Plaça de les Glòries Catalanes, Barcelona"
+                },
+                {
+                  "n": 4,
+                  "name": "Plaça d'Artur Martorell",
+                  "info": "6,74 km · 81–101 min caminant · 95–120 min amb pauses · circular",
+                  "dest": "Plaça d'Artur Martorell, Barcelona"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "summary": "42 rutes pels 10 districtes"
+    },
+    {
+      "course": "mon",
+      "text": "Encara no hi ha rutes d'aquest curs a Barcelona. Mentrestant, pots fer el temps de reflexió de cada passa caminant pel teu barri, per un parc o en un lloc tranquil."
+    }
+  ]
+}

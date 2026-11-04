@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% from "parts.html" import page_head, city_cards, before_walk %}
+{% block content %}
+{{ page_head(None, cp.title, cp.intro) }}
+<section class="band band--tight">
+  <div class="wrap">
+    {{ city_cards(site.cities, root, summaries) }}
+    <p class="band__after">{{ h.each_course }}</p>
+  </div>
+</section>
+<div class="wrap wrap--mid stack stack--bottom">
+  {{ before_walk(site.before_walk) }}
+</div>
+{% endblock %}

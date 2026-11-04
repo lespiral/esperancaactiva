@@ -1,0 +1,68 @@
+{% macro page_head(kicker, title, lead=None, center=True) -%}
+<section class="pagehead{% if center %} pagehead--center{% endif %}">
+  <div class="wrap">
+    {% if kicker %}<p class="kicker">{{ kicker }}</p>{% endif %}
+    <h1>{{ title }}</h1>
+    {% if lead %}<p class="lead">{{ lead }}</p>{% endif %}
+  </div>
+</section>
+{%- endmacro %}
+
+{% macro course_cards(courses, root, heading_level=3) -%}
+<ul class="cards cards--3">
+  {% for c in courses %}
+  <li class="card card--course">
+    <span class="card__icon" aria-hidden="true">{{ icon(c.icon) }}</span>
+    <h{{ heading_level }} class="card__title">{{ c.title }}</h{{ heading_level }}>
+    <p class="card__text">{{ c.card }}</p>
+    <a class="btn btn--soft btn--block" href="{{ root }}{{ c.slug }}/">És el meu cas</a>
+  </li>
+  {% endfor %}
+</ul>
+{%- endmacro %}
+
+{% macro city_cards(cities, root, summaries, anchor='') -%}
+<ul class="cards cards--cities">
+  {% for c in cities %}
+  {% if c.slug %}
+  <li class="card card--city">
+    <a class="card__link" href="{{ root }}{{ c.slug }}/{% if anchor %}#{{ anchor }}{% endif %}">
+      <span class="card__icon" aria-hidden="true">{{ icon(c.icon) }}</span>
+      <span class="card__title">{{ c.name }}</span>
+      <span class="card__region">{{ c.region }}</span>
+      <span class="card__text">{{ summaries[c.slug].text }}</span>
+      <span class="card__more">{{ 'Veure les rutes' if summaries[c.slug].has else 'Veure la ciutat' }} {{ icon('arrow') }}</span>
+    </a>
+  </li>
+  {% else %}
+  <li class="card card--city card--soon">
+    <span class="card__icon" aria-hidden="true">{{ icon(c.icon) }}</span>
+    <span class="card__title">{{ c.name }}</span>
+    <span class="card__region">{{ c.region }}</span>
+    <span class="card__text">Properament</span>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+{%- endmacro %}
+
+{% macro faq_item(q, a_html, id=None) -%}
+<details class="faq"{% if id %} id="{{ id }}"{% endif %}>
+  <summary><span>{{ q }}</span>{{ icon('caret', 'faq__caret') }}</summary>
+  <div class="faq__body">{{ a_html }}</div>
+</details>
+{%- endmacro %}
+
+{% macro before_walk(bw) -%}
+<aside class="note note--info" aria-labelledby="abans-de-sortir">
+  <h2 id="abans-de-sortir" class="note__title">{{ icon('info') }}{{ bw.title }}</h2>
+  <p>{{ bw.intro }}</p>
+  <ul class="ticks">{% for i in bw.list %}<li>{{ i }}</li>{% endfor %}</ul>
+</aside>
+{%- endmacro %}
+
+{% macro safety(html) -%}
+<aside class="note note--care">
+  <p>{{ icon('lifebuoy') }}<span>{{ html }}</span></p>
+</aside>
+{%- endmacro %}

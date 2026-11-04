@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% from "parts.html" import page_head %}
+{% block content %}
+{{ page_head(None, "No hem trobat aquesta pàgina", "Potser l'adreça ha canviat. Pots tornar a l'inici o triar directament la teva ciutat.") }}
+<div class="wrap center stack--bottom">
+  <p class="block__actions block__actions--center">
+    <a class="btn btn--primary" href="{{ base }}">Torna a l'inici</a>
+    <a class="btn btn--outline" href="{{ base }}ciutats/">Les ciutats</a>
+  </p>
+</div>
+{% endblock %}

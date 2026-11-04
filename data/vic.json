@@ -1,0 +1,195 @@
+{
+  "slug": "vic",
+  "name": "Vic",
+  "region": "Osona",
+  "summary": "23 rutes curtes i circulars pels parcs i espais verds.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
+  "blocks": [
+    {
+      "course": "vida",
+      "text": "Encara no hi ha rutes d'aquest curs a Vic. Mentrestant, pots fer el temps de reflexió de cada passa caminant pel teu barri o en un lloc tranquil."
+    },
+    {
+      "course": "cuidar",
+      "text": "Encara no hi ha rutes d'aquest curs a Vic. Mentrestant, pots fer el temps de reflexió de cada passa caminant pel teu barri o en un lloc tranquil."
+    },
+    {
+      "course": "mon",
+      "text": "23 rutes curtes i circulars pels parcs i espais verds de Vic, d'entre 1 i 2 km cadascuna (uns 20 minuts caminant). Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
+      "groups": [
+        {
+          "title": "Les 23 rutes",
+          "maps": [
+            {
+              "mid": "1F6Z1mYqGp9cxWOXq0dha9m_aNUasrWw",
+              "title": "Vic · parcs, rutes 1-10",
+              "ll": "41.9285,2.2579",
+              "z": 15,
+              "label": "Rutes 1 a 10"
+            },
+            {
+              "mid": "1m_kpfFrRlgEIgT8WZ2aw_f-WQMgvs7A",
+              "title": "Vic · parcs, rutes 11-20",
+              "ll": "41.9310,2.2451",
+              "z": 14,
+              "label": "Rutes 11 a 20"
+            },
+            {
+              "mid": "1dyQTIUHZMgoRjPud47NjRO7SZc74FNw",
+              "title": "Vic · parcs, rutes 21-23",
+              "ll": "41.9345,2.2564",
+              "z": 15,
+              "label": "Rutes 21 a 23"
+            }
+          ],
+          "routes": [
+            {
+              "n": 1,
+              "name": "Parc de l'Era d'en Sellés",
+              "info": "1,65 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+              "dest": "Parc de l'Era d'en Sellés, Vic"
+            },
+            {
+              "n": 2,
+              "name": "Parc de Sant Llàtzer",
+              "info": "1,56 km · 19–23 min caminant · 30–45 min amb pauses · circular",
+              "dest": "Parc de Sant Llàtzer, Vic"
+            },
+            {
+              "n": 3,
+              "name": "Parc de Jaume Balmes",
+              "info": "1,64 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+              "dest": "Parc de Jaume Balmes, Vic"
+            },
+            {
+              "n": 4,
+              "name": "Parc del Blanqueig",
+              "info": "1,57 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+              "note": "Inici a la riba del Mèder, al pont del Blanqueig.",
+              "dest": "Pont del Blanqueig, Vic"
+            },
+            {
+              "n": 5,
+              "name": "Parc de Xavier Roca i Viñas",
+              "info": "1,72 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+              "note": "[PENDENT: comprovar que el parc és obert]",
+              "dest": "Parc de Xavier Roca i Viñas, Vic"
+            },
+            {
+              "n": 6,
+              "name": "Parc de Sant Jaume",
+              "info": "1,63 km · 20–24 min caminant · 30–45 min amb pauses · circular",
+              "dest": "Parc de Sant Jaume, Vic"
+            },
+            {
+              "n": 7,
+              "name": "Parc de l'Horta d'en Pau",
+              "info": "1,45 km · 17–22 min caminant · 25–40 min amb pauses · circular",
+              "dest": "Parc de l'Horta d'en Pau, Vic"
+            },
+            {
+              "n": 8,
+              "name": "Parc de l'Horta Vermella",
+              "info": "1,6 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+              "dest": "Parc de l'Horta Vermella, Vic"
+            },
+            {
+              "n": 9,
+              "name": "Parc de Santa Anna",
+              "info": "1,52 km · 18–23 min caminant · 30–45 min amb pauses · circular",
+              "dest": "Parc de Santa Anna, Vic"
+            },
+            {
+              "n": 10,
+              "name": "Parc d'Occitània",
+              "info": "1,64 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+              "dest": "Parc d'Occitània, Vic"
+            },
+            {
+              "n": 11,
+              "name": "Pla del Maset",
+              "info": "1,64 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+              "note": "Inici al carrer del Pla del Maset (Sentfores). Té trams rurals.",
+              "dest": "Carrer del Pla del Maset, Vic"
+            },
+            {
+              "n": 12,
+              "name": "Parc de Maria Àngels Anglada i d'Abadal",
+              "info": "1,64 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+              "dest": "Parc de Maria Àngels Anglada i d'Abadal, Vic"
+            },
+            {
+              "n": 13,
+              "name": "Parc de Can Forcada",
+              "info": "1,67 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+              "dest": "Parc de Can Forcada, Vic"
+            },
+            {
+              "n": 14,
+              "name": "Parc de l'Horta de la Sínia",
+              "info": "1,57 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+              "dest": "Parc de l'Horta de la Sínia, Vic"
+            },
+            {
+              "n": 15,
+              "name": "Parc d'Antoni Rovira i Virgili",
+              "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+              "dest": "Parc d'Antoni Rovira i Virgili, Vic"
+            },
+            {
+              "n": 16,
+              "name": "Parc de Sant Julià d'Auvèrnia",
+              "info": "1,62 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+              "dest": "Parc de Sant Julià d'Auvèrnia, Vic"
+            },
+            {
+              "n": 17,
+              "name": "Parc dels Tortosins",
+              "info": "1,54 km · 18–23 min caminant · 30–45 min amb pauses · circular",
+              "note": "Bona part del recorregut passa per un polígon industrial.",
+              "dest": "Parc dels Tortosins, Vic"
+            },
+            {
+              "n": 18,
+              "name": "Parc de Jaume Portell",
+              "info": "1,6 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+              "dest": "Parc de Jaume Portell, Vic"
+            },
+            {
+              "n": 19,
+              "name": "Parc de Miquel Coll i Alentorn",
+              "info": "1,61 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+              "dest": "Parc de Miquel Coll i Alentorn, Vic"
+            },
+            {
+              "n": 20,
+              "name": "Parc de Fèlix Macià i Bonaplata",
+              "info": "1,65 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+              "dest": "Parc de Fèlix Macià i Bonaplata, Vic"
+            },
+            {
+              "n": 21,
+              "name": "Parc de la Vall de Sau",
+              "info": "1,65 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+              "dest": "Parc de la Vall de Sau, Vic"
+            },
+            {
+              "n": 22,
+              "name": "Passeig de Pep Ventura",
+              "info": "1,6 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+              "dest": "Passeig de Pep Ventura, Vic"
+            },
+            {
+              "n": 23,
+              "name": "Bosc del Puig dels Jueus",
+              "info": "0,96 km · 11–14 min caminant · 20–35 min amb pauses · circular",
+              "note": "Camí de terra pel bosc, sense llum: millor de dia.",
+              "dest": "Bosc del Puig dels Jueus, Vic"
+            }
+          ]
+        }
+      ],
+      "summary": "23 rutes pels parcs"
+    }
+  ]
+}

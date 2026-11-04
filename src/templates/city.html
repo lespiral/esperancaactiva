@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% from "parts.html" import page_head, before_walk %}
+
+{% macro route_item(r) -%}
+<li class="route" id="{{ r.id }}">
+  <span class="route__n" aria-hidden="true">{{ r.n }}</span>
+  <div class="route__body">
+    <h4 class="route__name"><span class="sr">Ruta {{ r.n }}: </span>{{ r.name }}</h4>
+    {% if r.start %}<p class="route__start">{{ r.start }}</p>{% endif %}
+    <p class="route__info">{{ r.info }}</p>
+    {% if r.address %}<p class="route__addr">{{ icon('pin') }}<span{% if '[' in r.address %} class="pending"{% endif %}>{{ r.address }}</span></p>{% endif %}
+    {% if r.note %}<p class="route__note{% if '[' in r.note %} pending{% endif %}">{{ r.note }}</p>{% endif %}
+    {% if r.desc %}<p class="route__desc">{{ r.desc }}</p>{% endif %}
+    <a class="route__go" href="{{ r.url }}" target="_blank" rel="noopener">{{ icon('nav') }}Com arribar-hi</a>
+  </div>
+</li>
+{%- endmacro %}
+
+{% macro map_box(m) -%}
+<figure class="map">
+  {% if m.label %}<p class="map__label">{{ icon('map') }}{{ m.label }}</p>{% endif %}
+  <div class="map__frame">
+    <iframe src="https://www.google.com/maps/d/embed?mid={{ m.mid }}&amp;ehbc=2E312F&amp;ll={{ m.ll }}&amp;z={{ m.z }}" title="Mapa: {{ m.title }}" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <figcaption><a href="https://www.google.com/maps/d/viewer?mid={{ m.mid }}" target="_blank" rel="noopener">{{ icon('external') }}Obre el mapa a pantalla completa</a></figcaption>
+</figure>
+{%- endmacro %}
+
+{% block content %}
+{{ page_head('Les ciutats · ' ~ city.region, city.title, city.intro) }}
+
+<nav class="pills wrap" aria-label="Canvia de ciutat">
+  {% for c in site.cities %}
+  {% if c.slug %}<a class="pill" href="{{ root }}{{ c.slug }}/"{% if c.slug == city.slug %} aria-current="page"{% endif %}>{{ icon(c.icon) }}{{ c.name }}</a>
+  {% else %}<span class="pill pill--soon">{{ icon(c.icon) }}{{ c.name }} · properament</span>{% endif %}
+  {% endfor %}
+</nav>
+
+<div class="wrap wrap--mid stack">
+  <nav class="jump" aria-label="Cursos en aquesta ciutat">
+    <p class="jump__h">Tria el teu curs</p>
+    <ul>
+      {% for b in city.blocks %}
+      <li><a href="#{{ b.course.anchor }}">{{ icon(b.course.icon) }}<span><strong>{{ b.course.title }}</strong><small>{{ b.summary }}</small></span></a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  {% for b in city.blocks %}
+  <section class="panel block{% if not b.groups %} block--empty{% endif %}" id="{{ b.course.anchor }}" aria-labelledby="h-{{ b.course.anchor }}">
+    <div class="panel__head">
+      <span class="panel__icon" aria-hidden="true">{{ icon(b.course.icon) }}</span>
+      <h2 id="h-{{ b.course.anchor }}">{{ b.course.title }}</h2>
+    </div>
+    <p>{{ b.text }}</p>
+    <p class="block__actions">
+      <a class="btn btn--primary" href="{{ b.course.thinkific }}">Comença el curs gratuït</a>
+      <a class="btn btn--outline" href="{{ root }}{{ b.course.slug }}/">Torna al curs</a>
+    </p>
+
+    {% for g in b.groups %}
+    <div class="group" id="{{ g.id }}">
+      {% for m in g.maps %}{{ map_box(m) }}{% endfor %}
+      <details class="routes"{% if g.open %} open{% endif %}>
+        <summary><span><strong>{{ g.title }}</strong>{% if g.count|string not in g.title %}<small>{{ g.count }} {{ 'ruta' if g.count == 1 else 'rutes' }}</small>{% endif %}</span>{{ icon('caret', 'faq__caret') }}</summary>
+        {% if g.sections %}
+          {% for s in g.sections %}
+          <h3 class="routes__district" id="{{ s.id }}">{{ s.title }}</h3>
+          <ol class="routes__list">{% for r in s.routes %}{{ route_item(r) }}{% endfor %}</ol>
+          {% endfor %}
+        {% else %}
+          <ol class="routes__list">{% for r in g.routes %}{{ route_item(r) }}{% endfor %}</ol>
+        {% endif %}
+      </details>
+    </div>
+    {% endfor %}
+  </section>
+  {% endfor %}
+
+  {{ before_walk(site.before_walk) }}
+</div>
+{% endblock %}

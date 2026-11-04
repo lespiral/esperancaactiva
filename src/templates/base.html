@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page_title %}{{ page_title }} · {% endif %}{{ site.name }}</title>
+  <meta name="description" content="{{ page_description or site.description }}">
+  {% if noindex %}<meta name="robots" content="noindex">{% endif %}
+  <meta property="og:title" content="{{ page_title or site.name }}">
+  <meta property="og:description" content="{{ page_description or site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ca_ES">
+  {% if logo %}<link rel="icon" type="image/png" href="{{ root }}assets/img/logo-sol.png">{% endif %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@600;700&display=swap">
+  <link rel="stylesheet" href="{{ root }}assets/site.css?v={{ version }}">
+</head>
+<body>
+  <a class="skip" href="#contingut">Salta al contingut</a>
+
+  <header class="topbar">
+    <div class="wrap topbar__in">
+      <a class="brand" href="{{ root }}" aria-label="{{ site.name }}, inici">
+        {% if logo %}<img class="brand__logo" src="{{ root }}assets/img/logo-sol.png" alt="" width="48" height="48">{% else %}<span class="brand__sun" aria-hidden="true">{{ icon('sun') }}</span>{% endif %}
+        <span class="brand__name">Camins d'Esperança<span class="brand__tag">[Activa]</span></span>
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Obre el menú">
+        <span class="menu-btn__open">{{ icon('menu') }}</span><span class="menu-btn__close">{{ icon('close') }}</span>
+      </button>
+      <nav id="menu" class="menu" aria-label="Menú principal">
+        <ul>
+          <li><a href="{{ root }}"{% if section == 'inici' %} aria-current="page"{% endif %}>Inici</a></li>
+          <li><a href="{{ root }}cursos/"{% if section == 'cursos' %} aria-current="page"{% endif %}>Els cursos</a></li>
+          <li><a href="{{ root }}ciutats/"{% if section == 'ciutats' %} aria-current="page"{% endif %}>Les ciutats</a></li>
+          <li><a href="{{ root }}preguntes/"{% if section == 'preguntes' %} aria-current="page"{% endif %}>Preguntes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contingut">
+{% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__in">
+      <div class="footer__about">
+        <p class="footer__name">{% if logo %}<img src="{{ root }}assets/img/logo-sol.png" alt="" width="40" height="40">{% endif %}{{ site.name }}</p>
+        <p>{{ site.footer.initiative }}</p>
+        <p class="footer__motto">{{ site.footer.motto }}</p>
+        <p>{{ site.footer.gaze }}</p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__h">Els cursos</p>
+        <ul>{% for c in site.courses %}<li><a href="{{ root }}{{ c.slug }}/">{{ c.title }}</a></li>{% endfor %}</ul>
+      </div>
+      <div class="footer__col">
+        <p class="footer__h">Les ciutats</p>
+        <ul>{% for c in site.cities %}<li>{% if c.slug %}<a href="{{ root }}{{ c.slug }}/">{{ c.name }}</a>{% else %}{{ c.name }} · properament{% endif %}</li>{% endfor %}</ul>
+      </div>
+      <div class="footer__col">
+        <p class="footer__h">Contacte</p>
+        <ul class="footer__contact">
+          <li>{{ icon('mail') }}<a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
+          <li>{{ icon('instagram') }}<a href="{{ site.contact.instagram_url }}">{{ site.contact.instagram }}</a></li>
+          <li>{{ icon('phone') }}Telèfon: {{ site.contact.phone }}</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ root }}assets/site.js?v={{ version }}" defer></script>
+</body>
+</html>

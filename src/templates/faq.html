@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% from "parts.html" import page_head, faq_item %}
+{% block content %}
+{{ page_head(None, fp.title) }}
+<div class="wrap wrap--narrow stack stack--bottom">
+  {% for s in fp.sections %}
+  <section aria-labelledby="h-{{ s.id }}" id="{{ s.id }}">
+    <h2 class="faq-h" id="h-{{ s.id }}">{{ s.title }}</h2>
+    <div class="faqs">
+      {% for q, a, qid in s["items"] %}{{ faq_item(q, a, qid) }}{% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+  <section class="contact-box" id="contacte" aria-labelledby="h-contact">
+    <h2 id="h-contact">{{ fp.contact_title }}</h2>
+    <p>{{ fp.contact_html }}</p>
+    <p class="contact-box__links">
+      <a class="btn btn--primary" href="mailto:{{ site.contact.email }}">{{ icon('mail') }}Escriu-nos</a>
+      <a class="btn btn--outline" href="{{ site.contact.instagram_url }}">{{ icon('instagram') }}{{ site.contact.instagram }}</a>
+    </p>
+  </section>
+</div>
+{% endblock %}

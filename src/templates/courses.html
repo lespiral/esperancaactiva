@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% from "parts.html" import page_head, course_cards %}
+{% block content %}
+{{ page_head(site.course_common.kicker, cp.title, cp.intro) }}
+<section class="band band--tight">
+  <div class="wrap">
+    {{ course_cards(site.courses, root, 2) }}
+  </div>
+</section>
+<section class="band band--green" aria-labelledby="h-seven">
+  <div class="wrap seven">
+    <div class="seven__text">
+      <h2 class="band__title band__title--left" id="h-seven">{{ h.seven_title }}</h2>
+      <p>{{ h.seven_text }}</p>
+    </div>
+    <div class="seven__moments">
+      <p class="seven__h">{{ h.seven_moments_title }}</p>
+      <ol class="moments">
+        {% for k, v in h.seven_moments %}<li><strong>{{ k }}</strong> {{ v }}</li>{% endfor %}
+      </ol>
+    </div>
+  </div>
+</section>
+{% endblock %}

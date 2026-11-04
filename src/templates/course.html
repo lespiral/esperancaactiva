@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% from "parts.html" import page_head, city_cards, safety %}
+{% block content %}
+{{ page_head(cc.kicker, course.title, course.subtitle) }}
+
+<nav class="pills wrap" aria-label="Canvia de curs">
+  {% for c in site.courses %}
+  <a class="pill" href="{{ root }}{{ c.slug }}/"{% if c.key == course.key %} aria-current="page"{% endif %}>{{ icon(c.icon) }}{{ c.short }}</a>
+  {% endfor %}
+</nav>
+
+<div class="wrap wrap--mid stack">
+  <section class="panel" id="es-per-a-tu" aria-labelledby="h-for">
+    <div class="panel__head">
+      <span class="panel__icon" aria-hidden="true">{{ icon(course.icon) }}</span>
+      <h2 id="h-for">{{ cc.for_title }}</h2>
+    </div>
+    <p>{{ course.for_lead }} {{ cc.for_after }}</p>
+    <ul class="checks">
+      {% for i in course.for_list %}<li>{{ icon('check') }}<span>{{ i }}</span></li>{% endfor %}
+    </ul>
+    <p class="panel__cta"><a class="btn btn--primary btn--lg" href="{{ course.thinkific }}">Comença el curs gratuït {{ icon('arrow') }}</a></p>
+  </section>
+
+  <section class="panel" id="les-7-passes" aria-labelledby="h-passes">
+    <h2 id="h-passes">{{ cc.passes_title }}</h2>
+    <p>{{ cc.passes_intro }}</p>
+    <ol class="passes">
+      {% for t, q in cc.passes %}<li><strong>{{ t }}</strong> {{ q }}</li>{% endfor %}
+    </ol>
+  </section>
+
+  {{ safety(site.safety_html) }}
+
+  <section class="panel panel--plain" id="on-vols-caminar" aria-labelledby="h-walk">
+    <h2 id="h-walk">{{ cc.walk_title }}</h2>
+    <p>{{ cc.walk_intro }}</p>
+    {{ city_cards(site.cities, root, course_summaries[course.key], course.anchor) }}
+  </section>
+
+  <section class="others" aria-labelledby="h-others">
+    <h2 id="h-others">Altres cursos</h2>
+    <ul>
+      {% for c in site.courses if c.key != course.key %}
+      <li><a href="{{ root }}{{ c.slug }}/">{{ icon(c.icon) }}<span>{{ c.title }}</span>{{ icon('arrow') }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
+{% endblock %}
