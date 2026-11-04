@@ -21,8 +21,8 @@
   "cities": [
     {"slug": "barcelona", "name": "Barcelona", "region": "Barcelonès", "icon": "buildings"},
     {"slug": "el-prat", "name": "El Prat de Llobregat", "region": "Baix Llobregat", "icon": "building"},
-    {"slug": "vic", "name": "Vic", "region": "Osona", "icon": "bank"},
-    {"slug": null, "name": "Ripoll", "region": "Ripollès", "icon": "tree", "soon": true}
+    {"slug": "olot", "name": "Olot", "region": "Garrotxa", "icon": "tree"},
+    {"slug": "vic", "name": "Vic", "region": "Osona", "icon": "bank"}
   ],
 
   "courses": [
@@ -126,7 +126,7 @@
     "q1": "1. Què et porta aquí?",
     "q2": "2. On vols caminar?",
     "q2_text": "Cada ciutat té el seu mapa i les seves rutes. Surten de places, parcs i equipaments a prop de casa. N'hi ha de molt curtes, d'uns 10 minuts, i de més llargues, de més d'una hora.",
-    "q2_cities": "Ara hi ha rutes a Barcelona, el Prat de Llobregat i Vic, i se n'aniran afegint més.",
+    "q2_cities": "Ara hi ha rutes a Barcelona, el Prat de Llobregat, Olot i Vic, i se n'aniran afegint més.",
     "each_course": "Cada curs té les seves rutes a cada ciutat: el curs et dona la pràctica, i la ruta, el temps per caminar-la. La teva ciutat no hi és? Fes la caminada pel teu barri o en un lloc tranquil.",
     "how_title": "Com funciona",
     "how": [
@@ -184,7 +184,7 @@
         "items": [
           ["Hi ha rutes de tots els cursos a totes les ciutats?", "Encara no. Cada ciutat té rutes pensades per a cada curs i n'anem afegint. Si la teva ciutat encara no en té del teu curs, pots fer la caminada pel teu barri o en un lloc tranquil."],
           ["La meva ciutat no hi és. Puc fer el curs?", "És clar. Pots fer el temps de reflexió en una passejada pel teu barri o en un lloc tranquil."],
-          ["Quant duren les rutes?", "Depèn de la ciutat i de la ruta. Al Prat hi ha circuits urbans de menys d'1 km (uns 10 a 15 minuts caminant), rutes d'1,5 a 3,5 km des dels equipaments municipals i rutes de 0,7 a 6 km pel Delta del Llobregat. A Vic, les rutes pels parcs fan d'1 a 2 km (uns 20 minuts) i les que surten dels CAP i hospitals, uns 2 km (mitja hora caminant). A Barcelona, les rutes des dels CAP fan uns 2 km (mitja hora caminant) i la resta, d'uns 3 a 7 km. A cada ruta hi trobaràs els quilòmetres i el temps aproximat, caminant i amb pauses."],
+          ["Quant duren les rutes?", "Depèn de la ciutat i de la ruta. Al Prat hi ha circuits urbans de menys d'1 km (uns 10 a 15 minuts caminant), rutes d'1,5 a 3,5 km des dels equipaments municipals i rutes de 0,7 a 6 km pel Delta del Llobregat. A Vic, les rutes pels parcs fan d'1 a 2 km (uns 20 minuts) i les que surten dels CAP i hospitals, uns 2 km (mitja hora caminant). A Olot, les rutes des dels CAP i l'hospital fan d'1 a 2,5 km (de 15 a 35 minuts caminant). A Barcelona, les rutes des dels CAP fan uns 2 km (mitja hora caminant) i la resta, d'uns 3 a 7 km. A cada ruta hi trobaràs els quilòmetres i el temps aproximat, caminant i amb pauses."],
           ["Les rutes són circulars?", "La majoria sí: comencen i acaben al mateix lloc. Algunes van d'un punt a un altre; a cada ruta hi posa si és circular o lineal, i on comença i acaba."],
           ["Què he de tenir en compte abans de sortir?", "__before_walk__"]
         ]

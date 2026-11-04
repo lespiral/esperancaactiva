@@ -4,6 +4,7 @@
   "region": "Barcelonès",
   "summary": "96 rutes repartides pels 10 districtes de la ciutat.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
+  "zones": {"label": "Vés directament al teu districte", "placeholder": "Tria un districte", "back": "Canvia de districte"},
   "blocks": [
     {
       "course": "vida",

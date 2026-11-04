@@ -6,7 +6,7 @@ Es publica amb GitHub Pages des de la carpeta `docs/`.
 ## On és cada cosa
 
 - `data/site.json`: tots els textos (inici, cursos, preguntes, peu de pàgina, contacte, enllaços de Thinkific).
-- `data/barcelona.json`, `data/el-prat.json`, `data/vic.json`: les rutes de cada ciutat, agrupades per curs, amb els mapes de My Maps (`mid`, centre `ll` i zoom `z`).
+- `data/barcelona.json`, `data/el-prat.json`, `data/olot.json`, `data/vic.json`: les rutes de cada ciutat, agrupades per curs, amb els mapes de My Maps (`mid`, centre `ll` i zoom `z`).
 - `src/templates/`: les plantilles de les pàgines.
 - `src/site.css` i `src/site.js`: l'aspecte i el menú del mòbil.
 - `src/img/`: el logo i altres imatges.
@@ -20,9 +20,16 @@ Es publica amb GitHub Pages des de la carpeta `docs/`.
 
 ## Afegir una ciutat
 
-1. Copia un fitxer de `data/` (per exemple `vic.json`) amb el nom nou (`ripoll.json`) i omple-hi les rutes i els mapes.
-2. A `data/site.json`, a `cities`, posa-hi el `slug` (`"ripoll"`) i treu `"soon": true`.
+1. Copia un fitxer de `data/` (per exemple `olot.json`) amb el nom de la ciutat nova (`girona.json`) i omple-hi les rutes i els mapes.
+2. A `data/site.json`, a `cities`, afegeix-hi la ciutat (`slug`, `name`, `region`, `icon`), en ordre alfabètic. Sortirà sola als desplegables i a les targetes.
 3. Genera la web.
+
+## Desplegables «Vés directament a…»
+
+- A Inici, a Les ciutats i a cada pàgina de curs hi ha un desplegable que porta a la targeta de la ciutat triada (`#ciutat-olot`).
+- Dins d'una ciutat, si un bloc de curs té 3 mapes o més (o 3 districtes o més), surt un desplegable abans dels mapes que porta al districte, la zona o el mapa triat. Sota el nom de cada mapa hi ha un enllaç per tornar al desplegable.
+- Si el bloc té diversos grups (un per districte), cada districte és una opció. Si té un sol grup amb diversos mapes (Vic, parcs), cada mapa és una opció i el nom surt de `label` (o de `zone`, si el mapa en té).
+- Els textos es poden canviar a la ciutat o al bloc amb `"zones": {"label": ..., "placeholder": ..., "back": ...}` (Barcelona: «Vés directament al teu districte»). El mínim de mapes és `ZONES_MIN` a `build.py`.
 
 ## Adreces directes (per enllaçar des de Thinkific)
 
@@ -31,14 +38,15 @@ Cada bloc de curs d'una ciutat té una adreça pròpia:
 - `/barcelona/#quan-la-vida` (rutes des dels CAP), `/barcelona/#quan-cuidar-nos`
 - `/el-prat/#quan-la-vida`, `/el-prat/#quan-cuidar-nos`, `/el-prat/#quan-el-mon`
 - `/vic/#quan-la-vida` (rutes des dels CAP i hospitals, 24 a 28), `/vic/#quan-el-mon`
+- `/olot/#quan-la-vida` (rutes des dels CAP i l'hospital, 1 a 4)
 
 I cada ruta, la seva (el desplegable s'obre sol):
 
-- `/vic/#quan-el-mon-ruta-5`, `/vic/#quan-la-vida-ruta-24`, `/el-prat/#quan-la-vida-ruta-12`
+- `/vic/#quan-el-mon-ruta-5`, `/vic/#quan-la-vida-ruta-24`, `/el-prat/#quan-la-vida-ruta-12`, `/olot/#quan-la-vida-ruta-2`
 - Barcelona, per districte: `/barcelona/#ciutat-vella-ruta-1`, `/barcelona/#gracia-ruta-3` (Quan cuidar-nos)
 - Barcelona, rutes des dels CAP (Quan la vida): `/barcelona/#cap-gracia-ruta-6`; el mapa i el desplegable d'un districte: `/barcelona/#cap-gracia`
 
-Altres: `/vic/#quan-el-mon-rutes` (la llista de rutes), `/barcelona/#sants-montjuic-i-les-corts` (un grup de districtes), `/preguntes/#es-realment-gratuit` (una pregunta).
+Altres: `/vic/#quan-el-mon-rutes-21-a-23` (un mapa de Vic), `/vic/#quan-el-mon-rutes` (la llista de rutes), `/barcelona/#sants-montjuic-i-les-corts` (un grup de districtes), `/preguntes/#es-realment-gratuit` (una pregunta).
 
 ## El botó «Obre el mapa»
 

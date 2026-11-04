@@ -21,11 +21,27 @@
 </ul>
 {%- endmacro %}
 
-{% macro city_cards(cities, root, summaries, anchor='') -%}
+{# Desplegable que porta a un lloc de la mateixa pàgina (ciutat, districte o mapa) #}
+{% macro picker(id, label, placeholder, options, ic='pin', cls='') -%}
+<div class="picker{% if cls %} {{ cls }}{% endif %}">
+  <label class="picker__label" for="{{ id }}">{{ icon(ic) }}<span>{{ label }}</span></label>
+  <div class="picker__box">
+    <select id="{{ id }}" class="picker__select" data-jump>
+      <option value="">{{ placeholder }}</option>
+      {% for t, v in options %}<option value="{{ v }}">{{ t }}</option>{% endfor %}
+    </select>
+    {{ icon('caret', 'picker__caret') }}
+  </div>
+</div>
+{%- endmacro %}
+
+{% macro city_cards(cities, root, summaries, anchor='', center=False) -%}
+{% set opts = [] %}{% for c in cities if c.slug %}{% set _ = opts.append((c.name, 'ciutat-' ~ c.slug)) %}{% endfor %}
+{{ picker('tria-ciutat', 'Vés directament a la teva ciutat', 'Tria una ciutat', opts, 'pin', 'picker--center' if center else '') }}
 <ul class="cards cards--cities">
   {% for c in cities %}
   {% if c.slug %}
-  <li class="card card--city">
+  <li class="card card--city" id="ciutat-{{ c.slug }}">
     <a class="card__link" href="{{ root }}{{ c.slug }}/{% if anchor %}#{{ anchor }}{% endif %}">
       <span class="card__icon" aria-hidden="true">{{ icon(c.icon) }}</span>
       <span class="card__title">{{ c.name }}</span>

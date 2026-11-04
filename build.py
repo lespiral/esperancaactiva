@@ -54,6 +54,51 @@ def assign_maps(g, routes):
         r["map_title"] = m["title"]
 
 
+# Desplegable «Vés directament a…»: surt dins d'un bloc de curs quan hi ha
+# com a mínim aquests mapes o districtes per triar.
+ZONES_MIN = 3
+ZONES_TEXT = {
+    # tipus: (etiqueta, primera opció, enllaç sota cada mapa per tornar al desplegable)
+    "zona": ("Vés directament a la teva zona", "Tria una zona", "Canvia de zona"),
+    "mapa": ("Vés directament al mapa", "Tria un mapa", "Canvia de mapa"),
+}
+
+
+def add_zones(b, groups, course, cfg):
+    """Si un bloc té molts mapes, hi posa un desplegable per saltar al districte,
+    la zona o el mapa. Diversos grups (p. ex. un per districte): cada grup és una
+    opció (o cada districte, si el grup en té diversos). Un sol grup amb diversos
+    mapes: cada mapa és una opció. Els textos es poden canviar amb "zones" a la
+    ciutat o al bloc: {"label": ..., "placeholder": ..., "back": ...}."""
+    options, targets = [], []
+    if len(groups) > 1:
+        kind = "zona"
+        for g in groups:
+            if g.get("sections"):
+                options += [(s["title"], g["id"]) for s in g["sections"]]
+            else:
+                options.append((g["title"], g["id"]))
+            if g["maps"]:
+                targets.append((g["maps"][0], g["title"]))
+    elif groups and len(groups[0]["maps"]) > 1:
+        kind = "mapa"
+        for m in groups[0]["maps"]:
+            name = m.get("zone") or m.get("label") or m["title"]
+            m["id"] = m.get("id") or f"{course['anchor']}-{slugify(name)}"
+            options.append((name, m["id"]))
+            targets.append((m, name))
+    else:
+        return
+    if len(options) < ZONES_MIN:
+        return
+    label, placeholder, back = ZONES_TEXT[kind]
+    pid = f"{course['anchor']}-tria"
+    b["zones"] = {"id": pid, "label": cfg.get("label", label), "placeholder": cfg.get("placeholder", placeholder), "options": options}
+    for m, name in targets:
+        m["label"] = m.get("label") or name   # cada mapa amb el seu nom a sobre
+        m["back"] = {"href": pid, "text": cfg.get("back", back)}
+
+
 site = json.loads((DATA / "site.json").read_text(encoding="utf-8"))
 SITE_URL = site["publish"]["url"].rstrip("/") + "/"
 NOINDEX = not site["publish"].get("index", False)
@@ -108,6 +153,7 @@ for c in site["cities"]:
                 g["count"] = len(g["routes"])
             total += g["count"]
         b["groups"] = groups
+        add_zones(b, groups, course, dict(city.get("zones") or {}, **(b.get("zones") or {})))
         b["total"] = total
         b["summary"] = b.get("summary") or ("Encara no hi ha rutes d'aquest curs" if not total else f"{total} rutes")
         course_summaries[key][city["slug"]] = {"text": b["summary"] if total else "Encara no hi ha rutes d'aquest curs. Pots caminar pel teu barri.", "has": bool(total)}
@@ -124,8 +170,11 @@ for city in cities:
     ids = []
     for b in city["blocks"]:
         ids.append(b["course"]["anchor"])
+        if b.get("zones"):
+            ids.append(b["zones"]["id"])
         for g in b["groups"]:
             ids.append(g["id"])
+            ids += [m["id"] for m in g["maps"] if m.get("id")]
             for s in g.get("sections") or [g]:
                 if s is not g:
                     ids.append(s["id"])

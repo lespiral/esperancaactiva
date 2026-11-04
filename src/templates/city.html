@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "parts.html" import page_head, before_walk %}
+{% from "parts.html" import page_head, before_walk, picker %}
 
 {% macro route_item(r) -%}
 <li class="route" id="{{ r.id }}">
@@ -17,8 +17,8 @@
 {%- endmacro %}
 
 {% macro map_box(m) -%}
-<figure class="map">
-  {% if m.label %}<p class="map__label">{{ icon('map') }}{{ m.label }}</p>{% endif %}
+<figure class="map"{% if m.id %} id="{{ m.id }}"{% endif %}>
+  {% if m.label %}<div class="map__head"><p class="map__label">{{ icon('map') }}{{ m.label }}</p>{% if m.back %}<a class="map__back" href="#{{ m.back.href }}">{{ icon('caret', 'i--up') }}{{ m.back.text }}</a>{% endif %}</div>{% endif %}
   <div class="map__frame">
     <iframe src="https://www.google.com/maps/d/embed?mid={{ m.mid }}&amp;ehbc=2E312F&amp;ll={{ m.ll }}&amp;z={{ m.z }}" title="Mapa: {{ m.title }}" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
@@ -57,6 +57,8 @@
       <a class="btn btn--primary" href="{{ b.course.thinkific }}">Comença el curs gratuït</a>
       <a class="btn btn--outline" href="{{ root }}{{ b.course.slug }}/">Torna al curs</a>
     </p>
+
+    {% if b.zones %}{{ picker(b.zones.id, b.zones.label, b.zones.placeholder, b.zones.options, 'nav', 'picker--zones') }}{% endif %}
 
     {% for g in b.groups %}
     <div class="group" id="{{ g.id }}">

@@ -1,4 +1,4 @@
-// Camins d'Esperança [Activa] · menú del mòbil i enllaços directes a seccions
+// Camins d'Esperança [Activa] · menú del mòbil, enllaços directes a seccions i desplegables per anar a una ciutat o un districte
 (function () {
   var bar = document.querySelector('.topbar');
   var btn = document.querySelector('.menu-btn');
@@ -27,4 +27,20 @@
   }
   window.addEventListener('hashchange', openTarget);
   openTarget();
+
+  // Desplegables «Vés directament a…»: porten a la ciutat, el districte o el mapa triat, dins la mateixa pàgina
+  Array.prototype.forEach.call(document.querySelectorAll('select[data-jump]'), function (sel) {
+    sel.addEventListener('change', function () {
+      var id = sel.value;
+      var el = id && document.getElementById(id);
+      if (!el) return;
+      if (decodeURIComponent(location.hash.slice(1)) === id) el.scrollIntoView();
+      else location.hash = id;
+      // El focus va al lloc triat (a l'enllaç de la ciutat, si n'hi ha), perquè el teclat i els lectors de pantalla continuïn des d'allà
+      var f = el.querySelector('.card__link') || el;
+      if (f === el) { el.setAttribute('tabindex', '-1'); el.setAttribute('data-jump-target', ''); }
+      try { f.focus({ preventScroll: true }); } catch (e) { f.focus(); }
+      sel.value = '';
+    });
+  });
 })();

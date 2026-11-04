@@ -4,7 +4,7 @@
 {{ page_head(None, cp.title, cp.intro) }}
 <section class="band band--tight">
   <div class="wrap">
-    {{ city_cards(site.cities, root, summaries) }}
+    {{ city_cards(site.cities, root, summaries, center=True) }}
     <p class="band__after">{{ h.each_course }}</p>
   </div>
 </section>
