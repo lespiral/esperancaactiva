@@ -20,7 +20,7 @@
               "mid": "1zpIwaRMa-fMSpxdQx2-ByxrVhKpIeYw",
               "title": "Barcelona · Ciutat Vella i Eixample",
               "ll": "41.3967,2.1699",
-              "z": 14
+              "z": 13
             }
           ],
           "sections": [
@@ -97,7 +97,7 @@
               "mid": "1829F0jHRDRGKyxJ0U7KbMSfAHQ_lecw",
               "title": "Barcelona · Sants-Montjuïc i Les Corts",
               "ll": "41.3806,2.1355",
-              "z": 14
+              "z": 13
             }
           ],
           "sections": [
@@ -174,7 +174,7 @@
               "mid": "17jvwLIRLwUAqbomUoHrsueBLzajHtGc",
               "title": "Barcelona · Sarrià-Sant Gervasi i Gràcia",
               "ll": "41.4088,2.1366",
-              "z": 14
+              "z": 13
             }
           ],
           "sections": [
@@ -321,7 +321,7 @@
             {
               "mid": "1_yrvexXhnmh2KBoreZyUn9GHIzkutqs",
               "title": "Barcelona · Sant Andreu i Sant Martí",
-              "ll": "41.4226,2.1991",
+              "ll": "41.4180,2.1991",
               "z": 13
             }
           ],
