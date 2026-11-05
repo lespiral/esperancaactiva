@@ -13,6 +13,13 @@
   </div>
 </section>
 
+<section class="band band--white" id="que-es-l-esperanca-activa" aria-labelledby="h-nus">
+  <div class="wrap">
+    <h2 class="band__title" id="h-nus">{{ h.nus_title }}</h2>
+    {% include "infografies/infografia-esperanca-activa.html" %}
+  </div>
+</section>
+
 <section class="band" id="que-et-porta-aqui" aria-labelledby="h-q1">
   <div class="wrap">
     <h2 class="band__title" id="h-q1">{{ h.q1 }}</h2>
@@ -35,30 +42,19 @@
 <section class="band" id="com-funciona" aria-labelledby="h-how">
   <div class="wrap">
     <h2 class="band__title" id="h-how">{{ h.how_title }}</h2>
-    <ol class="steps">
-      {% for ic, t, d in h.how %}
-      <li class="step">
-        <span class="step__icon" aria-hidden="true">{{ icon(ic) }}</span>
-        <h3 class="step__title">{{ t }}</h3>
-        <p>{{ d }}</p>
-      </li>
-      {% endfor %}
-    </ol>
+    {# Abans hi havia la llista dels 4 passos (h.how a data/site.json): ara la infografia en fa les vegades #}
+    {% include "infografies/infografia-com-funciona.html" %}
   </div>
 </section>
 
 <section class="band band--green" id="cada-curs-7-passes" aria-labelledby="h-seven">
-  <div class="wrap seven">
-    <div class="seven__text">
+  <div class="wrap">
+    <div class="seven__text seven__text--top">
       <h2 class="band__title band__title--left" id="h-seven">{{ h.seven_title }}</h2>
       <p>{{ h.seven_text }}</p>
     </div>
-    <div class="seven__moments">
-      <p class="seven__h">{{ h.seven_moments_title }}</p>
-      <ol class="moments">
-        {% for k, v in h.seven_moments %}<li><strong>{{ k }}</strong> {{ v }}</li>{% endfor %}
-      </ol>
-    </div>
+    {# Els quatre moments de cada passa ara surten a la llegenda de la infografia (abans, h.seven_moments) #}
+    {% include "infografies/infografia-7-passes.html" %}
   </div>
 </section>
 

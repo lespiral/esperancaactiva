@@ -1,0 +1,227 @@
+{# infografia-llegir-ruta.html: copiat del bloc INICI–FINAL de la carpeta «Infografies web» (5 de novembre de 2026). #}
+<div class="llegir" data-llegir>
+  <div class="llegir__grid">
+    <div class="llegir__map" aria-hidden="true"><svg class="llegir__svg" viewBox="56 0 400 300" preserveAspectRatio="xMidYMid slice" focusable="false"></svg></div>
+    <div class="llegir__side">
+      <p class="llegir__ex">Exemple</p>
+      <div class="llegir__card">
+        <button type="button" class="llegir__n llegir__p" data-p="0">1</button>
+        <div class="llegir__body">
+          <p class="llegir__name"><button type="button" class="llegir__p" data-p="1">Parc de la Font</button></p>
+          <p class="llegir__info">
+            <button type="button" class="llegir__p" data-p="2">2,2 km</button> ·
+            <button type="button" class="llegir__p" data-p="3">26–33 min caminant</button> ·
+            <button type="button" class="llegir__p" data-p="4">40–50 min amb pauses</button> ·
+            <button type="button" class="llegir__p" data-p="5">circular</button>
+          </p>
+          <p class="llegir__addr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg><button type="button" class="llegir__p" data-p="6">Carrer Major, a prop de casa</button></p>
+          <span class="llegir__go llegir__p" data-p="7" role="button" tabindex="0"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.5 9 4.5l6 2 5.5-2v13l-5.5 2-6-2-5.5 2z"/><path d="M9 4.5v13M15 6.5v13"/></svg>Obre el mapa</span>
+        </div>
+      </div>
+      <div class="llegir__cap" aria-live="polite"><p class="llegir__ck"></p><p class="llegir__ct"></p></div>
+    </div>
+  </div>
+  <div class="llegir__foot">
+    <p class="llegir__hint">Toca cada dada per saber què vol dir.</p>
+    <button class="llegir__replay" type="button" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1M3.5 4v4.6h4.6"/></svg>
+      <span>Torna-ho a veure</span>
+    </button>
+  </div>
+</div>
+
+<style>
+.llegir {
+  --c9: var(--green-900, #11352c); --c8: var(--green-800, #1a4d40); --c7: var(--green-700, #22604f);
+  --c6: var(--green-600, #2e7561); --c2: var(--green-200, #c9dcd4); --c1: var(--green-100, #e3eee9); --c05: var(--green-50, #f0f6f3);
+  --cs: var(--sun, #e2c668); --cs-ink: var(--sun-ink, #6f5711); --cline: var(--line, #e7e1d4);
+  --cink: var(--ink, #23302b); --cmuted: var(--muted, #56635d);
+  --fh: var(--font-head, "Montserrat", ui-sans-serif, system-ui, sans-serif);
+  --fb: var(--font-body, "Lato", ui-sans-serif, system-ui, sans-serif);
+  position: relative; overflow: hidden; background: #fff; color: var(--cink); font-family: var(--fb);
+  border: 1px solid var(--cline); border-radius: var(--radius-lg, 22px);
+  box-shadow: 0 1px 2px rgba(17,53,44,.06), 0 10px 28px rgba(17,53,44,.09);
+  container-type: inline-size;
+}
+.llegir *, .llegir *::before, .llegir *::after { box-sizing: border-box; }
+.llegir p { margin: 0; }
+.llegir__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); background: #f6f4ee; }
+@container (max-width: 640px) { .llegir__grid { grid-template-columns: minmax(0, 1fr); } .llegir__map { aspect-ratio: 16 / 10; } }
+.llegir__map { position: relative; min-height: 260px; }
+.llegir__svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.llegir__side { padding: 22px clamp(16px, 3vw, 26px); display: flex; flex-direction: column; justify-content: center; gap: 12px; }
+.llegir__ex { font: 700 11.5px/1.3 var(--fh); letter-spacing: .08em; text-transform: uppercase; color: var(--cmuted); }
+
+/* La fitxa, com a la web */
+.llegir__card { display: flex; gap: 14px; padding: 16px 18px; border: 1px solid var(--cline); border-radius: var(--radius, 16px); background: #fff; }
+.llegir__body { flex: 1; min-width: 0; }
+.llegir button.llegir__p, .llegir span.llegir__p { font: inherit; color: inherit; background: none; border: 0; padding: 1px 3px; margin: -1px -3px; border-radius: 6px; cursor: pointer; text-align: left; -webkit-appearance: none; appearance: none; transition: background-color .3s, box-shadow .3s; }
+.llegir button.llegir__n { display: grid; place-items: center; flex: none; width: 36px; height: 36px; margin: 2px 0 0; padding: 0; border-radius: 50%; background: var(--cs); color: var(--c9); font: 700 15px/1 var(--fh); }
+.llegir__name { font: 700 17px/1.3 var(--fh); color: var(--c9); margin: 4px 0 4px !important; }
+.llegir__info { font-size: 15px; line-height: 1.6; color: var(--cmuted); margin: 0 0 4px !important; }
+.llegir__addr { display: flex; gap: 6px; align-items: flex-start; font-size: 15px; line-height: 1.45; margin: 0 0 6px !important; }
+.llegir__addr svg { flex: none; width: 17px; height: 17px; margin-top: 2px; fill: none; stroke: var(--c6); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.llegir span.llegir__go { display: inline-flex; align-items: center; gap: 6px; margin: 4px 0 0; padding: 8px 12px; border-radius: 999px; font: 700 14.5px/1.2 var(--fh); color: var(--c8); background: var(--c05); border: 1px solid var(--c1); }
+.llegir__go svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.llegir .llegir__p.is-on { background: #f8e8b0; box-shadow: 0 0 0 2px var(--cs); }
+.llegir button.llegir__n.is-on { box-shadow: 0 0 0 4px #fff, 0 0 0 7px var(--c7); background: var(--cs); }
+.llegir .llegir__go.is-on { background: #f8e8b0; border-color: var(--cs); }
+.llegir .llegir__p:focus { outline: none; }
+.llegir .llegir__p:focus-visible { box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--c7); }
+
+/* Explicació */
+.llegir__cap { min-height: 74px; padding: 11px 14px 12px; border-radius: 14px; background: #fff; border: 1px dashed var(--c2); }
+.llegir__ck { font: 700 11.5px/1.3 var(--fh); letter-spacing: .08em; text-transform: uppercase; color: var(--cs-ink); }
+.llegir__ct { font-size: 15.5px; line-height: 1.45; color: var(--cink); margin-top: 3px !important; }
+.llegir__cap.is-fresh { animation: llegir-fade .35s ease; }
+
+/* Mapa */
+.ll-route { fill: none; stroke: #1a4d40; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+.ll-arrow { fill: #1a4d40; opacity: 0; transition: opacity .4s; }
+.llegir.is-loop .ll-arrow { opacity: 1; }
+.ll-pin { transform-box: fill-box; transform-origin: 50% 100%; transition: transform .4s cubic-bezier(.34, 1.56, .64, 1); }
+.llegir.is-pin .ll-pin { transform: scale(1.18); }
+.ll-start { opacity: 0; transition: opacity .4s; }
+.llegir.is-start .ll-start { opacity: 1; }
+.ll-halo { transform-box: fill-box; transform-origin: center; animation: llegir-pulse 1.8s ease-in-out infinite; }
+.ll-chip { opacity: 0; transition: opacity .4s; }
+.llegir.is-km .ll-chip { opacity: 1; }
+
+.llegir__foot {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px 16px; flex-wrap: wrap;
+  min-height: 60px; padding: 10px clamp(14px, 3vw, 24px); border-top: 1px solid var(--cline); background: #fff;
+}
+.llegir__hint { font-size: 14.5px; color: var(--cmuted); }
+.llegir__replay {
+  flex: none; display: inline-flex; align-items: center; gap: .45em; padding: .55em 1em;
+  border-radius: 999px; border: 2px solid var(--c2); background: #fff; color: var(--c8);
+  font: 700 14px/1.2 var(--fh); cursor: pointer; transition: border-color .15s, color .15s, transform .15s;
+}
+.llegir__replay:hover { border-color: var(--c7); color: var(--c9); transform: translateY(-1px); }
+.llegir__replay:focus-visible { outline: 3px solid var(--c7); outline-offset: 2px; }
+.llegir__replay svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.llegir__replay[hidden] { display: none; }
+@keyframes llegir-pulse { 0%, 100% { transform: scale(1); opacity: .45; } 50% { transform: scale(1.5); opacity: .15; } }
+@keyframes llegir-fade { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .llegir *, .llegir *::before, .llegir *::after { animation: none !important; transition: none !important; }
+}
+</style>
+
+<script>
+(function () {
+  "use strict";
+  var root = document.querySelector("[data-llegir]");
+  if (!root || root.getAttribute("data-ready")) return;
+  root.setAttribute("data-ready", "1");
+
+  /* ---------- EXPLICACIÓ DE CADA DADA ---------- */
+  var PARTS = [
+    ["El número", "És el número de la ruta al mapa."],
+    ["El punt de sortida", "D'on surt la ruta: una plaça, un parc, un CAP o un equipament."],
+    ["La distància", "Els quilòmetres de tota la volta."],
+    ["Caminant", "El temps aproximat si camines sense aturar-te."],
+    ["Amb pauses", "El temps aproximat si fas alguna aturada per descansar, o quan ho necessitis. La reflexió es fa caminant."],
+    ["Circular", "Acabes on has començat: tornes al punt de sortida."],
+    ["L'adreça", "On és el punt de sortida, per arribar-hi."],
+    ["Obre el mapa", "Obre a pantalla completa el mapa on és la ruta, amb totes les rutes d'aquell mapa."]
+  ];
+  var INTRO = ["Com llegir una ruta", "Cada ruta té aquestes dades. Mira-ho."];
+  var OUTRO = ["Ja està", "Tria la que s'adapti al teu temps i a les teves possibilitats."];
+
+  var STEP = 1250, LOOP0 = 2, LOOP1 = 5; // la volta es camina mentre s'expliquen les dades 2 a 5
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var svg = root.querySelector(".llegir__svg");
+  var parts = Array.prototype.slice.call(root.querySelectorAll(".llegir__p"));
+  var cap = root.querySelector(".llegir__cap"), ck = root.querySelector(".llegir__ck"), ct = root.querySelector(".llegir__ct");
+  var replay = root.querySelector(".llegir__replay");
+  var S = { t: 0, sel: -1, playing: false, started: false, last: null, raf: 0 }, lastKey = "", END = (PARTS.length + 1) * STEP;
+
+  function r1(n) { return Math.round(n * 10) / 10; }
+
+  /* ---------- MAPA ---------- */
+  var loop = "M150 222 L150 150 Q150 128 172 128 L262 128 Q284 128 284 106 L284 76 Q284 56 304 56 L342 56 Q362 56 362 76 L362 210 Q362 232 340 232 L172 232 Q150 232 150 222 Z";
+  var out = ['<rect width="480" height="300" fill="#ece5d6"/>', '<g stroke="#faf7f0" stroke-width="10" stroke-linecap="round">'];
+  [40, 150, 220, 284, 362, 440].forEach(function (x) { out.push('<line x1="' + x + '" y1="-10" x2="' + x + '" y2="310"/>'); });
+  [56, 128, 232, 280].forEach(function (y) { out.push('<line x1="-10" y1="' + y + '" x2="490" y2="' + y + '"/>'); });
+  out.push('</g>',
+    '<path d="M298 74h50v122a14 14 0 0 1-14 14h-36z" fill="#d3e5da"/>',
+    '<g fill="#b5cfc0"><circle cx="312" cy="96" r="9"/><circle cx="334" cy="118" r="8"/><circle cx="314" cy="150" r="10"/><circle cx="336" cy="182" r="8"/></g>',
+    '<rect x="166" y="148" width="104" height="66" rx="8" fill="#e5dbc5"/><circle cx="218" cy="181" r="14" fill="#d3e6e1" stroke="#b9d0c8" stroke-width="2"/>',
+    '<path d="' + loop + '" fill="none" stroke="#1a4d40" stroke-opacity=".3" stroke-width="4" stroke-linecap="round" stroke-dasharray="0.1 9"/>',
+    '<path class="ll-route" d="' + loop + '"/>',
+    '<g class="ll-arrows"></g>',
+    '<g class="ll-start"><rect x="104" y="238" width="92" height="24" rx="12" fill="#1a4d40"/><text x="150" y="254.5" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="700" font-size="12" fill="#fff">sortida i arribada</text></g>',
+    '<g class="ll-chip"><rect x="198" y="104" width="62" height="22" rx="11" fill="#e2c668" stroke="#fff" stroke-width="2"/><text x="229" y="119.5" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="700" font-size="12" fill="#11352c">2,2 km</text></g>',
+    '<g class="ll-walker"><circle class="ll-halo" r="13" fill="#e2c668"/><circle r="7" fill="#e2c668" stroke="#fff" stroke-width="3"/></g>',
+    '<g class="ll-pin"><path d="M150 222c-9-11-15-18-15-25a15 15 0 0 1 30 0c0 7-6 14-15 25z" fill="#e2c668" stroke="#fff" stroke-width="2.5"/><text x="150" y="202" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="700" font-size="13" fill="#11352c">1</text></g>');
+  svg.innerHTML = out.join("");
+  var route = svg.querySelector(".ll-route"), walker = svg.querySelector(".ll-walker"), total = route.getTotalLength();
+  route.style.strokeDasharray = total;
+  var arrows = [];
+  [.14, .38, .62, .86].forEach(function (f) {
+    var a = route.getPointAtLength(total * f), b = route.getPointAtLength(total * f + 1), ang = Math.atan2(b.y - a.y, b.x - a.x) * 180 / Math.PI;
+    arrows.push('<path class="ll-arrow" d="M-5 -5L4 0L-5 5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" transform="translate(' + r1(a.x) + ',' + r1(a.y) + ') rotate(' + r1(ang) + ')"/>');
+  });
+  svg.querySelector(".ll-arrows").innerHTML = arrows.join("");
+
+  /* ---------- ESTAT ---------- */
+  function ease(x) { x = Math.max(0, Math.min(1, x)); return -(Math.cos(Math.PI * x) - 1) / 2; }
+  function apply() {
+    var t = S.t, idx = S.sel >= 0 ? S.sel : (t < STEP * .5 ? -1 : Math.floor(t / STEP - .5)), done = t >= END && S.sel < 0;
+    var lp = ease((t / STEP - .5 - LOOP0) / (LOOP1 + 1 - LOOP0));
+    if (S.sel >= 0 || t >= END) lp = 1;
+    route.style.strokeDashoffset = total * (1 - lp);
+    var p = route.getPointAtLength(total * lp);
+    walker.setAttribute("transform", "translate(" + r1(p.x) + "," + r1(p.y) + ")");
+    walker.setAttribute("opacity", lp > 0 && lp < 1 ? 1 : 0);
+    if (idx >= PARTS.length) idx = -2;
+    var key = idx + "|" + done + "|" + (lp >= 1);
+    if (key === lastKey) return;
+    lastKey = key;
+    parts.forEach(function (el) { el.classList.toggle("is-on", +el.getAttribute("data-p") === idx); });
+    root.classList.toggle("is-pin", idx === 0 || idx === 6);
+    root.classList.toggle("is-start", idx === 1 || idx === 5 || idx === 6);
+    root.classList.toggle("is-km", idx === 2 || done);
+    root.classList.toggle("is-loop", lp >= 1);
+    var c = idx >= 0 ? PARTS[idx] : idx === -2 ? OUTRO : INTRO;
+    ck.textContent = c[0]; ct.textContent = c[1];
+    cap.classList.remove("is-fresh"); void cap.offsetWidth; cap.classList.add("is-fresh");
+    replay.hidden = !(t >= END && !reduce);
+  }
+
+  /* ---------- ANIMACIÓ ---------- */
+  function tick(ts) {
+    if (!S.playing) return;
+    if (S.last === null) S.last = ts;
+    S.t += Math.min(64, ts - S.last); S.last = ts;
+    if (S.t >= END) { S.t = END; S.playing = false; }
+    apply();
+    if (S.playing) S.raf = requestAnimationFrame(tick);
+  }
+  function play() {
+    cancelAnimationFrame(S.raf);
+    S.started = true; S.sel = -1;
+    if (reduce) { S.t = END; S.playing = false; lastKey = ""; apply(); return; }
+    S.t = 0; S.last = null; S.playing = true; lastKey = "";
+    apply();
+    setTimeout(function () { S.raf = requestAnimationFrame(tick); }, 300);
+  }
+  function choose(el) {
+    cancelAnimationFrame(S.raf); S.playing = false; S.t = END; S.started = true;
+    var i = +el.getAttribute("data-p");
+    S.sel = S.sel === i ? -1 : i; lastKey = ""; apply();
+  }
+  parts.forEach(function (el) {
+    el.addEventListener("click", function (e) { e.preventDefault(); choose(el); });
+    el.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); choose(el); } });
+  });
+  replay.addEventListener("click", play);
+
+  if (reduce) { S.t = END; apply(); }
+  else if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (en) { if (en[0].isIntersecting && !S.started) { io.disconnect(); play(); } }, { threshold: 0.35 });
+    io.observe(root);
+  } else play();
+})();
+</script>

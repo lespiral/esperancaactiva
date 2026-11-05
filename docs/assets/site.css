@@ -148,7 +148,12 @@ strong { font-weight: 700; }
 
 /* ---------- Targetes ---------- */
 .cards { list-style: none; margin: 0; padding: 0; display: grid; gap: 22px; }
-.cards--3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.cards--3 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+/* Curs que encara no està obert */
+.card__badge { margin: -6px 0 12px; padding: 3px 10px; border-radius: 999px; background: var(--sun-100); color: var(--sun-ink); font: 700 .78rem/1.3 var(--font-head); letter-spacing: .06em; text-transform: uppercase; }
+.btn--soon { background: var(--sun-100); color: var(--sun-ink); border-color: var(--sun-200); cursor: default; }
+.btn--soon:hover { transform: none; }
+.soon-note { margin: 10px 0 0; color: var(--muted); font-size: .98rem; }
 .cards--cities { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 .card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
 .card--course { padding: 32px 26px 26px; display: flex; flex-direction: column; align-items: center; text-align: center; transition: box-shadow .2s, transform .2s; }
@@ -199,6 +204,8 @@ strong { font-weight: 700; }
 .moments li::before { content: counter(m); position: absolute; left: 14px; top: 50%; transform: translateY(-50%); display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--sun); color: var(--green-900); font: 700 .95rem/1 var(--font-head); }
 .moments strong { color: var(--green-900); }
 @media (max-width: 760px) { .seven { grid-template-columns: 1fr; } }
+/* Inici: el text a sobre i l'espiral de les 7 passes a sota */
+.seven__text--top { max-width: 680px; margin-bottom: 30px; }
 
 /* ---------- Preguntes (desplegables) ---------- */
 .faqs { display: grid; gap: 12px; }
@@ -263,7 +270,7 @@ details[open] > summary .faq__caret { transform: rotate(180deg); }
 /* ---------- Ciutat ---------- */
 .jump { background: var(--green-800); color: #fff; border-radius: var(--radius-lg); padding: 20px; }
 .jump__h { font: 700 .95rem/1.2 var(--font-head); color: var(--sun); margin: 0 4px 12px; }
-.jump ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.jump ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
 .jump a { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 12px; background: rgba(255, 255, 255, .08); color: #fff; text-decoration: none; height: 100%; }
 .jump a:hover { background: rgba(255, 255, 255, .16); color: #fff; }
 .jump a .i { color: var(--sun); margin-top: .1em; }
@@ -311,6 +318,8 @@ details[open] > summary .faq__caret { transform: rotate(180deg); }
 .initiative__logo { width: 300px; max-width: 100%; height: auto; background: #fff; padding: 10px 14px; border-radius: 14px; border: 1px solid var(--line); }
 .initiative__h { font-size: 1rem; color: var(--green-600); margin-bottom: 4px; }
 .initiative p { margin: 0; max-width: 520px; color: var(--muted); }
+.initiative--left { justify-content: flex-start; gap: 20px 26px; }
+.initiative--left p { flex: 1 1 260px; }
 
 /* ---------- Peu ---------- */
 .footer { background: var(--green-900); color: #c9d9d2; margin-top: 0; padding: 48px 0 40px; font-size: .96rem; }
@@ -363,3 +372,34 @@ details[open] > summary .faq__caret { transform: rotate(180deg); }
 .card--city:target { box-shadow: 0 0 0 3px var(--sun), var(--shadow); }
 .group:target > .map:first-child .map__frame, .map:target .map__frame { box-shadow: 0 0 0 3px var(--sun); }
 [data-jump-target]:focus { outline: none; }
+
+/* ---------- Infografies animades (src/templates/infografies/) ---------- */
+.infografia { margin: 0 0 32px; }
+.infografia--top { margin: 8px 0 40px; }
+.infografia--in { margin: 18px 0 16px; }
+/* Al mòbil, dins d'un quadre, la infografia agafa una mica del marge perquè els noms no es tallin tant */
+@media (max-width: 560px) { .note .infografia--in, .panel .infografia--in { margin-left: -14px; margin-right: -14px; } }
+.infografia--head { margin: 0 0 28px; }
+/* Dins la resposta d'una pregunta: una mica més ampla, perquè a l'ordinador es vegi en horitzontal */
+.faq__body .infografia--in { margin: 16px -10px 4px; }
+/* Pàgina de curs: el curs d'un cop d'ull, la nota sota el botó, el que pot aportar i el facilitador */
+.facts { list-style: none; margin: 24px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.facts li { display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px 7px 11px; border-radius: 999px; background: var(--green-50); border: 1px solid var(--green-100); color: var(--green-800); font: 700 .92rem/1.25 var(--font-head); }
+.facts .i { width: 1.15em; height: 1.15em; color: var(--green-600); }
+.facts + .panel__cta { margin-top: 22px; }
+.cta-note { margin: 10px 0 0; color: var(--muted); font-size: .95rem; }
+.gains__end { margin: 20px 0 0; padding: 14px 18px; border-left: 4px solid var(--sun); background: var(--sun-50); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; color: var(--green-900); }
+.about { display: flex; gap: 26px; align-items: flex-start; }
+.about__logo { flex: none; width: 200px; height: auto; padding: 10px 12px; background: #fff; border: 1px solid var(--line); border-radius: 14px; }
+.about h2 { font-size: 1.3rem; }
+.about p:last-child { margin-bottom: 0; }
+@media (max-width: 640px) { .about { flex-direction: column; gap: 16px; } }
+.note--care .note__title { color: var(--care-ink); }
+.note--care .note__title .i { color: var(--care-ink); width: 1.3em; height: 1.3em; margin: 0; }
+.note--care .note__p { display: block; }
+/* Secció amb un títol i una infografia (p. ex. «Com llegir una ruta», a cada ciutat) */
+.infosec__title { font-size: 1.3rem; margin: 0 0 14px; }
+/* El text de la infografia, plegat a sota */
+.faq--text { box-shadow: none; }
+.faq--text summary { padding: 13px 18px; font-size: .98rem; }
+.faq--text .faq__body { padding-top: 2px; }

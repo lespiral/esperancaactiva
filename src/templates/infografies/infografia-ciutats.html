@@ -1,0 +1,511 @@
+{# infografia-ciutats.html: copiat del bloc INICI–FINAL de la carpeta «Infografies web» (5 de novembre de 2026). #}
+<div class="barri" data-barri>
+  <div class="barri__scene" role="group" aria-label="Un mapa: rutes a peu, curtes i llargues, que surten d'una plaça, d'un equipament i d'un espai natural a prop de casa">
+    <svg class="barri__svg" aria-hidden="true" focusable="false"></svg>
+    <div class="barri__nodes"></div>
+    <div class="barri__pop" aria-live="polite"><p class="barri__pk"></p><p class="barri__pt"></p><p class="barri__px"></p></div>
+  </div>
+  <div class="barri__foot">
+    <p class="barri__hint">Toca un punt del mapa.</p>
+    <button class="barri__replay" type="button" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1M3.5 4v4.6h4.6"/></svg>
+      <span>Torna a caminar</span>
+    </button>
+  </div>
+</div>
+
+<style>
+.barri {
+  --c9: var(--green-900, #11352c); --c8: var(--green-800, #1a4d40); --c7: var(--green-700, #22604f);
+  --c6: var(--green-600, #2e7561); --c2: var(--green-200, #c9dcd4);
+  --cs: var(--sun, #e2c668); --cs-ink: var(--sun-ink, #6f5711); --cline: var(--line, #e7e1d4);
+  --cink: var(--ink, #23302b); --cmuted: var(--muted, #56635d);
+  --fh: var(--font-head, "Montserrat", ui-sans-serif, system-ui, sans-serif);
+  --fb: var(--font-body, "Lato", ui-sans-serif, system-ui, sans-serif);
+  --pin: 46px;
+  position: relative; overflow: hidden; background: #fff; color: var(--cink); font-family: var(--fb);
+  border: 1px solid var(--cline); border-radius: var(--radius-lg, 22px);
+  box-shadow: 0 1px 2px rgba(17,53,44,.06), 0 10px 28px rgba(17,53,44,.09);
+}
+.barri *, .barri *::before, .barri *::after { box-sizing: border-box; }
+.barri p { margin: 0; }
+.barri__scene { position: relative; height: var(--sh, 560px); }
+.barri__svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.barri__nodes { position: absolute; inset: 0; }
+.barri__node { position: absolute; width: 0; height: 0; }
+
+/* Punts del mapa */
+.barri__dot {
+  position: absolute; left: 0; top: 0; width: var(--d, var(--pin)); height: var(--d, var(--pin));
+  margin: calc(var(--d, var(--pin)) / -2) 0 0 calc(var(--d, var(--pin)) / -2); padding: 0;
+  display: grid; place-items: center; border-radius: 50%; cursor: pointer; -webkit-appearance: none; appearance: none;
+  -webkit-tap-highlight-color: transparent; background: #fff; border: 2px solid var(--c2); color: var(--c6);
+  box-shadow: 0 2px 6px rgba(17, 53, 44, .12);
+  transition: background-color .4s, border-color .4s, color .4s, box-shadow .3s, transform .3s, opacity .5s;
+}
+.barri__dot svg { width: 56%; height: 56%; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.barri__node.is-on .barri__dot { background: var(--c8); border-color: var(--c8); color: #fff; }
+.barri__node.is-pop .barri__dot { animation: barri-pop .6s cubic-bezier(.34, 1.56, .64, 1); }
+.barri__node.is-sel .barri__dot { box-shadow: 0 0 0 4px #fff, 0 0 0 7px var(--cs); }
+.barri__node:hover .barri__dot { transform: scale(1.07); }
+.barri__dot:focus { outline: none; }
+.barri__dot:focus-visible { box-shadow: 0 0 0 4px #fff, 0 0 0 7px var(--c7); }
+/* Casa */
+.barri__node--home .barri__dot { --d: calc(var(--pin) + 6px); background: var(--cs); border-color: #fff; border-width: 3px; color: var(--c9); }
+.barri__node--home.is-drop .barri__dot { animation: barri-drop .7s cubic-bezier(.34, 1.56, .64, 1); }
+.barri__node--home::before {
+  content: ""; position: absolute; left: 0; top: 0; width: calc(var(--pin) * 3); height: calc(var(--pin) * 3);
+  margin: calc(var(--pin) * -1.5) 0 0 calc(var(--pin) * -1.5); border-radius: 50%;
+  border: 2px dashed rgba(111, 87, 17, .35); opacity: 0; transform: scale(.5); transition: opacity .8s, transform 1.2s cubic-bezier(.34, 1.3, .64, 1);
+}
+.barri__node--home.is-ring::before { opacity: 1; transform: none; }
+/* Més ciutats */
+.barri__node--more .barri__dot { --d: 34px; border-style: dashed; border-color: var(--c6); color: var(--c7); background: rgba(255, 255, 255, .9); box-shadow: none; opacity: 0; transform: scale(.4); }
+.barri__node--more.is-on .barri__dot { opacity: 1; transform: none; background: #fff; color: var(--c7); }
+.barri__node--more.is-on:hover .barri__dot { transform: scale(1.07); }
+
+/* Etiquetes */
+.barri__lab {
+  position: absolute; width: max-content; max-width: 170px; padding: 3px 9px 4px; border-radius: 10px;
+  background: rgba(255, 255, 255, .86); box-shadow: 0 1px 2px rgba(17, 53, 44, .08);
+  font: 700 clamp(13px, calc(var(--sw, 1000px) * .0142), 15px)/1.25 var(--fh); color: var(--c9);
+  text-wrap: balance; cursor: pointer; transition: opacity .5s, box-shadow .3s;
+}
+.barri__node.is-sel .barri__lab { background: #fff; box-shadow: 0 0 0 2px var(--cs); }
+.barri__lab--a { left: 0; bottom: calc(var(--d, var(--pin)) / 2 + 8px); transform: translateX(-50%); text-align: center; }
+.barri__lab--b { left: 0; top: calc(var(--d, var(--pin)) / 2 + 8px); transform: translateX(-50%); text-align: center; }
+.barri__lab--r { top: 0; left: calc(var(--d, var(--pin)) / 2 + 10px); transform: translateY(-50%); }
+.barri__lab--l { top: 0; right: calc(var(--d, var(--pin)) / 2 + 10px); transform: translateY(-50%); text-align: right; }
+.barri__node--home .barri__lab { --d: calc(var(--pin) + 6px); }
+.barri__node--more .barri__lab { --d: 34px; opacity: 0; font-size: 13px; color: var(--c7); }
+.barri__node--more.is-on .barri__lab { opacity: 1; }
+
+/* Temps de cada ruta */
+.barri__chip {
+  position: absolute; left: 0; top: 0; transform: translate(-50%, -50%) scale(.6); opacity: 0;
+  display: inline-flex; align-items: center; gap: 4px; padding: 3px 9px 3px 7px; border-radius: 999px;
+  background: var(--cs); color: var(--c9); font: 700 12.5px/1.2 var(--fh); white-space: nowrap;
+  box-shadow: 0 0 0 2px #fff; transition: opacity .4s, transform .5s cubic-bezier(.34, 1.56, .64, 1); pointer-events: none;
+}
+.barri__chip svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; }
+.barri__chip.is-on { opacity: 1; transform: translate(-50%, -50%); }
+
+/* Globus */
+.barri__pop {
+  position: absolute; left: 0; top: 0; width: min(290px, calc(100% - 24px));
+  padding: 13px 15px 14px; border-radius: 14px; background: #fff;
+  border: 1px solid var(--cline); box-shadow: 0 2px 4px rgba(17,53,44,.06), 0 14px 32px rgba(17,53,44,.16);
+  opacity: 0; visibility: hidden; transform: translateY(6px); transition: opacity .2s, transform .2s, visibility .2s; z-index: 3;
+}
+.barri__pop.is-open { opacity: 1; visibility: visible; transform: none; }
+.barri__pk { font: 700 11.5px/1.3 var(--fh); letter-spacing: .08em; text-transform: uppercase; color: var(--cs-ink); }
+.barri__pt { font: 700 16px/1.3 var(--fh); color: var(--c9); margin-top: 3px !important; }
+.barri__px { font-size: 15.5px; line-height: 1.45; color: var(--cmuted); margin-top: 3px !important; }
+
+/* Peu */
+.barri__foot {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px 16px; flex-wrap: wrap;
+  min-height: 60px; padding: 10px clamp(14px, 3vw, 24px); border-top: 1px solid var(--cline); background: #fff;
+}
+.barri__hint { font-size: 14.5px; color: var(--cmuted); }
+.barri__replay {
+  flex: none; display: inline-flex; align-items: center; gap: .45em; padding: .55em 1em;
+  border-radius: 999px; border: 2px solid var(--c2); background: #fff; color: var(--c8);
+  font: 700 14px/1.2 var(--fh); cursor: pointer; transition: border-color .15s, color .15s, transform .15s;
+}
+.barri__replay:hover { border-color: var(--c7); color: var(--c9); transform: translateY(-1px); }
+.barri__replay:focus-visible { outline: 3px solid var(--c7); outline-offset: 2px; }
+.barri__replay svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.barri__replay[hidden] { display: none; }
+
+/* Mapa */
+.barri__fl { transform-box: fill-box; transform-origin: center; transform: scale(0); transition: transform .5s cubic-bezier(.34, 1.8, .64, 1); }
+.barri__fl.is-on { transform: none; }
+.barri__tree { transform-box: fill-box; transform-origin: center; transform: scale(0); transition: transform .9s cubic-bezier(.34, 1.56, .64, 1); }
+.barri.is-alive .barri__tree { transform: none; }
+.barri__people { opacity: 0; transition: opacity 1s; }
+.barri.is-alive .barri__people { opacity: 1; }
+.barri__halo { transform-box: fill-box; transform-origin: center; animation: barri-pulse 1.8s ease-in-out infinite; }
+.barri__water { animation: barri-flow 6s linear infinite; }
+
+@keyframes barri-pop { 0% { transform: scale(.7); } 60% { transform: scale(1.15); } 100% { transform: scale(1); } }
+@keyframes barri-drop { 0% { transform: translateY(-26px) scale(.8); opacity: 0; } 60% { transform: translateY(3px); opacity: 1; } 100% { transform: none; } }
+@keyframes barri-pulse { 0%, 100% { transform: scale(1); opacity: .45; } 50% { transform: scale(1.5); opacity: .15; } }
+@keyframes barri-flow { to { stroke-dashoffset: -60; } }
+@media (prefers-reduced-motion: reduce) {
+  .barri *, .barri *::before, .barri *::after { animation: none !important; transition: none !important; }
+}
+</style>
+
+<script>
+(function () {
+  "use strict";
+  var root = document.querySelector("[data-barri]");
+  if (!root || root.getAttribute("data-ready")) return;
+  root.setAttribute("data-ready", "1");
+
+  /* ---------- TEXTOS (els de la web; no hi surt cap ciutat, així val per a totes) ---------- */
+  // Canvis de la web (5 de novembre): «poble o ciutat», durades en paraules (no en minuts) i un espai natural per a la ruta llarga
+  var HOME = { label: "A prop de casa", kick: "Cada poble o ciutat, el seu mapa", title: "Rutes a prop de casa",
+    text: "Cada curs té les seves rutes a cada poble o ciutat: el curs et dona la pràctica, i la ruta, el temps per caminar-la." };
+  var ROUTES = [
+    { kind: "placa", label: "Una plaça", time: "Curta", kick: "Punt de sortida", title: "Places", text: "N'hi ha de molt curtes, d'uns 10 minuts." },
+    { kind: "equip", label: "Un equipament", time: "Mitjana", kick: "Punt de sortida", title: "Equipaments", text: "Rutes que surten de centres, equipaments o CAP a prop de casa." },
+    { kind: "parc", label: "Un espai natural", time: "Llarga", kick: "Punt de sortida", title: "Espais naturals", text: "I n'hi ha de més llargues, de més d'una hora." }
+  ];
+  var MORE = { label: "Cada cop més pobles i ciutats", kick: "Se n'aniran afegint més", title: "El teu poble o ciutat no hi és?",
+    text: "Fes la caminada a prop de casa o en un lloc tranquil." };
+
+  var ICON = {
+    home: '<path d="M4 11.5 12 4.5l8 7"/><path d="M6.5 10v9.5h11V10"/><path d="M10 19.5v-5h4v5"/>',
+    placa: '<path d="M4.5 15h15"/><path d="M6.5 15v3.5h11V15"/><path d="M12 15V8.5"/><path d="M12 8.5c-2-2.6-4.3-2.6-5.8 0M12 8.5c2-2.6 4.3-2.6 5.8 0"/><path d="M12 8.5V5.5"/>',
+    equip: '<path d="M3.5 9.5 12 4.5l8.5 5"/><path d="M4.5 20h15"/><path d="M6.5 10.5V17.5M10 10.5V17.5M14 10.5V17.5M17.5 10.5V17.5"/>',
+    parc: '<path d="M12 3a5 5 0 0 1 5 5 4 4 0 0 1-2 7.3H9A4 4 0 0 1 7 8a5 5 0 0 1 5-5z"/><path d="M12 15.3V21"/>',
+    plus: '<path d="M12 6.5v11M6.5 12h11"/>',
+    clock: '<circle cx="12" cy="12" r="8.2"/><path d="M12 7.8v4.6l3 1.8"/>'
+  };
+
+  /* ---------- RITME (ms) ---------- */
+  // 0: arribes a casa · 1-3: una ruta curta, una de mitjana i una de llarga · 4: el barri es desperta i el mapa creix
+  var D = [900, 1300, 1700, 2300, 1300], END_P = D.length;
+  var TALL = 700; // per sota d'aquesta amplada, mapa vertical
+
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var scene = root.querySelector(".barri__scene");
+  var svg = root.querySelector(".barri__svg");
+  var nodesBox = root.querySelector(".barri__nodes");
+  var pop = root.querySelector(".barri__pop");
+  var replay = root.querySelector(".barri__replay");
+
+  var S = { p: 0, sel: null, playing: false, started: false, t: 0, last: null, raf: 0, width: 0 };
+  var G = null, lastKey = "";
+
+  function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+  function smooth(v) { v = clamp(v, 0, 1); return v * v * (3 - 2 * v); }
+  function ease(x) { x = clamp(x, 0, 1); return -(Math.cos(Math.PI * x) - 1) / 2; }
+  function r1(n) { return Math.round(n * 10) / 10; }
+  function r2(n) { return Math.round(n * 100) / 100; }
+  function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;"); }
+  function seeded(k) { return function () { k = (k * 9301 + 49297) % 233280; return k / 233280; }; }
+
+  function curve(P, closed) {
+    var n = P.length, d = "M" + r1(P[0][0]) + "," + r1(P[0][1]), last = closed ? n : n - 1;
+    for (var i = 0; i < last; i++) {
+      var p0 = P[(i - 1 + n) % n], p1 = P[i], p2 = P[(i + 1) % n], p3 = P[(i + 2) % n];
+      if (!closed) { p0 = P[i - 1] || P[i]; p3 = P[i + 2] || p2; }
+      d += "C" + r1(p1[0] + (p2[0] - p0[0]) / 6) + "," + r1(p1[1] + (p2[1] - p0[1]) / 6) + " " +
+        r1(p2[0] - (p3[0] - p1[0]) / 6) + "," + r1(p2[1] - (p3[1] - p1[1]) / 6) + " " + r1(p2[0]) + "," + r1(p2[1]);
+    }
+    return d;
+  }
+  // Una ruta circular: surt del punt més proper a casa i hi torna
+  function loopPts(c, rx, ry, home, wob, ph) {
+    var a0 = Math.atan2((home[1] - c[1]) / ry, (home[0] - c[0]) / rx), P = [];
+    P.a0 = a0;
+    for (var j = 0; j < 9; j++) {
+      var a = a0 + j * 2 * Math.PI / 9, f = j === 0 ? 1 : 1 + wob * Math.sin(3 * a + ph);
+      P.push([c[0] + Math.cos(a) * rx * f, c[1] + Math.sin(a) * ry * f]);
+    }
+    return P;
+  }
+
+  /* ---------- GEOMETRIA ---------- */
+  function geometry(W) {
+    var tall = W < TALL, g = { W: W, tall: tall }, H, s, L;
+    if (!tall) {
+      H = Math.round(W * 0.5); s = W / 1000;
+      L = {
+        home: [.445, .55],
+        loops: [[.29, .30, 62, 50, 2], [.19, .71, 88, 70, 5], [.69, .55, 168, 122, 9]],
+        river: [[.875, -.06], [.86, .3], [.905, .62], [.88, 1.06]],
+        more: [[.05, .12, "r"], [.6, .07, "r"], [.035, .9, "r"]],
+        labs: ["r", "a", "a"], homeLab: "b"
+      };
+    } else {
+      // Mòbil: de dalt a baix — primer casa, després la ruta curta, la mitjana i la llarga, i al final més ciutats
+      H = Math.round(W * 1.58); s = W / 390;
+      L = {
+        home: [.5, .085],
+        loops: [[.27, .25, 58, 46, 2], [.7, .44, 66, 58, 5], [.42, .74, 128, 92, 9]],
+        river: [[1.08, .52], [.9, .68], [.96, .85], [.82, 1.04]],
+        more: [[.9, .962, "l"], [.06, .43, "r"]],
+        labs: ["r", "l", "l"], homeLab: "r"
+      };
+    }
+    g.H = H; g.s = s; g.L = L;
+    var px = function (q) { return [q[0] * W, q[1] * H]; };
+    g.home = px(L.home);
+    g.loops = L.loops.map(function (q, i) {
+      var c = px(q), rx = q[2] * s, ry = q[3] * s, P = loopPts(c, rx, ry, g.home, .12, q[4]);
+      return { c: c, rx: rx, ry: ry, pts: P, d: curve(P, true), pin: P[0], lab: L.labs[i], chipA: P.a0 + Math.PI };
+    });
+    g.river = curve(L.river.map(px), false);
+    g.more = L.more.map(function (q) { return { x: q[0] * W, y: q[1] * H, lab: q[2] }; });
+    g.pin = Math.round(clamp(W * .044, 42, 48));
+    return g;
+  }
+
+  /* ---------- DIBUIX ---------- */
+  function streets(W, H, s) {
+    var rnd = seeded(13), out = [], gx = 74 * s, gy = 62 * s, w = Math.max(4, 6.5 * s);
+    for (var x = gx * .55; x < W; x += gx * (.8 + rnd() * .45)) {
+      var t = (rnd() - .5) * 30 * s;
+      out.push('<line x1="' + r1(x) + '" y1="-10" x2="' + r1(x + t) + '" y2="' + (H + 10) + '"/>');
+    }
+    for (var y = gy * .5; y < H; y += gy * (.8 + rnd() * .45)) {
+      var u = (rnd() - .5) * 26 * s;
+      out.push('<line x1="-10" y1="' + r1(y) + '" x2="' + (W + 10) + '" y2="' + r1(y + u) + '"/>');
+    }
+    var big = '<line x1="' + r1(-W * .05) + '" y1="' + r1(H * .95) + '" x2="' + r1(W * .62) + '" y2="' + r1(-H * .05) + '"/>' +
+      '<line x1="' + r1(W * .2) + '" y1="' + r1(-H * .05) + '" x2="' + r1(W * 1.05) + '" y2="' + r1(H * .78) + '"/>';
+    return '<g stroke="#faf7f0" stroke-width="' + r1(w) + '" stroke-linecap="round">' + out.join("") + '</g>' +
+      '<g stroke="#fdfbf6" stroke-width="' + r1(w * 1.9) + '" stroke-linecap="round">' + big + '</g>';
+  }
+  function blob(c, rx, ry, seed) {
+    var rnd = seeded(seed), P = [];
+    for (var j = 0; j < 8; j++) { var a = j * Math.PI / 4, f = .86 + rnd() * .22; P.push([c[0] + Math.cos(a) * rx * f, c[1] + Math.sin(a) * ry * f]); }
+    return curve(P, true) + "Z";
+  }
+
+  function render() {
+    var W = Math.round(root.clientWidth);
+    if (!W) return;
+    G = geometry(W);
+    var H = G.H, s = G.s, out = [];
+    root.classList.toggle("barri--tall", G.tall);
+    root.style.setProperty("--sw", W + "px");
+    root.style.setProperty("--sh", H + "px");
+    root.style.setProperty("--pin", G.pin + "px");
+    svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+
+    var lp = G.loops;
+    out.push('<rect width="' + W + '" height="' + H + '" fill="#ece5d6"/>', streets(W, H, s));
+    // Riu
+    out.push('<path d="' + G.river + '" fill="none" stroke="#cfe2dd" stroke-width="' + r1(34 * s) + '" stroke-linecap="round"/>',
+      '<path class="barri__water" d="' + G.river + '" fill="none" stroke="#e3efec" stroke-width="' + r1(3 * s) + '" stroke-linecap="round" stroke-dasharray="' + r1(14 * s) + ' ' + r1(16 * s) + '"/>');
+    // Plaça (dins la ruta curta), equipament (dins la mitjana) i parc (dins la llarga)
+    var c0 = lp[0].c, c1 = lp[1].c, c2 = lp[2].c, rnd = seeded(5);
+    out.push('<circle cx="' + r1(c0[0]) + '" cy="' + r1(c0[1]) + '" r="' + r1(30 * s) + '" fill="#e5dbc5"/>',
+      '<circle cx="' + r1(c0[0]) + '" cy="' + r1(c0[1]) + '" r="' + r1(9 * s) + '" fill="#d3e6e1" stroke="#b9d0c8" stroke-width="' + r1(2 * s) + '"/>');
+    [[-1, -1], [1, -1], [1, 1], [-1, 1]].forEach(function (q) {
+      out.push('<circle cx="' + r1(c0[0] + q[0] * 19 * s) + '" cy="' + r1(c0[1] + q[1] * 19 * s) + '" r="' + r1(5.5 * s) + '" fill="#b5cfc0"/>');
+    });
+    out.push('<rect x="' + r1(c1[0] - 34 * s) + '" y="' + r1(c1[1] - 24 * s) + '" width="' + r1(68 * s) + '" height="' + r1(48 * s) + '" rx="' + r1(7 * s) + '" fill="#e2d6bd"/>',
+      '<rect x="' + r1(c1[0] - 22 * s) + '" y="' + r1(c1[1] - 13 * s) + '" width="' + r1(44 * s) + '" height="' + r1(26 * s) + '" rx="' + r1(3 * s) + '" fill="#d6c8aa"/>');
+    out.push('<path d="' + blob(c2, lp[2].rx * .72, lp[2].ry * .7, 3) + '" fill="#d3e5da"/>');
+    var trees = [], tr = [];
+    for (var k = 0; k < 26; k++) {
+      var a = rnd() * Math.PI * 2, rr = Math.sqrt(rnd()) * .62;
+      tr.push([c2[0] + Math.cos(a) * lp[2].rx * rr, c2[1] + Math.sin(a) * lp[2].ry * rr, (5 + rnd() * 4) * s]);
+    }
+    tr.forEach(function (t, i) { trees.push('<circle cx="' + r1(t[0]) + '" cy="' + r1(t[1]) + '" r="' + r1(t[2]) + '" fill="#b5cfc0"/>'); });
+    out.push(trees.join(""));
+    // Arbres que creixen quan el barri es desperta
+    out.push('<g>' + tr.filter(function (t, i) { return i % 2 === 0; }).map(function (t, i) {
+      return '<circle class="barri__tree" style="transition-delay:' + (i * 40) + 'ms" cx="' + r1(t[0] + 3 * s) + '" cy="' + r1(t[1] - 2 * s) + '" r="' + r1(t[2] * .9) + '" fill="#2e7561" fill-opacity=".55"/>';
+    }).join("") + '</g>');
+    // Boira del matí i llum càlida del final
+    out.push('<rect class="barri__mist" width="' + W + '" height="' + H + '" fill="#e1e5e2"/>',
+      '<rect class="barri__warm" width="' + W + '" height="' + H + '" fill="#f8e7b4"/>');
+    // Camins cap a fora del mapa (més ciutats)
+    G.more.forEach(function (m) {
+      var hx = G.home[0], hy = G.home[1], mx = (m.x + hx) / 2, my = (m.y + hy) / 2;
+      out.push('<path class="barri__out" d="M' + r1(hx) + ',' + r1(hy) + 'Q' + r1(mx + (m.y - hy) * .15) + ',' + r1(my - (m.x - hx) * .15) + ' ' + r1(m.x) + ',' + r1(m.y) + '" fill="none" stroke="#2e7561" stroke-opacity=".45" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="2 8"/>');
+    });
+    // Rutes
+    lp.forEach(function (l, i) {
+      out.push('<path id="barri-l' + i + '" d="' + l.d + '" fill="none" stroke="#1a4d40" stroke-opacity=".35" stroke-width="4" stroke-linecap="round" stroke-dasharray="0.1 10"/>');
+    });
+    lp.forEach(function (l, i) {
+      out.push('<path class="barri__route" d="' + l.d + '" fill="none" stroke="#1a4d40" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>');
+    });
+    out.push('<g class="barri__flowers"></g>');
+    // Gent que també camina (al final)
+    var cols = ["#2e7561", "#6f5711", "#1a4d40"];
+    out.push('<g class="barri__people">');
+    lp.forEach(function (l, i) {
+      var dur = [11, 17, 26][i];
+      [0, .5].forEach(function (off, j) {
+        if (i === 0 && j === 1) return;
+        out.push('<circle r="' + r1(Math.max(3.5, 4.5 * s)) + '" fill="' + cols[(i + j) % 3] + '" stroke="#fff" stroke-width="1.5">' +
+          (reduce ? '' : '<animateMotion class="barri__am" dur="' + dur + 's" repeatCount="indefinite" begin="indefinite" keyPoints="' + off + ';' + (off ? '1;0;' + off : '1') + '" keyTimes="' + (off ? '0;' + (1 - off).toFixed(3) + ';' + (1 - off + .001).toFixed(3) + ';1' : '0;1') + '" calcMode="linear"><mpath href="#barri-l' + i + '" xlink:href="#barri-l' + i + '"/></animateMotion>') + '</circle>');
+      });
+    });
+    out.push('</g>');
+    out.push('<g class="barri__walker"><circle class="barri__halo" r="15" fill="#e2c668"/><circle r="8" fill="#e2c668" stroke="#fff" stroke-width="3"/></g>');
+    svg.innerHTML = out.join("");
+
+    // Punts (HTML)
+    var html = [];
+    html.push(node("home", G.home, ICON.home, HOME.label, G.L.homeLab, HOME));
+    lp.forEach(function (l, i) { html.push(node("r" + i, l.pin, ICON[ROUTES[i].kind], ROUTES[i].label, l.lab, ROUTES[i])); });
+    G.more.forEach(function (m, i) { html.push(node("m" + i, [m.x, m.y], ICON.plus, i === 0 ? MORE.label : "", m.lab, MORE, "more")); });
+    lp.forEach(function (l, i) {
+      var a = l.chipA, x = l.c[0] + Math.cos(a) * l.rx * 1.02, y = l.c[1] + Math.sin(a) * l.ry * 1.02;
+      html.push('<span class="barri__chip" data-c="' + i + '" style="left:' + r1(x) + 'px;top:' + r1(y) + 'px"><svg viewBox="0 0 24 24" aria-hidden="true">' + ICON.clock + '</svg>' + ROUTES[i].time + '</span>');
+    });
+    nodesBox.innerHTML = html.join("");
+
+    // Referències i longituds
+    G.el = {};
+    ["walker", "mist", "warm", "flowers", "people"].forEach(function (k) { G.el[k] = svg.querySelector(".barri__" + k); });
+    G.routes = Array.prototype.slice.call(svg.querySelectorAll(".barri__route"));
+    G.outs = Array.prototype.slice.call(svg.querySelectorAll(".barri__out"));
+    var fl = [];
+    G.routes.forEach(function (p, i) {
+      p._len = p.getTotalLength(); p.style.strokeDasharray = p._len;
+      // Petites flors al llarg de la ruta: el que es descobreix caminant
+      var n = Math.max(3, Math.round(p._len / (58 * Math.max(.8, s)))), c = G.loops[i].c;
+      for (var j = 1; j < n; j++) {
+        var f = j / n, pt = p.getPointAtLength(f * p._len), dx = pt.x - c[0], dy = pt.y - c[1], dl = Math.sqrt(dx * dx + dy * dy) || 1, off = 9 * Math.max(.85, s);
+        fl.push('<circle class="barri__fl" data-r="' + i + '" data-f="' + r2(f) + '" cx="' + r1(pt.x + dx / dl * off) + '" cy="' + r1(pt.y + dy / dl * off) + '" r="' + r1(Math.max(3, 3.6 * s)) + '" fill="' + (j % 3 ? "#e2c668" : "#fff") + '" stroke="' + (j % 3 ? "#fff" : "#2e7561") + '" stroke-width="1.5"/>');
+      }
+    });
+    G.el.flowers.innerHTML = fl.join("");
+    G.fls = Array.prototype.slice.call(G.el.flowers.children);
+    G.anims = Array.prototype.slice.call(svg.querySelectorAll(".barri__am"));
+    G.nodes = {};
+    Array.prototype.forEach.call(nodesBox.querySelectorAll(".barri__node"), function (el) { G.nodes[el.getAttribute("data-k")] = el; });
+    G.chips = Array.prototype.slice.call(nodesBox.querySelectorAll(".barri__chip"));
+    lastKey = ""; G.peopleOn = false;
+    apply();
+    if (S.sel) openPop(S.sel);
+  }
+  function node(k, at, icon, label, lab, data, kind) {
+    return '<div class="barri__node barri__node--' + (kind || (k === "home" ? "home" : "route")) + '" data-k="' + k + '" style="left:' + r1(at[0]) + 'px;top:' + r1(at[1]) + 'px">' +
+      '<button type="button" class="barri__dot" aria-label="' + esc(data.title + ": " + data.text) + '"><svg viewBox="0 0 24 24" aria-hidden="true">' + icon + '</svg></button>' +
+      (label ? '<span class="barri__lab barri__lab--' + lab + '" aria-hidden="true">' + esc(label) + '</span>' : '') + '</div>';
+  }
+
+  /* ---------- ESTAT ---------- */
+  function apply() {
+    if (!G) return;
+    var p = S.p, wi = -1, wl = 0;
+    G.routes.forEach(function (path, i) {
+      var q = ease(p - 1 - i), len = path._len * q;
+      path.style.strokeDashoffset = path._len - len;
+      if (p >= 1 + i && p < 2 + i) { wi = i; wl = len; }
+    });
+    if (wi >= 0) {
+      var pt = G.routes[wi].getPointAtLength(wl);
+      G.el.walker.setAttribute("transform", "translate(" + r1(pt.x) + "," + r1(pt.y) + ")");
+    }
+    G.el.walker.setAttribute("opacity", wi >= 0 ? 1 : 0);
+    G.el.mist.setAttribute("opacity", r2(.62 * (1 - smooth((p - .6) / 3.8))));
+    G.el.warm.setAttribute("opacity", r2(.22 * smooth((p - 3.6) / 1.2)));
+    G.outs.forEach(function (o) { o.setAttribute("opacity", r2(smooth((p - 4.2) / .6))); });
+
+    var fk = G.fls.map(function (f) { var r = +f.getAttribute("data-r"); return ease(p - 1 - r) >= +f.getAttribute("data-f") ? 1 : 0; }).join("");
+    var key = [p > 0, p >= .25, Math.floor(p + 1e-6), fk, S.sel, p >= 4, p >= 4.25, p >= END_P].join("|");
+    if (key === lastKey) return;
+    lastKey = key;
+    G.fls.forEach(function (f, i) { f.classList.toggle("is-on", fk.charAt(i) === "1"); });
+    var home = G.nodes.home;
+    if (p > 0 && !home.classList.contains("is-drop") && S.playing) home.classList.add("is-drop");
+    home.classList.toggle("is-ring", p >= .25 && p < 1.4);
+    home.classList.toggle("is-sel", S.sel === "home");
+    ROUTES.forEach(function (r, i) {
+      var el = G.nodes["r" + i], on = p >= 1 + i;
+      if (on && !el.classList.contains("is-on") && S.playing) {
+        el.classList.add("is-pop");
+        setTimeout(function () { el.classList.remove("is-pop"); }, 650);
+      }
+      el.classList.toggle("is-on", on);
+      el.classList.toggle("is-sel", S.sel === "r" + i);
+      G.chips[i].classList.toggle("is-on", p >= 2 + i - .02);
+    });
+    G.more.forEach(function (m, i) {
+      var el = G.nodes["m" + i];
+      el.classList.toggle("is-on", p >= 4.25);
+      el.querySelector(".barri__dot").style.transitionDelay = (i * 160) + "ms";
+      el.classList.toggle("is-sel", S.sel === "m" + i);
+    });
+    root.classList.toggle("is-alive", p >= 4);
+    root.classList.toggle("is-done", p >= END_P);
+    if (p >= 4 && !G.peopleOn) { G.peopleOn = true; G.anims.forEach(function (a) { try { a.beginElement(); } catch (e) {} }); }
+    if (p < 4 && G.peopleOn) { G.peopleOn = false; G.anims.forEach(function (a) { try { a.endElement(); } catch (e) {} }); }
+    replay.hidden = !(p >= END_P && !reduce);
+  }
+
+  /* ---------- GLOBUS ---------- */
+  function openPop(k) {
+    var d, at, half;
+    if (k === "home") { d = HOME; at = G.home; half = G.pin / 2 + 14; }
+    else if (k.charAt(0) === "r") { d = ROUTES[+k.slice(1)]; at = G.loops[+k.slice(1)].pin; half = G.pin / 2 + 12; }
+    else { d = MORE; var m = G.more[+k.slice(1)]; at = [m.x, m.y]; half = 30; }
+    pop.querySelector(".barri__pk").textContent = d.kick;
+    pop.querySelector(".barri__pt").textContent = d.title;
+    pop.querySelector(".barri__px").textContent = d.text;
+    pop.classList.add("is-open");
+    var pw = pop.offsetWidth, ph = pop.offsetHeight;
+    var x = clamp(at[0] - pw / 2, 12, G.W - pw - 12);
+    var y = at[1] + half + ph + 8 <= G.H ? at[1] + half : at[1] - half - ph;
+    pop.style.left = r1(x) + "px";
+    pop.style.top = r1(clamp(y, 8, G.H - ph - 8)) + "px";
+  }
+  function select(k) { S.sel = k; lastKey = ""; apply(); if (k) openPop(k); else pop.classList.remove("is-open"); }
+
+  /* ---------- ANIMACIÓ ---------- */
+  function toP(t) {
+    for (var i = 0; i < D.length; i++) { if (t < D[i]) return i + t / D[i]; t -= D[i]; }
+    return END_P;
+  }
+  function tick(ts) {
+    if (!S.playing) return;
+    if (S.last === null) S.last = ts;
+    S.t += Math.min(64, ts - S.last); S.last = ts;
+    S.p = toP(S.t);
+    if (S.p >= END_P) S.playing = false;
+    apply();
+    if (S.playing) S.raf = requestAnimationFrame(tick);
+  }
+  function play() {
+    cancelAnimationFrame(S.raf);
+    S.started = true; S.sel = null; pop.classList.remove("is-open");
+    if (reduce) { S.p = END_P; S.playing = false; lastKey = ""; apply(); return; }
+    if (G) G.nodes.home.classList.remove("is-drop");
+    S.p = 0; S.t = 0; S.last = null; S.playing = true; lastKey = "";
+    apply();
+    setTimeout(function () { S.raf = requestAnimationFrame(tick); }, 300);
+  }
+  function stop() { cancelAnimationFrame(S.raf); S.playing = false; S.p = END_P; S.started = true; }
+
+  nodesBox.addEventListener("click", function (e) {
+    var el = e.target.closest ? e.target.closest(".barri__node") : null;
+    if (!el) return;
+    var k = el.getAttribute("data-k");
+    if (k.charAt(0) === "m" && S.p < 4.25 && !S.playing) return;
+    if (S.playing) stop();
+    select(S.sel === k ? null : k);
+  });
+  document.addEventListener("click", function (e) {
+    if (S.sel && !(e.target.closest && (e.target.closest(".barri__node") || e.target.closest(".barri__pop")))) select(null);
+  });
+  root.addEventListener("keydown", function (e) { if (e.key === "Escape" && S.sel) select(null); });
+  replay.addEventListener("click", function (e) { e.stopPropagation(); play(); });
+
+  /* ---------- MIDA I ARRENCADA ---------- */
+  render();
+  S.width = Math.round(root.clientWidth);
+  var pending = false;
+  function onResize() {
+    if (pending) return;
+    pending = true;
+    requestAnimationFrame(function () {
+      pending = false;
+      var w = Math.round(root.clientWidth);
+      if (w && w !== S.width) { S.width = w; render(); }
+    });
+  }
+  if (window.ResizeObserver) new ResizeObserver(onResize).observe(root);
+  else window.addEventListener("resize", onResize);
+
+  if (reduce) { S.p = END_P; apply(); }
+  else if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting && !S.started) { io.disconnect(); play(); } });
+    }, { threshold: 0.3 });
+    io.observe(scene);
+  } else play();
+})();
+</script>

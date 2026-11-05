@@ -1,0 +1,451 @@
+{# infografia-7-passes.html: copiat del bloc INICI–FINAL de la carpeta «Infografies web» (5 de novembre de 2026). #}
+<div class="espi" data-espi{% if curs %} data-curs="{{ curs }}"{% endif %}>
+  <div class="espi__grid">
+    <div class="espi__scene" role="group" aria-label="L'espiral de les 7 passes; cada passa té quatre moments">
+      <svg class="espi__svg" aria-hidden="true" focusable="false"></svg>
+      <div class="espi__nodes"></div>
+      <div class="espi__hub" aria-live="polite"><p class="espi__hk"></p><p class="espi__ht"></p><p class="espi__hx"></p></div>
+    </div>
+    <div class="espi__legend">
+      <p class="espi__lh">Cada passa, quatre moments</p>
+      <ol class="espi__moments"></ol>
+      <ul class="espi__chips"></ul>
+    </div>
+  </div>
+  <div class="espi__foot">
+    <p class="espi__hint">Toca una passa per veure'n la pregunta.</p>
+    <button class="espi__replay" type="button" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1M3.5 4v4.6h4.6"/></svg>
+      <span>Torna a caminar</span>
+    </button>
+  </div>
+</div>
+
+<style>
+.espi {
+  --c9: var(--green-900, #11352c); --c8: var(--green-800, #1a4d40); --c7: var(--green-700, #22604f);
+  --c6: var(--green-600, #2e7561); --c2: var(--green-200, #c9dcd4); --c1: var(--green-100, #e3eee9);
+  --cs: var(--sun, #e2c668); --cs-ink: var(--sun-ink, #6f5711); --cline: var(--line, #e7e1d4);
+  --cink: var(--ink, #23302b); --cmuted: var(--muted, #56635d);
+  --fh: var(--font-head, "Montserrat", ui-sans-serif, system-ui, sans-serif);
+  --fb: var(--font-body, "Lato", ui-sans-serif, system-ui, sans-serif);
+  --node: 50px;
+  position: relative; overflow: hidden; background: #fff; color: var(--cink); font-family: var(--fb);
+  border: 1px solid var(--cline); border-radius: var(--radius-lg, 22px);
+  box-shadow: 0 1px 2px rgba(17,53,44,.06), 0 10px 28px rgba(17,53,44,.09);
+}
+.espi *, .espi *::before, .espi *::after { box-sizing: border-box; }
+.espi p { margin: 0; }
+.espi__grid { display: grid; grid-template-columns: minmax(0, 1fr) 310px; background: linear-gradient(180deg, #f3f5f2, #f7f4ec); }
+.espi--stack .espi__grid { grid-template-columns: minmax(0, 1fr); }
+.espi__scene { position: relative; height: var(--sh, 520px); }
+.espi__svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.espi__nodes { position: absolute; inset: 0; }
+.espi__node { position: absolute; width: 0; height: 0; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+
+/* Les passes */
+.espi__dot {
+  position: absolute; left: 0; top: 0; width: var(--node); height: var(--node);
+  margin: calc(var(--node) / -2) 0 0 calc(var(--node) / -2); padding: 0;
+  display: grid; place-items: center; border-radius: 50%; cursor: inherit; -webkit-appearance: none; appearance: none;
+  background: #fff; border: 2px solid var(--c2); color: var(--c6);
+  transition: background-color .4s, border-color .4s, color .4s, box-shadow .3s, transform .3s;
+}
+.espi__dot svg { width: 52%; height: 52%; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.espi__num {
+  position: absolute; top: -6px; right: -7px; width: 20px; height: 20px; border-radius: 50%;
+  display: grid; place-items: center; background: #fff; border: 1.5px solid var(--c2); color: var(--c8);
+  font: 700 11px/1 var(--fh); transition: background-color .4s, border-color .4s;
+}
+.espi__node.is-on .espi__dot { background: var(--c8); border-color: var(--c8); color: #fff; }
+.espi__node.is-on .espi__num { background: var(--cs); border-color: #fff; color: var(--c9); }
+.espi__node.is-pop .espi__dot { animation: espi-pop .6s cubic-bezier(.34, 1.56, .64, 1); }
+.espi__node.is-sel .espi__dot { box-shadow: 0 0 0 9px rgba(226, 198, 104, .55); }
+.espi__node:hover .espi__dot { transform: scale(1.07); }
+.espi__dot:focus { outline: none; }
+.espi__dot:focus-visible { box-shadow: 0 0 0 4px #fff, 0 0 0 7px var(--c7); }
+.espi__lab {
+  position: absolute; width: max-content; max-width: 124px; padding: 3px 8px 4px; border-radius: 9px;
+  background: rgba(255, 255, 255, .82); font: 700 14px/1.25 var(--fh); color: var(--c9); text-wrap: balance;
+  opacity: .55; transition: opacity .4s, box-shadow .3s;
+}
+.espi__node.is-on .espi__lab { opacity: 1; }
+.espi__node.is-sel .espi__lab { background: #fff; box-shadow: 0 0 0 2px var(--cs); }
+.espi__lab--r { top: 0; left: calc(var(--node) / 2 + 13px); transform: translateY(-50%); }
+.espi__lab--l { top: 0; right: calc(var(--node) / 2 + 13px); transform: translateY(-50%); text-align: right; }
+.espi__lab--a { left: 0; bottom: calc(var(--node) / 2 + 13px); transform: translateX(-50%); text-align: center; }
+.espi__lab--b { left: 0; top: calc(var(--node) / 2 + 13px); transform: translateX(-50%); text-align: center; }
+.espi--nolab .espi__lab { display: none; }
+
+/* Anell dels quatre moments de cada passa */
+.espi__arc { fill: none; stroke: #d6ddd9; stroke-width: 4; stroke-linecap: round; transition: stroke .25s; }
+.espi__arc.is-on { stroke: var(--cs); }
+.espi__arc.is-now { stroke: #c9a53c; }
+
+/* Centre de l'espiral */
+.espi__hub { position: absolute; left: 0; top: 0; transform: translate(-50%, -50%); width: var(--hubw, 170px); text-align: center; pointer-events: none; }
+.espi__hk { font: 700 11px/1.3 var(--fh); letter-spacing: .08em; text-transform: uppercase; color: var(--cs-ink); }
+.espi__ht { font: 700 clamp(15px, calc(var(--hubw, 170px) * .1), 18px)/1.25 var(--fh); color: var(--c9); margin-top: 4px !important; text-wrap: balance; }
+.espi__hx { font-size: clamp(13px, calc(var(--hubw, 170px) * .085), 15px); line-height: 1.4; color: var(--cmuted); margin-top: 4px !important; text-wrap: balance; }
+.espi__hub.is-fresh { animation: espi-fade .4s ease; }
+
+/* Llegenda dels quatre moments */
+.espi__legend { padding: 28px 26px 24px 6px; display: flex; flex-direction: column; justify-content: center; }
+.espi--stack .espi__legend { padding: 16px 18px 22px; }
+.espi--stack .espi__moments { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.espi__lh { font: 700 16px/1.3 var(--fh); color: var(--c9); margin-bottom: 12px !important; }
+.espi__moments { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.espi__m {
+  display: grid; grid-template-columns: 40px 1fr; gap: 0 12px; align-items: center;
+  padding: 9px 12px 9px 9px; border-radius: 14px; background: #fff; border: 1px solid var(--cline);
+  transition: border-color .25s, box-shadow .25s, transform .25s;
+}
+.espi__m.is-now { border-color: var(--cs); box-shadow: 0 0 0 2px rgba(226, 198, 104, .45); transform: translateX(3px); }
+.espi__mi { grid-row: span 2; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: var(--c1); color: var(--c7); transition: background-color .25s, color .25s; }
+.espi__m.is-now .espi__mi { background: var(--cs); color: var(--c9); }
+.espi__mi svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.espi__mn { font: 700 15px/1.25 var(--fh); color: var(--c9); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.espi__mt { font: 700 11.5px/1.2 var(--fh); color: var(--cs-ink); background: #f8efd2; padding: 2px 7px; border-radius: 999px; }
+.espi__mx { font-size: 14.5px; line-height: 1.35; color: var(--cmuted); }
+.espi__chips { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.espi__chips li { display: inline-flex; align-items: center; gap: 6px; padding: 5px 11px 5px 8px; border-radius: 999px; background: #fff; border: 1px solid var(--cline); font: 700 13px/1.2 var(--fh); color: var(--c7); }
+.espi__chips svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Peu */
+.espi__foot {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px 16px; flex-wrap: wrap;
+  min-height: 60px; padding: 10px clamp(14px, 3vw, 24px); border-top: 1px solid var(--cline); background: #fff;
+}
+.espi__hint { font-size: 14.5px; color: var(--cmuted); }
+.espi__replay {
+  flex: none; display: inline-flex; align-items: center; gap: .45em; padding: .55em 1em;
+  border-radius: 999px; border: 2px solid var(--c2); background: #fff; color: var(--c8);
+  font: 700 14px/1.2 var(--fh); cursor: pointer; transition: border-color .15s, color .15s, transform .15s;
+}
+.espi__replay:hover { border-color: var(--c7); color: var(--c9); transform: translateY(-1px); }
+.espi__replay:focus-visible { outline: 3px solid var(--c7); outline-offset: 2px; }
+.espi__replay svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.espi__replay[hidden] { display: none; }
+
+.espi__more { opacity: 0; transition: opacity .8s; }
+.espi.is-done .espi__more { opacity: 1; }
+.espi--nolab .espi__hub { padding-top: 6px; }
+.espi__halo { transform-box: fill-box; transform-origin: center; animation: espi-pulse 1.8s ease-in-out infinite; }
+@keyframes espi-pop { 0% { transform: scale(.7); } 60% { transform: scale(1.15); } 100% { transform: scale(1); } }
+@keyframes espi-pulse { 0%, 100% { transform: scale(1); opacity: .45; } 50% { transform: scale(1.5); opacity: .15; } }
+@keyframes espi-fade { from { opacity: 0; transform: translate(-50%, calc(-50% + 4px)); } to { opacity: 1; transform: translate(-50%, -50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .espi *, .espi *::before, .espi *::after { animation: none !important; transition: none !important; }
+}
+</style>
+
+<script>
+(function () {
+  "use strict";
+  var root = document.querySelector("[data-espi]");
+  if (!root || root.getAttribute("data-ready")) return;
+  root.setAttribute("data-ready", "1");
+
+  /* ---------- TEXTOS (els de la web; es poden canviar aquí) ---------- */
+  var PASSES = [
+    ["Allò que estimo", "Què té valor per a mi? Què vull cuidar?"],
+    ["Allò que em sosté", "Quines persones, llocs o recursos m'ajuden?"],
+    ["Allò que em preocupa", "Què em pesa? Què necessita ser escoltat?"],
+    ["Allò que m'inspira", "Qui o què em recorda que altres camins són possibles?"],
+    ["L'esperança", "Quina direcció voldria ajudar a fer possible?"],
+    ["El meu paper", "Quin lloc puc ocupar jo dins d'aquesta història?"],
+    ["El següent pas possible", "Quina acció petita, concreta i realista puc fer ara?"]
+  ];
+  var MOMENTS = [
+    { icon: "video", name: "Explora", time: "3-5 min", text: "Un vídeo d'introducció" },
+    { icon: "phones", name: "Practica", time: "uns 15 min", text: "Una pràctica guiada" },
+    { icon: "steps", name: "Camina", time: "", text: "Un temps de reflexió en una de les rutes" },
+    { icon: "sun", name: "Integra", time: "", text: "Un vídeo de tancament per portar-ho a la vida" }
+  ];
+  var CHIPS = [["clock", "7 dies o al teu ritme"], ["leaf", "No cal experiència en meditació"]];
+  var HUB_START = ["L'Espiral", "7 passes", "Cada passa, quatre moments"];
+  var HUB_END = ["Cada curs", "7 passes", "Les mateixes, amb la mirada de cada curs. Toca'n una per veure-la."]; // canvi de la web
+  function kick(n) { return "Passa " + n + " de 7"; }
+
+  /* ---------- A LA PÀGINA DE CADA CURS ----------
+     Posa data-curs="vida", "cuidar", "mon" o "dia" al <div class="espi" data-espi>.
+     Les passes de cada curs: [títol, pregunta]. Mentre un curs no en tingui de pròpies (null), surten les generals.
+     (5 de novembre: les frases són les mateixes a tots els cursos; el que canvia és cap on els àudios i els vídeos orienten la reflexió.) */
+  var PER_CURS = {
+    vida: null,
+    cuidar: null,
+    mon: null,
+    dia: null
+  };
+  var curs = root.getAttribute("data-curs");
+  if (curs) {
+    if (PER_CURS[curs]) PASSES = PER_CURS[curs];
+    HUB_END = ["Aquest curs", "7 passes", "Toca'n una per veure'n la pregunta."];
+  }
+
+  var ICON = {
+    p1: '<path d="M12 20s-7.5-4.5-7.5-10.2A4.2 4.2 0 0 1 12 7.3a4.2 4.2 0 0 1 7.5 2.5C19.5 15.5 12 20 12 20z"/>',
+    p2: '<path d="M12 3a5 5 0 0 1 5 5 4 4 0 0 1-2 7.3H9A4 4 0 0 1 7 8a5 5 0 0 1 5-5z"/><path d="M12 15.3V19"/><path d="M12 19c-1.6 0-3.2.8-4.4 2M12 19c1.6 0 3.2.8 4.4 2M12 19v2"/>',
+    p3: '<path d="M7.5 14.5h9a3.4 3.4 0 0 0 .4-6.8A5 5 0 0 0 7.2 8.6a3 3 0 0 0 .3 5.9z"/><path d="M9.5 17.5l-1 2.5M13 17.5l-1 2.5M16.5 17.5l-1 2.5"/>',
+    p4: '<path d="M2.5 15c2.6-4.6 6.2-5.1 9.5-.6 3.3-4.5 6.9-4 9.5.6"/><path d="M13.6 8c1.2-1.9 2.8-2.1 4-.3 1.2-1.8 2.8-1.6 3.8.3"/>',
+    p5: '<path d="M12 21.5V3"/><path d="M12 5h6.3l2.2 2.2-2.2 2.2H12"/><path d="M12 12.4H5.7l-2.2 2.2 2.2 2.2H12"/>',
+    p6: '<path d="M12 21v-8"/><path d="M12 13c0-3.6 2.5-6.2 6.6-6.2 0 3.9-2.6 6.2-6.6 6.2z"/><path d="M12 15.6c0-3.1-2.2-5.2-5.6-5.2 0 3.2 2.2 5.2 5.6 5.2z"/><path d="M8 21h8"/>',
+    p7: '<path d="M8.3 2.8c1.8 0 2.7 2 2.7 4.3S10.1 11.8 8.3 11.8 5.6 9.4 5.6 7.1 6.5 2.8 8.3 2.8z"/><path d="M6.4 14h3.8v1.1a1.9 1.9 0 0 1-3.8 0z"/><path d="M15.8 7c1.8 0 2.7 2 2.7 4.3s-.9 4.7-2.7 4.7-2.7-2.4-2.7-4.7S14 7 15.8 7z"/><path d="M13.9 18.2h3.8v1.1a1.9 1.9 0 0 1-3.8 0z"/>',
+    video: '<rect x="3.5" y="5" width="17" height="12" rx="2"/><path d="M10.4 8.6v5.8l4.8-2.9z"/><path d="M8.5 20.5h7"/>',
+    phones: '<path d="M4.5 15.5V13a7.5 7.5 0 0 1 15 0v2.5"/><rect x="3.5" y="14" width="4.2" height="6.5" rx="1.8"/><rect x="16.3" y="14" width="4.2" height="6.5" rx="1.8"/>',
+    steps: '<path d="M8.3 2.8c1.8 0 2.7 2 2.7 4.3S10.1 11.8 8.3 11.8 5.6 9.4 5.6 7.1 6.5 2.8 8.3 2.8z"/><path d="M6.4 14h3.8v1.1a1.9 1.9 0 0 1-3.8 0z"/><path d="M15.8 7c1.8 0 2.7 2 2.7 4.3s-.9 4.7-2.7 4.7-2.7-2.4-2.7-4.7S14 7 15.8 7z"/><path d="M13.9 18.2h3.8v1.1a1.9 1.9 0 0 1-3.8 0z"/>',
+    sun: '<circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/>',
+    clock: '<circle cx="12" cy="12" r="8.2"/><path d="M12 7.8v4.6l3 1.8"/>',
+    leaf: '<path d="M5 19c0-8 5.5-13 14-13 0 8.5-5 14-13 14z"/><path d="M5 19c3.5-4.5 6.5-7 10-9"/>'
+  };
+
+  /* ---------- RITME (ms) ---------- */
+  var T_START = 320, T_MOM1 = 560, T_MOVE = 520, T_MOM = 110, T_TAIL = 800;
+  var SIDE = 960, LABELS = 700; // per sota de SIDE la llegenda va a sota; per sota de LABELS els noms surten al centre
+
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var scene = root.querySelector(".espi__scene");
+  var svg = root.querySelector(".espi__svg");
+  var nodesBox = root.querySelector(".espi__nodes");
+  var hub = root.querySelector(".espi__hub");
+  var replay = root.querySelector(".espi__replay");
+
+  var S = { t: 0, sel: -1, playing: false, started: false, last: null, raf: 0, width: 0 };
+  var G = null, PLAN = null, lastKey = "", lastHub = "";
+
+  function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+  function smooth(v) { v = clamp(v, 0, 1); return v * v * (3 - 2 * v); }
+  function ease(x) { x = clamp(x, 0, 1); return -(Math.cos(Math.PI * x) - 1) / 2; }
+  function r1(n) { return Math.round(n * 10) / 10; }
+  function r2(n) { return Math.round(n * 100) / 100; }
+  function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;"); }
+
+  /* ---------- LLEGENDA (es fa una sola vegada) ---------- */
+  root.querySelector(".espi__moments").innerHTML = MOMENTS.map(function (m) {
+    return '<li class="espi__m"><span class="espi__mi" aria-hidden="true"><svg viewBox="0 0 24 24">' + ICON[m.icon] + '</svg></span>' +
+      '<span class="espi__mn">' + esc(m.name) + (m.time ? '<span class="espi__mt">' + esc(m.time) + '</span>' : '') + '</span>' +
+      '<span class="espi__mx">' + esc(m.text) + '</span></li>';
+  }).join("");
+  root.querySelector(".espi__chips").innerHTML = CHIPS.map(function (c) {
+    return '<li><svg viewBox="0 0 24 24" aria-hidden="true">' + ICON[c[0]] + '</svg>' + esc(c[1]) + '</li>';
+  }).join("");
+  var momEls = Array.prototype.slice.call(root.querySelectorAll(".espi__m"));
+
+  /* ---------- GEOMETRIA: una espiral que s'obre cap enfora ---------- */
+  var TH0 = -105 * Math.PI / 180, DTH = 48 * Math.PI / 180, STEP = 3 * Math.PI / 180, TAIL = 50 * Math.PI / 180, PER = 16;
+  function geometry(W) {
+    var g = { W: W, lab: W >= LABELS }, size, node;
+    if (g.lab) { size = clamp(W * .7, 430, 520); node = 50; g.r0 = .21 * size; g.r1 = .40 * size; }
+    else { size = Math.min(W - 16, 420); node = Math.round(clamp(W * .115, 38, 46)); g.r0 = .24 * size; g.r1 = .415 * size; } // «W - 16»: marge perquè la passa 7 no es talli a la vora (canvi de la web)
+    // Amb noms al voltant, el text de la passa va al centre; al mòbil, a sota de l'espiral
+    g.H = Math.round(g.lab ? size + 16 : size + 120); g.cx = W / 2; g.cy = g.lab ? g.H / 2 : size / 2 + 6; g.node = node;
+    var span = 6 * DTH, n = Math.round((span + TAIL) / STEP), pts = [];
+    function at(i) { var th = TH0 + i * STEP, r = g.r0 + (g.r1 - g.r0) * (i * STEP) / span; return [g.cx + Math.cos(th) * r, g.cy + Math.sin(th) * r]; }
+    for (var i = 0; i <= n; i++) pts.push(at(i));
+    g.more = [3, 6, 9].map(function (q) { return at(n + q); });
+    g.pts = pts;
+    g.d = "M" + pts.map(function (p) { return r1(p[0]) + "," + r1(p[1]); }).join("L");
+    g.nodes = PASSES.map(function (p, k) {
+      var q = pts[k * PER], th = TH0 + k * DTH, c = Math.cos(th), s = Math.sin(th);
+      return { x: q[0], y: q[1], lab: c > .4 ? "r" : c < -.4 ? "l" : s < 0 ? "a" : "b" };
+    });
+    if (g.lab) {
+      // L'espiral s'obre cap avall: el centre lliure queda una mica més avall que el centre de l'espiral
+      var dd = .31 * (g.r1 - g.r0), a = 75 * Math.PI / 180;
+      g.hub = [g.cx + Math.cos(a) * dd, g.cy + Math.sin(a) * dd];
+      g.hubw = Math.round(2 * (g.r0 + dd - node / 2 - 18) * .9);
+    } else {
+      g.hub = [W / 2, size + 62];
+      g.hubw = Math.round(W - 36);
+    }
+    return g;
+  }
+
+  /* ---------- DIBUIX ---------- */
+  function render() {
+    var CW = Math.round(root.clientWidth);
+    if (!CW) return;
+    root.classList.toggle("espi--stack", CW < SIDE);
+    var W = Math.round(scene.clientWidth);
+    G = geometry(W);
+    root.classList.toggle("espi--nolab", !G.lab);
+    root.style.setProperty("--sh", G.H + "px");
+    root.style.setProperty("--node", G.node + "px");
+    root.style.setProperty("--hubw", G.hubw + "px");
+    svg.setAttribute("viewBox", "0 0 " + W + " " + G.H);
+    var out = [];
+    out.push(
+      '<defs><radialGradient id="espi-glow"><stop offset="0" stop-color="#f1e3b0" stop-opacity=".85"/><stop offset=".55" stop-color="#f8efd2" stop-opacity=".4"/><stop offset="1" stop-color="#fcf8ea" stop-opacity="0"/></radialGradient></defs>',
+      '<circle class="espi__glow" cx="' + r1(G.cx) + '" cy="' + r1(G.cy) + '" r="' + r1(G.r1 * 1.25) + '" fill="url(#espi-glow)"/>',
+      '<path d="' + G.d + '" fill="none" stroke="#1a4d40" stroke-opacity=".35" stroke-width="4" stroke-linecap="round" stroke-dasharray="0.1 10"/>',
+      '<path class="espi__walked" d="' + G.d + '" fill="none" stroke="#1a4d40" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>'
+    );
+    // Anell de quatre arcs al voltant de cada passa
+    var rr = G.node / 2 + 7;
+    G.nodes.forEach(function (n, k) {
+      for (var j = 0; j < 4; j++) {
+        var a1 = (-90 + j * 90 + 9) * Math.PI / 180, a2 = (-90 + (j + 1) * 90 - 9) * Math.PI / 180;
+        out.push('<path class="espi__arc" data-k="' + k + '" data-j="' + j + '" d="M' + r1(n.x + Math.cos(a1) * rr) + ',' + r1(n.y + Math.sin(a1) * rr) +
+          'A' + rr + ',' + rr + ' 0 0 1 ' + r1(n.x + Math.cos(a2) * rr) + ',' + r1(n.y + Math.sin(a2) * rr) + '"/>');
+      }
+    });
+    // L'espiral continua...
+    out.push('<g class="espi__more">' + G.more.map(function (q, i) { return '<circle cx="' + r1(q[0]) + '" cy="' + r1(q[1]) + '" r="' + [3.2, 2.6, 2][i] + '" fill="#c9a53c"/>'; }).join("") + '</g>');
+    out.push('<g class="espi__walker"><circle class="espi__halo" r="15" fill="#e2c668"/><circle r="8" fill="#e2c668" stroke="#fff" stroke-width="3"/></g>');
+    svg.innerHTML = out.join("");
+
+    nodesBox.innerHTML = G.nodes.map(function (n, k) {
+      return '<div class="espi__node" data-k="' + k + '" style="left:' + r1(n.x) + 'px;top:' + r1(n.y) + 'px">' +
+        '<button type="button" class="espi__dot" aria-label="' + esc(kick(k + 1) + ": " + PASSES[k][0] + ". " + PASSES[k][1]) + '">' +
+        '<svg viewBox="0 0 24 24" aria-hidden="true">' + ICON["p" + (k + 1)] + '</svg><span class="espi__num" aria-hidden="true">' + (k + 1) + '</span></button>' +
+        '<span class="espi__lab espi__lab--' + n.lab + '" aria-hidden="true">' + esc(PASSES[k][0]) + '</span></div>';
+    }).join("");
+    hub.style.left = r1(G.hub[0]) + "px"; hub.style.top = r1(G.hub[1]) + "px";
+
+    G.walked = svg.querySelector(".espi__walked");
+    G.total = G.walked.getTotalLength();
+    G.walked.style.strokeDasharray = G.total;
+    // Longitud fins a cada passa (els punts de l'espiral estan cada 3 graus)
+    var cum = [0];
+    for (var i = 1; i < G.pts.length; i++) { var dx = G.pts[i][0] - G.pts[i - 1][0], dy = G.pts[i][1] - G.pts[i - 1][1]; cum.push(cum[i - 1] + Math.sqrt(dx * dx + dy * dy)); }
+    var f = G.total / cum[cum.length - 1];
+    G.L = PASSES.map(function (p, k) { return cum[k * PER] * f; });
+    G.walker = svg.querySelector(".espi__walker");
+    G.glow = svg.querySelector(".espi__glow");
+    G.arcs = Array.prototype.slice.call(svg.querySelectorAll(".espi__arc"));
+    G.nodeEls = Array.prototype.slice.call(nodesBox.children);
+    plan();
+    lastKey = ""; lastHub = "";
+    apply();
+  }
+
+  /* ---------- PLA DE L'ANIMACIÓ ---------- */
+  // La primera passa a poc a poc (els quatre moments, un a un); les altres sis, més de pressa; i l'espiral continua
+  function plan() {
+    var segs = [], t = 0;
+    function add(type, dur, k, j, a, b) { segs.push({ type: type, t0: t, t1: t + dur, k: k, j: j, a: a, b: b }); t += dur; }
+    add("start", T_START, 0, -1, 0, 0);
+    for (var k = 0; k < 7; k++) {
+      if (k > 0) add("move", T_MOVE, k - 1, -1, G.L[k - 1], G.L[k]);
+      for (var j = 0; j < 4; j++) add("mom", k === 0 ? T_MOM1 : T_MOM, k, j, G.L[k], G.L[k]);
+    }
+    add("tail", T_TAIL, 6, -1, G.L[6], G.total);
+    PLAN = { segs: segs, end: t };
+  }
+  function state(t) {
+    if (t >= PLAN.end) return { pos: G.total, cur: 6, mom: 4, now: -1, done: true, type: "end" };
+    var s = PLAN.segs[0];
+    for (var i = 0; i < PLAN.segs.length; i++) if (t < PLAN.segs[i].t1) { s = PLAN.segs[i]; break; }
+    var f = (t - s.t0) / (s.t1 - s.t0), pos = s.a + (s.b - s.a) * (s.type === "move" ? ease(f) : s.type === "tail" ? f : 0);
+    return {
+      pos: pos, type: s.type, done: false,
+      cur: s.type === "move" ? s.k : s.k,          // última passa a la qual s'ha arribat
+      mom: s.type === "mom" ? s.j + 1 : s.type === "start" ? 0 : 4,   // moments encesos de la passa actual
+      now: s.type === "mom" ? s.j : -1
+    };
+  }
+
+  /* ---------- ESTAT ---------- */
+  function apply() {
+    if (!G) return;
+    var st = state(S.t);
+    G.walked.style.strokeDashoffset = G.total - st.pos;
+    var pt = G.walked.getPointAtLength(st.pos);
+    G.walker.setAttribute("transform", "translate(" + r1(pt.x) + "," + r1(pt.y) + ")");
+    G.walker.setAttribute("opacity", st.done ? 0 : 1);
+    G.glow.setAttribute("opacity", r2(smooth(S.t / PLAN.end)));
+
+    var key = [st.cur, st.mom, st.now, st.type, S.sel, st.done].join("|");
+    if (key !== lastKey) {
+      lastKey = key;
+      G.arcs.forEach(function (a) {
+        var k = +a.getAttribute("data-k"), j = +a.getAttribute("data-j");
+        a.classList.toggle("is-on", k < st.cur || (k === st.cur && j < st.mom) || st.done);
+        a.classList.toggle("is-now", k === st.cur && j === st.now);
+      });
+      G.nodeEls.forEach(function (el, k) {
+        var on = st.done || k <= st.cur && st.type !== "start" || k === 0 && st.type !== "start";
+        if (on && !el.classList.contains("is-on") && S.playing) {
+          el.classList.add("is-pop");
+          setTimeout(function () { el.classList.remove("is-pop"); }, 650);
+        }
+        el.classList.toggle("is-on", on);
+        el.classList.toggle("is-sel", S.sel === k);
+      });
+      momEls.forEach(function (m, j) { m.classList.toggle("is-now", st.now === j); });
+      root.classList.toggle("is-done", st.done);
+      replay.hidden = !(st.done && !reduce);
+    }
+    // Centre: la passa triada, la passa on és el caminant o el resum final
+    var h;
+    if (S.sel >= 0) h = [kick(S.sel + 1), PASSES[S.sel][0], PASSES[S.sel][1]];
+    else if (st.done) h = HUB_END;
+    else if (st.type === "start") h = HUB_START;
+    else { var k = st.type === "move" ? st.cur : st.cur; h = [kick(k + 1), PASSES[k][0], PASSES[k][1]]; }
+    var hk = h.join("|");
+    if (hk !== lastHub) {
+      lastHub = hk;
+      hub.querySelector(".espi__hk").textContent = h[0];
+      hub.querySelector(".espi__ht").textContent = h[1];
+      hub.querySelector(".espi__hx").textContent = h[2];
+      hub.classList.remove("is-fresh"); void hub.offsetWidth; hub.classList.add("is-fresh");
+    }
+  }
+
+  /* ---------- ANIMACIÓ ---------- */
+  function tick(ts) {
+    if (!S.playing) return;
+    if (S.last === null) S.last = ts;
+    S.t += Math.min(64, ts - S.last); S.last = ts;
+    if (S.t >= PLAN.end) { S.t = PLAN.end; S.playing = false; }
+    apply();
+    if (S.playing) S.raf = requestAnimationFrame(tick);
+  }
+  function play() {
+    cancelAnimationFrame(S.raf);
+    S.started = true; S.sel = -1;
+    if (reduce) { S.t = PLAN.end; S.playing = false; lastKey = ""; apply(); return; }
+    S.t = 0; S.last = null; S.playing = true; lastKey = "";
+    apply();
+    setTimeout(function () { S.raf = requestAnimationFrame(tick); }, 300);
+  }
+  function stop() { cancelAnimationFrame(S.raf); S.playing = false; S.t = PLAN.end; S.started = true; }
+
+  nodesBox.addEventListener("click", function (e) {
+    var el = e.target.closest ? e.target.closest(".espi__node") : null;
+    if (!el) return;
+    if (S.playing) stop();
+    var k = +el.getAttribute("data-k");
+    S.sel = S.sel === k ? -1 : k; lastKey = ""; apply();
+  });
+  document.addEventListener("click", function (e) {
+    if (S.sel >= 0 && !(e.target.closest && e.target.closest(".espi__node"))) { S.sel = -1; lastKey = ""; apply(); }
+  });
+  root.addEventListener("keydown", function (e) { if (e.key === "Escape" && S.sel >= 0) { S.sel = -1; lastKey = ""; apply(); } });
+  replay.addEventListener("click", function (e) { e.stopPropagation(); play(); });
+
+  /* ---------- MIDA I ARRENCADA ---------- */
+  render();
+  S.width = Math.round(root.clientWidth);
+  var pending = false;
+  function onResize() {
+    if (pending) return;
+    pending = true;
+    requestAnimationFrame(function () {
+      pending = false;
+      var w = Math.round(root.clientWidth);
+      if (w && w !== S.width) { S.width = w; render(); }
+    });
+  }
+  if (window.ResizeObserver) new ResizeObserver(onResize).observe(root);
+  else window.addEventListener("resize", onResize);
+
+  if (reduce) { S.t = PLAN.end; apply(); }
+  else if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting && !S.started) { io.disconnect(); play(); } });
+    }, { threshold: 0.3 });
+    io.observe(scene);
+  } else play();
+})();
+</script>

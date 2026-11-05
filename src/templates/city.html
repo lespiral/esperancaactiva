@@ -46,6 +46,11 @@
     </ul>
   </nav>
 
+  <section class="infosec" id="com-llegir-una-ruta" aria-labelledby="h-llegir">
+    <h2 class="infosec__title" id="h-llegir">{{ site.read_route_title }}</h2>
+    {% include "infografies/infografia-llegir-ruta.html" %}
+  </section>
+
   {% for b in city.blocks %}
   <section class="panel block{% if not b.groups %} block--empty{% endif %}" id="{{ b.course.anchor }}" aria-labelledby="h-{{ b.course.anchor }}">
     <div class="panel__head">
@@ -54,7 +59,7 @@
     </div>
     <p>{{ b.text }}</p>
     <p class="block__actions">
-      <a class="btn btn--primary" href="{{ b.course.thinkific }}">Comença el curs gratuït</a>
+      {% if b.course.soon %}<span class="btn btn--soon">{{ cc.soon_label }}</span>{% else %}<a class="btn btn--primary" href="{{ b.course.thinkific }}">Comença el curs gratuït</a>{% endif %}
       <a class="btn btn--outline" href="{{ root }}{{ b.course.slug }}/">Torna al curs</a>
     </p>
 

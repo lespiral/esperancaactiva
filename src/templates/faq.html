@@ -7,10 +7,20 @@
   <section aria-labelledby="h-{{ s.id }}" id="{{ s.id }}">
     <h2 class="faq-h" id="h-{{ s.id }}">{{ s.title }}</h2>
     <div class="faqs">
-      {% for q, a, qid in s["items"] %}{{ faq_item(q, a, qid) }}{% endfor %}
+      {% for q, a, qid, info in s["items"] %}
+      {% if info %}{% call faq_item(q, a, qid) %}{% include "infografies/infografia-" ~ info ~ ".html" %}{% endcall %}{% else %}{{ faq_item(q, a, qid) }}{% endif %}
+      {% endfor %}
     </div>
   </section>
   {% endfor %}
+  <section id="una-iniciativa-de" aria-labelledby="h-ini">
+    <h2 class="faq-h" id="h-ini">{{ h.initiative_title }}</h2>
+    <div class="initiative initiative--left">
+      {% if partners_logo %}<img class="initiative__logo" src="{{ root }}assets/img/lespiral-elara.png" alt="L'Espiral i Elara Social. Cuidem les persones. Enfortim les comunitats" width="300">{% endif %}
+      <p>{{ h.initiative_text }}</p>
+    </div>
+    <div class="infografia infografia--in">{% include "infografies/infografia-iniciativa.html" %}</div>
+  </section>
   <section class="contact-box" id="contacte" aria-labelledby="h-contact">
     <h2 id="h-contact">{{ fp.contact_title }}</h2>
     <p>{{ fp.contact_html }}</p>

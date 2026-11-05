@@ -1,0 +1,470 @@
+{# infografia-com-funciona.html: copiat del bloc INICI–FINAL de la carpeta «Infografies web» (5 de novembre de 2026). #}
+<div class="volta" data-volta>
+  <div class="volta__scene" role="group" aria-label="Com funciona: practica, tria una ruta, camina i porta-ho al dia a dia; i torna a començar a cada passa">
+    <svg class="volta__svg" aria-hidden="true" focusable="false"></svg>
+    <div class="volta__nodes"></div>
+    <div class="volta__pop" aria-live="polite"><p class="volta__pk"></p><p class="volta__pt"></p><p class="volta__px"></p></div>
+  </div>
+  <div class="volta__foot">
+    <p class="volta__hint">Toca un punt per saber-ne més.</p>
+    <button class="volta__replay" type="button" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1M3.5 4v4.6h4.6"/></svg>
+      <span>Torna a caminar</span>
+    </button>
+  </div>
+</div>
+
+<style>
+.volta {
+  --c9: var(--green-900, #11352c); --c8: var(--green-800, #1a4d40); --c7: var(--green-700, #22604f);
+  --c6: var(--green-600, #2e7561); --c2: var(--green-200, #c9dcd4);
+  --cs: var(--sun, #e2c668); --cs-ink: var(--sun-ink, #6f5711); --cline: var(--line, #e7e1d4);
+  --cink: var(--ink, #23302b); --cmuted: var(--muted, #56635d);
+  --fh: var(--font-head, "Montserrat", ui-sans-serif, system-ui, sans-serif);
+  --fb: var(--font-body, "Lato", ui-sans-serif, system-ui, sans-serif);
+  --m: 96px;
+  position: relative; overflow: hidden; background: #fff; color: var(--cink); font-family: var(--fb);
+  border: 1px solid var(--cline); border-radius: var(--radius-lg, 22px);
+  box-shadow: 0 1px 2px rgba(17,53,44,.06), 0 10px 28px rgba(17,53,44,.09);
+}
+.volta *, .volta *::before, .volta *::after { box-sizing: border-box; }
+.volta p { margin: 0; }
+.volta__scene { position: relative; height: var(--sh, 420px); }
+.volta__svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.volta__nodes { position: absolute; inset: 0; }
+.volta__node { position: absolute; width: 0; height: 0; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+
+/* Els quatre moments: un medalló amb una escena */
+.volta__med {
+  position: absolute; left: 0; top: 0; width: var(--m); height: var(--m);
+  margin: calc(var(--m) / -2) 0 0 calc(var(--m) / -2); padding: 0; overflow: visible;
+  border-radius: 50%; border: 3px solid #c9d2ce; background: #e8ecea; cursor: inherit;
+  -webkit-appearance: none; appearance: none;
+  transition: border-color .6s, background-color .8s, box-shadow .3s, transform .3s;
+}
+.volta__med svg.volta__scn { display: block; width: 100%; height: 100%; border-radius: 50%; overflow: hidden; }
+.volta__node.is-on .volta__med { border-color: var(--c8); background: #fbf5e3; }
+.volta__node.is-here .volta__med { box-shadow: 0 0 0 8px rgba(226, 198, 104, .45); }
+.volta__node.is-ping .volta__med { transform: scale(1.08); box-shadow: 0 0 0 6px rgba(226, 198, 104, .5); }
+.volta__node.is-sel .volta__med { box-shadow: 0 0 0 4px #fff, 0 0 0 7px var(--cs); }
+.volta__node:hover .volta__med { transform: scale(1.05); }
+.volta__med:focus { outline: none; }
+.volta__med:focus-visible { box-shadow: 0 0 0 4px #fff, 0 0 0 7px var(--c7); }
+.volta__num {
+  position: absolute; top: -3px; right: -3px; width: 26px; height: 26px; border-radius: 50%;
+  display: grid; place-items: center; background: #fff; border: 2px solid #c9d2ce; color: var(--c8);
+  font: 700 13px/1 var(--fh); transition: background-color .5s, border-color .5s;
+}
+.volta__node.is-on .volta__num { background: var(--cs); border-color: #fff; color: var(--c9); }
+
+/* Escenes (64 x 64) */
+.vt-fig { fill: #a3afa9; transition: fill .8s; } .is-on .vt-fig { fill: #2e7561; }
+.vt-phones { fill: none; stroke: #8e9b95; stroke-width: 3; stroke-linecap: round; transition: stroke .8s; } .is-on .vt-phones { stroke: #1a4d40; }
+.vt-cup { fill: #8e9b95; transition: fill .8s; } .is-on .vt-cup { fill: #1a4d40; }
+.vt-wave { fill: none; stroke: #e2c668; stroke-width: 2.4; stroke-linecap: round; opacity: 0; transition: opacity .6s; }
+.is-on .vt-wave { opacity: 1; animation: volta-wave 1.6s ease-in-out infinite; }
+.is-on .vt-wave + .vt-wave { animation-delay: .3s; }
+.vt-panel { fill: #ece7db; stroke: #a9b2ad; stroke-width: 1.4; stroke-linejoin: round; transition: fill .8s, stroke .8s; } .vt-panel--b { fill: #dcd5c5; }
+.is-on .vt-panel { fill: #fffaf0; stroke: #1a4d40; } .is-on .vt-panel--b { fill: #efe3c4; }
+.vt-route { fill: none; stroke: #9aa59f; stroke-width: 2.6; stroke-linecap: round; stroke-dasharray: 1 4.5; transition: stroke .8s; }
+.is-on .vt-route { stroke: #1a4d40; }
+.vt-rt { opacity: 0; transition: opacity .25s; }
+.rt-0 .vt-rt0, .rt-1 .vt-rt1, .rt-2 .vt-rt2 { opacity: 1; }
+.vt-pin { opacity: 0; transform: translateY(-9px); transition: opacity .4s .3s, transform .6s .3s cubic-bezier(.34, 1.8, .64, 1); }
+.is-on .vt-pin { opacity: 1; transform: none; }
+.vt-hill { fill: #d3dbd7; transition: fill .8s; } .is-on .vt-hill { fill: #c3d9cc; }
+.vt-trail { fill: none; stroke: #ede7da; stroke-width: 6; stroke-linecap: round; }
+.vt-tree { fill: #a9b8b0; transition: fill .8s; } .is-on .vt-tree { fill: #2e7561; }
+.vt-trunk { stroke: #8e9b95; stroke-width: 2; stroke-linecap: round; transition: stroke .8s; } .is-on .vt-trunk { stroke: #4f6158; }
+.vt-step { fill: #1a4d40; opacity: 0; transition: opacity .3s; }
+.is-on .vt-step { opacity: 1; }
+.is-on .vt-step:nth-of-type(2) { transition-delay: .25s; } .is-on .vt-step:nth-of-type(3) { transition-delay: .5s; }
+.is-on .vt-step:nth-of-type(4) { transition-delay: .75s; } .is-on .vt-step:nth-of-type(5) { transition-delay: 1s; }
+.vt-bird { fill: none; stroke: #22604f; stroke-width: 1.8; stroke-linecap: round; opacity: 0; transition: opacity .6s .9s; }
+.is-on .vt-bird { opacity: 1; }
+.vt-wall { fill: #e3e7e5; transition: fill .8s; } .is-on .vt-wall { fill: #f6efdc; }
+.vt-glass { fill: #d5dcd9; transition: fill .8s; } .is-on .vt-glass { fill: #f8e8b8; }
+.vt-frame { fill: none; stroke: #8e9b95; stroke-width: 2.4; stroke-linejoin: round; transition: stroke .8s; } .is-on .vt-frame { stroke: #1a4d40; }
+.vt-sill { fill: #8e9b95; transition: fill .8s; } .is-on .vt-sill { fill: #1a4d40; }
+.vt-sun { fill: #e2c668; opacity: 0; transition: opacity .8s .2s; } .is-on .vt-sun { opacity: 1; }
+.vt-pot { fill: #b8ab95; transition: fill .8s; } .is-on .vt-pot { fill: #c9875a; }
+.vt-sprout { fill: #2e7561; transform-box: view-box; transform-origin: 32px 35px; transform: scale(0); transition: transform 1s .35s cubic-bezier(.34, 1.5, .64, 1); }
+.vt-sprout path:first-child { fill: none; stroke: #2e7561; stroke-width: 2.2; stroke-linecap: round; }
+.is-on .vt-sprout { transform: none; }
+
+/* Etiquetes */
+.volta__lab {
+  position: absolute; width: max-content; padding: 4px 10px 5px; border-radius: 10px;
+  background: rgba(255, 255, 255, .82); box-shadow: 0 1px 2px rgba(17, 53, 44, .06);
+  font: 700 clamp(14px, calc(var(--sw, 1000px) * .0152), 16.5px)/1.25 var(--fh); color: var(--c9);
+  text-wrap: balance; transition: box-shadow .3s;
+}
+.volta__lab b { display: block; font-weight: 700; }
+.volta__sub { display: block; margin-top: 2px; font: 400 clamp(13px, calc(var(--sw, 1000px) * .0136), 15px)/1.35 var(--fb); color: var(--cmuted); }
+.volta__node.is-sel .volta__lab { background: #fff; box-shadow: 0 0 0 2px var(--cs); }
+.volta__lab--a { left: 0; bottom: calc(var(--m) / 2 + 10px); transform: translateX(-50%); text-align: center; max-width: var(--slot, 230px); }
+.volta__lab--r { top: 0; left: calc(var(--m) / 2 + 12px); transform: translateY(-50%); max-width: var(--side, 180px); }
+/* I torna a començar */
+.volta__node--back .volta__lab { position: absolute; text-align: center; padding: 9px 14px 10px; background: rgba(255, 255, 255, .9); width: max-content; max-width: min(330px, calc(var(--sw, 1000px) - 28px)); }
+.volta__node--back .volta__lab--c { left: 0; top: 0; transform: translate(-50%, -50%); }
+.volta__node--back .volta__lab--tl { left: 0; top: 0; text-align: left; }
+.volta__back-t { display: flex; align-items: center; gap: 6px; justify-content: center; }
+.volta__lab--tl .volta__back-t { justify-content: flex-start; }
+.volta__back-t svg { width: 18px; height: 18px; fill: none; stroke: var(--c7); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.volta__beads { display: flex; gap: 6px; margin-top: 8px; justify-content: center; }
+.volta__lab--tl .volta__beads { justify-content: flex-start; }
+.volta__beads i { width: 11px; height: 11px; border-radius: 50%; background: #fff; border: 1.5px solid var(--c2); transition: background-color .25s, border-color .25s, transform .25s; }
+.volta__beads i.is-on { background: var(--cs); border-color: var(--cs); transform: scale(1.12); }
+.volta--tall .volta__lab { font-size: 15px; }
+.volta--tall .volta__sub { font-size: 14px; }
+
+/* Globus */
+.volta__pop {
+  position: absolute; left: 0; top: 0; width: min(290px, calc(100% - 24px));
+  padding: 13px 15px 14px; border-radius: 14px; background: #fff;
+  border: 1px solid var(--cline); box-shadow: 0 2px 4px rgba(17,53,44,.06), 0 14px 32px rgba(17,53,44,.16);
+  opacity: 0; visibility: hidden; transform: translateY(6px); transition: opacity .2s, transform .2s, visibility .2s; z-index: 3;
+}
+.volta__pop.is-open { opacity: 1; visibility: visible; transform: none; }
+.volta__pk { font: 700 11.5px/1.3 var(--fh); letter-spacing: .08em; text-transform: uppercase; color: var(--cs-ink); }
+.volta__pt { font: 700 16px/1.3 var(--fh); color: var(--c9); margin-top: 3px !important; }
+.volta__px { font-size: 15.5px; line-height: 1.45; color: var(--cmuted); margin-top: 3px !important; }
+
+/* Peu */
+.volta__foot {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px 16px; flex-wrap: wrap;
+  min-height: 60px; padding: 10px clamp(14px, 3vw, 24px); border-top: 1px solid var(--cline); background: #fff;
+}
+.volta__hint { font-size: 14.5px; color: var(--cmuted); }
+.volta__replay {
+  flex: none; display: inline-flex; align-items: center; gap: .45em; padding: .55em 1em;
+  border-radius: 999px; border: 2px solid var(--c2); background: #fff; color: var(--c8);
+  font: 700 14px/1.2 var(--fh); cursor: pointer; transition: border-color .15s, color .15s, transform .15s;
+}
+.volta__replay:hover { border-color: var(--c7); color: var(--c9); transform: translateY(-1px); }
+.volta__replay:focus-visible { outline: 3px solid var(--c7); outline-offset: 2px; }
+.volta__replay svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.volta__replay[hidden] { display: none; }
+
+.volta__halo { transform-box: fill-box; transform-origin: center; animation: volta-pulse 1.8s ease-in-out infinite; }
+@keyframes volta-pulse { 0%, 100% { transform: scale(1); opacity: .45; } 50% { transform: scale(1.5); opacity: .15; } }
+@keyframes volta-wave { 0%, 100% { opacity: .35; } 50% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .volta *, .volta *::before, .volta *::after { animation: none !important; transition: none !important; }
+}
+</style>
+
+<script>
+(function () {
+  "use strict";
+  var root = document.querySelector("[data-volta]");
+  if (!root || root.getAttribute("data-ready")) return;
+  root.setAttribute("data-ready", "1");
+
+  /* ---------- TEXTOS (els de la web; es poden canviar aquí) ---------- */
+  var STEPS = [
+    { scene: "escolta", title: "Fes la pràctica", sub: "Àudio o vídeo, abans de sortir",
+      text: "Escolta l'àudio o mira el vídeo de la passa abans de sortir." },
+    { scene: "mapa", title: "Tria una ruta", sub: "La que s'adapti al teu temps",
+      text: "Mira el mapa de la teva ciutat i escull la que s'adapti al teu temps. A cada passa, la mateixa o una altra." },
+    { scene: "camina", title: "Camina i observa", sub: "Al teu ritme",
+      text: "Deixa que la pràctica t'acompanyi, al teu ritme i sense buscar respostes ràpides." },
+    { scene: "porta", title: "Porta-ho al dia a dia", sub: "Un petit pas possible",
+      text: "Pensa què t'emportes: una mirada nova, una necessitat o un petit pas possible." }
+  ];
+  var BACK = { title: "I torna a començar", sub: "Cada passa, una volta: per la mateixa ruta o per una altra",
+    kick: "Cada curs, 7 passes",
+    text: "Cada passa del curs fa aquesta volta. Pots caminar sempre la mateixa ruta o triar-ne una altra dels mapes de Camins d'Esperança [Activa]. Ho pots fer en 7 dies o al teu ritme." };
+  var KICK = "Com funciona · ";
+
+  function route(i, d, x, y) {
+    return '<g class="vt-rt vt-rt' + i + '"><path class="vt-route" d="' + d + '"/><g transform="translate(' + x + ' ' + y + ')"><g class="vt-pin">' +
+      '<path d="M0 0c-3.3-4-5.4-6.6-5.4-9.2a5.4 5.4 0 0 1 10.8 0c0 2.6-2.1 5.2-5.4 9.2z" fill="#e2c668" stroke="#6f5711" stroke-width="1.2"/><circle cx="0" cy="-9.2" r="1.9" fill="#1a4d40"/></g></g></g>';
+  }
+  var SCENES = {
+    escolta: '<path class="vt-fig" d="M15 64v-6a17 14 0 0 1 34 0v6z"/><circle class="vt-fig" cx="32" cy="31" r="10"/>' +
+      '<path class="vt-phones" d="M21 33a11 12 0 0 1 22 0"/><rect class="vt-cup" x="18.5" y="30" width="6" height="10" rx="3"/><rect class="vt-cup" x="39.5" y="30" width="6" height="10" rx="3"/>' +
+      '<path class="vt-wave" d="M13 30a9 9 0 0 0 0 11M51 30a9 9 0 0 1 0 11"/><path class="vt-wave" d="M8.5 26.5a14 14 0 0 0 0 18M55.5 26.5a14 14 0 0 1 0 18"/>',
+    mapa: '<path class="vt-panel" d="M10 19l14-5v35l-14 5z"/><path class="vt-panel vt-panel--b" d="M24 14l16 5v35l-16-5z"/><path class="vt-panel" d="M40 19l14-5v35l-14 5z"/>' +
+      route(0, "M15 46c5-7 10-1 15-8s7-11 12-12 6-2 7-4", 49, 23) +
+      route(1, "M14 22c7 1 9 9 15 11s10 3 12 9 3 7 6 9", 47, 51) +
+      route(2, "M44 47c-6-3-6-10-12-12s-8-6-9-12-3-5-5-7", 18, 17),
+    camina: '<path class="vt-hill" d="M0 40C14 34 30 36 40 39S58 40 64 37V64H0Z"/>' +
+      '<path class="vt-trail" d="M30 66C24 56 40 50 33 43S29 36 34 33"/>' +
+      '<line class="vt-trunk" x1="14" y1="44" x2="14" y2="36"/><circle class="vt-tree" cx="14" cy="32" r="6"/>' +
+      '<line class="vt-trunk" x1="50" y1="42" x2="50" y2="35"/><circle class="vt-tree" cx="50" cy="31" r="5"/>' +
+      '<ellipse class="vt-step" cx="28.5" cy="57" rx="1.9" ry="2.9"/><ellipse class="vt-step" cx="34" cy="51.5" rx="1.8" ry="2.7"/>' +
+      '<ellipse class="vt-step" cx="36.5" cy="45.5" rx="1.6" ry="2.4"/><ellipse class="vt-step" cx="31.5" cy="40.5" rx="1.4" ry="2.1"/>' +
+      '<path class="vt-bird" d="M20 18q2.6-2.8 5.2 0q2.6-2.8 5.2 0M32 13q1.8-1.9 3.6 0q1.8-1.9 3.6 0"/>',
+    porta: '<rect class="vt-wall" width="64" height="64"/><rect class="vt-glass" x="14" y="9" width="36" height="31" rx="2"/>' +
+      '<circle class="vt-sun" cx="41" cy="18" r="5"/>' +
+      '<path class="vt-frame" d="M14 9h36v31H14zM32 9v31M14 24.5h36"/><rect class="vt-sill" x="9" y="40" width="46" height="4.5" rx="2"/>' +
+      '<g class="vt-sprout"><path d="M32 35V24"/><path d="M32 29c-5 0-7.4-3.3-7-6.4 4-.2 7 2.6 7 6.4z"/><path d="M32 27c4.4 0 6.8-2.9 6.5-5.7-3.7-.2-6.5 2.3-6.5 5.7z"/></g>' +
+      '<path class="vt-pot" d="M25.5 33.5h13l-1.8 6.5h-9.4z"/>'
+  };
+  var ICON_BACK = '<path d="M20 12a8 8 0 1 1-2.4-5.7M20 4.5v4h-4"/>';
+
+  /* ---------- RITME (ms) ---------- */
+  var T_PAUSE = 520, T_MOVE = 680, T_BACK = 1150, T_LAP = 620, LAPS = 7;
+  var TALL = 700; // per sota d'aquesta amplada, la volta es llegeix de dalt a baix
+
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var scene = root.querySelector(".volta__scene");
+  var svg = root.querySelector(".volta__svg");
+  var nodesBox = root.querySelector(".volta__nodes");
+  var pop = root.querySelector(".volta__pop");
+  var replay = root.querySelector(".volta__replay");
+
+  var S = { t: 0, sel: null, playing: false, started: false, last: null, raf: 0, width: 0 };
+  var G = null, lastKey = "", PLAN = null;
+
+  function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+  function smooth(v) { v = clamp(v, 0, 1); return v * v * (3 - 2 * v); }
+  function ease(x) { x = clamp(x, 0, 1); return -(Math.cos(Math.PI * x) - 1) / 2; }
+  function r1(n) { return Math.round(n * 10) / 10; }
+  function r2(n) { return Math.round(n * 100) / 100; }
+  function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;"); }
+
+  /* ---------- GEOMETRIA ---------- */
+  function geometry(W) {
+    var g = { W: W, tall: W < TALL }, H;
+    if (!g.tall) {
+      // Ordinador: els quatre moments en fila i la tornada per sota
+      var m = Math.round(clamp(W * .085, 76, 100)), labH = 58, yT = 22 + labH + 10 + m / 2;
+      var xs = [.14, .38, .62, .86].map(function (f) { return f * W; }), R = Math.round(clamp(W * .1, 92, 118));
+      var x1 = xs[0], x4 = xs[3], yB = yT + 2 * R;
+      g.d = "M" + r1(x1) + "," + r1(yT) + "H" + r1(x4) + "A" + R + "," + R + " 0 0 1 " + r1(x4) + "," + r1(yB) + "H" + r1(x1) + "A" + R + "," + R + " 0 0 1 " + r1(x1) + "," + r1(yT);
+      g.st = xs.map(function (x) { return { x: x, y: yT, lab: "a" }; });
+      g.back = { x: W / 2, y: yT + R + m * .16, lab: "c" };
+      g.glow = [W / 2, yT + R];
+      g.m = m; g.slot = Math.round(W * .22);
+      H = yB + 34;
+    } else {
+      // Mòbil: de dalt a baix, i la tornada puja pel costat
+      var mm = 70, r = 39, xr = Math.round(clamp(W * .085, 26, 36)), xs2 = xr + 2 * r, y1 = 64, gap = 132;
+      var ys = [0, 1, 2, 3].map(function (i) { return y1 + gap * i; }), y4 = ys[3];
+      g.d = "M" + xs2 + "," + y1 + "V" + y4 + "A" + r + "," + r + " 0 0 1 " + xr + "," + y4 + "V" + y1 + "A" + r + "," + r + " 0 0 1 " + xs2 + "," + y1;
+      g.st = ys.map(function (y) { return { x: xs2, y: y, lab: "r" }; });
+      g.back = { x: 14, y: y4 + r + 22, lab: "tl" };
+      g.glow = [W * .5, y4 + r + 60];
+      g.m = mm; g.side = W - xs2 - mm / 2 - 12 - 14;
+      H = y4 + r + 22 + (S.backFix && S.backFix.w === W ? S.backFix.h : 110) + 16;
+    }
+    g.H = H;
+    return g;
+  }
+
+  /* ---------- DIBUIX ---------- */
+  function render() {
+    var W = Math.round(root.clientWidth);
+    if (!W) return;
+    G = geometry(W);
+    var H = G.H, out = [];
+    root.classList.toggle("volta--tall", G.tall);
+    root.style.setProperty("--sw", W + "px");
+    root.style.setProperty("--sh", H + "px");
+    root.style.setProperty("--m", G.m + "px");
+    if (G.slot) root.style.setProperty("--slot", G.slot + "px");
+    if (G.side) root.style.setProperty("--side", G.side + "px");
+    svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+    out.push(
+      '<defs>',
+      '<linearGradient id="volta-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef1ef"/><stop offset="1" stop-color="#f6f4ee"/></linearGradient>',
+      '<linearGradient id="volta-warm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbf7ec"/><stop offset="1" stop-color="#f7ecd0"/></linearGradient>',
+      '<radialGradient id="volta-glow"><stop offset="0" stop-color="#f1e3b0" stop-opacity=".9"/><stop offset=".5" stop-color="#f8efd2" stop-opacity=".45"/><stop offset="1" stop-color="#fcf8ea" stop-opacity="0"/></radialGradient>',
+      '</defs>',
+      '<rect width="' + W + '" height="' + H + '" fill="url(#volta-sky)"/>',
+      '<rect class="volta__warm" width="' + W + '" height="' + H + '" fill="url(#volta-warm)"/>',
+      '<circle class="volta__glow" cx="' + r1(G.glow[0]) + '" cy="' + r1(G.glow[1]) + '" r="' + r1(G.tall ? W * .6 : H * .62) + '" fill="url(#volta-glow)"/>',
+      '<path d="' + G.d + '" fill="none" stroke="#1a4d40" stroke-opacity=".35" stroke-width="4" stroke-linecap="round" stroke-dasharray="0.1 10"/>',
+      '<path class="volta__trail" d="' + G.d + '" fill="none" stroke="#1a4d40" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>',
+      '<path class="volta__comet" d="' + G.d + '" fill="none" stroke="#e2c668" stroke-width="6" stroke-linecap="round"/>',
+      '<g class="volta__walker"><circle class="volta__halo" r="15" fill="#e2c668"/><circle r="8" fill="#e2c668" stroke="#fff" stroke-width="3"/></g>'
+    );
+    svg.innerHTML = out.join("");
+
+    var html = [];
+    STEPS.forEach(function (st, i) {
+      var n = G.st[i];
+      html.push('<div class="volta__node volta__node--step" data-k="s' + i + '" style="left:' + r1(n.x) + 'px;top:' + r1(n.y) + 'px">' +
+        '<button type="button" class="volta__med" aria-label="' + esc((i + 1) + ". " + st.title + ": " + st.text) + '">' +
+        '<svg class="volta__scn" viewBox="0 0 64 64" aria-hidden="true">' + SCENES[st.scene] + '</svg>' +
+        '<span class="volta__num" aria-hidden="true">' + (i + 1) + '</span></button>' +
+        '<span class="volta__lab volta__lab--' + n.lab + '" aria-hidden="true"><b>' + esc(st.title) + '</b><span class="volta__sub">' + esc(st.sub) + '</span></span></div>');
+    });
+    var beads = "";
+    for (var b = 0; b < LAPS; b++) beads += "<i></i>";
+    html.push('<div class="volta__node volta__node--back" data-k="back" style="left:' + r1(G.back.x) + 'px;top:' + r1(G.back.y) + 'px">' +
+      '<button type="button" class="volta__lab volta__lab--' + G.back.lab + '" aria-label="' + esc(BACK.title + ": " + BACK.text) + '" style="border:0;cursor:pointer">' +
+      '<span class="volta__back-t"><svg viewBox="0 0 24 24" aria-hidden="true">' + ICON_BACK + '</svg><b>' + esc(BACK.title) + '</b></span>' +
+      '<span class="volta__sub">' + esc(BACK.sub) + '</span><span class="volta__beads" aria-hidden="true">' + beads + '</span></button></div>');
+    nodesBox.innerHTML = html.join("");
+
+    // Al mòbil, l'alçada de la infografia s'ajusta a l'etiqueta «I torna a començar»
+    if (G.tall) {
+      var bh = nodesBox.querySelector(".volta__node--back .volta__lab").offsetHeight;
+      if (bh && !(S.backFix && S.backFix.w === W && Math.abs(S.backFix.h - bh) < 2)) { S.backFix = { w: W, h: bh }; return render(); }
+    }
+    G.trail = svg.querySelector(".volta__trail");
+    G.comet = svg.querySelector(".volta__comet");
+    G.walker = svg.querySelector(".volta__walker");
+    G.warm = svg.querySelector(".volta__warm");
+    G.glowEl = svg.querySelector(".volta__glow");
+    G.total = G.trail.getTotalLength();
+    G.trail.style.strokeDasharray = G.total;
+    G.comet.style.strokeDasharray = "70 " + r1(G.total * 2);
+    // Longitud del camí fins a cada moment
+    G.L = G.st.map(function (n) {
+      var best = Infinity, at = 0;
+      for (var l = 0; l <= G.total * .75; l += 1.5) {
+        var p = G.trail.getPointAtLength(l), d = Math.abs(p.x - n.x) + Math.abs(p.y - n.y);
+        if (d < best) { best = d; at = l; }
+      }
+      return at;
+    });
+    G.L[0] = 0;
+    G.nodes = Array.prototype.slice.call(nodesBox.querySelectorAll(".volta__node--step"));
+    G.backNode = nodesBox.querySelector(".volta__node--back");
+    G.beads = Array.prototype.slice.call(nodesBox.querySelectorAll(".volta__beads i"));
+    plan();
+    lastKey = "";
+    apply();
+    if (S.sel) openPop(S.sel);
+  }
+
+  /* ---------- PLA DE L'ANIMACIÓ ---------- */
+  // Primera volta a poc a poc (amb una pausa a cada moment) i sis voltes més ràpides: una per passa
+  function plan() {
+    var segs = [], t = 0, L = G.L, T = G.total;
+    function add(a, b, dur, lap, here, smoothIt) { segs.push({ t0: t, t1: t + dur, a: a, b: b, lap: lap, here: here, ease: smoothIt }); t += dur; }
+    add(0, 0, T_PAUSE, 1, 0);
+    for (var i = 1; i < 4; i++) { add(L[i - 1], L[i], T_MOVE, 1, -1, true); add(L[i], L[i], T_PAUSE, 1, i); }
+    add(L[3], T, T_BACK, 1, -1, true);
+    for (var k = 2; k <= LAPS; k++) add(0, T, T_LAP, k, -1, false);
+    PLAN = { segs: segs, end: t };
+  }
+  function state(t) {
+    var segs = PLAN.segs, s = segs[segs.length - 1];
+    if (t >= PLAN.end) return { pos: 0, lap: LAPS, laps: LAPS, here: -1, done: true };
+    for (var i = 0; i < segs.length; i++) if (t < segs[i].t1) { s = segs[i]; break; }
+    var f = (t - s.t0) / (s.t1 - s.t0), pos = s.a + (s.b - s.a) * (s.ease ? ease(f) : f);
+    return { pos: pos, lap: s.lap, laps: s.lap - 1, here: s.here, done: false };
+  }
+
+  /* ---------- ESTAT ---------- */
+  function apply() {
+    if (!G) return;
+    var st = state(S.t), T = G.total, pos = st.pos;
+    G.trail.style.strokeDashoffset = st.lap > 1 || st.done ? 0 : T - pos;
+    var showComet = st.lap > 1 && !st.done;
+    G.comet.style.strokeDashoffset = r1(70 - pos);
+    G.comet.setAttribute("opacity", showComet ? 1 : 0);
+    var pt = G.trail.getPointAtLength(pos);
+    G.walker.setAttribute("transform", "translate(" + r1(pt.x) + "," + r1(pt.y) + ")");
+    G.walker.setAttribute("opacity", st.done ? 0 : 1);
+    var warm = smooth(S.t / PLAN.end);
+    G.warm.setAttribute("opacity", r2(warm));
+    G.glowEl.setAttribute("opacity", r2(smooth((st.laps - .5) / 5)));
+
+    // Quin moment s'ha encès, on és ara el caminant i quin moment toca a les voltes ràpides
+    var on = G.L.map(function (l, i) { return st.lap > 1 || st.done || pos >= l - 1 ? 1 : 0; });
+    var ping = -1;
+    if (st.lap > 1 && !st.done) G.L.forEach(function (l, i) { if (Math.abs(pos - l) < 26) ping = i; });
+    var key = [on.join(""), st.here, ping, st.lap, S.sel, st.done].join("|");
+    if (key === lastKey) return;
+    lastKey = key;
+    var rt = st.done ? 0 : (st.lap - 1) % 3;
+    G.nodes.forEach(function (el, i) {
+      if (i === 1) [0, 1, 2].forEach(function (k) { el.classList.toggle("rt-" + k, k === rt); });
+      el.classList.toggle("is-on", on[i] === 1);
+      el.classList.toggle("is-here", st.here === i);
+      el.classList.toggle("is-ping", ping === i);
+      el.classList.toggle("is-sel", S.sel === "s" + i);
+    });
+    G.backNode.classList.toggle("is-sel", S.sel === "back");
+    G.beads.forEach(function (b, k) { b.classList.toggle("is-on", k < st.laps); });
+    root.classList.toggle("is-done", st.done);
+    replay.hidden = !(st.done && !reduce);
+  }
+
+  /* ---------- GLOBUS ---------- */
+  function openPop(k) {
+    var kick, title, text, at, half, below;
+    if (k === "back") {
+      kick = BACK.kick; title = BACK.title; text = BACK.text;
+      var lab = G.backNode.querySelector(".volta__lab"), r = lab.getBoundingClientRect(), sr = scene.getBoundingClientRect();
+      at = [r.left - sr.left + r.width / 2, r.top - sr.top + r.height / 2]; half = r.height / 2 + 10;
+    } else {
+      var i = +k.slice(1), st = STEPS[i];
+      kick = KICK + (i + 1); title = st.title; text = st.text; at = [G.st[i].x, G.st[i].y]; half = G.m / 2 + 12;
+    }
+    pop.querySelector(".volta__pk").textContent = kick;
+    pop.querySelector(".volta__pt").textContent = title;
+    pop.querySelector(".volta__px").textContent = text;
+    pop.classList.add("is-open");
+    var pw = pop.offsetWidth, ph = pop.offsetHeight;
+    var x = clamp(at[0] - pw / 2, 12, G.W - pw - 12);
+    var y = at[1] + half + ph + 8 <= G.H ? at[1] + half : at[1] - half - ph;
+    pop.style.left = r1(x) + "px";
+    pop.style.top = r1(clamp(y, 8, G.H - ph - 8)) + "px";
+  }
+  function select(k) { S.sel = k; lastKey = ""; apply(); if (k) openPop(k); else pop.classList.remove("is-open"); }
+
+  /* ---------- ANIMACIÓ ---------- */
+  function tick(ts) {
+    if (!S.playing) return;
+    if (S.last === null) S.last = ts;
+    S.t += Math.min(64, ts - S.last); S.last = ts;
+    if (S.t >= PLAN.end) { S.t = PLAN.end; S.playing = false; }
+    apply();
+    if (S.playing) S.raf = requestAnimationFrame(tick);
+  }
+  function play() {
+    cancelAnimationFrame(S.raf);
+    S.started = true; S.sel = null; pop.classList.remove("is-open");
+    if (reduce) { S.t = PLAN.end; S.playing = false; lastKey = ""; apply(); return; }
+    S.t = 0; S.last = null; S.playing = true; lastKey = "";
+    apply();
+    setTimeout(function () { S.raf = requestAnimationFrame(tick); }, 300);
+  }
+  function stop() { cancelAnimationFrame(S.raf); S.playing = false; S.t = PLAN.end; S.started = true; }
+
+  nodesBox.addEventListener("click", function (e) {
+    var el = e.target.closest ? e.target.closest(".volta__node") : null;
+    if (!el) return;
+    if (S.playing) stop();
+    var k = el.getAttribute("data-k");
+    select(S.sel === k ? null : k);
+  });
+  document.addEventListener("click", function (e) {
+    if (S.sel && !(e.target.closest && (e.target.closest(".volta__node") || e.target.closest(".volta__pop")))) select(null);
+  });
+  root.addEventListener("keydown", function (e) { if (e.key === "Escape" && S.sel) select(null); });
+  replay.addEventListener("click", function (e) { e.stopPropagation(); play(); });
+
+  /* ---------- MIDA I ARRENCADA ---------- */
+  render();
+  S.width = Math.round(root.clientWidth);
+  var pending = false;
+  function onResize() {
+    if (pending) return;
+    pending = true;
+    requestAnimationFrame(function () {
+      pending = false;
+      var w = Math.round(root.clientWidth);
+      if (w && w !== S.width) { S.width = w; render(); }
+    });
+  }
+  if (window.ResizeObserver) new ResizeObserver(onResize).observe(root);
+  else window.addEventListener("resize", onResize);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { S.backFix = null; render(); });
+
+  if (reduce) { S.t = PLAN.end; apply(); }
+  else if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting && !S.started) { io.disconnect(); play(); } });
+    }, { threshold: 0.3 });
+    io.observe(scene);
+  } else play();
+})();
+</script>

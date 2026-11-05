@@ -1,0 +1,624 @@
+{# infografia-cursos.html: copiat del bloc INICI–FINAL de la carpeta «Infografies web» (5 de novembre de 2026). #}
+<div class="vies" data-vies>
+  <div class="vies__scene" role="group" aria-label="Els cursos: portes d'entrada diferents a un mateix camí cap a l'Esperança Activa">
+    <svg class="vies__svg" aria-hidden="true" focusable="false"></svg>
+    <div class="vies__nodes"></div>
+    <div class="vies__pop" aria-live="polite">
+      <p class="vies__pk"></p><p class="vies__pt"></p><p class="vies__px"></p>
+      <a class="vies__go" href="#"><span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+  <div class="vies__foot">
+    <p class="vies__hint">Toca un curs per veure de què va.</p>
+    <button class="vies__replay" type="button" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1M3.5 4v4.6h4.6"/></svg>
+      <span>Torna a caminar</span>
+    </button>
+  </div>
+</div>
+
+<style>
+.vies {
+  --c9: var(--green-900, #11352c); --c8: var(--green-800, #1a4d40); --c7: var(--green-700, #22604f);
+  --c6: var(--green-600, #2e7561); --c2: var(--green-200, #c9dcd4);
+  --cs: var(--sun, #e2c668); --cs-ink: var(--sun-ink, #6f5711); --cline: var(--line, #e7e1d4);
+  --cink: var(--ink, #23302b); --cmuted: var(--muted, #56635d);
+  --fh: var(--font-head, "Montserrat", ui-sans-serif, system-ui, sans-serif);
+  --fb: var(--font-body, "Lato", ui-sans-serif, system-ui, sans-serif);
+  --m: 92px; --mt: 54px; --slot: 240px;
+  position: relative; overflow: hidden; background: #fff; color: var(--cink); font-family: var(--fb);
+  border: 1px solid var(--cline); border-radius: var(--radius-lg, 22px);
+  box-shadow: 0 1px 2px rgba(17,53,44,.06), 0 10px 28px rgba(17,53,44,.09);
+}
+.vies *, .vies *::before, .vies *::after { box-sizing: border-box; }
+.vies p { margin: 0; }
+.vies__scene { position: relative; height: var(--sh, 640px); }
+.vies__svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.vies__nodes { position: absolute; inset: 0; }
+.vies__node { position: absolute; width: 0; height: 0; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+
+/* ---- Els cursos: un medalló amb un petit paisatge que passa de la preocupació a l'esperança ---- */
+.vies__med {
+  position: absolute; left: 0; top: 0; width: var(--m); height: var(--m);
+  margin: calc(var(--m) / -2) 0 0 calc(var(--m) / -2); padding: 0; overflow: hidden;
+  border-radius: 50%; border: 3px solid #c9d2ce; background: #e8ecea; cursor: inherit;
+  -webkit-appearance: none; appearance: none;
+  transition: border-color .6s, background-color .9s, box-shadow .3s, transform .3s;
+}
+.vies__node.is-on .vies__med { border-color: var(--c6); }
+.vies__node.is-hope .vies__med { border-color: var(--c8); background: #fbf5e3; }
+.vies__node--soon .vies__med { border-style: dashed; border-color: #b9c4bf; }
+.vies__node--soon.is-hope .vies__med { border-color: var(--c6); }
+.vies__node:hover .vies__med { transform: scale(1.05); }
+.vies__node.is-sel .vies__med { box-shadow: 0 0 0 4px #fff, 0 0 0 7px var(--cs); }
+.vies__med:focus, .vies__dot:focus { outline: none; }
+.vies__med:focus-visible, .vies__dot:focus-visible { box-shadow: 0 0 0 4px #fff, 0 0 0 7px var(--c7); }
+.vies__scn { display: block; width: 100%; height: 100%; }
+.vies__soon {
+  position: absolute; left: 0; top: calc(var(--m) / 2 - 9px); transform: translateX(-50%);
+  padding: 3px 8px; border-radius: 999px; background: var(--cs); color: var(--c9);
+  font: 700 10px/1.2 var(--fh); letter-spacing: .06em; text-transform: uppercase; white-space: nowrap;
+}
+
+/* Petits paisatges (coordenades de 64 x 64) */
+.vs-hill { fill: #d3dbd7; transition: fill 1s; }
+.is-hope .vs-hill { fill: #c3d9cc; }
+/* 1 · Quan la vida et desborda: el núvol de pluja s'aparta i surt el sol */
+.vs-cloud { fill: #8e9b95; transition: fill 1s, transform 1.1s cubic-bezier(.4, 0, .2, 1); }
+.is-hope .vs-cloud { fill: #fff; transform: translate(-7px, 6px); }
+.vs-rain { stroke: #7c958b; stroke-width: 2; stroke-linecap: round; transition: opacity .6s; }
+.vs-rain line { animation: vies-rain 1s linear infinite; }
+.vs-rain line:nth-child(2) { animation-delay: -.5s; } .vs-rain line:nth-child(3) { animation-delay: -.25s; } .vs-rain line:nth-child(4) { animation-delay: -.75s; }
+.is-hope .vs-rain { opacity: 0; }
+.vs-sun { opacity: 0; transform: translateY(10px); transition: opacity 1s .2s, transform 1.2s .2s cubic-bezier(.34, 1.4, .64, 1); }
+.vs-sun circle { fill: #e2c668; }
+.vs-sun path { stroke: #e2c668; stroke-width: 2; stroke-linecap: round; fill: none; }
+.is-hope .vs-sun { opacity: 1; transform: none; }
+/* 2 · Quan cuidar-nos és una tasca col·lectiva: tres persones soles s'acosten */
+.vs-p { fill: #a3afa9; transition: fill 1s, transform 1.1s cubic-bezier(.4, 0, .2, 1); }
+.vs-p1 { transform: translate(-6px, 1px); } .vs-p3 { transform: translate(6px, -1px); }
+.is-hope .vs-p { transform: none; } .is-hope .vs-p1 { fill: #2e7561; } .is-hope .vs-p2 { fill: #1a4d40; } .is-hope .vs-p3 { fill: #22604f; }
+.vs-heart { fill: #e2c668; opacity: 0; transform-box: fill-box; transform-origin: center; transform: scale(.4); transition: opacity .8s .5s, transform .9s .5s cubic-bezier(.34, 1.56, .64, 1); }
+.is-hope .vs-heart { opacity: 1; transform: none; }
+/* 3 · Quan el món et preocupa: terra seca, foc i arbre nu; després l'arbre treu fulles */
+.vs-ground { fill: #dccfa8; transition: fill 1.2s; }
+.is-hope .vs-ground { fill: #b9d3c5; }
+.vs-crack { fill: none; stroke: #b8a272; stroke-width: 1.4; stroke-linecap: round; transition: opacity 1s; }
+.is-hope .vs-crack { opacity: 0; }
+.vs-trunk { fill: none; stroke: #6f6352; stroke-width: 2.6; stroke-linecap: round; transition: stroke 1s; }
+.is-hope .vs-trunk { stroke: #4f6158; }
+.vs-leaf { fill: #2e7561; transform-box: fill-box; transform-origin: center; transform: scale(0); transition: transform .9s cubic-bezier(.34, 1.56, .64, 1); }
+.vs-leaf:nth-child(2) { transition-delay: .15s; } .vs-leaf:nth-child(3) { transition-delay: .3s; }
+.is-hope .vs-leaf { transform: none; }
+.vs-flame { fill: #d9874a; transform-box: fill-box; transform-origin: 50% 100%; animation: vies-flicker .9s ease-in-out infinite; transition: opacity .7s; }
+.is-hope .vs-flame { opacity: 0; }
+.vs-bird { fill: none; stroke: #22604f; stroke-width: 1.8; stroke-linecap: round; opacity: 0; transition: opacity .8s .6s; }
+.is-hope .vs-bird { opacity: 1; }
+/* 4 · Sostenir el dia a dia: una casa que trontolla; després unes mans la sostenen i s'encén la finestra */
+.vs-house { transform-box: view-box; transform-origin: 32px 47px; transform: rotate(-7deg); transition: transform 1.1s cubic-bezier(.34, 1.4, .64, 1); }
+.is-hope .vs-house { transform: none; }
+.vs-wall { fill: #a3afa9; transition: fill 1s; } .is-hope .vs-wall { fill: #2e7561; }
+.vs-roof { fill: #8e9b95; transition: fill 1s; } .is-hope .vs-roof { fill: #1a4d40; }
+.vs-door { fill: #7f8b86; transition: fill 1s; } .is-hope .vs-door { fill: #fbf5e3; }
+.vs-window { fill: #6f7a75; transition: fill .8s .5s; } .is-hope .vs-window { fill: #e2c668; }
+.vs-hands { fill: #e2c668; opacity: 0; transform: translateY(7px); transition: opacity .8s .2s, transform 1s .2s cubic-bezier(.34, 1.4, .64, 1); }
+.is-hope .vs-hands { opacity: 1; transform: none; }
+.vs-smoke { fill: none; stroke: #9fb3aa; stroke-width: 1.6; stroke-linecap: round; opacity: 0; transition: opacity .8s .8s; }
+.is-hope .vs-smoke { opacity: 1; }
+
+/* ---- El tronc comú: les 7 passes, la caminada i l'Esperança Activa ---- */
+.vies__dot {
+  position: absolute; left: 0; top: 0; width: var(--mt); height: var(--mt);
+  margin: calc(var(--mt) / -2) 0 0 calc(var(--mt) / -2); padding: 0;
+  display: grid; place-items: center; border-radius: 50%; cursor: inherit; -webkit-appearance: none; appearance: none;
+  background: #fff; border: 2px solid var(--c2); color: var(--c6);
+  transition: background-color .4s, border-color .4s, color .4s, box-shadow .3s, transform .3s;
+}
+.vies__dot svg { width: 56%; height: 56%; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.vies__node.is-on .vies__dot { background: var(--c8); border-color: var(--c8); color: #fff; }
+.vies__node.is-pop .vies__dot { animation: vies-pop .6s cubic-bezier(.34, 1.56, .64, 1); }
+.vies__node.is-sel .vies__dot { box-shadow: 0 0 0 4px #fff, 0 0 0 7px var(--cs); }
+.vies__node:hover .vies__dot { transform: scale(1.07); }
+.vies__node--passes.is-turn .vies__dot svg { animation: vies-spin 2.4s linear infinite; }
+.vies__node--end .vies__dot { --mt: calc(var(--mt0, 54px) + 10px); color: var(--c8); }
+.vies__node--end.is-on .vies__dot { background: var(--cs); border-color: var(--cs); color: var(--c9); box-shadow: 0 0 0 8px rgba(226, 198, 104, .35); }
+
+/* Etiquetes */
+.vies__lab {
+  position: absolute; width: max-content; padding: 3px 9px 4px; border-radius: 10px;
+  background: rgba(255, 255, 255, .78); box-shadow: 0 1px 2px rgba(17, 53, 44, .06);
+  font: 700 clamp(13px, calc(var(--sw, 1000px) * .0148), 16px)/1.25 var(--fh); color: var(--c9);
+  text-wrap: balance; transition: opacity .5s, box-shadow .3s;
+}
+.vies__node.is-sel .vies__lab { background: #fff; box-shadow: 0 0 0 2px var(--cs); }
+.vies__lab--top { left: 0; bottom: calc(var(--m) / 2 + 8px); transform: translateX(-50%); max-width: var(--slot); text-align: center; }
+.vies__lab--right { top: 0; left: calc(var(--mt) / 2 + 12px); transform: translateY(-50%); max-width: var(--side); }
+.vies__lab--left { top: 0; right: calc(var(--mt) / 2 + 12px); transform: translateY(-50%); max-width: var(--side); text-align: right; }
+.vies__lab--below { left: 0; top: calc(var(--mt) / 2 + 14px); transform: translateX(-50%); white-space: nowrap; font-size: clamp(16px, calc(var(--sw, 1000px) * .018), 19px); }
+.vies__node--end .vies__lab--right { left: calc(var(--mt) / 2 + 16px); white-space: nowrap; font-size: clamp(16px, calc(var(--sw, 1000px) * .018), 19px); }
+.vies__node--soon .vies__lab { color: var(--cmuted); }
+.vies__lab b { display: block; font-weight: 700; }
+.vies__th { display: block; margin-top: 2px; font: 400 clamp(12.5px, calc(var(--sw, 1000px) * .0132), 14.5px)/1.35 var(--fb); color: var(--cmuted); }
+.vies__beads { display: flex; gap: 5px; margin-top: 6px; }
+.vies__beads i { width: 9px; height: 9px; border-radius: 50%; background: #fff; border: 1.5px solid var(--c2); transition: background-color .25s, border-color .25s, transform .25s; }
+.vies__beads i.is-on { background: var(--cs); border-color: var(--cs); transform: scale(1.12); }
+.vies--compact .vies__lab--top { font-size: 13px; padding: 3px 5px 4px; }
+.vies--compact .vies__lab--top .vies__th { font-size: 11.5px; line-height: 1.3; margin-top: 3px; }
+.vies--compact .vies__lab--right .vies__th { font-size: 12.5px; }
+.vies--compact .vies__soon { font-size: 8.5px; letter-spacing: .03em; padding: 2px 6px; top: calc(var(--m) / 2 - 8px); }
+
+/* Globus amb el text i l'enllaç */
+.vies__pop {
+  position: absolute; left: 0; top: 0; width: min(290px, calc(100% - 24px));
+  padding: 13px 15px 14px; border-radius: 14px; background: #fff;
+  border: 1px solid var(--cline); box-shadow: 0 2px 4px rgba(17,53,44,.06), 0 14px 32px rgba(17,53,44,.16);
+  opacity: 0; visibility: hidden; transform: translateY(6px); transition: opacity .2s, transform .2s, visibility .2s; z-index: 3;
+}
+.vies__pop.is-open { opacity: 1; visibility: visible; transform: none; }
+.vies__pk { font: 700 11.5px/1.3 var(--fh); letter-spacing: .08em; text-transform: uppercase; color: var(--cs-ink); }
+.vies__pt { font: 700 16px/1.3 var(--fh); color: var(--c9); margin-top: 3px !important; }
+.vies__px { font-size: 15.5px; line-height: 1.45; color: var(--cmuted); margin-top: 3px !important; }
+.vies__go {
+  display: inline-flex; align-items: center; gap: .4em; margin-top: 10px; padding: .55em 1.05em;
+  border-radius: 999px; background: var(--c8); color: #fff; text-decoration: none;
+  font: 700 14px/1.2 var(--fh); transition: background-color .15s;
+}
+.vies__go:hover { background: var(--c9); color: #fff; }
+.vies__go:focus-visible { outline: 3px solid var(--cs); outline-offset: 2px; }
+.vies__go svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.vies__go[hidden] { display: none; }
+
+/* Peu */
+.vies__foot {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px 16px; flex-wrap: wrap;
+  min-height: 60px; padding: 10px clamp(14px, 3vw, 24px); border-top: 1px solid var(--cline); background: #fff;
+}
+.vies__hint { font-size: 14.5px; color: var(--cmuted); }
+.vies__replay {
+  flex: none; display: inline-flex; align-items: center; gap: .45em; padding: .55em 1em;
+  border-radius: 999px; border: 2px solid var(--c2); background: #fff; color: var(--c8);
+  font: 700 14px/1.2 var(--fh); cursor: pointer; transition: border-color .15s, color .15s, transform .15s;
+}
+.vies__replay:hover { border-color: var(--c7); color: var(--c9); transform: translateY(-1px); }
+.vies__replay:focus-visible { outline: 3px solid var(--c7); outline-offset: 2px; }
+.vies__replay svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.vies__replay[hidden] { display: none; }
+
+/* Escena */
+.vies__win { opacity: 0; transition: opacity 1.2s; }
+.vies.is-city .vies__win { opacity: 1; }
+.vies__halo { transform-box: fill-box; transform-origin: center; animation: vies-pulse 1.8s ease-in-out infinite; }
+.vies__rays { transform-box: fill-box; transform-origin: center; }
+.vies.is-done .vies__rays { animation: vies-spin 70s linear infinite; }
+
+@keyframes vies-pop { 0% { transform: scale(.7); } 60% { transform: scale(1.15); } 100% { transform: scale(1); } }
+@keyframes vies-pulse { 0%, 100% { transform: scale(1); opacity: .45; } 50% { transform: scale(1.5); opacity: .15; } }
+@keyframes vies-spin { to { transform: rotate(360deg); } }
+@keyframes vies-rain { 0% { transform: translateY(-3px); opacity: 0; } 30% { opacity: 1; } 100% { transform: translateY(7px); opacity: 0; } }
+@keyframes vies-flicker { 0%, 100% { transform: scale(1, 1); } 50% { transform: scale(.88, 1.12); } }
+@media (prefers-reduced-motion: reduce) {
+  .vies *, .vies *::before, .vies *::after { animation: none !important; transition: none !important; }
+}
+</style>
+
+<script>
+(function () {
+  "use strict";
+  var root = document.querySelector("[data-vies]");
+  if (!root || root.getAttribute("data-ready")) return;
+  root.setAttribute("data-ready", "1");
+
+  /* ---------- TEXTOS I ENLLAÇOS (els de la web; es poden canviar aquí) ---------- */
+  // BASE: com arribar a l'arrel de la web des de la pàgina on hi ha la infografia ("../" des de /cursos/)
+  var BASE = "{{ root }}";
+  var COURSES = [
+    { scene: "vida", title: "Quan la vida et desborda", short: "La vida et desborda", themes: "ansietat, dols, conflictes…",
+      text: "Ansietat, angoixa, massa pensaments o la sensació de no poder més.", href: "malestar-emocional/" },
+    { scene: "cuidar", title: "Quan cuidar-nos és una tasca col·lectiva", short: "Cuidar-nos junts/es", themes: "soledat, falta de suport, aïllament…",
+      text: "Soledat, cansament emocional o falta d'espais on sentir-te escoltat/da.", href: "prescripcio-social/" },
+    { scene: "mon", title: "Quan el món et preocupa", short: "El món et preocupa", themes: "canvi climàtic, futur incert…",
+      text: "Crisi climàtica, sequeres, incendis o el món que deixarem.", href: "accio-climatica/" },
+    {# El 4t curs agafa de data/site.json la frase de la targeta i si encara no està obert («soon») #}
+    {% set dia = site.courses|selectattr("key", "equalto", "dia")|first %}
+    { scene: "casa", title: "Quan sostenir la vida es fa difícil", short: "Sostenir el dia a dia", themes: "feina, habitatge, precarietat…",
+      text: {{ dia.card|tojson }}, href: "economia-social/"{% if dia.soon %}, soon: true{% endif %} }
+  ];
+  // Un curs nou que encara no estigui actiu: afegeix-hi «soon: true» i surt amb la marca «Properament» i sense enllaç
+  // Canvi de la web (5 de novembre): les passes són les mateixes; el que canvia és cap on s'orienta la reflexió
+  var PASSES = { kick: "Cada curs", title: "7 passes", sub: "amb la mirada de cada curs",
+    text: "Les passes són les mateixes a tots els cursos, però els àudios i els vídeos orienten la reflexió cap al tema de cada un. Ho pots fer en 7 dies o al teu ritme." };
+  var WALK = { kick: "Rutes a peu", title: "Camina per la teva ciutat",
+    text: {{ ("Ara hi ha rutes " ~ cities_with_a ~ ".")|tojson }}, href: "ciutats/", link: "Tria la teva ciutat" }; // ciutats de data/site.json
+  var END = { kick: "On porta el camí", title: "Esperança Activa", text: "Una pràctica, una caminada, un petit pas." };
+  var KICK_COURSE = "Curs gratuït", KICK_SOON = "Properament", LINK_COURSE = "És el meu cas";
+
+  /* ---------- PAISATGES DELS CURSOS (64 x 64) ---------- */
+  var SCENES = {
+    vida: '<path class="vs-hill" d="M0 50C14 44 26 46 36 50S56 52 64 47V64H0Z"/>' +
+      '<g class="vs-sun"><path d="M44 8.5v2.8M44 30.7v2.8M31.5 21h2.8M53.7 21h2.8M35.2 12.2l2 2M50.8 27.8l2 2M35.2 29.8l2-2M50.8 14.2l2-2"/><circle cx="44" cy="21" r="7.5"/></g>' +
+      '<g class="vs-rain"><line x1="21" y1="41" x2="19.5" y2="46"/><line x1="27" y1="41" x2="25.5" y2="46"/><line x1="33" y1="41" x2="31.5" y2="46"/><line x1="39" y1="41" x2="37.5" y2="46"/></g>' +
+      '<g class="vs-cloud"><circle cx="23" cy="32" r="7"/><circle cx="31" cy="27" r="9.5"/><circle cx="40" cy="32" r="7"/><rect x="16" y="31" width="31" height="8" rx="4"/></g>',
+    cuidar: '<path class="vs-hill" d="M0 50C14 46 26 47 36 50S56 51 64 48V64H0Z"/>' +
+      '<path class="vs-heart" d="M32 26.5s-6.2-3.7-6.2-7.8a3.4 3.4 0 0 1 6.2-1.9 3.4 3.4 0 0 1 6.2 1.9c0 4.1-6.2 7.8-6.2 7.8z"/>' +
+      '<g class="vs-p vs-p1"><circle cx="21.5" cy="38" r="4"/><path d="M16.5 51v-3a5 5 0 0 1 10 0v3z"/></g>' +
+      '<g class="vs-p vs-p3"><circle cx="42.5" cy="38" r="4"/><path d="M37.5 51v-3a5 5 0 0 1 10 0v3z"/></g>' +
+      '<g class="vs-p vs-p2"><circle cx="32" cy="35.5" r="4.4"/><path d="M26.5 51v-4a5.5 5.5 0 0 1 11 0v4z"/></g>',
+    mon: '<path class="vs-ground" d="M0 50C16 46 48 46 64 50V64H0Z"/>' +
+      '<path class="vs-crack" d="M12 54l4 3-1.5 3.5M41 53l3 4 4.5.8M27 58.5l3.2-2.2"/>' +
+      '<path class="vs-bird" d="M11 18q2.6-2.8 5.2 0q2.6-2.8 5.2 0M20 12q1.8-1.9 3.6 0q1.8-1.9 3.6 0"/>' +
+      '<g><circle class="vs-leaf" cx="25" cy="32" r="6.5"/><circle class="vs-leaf" cx="39" cy="29" r="7"/><circle class="vs-leaf" cx="31" cy="24" r="8"/></g>' +
+      '<path class="vs-trunk" d="M32 50V33M32 41l-6-6M32 37l6-6M32 33l-2-6"/>' +
+      '<path class="vs-flame" d="M47.5 50.5c-3.6 0-5.2-2.5-4.3-5.4.6-1.9 2.1-2.7 2.3-4.8 1.9 1.4 2.5 3.1 2.3 4.6.9-.4 1.5-1.3 1.7-2.2 1.6 1.5 2.5 3.1 2.3 4.8-.3 1.9-2 3-4.3 3z"/>',
+    casa: '<path class="vs-ground" d="M0 50C16 46 48 46 64 50V64H0Z"/>' +
+      '<path class="vs-crack" d="M10 55l4 2.5-1 3M45 54l3.5 3.5 4 .5"/>' +
+      '<path class="vs-smoke" d="M39.6 18.5c-1.8-1.6-.2-3.4 1.4-4.6 1.6-1.3 1.2-3-.4-4.2"/>' +
+      '<g class="vs-hands"><path d="M11.5 41.5Q11.5 54.5 31 54.5V50.5Q17 50.5 16.2 41.5Z"/><circle cx="13.85" cy="41.3" r="2.35"/>' +
+      '<path d="M52.5 41.5Q52.5 54.5 33 54.5V50.5Q47 50.5 47.8 41.5Z"/><circle cx="50.15" cy="41.3" r="2.35"/></g>' +
+      '<g class="vs-house"><rect class="vs-roof" x="37" y="21" width="4" height="8"/><path class="vs-roof" d="M19 33L32 21.5 45 33Z"/>' +
+      '<rect class="vs-wall" x="22" y="32" width="20" height="15"/><rect class="vs-door" x="28.5" y="38.5" width="6" height="8.5" rx="1"/>' +
+      '<rect class="vs-window" x="36" y="35" width="4" height="4" rx=".6"/></g>'
+  };
+  var ICON = {
+    spiral: '<path d="M12 11.4a1.6 1.6 0 0 1 3.2 0a3.2 3.2 0 0 1-6.4 0a4.8 4.8 0 0 1 9.6 0a6.4 6.4 0 0 1-12.8 0"/>',
+    steps: '<path d="M8.3 2.8c1.8 0 2.7 2 2.7 4.3S10.1 11.8 8.3 11.8 5.6 9.4 5.6 7.1 6.5 2.8 8.3 2.8z"/><path d="M6.4 14h3.8v1.1a1.9 1.9 0 0 1-3.8 0z"/><path d="M15.8 7c1.8 0 2.7 2 2.7 4.3s-.9 4.7-2.7 4.7-2.7-2.4-2.7-4.7S14 7 15.8 7z"/><path d="M13.9 18.2h3.8v1.1a1.9 1.9 0 0 1-3.8 0z"/>',
+    sun: '<circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/>'
+  };
+
+  /* ---------- RITME (ms de cada tram) ---------- */
+  // 0: dels cursos a les 7 passes · 1: les 7 passes · 2: cap a la ciutat · 3: cap al sol · 4: l'esperança torna a cada curs
+  var D = [1500, 1300, 950, 950, 1400], END_P = D.length;
+  var COMPACT = 640; // per sota d'aquesta amplada, etiquetes curtes
+
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var scene = root.querySelector(".vies__scene");
+  var svg = root.querySelector(".vies__svg");
+  var nodesBox = root.querySelector(".vies__nodes");
+  var pop = root.querySelector(".vies__pop");
+  var go = root.querySelector(".vies__go");
+  var replay = root.querySelector(".vies__replay");
+
+  var S = { p: 0, sel: null, playing: false, started: false, t: 0, last: null, raf: 0, width: 0 };
+  var G = null, lastKey = "";
+
+  function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+  function smooth(v) { v = clamp(v, 0, 1); return v * v * (3 - 2 * v); }
+  function lerp(a, b, t) { return a + (b - a) * t; }
+  function ease(x) { x = clamp(x, 0, 1); return -(Math.cos(Math.PI * x) - 1) / 2; }
+  function r1(n) { return Math.round(n * 10) / 10; }
+  function r2(n) { return Math.round(n * 100) / 100; }
+  function full(t) { return t.title + (t.sub ? " " + t.sub : ""); }
+  function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;"); }
+
+  function spline(P) {
+    var d = "M" + r1(P[0][0]) + "," + r1(P[0][1]);
+    for (var i = 0; i < P.length - 1; i++) {
+      var p0 = P[i - 1] || P[i], p1 = P[i], p2 = P[i + 1], p3 = P[i + 2] || p2;
+      d += "C" + r1(p1[0] + (p2[0] - p0[0]) / 6) + "," + r1(p1[1] + (p2[1] - p0[1]) / 6) + " " +
+        r1(p2[0] - (p3[0] - p1[0]) / 6) + "," + r1(p2[1] - (p3[1] - p1[1]) / 6) + " " + r1(p2[0]) + "," + r1(p2[1]);
+    }
+    return d;
+  }
+  function area(P, H) { return spline(P) + "L" + r1(P[P.length - 1][0]) + "," + (H + 4) + "L" + r1(P[0][0]) + "," + (H + 4) + "Z"; }
+
+  /* ---------- GEOMETRIA ---------- */
+  function geometry(W) {
+    var compact = W < COMPACT, n = COURSES.length, g = { W: W, compact: compact };
+    var m = Math.round(clamp(W * 0.085, 56, 92)), mt = Math.round(clamp(W * 0.05, 46, 56));
+    var pad = compact ? 14 : 26, labH = S.labFix && S.labFix.w === W ? S.labFix.h : (compact ? 84 : 62);
+    var cy = pad + labH + 8 + m / 2, y0 = cy + m / 2;
+    var cx = W / 2;
+    var yS = y0 + (compact ? 104 : 118) + mt / 2, yC = yS + (compact ? 104 : 100), yE = yC + (compact ? 98 : 92);
+    var H = Math.round(yE + (compact ? 128 : 124)), hy = H - 34;
+    g.m = m; g.mt = mt; g.H = H; g.hy = hy; g.labH = labH;
+    g.courses = COURSES.map(function (c, i) { return { x: W * (i + .5) / n, y: cy }; });
+    g.trunk = [{ x: cx, y: yS }, { x: cx, y: yC }, { x: cx, y: yE }];
+    g.slot = Math.floor(W / n - (compact ? 4 : 18));
+    // Camins de cada curs: baixen i conflueixen a sobre de les 7 passes
+    var yIn = yS - mt / 2 - 1;
+    g.cpaths = g.courses.map(function (c) {
+      return "M" + r1(c.x) + "," + r1(y0) + "C" + r1(c.x) + "," + r1(y0 + (yIn - y0) * .55) + " " + r1(cx + (c.x - cx) * .06) + "," + r1(yIn - (yIn - y0) * .5) + " " + r1(cx) + "," + r1(yIn);
+    });
+    var wig = Math.min(W * .07, 38);
+    g.trail = spline([[cx, yS], [cx + wig, (yS + yC) / 2], [cx, yC], [cx - wig, (yC + yE) / 2], [cx, yE]]);
+    // Paisatge
+    var f = function (pts) { return pts.map(function (p) { return [p[0] * W, p[1]]; }); };
+    g.far = area(f([[-.05, yS + 20], [.18, yS - 10], [.38, yS + 14], [.62, yS - 6], [.82, yS + 18], [1.05, yS - 4]]), H);
+    g.mid = area(f([[-.05, hy - 26], [.2, hy - 46], [.42, hy - 18], [.6, hy - 30], [.8, hy - 52], [1.05, hy - 30]]), H);
+    g.front = area(f([[-.05, hy + 4], [.3, hy - 4], [.55, hy + 6], [.8, hy - 2], [1.05, hy + 4]]), H);
+    g.sun = { x: cx, y0: H + 70, y1: hy + (compact ? 8 : 4), r: compact ? 40 : 54 };
+    var gapC = compact ? 92 : 120;
+    g.cityL = [W * .02, cx - gapC]; g.cityR = [cx + gapC, W * .98];
+    g.cityS = compact ? .75 : 1.05;
+    g.fog = [[.12, cy, 1.2], [.37, cy + 20, 1], [.63, cy - 6, 1.2], [.88, cy + 16, 1], [.3, yS - 40, 1.3], [.7, yS - 30, 1.2], [.5, y0 + 30, 1]]
+      .map(function (q) { return [q[0] * W, q[1], (compact ? 80 : 150) * q[2], (compact ? 30 : 46) * q[2]]; });
+    g.side = Math.max(90, Math.floor(W / 2 - mt / 2 - 28));
+    return g;
+  }
+
+  function skyline(x0, x1, base, s, seed) {
+    var k = seed, b = "", w = "", x = x0;
+    function rnd() { k = (k * 9301 + 49297) % 233280; return k / 233280; }
+    while (x < x1) {
+      var bw = (13 + rnd() * 15) * s, bh = (16 + rnd() * 34) * s, kind = rnd();
+      if (x + bw > x1) break;
+      if (kind < .16) {
+        // arbre
+        var tr = 7 * s;
+        b += '<circle cx="' + r1(x + tr) + '" cy="' + r1(base - 9 * s - tr) + '" r="' + r1(tr) + '" fill="#b5cdc0"/><rect x="' + r1(x + tr - s) + '" y="' + r1(base - 10 * s) + '" width="' + r1(2 * s) + '" height="' + r1(10 * s) + '" fill="#b5cdc0"/>';
+        x += 2 * tr + 4 * s; continue;
+      }
+      if (kind < .26) {
+        // campanar
+        var tw = 9 * s, th = bh + 16 * s;
+        b += '<path d="M' + r1(x) + ',' + r1(base) + 'V' + r1(base - th) + 'L' + r1(x + tw / 2) + ',' + r1(base - th - 10 * s) + 'L' + r1(x + tw) + ',' + r1(base - th) + 'V' + r1(base) + 'Z" fill="#c2d5cb"/>';
+        w += '<rect x="' + r1(x + tw / 2 - 1.5 * s) + '" y="' + r1(base - th + 4 * s) + '" width="' + r1(3 * s) + '" height="' + r1(4 * s) + '"/>';
+        x += tw + 3 * s; continue;
+      }
+      b += '<rect x="' + r1(x) + '" y="' + r1(base - bh) + '" width="' + r1(bw) + '" height="' + r1(bh + 2) + '" rx="' + r1(1.5 * s) + '" fill="#c2d5cb"/>';
+      for (var yy = base - bh + 5 * s; yy < base - 7 * s; yy += 8 * s)
+        for (var xx = x + 3.5 * s; xx < x + bw - 5 * s; xx += 6.5 * s)
+          if (rnd() < .42) w += '<rect x="' + r1(xx) + '" y="' + r1(yy) + '" width="' + r1(3 * s) + '" height="' + r1(3.4 * s) + '"/>';
+      x += bw + (1.5 + rnd() * 5) * s;
+    }
+    return b + '<g class="vies__win" fill="#e2c668">' + w + '</g>';
+  }
+  function rays(r) {
+    var s = "";
+    for (var i = 0; i < 12; i++) {
+      if (i === 0 || i === 6 || i === 9) continue; // sense els rajos de dalt (darrere del punt final) ni els de l'horitzó
+      var a = i * Math.PI / 6, c = Math.cos(a), si = Math.sin(a);
+      s += '<line x1="' + r1(c * r * 1.35) + '" y1="' + r1(si * r * 1.35) + '" x2="' + r1(c * r * 1.7) + '" y2="' + r1(si * r * 1.7) +
+        '" stroke="#e2c668" stroke-width="' + r1(Math.max(2, r / 11)) + '" stroke-linecap="round"/>';
+    }
+    return s;
+  }
+
+  /* ---------- DIBUIX ---------- */
+  function render() {
+    var W = Math.round(root.clientWidth);
+    if (!W) return;
+    G = geometry(W);
+    var H = G.H, sun = G.sun, out = [];
+    root.classList.toggle("vies--compact", G.compact);
+    root.style.setProperty("--sw", W + "px");
+    root.style.setProperty("--sh", H + "px");
+    root.style.setProperty("--m", G.m + "px");
+    root.style.setProperty("--mt", G.mt + "px");
+    root.style.setProperty("--mt0", G.mt + "px");
+    root.style.setProperty("--slot", G.slot + "px");
+    root.style.setProperty("--side", G.side + "px");
+    svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+
+    out.push(
+      '<defs>',
+      '<linearGradient id="vies-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e6eae8"/><stop offset="1" stop-color="#f1f3ef"/></linearGradient>',
+      '<linearGradient id="vies-warm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7f4ea"/><stop offset=".6" stop-color="#f8efd4"/><stop offset="1" stop-color="#f3dfa3"/></linearGradient>',
+      '<radialGradient id="vies-glow"><stop offset="0" stop-color="#f1e3b0" stop-opacity=".95"/><stop offset=".45" stop-color="#f8efd2" stop-opacity=".55"/><stop offset="1" stop-color="#fcf8ea" stop-opacity="0"/></radialGradient>',
+      '<linearGradient id="vies-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b4d0c2"/><stop offset="1" stop-color="#dfece6"/></linearGradient>',
+      '<filter id="vies-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="' + (G.compact ? 12 : 18) + '"/></filter>',
+      '</defs>',
+      '<rect width="' + W + '" height="' + H + '" fill="url(#vies-sky)"/>',
+      '<rect class="vies__warm" width="' + W + '" height="' + H + '" fill="url(#vies-warm)"/>',
+      '<path d="' + G.far + '" fill="#e3ebe7"/>',
+      '<path d="' + G.mid + '" fill="#d4e3db"/>',
+      '<circle class="vies__glow" r="' + r1(sun.r * 4) + '" fill="url(#vies-glow)"/>',
+      '<g class="vies__sun"><g class="vies__rays">' + rays(sun.r) + '</g><circle r="' + sun.r + '" fill="#e2c668"/></g>',
+      skyline(G.cityL[0], G.cityL[1], G.hy + 6, G.cityS, 7),
+      skyline(G.cityR[0], G.cityR[1], G.hy + 6, G.cityS, 41),
+      '<path d="' + G.front + '" fill="url(#vies-ground)"/>',
+      '<rect class="vies__mist" width="' + W + '" height="' + H + '" fill="#dde3e0"/>',
+      '<g class="vies__fog" filter="url(#vies-blur)">' + G.fog.map(function (q) {
+        return '<ellipse cx="' + r1(q[0]) + '" cy="' + r1(q[1]) + '" rx="' + r1(q[2]) + '" ry="' + r1(q[3]) + '" fill="#fff"/>';
+      }).join("") + '</g>'
+    );
+    // Camins
+    COURSES.forEach(function (c, i) {
+      out.push('<path d="' + G.cpaths[i] + '" fill="none" stroke="#1a4d40" stroke-opacity="' + (c.soon ? .22 : .38) + '" stroke-width="4" stroke-linecap="round" stroke-dasharray="0.1 10"/>');
+    });
+    COURSES.forEach(function (c, i) {
+      if (!c.soon) out.push('<path class="vies__cw" data-i="' + i + '" d="' + G.cpaths[i] + '" fill="none" stroke="#1a4d40" stroke-width="4.5" stroke-linecap="round"/>');
+    });
+    out.push(
+      '<path d="' + G.trail + '" fill="none" stroke="#1a4d40" stroke-opacity=".38" stroke-width="4" stroke-linecap="round" stroke-dasharray="0.1 10"/>',
+      '<path class="vies__walked" d="' + G.trail + '" fill="none" stroke="#1a4d40" stroke-width="4.5" stroke-linecap="round"/>'
+    );
+    COURSES.forEach(function (c, i) {
+      if (!c.soon) out.push('<g class="vies__cwalker" data-i="' + i + '"><circle r="6.5" fill="#e2c668" stroke="#fff" stroke-width="2.5"/></g>');
+    });
+    out.push('<g class="vies__walker"><circle class="vies__halo" r="15" fill="#e2c668"/><circle r="8" fill="#e2c668" stroke="#fff" stroke-width="3"/></g>');
+    svg.innerHTML = out.join("");
+
+    // Punts (HTML)
+    var html = [];
+    COURSES.forEach(function (c, i) {
+      var n = G.courses[i];
+      html.push('<div class="vies__node vies__node--course' + (c.soon ? ' vies__node--soon' : '') + '" data-k="c' + i + '" style="left:' + r1(n.x) + 'px;top:' + r1(n.y) + 'px">' +
+        '<span class="vies__lab vies__lab--top" aria-hidden="true"><b>' + esc(c.short) + '</b><span class="vies__th">' + esc(c.themes) + '</span></span>' +
+        '<button type="button" class="vies__med" aria-label="' + esc(c.title + (c.soon ? " (" + KICK_SOON.toLowerCase() + ")" : "") + ": " + c.text) + '">' +
+        '<svg class="vies__scn" viewBox="0 0 64 64" aria-hidden="true">' + SCENES[c.scene] + '</svg></button>' +
+        (c.soon ? '<span class="vies__soon" aria-hidden="true">' + KICK_SOON + '</span>' : '') + '</div>');
+    });
+    var T = [[PASSES, "passes", ICON.spiral, "right"], [WALK, "walk", ICON.steps, "left"], [END, "end", ICON.sun, G.compact ? "below" : "right"]];
+    T.forEach(function (t, j) {
+      var n = G.trunk[j], beads = "";
+      if (j === 0) { beads = '<span class="vies__beads">'; for (var b = 0; b < 7; b++) beads += "<i></i>"; beads += "</span>"; }
+      html.push('<div class="vies__node vies__node--' + t[1] + '" data-k="t' + j + '" style="left:' + r1(n.x) + 'px;top:' + r1(n.y) + 'px">' +
+        '<button type="button" class="vies__dot" aria-label="' + esc(full(t[0]) + ": " + t[0].text) + '"><svg viewBox="0 0 24 24" aria-hidden="true">' + t[2] + '</svg></button>' +
+        '<span class="vies__lab vies__lab--' + t[3] + '" aria-hidden="true">' + esc(t[0].title) + (t[0].sub ? '<span class="vies__th">' + esc(t[0].sub) + '</span>' : '') + beads + '</span></div>');
+    });
+    nodesBox.innerHTML = html.join("");
+    var tallest = 0;
+    Array.prototype.forEach.call(nodesBox.querySelectorAll(".vies__lab--top"), function (l) { tallest = Math.max(tallest, l.offsetHeight); });
+    if (tallest && Math.abs(tallest - G.labH) > 2 && !(S.labFix && S.labFix.w === W)) { S.labFix = { w: W, h: tallest }; return render(); }
+
+    // Referències i longituds
+    G.cw = Array.prototype.slice.call(svg.querySelectorAll(".vies__cw"));
+    G.cwalk = Array.prototype.slice.call(svg.querySelectorAll(".vies__cwalker"));
+    G.cw.forEach(function (p) { p._len = p.getTotalLength(); p.style.strokeDasharray = p._len; });
+    G.path = svg.querySelector(".vies__walked");
+    G.total = G.path.getTotalLength();
+    G.path.style.strokeDasharray = G.total;
+    var best = Infinity, at = 0;
+    for (var l = 0; l <= G.total; l += 1.5) {
+      var pt = G.path.getPointAtLength(l), dd = Math.abs(pt.y - G.trunk[1].y) + Math.abs(pt.x - G.trunk[1].x);
+      if (dd < best) { best = dd; at = l; }
+    }
+    G.Lc = at;
+    G.el = {};
+    ["walker", "sun", "glow", "rays", "mist", "fog", "warm"].forEach(function (k) { G.el[k] = svg.querySelector(".vies__" + k); });
+    G.nodes = {};
+    Array.prototype.forEach.call(nodesBox.children, function (el) { G.nodes[el.getAttribute("data-k")] = el; });
+    G.beads = Array.prototype.slice.call(nodesBox.querySelectorAll(".vies__beads i"));
+    lastKey = "";
+    apply();
+    if (S.sel) openPop(S.sel);
+  }
+
+  /* ---------- ESTAT ---------- */
+  function apply() {
+    if (!G) return;
+    var p = S.p, e0 = ease(p);
+    // 0 · Dels cursos a les 7 passes
+    G.cw.forEach(function (path, j) {
+      var len = path._len * e0, w = G.cwalk[j];
+      path.style.strokeDashoffset = path._len - len;
+      var pt = path.getPointAtLength(len);
+      w.setAttribute("transform", "translate(" + r1(pt.x) + "," + r1(pt.y) + ")");
+      w.setAttribute("opacity", p > 0 && p < 1 ? 1 : 0);
+    });
+    // 2-3 · El camí comú
+    var len = p < 2 ? 0 : p < 3 ? G.Lc * ease(p - 2) : G.Lc + (G.total - G.Lc) * ease(p - 3);
+    G.path.style.strokeDashoffset = G.total - len;
+    var wp = G.path.getPointAtLength(len);
+    G.el.walker.setAttribute("transform", "translate(" + r1(wp.x) + "," + r1(wp.y) + ")");
+    G.el.walker.setAttribute("opacity", p >= 1 && p < 4 ? 1 : 0);
+    // Llum: la boira s'aixeca, el cel s'escalfa i surt el sol
+    G.el.mist.setAttribute("opacity", r2(.5 * (1 - smooth((p - .8) / 2.6))));
+    G.el.fog.setAttribute("opacity", r2(1 - smooth((p - .5) / 2)));
+    G.el.warm.setAttribute("opacity", r2(smooth((p - 1.8) / 2.4)));
+    var rise = smooth((p - 2.5) / 1.7), sy = lerp(G.sun.y0, G.sun.y1, rise);
+    G.el.sun.setAttribute("transform", "translate(" + r1(G.sun.x) + "," + r1(sy) + ")");
+    G.el.glow.setAttribute("transform", "translate(" + r1(G.sun.x) + "," + r1(sy) + ") scale(" + r2(.6 + .4 * rise) + ")");
+    G.el.glow.setAttribute("opacity", r2(rise));
+    G.el.rays.setAttribute("opacity", r2(smooth((p - 3.6) / 1)));
+
+    var beads = p < 1 ? 0 : Math.min(7, Math.floor((p - 1) / .11) + 1);
+    var hope = COURSES.map(function (c, i) { return p >= 4.1 + i * .2 ? 1 : 0; }).join("");
+    var key = [p > 0, p >= 1, beads, p >= 3, p >= 4, hope, S.sel, p >= END_P].join("|");
+    if (key === lastKey) return;
+    lastKey = key;
+    root.classList.toggle("is-city", p >= 3);
+    root.classList.toggle("is-done", p >= END_P);
+    COURSES.forEach(function (c, i) {
+      var el = G.nodes["c" + i];
+      el.classList.toggle("is-on", p > 0);
+      el.classList.toggle("is-hope", hope.charAt(i) === "1");
+      el.classList.toggle("is-sel", S.sel === "c" + i);
+    });
+    [1, 3, 4].forEach(function (lim, j) {
+      var el = G.nodes["t" + j], on = p >= lim;
+      if (on && !el.classList.contains("is-on") && S.playing) {
+        el.classList.add("is-pop");
+        setTimeout(function () { el.classList.remove("is-pop"); }, 650);
+      }
+      el.classList.toggle("is-on", on);
+      el.classList.toggle("is-sel", S.sel === "t" + j);
+    });
+    G.nodes.t0.classList.toggle("is-turn", p >= 1 && p < 2 && S.playing);
+    G.beads.forEach(function (b, k) { b.classList.toggle("is-on", k < beads); });
+    replay.hidden = !(p >= END_P && !reduce);
+  }
+
+  /* ---------- GLOBUS ---------- */
+  function openPop(k) {
+    var kick, title, text, href = null, link = LINK_COURSE, n, half;
+    if (k.charAt(0) === "c") {
+      var c = COURSES[+k.slice(1)];
+      kick = c.soon ? KICK_SOON : KICK_COURSE; title = c.title; text = c.text; href = c.soon ? null : c.href;
+      n = G.courses[+k.slice(1)]; half = G.m / 2 + 10;
+    } else {
+      var t = [PASSES, WALK, END][+k.slice(1)];
+      kick = t.kick; title = full(t); text = t.text; href = t.href || null; link = t.link || link;
+      n = G.trunk[+k.slice(1)]; half = G.mt / 2 + 14;
+    }
+    pop.querySelector(".vies__pk").textContent = kick;
+    pop.querySelector(".vies__pt").textContent = title;
+    pop.querySelector(".vies__px").textContent = text;
+    go.hidden = !href;
+    if (href) { go.href = BASE + href; go.querySelector("span").textContent = link; }
+    pop.classList.add("is-open");
+    var pw = pop.offsetWidth, ph = pop.offsetHeight;
+    var x = clamp(n.x - pw / 2, 12, G.W - pw - 12);
+    var y = n.y + half + ph + 8 <= G.H ? n.y + half : n.y - half - ph;
+    pop.style.left = r1(x) + "px";
+    pop.style.top = r1(clamp(y, 8, G.H - ph - 8)) + "px";
+  }
+  function closePop() { pop.classList.remove("is-open"); }
+  function select(k) {
+    S.sel = k; lastKey = ""; apply();
+    if (k) openPop(k); else closePop();
+  }
+
+  /* ---------- ANIMACIÓ ---------- */
+  function toP(t) {
+    for (var i = 0; i < D.length; i++) { if (t < D[i]) return i + t / D[i]; t -= D[i]; }
+    return END_P;
+  }
+  function tick(ts) {
+    if (!S.playing) return;
+    if (S.last === null) S.last = ts;
+    S.t += Math.min(64, ts - S.last); S.last = ts;
+    S.p = toP(S.t);
+    if (S.p >= END_P) S.playing = false;
+    apply();
+    if (S.playing) S.raf = requestAnimationFrame(tick);
+  }
+  function play() {
+    cancelAnimationFrame(S.raf);
+    S.started = true; S.sel = null; closePop();
+    if (reduce) { S.p = END_P; S.playing = false; lastKey = ""; apply(); return; }
+    S.p = 0; S.t = 0; S.last = null; S.playing = true; lastKey = "";
+    apply();
+    setTimeout(function () { S.raf = requestAnimationFrame(tick); }, 350);
+  }
+  function stop() { cancelAnimationFrame(S.raf); S.playing = false; S.p = END_P; S.started = true; }
+
+  nodesBox.addEventListener("click", function (e) {
+    var el = e.target.closest ? e.target.closest(".vies__node") : null;
+    if (!el) return;
+    if (S.playing) stop();
+    var k = el.getAttribute("data-k");
+    select(S.sel === k ? null : k);
+  });
+  document.addEventListener("click", function (e) {
+    if (S.sel && !(e.target.closest && (e.target.closest(".vies__node") || e.target.closest(".vies__pop")))) select(null);
+  });
+  root.addEventListener("keydown", function (e) { if (e.key === "Escape" && S.sel) select(null); });
+  replay.addEventListener("click", function (e) { e.stopPropagation(); play(); });
+
+  /* ---------- MIDA I ARRENCADA ---------- */
+  render();
+  S.width = Math.round(root.clientWidth);
+  var pending = false;
+  function onResize() {
+    if (pending) return;
+    pending = true;
+    requestAnimationFrame(function () {
+      pending = false;
+      var w = Math.round(root.clientWidth);
+      if (w && w !== S.width) { S.width = w; render(); }
+    });
+  }
+  if (window.ResizeObserver) new ResizeObserver(onResize).observe(root);
+  else window.addEventListener("resize", onResize);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { S.labFix = null; render(); });
+
+  if (reduce) { S.p = END_P; apply(); }
+  else if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting && !S.started) { io.disconnect(); play(); } });
+    }, { threshold: 0.3 });
+    io.observe(scene);
+  } else play();
+})();
+</script>

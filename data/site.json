@@ -35,7 +35,7 @@
       "subtitle": "Ansietat, dols, conflictes, cansament i moments de vulnerabilitat",
       "card": "Ansietat, angoixa, massa pensaments o la sensació de no poder més.",
       "icon": "cloud-rain",
-      "thinkific": "https://espiral-elara-social.thinkific.com/products/courses/Quan-la-vida-et-desborda-ansietat-malestar-emocional-7-passes-cap-esperanca-activa",
+      "thinkific": "https://espiral-elara-social.thinkific.com/enroll/3864247",
       "for_lead": "Hi ha moments en què costa trobar orientació.",
       "for_list": [
         "Estàs passant per una separació, un dol o una pèrdua important.",
@@ -44,7 +44,19 @@
         "Et sents bloquejat/da o no tens clar cap a on anar.",
         "Et costa trobar espai mental perquè la preocupació ocupa massa lloc.",
         "Voldries concretar un primer pas possible davant del que estàs vivint."
-      ]
+      ],
+      "gains_intro": "En completar aquesta primera volta a l'Espiral podràs:",
+      "gains": [
+        "reconnectar amb allò que encara té valor per a tu;",
+        "reconèixer persones i recursos que poden sostenir-te;",
+        "posar paraules a una preocupació concreta;",
+        "observar-la amb una mica més de perspectiva;",
+        "identificar persones o experiències que t'inspiren;",
+        "explorar què necessites i cap a on voldries orientar-te;",
+        "distingir entre allò que pots fer i allò que no depèn només de tu;",
+        "i concretar un primer pas assumible."
+      ],
+      "gains_end": "No es tracta que el problema desaparegui en set passes. Es tracta de poder relacionar-t'hi amb una mica més de presència, suport i orientació."
     },
     {
       "key": "cuidar",
@@ -55,7 +67,7 @@
       "subtitle": "Salut mental comunitària, suport mutu i xarxes de cura",
       "card": "Soledat, cansament emocional o falta d'espais on sentir-te escoltat/da.",
       "icon": "users-three",
-      "thinkific": "https://espiral-elara-social.thinkific.com/products/courses/Quan-cuidar-nos-es-una-tasca-col-lectiva-7-passes-esperanca-activa",
+      "thinkific": "https://espiral-elara-social.thinkific.com/enroll/3837624",
       "for_lead": "El malestar no sempre s'ha de sostenir en solitari.",
       "for_list": [
         "Et preocupa l'augment del malestar emocional, l'ansietat o la soledat.",
@@ -64,7 +76,19 @@
         "Voldries cuidar millor els teus vincles o aprendre a demanar suport quan el necessites.",
         "T'interessen els grups d'ajuda mútua, les xarxes comunitàries o altres formes col·lectives de cura.",
         "Voldries transformar una preocupació en una orientació i un primer pas possible."
-      ]
+      ],
+      "gains_intro": "En completar aquesta primera volta a l'Espiral podràs:",
+      "gains": [
+        "reconnectar amb allò que té valor per a tu;",
+        "reconèixer persones, vincles i recursos que poden sostenir-te;",
+        "posar paraules a una preocupació concreta;",
+        "identificar experiències o persones que t'inspiren;",
+        "explorar quin futur més humà i cuidador voldries;",
+        "diferenciar entre cuidar i haver de carregar amb tot;",
+        "trobar quin paper pot tenir sentit per a tu;",
+        "i concretar un primer pas possible."
+      ],
+      "gains_end": "No es tracta que, en set passes, desaparegui el malestar. Es tracta de poder relacionar-t'hi amb una mica més de suport, claredat i possibilitat de resposta."
     },
     {
       "key": "mon",
@@ -75,7 +99,7 @@
       "subtitle": "Crisi climàtica, ecoansietat i futur incert",
       "card": "Crisi climàtica, sequeres, incendis o el món que deixarem.",
       "icon": "globe",
-      "thinkific": "https://espiral-elara-social.thinkific.com/products/courses/Quan-el-mon-et-preocupa-7-passes-esperanca-activa",
+      "thinkific": "https://espiral-elara-social.thinkific.com/enroll/3836823",
       "for_lead": "La preocupació ecològica també parla del teu vincle amb el món viu.",
       "for_list": [
         "Et preocupa el canvi climàtic i el futur del planeta.",
@@ -84,7 +108,54 @@
         "Sents impotència perquè el que pots fer individualment sembla insuficient.",
         "Voldries implicar-te, però no tens clar de quina manera.",
         "Ja participes en iniciatives ambientals i vols sostenir el compromís sense esgotar-te."
-      ]
+      ],
+      "gains_intro": "En completar aquesta primera volta a l'Espiral podràs:",
+      "gains": [
+        "reconnectar amb allò que estimes del món viu;",
+        "identificar suports, persones i iniciatives que t'inspiren;",
+        "posar paraules a una preocupació ecològica concreta;",
+        "explorar quin futur voldries contribuir a cuidar;",
+        "diferenciar responsabilitat d'hiperresponsabilització;",
+        "trobar quin paper pot tenir sentit per a tu;",
+        "i concretar un primer pas realista i assumible."
+      ],
+      "gains_end": "No es tracta de resoldre la crisi climàtica individualment. Es tracta de trobar una manera més clara i sostenible de situar-te davant d'allò que t'importa."
+    },
+    {
+      "key": "dia",
+      "slug": "economia-social",
+      "anchor": "quan-sostenir",
+      "title": "Quan sostenir la vida es fa difícil",
+      "short": "Sostenir el dia a dia",
+      "subtitle": "Feina, habitatge, precarietat i incertesa econòmica",
+      "card": "Precarietat, no arribar a final de mes, l'habitatge o els ritmes de treball.",
+      "icon": "house",
+      "soon": true,
+      "thinkific": "https://espiral-elara-social.thinkific.com/enroll/3835907",
+      "for_lead": "Hi ha preocupacions que no són només personals.",
+      "for_list": [
+        "Et preocupa la precarietat laboral o la dificultat de construir una vida estable.",
+        "Et genera inquietud l'accés a l'habitatge o la pressió econòmica quotidiana.",
+        "Sents cansament davant de ritmes de treball cada vegada més exigents.",
+        "Et preocupa una organització de l'economia excessivament centrada en la productivitat i la competència.",
+        "Voldries que la feina tingués més sentit i fos més coherent amb els teus valors.",
+        "T'interessen la cooperació, la cura, el suport mutu i les formes comunitàries d'organitzar la vida.",
+        "Davant dels problemes socials, de vegades oscil·les entre la impotència i la sensació que hauries de fer més.",
+        "Voldries transformar una preocupació en una orientació i un primer pas possible."
+      ],
+      "gains_intro": "En completar aquesta primera volta a l'Espiral hauràs explorat una manera de:",
+      "gains": [
+        "reconnectar amb allò que estimes i té valor per a tu;",
+        "reconèixer persones, xarxes i recursos que també sostenen la vida;",
+        "posar paraules a una preocupació concreta;",
+        "mirar-la sense haver de solucionar-la immediatament;",
+        "trobar persones, projectes o experiències que t'inspirin;",
+        "identificar cap a quin futur voldries orientar-te;",
+        "diferenciar entre responsabilitat i hiperresponsabilització;",
+        "explorar quin paper pots tenir dins d'una resposta més àmplia i col·lectiva;",
+        "i concretar un primer pas realista, assumible i coherent amb el que t'importa."
+      ],
+      "gains_end": "Al final, no necessàriament hauràs resolt el problema que et preocupa. Però pots haver canviat la posició des de la qual t'hi relaciones: amb una mica més d'espai, suport, claredat i possibilitat de resposta."
     }
   ],
 
@@ -92,8 +163,26 @@
     "kicker": "Curs digital gratuït · 7 passes cap a l'Esperança Activa",
     "for_title": "És per a tu si…",
     "for_after": "Aquest recorregut pot ser per a tu si:",
+    "facts": [
+      ["heart", "Gratuït"],
+      ["headphones", "En línia i en català"],
+      ["footprints", "7 passes, al teu ritme"],
+      ["plant", "No cal experiència en meditació"]
+    ],
+    "cta_note": "El botó obre el formulari d'inscripció a la plataforma dels cursos. És gratuït i te'n pots donar de baixa quan vulguis.",
+    "gains_title": "Què et pot aportar aquest recorregut?",
+    "about_title": "Sobre el facilitador",
+    "about": [
+      "Aleix Boronat és terapeuta Gestalt, professor de Mindfulness, director de L'Espiral, Psicoteràpia i Desenvolupament Humà i fundador d'Elara Social. Des de L'Espiral i Elara Social desenvolupa propostes que connecten el treball personal, la consciència, el suport comunitari i la resposta davant dels reptes personals, socials i ecològics.",
+      "Aquest recorregut de 7 passes neix inspirat en l'obra de Joanna Macy i Chris Johnstone en el seu llibre «Esperanza Activa», editat en castellà per Ediciones La Llave, i en el curs que Chris Johnstone ofereix gratuïtament a activehope.training. Té la voluntat de convertir l'Espiral del Treball que Reconnecta en una pràctica breu, accessible i reutilitzable per ajudar-nos a passar de la preocupació i la impotència a una forma d'Esperança Activa arrelada en la realitat."
+    ],
+    "before_title": "Abans de començar",
+    "before_text": "El recorregut et convida a apropar-te al que et preocupa sense forçar-te i respectant els teus límits. Si alguna pràctica et remou més del que pots sostenir en aquell moment, pots aturar-te, descansar i reprendre-la un altre dia.",
+    "passes_list_title": "Les 7 passes, en una llista",
+    "soon_label": "Properament",
+    "soon_text": "Aquest curs encara no està obert. Aviat t'hi podràs inscriure, també de manera gratuïta.",
     "passes_title": "Les 7 passes d'aquest curs",
-    "passes_intro": "Cada passa combina una breu explicació amb una pràctica guiada per ajudar-te a completar una de les set frases. Pots fer el recorregut seguit o deixar un temps entre les passes.",
+    "passes_intro": "Cada passa combina una breu explicació amb una pràctica guiada per ajudar-te a completar una de les set frases. Les frases són les mateixes a tots els cursos, però els àudios i els vídeos orienten la reflexió cap al tema d'aquest: la frase comença igual, però no acabarà igual. No cal que tinguis les respostes preparades: les pràctiques parteixen del contacte amb el cos, la respiració i el moment present. Pots fer el recorregut seguit o deixar un temps entre les passes.",
     "passes": [
       ["Allò que estimo.", "Què té valor per a mi? Què vull cuidar?"],
       ["Allò que em sosté.", "Quines persones, llocs o recursos m'ajuden?"],
@@ -104,14 +193,17 @@
       ["El següent pas possible.", "Quina acció petita, concreta i realista puc fer ara?"]
     ],
     "walk_title": "Ara, on vols caminar?",
-    "walk_intro": "Tria la teva ciutat i fes el temps de reflexió de cada passa en una de les rutes. Si encara no hi ha rutes a prop teu, pots caminar pel teu barri o per un lloc tranquil."
+    "walk_intro": "Tria la teva ciutat i fes el temps de reflexió de cada passa en una de les rutes. Si encara no hi ha rutes a prop teu, pots caminar pels voltants de casa o per un lloc tranquil."
   },
 
   "safety_html": "Aquest curs no substitueix un procés de psicoteràpia ni un tractament mèdic o psicològic. Si estàs passant un moment molt difícil, parla amb el teu CAP o truca al <a href=\"tel:061\">061</a>. Si penses en fer-te mal, truca al <a href=\"tel:024\">024</a>. En una emergència, al <a href=\"tel:112\">112</a>.",
 
+  "read_route_title": "Com llegir una ruta",
+
   "before_walk": {
     "title": "Abans de sortir",
     "intro": "Caminar és una proposta, no una obligació. Si avui no és el dia, també pots fer la pràctica en un lloc tranquil.",
+    "list_title": "Els consells, en una llista",
     "list": [
       "Consulta el mapa i comprova que l'itinerari s'adapta a les teves possibilitats.",
       "Mira la previsió del temps abans de sortir.",
@@ -127,7 +219,7 @@
     "q2": "2. On vols caminar?",
     "q2_text": "Cada ciutat té el seu mapa i les seves rutes. Surten de places, parcs i equipaments a prop de casa. N'hi ha de molt curtes, d'uns 10 minuts, i de més llargues, de més d'una hora.",
     "q2_cities": "Ara hi ha rutes a Barcelona, el Prat de Llobregat, Olot i Vic, i se n'aniran afegint més.",
-    "each_course": "Cada curs té les seves rutes a cada ciutat: el curs et dona la pràctica, i la ruta, el temps per caminar-la. La teva ciutat no hi és? Fes la caminada pel teu barri o en un lloc tranquil.",
+    "each_course": "Cada curs té les seves rutes a cada ciutat: el curs et dona la pràctica, i la ruta, el temps per caminar-la. La teva ciutat no hi és? Fes la caminada a prop de casa o en un lloc tranquil.",
     "how_title": "Com funciona",
     "how": [
       ["headphones", "1. Fes la pràctica", "Escolta l'àudio o mira el vídeo de la passa abans de sortir."],
@@ -145,11 +237,12 @@
       ["Integra:", "un vídeo de tancament per portar-ho a la vida."]
     ],
     "faq": [
-      ["Hi ha rutes de tots els cursos a totes les ciutats?", "Encara no. Cada ciutat té rutes pensades per a cada curs i n'anem afegint. Si la teva ciutat encara no en té del teu curs, pots fer la caminada pel teu barri o en un lloc tranquil."],
+      ["Hi ha rutes de tots els cursos a totes les ciutats?", "Encara no. Cada ciutat té rutes pensades per a cada curs i n'anem afegint. Si la teva ciutat encara no en té del teu curs, pots fer la caminada a prop de casa o en un lloc tranquil."],
       ["És realment gratuït?", "Sí. Només t'has de donar d'alta a la plataforma dels cursos, i te'n pots donar de baixa quan vulguis."],
       ["És teràpia?", "No. És un minicurs vivencial de pràctiques i reflexió. Pot ajudar molt, però no substitueix la psicoteràpia si estàs en un moment clínicament delicat."],
-      ["La meva ciutat no hi és. Puc fer el curs?", "És clar. Pots fer el temps de reflexió en una passejada pel teu barri o en un lloc tranquil."]
+      ["La meva ciutat no hi és. Puc fer el curs?", "És clar. Pots fer el temps de reflexió en una passejada a prop de casa o en un lloc tranquil."]
     ],
+    "nus_title": "Què és l'Esperança Activa?",
     "initiative_title": "Una iniciativa de",
     "initiative_text": "L'Espiral i Elara Social, amb la mirada de la Prescripció Social i la salut mental comunitària."
   },
@@ -176,14 +269,14 @@
           ["És realment gratuït?", "Sí. Només t'has de donar d'alta a la nostra plataforma. Guardarem les teves dades per enviar-te futures comunicacions, i sempre te'n podràs donar de baixa."],
           ["Quant dura un curs?", "Són 7 passes, i les pots fer en 7 dies o al teu ritme. Cada passa té quatre moments: un vídeo d'introducció de 3 a 5 minuts, una pràctica guiada d'uns 15 minuts, un temps de reflexió caminant en una de les rutes i un vídeo de tancament."],
           ["Què vol dir «esperança activa»?", "És el que proposa aquest recorregut: transformar el dolor i la incertesa en claredat, suport i acció significativa, sostinguda per la comunitat."],
-          ["Què passa quan acabo?", "El tancament et deixa uns passos petits i concrets i obre la porta a continuar el camí en comunitat o amb processos més amplis, si ho vols."]
+          ["Què passa quan acabo?", "El tancament et deixa uns passos petits i concrets i obre la porta a continuar el camí en comunitat o amb processos més amplis, si ho vols. I sempre pots tornar a començar, si cal revisar o aprofundir: és un camí en espiral.", "i-despres"]
         ]
       },
       {
         "title": "Sobre les rutes",
         "items": [
-          ["Hi ha rutes de tots els cursos a totes les ciutats?", "Encara no. Cada ciutat té rutes pensades per a cada curs i n'anem afegint. Si la teva ciutat encara no en té del teu curs, pots fer la caminada pel teu barri o en un lloc tranquil."],
-          ["La meva ciutat no hi és. Puc fer el curs?", "És clar. Pots fer el temps de reflexió en una passejada pel teu barri o en un lloc tranquil."],
+          ["Hi ha rutes de tots els cursos a totes les ciutats?", "Encara no. Cada ciutat té rutes pensades per a cada curs i n'anem afegint. Si la teva ciutat encara no en té del teu curs, pots fer la caminada a prop de casa o en un lloc tranquil."],
+          ["La meva ciutat no hi és. Puc fer el curs?", "És clar. Pots fer el temps de reflexió en una passejada a prop de casa o en un lloc tranquil."],
           ["Quant duren les rutes?", "Depèn de la ciutat i de la ruta. Al Prat hi ha circuits urbans de menys d'1 km (uns 10 a 15 minuts caminant), rutes d'1,5 a 3,5 km des dels equipaments municipals i rutes de 0,7 a 6 km pel Delta del Llobregat. A Vic, les rutes pels parcs fan d'1 a 2 km (uns 20 minuts) i les que surten dels CAP i hospitals, uns 2 km (mitja hora caminant). A Olot, les rutes fan de 0,6 a 3,2 km (de 7 a 47 minuts caminant). A Barcelona, les rutes des dels CAP fan uns 2 km (mitja hora caminant), les dels parcs i jardins, d'1,7 a 2,2 km (uns 20–30 minuts) i la resta, d'uns 3 a 7 km. A cada ruta hi trobaràs els quilòmetres i el temps aproximat, caminant i amb pauses."],
           ["Les rutes són circulars?", "La majoria sí: comencen i acaben al mateix lloc. Algunes van d'un punt a un altre; a cada ruta hi posa si és circular o lineal, i on comença i acaba."],
           ["Què he de tenir en compte abans de sortir?", "__before_walk__"]

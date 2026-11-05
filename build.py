@@ -126,7 +126,8 @@ fp = site["faq_page"]
 fp["contact_html"] = Markup(fp["contact_html"])
 for s in fp["sections"]:
     s["id"] = slugify(s["title"])
-    s["items"] = [(q, bw_html if a == "__before_walk__" else Markup(f"<p>{a}</p>"), slugify(q)) for q, a in s["items"]]
+    # Cada pregunta: [pregunta, resposta] o [pregunta, resposta, infografia] (p. ex. "i-despres": la infografia surt dins la resposta)
+    s["items"] = [(it[0], bw_html if it[1] == "__before_walk__" else Markup(f"<p>{it[1]}</p>"), slugify(it[0]), it[2] if len(it) > 2 else None) for it in s["items"]]
 site["home"]["faq"] = [(q, Markup("<p>{}</p>").format(a)) for q, a in site["home"]["faq"]]
 
 # Cities
@@ -142,7 +143,7 @@ for c in site["cities"]:
     by_course = {b["course"]: b for b in city["blocks"]}
     blocks = []
     for key, course in courses.items():
-        b = by_course.get(key, {"course": key, "text": f"Encara no hi ha rutes d'aquest curs a {city['name']}. Mentrestant, pots fer el temps de reflexió de cada passa caminant pel teu barri o en un lloc tranquil."})
+        b = by_course.get(key, {"course": key, "text": f"Encara no hi ha rutes d'aquest curs a {city['name']}. Mentrestant, pots fer el temps de reflexió de cada passa caminant a prop de casa o en un lloc tranquil."})
         b = dict(b, course=course)
         groups = b.get("groups") or []
         total = 0
@@ -171,7 +172,7 @@ for c in site["cities"]:
         add_zones(b, groups, course, dict(city.get("zones") or {}, **(b.get("zones") or {})))
         b["total"] = total
         b["summary"] = b.get("summary") or ("Encara no hi ha rutes d'aquest curs" if not total else f"{total} rutes")
-        course_summaries[key][city["slug"]] = {"text": b["summary"] if total else "Encara no hi ha rutes d'aquest curs. Pots caminar pel teu barri.", "has": bool(total)}
+        course_summaries[key][city["slug"]] = {"text": b["summary"] if total else "Encara no hi ha rutes d'aquest curs. Pots caminar a prop de casa.", "has": bool(total)}
         blocks.append(b)
     # Primer els cursos que tenen rutes en aquesta ciutat; després, els que encara no en tenen
     city["blocks"] = [b for b in blocks if b["total"]] + [b for b in blocks if not b["total"]]
@@ -198,11 +199,20 @@ for city in cities:
     dup = {i for i in ids if ids.count(i) > 1}
     assert not dup, f"ids repetits a {city['slug']}: {dup}"
 
+def cities_with_a(names):
+    """«a Barcelona, el Prat de Llobregat, Olot i Vic»: la llista de ciutats per a una frase.
+    L'article va en minúscula (el Prat) i «a el» es contrau («al Prat») si la llista en comença amb un."""
+    names = [re.sub(r"^(El|La|Els|Les|L')(?=[ A-ZÀ-Ý])", lambda m: m.group(1).lower(), n) for n in names]
+    s = names[0] if len(names) == 1 else ", ".join(names[:-1]) + " i " + names[-1]
+    return re.sub(r"^el ", "al ", re.sub(r"^els ", "als ", s)) if re.match(r"els? ", s) else "a " + s
+
+
 env = Environment(loader=FileSystemLoader(SRC / "templates"), autoescape=select_autoescape(["html"]), trim_blocks=True, lstrip_blocks=True)
 env.globals.update(icon=icon, site=site, noindex=NOINDEX, version=str(int(time.time())),
                    logo=(SRC / "img" / "logo.png").exists(),
                    partners_logo=(SRC / "img" / "lespiral-elara.png").exists(),
                    summaries=summaries, course_summaries=course_summaries,
+                   cities_with_a=cities_with_a([c["name"] for c in site["cities"] if c.get("slug")]),
                    h=site["home"], cc=site["course_common"])
 
 

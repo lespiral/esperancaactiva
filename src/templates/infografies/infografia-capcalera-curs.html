@@ -1,0 +1,247 @@
+{# infografia-capcalera-curs.html: copiat del bloc INICI–FINAL de la carpeta «Infografies web» (5 de novembre de 2026). #}
+<div class="escena" data-escena="{{ escena|default('vida') }}"></div>
+
+<style>
+.escena {
+  position: relative; overflow: hidden; aspect-ratio: 1000 / 340; background: #e6eae8; cursor: pointer;
+  border: 1px solid var(--line, #e7e1d4); border-radius: var(--radius-lg, 22px);
+  box-shadow: 0 1px 2px rgba(17,53,44,.06), 0 10px 28px rgba(17,53,44,.09);
+  -webkit-tap-highlight-color: transparent;
+}
+@media (max-width: 600px) { .escena { aspect-ratio: 16 / 10; } }
+.escena svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.escena:focus { outline: none; }
+.escena:focus-visible { outline: 3px solid var(--green-700, #22604f); outline-offset: 3px; }
+
+/* Comú a totes les escenes */
+.es-warm { opacity: 0; transition: opacity 2.4s ease; }
+.es-sun { transform: translateY(150px); transition: transform 2.6s cubic-bezier(.3, .7, .3, 1); }
+.es-rays { opacity: 0; transition: opacity 1.4s 1.8s; }
+.es-glow { opacity: 0; transition: opacity 2.4s .4s; }
+.es-mist { opacity: .5; transition: opacity 2.6s; }
+.es-fog { opacity: 1; transition: opacity 2.2s; }
+.es-h1 { fill: #dde3e0; } .es-h2 { fill: #cfd8d4; } .es-h3 { fill: #c2ccc8; }
+.es-h1, .es-h2, .es-h3 { transition: fill 2.4s; }
+.is-hope .es-warm, .is-hope .es-rays, .is-hope .es-glow { opacity: 1; }
+.is-hope .es-sun { transform: none; }
+.is-hope .es-mist, .is-hope .es-fog { opacity: 0; }
+.is-hope .es-h1 { fill: #d6e6dd; } .is-hope .es-h2 { fill: #c3dccd; } .is-hope .es-h3 { fill: #b2cfbf; }
+.es-bird { fill: none; stroke: #22604f; stroke-width: 2.4; stroke-linecap: round; opacity: 0; transition: opacity 1s 1.6s; }
+.is-hope .es-bird { opacity: 1; }
+.es-halo { transform-box: fill-box; transform-origin: center; animation: es-pulse 1.8s ease-in-out infinite; }
+
+/* Quan la vida et desborda: els núvols de pluja s'aparten i surt el sol */
+.es-cloud { transition: transform 2.6s cubic-bezier(.4, 0, .2, 1); }
+.es-cloud .es-puff { fill: #8e9b95; transition: fill 2s; }
+.is-hope .es-cloud .es-puff { fill: #fff; }
+.is-hope .es-cloud--l { transform: translate(-250px, -14px); }
+.is-hope .es-cloud--r { transform: translate(255px, -18px); }
+.es-rain { stroke: #7c958b; stroke-width: 2.6; stroke-linecap: round; transition: opacity .9s; }
+.es-rain line { animation: es-rain 1s linear infinite; }
+.es-rain line:nth-child(2n) { animation-delay: -.5s; } .es-rain line:nth-child(3n) { animation-delay: -.25s; }
+.is-hope .es-rain { opacity: 0; }
+
+/* Cuidar-nos junts/es: persones soles que s'apropen */
+.es-p { transition: transform 2.4s cubic-bezier(.4, 0, .2, 1); }
+.es-p * { fill: #a3afa9; transition: fill 1.8s; }
+.is-hope .es-p { transform: translateX(var(--dx)); }
+.is-hope .es-p:nth-child(1) * { fill: #2e7561; } .is-hope .es-p:nth-child(2) * { fill: #22604f; }
+.is-hope .es-p:nth-child(3) * { fill: #1a4d40; } .is-hope .es-p:nth-child(4) * { fill: #c9a53c; } .is-hope .es-p:nth-child(5) * { fill: #2e7561; }
+.es-ring { fill: none; stroke: #e2c668; stroke-width: 4; stroke-dasharray: 2 9; stroke-linecap: round; opacity: 0; transition: opacity 1s 1.9s; }
+.is-hope .es-ring { opacity: 1; }
+.es-heart { fill: #e2c668; opacity: 0; transform-box: fill-box; transform-origin: center; transform: scale(.3); transition: opacity 1s 1.8s, transform 1.1s 1.8s cubic-bezier(.34, 1.56, .64, 1); }
+.is-hope .es-heart { opacity: 1; transform: none; }
+.es-mini { fill: #a7b4ae; transition: opacity 1.2s; }
+.is-hope .es-mini { opacity: 0; }
+
+/* Quan el món et preocupa: terra seca i fum; després verd, fulles i ocells */
+.escena--mon .es-h1 { fill: #e3dac6; } .escena--mon .es-h2 { fill: #dccfb1; } .escena--mon .es-h3 { fill: #d6c69c; }
+.escena--mon.is-hope .es-h1 { fill: #d6e6dd; } .escena--mon.is-hope .es-h2 { fill: #c3dccd; } .escena--mon.is-hope .es-h3 { fill: #b2cfbf; }
+.es-haze { fill: #ecd6b8; opacity: .55; transition: opacity 2.4s; }
+.is-hope .es-haze { opacity: 0; }
+.es-crack { fill: none; stroke: #b8a272; stroke-width: 2; stroke-linecap: round; transition: opacity 1.6s; }
+.is-hope .es-crack { opacity: 0; }
+.es-trunk { fill: none; stroke: #6f6352; stroke-width: 4; stroke-linecap: round; transition: stroke 2s; }
+.is-hope .es-trunk { stroke: #4f6158; }
+.es-leaf { fill: #2e7561; fill-opacity: .9; transform-box: fill-box; transform-origin: center; transform: scale(0); transition: transform 1.2s cubic-bezier(.34, 1.56, .64, 1); }
+.is-hope .es-leaf { transform: none; }
+.es-smoke { fill: #b9b2a6; animation: es-smoke 3.4s ease-out infinite; transition: opacity 1.6s; }
+.es-smoke:nth-child(2) { animation-delay: -1.1s; } .es-smoke:nth-child(3) { animation-delay: -2.2s; }
+.es-flame { fill: #d9874a; transform-box: fill-box; transform-origin: 50% 100%; animation: es-flicker .9s ease-in-out infinite; transition: opacity 1s; }
+.is-hope .es-smokes, .is-hope .es-flame { opacity: 0; }
+
+/* Sostenir el dia a dia: el carrer s'il·lumina i la casa es redreça */
+.es-wall { fill: #b3bdb8; transition: fill 2s; } .es-roof { fill: #98a39e; transition: fill 2s; }
+.is-hope .es-wall { fill: #e9dfc8; } .is-hope .es-roof { fill: #2e7561; }
+.is-hope .es-house:nth-child(odd) .es-roof { fill: #1a4d40; }
+.es-win { fill: #7d8984; transition: fill .8s; }
+.is-hope .es-win { fill: #f1d77f; }
+.es-tilt { transform-box: fill-box; transform-origin: 50% 100%; transform: rotate(-7deg); transition: transform 1.8s .6s cubic-bezier(.34, 1.4, .64, 1); }
+.is-hope .es-tilt { transform: none; }
+.es-hands { fill: none; stroke: #e2c668; stroke-width: 8; stroke-linecap: round; opacity: 0; transform: translateY(14px); transition: opacity 1s .3s, transform 1.4s .3s cubic-bezier(.34, 1.4, .64, 1); }
+.is-hope .es-hands { opacity: 1; transform: none; }
+.es-chim { fill: none; stroke: #9fb3aa; stroke-width: 2.4; stroke-linecap: round; opacity: 0; transition: opacity 1.2s 2s; }
+.is-hope .es-chim { opacity: 1; }
+
+@keyframes es-pulse { 0%, 100% { transform: scale(1); opacity: .45; } 50% { transform: scale(1.5); opacity: .15; } }
+@keyframes es-rain { 0% { transform: translateY(-6px); opacity: 0; } 30% { opacity: 1; } 100% { transform: translateY(14px); opacity: 0; } }
+@keyframes es-smoke { 0% { transform: translate(0, 0) scale(.6); opacity: .8; } 100% { transform: translate(-26px, -86px) scale(1.7); opacity: 0; } }
+@keyframes es-flicker { 0%, 100% { transform: scale(1, 1); } 50% { transform: scale(.88, 1.14); } }
+@media (prefers-reduced-motion: reduce) {
+  .escena *, .escena *::before, .escena *::after { animation: none !important; transition: none !important; }
+}
+</style>
+
+<script>
+(function () {
+  "use strict";
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var LABELS = {
+    vida: "Els núvols de pluja s'aparten i surt el sol",
+    cuidar: "Persones que estaven soles s'apropen i fan rotllana",
+    mon: "La terra seca torna a reverdir i tornen els ocells",
+    dia: "Un carrer apagat s'il·lumina i una casa torta es redreça, sostinguda"
+  };
+
+  function r1(n) { return Math.round(n * 10) / 10; }
+  function cloud(x, y, s, cls) {
+    var c = '<g class="es-cloud ' + cls + '"><g transform="translate(' + x + ' ' + y + ') scale(' + s + ')">' +
+      '<g class="es-rain">';
+    for (var i = 0; i < 6; i++) c += '<line x1="' + (-34 + i * 13) + '" y1="34" x2="' + (-37 + i * 13) + '" y2="46"/>';
+    return c + '</g><g class="es-puff"><circle cx="-28" cy="6" r="19"/><circle cx="2" cy="-10" r="27"/><circle cx="32" cy="6" r="19"/><rect x="-47" y="4" width="96" height="24" rx="12"/></g></g></g>';
+  }
+  function rays(r) {
+    var s = "";
+    for (var i = 0; i < 12; i++) {
+      var a = i * Math.PI / 6;
+      s += '<line x1="' + r1(Math.cos(a) * r * 1.35) + '" y1="' + r1(Math.sin(a) * r * 1.35) + '" x2="' + r1(Math.cos(a) * r * 1.7) + '" y2="' + r1(Math.sin(a) * r * 1.7) + '"/>';
+    }
+    return s;
+  }
+  function bareTree(x, b, s, d) {
+    var p = function (dx, dy) { return r1(x + dx * s) + "," + r1(b + dy * s); };
+    return '<path class="es-trunk" d="M' + p(0, 0) + "L" + p(0, -52) + "M" + p(0, -26) + "L" + p(-15, -44) + "M" + p(0, -34) + "L" + p(14, -52) + '"/>' +
+      '<g style="--d:' + d + 's">' +
+      '<circle class="es-leaf" style="transition-delay:' + (d + 1) + 's" cx="' + r1(x - 15 * s) + '" cy="' + r1(b - 50 * s) + '" r="' + r1(14 * s) + '"/>' +
+      '<circle class="es-leaf" style="transition-delay:' + (d + 1.15) + 's" cx="' + r1(x + 14 * s) + '" cy="' + r1(b - 58 * s) + '" r="' + r1(15 * s) + '"/>' +
+      '<circle class="es-leaf" style="transition-delay:' + (d + 1.3) + 's" cx="' + r1(x) + '" cy="' + r1(b - 68 * s) + '" r="' + r1(17 * s) + '"/></g>';
+  }
+  function person(x, dx) {
+    return '<g class="es-p" style="--dx:' + dx + 'px"><circle cx="' + x + '" cy="263" r="9"/><path d="M' + (x - 12) + ' 298v-8a12 12 0 0 1 24 0v8z"/></g>';
+  }
+  function house(x, w, h, tilt, delay) {
+    var b = 298, l = x - w / 2;
+    return '<g class="es-house"><g' + (tilt ? ' class="es-tilt"' : '') + '>' +
+      (tilt ? '<path class="es-chim" d="M' + (x + 12) + ' ' + (b - h - 30) + 'c-3-4 1-8 4-11s2-7-1-10"/><rect class="es-roof" x="' + (x + 8) + '" y="' + (b - h - 24) + '" width="8" height="14"/>' : '') +
+      '<path class="es-roof" d="M' + (l - 6) + ' ' + (b - h) + 'L' + x + ' ' + (b - h - 28) + 'L' + (l + w + 6) + ' ' + (b - h) + 'Z"/>' +
+      '<rect class="es-wall" x="' + l + '" y="' + (b - h) + '" width="' + w + '" height="' + h + '"/>' +
+      '<rect class="es-win" style="transition-delay:' + delay + 's" x="' + (x - 8) + '" y="' + (b - h + 10) + '" width="16" height="13" rx="1.5"/>' +
+      (tilt ? '<rect class="es-win" style="transition-delay:' + (delay + .2) + 's" x="' + (x - 6) + '" y="' + (b - 17) + '" width="12" height="17" rx="1.5"/>' : '') +
+      '</g></g>';
+  }
+
+  var SCENE = {
+    vida: {
+      end: [575, 244],
+      front: function () { return cloud(505, 128, 1.25, "es-cloud--l") + cloud(655, 112, 1.05, "es-cloud--r"); }
+    },
+    cuidar: {
+      end: [500, 326],
+      back: function () {
+        return '<path class="es-heart" d="M500 236s-14-8.4-14-17.6a7.6 7.6 0 0 1 14-4.2 7.6 7.6 0 0 1 14 4.2c0 9.2-14 17.6-14 17.6z"/>' +
+          [170, 330, 680, 840].map(function (x) { return '<g class="es-mini"><circle cx="' + (x - 6) + '" cy="226" r="9"/><circle cx="' + (x + 5) + '" cy="221" r="11"/><circle cx="' + (x + 15) + '" cy="227" r="8"/><rect x="' + (x - 14) + '" y="226" width="37" height="9" rx="4.5"/></g>'; }).join("");
+      },
+      front: function () { return '<ellipse class="es-ring" cx="500" cy="300" rx="112" ry="16"/><g>' + person(170, 258) + person(330, 134) + person(500, 0) + person(680, -144) + person(840, -268) + '</g>'; }
+    },
+    mon: {
+      end: [575, 244],
+      back: function () {
+        return '<g class="es-smokes"><ellipse class="es-smoke" cx="826" cy="190" rx="16" ry="11"/><ellipse class="es-smoke" cx="826" cy="190" rx="16" ry="11"/><ellipse class="es-smoke" cx="826" cy="190" rx="16" ry="11"/></g>' +
+          '<path class="es-flame" d="M826 205c-8 0-12-5.5-10-12 1.4-4.2 4.8-6 5.2-10.8 4.2 3.2 5.6 7 5.2 10.4 2-.9 3.4-2.9 3.8-4.9 3.6 3.4 5.6 7 5.2 10.8-.7 4.3-4.5 6.5-9.4 6.5z"/>';
+      },
+      front: function () {
+        return '<path class="es-crack" d="M180 318l14 8-4 9M420 326l10-7 12 4M660 316l12 10 15 1M860 324l-9 8"/>' +
+          bareTree(230, 306, 1.15, 0) + bareTree(345, 293, .8, .2) + bareTree(715, 291, .9, .35) + bareTree(860, 300, 1.2, .1);
+      },
+      overlay: '<rect class="es-haze" width="1000" height="340"/>'
+    },
+    dia: {
+      end: [500, 330],
+      front: function () {
+        return '<path class="es-hands" d="M444 286q0 32 56 32t56-32"/>' +
+          house(335, 58, 46, false, 1.1) + house(420, 50, 56, false, .7) + house(585, 52, 42, false, .9) + house(670, 56, 50, false, 1.3) + house(500, 62, 52, true, .4) +
+          cloud(560, 118, .9, "es-cloud--r");
+      }
+    }
+  };
+
+  function build(el) {
+    var key = el.getAttribute("data-escena"), sc = SCENE[key] || SCENE.vida;
+    el.classList.add("escena--" + (SCENE[key] ? key : "vida"));
+    el.setAttribute("role", "img");
+    el.setAttribute("tabindex", "0");
+    el.setAttribute("aria-label", LABELS[key] || LABELS.vida);
+    var road = key === "cuidar" || key === "dia"
+      ? "M120 352C230 322 360 334 430 318S" + (sc.end[0] - 12) + " " + (sc.end[1] + 4) + " " + sc.end[0] + " " + sc.end[1]
+      : "M120 352C220 304 420 322 470 294S560 258 " + sc.end[0] + " " + sc.end[1];
+    el.innerHTML = '<svg viewBox="0 0 1000 340" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">' +
+      '<defs><linearGradient id="es-sky-' + key + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3e7e5"/><stop offset="1" stop-color="#eef0ec"/></linearGradient>' +
+      '<linearGradient id="es-warm-' + key + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7f2e2"/><stop offset=".65" stop-color="#f8ebc8"/><stop offset="1" stop-color="#f3dfa3"/></linearGradient>' +
+      '<radialGradient id="es-glow-' + key + '"><stop offset="0" stop-color="#f6e7b0" stop-opacity=".95"/><stop offset=".5" stop-color="#f8efd2" stop-opacity=".5"/><stop offset="1" stop-color="#fcf8ea" stop-opacity="0"/></radialGradient>' +
+      '<filter id="es-blur-' + key + '" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="22"/></filter></defs>' +
+      '<rect width="1000" height="340" fill="url(#es-sky-' + key + ')"/>' +
+      '<rect class="es-warm" width="1000" height="340" fill="url(#es-warm-' + key + ')"/>' +
+      '<circle class="es-glow" cx="575" cy="160" r="190" fill="url(#es-glow-' + key + ')"/>' +
+      '<g class="es-sun"><g class="es-rays" stroke="#e2c668" stroke-width="4" stroke-linecap="round" transform="translate(575 160)">' + rays(40) + '</g><circle cx="575" cy="160" r="40" fill="#e2c668"/></g>' +
+      (sc.overlay || "") +
+      '<path class="es-h1" d="M0 232C150 200 300 216 450 205S760 182 1000 212V340H0Z"/>' +
+      (sc.back ? sc.back() : "") +
+      '<path class="es-h2" d="M0 266C180 242 330 262 520 252S820 232 1000 256V340H0Z"/>' +
+      '<path class="es-h3" d="M0 300C250 287 600 302 1000 290V340H0Z"/>' +
+      '<path d="' + road + '" fill="none" stroke="#f3eee3" stroke-width="15" stroke-linecap="round" stroke-opacity=".9"/>' +
+      '<path class="es-road" d="' + road + '" fill="none" stroke="#1a4d40" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.1 9"/>' +
+      sc.front() +
+      '<path class="es-bird" d="M410 112q6-6 12 0q6-6 12 0M442 96q4-4 8 0q4-4 8 0M470 120q5-5 10 0q5-5 10 0"/>' +
+      '<rect class="es-mist" width="1000" height="340" fill="#dfe4e1"/>' +
+      '<g class="es-fog" filter="url(#es-blur-' + key + ')" fill="#fff"><ellipse cx="180" cy="240" rx="170" ry="34"/><ellipse cx="470" cy="270" rx="200" ry="30"/><ellipse cx="820" cy="236" rx="180" ry="32"/></g>' +
+      '<g class="es-walker"><circle class="es-halo" r="14" fill="#e2c668"/><circle r="7.5" fill="#e2c668" stroke="#fff" stroke-width="3"/></g>' +
+      '</svg>';
+    var path = el.querySelector(".es-road"), walker = el.querySelector(".es-walker"), total = path.getTotalLength();
+    var st = { raf: 0, t0: 0 }, DUR = 4200, HOPE_AT = .3;
+    function place(f) { var p = path.getPointAtLength(total * f); walker.setAttribute("transform", "translate(" + r1(p.x) + "," + r1(p.y) + ")"); }
+    function play() {
+      cancelAnimationFrame(st.raf);
+      el.classList.remove("is-hope");
+      if (reduce) { el.classList.add("is-hope"); place(1); return; }
+      void el.offsetWidth;
+      st.t0 = 0;
+      function tick(ts) {
+        if (!st.t0) st.t0 = ts;
+        var f = Math.min(1, (ts - st.t0) / DUR), e = f < .5 ? 2 * f * f : 1 - Math.pow(-2 * f + 2, 2) / 2;
+        place(e);
+        if (f >= HOPE_AT) el.classList.add("is-hope");
+        if (f < 1) st.raf = requestAnimationFrame(tick);
+      }
+      place(0);
+      st.raf = requestAnimationFrame(tick);
+    }
+    el.addEventListener("click", play);
+    el.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); play(); } });
+    place(0);
+    if (reduce) { play(); return; }
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (en) { if (en[0].isIntersecting) { io.disconnect(); setTimeout(play, 250); } }, { threshold: .4 });
+      io.observe(el);
+    } else play();
+  }
+
+  function init() {
+    Array.prototype.forEach.call(document.querySelectorAll("[data-escena]"), function (el) {
+      if (el.getAttribute("data-ready")) return;
+      el.setAttribute("data-ready", "1");
+      build(el);
+    });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
+})();
+</script>

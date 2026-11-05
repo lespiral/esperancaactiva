@@ -18,6 +18,23 @@ Es publica amb GitHub Pages des de la carpeta `docs/`.
 2. Genera la web: `python3 build.py`. L'adreça pública i si surt als cercadors es configuren a `data/site.json`, a `publish`. Quan hi hagi domini propi: canvia-hi `url`, crea el fitxer `CNAME` amb el domini i torna a generar la web.
 3. Desa i puja els canvis. GitHub Pages actualitza la web en un o dos minuts.
 
+## Infografies animades
+
+Són a `src/templates/infografies/` (una per fitxer, copiada del bloc INICI–FINAL de la carpeta de Drive «Infografies web») i es posen a les plantilles amb `{% include %}`. Fan servir els colors i les lletres de `site.css`, s'animen quan surten a la pantalla i, amb «reduir moviment», surten ja acabades.
+
+- Inici: `esperanca-activa` (sota la capçalera), `com-funciona` i `7-passes` (sense `curs`).
+- Els cursos: `cursos`. L'enllaç de base és `{{ root }}`; el text de «Camina per la teva ciutat» surt de `cities` de `data/site.json`, i el 4t curs n'agafa la frase de la targeta i si està «Properament».
+- Cada curs: `capcalera-curs` (`{% with escena = course.key %}`) i `7-passes` (`{% with curs = course.key %}`). A sota de l'espiral, la llista de les 7 passes en text, plegada.
+- Les ciutats i cada ciutat: `ciutats`, `llegir-ruta` (`#com-llegir-una-ruta`) i `abans-de-sortir`, dins la macro `before_walk` de `parts.html`, amb la llista en text plegada.
+- Preguntes: `i-despres`, dins la resposta de «Què passa quan acabo?» (tercer element de la pregunta a `data/site.json`), i `iniciativa`, a «Una iniciativa de», abans del contacte.
+- `cami` no es fa servir.
+- Canvis fets al codi de les infografies: a `7-passes`, 16 px de marge al mòbil perquè la passa 7 no es talli; a `iniciativa`, el botó de la Prescripció Social ara és la signatura de L'Espiral i Elara Social.
+
+## Enllaços als cursos de Thinkific
+
+- El camp `thinkific` de cada curs (a `data/site.json`) porta directament al formulari d'inscripció, sense passar per la pàgina de presentació de Thinkific: `https://espiral-elara-social.thinkific.com/enroll/<número del curs>`. El número és el del botó «Inscripció gratuïta» de la pàgina del curs a Thinkific.
+- Un curs que encara no està obert porta `"soon": true`: té pàgina a la web i surt a les targetes i a la infografia dels cursos amb la marca «Properament», però cap botó porta a Thinkific. Quan s'obri, n'hi ha prou de treure `"soon": true` i tornar a generar la web.
+
 ## Afegir una ciutat
 
 1. Copia un fitxer de `data/` (per exemple `olot.json`) amb el nom de la ciutat nova (`girona.json`) i omple-hi les rutes i els mapes.

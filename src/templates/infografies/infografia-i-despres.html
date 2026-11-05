@@ -1,0 +1,342 @@
+{# infografia-i-despres.html: copiat del bloc INICI–FINAL de la carpeta «Infografies web» (5 de novembre de 2026). #}
+<div class="despres" data-despres>
+  <div class="despres__scene" role="group" aria-label="Després de la setena passa, el camí s'obre en tres: petits passos concrets, continuar en comunitat o amb altres propostes, i tornar a començar">
+    <svg class="despres__svg" aria-hidden="true" focusable="false"></svg>
+    <div class="despres__nodes"></div>
+    <div class="despres__pop" aria-live="polite"><p class="despres__pk"></p><p class="despres__pt"></p><p class="despres__px"></p><a class="despres__go" href="#" hidden></a></div>
+  </div>
+  <div class="despres__foot">
+    <p class="despres__hint">Toca cada camí per saber-ne més.</p>
+    <button class="despres__replay" type="button" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1M3.5 4v4.6h4.6"/></svg>
+      <span>Torna-ho a veure</span>
+    </button>
+  </div>
+</div>
+
+<style>
+.despres {
+  --c9: var(--green-900, #11352c); --c8: var(--green-800, #1a4d40); --c7: var(--green-700, #22604f);
+  --c6: var(--green-600, #2e7561); --c2: var(--green-200, #c9dcd4);
+  --cs: var(--sun, #e2c668); --cs-ink: var(--sun-ink, #6f5711); --cline: var(--line, #e7e1d4);
+  --cink: var(--ink, #23302b); --cmuted: var(--muted, #56635d);
+  --fh: var(--font-head, "Montserrat", ui-sans-serif, system-ui, sans-serif);
+  --fb: var(--font-body, "Lato", ui-sans-serif, system-ui, sans-serif);
+  --m: 62px;
+  position: relative; overflow: hidden; background: #fff; color: var(--cink); font-family: var(--fb);
+  border: 1px solid var(--cline); border-radius: var(--radius-lg, 22px);
+  box-shadow: 0 1px 2px rgba(17,53,44,.06), 0 10px 28px rgba(17,53,44,.09);
+}
+.despres *, .despres *::before, .despres *::after { box-sizing: border-box; }
+.despres p { margin: 0; }
+.despres__scene { position: relative; height: var(--sh, 380px); }
+.despres__svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.despres__nodes { position: absolute; inset: 0; }
+.despres__node { position: absolute; width: 0; height: 0; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.despres__med {
+  position: absolute; left: 0; top: 0; width: var(--dd, var(--m)); height: var(--dd, var(--m));
+  margin: calc(var(--dd, var(--m)) / -2) 0 0 calc(var(--dd, var(--m)) / -2); padding: 0;
+  display: grid; place-items: center; border-radius: 50%; cursor: inherit; -webkit-appearance: none; appearance: none;
+  background: #fff; border: 2px solid var(--c2); color: var(--c6);
+  transition: background-color .5s, border-color .5s, color .5s, box-shadow .3s, transform .3s;
+}
+.despres__med svg { width: 50%; height: 50%; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.despres__node.is-on .despres__med { background: var(--c8); border-color: var(--c8); color: #fff; }
+.despres__node--wide.is-on .despres__med { background: #fff; border: 2px dashed var(--c7); color: var(--c7); }
+.despres__node.is-pop .despres__med { animation: despres-pop .6s cubic-bezier(.34, 1.56, .64, 1); }
+.despres__node.is-sel .despres__med { box-shadow: 0 0 0 4px #fff, 0 0 0 7px var(--cs); }
+.despres__node:hover .despres__med { transform: scale(1.06); }
+.despres__med:focus { outline: none; }
+.despres__med:focus-visible { box-shadow: 0 0 0 4px #fff, 0 0 0 7px var(--c7); }
+.despres__node--gate .despres__med { --dd: calc(var(--m) + 6px); border-radius: 18px 18px 10px 10px; }
+.despres__node--gate.is-on .despres__med { background: var(--cs); border-color: var(--cs); color: var(--c9); box-shadow: 0 0 0 8px rgba(226, 198, 104, .35); }
+.despres__node--gate.is-sel .despres__med { box-shadow: 0 0 0 4px #fff, 0 0 0 7px var(--c7); }
+.despres__lab {
+  position: absolute; width: max-content; max-width: var(--lw, 170px); padding: 4px 10px 5px; border-radius: 10px;
+  background: rgba(255, 255, 255, .86); font: 700 clamp(14px, calc(var(--sw, 1000px) * .016), 16px)/1.25 var(--fh); color: var(--c9);
+  text-wrap: balance; opacity: .5; transition: opacity .5s, box-shadow .3s;
+}
+.despres__node.is-on .despres__lab { opacity: 1; }
+.despres__node.is-sel .despres__lab { background: #fff; box-shadow: 0 0 0 2px var(--cs); }
+.despres__lab b { display: block; }
+.despres__lab span { display: block; margin-top: 2px; font: 400 clamp(13px, calc(var(--sw, 1000px) * .0145), 14.5px)/1.3 var(--fb); color: var(--cmuted); }
+.despres__lab--r { top: 0; left: calc(var(--dd, var(--m)) / 2 + 12px); transform: translateY(-50%); }
+.despres__lab--b { left: 0; top: calc(var(--dd, var(--m)) / 2 + 10px); transform: translateX(-50%); text-align: center; }
+.despres__lab--a { left: 0; bottom: calc(var(--dd, var(--m)) / 2 + 10px); transform: translateX(-50%); text-align: center; }
+.despres__node--gate .despres__lab { --dd: calc(var(--m) + 6px); opacity: 1; }
+
+.despres__bead { transition: fill .3s, stroke .3s; }
+.despres__bead.is-on { fill: #e2c668; stroke: #e2c668; }
+.despres__glow { opacity: 0; transition: opacity 1.4s; }
+.despres.is-done .despres__glow { opacity: 1; }
+.despres__halo { transform-box: fill-box; transform-origin: center; animation: despres-pulse 1.8s ease-in-out infinite; }
+
+.despres__pop {
+  position: absolute; left: 0; top: 0; width: min(290px, calc(100% - 24px));
+  padding: 13px 15px 14px; border-radius: 14px; background: #fff;
+  border: 1px solid var(--cline); box-shadow: 0 2px 4px rgba(17,53,44,.06), 0 14px 32px rgba(17,53,44,.16);
+  opacity: 0; visibility: hidden; transform: translateY(6px); transition: opacity .2s, transform .2s, visibility .2s; z-index: 3;
+}
+.despres__pop.is-open { opacity: 1; visibility: visible; transform: none; }
+.despres__pk { font: 700 11.5px/1.3 var(--fh); letter-spacing: .08em; text-transform: uppercase; color: var(--cs-ink); }
+.despres__pt { font: 700 16px/1.3 var(--fh); color: var(--c9); margin-top: 3px !important; }
+.despres__px { font-size: 15.5px; line-height: 1.45; color: var(--cmuted); margin-top: 3px !important; }
+.despres__go { display: inline-flex; margin-top: 10px; padding: .5em 1em; border-radius: 999px; background: var(--c8); color: #fff; text-decoration: none; font: 700 14px/1.2 var(--fh); }
+.despres__go:hover { background: var(--c9); color: #fff; }
+.despres__go[hidden] { display: none; }
+
+.despres__foot {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px 16px; flex-wrap: wrap;
+  min-height: 60px; padding: 10px clamp(14px, 3vw, 24px); border-top: 1px solid var(--cline); background: #fff;
+}
+.despres__hint { font-size: 14.5px; color: var(--cmuted); }
+.despres__replay {
+  flex: none; display: inline-flex; align-items: center; gap: .45em; padding: .55em 1em;
+  border-radius: 999px; border: 2px solid var(--c2); background: #fff; color: var(--c8);
+  font: 700 14px/1.2 var(--fh); cursor: pointer; transition: border-color .15s, color .15s, transform .15s;
+}
+.despres__replay:hover { border-color: var(--c7); color: var(--c9); transform: translateY(-1px); }
+.despres__replay:focus-visible { outline: 3px solid var(--c7); outline-offset: 2px; }
+.despres__replay svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.despres__replay[hidden] { display: none; }
+@keyframes despres-pop { 0% { transform: scale(.7); } 60% { transform: scale(1.15); } 100% { transform: scale(1); } }
+@keyframes despres-pulse { 0%, 100% { transform: scale(1); opacity: .45; } 50% { transform: scale(1.5); opacity: .15; } }
+@media (prefers-reduced-motion: reduce) {
+  .despres *, .despres *::before, .despres *::after { animation: none !important; transition: none !important; }
+}
+</style>
+
+<script>
+(function () {
+  "use strict";
+  var root = document.querySelector("[data-despres]");
+  if (!root || root.getAttribute("data-ready")) return;
+  root.setAttribute("data-ready", "1");
+
+  /* ---------- TEXTOS (de la resposta «Què passa quan acabo?» de la web) ---------- */
+  var CONTACT = "#contacte"; // on porta «Escriu-nos» (a la pàgina de preguntes hi ha la caixa de contacte)
+  var GATE = { title: "Després de la passa 7", sub: "", kick: "El tancament", head: "Què passa quan acabo?",
+    text: "El tancament et deixa uns passos petits i concrets i obre la porta a continuar el camí en comunitat o amb processos més amplis, si ho vols." };
+  var WAYS = [
+    { icon: "steps", title: "Petits passos", sub: "concrets, al teu dia a dia", kick: "Un camí",
+      head: "Uns passos petits i concrets", text: "Quina acció petita, concreta i realista puc fer ara?" },
+    // Canvis de la web (5 de novembre): Elara Social per conèixer altres espais i propostes, i tornar a començar (és un camí en espiral)
+    { icon: "people", title: "En comunitat", sub: "i altres propostes", kick: "Un altre camí",
+      head: "Continuar en comunitat", text: "El tancament obre la porta a continuar el camí en comunitat o amb processos més amplis, si ho vols. A Elara Social hi trobaràs altres espais i propostes.",
+      link: "Visita elarasocial.com", href: "https://elarasocial.com/" },
+    { icon: "spiral", title: "Torna a començar", sub: "és un camí en espiral", kick: "I un altre",
+      head: "Torna a començar, si cal", text: "Pots repetir la pràctica sempre que calgui revisar o aprofundir: és un camí en espiral, i es pot tornar a caminar.", wide: true }
+  ];
+  var ICON = {
+    gate: '<path d="M5 21V10a7 7 0 0 1 14 0v11"/><path d="M3 21h18"/><path d="M12 21v-7"/>',
+    steps: '<path d="M8.3 2.8c1.8 0 2.7 2 2.7 4.3S10.1 11.8 8.3 11.8 5.6 9.4 5.6 7.1 6.5 2.8 8.3 2.8z"/><path d="M6.4 14h3.8v1.1a1.9 1.9 0 0 1-3.8 0z"/><path d="M15.8 7c1.8 0 2.7 2 2.7 4.3s-.9 4.7-2.7 4.7-2.7-2.4-2.7-4.7S14 7 15.8 7z"/><path d="M13.9 18.2h3.8v1.1a1.9 1.9 0 0 1-3.8 0z"/>',
+    people: '<circle cx="8" cy="8" r="2.8"/><circle cx="16" cy="8" r="2.8"/><path d="M2.8 19.5v-1.2a5.2 5.2 0 0 1 10.4 0v1.2M10.8 19.5v-1.2a5.2 5.2 0 0 1 10.4 0v1.2"/>',
+    spiral: '<path d="M12 11.4a1.6 1.6 0 0 1 3.2 0a3.2 3.2 0 0 1-6.4 0a4.8 4.8 0 0 1 9.6 0a6.4 6.4 0 0 1-12.8 0"/>'
+  };
+
+  var T = { beads: 1300, gate: 1550, ways0: 1750, ways1: 3300, end: 3700 };
+  var TALL = 680;
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var scene = root.querySelector(".despres__scene");
+  var svg = root.querySelector(".despres__svg");
+  var nodesBox = root.querySelector(".despres__nodes");
+  var pop = root.querySelector(".despres__pop"), go = root.querySelector(".despres__go");
+  var replay = root.querySelector(".despres__replay");
+  var S = { t: 0, sel: null, playing: false, started: false, last: null, raf: 0, width: 0 };
+  var G = null, lastKey = "";
+
+  function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+  function ease(x) { x = clamp(x, 0, 1); return -(Math.cos(Math.PI * x) - 1) / 2; }
+  function r1(n) { return Math.round(n * 10) / 10; }
+  function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;"); }
+
+  /* ---------- GEOMETRIA ---------- */
+  function geometry(W) {
+    var g = { W: W, tall: W < TALL }, H, m;
+    if (!g.tall) {
+      H = Math.round(clamp(W * .4, 330, 380)); m = 62;
+      // Les 7 passes en un arc petit, a l'esquerra; la porta; i tres camins cap a la dreta
+      g.beads = []; for (var i = 0; i < 7; i++) { var a = Math.PI * (1.1 - i * .2 / 1.2); g.beads.push([W * .13 + Math.cos(a) * W * .085, H * .5 - Math.sin(a) * H * .2]); }
+      g.gate = [W * .31, H * .5];
+      g.ends = [H * .2, H * .5, H * .8].map(function (y) { return [W * .7, y]; });
+      g.lab = "r"; g.gateLab = "b"; g.lw = Math.round(W * .3 - m / 2 - 24);
+      g.curve = function (e) { var s = g.gate; return "M" + r1(s[0]) + "," + r1(s[1]) + "C" + r1(s[0] + W * .16) + "," + r1(s[1]) + " " + r1(e[0] - W * .16) + "," + r1(e[1]) + " " + r1(e[0]) + "," + r1(e[1]); };
+      g.into = "M" + r1(g.beads[6][0]) + "," + r1(g.beads[6][1]) + "C" + r1(g.beads[6][0] + 30) + "," + r1(g.beads[6][1] + 20) + " " + r1(g.gate[0] - 50) + "," + r1(g.gate[1]) + " " + r1(g.gate[0]) + "," + r1(g.gate[1]);
+    } else {
+      m = 56;
+      g.beads = []; for (var j = 0; j < 7; j++) { var b = Math.PI * (1.05 - j * .15); g.beads.push([W * .5 + Math.cos(b) * W * .2, 82 - Math.sin(b) * 44]); }
+      g.gate = [W * .5, 150];
+      var y = 316; g.ends = [[W * .18, y], [W * .5, y + 22], [W * .82, y]];
+      g.lab = "b"; g.gateLab = "r"; g.lw = Math.round(W / 3 - 8);
+      g.curve = function (e) { var s = g.gate; return "M" + r1(s[0]) + "," + r1(s[1]) + "C" + r1(s[0]) + "," + r1(s[1] + 80) + " " + r1(e[0]) + "," + r1(e[1] - 90) + " " + r1(e[0]) + "," + r1(e[1]); };
+      g.into = "M" + r1(g.beads[6][0]) + "," + r1(g.beads[6][1]) + "C" + r1(g.beads[6][0] + 10) + "," + r1(g.beads[6][1] + 30) + " " + r1(g.gate[0]) + "," + r1(g.gate[1] - 50) + " " + r1(g.gate[0]) + "," + r1(g.gate[1]);
+      H = y + 22 + m / 2 + 104;
+    }
+    g.H = H; g.m = m;
+    g.arc = "M" + g.beads.map(function (p) { return r1(p[0]) + "," + r1(p[1]); }).join("L");
+    return g;
+  }
+
+  /* ---------- DIBUIX ---------- */
+  function render() {
+    var W = Math.round(root.clientWidth);
+    if (!W) return;
+    G = geometry(W);
+    var H = G.H, out = [];
+    root.style.setProperty("--sw", W + "px");
+    root.style.setProperty("--sh", H + "px");
+    root.style.setProperty("--m", G.m + "px");
+    root.style.setProperty("--lw", G.lw + "px");
+    svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+    var gx = G.tall ? W * .5 : W * .78, gy = G.tall ? H * .8 : H * .5;
+    out.push('<defs><linearGradient id="despres-bg" x1="0" y1="0" x2="' + (G.tall ? 0 : 1) + '" y2="' + (G.tall ? 1 : 0) + '"><stop offset="0" stop-color="#f1f4f2"/><stop offset="1" stop-color="#faf3df"/></linearGradient>' +
+      '<radialGradient id="despres-glow"><stop offset="0" stop-color="#f1e3b0" stop-opacity=".85"/><stop offset="1" stop-color="#fcf8ea" stop-opacity="0"/></radialGradient></defs>',
+      '<rect width="' + W + '" height="' + H + '" fill="url(#despres-bg)"/>',
+      '<circle class="despres__glow" cx="' + r1(gx) + '" cy="' + r1(gy) + '" r="' + r1(Math.max(W, H) * .45) + '" fill="url(#despres-glow)"/>',
+      '<path d="' + G.arc + '" fill="none" stroke="#1a4d40" stroke-opacity=".3" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.1 8"/>',
+      '<path class="despres__arc" d="' + G.arc + '" fill="none" stroke="#1a4d40" stroke-width="3.5" stroke-linecap="round"/>',
+      '<path class="despres__into" d="' + G.into + '" fill="none" stroke="#1a4d40" stroke-width="4.5" stroke-linecap="round"/>');
+    G.ends.forEach(function (e, i) {
+      var d = G.curve(e);
+      out.push('<path d="' + d + '" fill="none" stroke="#1a4d40" stroke-opacity=".3" stroke-width="4" stroke-linecap="round" stroke-dasharray="0.1 10"/>',
+        '<path class="despres__way" d="' + d + '" fill="none" stroke="' + (WAYS[i].wide ? "#c9a53c" : "#1a4d40") + '" stroke-width="4.5" stroke-linecap="round"' + (WAYS[i].wide ? ' stroke-dasharray="10 9"' : '') + '/>');
+    });
+    G.beads.forEach(function (b, i) {
+      out.push('<circle class="despres__bead" cx="' + r1(b[0]) + '" cy="' + r1(b[1]) + '" r="' + (G.tall ? 7 : 8) + '" fill="#fff" stroke="#c9dcd4" stroke-width="2"/>');
+    });
+    out.push('<text x="' + r1(G.beads[0][0] - (G.tall ? 14 : 0)) + '" y="' + r1(G.beads[0][1] + (G.tall ? 4 : 24)) + '" text-anchor="' + (G.tall ? "end" : "middle") + '" font-family="Montserrat, sans-serif" font-weight="700" font-size="12" fill="#56635d">1</text>' +
+      '<text x="' + r1(G.beads[6][0] + (G.tall ? 14 : 0)) + '" y="' + r1(G.beads[6][1] + (G.tall ? 4 : -14)) + '" text-anchor="' + (G.tall ? "start" : "middle") + '" font-family="Montserrat, sans-serif" font-weight="700" font-size="12" fill="#56635d">7</text>');
+    WAYS.forEach(function () { out.push('<g class="despres__walker"><circle class="despres__halo" r="13" fill="#e2c668"/><circle r="7" fill="#e2c668" stroke="#fff" stroke-width="3"/></g>'); });
+    svg.innerHTML = out.join("");
+
+    var html = ['<div class="despres__node despres__node--gate" data-k="gate" style="left:' + r1(G.gate[0]) + 'px;top:' + r1(G.gate[1]) + 'px">' +
+      '<button type="button" class="despres__med" aria-label="' + esc(GATE.head + " " + GATE.text) + '"><svg viewBox="0 0 24 24" aria-hidden="true">' + ICON.gate + '</svg></button>' +
+      '<span class="despres__lab despres__lab--' + G.gateLab + '" aria-hidden="true"><b>' + esc(GATE.title) + '</b></span></div>'];
+    WAYS.forEach(function (w, i) {
+      var e = G.ends[i];
+      html.push('<div class="despres__node' + (w.wide ? ' despres__node--wide' : '') + '" data-k="w' + i + '" style="left:' + r1(e[0]) + 'px;top:' + r1(e[1]) + 'px">' +
+        '<button type="button" class="despres__med" aria-label="' + esc(w.head + ": " + w.text) + '"><svg viewBox="0 0 24 24" aria-hidden="true">' + ICON[w.icon] + '</svg></button>' +
+        '<span class="despres__lab despres__lab--' + G.lab + '" aria-hidden="true"><b>' + esc(w.title) + '</b><span>' + esc(w.sub) + '</span></span></div>');
+    });
+    nodesBox.innerHTML = html.join("");
+
+    G.arcEl = svg.querySelector(".despres__arc"); G.intoEl = svg.querySelector(".despres__into");
+    G.wayEls = Array.prototype.slice.call(svg.querySelectorAll(".despres__way"));
+    G.walkers = Array.prototype.slice.call(svg.querySelectorAll(".despres__walker"));
+    G.beadEls = Array.prototype.slice.call(svg.querySelectorAll(".despres__bead"));
+    [G.arcEl, G.intoEl].concat(G.wayEls).forEach(function (p) { p._len = p.getTotalLength(); });
+    G.arcEl.style.strokeDasharray = G.arcEl._len; G.intoEl.style.strokeDasharray = G.intoEl._len;
+    G.nodes = {};
+    Array.prototype.forEach.call(nodesBox.querySelectorAll(".despres__node"), function (el) { G.nodes[el.getAttribute("data-k")] = el; });
+    lastKey = "";
+    apply();
+    if (S.sel) openPop(S.sel);
+  }
+
+  /* ---------- ESTAT ---------- */
+  function apply() {
+    if (!G) return;
+    var t = S.t, fb = clamp(t / T.beads, 0, 1), fi = ease((t - T.beads) / (T.gate - T.beads)), fw = ease((t - T.ways0) / (T.ways1 - T.ways0));
+    G.arcEl.style.strokeDashoffset = G.arcEl._len * (1 - fb);
+    G.intoEl.style.strokeDashoffset = G.intoEl._len * (1 - fi);
+    G.wayEls.forEach(function (p, i) {
+      // El camí dels processos més amplis és discontinu (si ho vols): apareix a poc a poc en lloc de dibuixar-se
+      if (WAYS[i].wide) p.style.opacity = r1(fw * 10) / 10;
+      else { p.style.strokeDasharray = p._len; p.style.strokeDashoffset = p._len * (1 - fw); }
+      var pt = p.getPointAtLength(p._len * fw), w = G.walkers[i];
+      w.setAttribute("transform", "translate(" + r1(pt.x) + "," + r1(pt.y) + ")");
+      w.setAttribute("opacity", fw > 0 && fw < 1 ? 1 : 0);
+    });
+    var beads = Math.floor(fb * 7 + .01);
+    var key = [beads, t >= T.gate, fw >= 1, t >= T.end, S.sel].join("|");
+    if (key === lastKey) return;
+    lastKey = key;
+    G.beadEls.forEach(function (b, i) { b.classList.toggle("is-on", i < beads); });
+    function set(k, on) {
+      var el = G.nodes[k];
+      if (on && !el.classList.contains("is-on") && S.playing) { el.classList.add("is-pop"); setTimeout(function () { el.classList.remove("is-pop"); }, 650); }
+      el.classList.toggle("is-on", on);
+      el.classList.toggle("is-sel", S.sel === k);
+    }
+    set("gate", t >= T.gate);
+    WAYS.forEach(function (w, i) { set("w" + i, fw >= 1); });
+    root.classList.toggle("is-done", t >= T.end);
+    replay.hidden = !(t >= T.end && !reduce);
+  }
+
+  /* ---------- GLOBUS ---------- */
+  function openPop(k) {
+    var d = k === "gate" ? GATE : WAYS[+k.slice(1)], at = k === "gate" ? G.gate : G.ends[+k.slice(1)], half = G.m / 2 + 12;
+    pop.querySelector(".despres__pk").textContent = d.kick;
+    pop.querySelector(".despres__pt").textContent = d.head;
+    pop.querySelector(".despres__px").textContent = d.text;
+    go.hidden = !d.link;
+    if (d.link) {
+      go.textContent = d.link; go.href = d.href || CONTACT;
+      // Un enllaç a una altra web s'obre en una pestanya nova
+      if (d.href) { go.target = "_blank"; go.rel = "noopener"; } else { go.removeAttribute("target"); go.removeAttribute("rel"); }
+    }
+    pop.classList.add("is-open");
+    var pw = pop.offsetWidth, ph = pop.offsetHeight;
+    var x = clamp(at[0] - pw / 2, 12, G.W - pw - 12);
+    var y = at[1] + half + ph + 8 <= G.H ? at[1] + half : at[1] - half - ph;
+    pop.style.left = r1(x) + "px";
+    pop.style.top = r1(clamp(y, 8, G.H - ph - 8)) + "px";
+  }
+  function select(k) { S.sel = k; lastKey = ""; apply(); if (k) openPop(k); else pop.classList.remove("is-open"); }
+
+  /* ---------- ANIMACIÓ ---------- */
+  function tick(ts) {
+    if (!S.playing) return;
+    if (S.last === null) S.last = ts;
+    S.t += Math.min(64, ts - S.last); S.last = ts;
+    if (S.t >= T.end) { S.t = T.end; S.playing = false; }
+    apply();
+    if (S.playing) S.raf = requestAnimationFrame(tick);
+  }
+  function play() {
+    cancelAnimationFrame(S.raf);
+    S.started = true; S.sel = null; pop.classList.remove("is-open");
+    if (reduce) { S.t = T.end; S.playing = false; lastKey = ""; apply(); return; }
+    S.t = 0; S.last = null; S.playing = true; lastKey = "";
+    apply();
+    setTimeout(function () { S.raf = requestAnimationFrame(tick); }, 300);
+  }
+  function stop() { cancelAnimationFrame(S.raf); S.playing = false; S.t = T.end; S.started = true; }
+
+  nodesBox.addEventListener("click", function (e) {
+    var el = e.target.closest ? e.target.closest(".despres__node") : null;
+    if (!el) return;
+    if (S.playing) stop();
+    var k = el.getAttribute("data-k");
+    select(S.sel === k ? null : k);
+  });
+  document.addEventListener("click", function (e) {
+    if (S.sel && !(e.target.closest && (e.target.closest(".despres__node") || e.target.closest(".despres__pop")))) select(null);
+  });
+  root.addEventListener("keydown", function (e) { if (e.key === "Escape" && S.sel) select(null); });
+  replay.addEventListener("click", function (e) { e.stopPropagation(); play(); });
+
+  /* ---------- MIDA I ARRENCADA ---------- */
+  render();
+  S.width = Math.round(root.clientWidth);
+  var pending = false;
+  function onResize() {
+    if (pending) return;
+    pending = true;
+    requestAnimationFrame(function () {
+      pending = false;
+      var w = Math.round(root.clientWidth);
+      if (w && w !== S.width) { S.width = w; render(); }
+    });
+  }
+  if (window.ResizeObserver) new ResizeObserver(onResize).observe(root);
+  else window.addEventListener("resize", onResize);
+
+  if (reduce) { S.t = T.end; apply(); }
+  else if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (en) { if (en[0].isIntersecting && !S.started) { io.disconnect(); play(); } }, { threshold: 0.3 });
+    io.observe(scene);
+  } else play();
+})();
+</script>

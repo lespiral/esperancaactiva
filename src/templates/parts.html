@@ -13,6 +13,7 @@
   {% for c in courses %}
   <li class="card card--course">
     <span class="card__icon" aria-hidden="true">{{ icon(c.icon) }}</span>
+    {% if c.soon %}<span class="card__badge">{{ cc.soon_label }}</span>{% endif %}
     <h{{ heading_level }} class="card__title">{{ c.title }}</h{{ heading_level }}>
     <p class="card__text">{{ c.card }}</p>
     <a class="btn btn--soft btn--block" href="{{ root }}{{ c.slug }}/">És el meu cas</a>
@@ -65,7 +66,7 @@
 {% macro faq_item(q, a_html, id=None) -%}
 <details class="faq"{% if id %} id="{{ id }}"{% endif %}>
   <summary><span>{{ q }}</span>{{ icon('caret', 'faq__caret') }}</summary>
-  <div class="faq__body">{{ a_html }}</div>
+  <div class="faq__body">{{ a_html }}{% if caller is defined %}<div class="infografia infografia--in">{{ caller() }}</div>{% endif %}</div>
 </details>
 {%- endmacro %}
 
@@ -73,12 +74,25 @@
 <aside class="note note--info" aria-labelledby="abans-de-sortir">
   <h2 id="abans-de-sortir" class="note__title">{{ icon('info') }}{{ bw.title }}</h2>
   <p>{{ bw.intro }}</p>
-  <ul class="ticks">{% for i in bw.list %}<li>{{ i }}</li>{% endfor %}</ul>
+  <div class="infografia infografia--in">{% include "infografies/infografia-abans-de-sortir.html" %}</div>
+  {# La llista, en text, plegada a sota de la infografia #}
+  <details class="faq faq--text">
+    <summary><span>{{ bw.list_title }}</span>{{ icon('caret', 'faq__caret') }}</summary>
+    <div class="faq__body"><ul class="ticks">{% for i in bw.list %}<li>{{ i }}</li>{% endfor %}</ul></div>
+  </details>
 </aside>
 {%- endmacro %}
 
-{% macro safety(html) -%}
+{% macro safety(html, title=None, intro=None) -%}
+{% if title %}
+<aside class="note note--care" aria-labelledby="abans-de-comencar">
+  <h2 id="abans-de-comencar" class="note__title">{{ icon('lifebuoy') }}{{ title }}</h2>
+  {% if intro %}<p class="note__p">{{ intro }}</p>{% endif %}
+  <p class="note__p">{{ html }}</p>
+</aside>
+{% else %}
 <aside class="note note--care">
   <p>{{ icon('lifebuoy') }}<span>{{ html }}</span></p>
 </aside>
+{% endif %}
 {%- endmacro %}

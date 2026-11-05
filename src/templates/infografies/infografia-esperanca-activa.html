@@ -1,0 +1,362 @@
+{# infografia-esperanca-activa.html: copiat del bloc INICI–FINAL de la carpeta «Infografies web» (5 de novembre de 2026). #}
+<div class="nus" data-nus>
+  <div class="nus__scene" role="group" aria-label="El dolor i la incertesa es transformen en claredat, suport i acció significativa, sostinguda per la comunitat">
+    <svg class="nus__svg" aria-hidden="true" focusable="false"></svg>
+    <div class="nus__nodes"></div>
+    <div class="nus__pop" aria-live="polite"><p class="nus__pk"></p><p class="nus__pt"></p><p class="nus__px"></p></div>
+  </div>
+  <div class="nus__foot">
+    <p class="nus__hint">Toca cada part per saber-ne més.</p>
+    <button class="nus__replay" type="button" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1M3.5 4v4.6h4.6"/></svg>
+      <span>Torna-ho a veure</span>
+    </button>
+  </div>
+</div>
+
+<style>
+.nus {
+  --c9: var(--green-900, #11352c); --c8: var(--green-800, #1a4d40); --c7: var(--green-700, #22604f);
+  --c6: var(--green-600, #2e7561); --c2: var(--green-200, #c9dcd4);
+  --cs: var(--sun, #e2c668); --cs-ink: var(--sun-ink, #6f5711); --cline: var(--line, #e7e1d4);
+  --cink: var(--ink, #23302b); --cmuted: var(--muted, #56635d);
+  --fh: var(--font-head, "Montserrat", ui-sans-serif, system-ui, sans-serif);
+  --fb: var(--font-body, "Lato", ui-sans-serif, system-ui, sans-serif);
+  position: relative; overflow: hidden; background: #fff; color: var(--cink); font-family: var(--fb);
+  border: 1px solid var(--cline); border-radius: var(--radius-lg, 22px);
+  box-shadow: 0 1px 2px rgba(17,53,44,.06), 0 10px 28px rgba(17,53,44,.09);
+}
+.nus *, .nus *::before, .nus *::after { box-sizing: border-box; }
+.nus p { margin: 0; }
+.nus__scene { position: relative; height: var(--sh, 460px); }
+.nus__svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.nus__nodes { position: absolute; inset: 0; }
+.nus__node { position: absolute; width: 0; height: 0; }
+.nus__tag {
+  position: absolute; left: 0; top: 0; transform: translate(-50%, -50%) scale(.7); opacity: 0;
+  width: max-content; max-width: 190px; padding: 4px 11px 5px; border-radius: 999px; border: 2px solid var(--col, var(--c2));
+  background: #fff; color: var(--c9); font: 700 clamp(13.5px, calc(var(--sw, 1000px) * .015), 15.5px)/1.25 var(--fh);
+  cursor: pointer; -webkit-appearance: none; appearance: none; text-align: center;
+  transition: opacity .4s, transform .5s cubic-bezier(.34, 1.56, .64, 1), box-shadow .3s;
+}
+.nus__tag.is-on { opacity: 1; transform: translate(-50%, -50%); }
+.nus__tag.is-sel { box-shadow: 0 0 0 3px #fff, 0 0 0 6px var(--cs); }
+.nus__tag:focus { outline: none; }
+.nus__tag:focus-visible { box-shadow: 0 0 0 3px #fff, 0 0 0 6px var(--c7); }
+.nus__tag--pain { --col: #b9c2be; color: var(--cmuted); background: rgba(255,255,255,.9); opacity: 1; transform: none; border-radius: 12px; }
+.nus__tag--pain.is-sel { box-shadow: 0 0 0 3px var(--cs); }
+.nus__tag--pain.nus--r { transform: translate(0, -50%); }
+.nus__tag--pain.nus--b { transform: translate(-50%, 0); }
+.nus__tag--pain.nus--c { transform: translate(-50%, -50%); }
+.nus__center {
+  position: absolute; left: 0; top: 0; transform: translate(-50%, -50%) scale(.8); opacity: 0;
+  width: var(--cw, 180px); text-align: center; padding: 6px; border: 0; background: none; cursor: pointer; -webkit-appearance: none; appearance: none;
+  transition: opacity .6s, transform .7s cubic-bezier(.34, 1.56, .64, 1);
+}
+.nus__center.is-on { opacity: 1; transform: translate(-50%, -50%); }
+.nus__center b { display: block; font: 700 clamp(17px, calc(var(--cw, 180px) * .11), 21px)/1.2 var(--fh); color: var(--c9); }
+.nus__center span { display: block; margin-top: 4px; font-size: clamp(13.5px, calc(var(--cw, 180px) * .085), 15.5px); line-height: 1.3; color: var(--cmuted); }
+.nus__center:focus { outline: none; }
+.nus__center:focus-visible { outline: 3px solid var(--c7); outline-offset: 2px; border-radius: 12px; }
+.nus__center.is-sel b { text-decoration: underline; text-decoration-color: var(--cs); text-decoration-thickness: 3px; text-underline-offset: 4px; }
+
+/* SVG */
+.nus__knot { transform-box: fill-box; transform-origin: center; animation: nus-wobble 2.4s ease-in-out infinite; transition: opacity 1s, transform 1s; }
+.nus.is-free .nus__knot { animation: none; opacity: .28; transform: scale(.72); }
+.nus__fig { opacity: 0; transform: translateY(-16px); transition: opacity .6s, transform .8s cubic-bezier(.34, 1.4, .64, 1); }
+.nus__fig.is-on { opacity: 1; transform: none; }
+.nus__glow { opacity: 0; transition: opacity 1.2s; }
+.nus.is-done .nus__glow { opacity: 1; }
+
+/* Globus */
+.nus__pop {
+  position: absolute; left: 0; top: 0; width: min(290px, calc(100% - 24px));
+  padding: 13px 15px 14px; border-radius: 14px; background: #fff;
+  border: 1px solid var(--cline); box-shadow: 0 2px 4px rgba(17,53,44,.06), 0 14px 32px rgba(17,53,44,.16);
+  opacity: 0; visibility: hidden; transform: translateY(6px); transition: opacity .2s, transform .2s, visibility .2s; z-index: 3;
+}
+.nus__pop.is-open { opacity: 1; visibility: visible; transform: none; }
+.nus__pk { font: 700 11.5px/1.3 var(--fh); letter-spacing: .08em; text-transform: uppercase; color: var(--cs-ink); }
+.nus__pt { font: 700 16px/1.3 var(--fh); color: var(--c9); margin-top: 3px !important; }
+.nus__px { font-size: 15.5px; line-height: 1.45; color: var(--cmuted); margin-top: 3px !important; }
+
+.nus__foot {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px 16px; flex-wrap: wrap;
+  min-height: 60px; padding: 10px clamp(14px, 3vw, 24px); border-top: 1px solid var(--cline); background: #fff;
+}
+.nus__hint { font-size: 14.5px; color: var(--cmuted); }
+.nus__replay {
+  flex: none; display: inline-flex; align-items: center; gap: .45em; padding: .55em 1em;
+  border-radius: 999px; border: 2px solid var(--c2); background: #fff; color: var(--c8);
+  font: 700 14px/1.2 var(--fh); cursor: pointer; transition: border-color .15s, color .15s, transform .15s;
+}
+.nus__replay:hover { border-color: var(--c7); color: var(--c9); transform: translateY(-1px); }
+.nus__replay:focus-visible { outline: 3px solid var(--c7); outline-offset: 2px; }
+.nus__replay svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.nus__replay[hidden] { display: none; }
+
+@keyframes nus-wobble { 0%, 100% { transform: rotate(-3deg) scale(1); } 50% { transform: rotate(3deg) scale(1.03); } }
+@media (prefers-reduced-motion: reduce) {
+  .nus *, .nus *::before, .nus *::after { animation: none !important; transition: none !important; }
+}
+</style>
+
+<script>
+(function () {
+  "use strict";
+  var root = document.querySelector("[data-nus]");
+  if (!root || root.getAttribute("data-ready")) return;
+  root.setAttribute("data-ready", "1");
+
+  /* ---------- TEXTOS (de la web: «Què vol dir esperança activa?» i les preguntes de les passes) ---------- */
+  var PAIN = { label: "El dolor i la incertesa", kick: "On comences", title: "El dolor i la incertesa", text: "Què em pesa? Què necessita ser escoltat?" };
+  var THREADS = [
+    { label: "Claredat", col: "#e2c668", kick: "Es transforma en", title: "Claredat", text: "Quina direcció voldria ajudar a fer possible?" },
+    { label: "Suport", col: "#2e7561", kick: "Es transforma en", title: "Suport", text: "Quines persones, llocs o recursos m'ajuden?" },
+    { label: "Acció", col: "#1a4d40", kick: "Es transforma en", title: "Acció significativa", text: "Quina acció petita, concreta i realista puc fer ara?" }
+  ];
+  var CENTER = { title: "Esperança Activa", sub: "sostinguda per la comunitat", kick: "Què vol dir «esperança activa»?",
+    text: "És el que proposa aquest recorregut: transformar el dolor i la incertesa en claredat, suport i acció significativa, sostinguda per la comunitat." };
+
+  /* ---------- RITME (ms) ---------- */
+  var T = { threads0: 700, threads1: 2100, free: 1200, braid0: 2100, braid1: 3600, figs0: 3500, figStep: 150, center: 4700, end: 5400 };
+  var TALL = 720;
+
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var scene = root.querySelector(".nus__scene");
+  var svg = root.querySelector(".nus__svg");
+  var nodesBox = root.querySelector(".nus__nodes");
+  var pop = root.querySelector(".nus__pop");
+  var replay = root.querySelector(".nus__replay");
+  var S = { t: 0, sel: null, playing: false, started: false, last: null, raf: 0, width: 0 };
+  var G = null, lastKey = "";
+
+  function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+  function ease(x) { x = clamp(x, 0, 1); return -(Math.cos(Math.PI * x) - 1) / 2; }
+  function r1(n) { return Math.round(n * 10) / 10; }
+  function r3(n) { return Math.round(n * 1000) / 1000; }
+  function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;"); }
+  function seeded(k) { return function () { k = (k * 9301 + 49297) % 233280; return k / 233280; }; }
+  function curve(P) {
+    var n = P.length, d = "M" + r1(P[0][0]) + "," + r1(P[0][1]);
+    for (var i = 0; i < n; i++) {
+      var p0 = P[(i - 1 + n) % n], p1 = P[i], p2 = P[(i + 1) % n], p3 = P[(i + 2) % n];
+      d += "C" + r1(p1[0] + (p2[0] - p0[0]) / 6) + "," + r1(p1[1] + (p2[1] - p0[1]) / 6) + " " + r1(p2[0] - (p3[0] - p1[0]) / 6) + "," + r1(p2[1] - (p3[1] - p1[1]) / 6) + " " + r1(p2[0]) + "," + r1(p2[1]);
+    }
+    return d;
+  }
+  function bez(p0, c1, c2, p3, t) {
+    var u = 1 - t;
+    return [u * u * u * p0[0] + 3 * u * u * t * c1[0] + 3 * u * t * t * c2[0] + t * t * t * p3[0],
+            u * u * u * p0[1] + 3 * u * u * t * c1[1] + 3 * u * t * t * c2[1] + t * t * t * p3[1]];
+  }
+
+  /* ---------- GEOMETRIA ---------- */
+  function geometry(W) {
+    var g = { W: W, tall: W < TALL }, H;
+    if (!g.tall) {
+      // Ordinador: d'esquerra a dreta
+      H = Math.round(clamp(W * .37, 350, 430));
+      g.K = [W * .11, H * .5]; g.rk = clamp(W * .045, 36, 52);
+      g.B0 = [W * .44, H * .5]; g.R = Math.round(Math.min(H * .25, W * .1)); g.E = [W * .62, H * .5]; g.C = [g.E[0] + g.R, H * .5];
+      g.dir = [1, 0]; g.spread = [0, H * .3]; g.entry = Math.PI;
+      g.painLab = { x: g.K[0], y: g.K[1] + g.rk + 18, cls: "nus--b" };
+    } else {
+      // Mòbil: de dalt a baix
+      g.K = [W * .5, 100]; g.rk = 36;
+      g.B0 = [W * .5, 326]; g.R = Math.round(Math.min(W * .25, 95)); g.E = [W * .5, 388]; g.C = [W * .5, 388 + g.R];
+      g.dir = [0, 1]; g.spread = [W * .34, 0]; g.entry = -Math.PI / 2;
+      g.painLab = { x: g.K[0], y: 32, cls: "nus--c" };
+      H = Math.round(g.C[1] + g.R + 64);
+    }
+    g.H = H;
+    // El nus: una línia embolicada
+    var rnd = seeded(11), P = [];
+    for (var i = 0; i < 15; i++) { var a = i * 2.39996, r = g.rk * (.42 + .58 * rnd()); P.push([g.K[0] + Math.cos(a) * r, g.K[1] + Math.sin(a) * r]); }
+    g.knot = curve(P) + "Z";
+    var Q = [];
+    for (var j = 0; j < 11; j++) { var b = j * 2.6 + .7, rr = g.rk * (.3 + .5 * rnd()); Q.push([g.K[0] + Math.cos(b) * rr, g.K[1] + Math.sin(b) * rr]); }
+    g.knot2 = curve(Q) + "Z";
+    // Tres fils que surten del nus i s'ajunten
+    g.threads = [-1, 0, 1].map(function (o, i) {
+      var p0 = g.K, p3 = g.B0, L = [p3[0] - p0[0], p3[1] - p0[1]];
+      var c1 = [p0[0] + L[0] * .3 + g.spread[0] * o, p0[1] + L[1] * .3 + g.spread[1] * o];
+      var c2 = [p0[0] + L[0] * .72 + g.spread[0] * o, p0[1] + L[1] * .72 + g.spread[1] * o];
+      var mid = bez(p0, c1, c2, p3, .52);
+      return { d: "M" + r1(p0[0]) + "," + r1(p0[1]) + "C" + r1(c1[0]) + "," + r1(c1[1]) + " " + r1(c2[0]) + "," + r1(c2[1]) + " " + r1(p3[0]) + "," + r1(p3[1]), mid: mid };
+    });
+    // La corda: tres fils trenats, des de la unió fins a l'anell, i l'anell sencer
+    var cl = [], step = 2, s;
+    var dx = g.E[0] - g.B0[0], dy = g.E[1] - g.B0[1], len = Math.sqrt(dx * dx + dy * dy);
+    for (s = 0; s < len; s += step) cl.push([g.B0[0] + dx * s / len, g.B0[1] + dy * s / len, dy / len * -1, dx / len]);
+    var circ = 2 * Math.PI * g.R;
+    for (s = 0; s <= circ; s += step) {
+      var th = g.entry + s / g.R, px = g.C[0] + Math.cos(th) * g.R, py = g.C[1] + Math.sin(th) * g.R;
+      cl.push([px, py, Math.cos(th), Math.sin(th)]);
+    }
+    var A = g.tall ? 5 : 6, lam = g.tall ? 40 : 48;
+    g.strands = [0, 1, 2].map(function (k) {
+      var ph = k * 2 * Math.PI / 3, pts = cl.map(function (c, i) {
+        var o = A * Math.sin(2 * Math.PI * (i * step) / lam + ph);
+        return r1(c[0] + c[2] * o) + "," + r1(c[1] + c[3] * o);
+      });
+      return "M" + pts.join("L");
+    });
+    // Persones al voltant de l'anell, deixant lliure l'entrada de la corda
+    g.figs = [];
+    for (var f = 0; f < 7; f++) g.figs.push(g.entry + (f + 1) * 2 * Math.PI / 8);
+    g.cw = Math.round(g.R * 1.55);
+    return g;
+  }
+
+  /* ---------- DIBUIX ---------- */
+  function render() {
+    var W = Math.round(root.clientWidth);
+    if (!W) return;
+    G = geometry(W);
+    var H = G.H, out = [];
+    root.style.setProperty("--sw", W + "px");
+    root.style.setProperty("--sh", H + "px");
+    root.style.setProperty("--cw", G.cw + "px");
+    svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+    out.push(
+      '<defs><linearGradient id="nus-bg" x1="0" y1="0" x2="' + (G.tall ? 0 : 1) + '" y2="' + (G.tall ? 1 : 0) + '"><stop offset="0" stop-color="#eceeec"/><stop offset=".45" stop-color="#f4f3ee"/><stop offset="1" stop-color="#fbf4df"/></linearGradient>',
+      '<radialGradient id="nus-glow"><stop offset="0" stop-color="#f1e3b0" stop-opacity=".9"/><stop offset=".55" stop-color="#f8efd2" stop-opacity=".45"/><stop offset="1" stop-color="#fcf8ea" stop-opacity="0"/></radialGradient></defs>',
+      '<rect width="' + W + '" height="' + H + '" fill="url(#nus-bg)"/>',
+      '<circle class="nus__glow" cx="' + r1(G.C[0]) + '" cy="' + r1(G.C[1]) + '" r="' + r1(G.R * 2.2) + '" fill="url(#nus-glow)"/>',
+      '<g class="nus__knot" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="' + G.knot + '" stroke="#7f8b86" stroke-width="3"/><path d="' + G.knot2 + '" stroke="#a3afa9" stroke-width="2.2"/></g>'
+    );
+    G.threads.forEach(function (t, i) {
+      out.push('<path class="nus__thread" d="' + t.d + '" pathLength="1" fill="none" stroke="' + THREADS[i].col + '" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="1 1" stroke-dashoffset="1"/>');
+    });
+    G.strands.forEach(function (d, i) {
+      out.push('<path class="nus__strand" d="' + d + '" pathLength="1" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 1" stroke-dashoffset="1"/>' +
+        '<path class="nus__strand" d="' + d + '" pathLength="1" fill="none" stroke="' + THREADS[i].col + '" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 1" stroke-dashoffset="1"/>');
+    });
+    var cols = ["#2e7561", "#22604f", "#c9a53c", "#1a4d40", "#2e7561", "#6f5711", "#22604f"], R = G.R, sc = G.tall ? .9 : 1;
+    G.figs.forEach(function (th, i) {
+      var deg = th * 180 / Math.PI + 90;
+      out.push('<g transform="translate(' + r1(G.C[0]) + ',' + r1(G.C[1]) + ') rotate(' + r1(deg) + ')"><g class="nus__fig" fill="' + cols[i] + '">' +
+        '<circle cx="0" cy="' + r1(-(R + 33 * sc)) + '" r="' + r1(7.5 * sc) + '"/>' +
+        '<path d="M' + r1(-10 * sc) + ',' + r1(-(R + 17 * sc)) + 'a' + r1(10 * sc) + ',' + r1(9 * sc) + ' 0 0 1 ' + r1(20 * sc) + ',0z"/>' +
+        '<path d="M' + r1(-8.5 * sc) + ',' + r1(-(R + 17 * sc)) + 'Q' + r1(-9 * sc) + ',' + r1(-(R + 8 * sc)) + ' ' + r1(-4 * sc) + ',' + r1(-(R + 4)) + 'M' + r1(8.5 * sc) + ',' + r1(-(R + 17 * sc)) + 'Q' + r1(9 * sc) + ',' + r1(-(R + 8 * sc)) + ' ' + r1(4 * sc) + ',' + r1(-(R + 4)) + '" fill="none" stroke="' + cols[i] + '" stroke-width="' + r1(3.6 * sc) + '" stroke-linecap="round"/>' +
+        '</g></g>');
+    });
+    svg.innerHTML = out.join("");
+
+    var html = [];
+    html.push('<div class="nus__node" style="left:' + r1(G.painLab.x) + 'px;top:' + r1(G.painLab.y) + 'px"><button type="button" class="nus__tag nus__tag--pain ' + G.painLab.cls + '" data-k="pain">' + esc(PAIN.label) + '</button></div>');
+    G.threads.forEach(function (t, i) {
+      html.push('<div class="nus__node" style="left:' + r1(t.mid[0]) + 'px;top:' + r1(t.mid[1]) + 'px"><button type="button" class="nus__tag" data-k="t' + i + '" style="--col:' + THREADS[i].col + '">' + esc(THREADS[i].label) + '</button></div>');
+    });
+    html.push('<div class="nus__node" style="left:' + r1(G.C[0]) + 'px;top:' + r1(G.C[1]) + 'px"><button type="button" class="nus__center" data-k="center"><b>' + esc(CENTER.title) + '</b><span>' + esc(CENTER.sub) + '</span></button></div>');
+    nodesBox.innerHTML = html.join("");
+
+    G.threadEls = Array.prototype.slice.call(svg.querySelectorAll(".nus__thread"));
+    G.strandEls = Array.prototype.slice.call(svg.querySelectorAll(".nus__strand"));
+    G.figEls = Array.prototype.slice.call(svg.querySelectorAll(".nus__fig"));
+    G.tags = Array.prototype.slice.call(nodesBox.querySelectorAll("[data-k^='t']"));
+    G.center = nodesBox.querySelector(".nus__center");
+    G.pain = nodesBox.querySelector(".nus__tag--pain");
+    lastKey = "";
+    apply();
+    if (S.sel) openPop(S.sel);
+  }
+
+  /* ---------- ESTAT ---------- */
+  function apply() {
+    if (!G) return;
+    var t = S.t;
+    var th = ease((t - T.threads0) / (T.threads1 - T.threads0));
+    G.threadEls.forEach(function (p, i) { p.setAttribute("stroke-dashoffset", r3(1 - clamp(th * 1.15 - i * .07, 0, 1))); });
+    var br = clamp((t - T.braid0) / (T.braid1 - T.braid0), 0, 1);
+    G.strandEls.forEach(function (p) { p.setAttribute("stroke-dashoffset", r3(1 - br)); });
+    var figsOn = G.figEls.map(function (f, i) { return t >= T.figs0 + i * T.figStep ? 1 : 0; }).join("");
+    var tagsOn = G.tags.map(function (g, i) { return th * 1.15 - i * .07 >= .55 ? 1 : 0; }).join("");
+    var key = [t >= T.free, figsOn, tagsOn, t >= T.center, t >= T.end, S.sel].join("|");
+    if (key === lastKey) return;
+    lastKey = key;
+    root.classList.toggle("is-free", t >= T.free);
+    root.classList.toggle("is-done", t >= T.end);
+    G.figEls.forEach(function (f, i) { f.classList.toggle("is-on", figsOn.charAt(i) === "1"); });
+    G.tags.forEach(function (g, i) { g.classList.toggle("is-on", tagsOn.charAt(i) === "1"); g.classList.toggle("is-sel", S.sel === "t" + i); });
+    G.center.classList.toggle("is-on", t >= T.center);
+    G.center.classList.toggle("is-sel", S.sel === "center");
+    G.pain.classList.toggle("is-sel", S.sel === "pain");
+    replay.hidden = !(t >= T.end && !reduce);
+  }
+
+  /* ---------- GLOBUS ---------- */
+  function openPop(k) {
+    var d = k === "pain" ? PAIN : k === "center" ? CENTER : THREADS[+k.slice(1)];
+    var el = nodesBox.querySelector('[data-k="' + k + '"]'), r = el.getBoundingClientRect(), sr = scene.getBoundingClientRect();
+    var at = [r.left - sr.left + r.width / 2, r.top - sr.top + r.height / 2], half = r.height / 2 + 10;
+    pop.querySelector(".nus__pk").textContent = d.kick;
+    pop.querySelector(".nus__pt").textContent = d.title;
+    pop.querySelector(".nus__px").textContent = d.text;
+    pop.classList.add("is-open");
+    var pw = pop.offsetWidth, ph = pop.offsetHeight;
+    var x = clamp(at[0] - pw / 2, 12, G.W - pw - 12);
+    var y = at[1] + half + ph + 8 <= G.H ? at[1] + half : at[1] - half - ph;
+    pop.style.left = r1(x) + "px";
+    pop.style.top = r1(clamp(y, 8, G.H - ph - 8)) + "px";
+  }
+  function select(k) { S.sel = k; lastKey = ""; apply(); if (k) openPop(k); else pop.classList.remove("is-open"); }
+
+  /* ---------- ANIMACIÓ ---------- */
+  function tick(ts) {
+    if (!S.playing) return;
+    if (S.last === null) S.last = ts;
+    S.t += Math.min(64, ts - S.last); S.last = ts;
+    if (S.t >= T.end) { S.t = T.end; S.playing = false; }
+    apply();
+    if (S.playing) S.raf = requestAnimationFrame(tick);
+  }
+  function play() {
+    cancelAnimationFrame(S.raf);
+    S.started = true; S.sel = null; pop.classList.remove("is-open");
+    if (reduce) { S.t = T.end; S.playing = false; lastKey = ""; apply(); return; }
+    S.t = 0; S.last = null; S.playing = true; lastKey = "";
+    apply();
+    setTimeout(function () { S.raf = requestAnimationFrame(tick); }, 300);
+  }
+  function stop() { cancelAnimationFrame(S.raf); S.playing = false; S.t = T.end; S.started = true; }
+
+  nodesBox.addEventListener("click", function (e) {
+    var el = e.target.closest ? e.target.closest("[data-k]") : null;
+    if (!el) return;
+    if (S.playing) stop();
+    var k = el.getAttribute("data-k");
+    select(S.sel === k ? null : k);
+  });
+  document.addEventListener("click", function (e) {
+    if (S.sel && !(e.target.closest && (e.target.closest(".nus [data-k]") || e.target.closest(".nus__pop")))) select(null);
+  });
+  root.addEventListener("keydown", function (e) { if (e.key === "Escape" && S.sel) select(null); });
+  replay.addEventListener("click", function (e) { e.stopPropagation(); play(); });
+
+  /* ---------- MIDA I ARRENCADA ---------- */
+  render();
+  S.width = Math.round(root.clientWidth);
+  var pending = false;
+  function onResize() {
+    if (pending) return;
+    pending = true;
+    requestAnimationFrame(function () {
+      pending = false;
+      var w = Math.round(root.clientWidth);
+      if (w && w !== S.width) { S.width = w; render(); }
+    });
+  }
+  if (window.ResizeObserver) new ResizeObserver(onResize).observe(root);
+  else window.addEventListener("resize", onResize);
+
+  if (reduce) { S.t = T.end; apply(); }
+  else if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting && !S.started) { io.disconnect(); play(); } });
+    }, { threshold: 0.3 });
+    io.observe(scene);
+  } else play();
+})();
+</script>

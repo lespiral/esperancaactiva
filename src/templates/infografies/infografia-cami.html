@@ -1,0 +1,515 @@
+{# infografia-cami.html: copiat del bloc INICI–FINAL de la carpeta «Infografies web» (5 de novembre de 2026). #}
+<div class="cami" data-cami>
+  <div class="cami__scene" role="group" aria-label="El camí de les 7 passes cap a l'Esperança Activa">
+    <svg class="cami__svg" aria-hidden="true" focusable="false"></svg>
+    <div class="cami__nodes"></div>
+    <div class="cami__pop" aria-hidden="true"><p class="cami__pk"></p><p class="cami__pt"></p><p class="cami__px"></p></div>
+  </div>
+  <div class="cami__foot">
+    <p class="cami__hint">Toca una passa per veure'n la pregunta.</p>
+    <button class="cami__replay" type="button" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1M3.5 4v4.6h4.6"/></svg>
+      <span>Torna a caminar</span>
+    </button>
+  </div>
+</div>
+
+<style>
+.cami {
+  --c9: var(--green-900, #11352c); --c8: var(--green-800, #1a4d40); --c7: var(--green-700, #22604f);
+  --c6: var(--green-600, #2e7561); --c2: var(--green-200, #c9dcd4);
+  --cs: var(--sun, #e2c668); --cs-ink: var(--sun-ink, #6f5711); --cline: var(--line, #e7e1d4);
+  --cink: var(--ink, #23302b); --cmuted: var(--muted, #56635d);
+  --fh: var(--font-head, "Montserrat", ui-sans-serif, system-ui, sans-serif);
+  --fb: var(--font-body, "Lato", ui-sans-serif, system-ui, sans-serif);
+  --sw: 1000px;
+  --dot: clamp(40px, calc(var(--sw) * .047), 50px);
+  position: relative; overflow: hidden; background: #fff; color: var(--cink); font-family: var(--fb);
+  border: 1px solid var(--cline); border-radius: var(--radius-lg, 22px);
+  box-shadow: 0 1px 2px rgba(17,53,44,.06), 0 10px 28px rgba(17,53,44,.09);
+}
+.cami *, .cami *::before, .cami *::after { box-sizing: border-box; }
+.cami p { margin: 0; }
+.cami__scene { position: relative; aspect-ratio: 2 / 1; }
+.cami--tall { --dot: 44px; }
+.cami--tall .cami__scene { aspect-ratio: auto; height: var(--sh, 680px); }
+.cami__svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.cami__nodes { position: absolute; inset: 0; }
+
+/* Punts del camí: un medalló amb una icona i el número de la passa */
+.cami__node { position: absolute; width: 0; height: 0; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.cami__dot {
+  position: absolute; left: 0; top: 0; width: var(--dot); height: var(--dot);
+  margin: calc(var(--dot) / -2) 0 0 calc(var(--dot) / -2); padding: 0;
+  display: grid; place-items: center; border-radius: 50%; cursor: inherit; -webkit-appearance: none; appearance: none;
+  background: #fff; border: 2px solid var(--c2); color: var(--c6);
+  transition: background-color .4s, border-color .4s, color .4s, box-shadow .3s, transform .3s;
+}
+.cami__dot svg { width: 56%; height: 56%; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; opacity: .75; transition: opacity .4s; }
+.cami__num {
+  position: absolute; top: -5px; right: -6px; width: 20px; height: 20px; border-radius: 50%;
+  display: grid; place-items: center; background: #fff; border: 1.5px solid var(--c2); color: var(--c8);
+  font: 700 11px/1 var(--fh); transition: background-color .4s, border-color .4s;
+}
+.cami__node.is-on .cami__dot { background: var(--c8); border-color: var(--c8); color: #fff; }
+.cami__node.is-on .cami__dot svg { opacity: 1; }
+.cami__node.is-on .cami__num { background: var(--cs); border-color: #fff; color: var(--c9); }
+.cami__node.is-pop .cami__dot { animation: cami-pop .6s cubic-bezier(.34, 1.56, .64, 1); }
+.cami__node.is-here .cami__dot { box-shadow: 0 0 0 7px rgba(226, 198, 104, .5); }
+.cami__node.is-sel .cami__dot { box-shadow: 0 0 0 4px #fff, 0 0 0 7px var(--cs); }
+.cami__node:hover .cami__dot { transform: scale(1.07); }
+.cami__dot:focus { outline: none; }
+.cami__dot:focus-visible { box-shadow: 0 0 0 4px #fff, 0 0 0 7px var(--c7); }
+/* Inici (la motxilla, el que portes) i final (el sol) */
+.cami__node--start .cami__dot, .cami__node--start.is-on .cami__dot { background: #eef1ef; border-color: #c3cec9; color: #56635d; }
+.cami__node--start .cami__dot svg { opacity: 1; }
+.cami__node--end .cami__dot { --dot: calc(var(--d0, 50px) + 6px); color: var(--c8); }
+.cami__node--end.is-on .cami__dot { background: var(--cs); border-color: var(--cs); color: var(--c9); box-shadow: 0 0 0 8px rgba(226, 198, 104, .35); }
+
+/* Etiquetes: només el nom de la passa */
+.cami__lab {
+  position: absolute; width: max-content; max-width: clamp(110px, calc(var(--sw) * .15), 160px);
+  padding: 4px 10px 5px; border-radius: 10px; background: rgba(255, 255, 255, .82);
+  box-shadow: 0 1px 2px rgba(17, 53, 44, .06);
+  font: 700 clamp(12.5px, calc(var(--sw) * .014), 15px)/1.25 var(--fh); color: var(--c9);
+  text-wrap: balance; opacity: .5; transition: opacity .5s, box-shadow .3s;
+}
+.cami__node.is-on .cami__lab { opacity: 1; }
+.cami__node.is-sel .cami__lab { background: #fff; box-shadow: 0 0 0 2px var(--cs); }
+.cami__node--start .cami__lab { color: var(--cmuted); opacity: 1; }
+.cami__node--end .cami__lab { font-size: clamp(14px, calc(var(--sw) * .017), 18px); max-width: none; white-space: nowrap; }
+/* Posició de l'etiqueta: a = a dalt, b = a baix; C centrada, L cap a l'esquerra, R cap a la dreta */
+.cami__node--aC .cami__lab, .cami__node--aL .cami__lab { bottom: calc(var(--dot) / 2 + 9px); }
+.cami__node--bC .cami__lab, .cami__node--bL .cami__lab, .cami__node--bR .cami__lab { top: calc(var(--dot) / 2 + 9px); }
+.cami__node--aC .cami__lab, .cami__node--bC .cami__lab { left: 0; transform: translateX(-50%); text-align: center; }
+.cami__node--aL .cami__lab, .cami__node--bL .cami__lab { right: -16px; text-align: right; }
+.cami__node--bR .cami__lab { left: -16px; text-align: left; }
+.cami__node--end.cami__node--aL .cami__lab { bottom: calc(var(--dot) / 2 + 14px); }
+/* Mòbil: al costat del punt (R / L) o a sota (bC) */
+.cami__node--R .cami__lab, .cami__node--L .cami__lab { top: 0; transform: translateY(-50%); max-width: none; white-space: nowrap; }
+.cami__node--R .cami__lab { left: calc(var(--dot) / 2 + 10px); }
+.cami__node--L .cami__lab { right: calc(var(--dot) / 2 + 10px); }
+.cami--tall .cami__lab { font-size: 15px; }
+.cami--tall .cami__node--end .cami__lab { top: calc(var(--dot) / 2 + 14px); font-size: 18px; background: rgba(255, 255, 255, .6); }
+
+/* Globus amb la pregunta */
+.cami__pop {
+  position: absolute; left: 0; top: 0; width: min(270px, calc(100% - 24px));
+  padding: 12px 15px 13px; border-radius: 14px; background: #fff;
+  border: 1px solid var(--cline); box-shadow: 0 2px 4px rgba(17,53,44,.06), 0 14px 32px rgba(17,53,44,.16);
+  opacity: 0; visibility: hidden; transform: translateY(6px); transition: opacity .2s, transform .2s, visibility .2s;
+  pointer-events: none; z-index: 3;
+}
+.cami__pop.is-open { opacity: 1; visibility: visible; transform: none; }
+.cami__pk { font: 700 11.5px/1.3 var(--fh); letter-spacing: .08em; text-transform: uppercase; color: var(--cs-ink); }
+.cami__pt { font: 700 16px/1.3 var(--fh); color: var(--c9); margin-top: 3px !important; }
+.cami__px { font-size: 15.5px; line-height: 1.45; color: var(--cmuted); margin-top: 3px !important; }
+
+/* Peu: una pista i el botó per tornar a caminar */
+.cami__foot {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px 16px; flex-wrap: wrap;
+  min-height: 60px; padding: 10px clamp(14px, 3vw, 24px); border-top: 1px solid var(--cline); background: #fff;
+}
+.cami__hint { font-size: 14.5px; color: var(--cmuted); }
+.cami__replay {
+  flex: none; display: inline-flex; align-items: center; gap: .45em; padding: .55em 1em;
+  border-radius: 999px; border: 2px solid var(--c2); background: #fff; color: var(--c8);
+  font: 700 14px/1.2 var(--fh); cursor: pointer; transition: border-color .15s, color .15s, transform .15s;
+}
+.cami__replay:hover { border-color: var(--c7); color: var(--c9); transform: translateY(-1px); }
+.cami__replay:focus-visible { outline: 3px solid var(--c7); outline-offset: 2px; }
+.cami__replay svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.cami__replay[hidden] { display: none; }
+
+/* Animacions de l'escena */
+.cami__halo { transform-box: fill-box; transform-origin: center; animation: cami-pulse 1.8s ease-in-out infinite; }
+.cami__rays { transform-box: fill-box; transform-origin: center; }
+.cami.is-done .cami__rays { animation: cami-spin 70s linear infinite; }
+.cami__drop { animation: cami-rain 1s linear infinite; }
+.cami__drop:nth-child(2n) { animation-delay: -.35s; }
+.cami__drop:nth-child(3n) { animation-delay: -.7s; }
+.cami__bird { transform-box: fill-box; transform-origin: center; animation: cami-flap 1.6s ease-in-out infinite; }
+.cami__bird + .cami__bird { animation-delay: -.6s; }
+@keyframes cami-pop { 0% { transform: scale(.7); } 60% { transform: scale(1.15); } 100% { transform: scale(1); } }
+@keyframes cami-pulse { 0%, 100% { transform: scale(1); opacity: .45; } 50% { transform: scale(1.5); opacity: .15; } }
+@keyframes cami-spin { to { transform: rotate(360deg); } }
+@keyframes cami-rain { 0% { transform: translateY(-4px); opacity: 0; } 30% { opacity: 1; } 100% { transform: translateY(10px); opacity: 0; } }
+@keyframes cami-flap { 0%, 100% { transform: scaleY(1); } 50% { transform: scaleY(.6) translateY(1px); } }
+@media (prefers-reduced-motion: reduce) {
+  .cami *, .cami *::before, .cami *::after { animation: none !important; transition: none !important; }
+}
+</style>
+
+<script>
+(function () {
+  "use strict";
+  var root = document.querySelector("[data-cami]");
+  if (!root || root.getAttribute("data-ready")) return;
+  root.setAttribute("data-ready", "1");
+
+  /* ---------- TEXTOS (els mateixos de la web; es poden canviar aquí) ---------- */
+  var PASSES = [
+    ["Allò que estimo.", "Què té valor per a mi? Què vull cuidar?"],
+    ["Allò que em sosté.", "Quines persones, llocs o recursos m'ajuden?"],
+    ["Allò que em preocupa.", "Què em pesa? Què necessita ser escoltat?"],
+    ["Allò que m'inspira.", "Qui o què em recorda que altres camins són possibles?"],
+    ["L'esperança.", "Quina direcció voldria ajudar a fer possible?"],
+    ["El meu paper.", "Quin lloc puc ocupar jo dins d'aquesta història?"],
+    ["El següent pas possible.", "Quina acció petita, concreta i realista puc fer ara?"]
+  ];
+  var START = ["L'inici", "Arribes amb el que portes", "Ansietat, soledat o preocupació pel món…"];
+  var END = ["Esperança Activa", "No és un lloc on arribar", "És una manera de caminar."];
+  function stepKick(n) { return "Passa " + n + " de 7"; }
+
+  /* ---------- ICONES (una per passa: motxilla, cor, arbre, pluja, ocell, rètol, brot, petjades, espiral) ---------- */
+  var ICONS = [
+    '<path d="M6 9.5a3.5 3.5 0 0 1 3.5-3.5h5A3.5 3.5 0 0 1 18 9.5V19a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z"/><path d="M10 6V4.6a2 2 0 0 1 4 0V6"/><path d="M9 21v-4.2a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1V21"/>',
+    '<path d="M12 20s-7.5-4.5-7.5-10.2A4.2 4.2 0 0 1 12 7.3a4.2 4.2 0 0 1 7.5 2.5C19.5 15.5 12 20 12 20z"/>',
+    '<path d="M12 3a5 5 0 0 1 5 5 4 4 0 0 1-2 7.3H9A4 4 0 0 1 7 8a5 5 0 0 1 5-5z"/><path d="M12 15.3V19"/><path d="M12 19c-1.6 0-3.2.8-4.4 2M12 19c1.6 0 3.2.8 4.4 2M12 19v2"/>',
+    '<path d="M7.5 14.5h9a3.4 3.4 0 0 0 .4-6.8A5 5 0 0 0 7.2 8.6a3 3 0 0 0 .3 5.9z"/><path d="M9.5 17.5l-1 2.5M13 17.5l-1 2.5M16.5 17.5l-1 2.5"/>',
+    '<path d="M2.5 15c2.6-4.6 6.2-5.1 9.5-.6 3.3-4.5 6.9-4 9.5.6"/><path d="M13.6 8c1.2-1.9 2.8-2.1 4-.3 1.2-1.8 2.8-1.6 3.8.3"/>',
+    '<path d="M12 21.5V3"/><path d="M12 5h6.3l2.2 2.2-2.2 2.2H12"/><path d="M12 12.4H5.7l-2.2 2.2 2.2 2.2H12"/>',
+    '<path d="M12 21v-8"/><path d="M12 13c0-3.6 2.5-6.2 6.6-6.2 0 3.9-2.6 6.2-6.6 6.2z"/><path d="M12 15.6c0-3.1-2.2-5.2-5.6-5.2 0 3.2 2.2 5.2 5.6 5.2z"/><path d="M8 21h8"/>',
+    '<path d="M8.3 2.8c1.8 0 2.7 2 2.7 4.3S10.1 11.8 8.3 11.8 5.6 9.4 5.6 7.1 6.5 2.8 8.3 2.8z"/><path d="M6.4 14h3.8v1.1a1.9 1.9 0 0 1-3.8 0z"/><path d="M15.8 7c1.8 0 2.7 2 2.7 4.3s-.9 4.7-2.7 4.7-2.7-2.4-2.7-4.7S14 7 15.8 7z"/><path d="M13.9 18.2h3.8v1.1a1.9 1.9 0 0 1-3.8 0z"/>',
+    '<path d="M12 11.4a1.6 1.6 0 0 1 3.2 0a3.2 3.2 0 0 1-6.4 0a4.8 4.8 0 0 1 9.6 0a6.4 6.4 0 0 1-12.8 0"/>'
+  ];
+
+  /* ---------- RITME ---------- */
+  var MOVE = 650, PAUSE = 480, LAST = 8; // ms per tram, ms de pausa a cada passa; 9 punts (0 = inici, 8 = final)
+  var BREAK = 860; // per sota d'aquesta amplada (en px de la infografia), el camí baixa de dalt a baix
+
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var scene = root.querySelector(".cami__scene");
+  var svg = root.querySelector(".cami__svg");
+  var nodesBox = root.querySelector(".cami__nodes");
+  var pop = root.querySelector(".cami__pop");
+  var replay = root.querySelector(".cami__replay");
+
+  var S = { pos: 0, here: -1, sel: -1, playing: false, started: false, t: 0, last: null, raf: 0, width: 0 };
+  var G = null, nodeEls = [], lastKey = "";
+
+  function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+  function smooth(v) { v = clamp(v, 0, 1); return v * v * (3 - 2 * v); }
+  function lerp(a, b, t) { return a + (b - a) * t; }
+  function ease(x) { return -(Math.cos(Math.PI * x) - 1) / 2; }
+  function r1(n) { return Math.round(n * 10) / 10; }
+  function r2(n) { return Math.round(n * 100) / 100; }
+  function strip(s) { return s.replace(/\.$/, ""); }
+  function mix(a, b, t) {
+    var x = parseInt(a.slice(1), 16), y = parseInt(b.slice(1), 16), o = "#";
+    for (var s = 16; s >= 0; s -= 8) o += ("0" + Math.round(lerp((x >> s) & 255, (y >> s) & 255, t)).toString(16)).slice(-2);
+    return o;
+  }
+
+  // Corba suau que passa exactament per tots els punts (Catmull-Rom)
+  function spline(P) {
+    var d = "M" + r1(P[0][0]) + "," + r1(P[0][1]);
+    for (var i = 0; i < P.length - 1; i++) {
+      var p0 = P[i - 1] || P[i], p1 = P[i], p2 = P[i + 1], p3 = P[i + 2] || p2;
+      d += "C" + r1(p1[0] + (p2[0] - p0[0]) / 6) + "," + r1(p1[1] + (p2[1] - p0[1]) / 6) + " " +
+        r1(p2[0] - (p3[0] - p1[0]) / 6) + "," + r1(p2[1] - (p3[1] - p1[1]) / 6) + " " + r1(p2[0]) + "," + r1(p2[1]);
+    }
+    return d;
+  }
+  function area(P, H) { return spline(P) + "L" + r1(P[P.length - 1][0]) + "," + (H + 4) + "L" + r1(P[0][0]) + "," + (H + 4) + "Z"; }
+  function norm(list, W, H) { return list.map(function (p) { return [p[0] * W, p[1] * H]; }); }
+
+  /* ---------- GEOMETRIA ---------- */
+  function geometry(W) {
+    var g = { tall: W < BREAK, W: W }, H, nodes = [];
+    if (!g.tall) {
+      // Ordinador: d'esquerra a dreta. El camí baixa a la vall a la passa 3 i després puja cap al sol.
+      H = Math.round(W * 0.5);
+      var s = W / 1000;
+      var N = [[.06, .78, "bR"], [.17, .60, "aC"], [.285, .66, "bL"], [.40, .80, "bC"], [.52, .60, "aL"],
+               [.635, .48, "aC"], [.75, .55, "bC"], [.86, .40, "aL"], [.955, .28, "aL"]];
+      N.forEach(function (n) { nodes.push({ x: n[0] * W, y: n[1] * H, lab: n[2] }); });
+      var way = nodes.map(function (n) { return [n.x, n.y]; });
+      g.layers = [
+        ["#e5eee9", area(norm([[-.03, .50], [.14, .40], [.30, .47], [.47, .32], [.62, .39], [.78, .25], [.92, .31], [1.03, .26]], W, H), H)],
+        ["#d2e2da", area(norm([[-.03, .64], [.12, .55], [.26, .61], [.42, .51], [.57, .55], [.72, .43], [.87, .47], [1.03, .41]], W, H), H)],
+        ["url(#cami-ground)", area([[-30, nodes[0].y + 8]].concat(way.map(function (p) { return [p[0], p[1] + 8]; }), [[W + 30, nodes[8].y - 6]]), H)]
+      ];
+      g.sunBefore = 0; // el sol surt per darrere de la primera capa de muntanyes
+      g.sun = { x: .62 * W, y0: .66 * H, y1: .17 * H, r: 32 * s };
+      g.fog = [[.10, .72, 150, 42], [.27, .66, 170, 44], [.41, .86, 200, 52], [.55, .74, 150, 40], [.20, .52, 130, 28], [.36, .58, 120, 30]]
+        .map(function (f) { return [f[0] * W, f[1] * H, f[2] * s, f[3] * s]; });
+      g.blur = 16 * s;
+      g.clouds = [[.11, .26, s * 1.1], [.25, .17, s * .8]].map(function (c) { return [c[0] * W, c[1] * H, c[2]]; });
+      g.rain = [.40 * W, .63 * H, s * 1.05];
+      g.birds = [.49 * W, .31 * H, s * 1.1];
+      g.trees = [[.475, .84], [.585, .66], [.66, .72], [.83, .58], [.905, .44]].map(function (t) { return [t[0] * W, t[1] * H, s]; });
+      g.trail = spline(way);
+    } else {
+      // Mòbil: de dalt a baix. La passa 1 és el primer que es troba; el sol surt a baix de tot.
+      var gap = 64, top = 54, cx = W / 2, span = Math.min(W / 2 - 40, 200);
+      for (var i = 0; i < LAST; i++) nodes.push({ x: i % 2 ? cx + span : cx - span, y: top + gap * i, lab: i % 2 ? "L" : "R" });
+      nodes.push({ x: cx, y: top + gap * LAST, lab: "bC" });
+      H = nodes[LAST].y + 140;
+      var xl = cx - span, xr = cx + span;
+      g.layers = [
+        ["#e4ebe7", area(norm([[-.05, .30], [.25, .26], [.55, .31], [.80, .24], [1.05, .28]], W, H), H)],
+        ["#d9e6df", area(norm([[-.05, .52], [.30, .47], [.62, .53], [.86, .46], [1.05, .50]], W, H), H)],
+        ["#cddfd6", area(norm([[-.05, .74], [.28, .70], [.58, .76], [.84, .69], [1.05, .72]], W, H), H)],
+        ["url(#cami-ground)", area([[-20, H - 34], [W * .3, H - 46], [W * .7, H - 40], [W + 20, H - 50]], H)]
+      ];
+      g.sunBefore = 3; // el sol surt per darrere de l'últim turó
+      g.sun = { x: cx, y0: H + 70, y1: H - 30, r: 46 };
+      g.fog = [[.30, .06, 170, 40], [.75, .14, 160, 36], [.25, .30, 150, 30], [.72, .38, 160, 34], [.40, .46, 140, 26]]
+        .map(function (f) { return [f[0] * W, f[1] * H, f[2], f[3]]; });
+      g.blur = 14;
+      g.clouds = [[cx - span + 70, 20, .85], [xr - 6, 26, .7]];
+      g.rain = [xr - 18, nodes[3].y - 44, .78];
+      g.birds = [xl + 14, nodes[4].y - 40, .9];
+      g.trees = [[xl - 4, nodes[2].y - 32, .9], [xr + 2, nodes[5].y - 34, .85], [xr + 4, nodes[6].y + 6, .85], [W * .2, H - 40, 1], [W * .84, H - 46, 1]];
+      // Camí en ziga-zaga: surt de cada punt cap avall, travessa entre fileres i entra al següent per dalt,
+      // així no passa mai per sota dels noms
+      var d = "M" + r1(nodes[0].x) + "," + r1(nodes[0].y);
+      for (var j = 0; j < LAST; j++) {
+        var a = nodes[j], z = nodes[j + 1], k2 = j === LAST - 1 ? gap * .5 : gap * .95;
+        d += "C" + r1(a.x) + "," + r1(a.y + gap * .95) + " " + r1(z.x) + "," + r1(z.y - k2) + " " + r1(z.x) + "," + r1(z.y);
+      }
+      g.trail = d;
+    }
+    g.H = H; g.nodes = nodes;
+    return g;
+  }
+
+  /* ---------- DIBUIX ---------- */
+  function cloudSVG(c, cls) {
+    return '<g class="' + cls + '" transform="translate(' + r1(c[0]) + ',' + r1(c[1]) + ') scale(' + r2(c[2]) + ')">' +
+      '<circle cx="-14" cy="2" r="10"/><circle cx="0" cy="-5" r="14"/><circle cx="15" cy="2" r="10"/><rect x="-25" y="1" width="50" height="12" rx="6"/></g>';
+  }
+  function rays(r) {
+    var s = "";
+    for (var i = 0; i < 12; i++) {
+      var a = i * Math.PI / 6, c = Math.cos(a), si = Math.sin(a);
+      s += '<line x1="' + r1(c * r * 1.35) + '" y1="' + r1(si * r * 1.35) + '" x2="' + r1(c * r * 1.7) + '" y2="' + r1(si * r * 1.7) +
+        '" stroke="#e2c668" stroke-width="' + r1(Math.max(2, r / 11)) + '" stroke-linecap="round"/>';
+    }
+    return s;
+  }
+  function tree(t) {
+    var x = t[0], y = t[1], s = t[2], h = 13 * s, r = 9 * s;
+    return '<g opacity=".8"><line x1="' + r1(x) + '" y1="' + r1(y) + '" x2="' + r1(x) + '" y2="' + r1(y - h) + '" stroke="#2e7561" stroke-width="' + r1(2.2 * s) + '" stroke-linecap="round"/>' +
+      '<circle cx="' + r1(x) + '" cy="' + r1(y - h - r * .6) + '" r="' + r1(r) + '" fill="#2e7561" fill-opacity=".72"/></g>';
+  }
+
+  function render() {
+    var W = Math.round(root.clientWidth);
+    if (!W) return;
+    G = geometry(W);
+    var H = G.H, sun = G.sun, out = [];
+    root.classList.toggle("cami--tall", G.tall);
+    root.style.setProperty("--sw", W + "px");
+    root.style.setProperty("--sh", H + "px");
+    svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+
+    var sky = G.tall
+      ? '<stop offset="0" stop-color="#e8ece9"/><stop offset=".5" stop-color="#eff1ea"/><stop offset=".85" stop-color="#f8f0d8"/><stop offset="1" stop-color="#f3e2ae"/>'
+      : '<stop offset="0" stop-color="#f5efdc"/><stop offset=".7" stop-color="#f8f7ef"/><stop offset="1" stop-color="#f3f8f5"/>';
+    out.push(
+      '<defs>',
+      '<linearGradient id="cami-sky" x1="0" y1="0" x2="0" y2="1">' + sky + '</linearGradient>',
+      '<radialGradient id="cami-glow"><stop offset="0" stop-color="#f1e3b0" stop-opacity=".95"/><stop offset=".45" stop-color="#f8efd2" stop-opacity=".55"/><stop offset="1" stop-color="#fcf8ea" stop-opacity="0"/></radialGradient>',
+      '<linearGradient id="cami-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b4d0c2"/><stop offset="1" stop-color="#e1ede7"/></linearGradient>',
+      '<filter id="cami-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="' + r1(G.blur) + '"/></filter>',
+      '</defs>',
+      '<rect width="' + W + '" height="' + H + '" fill="url(#cami-sky)"/>'
+    );
+    var sunSVG = '<circle class="cami__glow" r="' + r1(sun.r * 4.2) + '" fill="url(#cami-glow)"/>' +
+      '<g class="cami__sun"><g class="cami__rays">' + rays(sun.r) + '</g><circle r="' + r1(sun.r) + '" fill="#e2c668"/></g>';
+    G.layers.forEach(function (l, i) {
+      if (i === G.sunBefore) out.push(sunSVG);
+      out.push('<path d="' + l[1] + '" fill="' + l[0] + '"/>');
+    });
+    G.trees.forEach(function (t) { out.push(tree(t)); });
+    out.push('<rect class="cami__mist" width="' + W + '" height="' + H + '" fill="#dde3e0"/>');
+    out.push('<g class="cami__fog" filter="url(#cami-blur)">');
+    G.fog.forEach(function (f) { out.push('<ellipse cx="' + r1(f[0]) + '" cy="' + r1(f[1]) + '" rx="' + r1(f[2]) + '" ry="' + r1(f[3]) + '" fill="#fff"/>'); });
+    out.push('</g>');
+    // Núvols de l'inici, el núvol de pluja de la vall (passa 3) i els ocells (passa 4)
+    out.push('<g class="cami__clouds">' + G.clouds.map(function (c) { return cloudSVG(c, "cami__cloud"); }).join("") + '</g>');
+    var rc = G.rain, drops = "";
+    for (var d = 0; d < 6; d++) drops += '<line class="cami__drop" x1="' + (-15 + d * 6) + '" y1="16" x2="' + (-17 + d * 6) + '" y2="22"/>';
+    out.push('<g class="cami__raincloud" transform="translate(' + r1(rc[0]) + ',' + r1(rc[1]) + ') scale(' + r2(rc[2]) + ')">' +
+      '<g class="cami__rain" stroke="#7f9a8f" stroke-width="2" stroke-linecap="round">' + drops + '</g>' +
+      cloudSVG([0, 0, 1], "cami__rcloud") + '</g>');
+    var b = G.birds;
+    out.push('<g class="cami__birds" transform="translate(' + r1(b[0]) + ',' + r1(b[1]) + ') scale(' + r2(b[2]) + ')" fill="none" stroke="#22604f" stroke-width="2" stroke-linecap="round">' +
+      '<path class="cami__bird" d="M-12 0c3-3.2 6.3-3.2 9 .6 2.7-3.8 6-3.8 9-.6"/><path class="cami__bird" d="M8 -12c1.8-1.9 3.8-1.9 5.4.4 1.6-2.3 3.6-2.3 5.4-.4"/></g>');
+    out.push(
+      '<path class="cami__base" d="' + G.trail + '" fill="none" stroke="#1a4d40" stroke-opacity=".38" stroke-width="4" stroke-linecap="round" stroke-dasharray="0.1 10"/>',
+      '<path class="cami__walked" d="' + G.trail + '" fill="none" stroke="#1a4d40" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>',
+      '<g class="cami__walker"><circle class="cami__halo" r="15" fill="#e2c668"/><circle r="8" fill="#e2c668" stroke="#fff" stroke-width="3"/></g>'
+    );
+    svg.innerHTML = out.join("");
+
+    // Punts del camí (botons HTML: es poden tocar i llegir amb lector de pantalla)
+    var html = [];
+    G.nodes.forEach(function (n, i) {
+      var c = content(i), kind = i === 0 ? " cami__node--start" : i === LAST ? " cami__node--end" : "";
+      var label = i === 0 ? START[1] : i === LAST ? END[0] : strip(PASSES[i - 1][0]);
+      html.push('<div class="cami__node cami__node--' + n.lab + kind + '" data-i="' + i + '" style="left:' + r1(n.x) + 'px;top:' + r1(n.y) + 'px">' +
+        '<button type="button" class="cami__dot" aria-label="' + c[0] + ': ' + c[1] + '. ' + c[2] + '">' +
+        '<svg viewBox="0 0 24 24" aria-hidden="true">' + ICONS[i] + '</svg>' +
+        (i > 0 && i < LAST ? '<span class="cami__num" aria-hidden="true">' + i + '</span>' : '') +
+        '</button><span class="cami__lab" aria-hidden="true">' + label + '</span></div>');
+    });
+    nodesBox.innerHTML = html.join("");
+    nodeEls = Array.prototype.slice.call(nodesBox.children);
+    nodeEls[0].classList.add("is-on");
+
+    // Longitud del camí fins a cada punt, per sincronitzar el traç amb les passes
+    var trail = svg.querySelector(".cami__walked");
+    G.path = trail; G.total = trail.getTotalLength();
+    ["walker", "sun", "glow", "rays", "mist", "fog", "clouds", "raincloud", "rain", "birds"].forEach(function (k) { G[k + "El"] = svg.querySelector(".cami__" + k); });
+    G.cloudParts = svg.querySelectorAll(".cami__cloud, .cami__rcloud");
+    trail.style.strokeDasharray = G.total;
+    var L = [0], from = 0;
+    for (var k = 1; k <= LAST; k++) {
+      var n = G.nodes[k], best = Infinity, at = from;
+      for (var l = from; l <= G.total; l += 2) {
+        var pt = trail.getPointAtLength(l), dd = (pt.x - n.x) * (pt.x - n.x) + (pt.y - n.y) * (pt.y - n.y);
+        if (dd < best) { best = dd; at = l; } else if (dd > best + 4000 && best < 25) break;
+      }
+      L.push(k === LAST ? G.total : at);
+      from = at;
+    }
+    G.L = L;
+    lastKey = "";
+    apply();
+    if (S.sel >= 0) openPop(S.sel);
+  }
+
+  /* ---------- ESTAT ---------- */
+  function content(i) {
+    if (i === 0) return START;
+    if (i === LAST) return END;
+    return [stepKick(i), strip(PASSES[i - 1][0]), PASSES[i - 1][1]];
+  }
+  function lenAt(p) { var a = Math.floor(p), b = Math.min(LAST, a + 1); return lerp(G.L[a], G.L[b], p - a); }
+
+  function apply() {
+    if (!G) return;
+    var p = S.pos, len = lenAt(p), pt = G.path.getPointAtLength(len);
+    G.path.style.strokeDashoffset = G.total - len;
+    G.walkerEl.setAttribute("transform", "translate(" + r1(pt.x) + "," + r1(pt.y) + ")");
+
+    // La boira s'espesseix fins a la vall (passa 3), hi plou, i després s'aclareix i surt el sol
+    var clear = smooth((p - 3) / 4.6);
+    G.mistEl.setAttribute("opacity", r2(p < 3 ? .4 + .16 * p / 3 : .56 * (1 - clear)));
+    G.fogEl.setAttribute("opacity", r2(p < 3 ? .65 + .35 * p / 3 : 1 - smooth((p - 3) / 2.6)));
+    var cloudCol = mix("#a7b4ae", "#ffffff", smooth((p - 3.3) / 2));
+    for (var c = 0; c < G.cloudParts.length; c++) G.cloudParts[c].setAttribute("fill", cloudCol);
+    G.rainEl.setAttribute("opacity", r2(smooth((p - 2) / .8) * (1 - smooth((p - 3.6) / .8))));
+    G.raincloudEl.setAttribute("opacity", r2(.55 + .4 * smooth((p - 1.5) / 1.3)));
+    G.birdsEl.setAttribute("opacity", r2(smooth((p - 3.5) / .8)));
+    var rise = smooth((p - 3.2) / 4.8), sy = lerp(G.sun.y0, G.sun.y1, rise);
+    G.sunEl.setAttribute("transform", "translate(" + r1(G.sun.x) + "," + r1(sy) + ")");
+    G.glowEl.setAttribute("transform", "translate(" + r1(G.sun.x) + "," + r1(sy) + ") scale(" + r2(.6 + .4 * rise) + ")");
+    G.glowEl.setAttribute("opacity", r2(rise));
+    G.raysEl.setAttribute("opacity", r2(smooth((p - 6) / 2)));
+
+    var done = p >= LAST, key = [Math.floor(p + 1e-6), S.here, S.sel, done].join("|");
+    if (key === lastKey) return;
+    lastKey = key;
+    root.classList.toggle("is-done", done);
+    nodeEls.forEach(function (el, i) {
+      if (i === 0) { el.classList.toggle("is-sel", S.sel === 0); return; }
+      var on = p >= i - 1e-6;
+      if (on && !el.classList.contains("is-on") && S.playing) {
+        el.classList.add("is-pop");
+        setTimeout(function () { el.classList.remove("is-pop"); }, 650);
+      }
+      el.classList.toggle("is-on", on);
+      el.classList.toggle("is-here", S.here === i);
+      el.classList.toggle("is-sel", S.sel === i);
+    });
+    replay.hidden = !(done && !reduce);
+  }
+
+  /* ---------- GLOBUS ---------- */
+  function openPop(i) {
+    var c = content(i), n = G.nodes[i];
+    pop.querySelector(".cami__pk").textContent = c[0];
+    pop.querySelector(".cami__pt").textContent = c[1];
+    pop.querySelector(".cami__px").textContent = c[2];
+    pop.classList.add("is-open");
+    var pw = pop.offsetWidth, ph = pop.offsetHeight, half = (i === LAST ? 56 : 46) / 2 + 12;
+    var x = clamp(n.x - pw / 2, 12, G.W - pw - 12);
+    var y = n.y + half + ph + 8 <= G.H ? n.y + half : n.y - half - ph;
+    pop.style.left = r1(x) + "px";
+    pop.style.top = r1(clamp(y, 8, G.H - ph - 8)) + "px";
+  }
+  function closePop() { pop.classList.remove("is-open"); }
+
+  /* ---------- ANIMACIÓ ---------- */
+  function timeline(t) {
+    var per = MOVE + PAUSE, seg = Math.floor(t / per);
+    if (seg >= LAST) return [LAST, -1];
+    var lt = t - seg * per;
+    if (lt < MOVE) return [seg + ease(lt / MOVE), -1];
+    return [seg + 1, seg + 1 < LAST ? seg + 1 : -1];
+  }
+  function tick(ts) {
+    if (!S.playing) return;
+    if (S.last === null) S.last = ts;
+    S.t += Math.min(64, ts - S.last); S.last = ts;
+    var r = timeline(S.t);
+    S.pos = r[0]; S.here = r[1];
+    if (S.pos >= LAST) { S.playing = false; S.here = -1; }
+    apply();
+    if (S.playing) S.raf = requestAnimationFrame(tick);
+  }
+  function play() {
+    cancelAnimationFrame(S.raf);
+    S.sel = -1; S.started = true; closePop();
+    if (reduce) { S.pos = LAST; S.here = -1; S.playing = false; apply(); return; }
+    S.pos = 0; S.here = -1; S.t = 0; S.last = null; S.playing = true;
+    apply();
+    setTimeout(function () { S.raf = requestAnimationFrame(tick); }, 350);
+  }
+  function stop() { cancelAnimationFrame(S.raf); S.playing = false; S.here = -1; S.pos = LAST; S.started = true; }
+
+  nodesBox.addEventListener("click", function (e) {
+    var el = e.target.closest ? e.target.closest(".cami__node") : null;
+    if (!el) return;
+    var i = +el.getAttribute("data-i");
+    if (S.playing) stop();
+    S.sel = S.sel === i ? -1 : i;
+    lastKey = "";
+    apply();
+    if (S.sel >= 0) openPop(S.sel); else closePop();
+  });
+  document.addEventListener("click", function (e) {
+    if (S.sel >= 0 && !(e.target.closest && e.target.closest(".cami__node"))) { S.sel = -1; closePop(); lastKey = ""; apply(); }
+  });
+  root.addEventListener("keydown", function (e) { if (e.key === "Escape" && S.sel >= 0) { S.sel = -1; closePop(); lastKey = ""; apply(); } });
+  replay.addEventListener("click", function (e) { e.stopPropagation(); play(); });
+
+  /* ---------- MIDA I ARRENCADA ---------- */
+  render();
+  S.width = Math.round(root.clientWidth);
+  var pending = false;
+  function onResize() {
+    if (pending) return;
+    pending = true;
+    requestAnimationFrame(function () {
+      pending = false;
+      var w = Math.round(root.clientWidth);
+      if (w && w !== S.width) { S.width = w; render(); }
+    });
+  }
+  if (window.ResizeObserver) new ResizeObserver(onResize).observe(root);
+  else window.addEventListener("resize", onResize);
+
+  if (reduce) { S.pos = LAST; apply(); }
+  else if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting && !S.started) { io.disconnect(); play(); } });
+    }, { threshold: 0.3 });
+    io.observe(scene);
+  } else play();
+})();
+</script>
