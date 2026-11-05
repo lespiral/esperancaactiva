@@ -2,7 +2,7 @@
   "slug": "barcelona",
   "name": "Barcelona",
   "region": "Barcelonès",
-  "summary": "96 rutes repartides pels 10 districtes de la ciutat.",
+  "summary": "357 rutes repartides pels 10 districtes de la ciutat.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
   "zones": {"label": "Vés directament al teu districte", "placeholder": "Tria un districte", "back": "Canvia de districte"},
   "blocks": [
@@ -924,7 +924,2400 @@
     },
     {
       "course": "mon",
-      "text": "Encara no hi ha rutes d'aquest curs a Barcelona. Mentrestant, pots fer el temps de reflexió de cada passa caminant pel teu barri, per un parc o en un lloc tranquil."
+      "text": "261 rutes curtes i circulars pels parcs i jardins dels 10 districtes de la ciutat, d'entre 1,7 i 2,2 km (uns 20–30 minuts caminant). Surten d'un parc, un jardí o una plaça i hi tornen. Tria el teu districte, busca el teu barri i fes-hi el temps de reflexió de cada passa.",
+      "summary": "261 rutes pels parcs i jardins",
+      "zones": {
+        "by": "district"
+      },
+      "groups": [
+        {
+          "id": "parcs-ciutat-vella",
+          "title": "Ciutat Vella",
+          "district": "Ciutat Vella",
+          "maps": [
+            {
+              "mid": "1gArKxZfmFy69jr-jrhprsLtH0DFuUF8",
+              "title": "Barcelona · Ciutat Vella · parcs i jardins",
+              "ll": "41.3842,2.1825",
+              "z": 14,
+              "label": "Ciutat Vella: el Raval; el Barri Gòtic; la Barceloneta; Sant Pere, Santa Caterina i la Ribera"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-el-raval",
+              "title": "El Raval",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins de Rubió i Lluch",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer de l'Hospital, 56, Barcelona",
+                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 2,
+                  "name": "Jardins de Sant Pau del Camp",
+                  "info": "1,94 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer de Sant Pau, 99, Barcelona",
+                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 3,
+                  "name": "Plaça de Josep M. Folch i Torres",
+                  "info": "1,74 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Passa pels jardins de Sant Pau del Camp, que tenen horari d’obertura: consulta’l abans d’anar-hi."
+                }
+              ]
+            },
+            {
+              "id": "barri-el-barri-gotic",
+              "title": "El Barri Gòtic",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardí de la Casa d’Ignasi de Puig",
+                  "info": "1,79 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "note": "El jardí té horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 2,
+                  "name": "Plaça Carme Simó",
+                  "info": "1,84 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Carrer del Sots-tinent Navarro, 12, Barcelona",
+                  "note": "L’espai té horari d’obertura: consulta’l abans d’anar-hi."
+                }
+              ]
+            },
+            {
+              "id": "barri-la-barceloneta",
+              "title": "La Barceloneta",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de la Barceloneta",
+                  "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Parc de les Cascades",
+                  "info": "1,89 km · 23–28 min caminant · 35–50 min amb pauses · circular"
+                }
+              ]
+            },
+            {
+              "id": "barri-sant-pere-santa-caterina-i-la-ribera",
+              "title": "Sant Pere, Santa Caterina i la Ribera",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de la Ciutadella",
+                  "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Entrada pel passeig de Picasso, Barcelona",
+                  "note": "El parc té horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 2,
+                  "name": "Plaça del Pou de la Figuera",
+                  "info": "1,77 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer de Jaume Giralt, Barcelona"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-eixample",
+          "title": "Eixample · mapa 1 de 6",
+          "district": "Eixample",
+          "maps": [
+            {
+              "mid": "1y2weW2CVM3DtdCUKZ4B8ipIWZBRbZH0",
+              "title": "Barcelona · Eixample · parcs i jardins, mapa 1 de 6",
+              "ll": "41.3984,2.1760",
+              "z": 15,
+              "label": "Eixample · mapa 1 de 6: el Fort Pienc"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-el-fort-pienc",
+              "title": "El Fort Pienc",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de l’Estació del Nord",
+                  "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "note": "El parc té horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 2,
+                  "name": "Jardins de la Carretera Antiga d’Horta",
+                  "info": "1,82 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carretera Antiga d'Horta, Barcelona"
+                },
+                {
+                  "n": 3,
+                  "name": "Plaça de Tetuan",
+                  "info": "1,82 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 4,
+                  "name": "Plaça del Fort Pienc",
+                  "info": "1,79 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Passa pel parc de l’Estació del Nord, que té horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 5,
+                  "name": "Jardins del Carlit",
+                  "info": "1,70 km · 20–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 6,
+                  "name": "Jardins de Manuel de Pedrolo",
+                  "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                },
+                {
+                  "n": 7,
+                  "name": "Jardins de Clotilde Cerdà",
+                  "info": "1,81 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 8,
+                  "name": "Jardins de Lina Òdena",
+                  "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Passa pel parc de l’Estació del Nord, que té horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 9,
+                  "name": "Jardins de Constança d’Aragó",
+                  "info": "1,98 km · 24–30 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer de Roger de Flor, 194, Barcelona"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-eixample-mapa-2",
+          "title": "Eixample · mapa 2 de 6",
+          "district": "Eixample",
+          "maps": [
+            {
+              "mid": "1lAJNhyzKy35556f17GVL5PmTAJuM7xc",
+              "title": "Barcelona · Eixample · parcs i jardins, mapa 2 de 6",
+              "ll": "41.4042,2.1774",
+              "z": 14,
+              "label": "Eixample · mapa 2 de 6: el Fort Pienc; la Sagrada Família"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-el-fort-pienc-2",
+              "title": "El Fort Pienc",
+              "routes": [
+                {
+                  "n": 10,
+                  "name": "Jardins d’Anaïs Napoleon",
+                  "info": "1,93 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Passa pel parc de l’Estació del Nord, que té horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 11,
+                  "name": "Parc de les Glòries",
+                  "info": "1,74 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 12,
+                  "name": "Jardins d’Agustí Centelles",
+                  "info": "1,98 km · 24–30 min caminant · 35–50 min amb pauses · circular"
+                }
+              ],
+              "route_prefix": "barri-el-fort-pienc"
+            },
+            {
+              "id": "barri-la-sagrada-familia",
+              "title": "La Sagrada Família",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Plaça de la Sagrada Família",
+                  "info": "1,77 km · 21–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Plaça de Pablo Neruda",
+                  "info": "1,72 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 3,
+                  "name": "Plaça de Gaudí",
+                  "info": "1,84 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                },
+                {
+                  "n": 4,
+                  "name": "Jardins de Montserrat Roig",
+                  "info": "1,96 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 5,
+                  "name": "Plaça d’Henry Dunant",
+                  "info": "1,82 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 6,
+                  "name": "Jardins de Flora Tristan",
+                  "info": "1,78 km · 21–27 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-eixample-mapa-3",
+          "title": "Eixample · mapa 3 de 6",
+          "district": "Eixample",
+          "maps": [
+            {
+              "mid": "1YSvt48sBuexmr8sXvbd9i9gOv4URhaE",
+              "title": "Barcelona · Eixample · parcs i jardins, mapa 3 de 6",
+              "ll": "41.4020,2.1687",
+              "z": 14,
+              "label": "Eixample · mapa 3 de 6: la Sagrada Família; la Dreta de l’Eixample"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-la-sagrada-familia-2",
+              "title": "La Sagrada Família",
+              "routes": [
+                {
+                  "n": 7,
+                  "name": "Jardins d’Enriqueta Sèculi",
+                  "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 8,
+                  "name": "Jardins de Beatriu de Provença",
+                  "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 9,
+                  "name": "Jardins de la Indústria",
+                  "info": "1,93 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                }
+              ],
+              "route_prefix": "barri-la-sagrada-familia"
+            },
+            {
+              "id": "barri-la-dreta-de-leixample",
+              "title": "La Dreta de l’Eixample",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins del Palau Robert",
+                  "info": "2,00 km · 24–30 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 2,
+                  "name": "Jardins de Laura Albéniz",
+                  "info": "1,73 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins de la Torre de les Aigües",
+                  "info": "1,99 km · 24–30 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 4,
+                  "name": "Jardins de la Casa Elizalde",
+                  "info": "1,90 km · 23–28 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 5,
+                  "name": "Jardins de Jaume Perich",
+                  "info": "1,94 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 6,
+                  "name": "Jardins del Rector Oliveras",
+                  "info": "1,75 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-eixample-mapa-4",
+          "title": "Eixample · mapa 4 de 6",
+          "district": "Eixample",
+          "maps": [
+            {
+              "mid": "1g1calgXreKZtqxrAbpz1oIBb0wLf974",
+              "title": "Barcelona · Eixample · parcs i jardins, mapa 4 de 6",
+              "ll": "41.3891,2.1601",
+              "z": 14,
+              "label": "Eixample · mapa 4 de 6: la Dreta de l’Eixample; l’Antiga Esquerra de l’Eixample"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-la-dreta-de-leixample-2",
+              "title": "La Dreta de l’Eixample",
+              "routes": [
+                {
+                  "n": 7,
+                  "name": "Jardins de Sofia Barat",
+                  "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 8,
+                  "name": "Placeta de Joan Brossa",
+                  "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Passa pels jardins del Palau Robert, que tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 9,
+                  "name": "Jardins de Carme Biada",
+                  "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 10,
+                  "name": "Jardins de Maria Manonelles",
+                  "info": "1,71 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer de Calàbria, 38, Barcelona"
+                }
+              ],
+              "route_prefix": "barri-la-dreta-de-leixample"
+            },
+            {
+              "id": "barri-lantiga-esquerra-de-leixample",
+              "title": "L’Antiga Esquerra de l’Eixample",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins de Ferran Soldevila",
+                  "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Gran Via de les Corts Catalanes, 585, Barcelona",
+                  "note": "Els jardins són dins del recinte de la Universitat i tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 2,
+                  "name": "Plaça del Doctor Letamendi",
+                  "info": "1,76 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins d’Ermessenda de Carcassona",
+                  "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                },
+                {
+                  "n": 4,
+                  "name": "Jardins de Montserrat Figueras",
+                  "info": "1,71 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-eixample-mapa-5",
+          "title": "Eixample · mapa 5 de 6",
+          "district": "Eixample",
+          "maps": [
+            {
+              "mid": "11YYdOQID1gOgUZBX18aBXbtrAKcRhU8",
+              "title": "Barcelona · Eixample · parcs i jardins, mapa 5 de 6",
+              "ll": "41.3864,2.1512",
+              "z": 14,
+              "label": "Eixample · mapa 5 de 6: l’Antiga Esquerra de l’Eixample; la Nova Esquerra de l’Eixample"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-lantiga-esquerra-de-leixample-2",
+              "title": "L’Antiga Esquerra de l’Eixample",
+              "routes": [
+                {
+                  "n": 5,
+                  "name": "Jardí d'Assumpció Català",
+                  "info": "1,84 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "note": "Passa pels jardins de Rosa Deulofeu, que tenen horari d’obertura: consulta’l abans d’anar-hi."
+                }
+              ],
+              "route_prefix": "barri-lantiga-esquerra-de-leixample"
+            },
+            {
+              "id": "barri-la-nova-esquerra-de-leixample",
+              "title": "La Nova Esquerra de l’Eixample",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de Joan Miró",
+                  "info": "1,93 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Passa pel parc de l’Espanya Industrial, que té horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 2,
+                  "name": "Jardins de Rosa Deulofeu",
+                  "info": "1,94 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins de Safo",
+                  "info": "1,79 km · 21–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 4,
+                  "name": "Jardins d’Emma de Barcelona",
+                  "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 5,
+                  "name": "Jardins de Maria Mercè Marçal",
+                  "info": "1,96 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 6,
+                  "name": "Jardins de Paula Montal",
+                  "info": "1,70 km · 20–25 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 7,
+                  "name": "Jardins d’Elena Maseras",
+                  "info": "1,91 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 8,
+                  "name": "Jardins de Beatriu Pinós-Milany",
+                  "info": "1,96 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-eixample-mapa-6",
+          "title": "Eixample · mapa 6 de 6",
+          "district": "Eixample",
+          "maps": [
+            {
+              "mid": "1-SuBCtP2aJF3lIMrHe3lk9I33KiKPQg",
+              "title": "Barcelona · Eixample · parcs i jardins, mapa 6 de 6",
+              "ll": "41.3837,2.1552",
+              "z": 14,
+              "label": "Eixample · mapa 6 de 6: la Nova Esquerra de l’Eixample; Sant Antoni"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-la-nova-esquerra-de-leixample-2",
+              "title": "La Nova Esquerra de l’Eixample",
+              "routes": [
+                {
+                  "n": 9,
+                  "name": "Jardins de Montserrat",
+                  "info": "1,75 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Passa pels jardins de Rosa Deulofeu, que tenen horari d’obertura: consulta’l abans d’anar-hi."
+                }
+              ],
+              "route_prefix": "barri-la-nova-esquerra-de-leixample"
+            },
+            {
+              "id": "barri-sant-antoni",
+              "title": "Sant Antoni",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins de Càndida Pérez",
+                  "info": "1,74 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Jardins de Sebastià Gasch",
+                  "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins de Cèsar Martinell",
+                  "info": "1,78 km · 21–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 4,
+                  "name": "Jardins dels Tres Tombs",
+                  "info": "1,89 km · 23–28 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 5,
+                  "name": "Jardins de Tete Montoliu",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 6,
+                  "name": "Jardins de Mercè Vilaret",
+                  "info": "1,94 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 7,
+                  "name": "Jardins de Maria Matilde Almendros",
+                  "info": "1,91 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 8,
+                  "name": "Jardins de l’antic Cinema Urgell",
+                  "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer del Comte Borrell, 82, Barcelona"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-sants-montjuic",
+          "title": "Sants-Montjuïc · mapa 1 de 4",
+          "district": "Sants-Montjuïc",
+          "maps": [
+            {
+              "mid": "1lorraQvCTG_RblkQJxvRLM_IjMFuZq8",
+              "title": "Barcelona · Sants-Montjuïc · parcs i jardins, mapa 1 de 4",
+              "ll": "41.3703,2.1593",
+              "z": 14,
+              "label": "Sants-Montjuïc · mapa 1 de 4: el Poble-sec"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-el-poble-sec",
+              "title": "El Poble-sec",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardí Botànic de Barcelona",
+                  "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular",
+                  "note": "L’entrada al jardí botànic és de pagament: la ruta comença a l’entrada i en fa la volta per fora."
+                },
+                {
+                  "n": 2,
+                  "name": "Mirador de l’Alcalde",
+                  "info": "1,98 km · 24–30 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 83 m de desnivell entre el punt més baix i el més alt). Passa pels jardins de Joan Brossa, que tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 3,
+                  "name": "Jardí Botànic Històric de Barcelona",
+                  "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "note": "El jardí té horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 4,
+                  "name": "Jardins de Joan Maragall",
+                  "info": "1,90 km · 23–28 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Els jardins només obren alguns dies i hores: la ruta comença a l’entrada; consulta’n l’horari si hi vols entrar."
+                },
+                {
+                  "n": 5,
+                  "name": "Jardins de Mossèn Cinto Verdaguer",
+                  "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 67 m de desnivell entre el punt més baix i el més alt). Passa pels jardins de Joan Brossa, que tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 6,
+                  "name": "Jardins de Mossèn Costa i Llobera",
+                  "info": "1,78 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 45 m de desnivell entre el punt més baix i el més alt)."
+                },
+                {
+                  "n": 7,
+                  "name": "Jardins de Laribal",
+                  "info": "1,84 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 46 m de desnivell entre el punt més baix i el més alt). Passa pels jardins de Joan Maragall, que tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 8,
+                  "name": "Jardins del Teatre Grec",
+                  "info": "1,91 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Passa pels jardins de Joan Maragall, que tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 9,
+                  "name": "Jardins Ramon Margalef i López",
+                  "info": "1,76 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Avinguda de l'Estadi, 42-48, Barcelona"
+                },
+                {
+                  "n": 10,
+                  "name": "Mirador del Poble-sec",
+                  "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-sants-montjuic-mapa-2",
+          "title": "Sants-Montjuïc · mapa 2 de 4",
+          "district": "Sants-Montjuïc",
+          "maps": [
+            {
+              "mid": "1QSU-HtExNpxXuR3wc8RiFHaTxGtf1-E",
+              "title": "Barcelona · Sants-Montjuïc · parcs i jardins, mapa 2 de 4",
+              "ll": "41.3682,2.1568",
+              "z": 14,
+              "label": "Sants-Montjuïc · mapa 2 de 4: el Poble-sec; la Marina del Prat Vermell"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-el-poble-sec-2",
+              "title": "El Poble-sec",
+              "routes": [
+                {
+                  "n": 11,
+                  "name": "Jardí de Petra Kelly",
+                  "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 77 m de desnivell entre el punt més baix i el més alt). El viver és un espai de treball i no tot és de lliure accés: la ruta comença a l’entrada."
+                },
+                {
+                  "n": 12,
+                  "name": "Jardins de Joan Brossa",
+                  "info": "1,75 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 64 m de desnivell entre el punt més baix i el més alt). Passa pels jardins del Mirador de l’Alcalde, que tenen horari d’obertura: consulta’l abans d’anar-hi. Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 13,
+                  "name": "Parc de la Primavera",
+                  "info": "1,73 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 66 m de desnivell entre el punt més baix i el més alt). Passa pels jardins de Joan Brossa, que tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 14,
+                  "name": "Mirador del Migdia",
+                  "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 80 m de desnivell entre el punt més baix i el més alt)."
+                },
+                {
+                  "n": 15,
+                  "name": "Jardins de les Hortes de Sant Bertran",
+                  "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 16,
+                  "name": "Jardins de les Escultures",
+                  "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 52 m de desnivell entre el punt més baix i el més alt). Passa pels jardins de Laribal i els jardins de Joan Maragall, que tenen horari d’obertura: consulta’l abans d’anar-hi. El jardí té horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 17,
+                  "name": "Jardins de Walter Benjamin",
+                  "info": "1,89 km · 23–28 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 18,
+                  "name": "Jardins de les Tres Xemeneies",
+                  "info": "1,99 km · 24–30 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Passa pels jardins de Sant Pau del Camp, que tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 19,
+                  "name": "Jardins de Miramar",
+                  "info": "1,94 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                }
+              ],
+              "route_prefix": "barri-el-poble-sec"
+            },
+            {
+              "id": "barri-la-marina-del-prat-vermell",
+              "title": "La Marina del Prat Vermell",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins de Sant Cristòfol",
+                  "info": "1,82 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-sants-montjuic-mapa-3",
+          "title": "Sants-Montjuïc · mapa 3 de 4",
+          "district": "Sants-Montjuïc",
+          "maps": [
+            {
+              "mid": "1w_OzWLy-bWEwsmS2yX7MQd8U7G7BMDI",
+              "title": "Barcelona · Sants-Montjuïc · parcs i jardins, mapa 3 de 4",
+              "ll": "41.3722,2.1433",
+              "z": 13,
+              "label": "Sants-Montjuïc · mapa 3 de 4: la Marina del Prat Vermell; la Marina de Port; la Font de la Guatlla; Hostafrancs"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-la-marina-del-prat-vermell-2",
+              "title": "La Marina del Prat Vermell",
+              "routes": [
+                {
+                  "n": 2,
+                  "name": "Parc de les Tretze Roses",
+                  "info": "1,97 km · 24–30 min caminant · 35–50 min amb pauses · circular"
+                }
+              ],
+              "route_prefix": "barri-la-marina-del-prat-vermell"
+            },
+            {
+              "id": "barri-la-marina-de-port",
+              "title": "La Marina de Port",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de Can Sabaté",
+                  "info": "1,96 km · 24–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Jardins de Cal Sèbio",
+                  "info": "1,91 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins de Ca l’Alena",
+                  "info": "1,77 km · 21–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 4,
+                  "name": "Jardins de la Mediterrània",
+                  "info": "1,75 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 5,
+                  "name": "Jardins dels Drets Humans",
+                  "info": "1,76 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            },
+            {
+              "id": "barri-la-font-de-la-guatlla",
+              "title": "La Font de la Guatlla",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de la Font Florida",
+                  "info": "1,73 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Passa pel parc de Can Batlló, que té horari d’obertura: consulta’l abans d’anar-hi."
+                }
+              ]
+            },
+            {
+              "id": "barri-hostafrancs",
+              "title": "Hostafrancs",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins de Màlaga",
+                  "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Jardins de Ramon Aramon i Serra",
+                  "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-sants-montjuic-mapa-4",
+          "title": "Sants-Montjuïc · mapa 4 de 4",
+          "district": "Sants-Montjuïc",
+          "maps": [
+            {
+              "mid": "1IrjkcL9ZnmmBtql7vpvTpsL5nRRd5bY",
+              "title": "Barcelona · Sants-Montjuïc · parcs i jardins, mapa 4 de 4",
+              "ll": "41.3767,2.1369",
+              "z": 14,
+              "label": "Sants-Montjuïc · mapa 4 de 4: la Bordeta; Sants-Badal; Sants"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-la-bordeta",
+              "title": "La Bordeta",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins de Celestina Vigneaux",
+                  "info": "2,00 km · 24–30 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Passa pel parc de Can Batlló, que té horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 2,
+                  "name": "Parc de Can Batlló",
+                  "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "note": "El parc té horari d’obertura: consulta’l abans d’anar-hi."
+                }
+              ]
+            },
+            {
+              "id": "barri-sants-badal",
+              "title": "Sants-Badal",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins del Valent Petit",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Jardins del Priorat",
+                  "info": "1,91 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer del Priorat, 1, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "barri-sants",
+              "title": "Sants",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins de la Rambla de Sants",
+                  "info": "1,79 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Parc de l’Espanya Industrial",
+                  "info": "1,78 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+                  "note": "El parc té horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins de Can Mantega",
+                  "info": "1,77 km · 21–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 4,
+                  "name": "Jardins d’Elisard Sala",
+                  "info": "1,82 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 5,
+                  "name": "Jardins del Tenor Masini",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-les-corts",
+          "title": "Les Corts · mapa 1 de 4",
+          "district": "Les Corts",
+          "maps": [
+            {
+              "mid": "1kfXhKA7GR-IRA8bIgSdxAdDnaa_xgaA",
+              "title": "Barcelona · Les Corts · parcs i jardins, mapa 1 de 4",
+              "ll": "41.3860,2.1280",
+              "z": 14,
+              "label": "Les Corts · mapa 1 de 4: les Corts"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-les-corts",
+              "title": "Les Corts",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins de William Shakespeare",
+                  "info": "1,82 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Passa pels jardins del Palau de Pedralbes, que tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 2,
+                  "name": "Plaça de les Corts",
+                  "info": "1,72 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins de Clara Campoamor",
+                  "info": "1,96 km · 24–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 4,
+                  "name": "Jardins d’Olga Sacharoff",
+                  "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "note": "Passa pels jardins de Piscines i Esports, que tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 5,
+                  "name": "Jardins de Josep Goday i Casals",
+                  "info": "1,97 km · 24–30 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 6,
+                  "name": "Plaça del Doctor Ignasi Barraquer",
+                  "info": "1,99 km · 24–30 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 8,
+                  "name": "Jardí de Maria Teresa Vernet i Real",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 9,
+                  "name": "Jardins dels Doctors Dolsa",
+                  "info": "1,81 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-les-corts-mapa-2",
+          "title": "Les Corts · mapa 2 de 4",
+          "district": "Les Corts",
+          "maps": [
+            {
+              "mid": "18C510RBsK-cMQiThFF3Gs_eftNMERTE",
+              "title": "Barcelona · Les Corts · parcs i jardins, mapa 2 de 4",
+              "ll": "41.3903,2.1337",
+              "z": 14,
+              "label": "Les Corts · mapa 2 de 4: les Corts"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-les-corts-2",
+              "title": "Les Corts",
+              "routes": [
+                {
+                  "n": 10,
+                  "name": "Plaça del Sòl de Baix",
+                  "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 11,
+                  "name": "Jardins de Can Bruixa",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 13,
+                  "name": "Jardins de Joaquim Ruyra",
+                  "info": "1,75 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 14,
+                  "name": "Jardins de Sant Joan de Déu",
+                  "info": "2,02 km · 24–30 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 15,
+                  "name": "Jardins de Can Batllori",
+                  "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 16,
+                  "name": "Jardins d’Emília Miret i Soler",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Passatge de Rosa Leveroni, 2, Barcelona"
+                },
+                {
+                  "n": 17,
+                  "name": "Jardins de Gaietà Renom",
+                  "info": "1,99 km · 24–30 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 18,
+                  "name": "Parc de la Colònia Castells",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                }
+              ],
+              "route_prefix": "barri-les-corts"
+            }
+          ]
+        },
+        {
+          "id": "parcs-les-corts-mapa-3",
+          "title": "Les Corts · mapa 3 de 4",
+          "district": "Les Corts",
+          "maps": [
+            {
+              "mid": "1zvmElufYOoyB9DviTNz3sf8hs6g_FzM",
+              "title": "Barcelona · Les Corts · parcs i jardins, mapa 3 de 4",
+              "ll": "41.3867,2.1188",
+              "z": 14,
+              "label": "Les Corts · mapa 3 de 4: les Corts; la Maternitat i Sant Ramon"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-les-corts-3",
+              "title": "Les Corts",
+              "routes": [
+                {
+                  "n": 19,
+                  "name": "Jardins d’Àurea Cuadrado",
+                  "info": "1,93 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                }
+              ],
+              "route_prefix": "barri-les-corts"
+            },
+            {
+              "id": "barri-la-maternitat-i-sant-ramon",
+              "title": "La Maternitat i Sant Ramon",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins de la Maternitat",
+                  "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 2,
+                  "name": "Parc de Can Rigal",
+                  "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins de Bacardí",
+                  "info": "1,90 km · 23–28 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Passa pels jardins de la Maternitat, que tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 4,
+                  "name": "Jardins de Josep Munté",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 5,
+                  "name": "Jardins de Clot d’en Salvi",
+                  "info": "1,76 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 6,
+                  "name": "Jardins d’Ernest Lluch",
+                  "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                },
+                {
+                  "n": 7,
+                  "name": "Jardins de Torre Melina",
+                  "info": "2,17 km · 26–32 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 8,
+                  "name": "Jardins de Can Feu",
+                  "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-les-corts-mapa-4",
+          "title": "Les Corts · mapa 4 de 4",
+          "district": "Les Corts",
+          "maps": [
+            {
+              "mid": "1wAJmdHBMQ_S8f4VCkVNIDgq3DqF4ErY",
+              "title": "Barcelona · Les Corts · parcs i jardins, mapa 4 de 4",
+              "ll": "41.3921,2.1202",
+              "z": 14,
+              "label": "Les Corts · mapa 4 de 4: Pedralbes"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-pedralbes",
+              "title": "Pedralbes",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins del Palau de Pedralbes",
+                  "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 2,
+                  "name": "Parc del Roserar de Cervantes",
+                  "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins de Rubió i Tudurí",
+                  "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Passa pels jardins del Palau de Pedralbes, que tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 4,
+                  "name": "Jardins de la Font dels Ocellets",
+                  "info": "2,01 km · 24–30 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 5,
+                  "name": "Jardins de Jaume Vicens Vives",
+                  "info": "1,74 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 6,
+                  "name": "Parc de Cervantes",
+                  "info": "2,03 km · 24–30 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 53 m de desnivell entre el punt més baix i el més alt)."
+                },
+                {
+                  "n": 7,
+                  "name": "Jardins de la Creu de Pedralbes",
+                  "info": "1,79 km · 21–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 8,
+                  "name": "Jardins de Can Cuiàs",
+                  "info": "1,71 km · 20–26 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-sarria-sant-gervasi",
+          "title": "Sarrià-Sant Gervasi · mapa 1 de 4",
+          "district": "Sarrià-Sant Gervasi",
+          "maps": [
+            {
+              "mid": "1tlmr1AUMihmKWKSuM9FSvMHma-z9l48",
+              "title": "Barcelona · Sarrià-Sant Gervasi · parcs i jardins, mapa 1 de 4",
+              "ll": "41.4026,2.1273",
+              "z": 14,
+              "label": "Sarrià-Sant Gervasi · mapa 1 de 4: Sarrià"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-sarria",
+              "title": "Sarrià",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins de Can Sentmenat",
+                  "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 65 m de desnivell entre el punt més baix i el més alt)."
+                },
+                {
+                  "n": 2,
+                  "name": "Parc de Joan Reventós",
+                  "info": "1,81 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer de Ràfols, 17, Barcelona",
+                  "note": "Recorregut amb pujades i baixades (uns 54 m de desnivell entre el punt més baix i el més alt)."
+                },
+                {
+                  "n": 3,
+                  "name": "Parc del Castell de l’Oreneta",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 99 m de desnivell entre el punt més baix i el més alt)."
+                },
+                {
+                  "n": 4,
+                  "name": "Jardins de la Vil·la Amèlia",
+                  "info": "1,76 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 5,
+                  "name": "Jardins de la Vil·la Cecília",
+                  "info": "1,79 km · 21–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 6,
+                  "name": "Jardins del Doctor Castelló",
+                  "info": "1,96 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Passa pels jardins de Piscines i Esports, que tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 7,
+                  "name": "Jardins de Joan Vinyoli",
+                  "info": "1,81 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 8,
+                  "name": "Jardins de Mercè Rodoreda",
+                  "info": "1,77 km · 21–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 9,
+                  "name": "Jardins del Camp de Sarrià",
+                  "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Passa pels jardins de Piscines i Esports, que tenen horari d’obertura: consulta’l abans d’anar-hi."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-sarria-sant-gervasi-mapa-2",
+          "title": "Sarrià-Sant Gervasi · mapa 2 de 4",
+          "district": "Sarrià-Sant Gervasi",
+          "maps": [
+            {
+              "mid": "19_uBRo6qMO0JRgLUbq6JIPa_dYqW0tk",
+              "title": "Barcelona · Sarrià-Sant Gervasi · parcs i jardins, mapa 2 de 4",
+              "ll": "41.4068,2.1296",
+              "z": 13,
+              "label": "Sarrià-Sant Gervasi · mapa 2 de 4: Sarrià; les Tres Torres; Sant Gervasi-la Bonanova"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-sarria-2",
+              "title": "Sarrià",
+              "routes": [
+                {
+                  "n": 10,
+                  "name": "Jardins de Can Senillosa",
+                  "info": "1,69 km · 20–25 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 11,
+                  "name": "Parc de Can Ponsic",
+                  "info": "1,93 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer de Domínguez i Miralles, 1, Barcelona"
+                },
+                {
+                  "n": 12,
+                  "name": "Jardins del Dr. Roig i Raventós",
+                  "info": "1,74 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 13,
+                  "name": "Jardins de Maria Manent",
+                  "info": "1,91 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 50 m de desnivell entre el punt més baix i el més alt)."
+                }
+              ],
+              "route_prefix": "barri-sarria"
+            },
+            {
+              "id": "barri-les-tres-torres",
+              "title": "Les Tres Torres",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Plaça de Manuel Corachan",
+                  "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Plaça de Rosa Sabater",
+                  "info": "2,00 km · 24–30 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins d’Elvira Farreras Valentí",
+                  "info": "1,96 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 54 m de desnivell entre el punt més baix i el més alt)."
+                }
+              ]
+            },
+            {
+              "id": "barri-sant-gervasi-la-bonanova",
+              "title": "Sant Gervasi-la Bonanova",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins de Ca n’Altimira",
+                  "info": "1,91 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Parc de la Font del Racó",
+                  "info": "1,73 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-sarria-sant-gervasi-mapa-3",
+          "title": "Sarrià-Sant Gervasi · mapa 3 de 4",
+          "district": "Sarrià-Sant Gervasi",
+          "maps": [
+            {
+              "mid": "1fRh9IqoAVmXiIkgX8ayEDXXtNCRRydQ",
+              "title": "Barcelona · Sarrià-Sant Gervasi · parcs i jardins, mapa 3 de 4",
+              "ll": "41.4070,2.1399",
+              "z": 13,
+              "label": "Sarrià-Sant Gervasi · mapa 3 de 4: Sant Gervasi-la Bonanova; Sant Gervasi-Galvany"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-sant-gervasi-la-bonanova-2",
+              "title": "Sant Gervasi-la Bonanova",
+              "routes": [
+                {
+                  "n": 3,
+                  "name": "Jardins de la Tamarita",
+                  "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 4,
+                  "name": "Plaça de Ferran Casablancas",
+                  "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                },
+                {
+                  "n": 5,
+                  "name": "Jardins de Vil·la Florida",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 6,
+                  "name": "Parc de Teodor Roviralta",
+                  "info": "1,79 km · 21–27 min caminant · 30–45 min amb pauses · circular"
+                }
+              ],
+              "route_prefix": "barri-sant-gervasi-la-bonanova"
+            },
+            {
+              "id": "barri-sant-gervasi-galvany",
+              "title": "Sant Gervasi-Galvany",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins de Piscines i Esports",
+                  "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 2,
+                  "name": "Jardins de Moragas",
+                  "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 3,
+                  "name": "Parc del Turó",
+                  "info": "1,75 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Avinguda de Pau Casals, 19, Barcelona",
+                  "note": "Passa pels jardins de Piscines i Esports, que tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 4,
+                  "name": "Parc de Monterols",
+                  "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                },
+                {
+                  "n": 5,
+                  "name": "Jardins de Can Castelló",
+                  "info": "1,78 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-sarria-sant-gervasi-mapa-4",
+          "title": "Sarrià-Sant Gervasi · mapa 4 de 4",
+          "district": "Sarrià-Sant Gervasi",
+          "maps": [
+            {
+              "mid": "13cuKz8MJdRsOkVlZwr4h3SujAE3KvNs",
+              "title": "Barcelona · Sarrià-Sant Gervasi · parcs i jardins, mapa 4 de 4",
+              "ll": "41.4061,2.1402",
+              "z": 14,
+              "label": "Sarrià-Sant Gervasi · mapa 4 de 4: Sant Gervasi-Galvany; el Putxet i el Farró"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-sant-gervasi-galvany-2",
+              "title": "Sant Gervasi-Galvany",
+              "routes": [
+                {
+                  "n": 6,
+                  "name": "Jardí de la Fundació Julio Muñoz Ramonet",
+                  "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Passa pels jardins de Moragas, que tenen horari d’obertura: consulta’l abans d’anar-hi. Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 7,
+                  "name": "Jardins de Maluquer",
+                  "info": "1,90 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Passatge de Maluquer, Barcelona"
+                },
+                {
+                  "n": 8,
+                  "name": "Jardins del Doctor Samuel Hahnemann",
+                  "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Passa pels jardins de Piscines i Esports, que tenen horari d’obertura: consulta’l abans d’anar-hi. Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi."
+                }
+              ],
+              "route_prefix": "barri-sant-gervasi-galvany"
+            },
+            {
+              "id": "barri-el-putxet-i-el-farro",
+              "title": "El Putxet i el Farró",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc del Turó del Putxet",
+                  "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 54 m de desnivell entre el punt més baix i el més alt)."
+                },
+                {
+                  "n": 2,
+                  "name": "Jardins de Portolà",
+                  "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 48 m de desnivell entre el punt més baix i el més alt)."
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins d’Enric Sagnier",
+                  "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "note": "Passa pels jardins de Moragas, que tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 4,
+                  "name": "Parc del Torrent Maduixers",
+                  "info": "1,97 km · 24–30 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 5,
+                  "name": "Jardins de Can Ferrer",
+                  "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-gracia",
+          "title": "Gràcia · mapa 1 de 2",
+          "district": "Gràcia",
+          "maps": [
+            {
+              "mid": "1ghuaruoSv0MTi0IqUebhao2b1KZ5WXM",
+              "title": "Barcelona · Gràcia · parcs i jardins, mapa 1 de 2",
+              "ll": "41.4125,2.1504",
+              "z": 13,
+              "label": "Gràcia · mapa 1 de 2: Vallcarca i els Penitents; el Coll; la Salut; la Vila de Gràcia"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-vallcarca-i-els-penitents",
+              "title": "Vallcarca i els Penitents",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins de Manuel Blancafort",
+                  "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Plaça d’Alfons Comín",
+                  "info": "1,73 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Plaça d'Alfons Comín, 11, Barcelona"
+                },
+                {
+                  "n": 3,
+                  "name": "Plaça de Lesseps",
+                  "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 4,
+                  "name": "Jardins de Maria Baldó",
+                  "info": "1,84 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                }
+              ]
+            },
+            {
+              "id": "barri-el-coll",
+              "title": "El Coll",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de la Creueta del Coll",
+                  "info": "1,90 km · 23–28 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 68 m de desnivell entre el punt més baix i el més alt)."
+                },
+                {
+                  "n": 2,
+                  "name": "Jardins del Doctor Comas i Llaberia",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Avinguda de Vallcarca, 218, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "barri-la-salut",
+              "title": "La Salut",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Park Güell",
+                  "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 62 m de desnivell entre el punt més baix i el més alt). L’accés a l’interior del parc està regulat: consulta’n les condicions abans d’anar-hi. La ruta comença a l’entrada del carrer d’Olot i fa la volta pels carrers del voltant, sense entrar-hi."
+                }
+              ]
+            },
+            {
+              "id": "barri-la-vila-de-gracia",
+              "title": "La Vila de Gràcia",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins del Mestre Balcells",
+                  "info": "1,77 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 46 m de desnivell entre el punt més baix i el més alt)."
+                },
+                {
+                  "n": 2,
+                  "name": "Plaça de Gal·la Placídia",
+                  "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 3,
+                  "name": "Plaça d’en Joanic",
+                  "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-gracia-mapa-2",
+          "title": "Gràcia · mapa 2 de 2",
+          "district": "Gràcia",
+          "maps": [
+            {
+              "mid": "11JlFy84MLuJL53HJD8-2EqCiGI-BM6s",
+              "title": "Barcelona · Gràcia · parcs i jardins, mapa 2 de 2",
+              "ll": "41.4031,2.1610",
+              "z": 14,
+              "label": "Gràcia · mapa 2 de 2: la Vila de Gràcia; el Camp d’en Grassot i Gràcia Nova"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-la-vila-de-gracia-2",
+              "title": "La Vila de Gràcia",
+              "routes": [
+                {
+                  "n": 4,
+                  "name": "Jardinets de Gràcia",
+                  "info": "1,76 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Passeig de Gràcia, 114, Barcelona"
+                },
+                {
+                  "n": 5,
+                  "name": "Jardins de Menéndez y Pelayo",
+                  "info": "1,93 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 6,
+                  "name": "Jardins de Salvador Espriu",
+                  "info": "1,79 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Passa pels jardins del Palau Robert, que tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 7,
+                  "name": "Plaça del Sol",
+                  "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 8,
+                  "name": "Plaça de la Virreina",
+                  "info": "1,74 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 9,
+                  "name": "Plaça del Diamant",
+                  "info": "1,97 km · 24–30 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 10,
+                  "name": "Plaça de la Vila de Gràcia",
+                  "info": "1,90 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                }
+              ],
+              "route_prefix": "barri-la-vila-de-gracia"
+            },
+            {
+              "id": "barri-el-camp-den-grassot-i-gracia-nova",
+              "title": "El Camp d’en Grassot i Gràcia Nova",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardí de la Sedeta",
+                  "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Jardí de Caterina Albert",
+                  "info": "1,73 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins d’Antoni Puigvert",
+                  "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-horta-guinardo",
+          "title": "Horta-Guinardó · mapa 1 de 2",
+          "district": "Horta-Guinardó",
+          "maps": [
+            {
+              "mid": "1pO6E5eoGH5ThkmC36VYnneLNHfUydxA",
+              "title": "Barcelona · Horta-Guinardó · parcs i jardins, mapa 1 de 2",
+              "ll": "41.4189,2.1602",
+              "z": 14,
+              "label": "Horta-Guinardó · mapa 1 de 2: el Baix Guinardó; el Guinardó; la Font d’en Fargues; el Carmel"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-el-baix-guinardo",
+              "title": "El Baix Guinardó",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de les Aigües",
+                  "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 64 m de desnivell entre el punt més baix i el més alt). El parc té horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 2,
+                  "name": "Jardins del Baix Guinardó",
+                  "info": "1,75 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins del Doctor Pla i Armengol",
+                  "info": "1,74 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 77 m de desnivell entre el punt més baix i el més alt)."
+                },
+                {
+                  "n": 4,
+                  "name": "Jardins d’Hiroshima",
+                  "info": "1,76 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            },
+            {
+              "id": "barri-el-guinardo",
+              "title": "El Guinardó",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc del Guinardó",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 84 m de desnivell entre el punt més baix i el més alt)."
+                }
+              ]
+            },
+            {
+              "id": "barri-la-font-den-fargues",
+              "title": "La Font d’en Fargues",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins de Can Fargues",
+                  "info": "1,89 km · 23–28 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 55 m de desnivell entre el punt més baix i el més alt)."
+                }
+              ]
+            },
+            {
+              "id": "barri-el-carmel",
+              "title": "El Carmel",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc del Carmel",
+                  "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 89 m de desnivell entre el punt més baix i el més alt). El parc té horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 2,
+                  "name": "Jardins de Juan Ponce",
+                  "info": "1,78 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 73 m de desnivell entre el punt més baix i el més alt). Passa pel parc del Carmel, que té horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins de Jaume Planas i Alemany",
+                  "info": "1,74 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 48 m de desnivell entre el punt més baix i el més alt)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-horta-guinardo-mapa-2",
+          "title": "Horta-Guinardó · mapa 2 de 2",
+          "district": "Horta-Guinardó",
+          "maps": [
+            {
+              "mid": "1Sdzv-_q4VY2z5OgQrjwIEQGsBEqe_5E",
+              "title": "Barcelona · Horta-Guinardó · parcs i jardins, mapa 2 de 2",
+              "ll": "41.4327,2.1505",
+              "z": 14,
+              "label": "Horta-Guinardó · mapa 2 de 2: Montbau; la Vall d’Hebron; Horta"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-montbau",
+              "title": "Montbau",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins del Palau de les Heures",
+                  "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 61 m de desnivell entre el punt més baix i el més alt). La ruta comença al carrer de l’Harmonia, a uns 90 m dels jardins, i fa la volta pels carrers de Montbau. Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 2,
+                  "name": "Parc del Laberint d’Horta",
+                  "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                }
+              ]
+            },
+            {
+              "id": "barri-la-vall-dhebron",
+              "title": "La Vall d’Hebron",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de la Vall d’Hebron",
+                  "info": "1,72 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Parc de Xavier Montsalvatge",
+                  "info": "2,12 km · 25–32 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 50 m de desnivell entre el punt més baix i el més alt). El parc té horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins de Frida Kahlo",
+                  "info": "1,84 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                },
+                {
+                  "n": 4,
+                  "name": "Jardins de Rosa Luxemburg",
+                  "info": "2,00 km · 24–30 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 46 m de desnivell entre el punt més baix i el més alt)."
+                }
+              ]
+            },
+            {
+              "id": "barri-horta",
+              "title": "Horta",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de la Unitat",
+                  "info": "1,90 km · 23–28 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Parc de les Rieres d’Horta",
+                  "info": "1,69 km · 20–25 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-nou-barris",
+          "title": "Nou Barris · mapa 1 de 2",
+          "district": "Nou Barris",
+          "maps": [
+            {
+              "mid": "1yVaz72g29BdwPkMRHbOOMJ-jbh2CKA0",
+              "title": "Barcelona · Nou Barris · parcs i jardins, mapa 1 de 2",
+              "ll": "41.4366,2.1743",
+              "z": 14,
+              "label": "Nou Barris · mapa 1 de 2: Porta; el Turó de la Peira; la Guineueta"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-porta",
+              "title": "Porta",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de Can Dragó",
+                  "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Plaça de Sóller",
+                  "info": "1,74 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            },
+            {
+              "id": "barri-el-turo-de-la-peira",
+              "title": "El Turó de la Peira",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc del Turó de la Peira",
+                  "info": "1,71 km · 20–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Plaça de les Basses de la Peira",
+                  "info": "1,93 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                }
+              ]
+            },
+            {
+              "id": "barri-la-guineueta",
+              "title": "La Guineueta",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de la Guineueta",
+                  "info": "1,90 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Parc Central de Nou Barris",
+                  "info": "1,93 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-nou-barris-mapa-2",
+          "title": "Nou Barris · mapa 2 de 2",
+          "district": "Nou Barris",
+          "maps": [
+            {
+              "mid": "1hVli6CCDqdreRxyVgOltzdyAXpQJ3Ic",
+              "title": "Barcelona · Nou Barris · parcs i jardins, mapa 2 de 2",
+              "ll": "41.4535,2.1761",
+              "z": 13,
+              "label": "Nou Barris · mapa 2 de 2: la Guineueta; Canyelles; les Roquetes; la Prosperitat; la Trinitat Nova; Ciutat Meridiana"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-la-guineueta-2",
+              "title": "La Guineueta",
+              "routes": [
+                {
+                  "n": 3,
+                  "name": "Plaça de la República",
+                  "info": "1,72 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                }
+              ],
+              "route_prefix": "barri-la-guineueta"
+            },
+            {
+              "id": "barri-canyelles",
+              "title": "Canyelles",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de Josep Maria Serra Martí",
+                  "info": "1,89 km · 23–28 min caminant · 35–50 min amb pauses · circular"
+                }
+              ]
+            },
+            {
+              "id": "barri-les-roquetes",
+              "title": "Les Roquetes",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc del Pla de Fornells",
+                  "info": "1,79 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 70 m de desnivell entre el punt més baix i el més alt)."
+                }
+              ]
+            },
+            {
+              "id": "barri-la-prosperitat",
+              "title": "La Prosperitat",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins de Rodrigo Caro",
+                  "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular",
+                  "note": "Recorregut amb pujades i baixades (uns 71 m de desnivell entre el punt més baix i el més alt)."
+                }
+              ]
+            },
+            {
+              "id": "barri-la-trinitat-nova",
+              "title": "La Trinitat Nova",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de la Trinitat Nova",
+                  "info": "1,81 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            },
+            {
+              "id": "barri-ciutat-meridiana",
+              "title": "Ciutat Meridiana",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de l'Aqüeducte",
+                  "info": "1,70 km · 20–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Avinguda dels Rasos de Peguera, Barcelona"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-sant-andreu",
+          "title": "Sant Andreu · mapa 1 de 2",
+          "district": "Sant Andreu",
+          "maps": [
+            {
+              "mid": "1lXiP8Gj2VhWZVWvuuJIJ2I-cM-O_mxY",
+              "title": "Barcelona · Sant Andreu · parcs i jardins, mapa 1 de 2",
+              "ll": "41.4395,2.1944",
+              "z": 13,
+              "label": "Sant Andreu · mapa 1 de 2: la Trinitat Vella; Baró de Viver; el Bon Pastor; Sant Andreu"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-la-trinitat-vella",
+              "title": "La Trinitat Vella",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de la Trinitat",
+                  "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                }
+              ]
+            },
+            {
+              "id": "barri-baro-de-viver",
+              "title": "Baró de Viver",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Plaça del Baró de Viver",
+                  "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                }
+              ]
+            },
+            {
+              "id": "barri-el-bon-pastor",
+              "title": "El Bon Pastor",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de la Maquinista",
+                  "info": "1,90 km · 23–28 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Passeig de l'Havana, 2, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "barri-sant-andreu",
+              "title": "Sant Andreu",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins de Pepa Colomer",
+                  "info": "1,96 km · 24–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Plaça de Can Fabra",
+                  "info": "1,98 km · 24–30 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins de la Casa Bloc",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-sant-andreu-mapa-2",
+          "title": "Sant Andreu · mapa 2 de 2",
+          "district": "Sant Andreu",
+          "maps": [
+            {
+              "mid": "12qM_rIY8oKajGBjMwmlbKK94HoHFi54",
+              "title": "Barcelona · Sant Andreu · parcs i jardins, mapa 2 de 2",
+              "ll": "41.4347,2.1854",
+              "z": 13,
+              "label": "Sant Andreu · mapa 2 de 2: Sant Andreu; la Sagrera; el Congrés i els Indians; Navas"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-sant-andreu-2",
+              "title": "Sant Andreu",
+              "routes": [
+                {
+                  "n": 4,
+                  "name": "Jardins del GATCPAC",
+                  "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 5,
+                  "name": "Parc d’Antoni Santiburcio",
+                  "info": "1,81 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                }
+              ],
+              "route_prefix": "barri-sant-andreu"
+            },
+            {
+              "id": "barri-la-sagrera",
+              "title": "La Sagrera",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de la Pegaso",
+                  "info": "1,79 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            },
+            {
+              "id": "barri-el-congres-i-els-indians",
+              "title": "El Congrés i els Indians",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins de Massana",
+                  "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular"
+                }
+              ]
+            },
+            {
+              "id": "barri-navas",
+              "title": "Navas",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Plaça de Ferran Reyes",
+                  "info": "1,99 km · 24–30 min caminant · 35–50 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-sant-marti",
+          "title": "Sant Martí · mapa 1 de 4",
+          "district": "Sant Martí",
+          "maps": [
+            {
+              "mid": "1c9BsTK3yubgRmHSM6juSb07IgpVrUhY",
+              "title": "Barcelona · Sant Martí · parcs i jardins, mapa 1 de 4",
+              "ll": "41.4081,2.1885",
+              "z": 14,
+              "label": "Sant Martí · mapa 1 de 4: el Camp de l’Arpa del Clot; el Clot; el Parc i la Llacuna del Poblenou"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-el-camp-de-larpa-del-clot",
+              "title": "El Camp de l’Arpa del Clot",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Jardins de Can Miralletes",
+                  "info": "1,77 km · 21–27 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            },
+            {
+              "id": "barri-el-clot",
+              "title": "El Clot",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc del Clot",
+                  "info": "2,00 km · 24–30 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Jardins del Clot de la Mel",
+                  "info": "1,90 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins de Joana Tomàs",
+                  "info": "1,84 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                }
+              ]
+            },
+            {
+              "id": "barri-el-parc-i-la-llacuna-del-poblenou",
+              "title": "El Parc i la Llacuna del Poblenou",
+              "routes": [
+                {
+                  "n": 2,
+                  "name": "Jardins d’Ada Byron",
+                  "info": "1,74 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins de Tecla Sala",
+                  "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 4,
+                  "name": "Jardins de l’Illa Sancho de Ávila-Pamplona",
+                  "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Carrer de Sancho de Ávila, 19, Barcelona"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-sant-marti-mapa-2",
+          "title": "Sant Martí · mapa 2 de 4",
+          "district": "Sant Martí",
+          "maps": [
+            {
+              "mid": "1QPyHXqiu5zJm1-1k-jxHC_e3-1aDJuQ",
+              "title": "Barcelona · Sant Martí · parcs i jardins, mapa 2 de 4",
+              "ll": "41.3989,2.2003",
+              "z": 14,
+              "label": "Sant Martí · mapa 2 de 4: la Vila Olímpica del Poblenou; el Poblenou"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-la-vila-olimpica-del-poblenou",
+              "title": "La Vila Olímpica del Poblenou",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de la Nova Icària",
+                  "info": "1,75 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Parc de Carles I",
+                  "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "note": "El parc té horari d’obertura: consulta’l abans d’anar-hi."
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins de Mercè Plantada",
+                  "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 4,
+                  "name": "Jardins de Margarida Comas",
+                  "info": "1,84 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                },
+                {
+                  "n": 5,
+                  "name": "Parc del Port Olímpic",
+                  "info": "1,76 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            },
+            {
+              "id": "barri-el-poblenou",
+              "title": "El Poblenou",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc del Poblenou",
+                  "info": "1,75 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Jardins de Creu Casas",
+                  "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                },
+                {
+                  "n": 3,
+                  "name": "Jardins de Gandhi",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 4,
+                  "name": "Jardins de Josep Trueta",
+                  "info": "1,78 km · 21–27 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-sant-marti-mapa-3",
+          "title": "Sant Martí · mapa 3 de 4",
+          "district": "Sant Martí",
+          "maps": [
+            {
+              "mid": "1Mqq9enrr-5e9L6fJdL74ZFr7_ocyuGI",
+              "title": "Barcelona · Sant Martí · parcs i jardins, mapa 3 de 4",
+              "ll": "41.4053,2.2093",
+              "z": 14,
+              "label": "Sant Martí · mapa 3 de 4: el Poblenou; Diagonal Mar i el Front Marítim del Poblenou"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-el-poblenou-2",
+              "title": "El Poblenou",
+              "routes": [
+                {
+                  "n": 5,
+                  "name": "Jardins de Simone de Beauvoir",
+                  "info": "1,75 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                }
+              ],
+              "route_prefix": "barri-el-poblenou"
+            },
+            {
+              "id": "barri-diagonal-mar-i-el-front-maritim-del-poblenou",
+              "title": "Diagonal Mar i el Front Marítim del Poblenou",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de Diagonal Mar",
+                  "info": "1,78 km · 21–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Parc Maresme",
+                  "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 3,
+                  "name": "Plaça de Ramon Calsina",
+                  "info": "1,96 km · 24–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 4,
+                  "name": "Jardins de J. M. Sostres",
+                  "info": "1,77 km · 21–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 5,
+                  "name": "Jardins de Joan Fuster i Ortells",
+                  "info": "1,90 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 6,
+                  "name": "Jardins de Carles Barral",
+                  "info": "1,90 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 7,
+                  "name": "Jardins de Manuel Sacristán",
+                  "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                },
+                {
+                  "n": 8,
+                  "name": "Jardins de Jaime Gil de Biedma",
+                  "info": "1,72 km · 21–26 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parcs-sant-marti-mapa-4",
+          "title": "Sant Martí · mapa 4 de 4",
+          "district": "Sant Martí",
+          "maps": [
+            {
+              "mid": "1mjQZUYEEDhsZUy2MRFrPk9ysX1RgKM8",
+              "title": "Barcelona · Sant Martí · parcs i jardins, mapa 4 de 4",
+              "ll": "41.4139,2.2011",
+              "z": 13,
+              "label": "Sant Martí · mapa 4 de 4: el Besòs i el Maresme; Provençals del Poblenou; Sant Martí de Provençals"
+            }
+          ],
+          "sections": [
+            {
+              "id": "barri-el-besos-i-el-maresme",
+              "title": "El Besòs i el Maresme",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Rambla de Prim",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Jardins d’Alícia de Larrocha",
+                  "info": "1,81 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                },
+                {
+                  "n": 3,
+                  "name": "Parc Lineal de la Gran Via",
+                  "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular"
+                },
+                {
+                  "n": 4,
+                  "name": "Plaça de Dolors Piera",
+                  "info": "1,82 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            },
+            {
+              "id": "barri-provencals-del-poblenou",
+              "title": "Provençals del Poblenou",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc del Centre del Poblenou",
+                  "info": "1,97 km · 24–30 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Jardins d’Irene Polo",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular"
+                }
+              ]
+            },
+            {
+              "id": "barri-sant-marti-de-provencals",
+              "title": "Sant Martí de Provençals",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Parc de Sant Martí",
+                  "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular"
+                },
+                {
+                  "n": 2,
+                  "name": "Jardins de Miquel Martí i Pol",
+                  "info": "1,89 km · 23–28 min caminant · 35–50 min amb pauses · circular"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

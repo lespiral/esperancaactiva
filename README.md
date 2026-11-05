@@ -29,13 +29,14 @@ Es publica amb GitHub Pages des de la carpeta `docs/`.
 - A Inici, a Les ciutats i a cada pàgina de curs hi ha un desplegable que porta a la targeta de la ciutat triada (`#ciutat-olot`).
 - Dins d'una ciutat, si un bloc de curs té 3 mapes o més (o 3 districtes o més), surt un desplegable abans dels mapes que porta al districte, la zona o el mapa triat. Sota el nom de cada mapa hi ha un enllaç per tornar al desplegable.
 - Si el bloc té diversos grups (un per districte), cada districte és una opció. Si té un sol grup amb diversos mapes (Vic, parcs), cada mapa és una opció i el nom surt de `label` (o de `zone`, si el mapa en té).
+- Si el bloc té un grup per mapa i diversos mapes per districte (Barcelona, parcs i jardins), amb `"zones": {"by": "district"}` al bloc el desplegable mostra un districte per opció (camp `district` de cada grup) i porta al primer mapa del districte.
 - Els textos es poden canviar a la ciutat o al bloc amb `"zones": {"label": ..., "placeholder": ..., "back": ...}` (Barcelona: «Vés directament al teu districte»). El mínim de mapes és `ZONES_MIN` a `build.py`.
 
 ## Adreces directes (per enllaçar des de Thinkific)
 
 Cada bloc de curs d'una ciutat té una adreça pròpia:
 
-- `/barcelona/#quan-la-vida` (rutes des dels CAP), `/barcelona/#quan-cuidar-nos`
+- `/barcelona/#quan-la-vida` (rutes des dels CAP), `/barcelona/#quan-cuidar-nos`, `/barcelona/#quan-el-mon` (parcs i jardins)
 - `/el-prat/#quan-la-vida`, `/el-prat/#quan-cuidar-nos`, `/el-prat/#quan-el-mon`
 - `/vic/#quan-la-vida` (rutes des dels CAP i hospitals, 24 a 28), `/vic/#quan-el-mon`
 - `/olot/#quan-la-vida` (rutes des dels CAP i l'hospital, 1 a 4, i rutes saludables PAFES, 5 a 13)
@@ -45,6 +46,7 @@ I cada ruta, la seva (el desplegable s'obre sol):
 - `/vic/#quan-el-mon-ruta-5`, `/vic/#quan-la-vida-ruta-24`, `/el-prat/#quan-la-vida-ruta-12`, `/olot/#quan-la-vida-ruta-2`
 - Barcelona, per districte: `/barcelona/#ciutat-vella-ruta-1`, `/barcelona/#gracia-ruta-3` (Quan cuidar-nos)
 - Barcelona, rutes des dels CAP (Quan la vida): `/barcelona/#cap-gracia-ruta-6`; el mapa i el desplegable d'un districte: `/barcelona/#cap-gracia`
+- Barcelona, parcs i jardins (Quan el món): un districte `/barcelona/#parcs-gracia` (el seu primer mapa), un mapa `/barcelona/#parcs-eixample-mapa-3`, un barri `/barcelona/#barri-la-vila-de-gracia` i una ruta `/barcelona/#barri-el-raval-ruta-1`. Les rutes es numeren per barri, com als mapes. Si un barri continua al mapa següent, les seves rutes mantenen l'adreça del barri (`/barcelona/#barri-el-fort-pienc-ruta-10`).
 
 Altres: `/vic/#quan-el-mon-rutes-21-a-23` (un mapa de Vic), `/vic/#quan-el-mon-rutes` (la llista de rutes), `/barcelona/#sants-montjuic-i-les-corts` (un grup de districtes), `/preguntes/#es-realment-gratuit` (una pregunta).
 
@@ -55,3 +57,5 @@ Cada ruta té un botó que obre, a pantalla completa, el mapa de My Maps on és 
 ## Dades
 
 Les rutes vénen de la web de Google Sites (publicada el 3 de novembre de 2026), que es va fer amb el full «Rutes per ciutat i curs» i els GPX. No s'han d'inventar dades: si en falta alguna, es deixa marcada amb `[PENDENT]`.
+
+Les 261 rutes de Barcelona pels parcs i jardins («Quan el món et preocupa», 5 de novembre de 2026) vénen del full «Rutes Barcelona - Parcs i jardins» (pestanyes «Rutes» i «Mapes») i de les fitxes dels 31 mapes de My Maps: el nom i l'adreça del punt d'inici, els km i el temps caminant i amb pauses. De les observacions del full només s'hi posen les que serveixen a qui camina (horaris, pendents, on comença la ruta).

@@ -47,7 +47,8 @@ def assign_maps(g, routes):
         if len(maps) == 1:
             m = maps[0]
         else:
-            found = [m for m in maps if r["n"] in (m.get("routes") or [])]
+            # "routes" pot dir el número de la ruta (5) o el seu id ("barri-sants-ruta-2")
+            found = [m for m in maps if r["n"] in (m.get("routes") or []) or r.get("id") in (m.get("routes") or [])]
             assert len(found) == 1, f"la ruta {r['n']} de «{g['title']}» ha de ser en un sol mapa (posa-la a \"routes\" del mapa)"
             m = found[0]
         r["map_url"] = map_viewer(m["mid"])
@@ -68,10 +69,21 @@ def add_zones(b, groups, course, cfg):
     """Si un bloc té molts mapes, hi posa un desplegable per saltar al districte,
     la zona o el mapa. Diversos grups (p. ex. un per districte): cada grup és una
     opció (o cada districte, si el grup en té diversos). Un sol grup amb diversos
-    mapes: cada mapa és una opció. Els textos es poden canviar amb "zones" a la
-    ciutat o al bloc: {"label": ..., "placeholder": ..., "back": ...}."""
+    mapes: cada mapa és una opció. Amb "zones": {"by": "district"} al bloc, una
+    opció per districte (camp "district" de cada grup). Els textos es poden canviar
+    amb "zones" a la ciutat o al bloc: {"label": ..., "placeholder": ..., "back": ...}."""
     options, targets = [], []
-    if len(groups) > 1:
+    if len(groups) > 1 and cfg.get("by") == "district":
+        # Diversos grups per districte (p. ex. un per mapa): una opció per districte,
+        # que porta al primer grup; cada mapa té l'enllaç per tornar al desplegable.
+        kind = "zona"
+        for g in groups:
+            d = g.get("district") or g["title"]
+            if d not in [o[0] for o in options]:
+                options.append((d, g["id"]))
+            if g["maps"]:
+                targets.append((g["maps"][0], g["title"]))
+    elif len(groups) > 1:
         kind = "zona"
         for g in groups:
             if g.get("sections"):
@@ -138,9 +150,12 @@ for c in site["cities"]:
             if g.get("sections"):
                 g["id"] = g.get("id") or slugify(g["title"])
                 for s in g["sections"]:
-                    s["id"] = slugify(s["title"])
+                    s["id"] = s.get("id") or slugify(s["title"])
+                    # Si un barri continua en un altre mapa, la secció nova porta un id propi
+                    # (barri-sants-2) i les rutes mantenen el del barri (barri-sants-ruta-6).
+                    prefix = s.get("route_prefix") or s["id"]
                     for r in s["routes"]:
-                        r["id"] = f"{s['id']}-ruta-{r['n']}"
+                        r["id"] = f"{prefix}-ruta-{r['n']}"
                     assign_maps(g, s["routes"])
                 g["count"] = sum(len(s["routes"]) for s in g["sections"])
             else:
