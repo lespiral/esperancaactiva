@@ -13,7 +13,7 @@
 <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@600;700&display=swap">
-  <link rel="stylesheet" href="assets/site.css?v=1793947415">
+  <link rel="stylesheet" href="assets/site.css?v=1793956712">
 </head>
 <body>
   <a class="skip" href="#contingut">Salta al contingut</a>
@@ -100,8 +100,16 @@
 .nus__tag--pain { --col: #b9c2be; color: var(--cmuted); background: rgba(255,255,255,.9); opacity: 1; transform: none; border-radius: 12px; }
 .nus__tag--pain.is-sel { box-shadow: 0 0 0 3px var(--cs); }
 .nus__tag--pain.nus--r { transform: translate(0, -50%); }
-.nus__tag--pain.nus--b { transform: translate(-50%, 0); }
+.nus__tag--pain.nus--b { transform: translate(-50%, 0); max-width: 250px; }
 .nus__tag--pain.nus--c { transform: translate(-50%, -50%); }
+.nus__tag--pain.nus--t { transform: translate(-50%, 0); max-width: 290px; }
+.nus__pl { display: block; }
+/* «es transformen en…»: surt sola al cap d'uns segons, sota «El dolor i la incertesa» */
+.nus__say { display: grid; grid-template-rows: 0fr; opacity: 0; transition: grid-template-rows .6s ease, opacity .5s .2s, margin-top .6s; }
+.nus__say-in { min-height: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; gap: .35em; color: var(--c6); font-family: var(--fb); font-style: italic; font-weight: 700; font-size: 1.04em; white-space: nowrap; }
+.nus__say-in svg { flex: none; width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.nus.is-say .nus__say { grid-template-rows: 1fr; opacity: 1; margin-top: 2px; }
+.nus.is-say .nus__tag--pain { border-color: #a3b5b0; }
 .nus__center {
   position: absolute; left: 0; top: 0; transform: translate(-50%, -50%) scale(.8); opacity: 0;
   width: var(--cw, 180px); text-align: center; padding: 6px; border: 0; background: none; cursor: pointer; -webkit-appearance: none; appearance: none;
@@ -114,9 +122,7 @@
 .nus__center:focus-visible { outline: 3px solid var(--c7); outline-offset: 2px; border-radius: 12px; }
 .nus__center.is-sel b { text-decoration: underline; text-decoration-color: var(--cs); text-decoration-thickness: 3px; text-underline-offset: 4px; }
 
-/* SVG */
-.nus__knot { transform-box: fill-box; transform-origin: center; animation: nus-wobble 2.4s ease-in-out infinite; transition: opacity 1s, transform 1s; }
-.nus.is-free .nus__knot { animation: none; opacity: .28; transform: scale(.72); }
+/* SVG (el nus es mou des del JavaScript: tremola, es desembolica i s'esvaeix) */
 .nus__fig { opacity: 0; transform: translateY(-16px); transition: opacity .6s, transform .8s cubic-bezier(.34, 1.4, .64, 1); }
 .nus__fig.is-on { opacity: 1; transform: none; }
 .nus__glow { opacity: 0; transition: opacity 1.2s; }
@@ -130,6 +136,7 @@
   opacity: 0; visibility: hidden; transform: translateY(6px); transition: opacity .2s, transform .2s, visibility .2s; z-index: 3;
 }
 .nus__pop.is-open { opacity: 1; visibility: visible; transform: none; }
+.nus__pk[hidden] { display: none; }
 .nus__pk { font: 700 11.5px/1.3 var(--fh); letter-spacing: .08em; text-transform: uppercase; color: var(--cs-ink); }
 .nus__pt { font: 700 16px/1.3 var(--fh); color: var(--c9); margin-top: 3px !important; }
 .nus__px { font-size: 15.5px; line-height: 1.45; color: var(--cmuted); margin-top: 3px !important; }
@@ -149,7 +156,6 @@
 .nus__replay svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
 .nus__replay[hidden] { display: none; }
 
-@keyframes nus-wobble { 0%, 100% { transform: rotate(-3deg) scale(1); } 50% { transform: rotate(3deg) scale(1.03); } }
 @media (prefers-reduced-motion: reduce) {
   .nus *, .nus *::before, .nus *::after { animation: none !important; transition: none !important; }
 }
@@ -163,17 +169,22 @@
   root.setAttribute("data-ready", "1");
 
   /* ---------- TEXTOS (de la web: «Què vol dir esperança activa?» i les preguntes de les passes) ---------- */
-  var PAIN = { label: "El dolor i la incertesa", kick: "On comences", title: "El dolor i la incertesa", text: "Què em pesa? Què necessita ser escoltat?" };
+  // «es transformen en», en plural: el dolor i la incertesa són dues coses
+  var PAIN = { label: "El dolor i la incertesa", say: "es transformen en", kick: "On comences", title: "El dolor i la incertesa", text: "Què em pesa? Què necessita ser escoltat?" };
+  // Els fils no porten avantítol al globus: «es transformen en…» ja surt al quadre de dalt
   var THREADS = [
-    { label: "Claredat", col: "#e2c668", kick: "Es transforma en", title: "Claredat", text: "Quina direcció voldria ajudar a fer possible?" },
-    { label: "Suport", col: "#2e7561", kick: "Es transforma en", title: "Suport", text: "Quines persones, llocs o recursos m'ajuden?" },
-    { label: "Acció", col: "#1a4d40", kick: "Es transforma en", title: "Acció significativa", text: "Quina acció petita, concreta i realista puc fer ara?" }
+    { label: "Claredat", col: "#e2c668", kick: "", title: "Claredat", text: "Quina direcció voldria ajudar a fer possible?" },
+    { label: "Suport", col: "#2e7561", kick: "", title: "Suport", text: "Quines persones, llocs o recursos m'ajuden?" },
+    { label: "Acció", col: "#1a4d40", kick: "", title: "Acció significativa", text: "Quina acció petita, concreta i realista puc fer ara?" }
   ];
   var CENTER = { title: "Esperança Activa", sub: "sostinguda per la comunitat", kick: "Què vol dir «esperança activa»?",
     text: "És el que proposa aquest recorregut: transformar el dolor i la incertesa en claredat, suport i acció significativa, sostinguda per la comunitat." };
 
-  /* ---------- RITME (ms) ---------- */
-  var T = { threads0: 700, threads1: 2100, free: 1200, braid0: 2100, braid1: 3600, figs0: 3500, figStep: 150, center: 4700, end: 5400 };
+  /* ---------- RITME (ms) ----------
+     El nus tremola (dolor) → surt «es transformen en…» → el nus es desembolica →
+     en surten els tres fils → la corda → les persones → Esperança Activa. */
+  var T = { say: 1600, loose0: 1900, loose1: 3500, threads0: 2800, threads1: 4200, fade0: 3200, fade1: 4400,
+            braid0: 4200, braid1: 5700, figs0: 5600, figStep: 150, center: 6800, end: 7500 };
   var TALL = 720;
 
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -217,20 +228,25 @@
       g.painLab = { x: g.K[0], y: g.K[1] + g.rk + 18, cls: "nus--b" };
     } else {
       // Mòbil: de dalt a baix
-      g.K = [W * .5, 100]; g.rk = 36;
-      g.B0 = [W * .5, 326]; g.R = Math.round(Math.min(W * .25, 95)); g.E = [W * .5, 388]; g.C = [W * .5, 388 + g.R];
+      // El quadre de dalt queda ancorat per dalt (té dues línies) i el nus baixa 16 px
+      g.K = [W * .5, 116]; g.rk = 36;
+      g.B0 = [W * .5, 330]; g.R = Math.round(Math.min(W * .25, 95)); g.E = [W * .5, 392]; g.C = [W * .5, 392 + g.R];
       g.dir = [0, 1]; g.spread = [W * .34, 0]; g.entry = -Math.PI / 2;
-      g.painLab = { x: g.K[0], y: 32, cls: "nus--c" };
+      g.painLab = { x: g.K[0], y: 12, cls: "nus--t" };
       H = Math.round(g.C[1] + g.R + 64);
     }
     g.H = H;
-    // El nus: una línia embolicada
-    var rnd = seeded(11), P = [];
-    for (var i = 0; i < 15; i++) { var a = i * 2.39996, r = g.rk * (.42 + .58 * rnd()); P.push([g.K[0] + Math.cos(a) * r, g.K[1] + Math.sin(a) * r]); }
-    g.knot = curve(P) + "Z";
-    var Q = [];
-    for (var j = 0; j < 11; j++) { var b = j * 2.6 + .7, rr = g.rk * (.3 + .5 * rnd()); Q.push([g.K[0] + Math.cos(b) * rr, g.K[1] + Math.sin(b) * rr]); }
-    g.knot2 = curve(Q) + "Z";
+    // El nus: dues línies embolicades (a0, r0). Cada punt sap on ha d'anar quan es desembolica (a1, r1):
+    // una anella tranquil·la, amb els punts en ordre al voltant del centre.
+    function loose(n, i, a0, r0, ph) {
+      var a1 = ph + i * 2 * Math.PI / n, d = a1 - a0;
+      d = d - 2 * Math.PI * Math.round(d / (2 * Math.PI));
+      return { a0: a0, r0: r0, a1: a0 + d, r1: g.rk * (.5 + .05 * Math.sin(2 * a1)) };
+    }
+    var rnd = seeded(11);
+    g.kP = []; g.kQ = [];
+    for (var i = 0; i < 15; i++) g.kP.push(loose(15, i, i * 2.39996, g.rk * (.42 + .58 * rnd()), 0));
+    for (var j = 0; j < 11; j++) g.kQ.push(loose(11, j, j * 2.6 + .7, g.rk * (.3 + .5 * rnd()), .3));
     // Tres fils que surten del nus i s'ajunten
     g.threads = [-1, 0, 1].map(function (o, i) {
       var p0 = g.K, p3 = g.B0, L = [p3[0] - p0[0], p3[1] - p0[1]];
@@ -278,7 +294,7 @@
       '<radialGradient id="nus-glow"><stop offset="0" stop-color="#f1e3b0" stop-opacity=".9"/><stop offset=".55" stop-color="#f8efd2" stop-opacity=".45"/><stop offset="1" stop-color="#fcf8ea" stop-opacity="0"/></radialGradient></defs>',
       '<rect width="' + W + '" height="' + H + '" fill="url(#nus-bg)"/>',
       '<circle class="nus__glow" cx="' + r1(G.C[0]) + '" cy="' + r1(G.C[1]) + '" r="' + r1(G.R * 2.2) + '" fill="url(#nus-glow)"/>',
-      '<g class="nus__knot" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="' + G.knot + '" stroke="#7f8b86" stroke-width="3"/><path d="' + G.knot2 + '" stroke="#a3afa9" stroke-width="2.2"/></g>'
+      '<g class="nus__knot" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="#7f8b86" stroke-width="3"/><path stroke="#a3afa9" stroke-width="2.2"/></g>'
     );
     G.threads.forEach(function (t, i) {
       out.push('<path class="nus__thread" d="' + t.d + '" pathLength="1" fill="none" stroke="' + THREADS[i].col + '" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="1 1" stroke-dashoffset="1"/>');
@@ -299,38 +315,87 @@
     svg.innerHTML = out.join("");
 
     var html = [];
-    html.push('<div class="nus__node" style="left:' + r1(G.painLab.x) + 'px;top:' + r1(G.painLab.y) + 'px"><button type="button" class="nus__tag nus__tag--pain ' + G.painLab.cls + '" data-k="pain">' + esc(PAIN.label) + '</button></div>');
+    // La fletxa de «es transformen en…» apunta cap on van els fils: avall al mòbil, a la dreta a l'ordinador
+    var arrow = G.tall ? "M12 4.5v15M6 13.5l6 6 6-6" : "M4.5 12h15M13.5 6l6 6-6 6";
+    html.push('<div class="nus__node" style="left:' + r1(G.painLab.x) + 'px;top:' + r1(G.painLab.y) + 'px"><button type="button" class="nus__tag nus__tag--pain ' + G.painLab.cls + '" data-k="pain">' +
+      '<span class="nus__pl">' + esc(PAIN.label) + '</span>' +
+      '<span class="nus__say"><span class="nus__say-in">' + esc(PAIN.say) + '…<svg viewBox="0 0 24 24" aria-hidden="true"><path d="' + arrow + '"/></svg></span></span></button></div>');
     G.threads.forEach(function (t, i) {
       html.push('<div class="nus__node" style="left:' + r1(t.mid[0]) + 'px;top:' + r1(t.mid[1]) + 'px"><button type="button" class="nus__tag" data-k="t' + i + '" style="--col:' + THREADS[i].col + '">' + esc(THREADS[i].label) + '</button></div>');
     });
     html.push('<div class="nus__node" style="left:' + r1(G.C[0]) + 'px;top:' + r1(G.C[1]) + 'px"><button type="button" class="nus__center" data-k="center"><b>' + esc(CENTER.title) + '</b><span>' + esc(CENTER.sub) + '</span></button></div>');
     nodesBox.innerHTML = html.join("");
 
+    G.knotEl = svg.querySelector(".nus__knot");
+    G.knotPaths = svg.querySelectorAll(".nus__knot path");
     G.threadEls = Array.prototype.slice.call(svg.querySelectorAll(".nus__thread"));
     G.strandEls = Array.prototype.slice.call(svg.querySelectorAll(".nus__strand"));
     G.figEls = Array.prototype.slice.call(svg.querySelectorAll(".nus__fig"));
     G.tags = Array.prototype.slice.call(nodesBox.querySelectorAll("[data-k^='t']"));
     G.center = nodesBox.querySelector(".nus__center");
     G.pain = nodesBox.querySelector(".nus__tag--pain");
+    fitPain();
     lastKey = "";
     apply();
     if (S.sel) openPop(S.sel);
   }
 
+  // El quadre del dolor no pot sortir per l'esquerra: a les pantalles més estretes de l'ordinador
+  // («es transformen en… →» va en una sola línia) es desplaça una mica cap a dins i,
+  // si llavors trepitja el globus d'«Acció», baixa fins a sota d'aquest globus.
+  function fitPain() {
+    if (!G || !G.pain) return;
+    var node = G.pain.parentNode, sr = scene.getBoundingClientRect();
+    node.style.left = r1(G.painLab.x) + "px";
+    node.style.top = r1(G.painLab.y) + "px";
+    var left = G.pain.getBoundingClientRect().left - sr.left;
+    if (left < 12) node.style.left = r1(G.painLab.x + 12 - left) + "px";
+    if (G.tall) return;
+    var pr = G.pain.getBoundingClientRect(), a = G.tags[2], am = G.threads[2].mid;
+    if (pr.right - sr.left + 8 > am[0] - a.offsetWidth / 2 && pr.top - sr.top < am[1] + a.offsetHeight / 2 + 8)
+      node.style.top = r1(am[1] + a.offsetHeight / 2 + 10) + "px";
+  }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitPain);
+
   /* ---------- ESTAT ---------- */
+  // El nus: primer tremola, embolicat; després es desembolica fins a fer una anella tranquil·la i s'esvaeix
+  // mentre en surten els fils. Amb «reduir moviment» es queda embolicat, quiet i esvaït.
+  function knot(t) {
+    var u = reduce ? 0 : ease((t - T.loose0) / (T.loose1 - T.loose0)), calm = reduce ? 0 : 1 - u, w = t / 1000;
+    var jit = G.rk * .08 * calm;
+    function pts(L, k) {
+      return L.map(function (p, i) {
+        var a = p.a0 + (p.a1 - p.a0) * u, r = p.r0 + (p.r1 - p.r0) * u;
+        return [G.K[0] + Math.cos(a) * r + Math.sin(w * 5.3 + i * 1.7 + k) * jit,
+                G.K[1] + Math.sin(a) * r + Math.cos(w * 4.4 + i * 2.3 + k) * jit];
+      });
+    }
+    G.knotPaths[0].setAttribute("d", curve(pts(G.kP, 0)) + "Z");
+    G.knotPaths[1].setAttribute("d", curve(pts(G.kQ, 1)) + "Z");
+    var f = ease((t - T.fade0) / (T.fade1 - T.fade0));
+    var rot = 5 * Math.sin(w * 2 * Math.PI / 1.5) * calm, sc = (1 + .04 * Math.sin(w * 2 * Math.PI / 1.1) * calm) * (1 - .2 * f);
+    G.knotEl.setAttribute("transform", "translate(" + r1(G.K[0]) + " " + r1(G.K[1]) + ") rotate(" + r1(rot) + ") scale(" + r3(sc) + ") translate(" + r1(-G.K[0]) + " " + r1(-G.K[1]) + ")");
+    G.knotEl.style.opacity = r3(1 - .66 * f);
+  }
+
   function apply() {
     if (!G) return;
     var t = S.t;
+    knot(t);
     var th = ease((t - T.threads0) / (T.threads1 - T.threads0));
-    G.threadEls.forEach(function (p, i) { p.setAttribute("stroke-dashoffset", r3(1 - clamp(th * 1.15 - i * .07, 0, 1))); });
+    G.threadEls.forEach(function (p, i) {
+      var off = 1 - clamp(th * 1.15 - i * .07, 0, 1);
+      p.setAttribute("stroke-dashoffset", r3(off));
+      p.style.opacity = off >= 1 ? 0 : 1; // sense el puntet de la punta abans d'hora
+    });
     var br = clamp((t - T.braid0) / (T.braid1 - T.braid0), 0, 1);
-    G.strandEls.forEach(function (p) { p.setAttribute("stroke-dashoffset", r3(1 - br)); });
+    G.strandEls.forEach(function (p) { p.setAttribute("stroke-dashoffset", r3(1 - br)); p.style.opacity = br > 0 ? 1 : 0; });
     var figsOn = G.figEls.map(function (f, i) { return t >= T.figs0 + i * T.figStep ? 1 : 0; }).join("");
     var tagsOn = G.tags.map(function (g, i) { return th * 1.15 - i * .07 >= .55 ? 1 : 0; }).join("");
-    var key = [t >= T.free, figsOn, tagsOn, t >= T.center, t >= T.end, S.sel].join("|");
+    var key = [t >= T.say, figsOn, tagsOn, t >= T.center, t >= T.end, S.sel].join("|");
     if (key === lastKey) return;
     lastKey = key;
-    root.classList.toggle("is-free", t >= T.free);
+    root.classList.toggle("is-say", t >= T.say);
     root.classList.toggle("is-done", t >= T.end);
     G.figEls.forEach(function (f, i) { f.classList.toggle("is-on", figsOn.charAt(i) === "1"); });
     G.tags.forEach(function (g, i) { g.classList.toggle("is-on", tagsOn.charAt(i) === "1"); g.classList.toggle("is-sel", S.sel === "t" + i); });
@@ -345,7 +410,9 @@
     var d = k === "pain" ? PAIN : k === "center" ? CENTER : THREADS[+k.slice(1)];
     var el = nodesBox.querySelector('[data-k="' + k + '"]'), r = el.getBoundingClientRect(), sr = scene.getBoundingClientRect();
     var at = [r.left - sr.left + r.width / 2, r.top - sr.top + r.height / 2], half = r.height / 2 + 10;
-    pop.querySelector(".nus__pk").textContent = d.kick;
+    var pk = pop.querySelector(".nus__pk");
+    pk.textContent = d.kick;
+    pk.hidden = !d.kick; // els fils no en porten: «es transformen en…» ja surt al quadre de dalt
     pop.querySelector(".nus__pt").textContent = d.title;
     pop.querySelector(".nus__px").textContent = d.text;
     pop.classList.add("is-open");
@@ -1496,6 +1563,6 @@
     </div>
   </footer>
 
-  <script src="assets/site.js?v=1793947415" defer></script>
+  <script src="assets/site.js?v=1793956712" defer></script>
 </body>
 </html>
