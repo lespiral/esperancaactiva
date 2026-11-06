@@ -56,18 +56,18 @@ Cada bloc de curs d'una ciutat té una adreça pròpia:
 
 - `/barcelona/#quan-la-vida` (rutes des dels CAP i rutes «Caminant fem salut»; cada part té la seva adreça: `/barcelona/#rutes-cap` i `/barcelona/#caminant-fem-salut`), `/barcelona/#quan-cuidar-nos` (equipaments comunitaris), `/barcelona/#quan-el-mon` (parcs i jardins)
 - `/el-prat/#quan-la-vida`, `/el-prat/#quan-cuidar-nos`, `/el-prat/#quan-el-mon`
-- `/vic/#quan-la-vida` (rutes des dels CAP i hospitals, 24 a 28), `/vic/#quan-el-mon`
+- `/vic/#quan-la-vida` (rutes des dels CAP i hospitals, 24 a 28), `/vic/#quan-cuidar-nos` (rutes des dels equipaments comunitaris, 1 a 16, amb numeració pròpia), `/vic/#quan-el-mon`
 - `/olot/#quan-la-vida` (rutes des dels CAP i l'hospital, 1 a 4, i rutes saludables PAFES, 5 a 13)
 
 I cada ruta, la seva (el desplegable s'obre sol):
 
-- `/vic/#quan-el-mon-ruta-5`, `/vic/#quan-la-vida-ruta-24`, `/el-prat/#quan-la-vida-ruta-12`, `/olot/#quan-la-vida-ruta-2`
+- `/vic/#quan-el-mon-ruta-5`, `/vic/#quan-la-vida-ruta-24`, `/vic/#quan-cuidar-nos-ruta-3`, `/el-prat/#quan-la-vida-ruta-12`, `/olot/#quan-la-vida-ruta-2`
 - Barcelona, rutes «Caminant fem salut» (Quan la vida), per districte: `/barcelona/#ciutat-vella-ruta-1`, `/barcelona/#gracia-ruta-3`. Fins al 6 de novembre de 2026 eren a «Quan cuidar-nos»: les adreces no han canviat.
 - Barcelona, equipaments comunitaris (Quan cuidar-nos): un districte `/barcelona/#equipaments-gracia` (el seu mapa; Sant Martí en té dos: `/barcelona/#equipaments-sant-marti` i `/barcelona/#equipaments-sant-marti-mapa-2`), un barri `/barcelona/#equipaments-el-raval` i una ruta `/barcelona/#equipaments-el-raval-ruta-2`. Les rutes es numeren per barri, com als mapes.
 - Barcelona, rutes des dels CAP (Quan la vida): `/barcelona/#cap-gracia-ruta-6`; el mapa i el desplegable d'un districte: `/barcelona/#cap-gracia`
 - Barcelona, parcs i jardins (Quan el món): un districte `/barcelona/#parcs-gracia` (el seu primer mapa), un mapa `/barcelona/#parcs-eixample-mapa-3`, un barri `/barcelona/#barri-la-vila-de-gracia` i una ruta `/barcelona/#barri-el-raval-ruta-1`. Les rutes es numeren per barri, com als mapes. Si un barri continua al mapa següent, les seves rutes mantenen l'adreça del barri (`/barcelona/#barri-el-fort-pienc-ruta-10`).
 
-Altres: `/vic/#quan-el-mon-rutes-21-a-23` (un mapa de Vic), `/vic/#quan-el-mon-rutes` (la llista de rutes), `/barcelona/#sants-montjuic-i-les-corts` (un grup de districtes), `/preguntes/#es-realment-gratuit` (una pregunta).
+Altres: `/vic/#quan-el-mon-rutes-21-a-23` i `/vic/#quan-cuidar-nos-rutes-9-a-16` (un mapa de Vic), `/vic/#quan-el-mon-rutes` (la llista de rutes), `/barcelona/#sants-montjuic-i-les-corts` (un grup de districtes), `/preguntes/#es-realment-gratuit` (una pregunta).
 
 ## El botó «Obre el mapa»
 
@@ -78,5 +78,7 @@ Cada ruta té un botó que obre, a pantalla completa, el mapa de My Maps on és 
 Les rutes vénen de la web de Google Sites (publicada el 3 de novembre de 2026), que es va fer amb el full «Rutes per ciutat i curs» i els GPX. No s'han d'inventar dades: si en falta alguna, es deixa marcada amb `[PENDENT]`.
 
 Les 65 rutes de Barcelona des dels equipaments comunitaris («Quan cuidar-nos és una tasca col·lectiva», 6 de novembre de 2026) vénen del full «Rutes Barcelona - Prescripció social» (pestanyes «Rutes» i «Mapes») i de les fitxes dels 11 mapes de My Maps: el nom i l'adreça del punt d'inici, els km, el temps caminant i amb pauses i, de l'apartat «Accessibilitat i seguretat», només els avisos que no són de tots els recorreguts (escales, desnivell, parcs amb horari). Les 42 rutes que abans eren en aquest curs són ara a «Quan la vida», en una part pròpia: són una adaptació dels itineraris urbans «Caminant fem salut» publicats al Canal Salut (https://canalsalut.gencat.cat/.content/_Vida_saludable/Activitat_fisica/Rutes_saludables/rutes-pel-districte.pdf).
+
+Les 16 rutes de Vic des dels equipaments comunitaris («Quan cuidar-nos és una tasca col·lectiva», 6 de novembre de 2026) vénen de les fitxes dels 2 mapes de My Maps «Rutes d’Esperança Activa - Vic · equipaments comunitaris» (rutes 1–8 i 9–16): el nom i l’adreça del punt d’inici, els km, el temps caminant i amb pauses i, de l’apartat «Accessibilitat i seguretat», els trams de terra, d’escales o per carretera i els pendents. Tenen numeració pròpia (1 a 16), diferent de la dels parcs (1 a 23) i de la dels CAP i hospitals (24 a 28).
 
 Les 261 rutes de Barcelona pels parcs i jardins («Quan el món et preocupa», 5 de novembre de 2026) vénen del full «Rutes Barcelona - Parcs i jardins» (pestanyes «Rutes» i «Mapes») i de les fitxes dels 31 mapes de My Maps: el nom i l'adreça del punt d'inici, els km i el temps caminant i amb pauses. De les observacions del full només s'hi posen les que serveixen a qui camina (horaris, pendents, on comença la ruta).

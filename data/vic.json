@@ -2,7 +2,7 @@
   "slug": "vic",
   "name": "Vic",
   "region": "Osona",
-  "summary": "28 rutes curtes i circulars, pels parcs i des dels CAP i hospitals.",
+  "summary": "44 rutes curtes i circulars: pels parcs, des dels CAP i hospitals i des dels equipaments comunitaris.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
   "blocks": [
     {
@@ -64,7 +64,140 @@
     },
     {
       "course": "cuidar",
-      "text": "Encara no hi ha rutes d'aquest curs a Vic. Mentrestant, pots fer el temps de reflexió de cada passa caminant a prop de casa o en un lloc tranquil."
+      "text": "16 rutes circulars curtes, d’1,8 a 2 km (uns 20–30 minuts caminant), que surten d’un equipament comunitari de Vic i hi tornen: casals i centres cívics, una biblioteca, un espai comunitari i equipaments culturals. Tria el que tinguis més a prop i fes-hi el temps de reflexió de cada passa. Al mapa, cada ruta té la seva fitxa amb el recorregut.",
+      "groups": [
+        {
+          "title": "Les 16 rutes",
+          "maps": [
+            {
+              "mid": "1MhJWnw5c16HUV0TefeKqpTPj5hIycj4",
+              "title": "Vic · equipaments comunitaris, rutes 1-8",
+              "ll": "41.9258,2.2545",
+              "z": 14,
+              "label": "Rutes 1 a 8",
+              "routes": [1, 2, 3, 4, 5, 6, 7, 8]
+            },
+            {
+              "mid": "1-cn9Dpl0WroEGDrblPM73fXrs25qT7s",
+              "title": "Vic · equipaments comunitaris, rutes 9-16",
+              "ll": "41.9291,2.2422",
+              "z": 13,
+              "label": "Rutes 9 a 16",
+              "routes": [9, 10, 11, 12, 13, 14, 15, 16]
+            }
+          ],
+          "routes": [
+            {
+              "n": 1,
+              "name": "Casal Cívic i Comunitari Vic – La Rambla",
+              "info": "1,96 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+              "address": "Rambla de l’Hospital, 15, Vic"
+            },
+            {
+              "n": 2,
+              "name": "Casal Cívic i Comunitari Vic – Mossèn Josep Guiteras",
+              "info": "1,98 km · 23–30 min caminant · 35–50 min amb pauses · circular",
+              "address": "Carrer de la Soledat, 13, Vic"
+            },
+            {
+              "n": 3,
+              "name": "Centre Cívic Can Pau Raba",
+              "info": "1,98 km · 23–30 min caminant · 35–50 min amb pauses · circular",
+              "address": "Carrer del Raval Cortines, 24, Vic"
+            },
+            {
+              "n": 4,
+              "name": "Centre Cívic Santa Anna",
+              "info": "1,98 km · 23–30 min caminant · 35–50 min amb pauses · circular",
+              "address": "Carrer de Tagamanent, 1, Vic",
+              "note": "Té uns 280 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja."
+            },
+            {
+              "n": 5,
+              "name": "Biblioteca Pilarin Bayés",
+              "info": "1,99 km · 23–30 min caminant · 35–50 min amb pauses · circular",
+              "address": "Passeig de la Generalitat, 1, Vic",
+              "note": "Té uns 130 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja."
+            },
+            {
+              "n": 6,
+              "name": "Espai Comunitari Remei–Estadi",
+              "info": "1,88 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+              "address": "Passeig de la Generalitat, 31, Vic",
+              "note": "Té algun tram curt d’escales i uns 120 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja."
+            },
+            {
+              "n": 7,
+              "name": "Centre Cívic Plaça d’Osona",
+              "info": "1,98 km · 23–30 min caminant · 35–50 min amb pauses · circular",
+              "address": "Plaça d’Osona, 3, Vic",
+              "note": "Té uns 100 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja."
+            },
+            {
+              "n": 8,
+              "name": "Centre Cívic El Montseny",
+              "info": "2,02 km · 24–30 min caminant · 35–50 min amb pauses · circular",
+              "address": "Avinguda del Montseny, 16, Vic",
+              "note": "Té algun tram curt d’escales i uns 110 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja."
+            },
+            {
+              "n": 9,
+              "name": "Centre Cívic Serra-de-senferm",
+              "info": "1,80 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+              "address": "Carrer de la Riera Major, 2, Vic"
+            },
+            {
+              "n": 10,
+              "name": "Centre Cívic La Guixa (Sentfores)",
+              "info": "1,98 km · 23–30 min caminant · 35–50 min amb pauses · circular",
+              "address": "Carrer del Pla del Maset, s/n, Vic",
+              "note": "Té un tram per la carretera BV-4316, on cal caminar amb precaució. També té algun tram curt d’escales i uns 430 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja."
+            },
+            {
+              "n": 11,
+              "name": "Centre Cívic Joan Triadú",
+              "info": "1,99 km · 23–30 min caminant · 35–50 min amb pauses · circular",
+              "address": "Carrer de l’Arquebisbe Alemany, 5, Vic"
+            },
+            {
+              "n": 12,
+              "name": "Espai ETC",
+              "info": "1,82 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+              "address": "Passeig de la Generalitat, 46, Vic",
+              "note": "Té uns 180 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja."
+            },
+            {
+              "n": 13,
+              "name": "La Central",
+              "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+              "address": "Plaça de Vicenç Albert Ballester, s/n, Vic",
+              "note": "Recorregut amb alguns pendents."
+            },
+            {
+              "n": 14,
+              "name": "ACVIC Centre d’Arts Contemporànies",
+              "info": "1,98 km · 23–30 min caminant · 35–50 min amb pauses · circular",
+              "address": "Carrer de Sant Francesc, 1, Vic",
+              "note": "Recorregut amb alguns pendents. Passa pels camins del parc de Sant Julià d’Auvèrnia."
+            },
+            {
+              "n": 15,
+              "name": "L’Atlàntida – Centre d’Arts Escèniques d’Osona",
+              "info": "1,90 km · 22–29 min caminant · 30–50 min amb pauses · circular",
+              "address": "Carrer de Francesc Maria Masferrer, 4, Vic",
+              "note": "Recorregut amb alguns pendents."
+            },
+            {
+              "n": 16,
+              "name": "L’Orfeó",
+              "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+              "address": "Carrer de Sant Pere, 7, Vic",
+              "note": "Passa pels camins del parc de la Bassa dels Germans Maristes."
+            }
+          ]
+        }
+      ],
+      "summary": "16 rutes des dels equipaments comunitaris"
     },
     {
       "course": "mon",
