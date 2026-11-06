@@ -2,925 +2,1800 @@
   "slug": "barcelona",
   "name": "Barcelona",
   "region": "Barcelonès",
-  "summary": "357 rutes repartides pels 10 districtes de la ciutat.",
+  "summary": "422 rutes repartides pels 10 districtes de la ciutat.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
-  "zones": {"label": "Vés directament al teu districte", "placeholder": "Tria un districte", "back": "Canvia de districte"},
+  "zones": {
+    "label": "Vés directament al teu districte",
+    "placeholder": "Tria un districte",
+    "back": "Canvia de districte"
+  },
   "blocks": [
     {
       "course": "vida",
-      "text": "54 rutes circulars curtes, d'uns 2 km i mitja hora caminant, que surten dels centres d'atenció primària (CAP) dels 10 districtes de la ciutat. Tria el teu districte i obre'n la llista.",
-      "groups": [
+      "text": "Hi ha dos tipus de rutes: 54 rutes curtes que surten dels CAP i, a part, 42 rutes més llargues que surten de places, parcs i equipaments de la ciutat. Tria les que et vagin millor.",
+      "summary": "96 rutes: 54 des dels CAP i 42 més",
+      "parts": [
         {
-          "id": "cap-ciutat-vella",
-          "title": "Ciutat Vella",
-          "maps": [
-            {
-              "mid": "1jzdLL0XUmxc7lIYMSsoPdXBJj9RIdlo",
-              "title": "Barcelona · Ciutat Vella · rutes des dels CAP",
-              "ll": "41.3859,2.1772",
-              "z": 14,
-              "label": "Ciutat Vella · 5 rutes des dels CAP"
-            }
-          ],
-          "routes": [
-            {
-              "n": 5,
-              "name": "CAP Barceloneta",
-              "info": "2,21 km · 26–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Passeig Marítim de la Barceloneta - Oriol Bohigas i Guardiola, 25, Barcelona",
-              "dest": "41.38337,2.19482"
-            },
-            {
-              "n": 6,
-              "name": "CAP Casc Antic",
-              "info": "2,14 km · 26–32 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer del Rec Comtal, 24, Barcelona",
-              "dest": "41.39052,2.18055"
-            },
-            {
-              "n": 7,
-              "name": "CAP Doctor Lluís Sayé",
-              "info": "2,18 km · 26–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de Torres i Amat, 8, Barcelona",
-              "dest": "41.38421,2.16499"
-            },
-            {
-              "n": 8,
-              "name": "CAP Drassanes",
-              "info": "2,18 km · 26–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Avinguda de les Drassanes, 17, Barcelona",
-              "dest": "41.37652,2.17349"
-            },
-            {
-              "n": 9,
-              "name": "CAP Gòtic",
-              "info": "2,21 km · 27–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Passatge de la Pau, 1, Barcelona",
-              "dest": "41.37888,2.17695"
-            }
-          ]
-        },
-        {
-          "id": "cap-eixample",
-          "title": "Eixample",
-          "maps": [
-            {
-              "mid": "19OnQBXFs6kcsubQeZtZOWnWrSoX2f6A",
-              "title": "Barcelona · Eixample · rutes des dels CAP",
-              "ll": "41.3972,2.1587",
-              "z": 13,
-              "label": "Eixample · 6 rutes des dels CAP"
-            }
-          ],
-          "routes": [
-            {
-              "n": 6,
-              "name": "CAP Casanova",
-              "info": "2,12 km · 25–32 min caminant · 35–50 min amb pauses · circular",
-              "address": "Carrer del Rosselló, 161, Barcelona",
-              "dest": "41.39036,2.15339"
-            },
-            {
-              "n": 7,
-              "name": "CAP Comte Borrell",
-              "info": "2,18 km · 26–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer del Comte Borrell, 305, Barcelona",
-              "dest": "41.38971,2.14623"
-            },
-            {
-              "n": 8,
-              "name": "CAP Manso",
-              "info": "2,27 km · 27–34 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de Manso, 19, Barcelona",
-              "dest": "41.37642,2.16024"
-            },
-            {
-              "n": 9,
-              "name": "CAP Passeig de Sant Joan",
-              "info": "2,2 km · 26–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Passeig de Sant Joan, 20, Barcelona",
-              "dest": "41.39252,2.17877"
-            },
-            {
-              "n": 10,
-              "name": "CAP Roger de Flor",
-              "info": "2,23 km · 27–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de Roger de Flor, 194, Barcelona",
-              "dest": "41.39860,2.17290"
-            },
-            {
-              "n": 11,
-              "name": "CAP Sagrada Família",
-              "info": "2,23 km · 27–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de Còrsega, 643, Barcelona",
-              "dest": "41.41008,2.17670"
-            }
-          ]
-        },
-        {
-          "id": "cap-sants-montjuic",
-          "title": "Sants-Montjuïc",
-          "maps": [
-            {
-              "mid": "1kXZlLYDA9NMeLfBmHoizXrELQ92L4GY",
-              "title": "Barcelona · Sants-Montjuïc · rutes des dels CAP",
-              "ll": "41.3751,2.1478",
-              "z": 13,
-              "label": "Sants-Montjuïc · 7 rutes des dels CAP"
-            }
-          ],
-          "routes": [
-            {
-              "n": 7,
-              "name": "CAP Bordeta-Magòria",
-              "info": "2,25 km · 27–34 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer del Corral, 41, Barcelona",
-              "dest": "41.36919,2.13951"
-            },
-            {
-              "n": 8,
-              "name": "CAP Doctor Carles Ribas",
-              "info": "2,28 km · 27–34 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer del Foc, 112, Barcelona",
-              "dest": "41.35814,2.14450"
-            },
-            {
-              "n": 9,
-              "name": "CAP La Marina",
-              "info": "2,22 km · 27–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de l’Amnistia Internacional, 8, Barcelona",
-              "dest": "41.36188,2.13632"
-            },
-            {
-              "n": 10,
-              "name": "CAP Les Hortes",
-              "info": "2,1 km · 25–31 min caminant · 35–50 min amb pauses · circular",
-              "address": "Carrer Nou de la Rambla, 169, Barcelona",
-              "dest": "41.37175,2.16670"
-            },
-            {
-              "n": 11,
-              "name": "CAP Numància",
-              "info": "2,15 km · 26–32 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de Numància, 15, Barcelona",
-              "dest": "41.38190,2.14073"
-            },
-            {
-              "n": 12,
-              "name": "CAP Roger",
-              "info": "2,26 km · 27–34 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de Roger, 48, Barcelona",
-              "dest": "41.37724,2.12805"
-            },
-            {
-              "n": 13,
-              "name": "CAP Sants",
-              "info": "2,12 km · 25–32 min caminant · 35–50 min amb pauses · circular",
-              "address": "Passatge del Vapor Vell, 6, Barcelona",
-              "dest": "41.37686,2.13516"
-            }
-          ]
-        },
-        {
-          "id": "cap-les-corts",
-          "title": "Les Corts",
-          "maps": [
-            {
-              "mid": "1pJC_4DyDizT_mpHBuoZ4uKjrBulLiik",
-              "title": "Barcelona · Les Corts · rutes des dels CAP",
-              "ll": "41.3867,2.1345",
-              "z": 15,
-              "label": "Les Corts · 2 rutes des dels CAP"
-            }
-          ],
-          "routes": [
-            {
-              "n": 4,
-              "name": "CAP Les Corts",
-              "info": "2,08 km · 25–31 min caminant · 35–50 min amb pauses · circular",
-              "address": "Carrer de Mejía Lequerica, 1, Barcelona",
-              "dest": "41.38370,2.12550"
-            },
-            {
-              "n": 5,
-              "name": "CAP Montnegre",
-              "info": "2,09 km · 25–31 min caminant · 35–50 min amb pauses · circular",
-              "address": "Carrer del Montnegre, 21, Barcelona",
-              "dest": "41.38748,2.13885"
-            }
-          ]
-        },
-        {
-          "id": "cap-sarria-sant-gervasi",
-          "title": "Sarrià-Sant Gervasi",
-          "maps": [
-            {
-              "mid": "1uwcW6ohMTSpUY8WAtDyDpMwhaBHyHrE",
-              "title": "Barcelona · Sarrià-Sant Gervasi · rutes des dels CAP",
-              "ll": "41.4178,2.1168",
-              "z": 13,
-              "label": "Sarrià-Sant Gervasi · 4 rutes des dels CAP"
-            }
-          ],
-          "routes": [
-            {
-              "n": 6,
-              "name": "CAP Adrià",
-              "info": "2,25 km · 27–34 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de Vallmajor, 34, Barcelona",
-              "dest": "41.40067,2.13872"
-            },
-            {
-              "n": 7,
-              "name": "CAP Les Planes",
-              "info": "2,16 km · 26–32 min caminant · 40–50 min amb pauses · circular",
-              "address": "Passeig de Solé i Pla, 16, Barcelona",
-              "dest": "41.42716,2.08867",
-              "note": "Per carrers de barri i camins de Collserola, amb trams de terra i sense vorera. Té pendents pronunciats (uns 100 m de pujada)."
-            },
-            {
-              "n": 8,
-              "name": "CAP Sarrià",
-              "info": "2,17 km · 26–32 min caminant · 40–50 min amb pauses · circular",
-              "address": "Via Augusta, 366, Barcelona",
-              "dest": "41.40188,2.12145"
-            },
-            {
-              "n": 9,
-              "name": "CAP Vallvidrera",
-              "info": "2,17 km · 26–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer d’Elisa Moragas i Badia, 2, Barcelona",
-              "dest": "41.41378,2.10411",
-              "note": "Per carrers de barri i camins de Collserola, amb trams de terra i sense vorera. Té pendents pronunciats (uns 120 m de pujada)."
-            }
-          ]
-        },
-        {
-          "id": "cap-gracia",
-          "title": "Gràcia",
-          "maps": [
-            {
-              "mid": "1T_rTk2zYe_Ojb9h04jRqHk5-1FZlBsQ",
-              "title": "Barcelona · Gràcia · rutes des dels CAP",
-              "ll": "41.4096,2.1534",
-              "z": 14,
-              "label": "Gràcia · 5 rutes des dels CAP"
-            }
-          ],
-          "routes": [
-            {
-              "n": 5,
-              "name": "CAP Larrard",
-              "info": "2,18 km · 26–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Travessera de Dalt, 79, Barcelona",
-              "dest": "41.41039,2.15621"
-            },
-            {
-              "n": 6,
-              "name": "CAP Pare Claret",
-              "info": "2,13 km · 26–32 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de Sant Antoni Maria Claret, 19, Barcelona",
-              "dest": "41.40395,2.16472"
-            },
-            {
-              "n": 7,
-              "name": "CAP Sanllehy",
-              "info": "2,31 km · 28–35 min caminant · 40–55 min amb pauses · circular",
-              "address": "Avinguda de la Mare de Déu de Montserrat, 16, Barcelona",
-              "dest": "41.41343,2.16100"
-            },
-            {
-              "n": 8,
-              "name": "CAP Vallcarca-Sant Gervasi",
-              "info": "2,29 km · 27–34 min caminant · 40–50 min amb pauses · circular",
-              "address": "Avinguda de Vallcarca, 169, Barcelona",
-              "dest": "41.41574,2.14188"
-            },
-            {
-              "n": 9,
-              "name": "CAP Vila de Gràcia – Cibeles",
-              "info": "2,14 km · 26–32 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de Còrsega, 363, Barcelona",
-              "dest": "41.39860,2.16208"
-            }
-          ]
-        },
-        {
-          "id": "cap-horta-guinardo",
-          "title": "Horta-Guinardó",
-          "maps": [
-            {
-              "mid": "1T2Y-tdBOQH72TaV1ksQNqApX4wVe0r4",
-              "title": "Barcelona · Horta-Guinardó · rutes des dels CAP",
-              "ll": "41.4219,2.1633",
-              "z": 14,
-              "label": "Horta-Guinardó · 5 rutes des dels CAP"
-            }
-          ],
-          "routes": [
-            {
-              "n": 5,
-              "name": "CAP El Carmel",
-              "info": "2,24 km · 27–34 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de la Murtra, 130, Barcelona",
-              "dest": "41.42088,2.15509",
-              "note": "Té pendents pronunciats (uns 100 m de pujada) i algun tram d'escales."
-            },
-            {
-              "n": 6,
-              "name": "CAP Guinardó",
-              "info": "2,24 km · 27–34 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de Teodor Llorente, 26, Barcelona",
-              "dest": "41.41896,2.17893"
-            },
-            {
-              "n": 7,
-              "name": "CAP Horta",
-              "info": "2,28 km · 27–34 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de Lisboa, 35, Barcelona",
-              "dest": "41.42891,2.15703"
-            },
-            {
-              "n": 8,
-              "name": "CAP Sant Rafael",
-              "info": "2,16 km · 26–32 min caminant · 40–50 min amb pauses · circular",
-              "address": "Passeig de la Vall d’Hebron, 107, Barcelona",
-              "dest": "41.42655,2.14278"
-            },
-            {
-              "n": 9,
-              "name": "CAP Sardenya",
-              "info": "2,17 km · 26–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de Sardenya, 466, Barcelona",
-              "dest": "41.40952,2.16524"
-            }
-          ]
-        },
-        {
-          "id": "cap-nou-barris",
-          "title": "Nou Barris",
-          "maps": [
-            {
-              "mid": "1MBsS-L1IqAmjllJBOQ_JX4lhSNFWZEw",
-              "title": "Barcelona · Nou Barris · rutes des dels CAP",
-              "ll": "41.4479,2.1757",
-              "z": 13,
-              "label": "Nou Barris · 7 rutes des dels CAP"
-            }
-          ],
-          "routes": [
-            {
-              "n": 5,
-              "name": "CAP Chafarinas",
-              "info": "2,08 km · 25–31 min caminant · 35–50 min amb pauses · circular",
-              "address": "Via Favència, 297, Barcelona",
-              "dest": "41.44672,2.18343"
-            },
-            {
-              "n": 6,
-              "name": "CAP Ciutat Meridiana",
-              "info": "2,23 km · 27–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de Sant Feliu de Codines, 2, Barcelona",
-              "dest": "41.46027,2.18145",
-              "note": "Té pendents pronunciats (uns 120 m de pujada)."
-            },
-            {
-              "n": 7,
-              "name": "CAP Guineueta",
-              "info": "2,19 km · 26–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Passeig de Valldaura, 135, Barcelona",
-              "dest": "41.43932,2.16615"
-            },
-            {
-              "n": 8,
-              "name": "CAP Rio de Janeiro",
-              "info": "2,31 km · 28–35 min caminant · 40–55 min amb pauses · circular",
-              "address": "Avinguda de Rio de Janeiro, 83, Barcelona",
-              "dest": "41.43964,2.18194"
-            },
-            {
-              "n": 9,
-              "name": "CAP Roquetes",
-              "info": "2,13 km · 26–32 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de Garigliano, 23, Barcelona",
-              "dest": "41.44610,2.17395"
-            },
-            {
-              "n": 10,
-              "name": "CAP Turó de la Peira",
-              "info": "2,16 km · 26–32 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer del Cadí, 58, Barcelona",
-              "dest": "41.43330,2.17067"
-            },
-            {
-              "n": 11,
-              "name": "Centre Integral de Salut Cotxeres",
-              "info": "2,21 km · 26–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Avinguda dels Quinze, 18, Barcelona",
-              "dest": "41.42612,2.17615"
-            }
-          ]
-        },
-        {
-          "id": "cap-sant-andreu",
-          "title": "Sant Andreu",
-          "maps": [
-            {
-              "mid": "1XTyCyHTE_QwAbSLcLlCyJT8c6M-wYBw",
-              "title": "Barcelona · Sant Andreu · rutes des dels CAP",
-              "ll": "41.4397,2.1944",
-              "z": 13,
-              "label": "Sant Andreu · 5 rutes des dels CAP"
-            }
-          ],
-          "routes": [
-            {
-              "n": 4,
-              "name": "CAP Bon Pastor",
-              "info": "2,12 km · 25–32 min caminant · 35–50 min amb pauses · circular",
-              "address": "Passeig de Mollerussa, 67, Barcelona",
-              "dest": "41.43893,2.20641"
-            },
-            {
-              "n": 5,
-              "name": "CAP Casernes",
-              "info": "2,26 km · 27–34 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de Fernando Pessoa, 47, Barcelona",
-              "dest": "41.44315,2.19297"
-            },
-            {
-              "n": 6,
-              "name": "CAP La Sagrera",
-              "info": "2,23 km · 27–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de Garcilaso, 1, Barcelona",
-              "dest": "41.42257,2.19056"
-            },
-            {
-              "n": 7,
-              "name": "CAP Sant Andreu",
-              "info": "2,16 km · 26–32 min caminant · 40–50 min amb pauses · circular",
-              "address": "Avinguda Meridiana, 426, Barcelona",
-              "dest": "41.43326,2.18355"
-            },
-            {
-              "n": 8,
-              "name": "CAP Trinitat Vella",
-              "info": "2,19 km · 26–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Via de Bàrcino, 88, Barcelona",
-              "dest": "41.45109,2.19284",
-              "note": "Inclou algun tram d'escales."
-            }
-          ]
-        },
-        {
-          "id": "cap-sant-marti",
-          "title": "Sant Martí",
-          "maps": [
-            {
-              "mid": "1hfE-8NbdsRnmbRdXBXXSptDJa1dBGy0",
-              "title": "Barcelona · Sant Martí · rutes des dels CAP",
-              "ll": "41.4105,2.1997",
-              "z": 13,
-              "label": "Sant Martí · 8 rutes des dels CAP"
-            }
-          ],
-          "routes": [
-            {
-              "n": 5,
-              "name": "CAP Besòs",
-              "info": "2,24 km · 27–34 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer d’Alfons el Magnànim, 57, Barcelona",
-              "dest": "41.41548,2.21550",
-              "note": "Inclou algun tram d'escales."
-            },
-            {
-              "n": 6,
-              "name": "CAP El Clot",
-              "info": "2,19 km · 26–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer del Concili de Trento, 25, Barcelona",
-              "dest": "41.41178,2.19329"
-            },
-            {
-              "n": 7,
-              "name": "CAP La Pau",
-              "info": "2,11 km · 25–32 min caminant · 35–50 min amb pauses · circular",
-              "address": "Carrer de Pere Vergés, 3, Barcelona",
-              "dest": "41.42331,2.20852"
-            },
-            {
-              "n": 8,
-              "name": "CAP Passeig Maragall",
-              "info": "2,18 km · 26–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Passeig de Maragall, 52, Barcelona",
-              "dest": "41.41576,2.18060"
-            },
-            {
-              "n": 9,
-              "name": "CAP Poblenou",
-              "info": "2,31 km · 28–35 min caminant · 40–55 min amb pauses · circular",
-              "address": "Carrer de Lope de Vega, 138, Barcelona",
-              "dest": "41.40575,2.20203"
-            },
-            {
-              "n": 10,
-              "name": "CAP Ramon Turró",
-              "info": "2,2 km · 26–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de Ramon Turró, 337, Barcelona",
-              "dest": "41.40605,2.21108"
-            },
-            {
-              "n": 11,
-              "name": "CAP Sant Martí",
-              "info": "2,31 km · 28–35 min caminant · 40–55 min amb pauses · circular",
-              "address": "Carrer de Fluvià, 211, Barcelona",
-              "dest": "41.41423,2.19736"
-            },
-            {
-              "n": 12,
-              "name": "CAP Vila Olímpica",
-              "info": "2,28 km · 27–34 min caminant · 40–50 min amb pauses · circular",
-              "address": "Carrer de Joan Miró, 17, Barcelona",
-              "dest": "41.39034,2.19502"
-            }
-          ]
-        }
-      ],
-      "summary": "54 rutes des dels CAP"
-    },
-    {
-      "course": "cuidar",
-      "text": "42 rutes repartides pels 10 districtes de la ciutat, gairebé totes circulars, que surten de places, parcs i equipaments. Tria el teu districte i obre'n la llista.",
-      "groups": [
-        {
-          "title": "Ciutat Vella i Eixample",
-          "maps": [
-            {
-              "mid": "1zpIwaRMa-fMSpxdQx2-ByxrVhKpIeYw",
-              "title": "Barcelona · Ciutat Vella i Eixample",
-              "ll": "41.3967,2.1699",
-              "z": 13
-            }
-          ],
-          "sections": [
-            {
+          "id": "rutes-cap",
+          "title": "Rutes des dels CAP",
+          "nav": "Rutes des dels CAP",
+          "text": "54 rutes circulars curtes, d'uns 2 km i mitja hora caminant, que surten dels centres d'atenció primària (CAP) dels 10 districtes de la ciutat. Tria el teu districte i obre'n la llista.",
+          "groups": [
+            {
+              "id": "cap-ciutat-vella",
               "title": "Ciutat Vella",
-              "routes": [
+              "maps": [
                 {
-                  "n": 1,
-                  "name": "Parc de la Ciutadella",
-                  "info": "3,45 km · 41–52 min caminant · 55–70 min amb pauses · circular",
-                  "dest": "Parc de la Ciutadella, Barcelona"
-                },
-                {
-                  "n": 2,
-                  "name": "Plaça de Pau Vila",
-                  "info": "4,4 km · 53–66 min caminant · 65–85 min amb pauses · circular",
-                  "dest": "Plaça de Pau Vila, Barcelona"
-                },
-                {
-                  "n": 3,
-                  "name": "Plaça de Catalunya",
-                  "info": "3,75 km · 45–56 min caminant · 55–75 min amb pauses · circular",
-                  "dest": "Plaça de Catalunya, Barcelona"
-                },
-                {
-                  "n": 4,
-                  "name": "Plaça del Portal de la Pau",
-                  "info": "5,04 km · 60–76 min caminant · 70–95 min amb pauses · circular",
-                  "dest": "Plaça del Portal de la Pau, Barcelona"
+                  "mid": "1jzdLL0XUmxc7lIYMSsoPdXBJj9RIdlo",
+                  "title": "Barcelona · Ciutat Vella · rutes des dels CAP",
+                  "ll": "41.3859,2.1772",
+                  "z": 14,
+                  "label": "Ciutat Vella · 5 rutes des dels CAP"
                 }
-              ]
-            },
-            {
-              "title": "Eixample",
+              ],
               "routes": [
-                {
-                  "n": 1,
-                  "name": "Plaça de la Universitat",
-                  "info": "3,61 km · 43–54 min caminant · 55–70 min amb pauses · circular",
-                  "dest": "Plaça de la Universitat, Barcelona"
-                },
-                {
-                  "n": 2,
-                  "name": "Parc de Joan Miró",
-                  "info": "4,47 km · 54–67 min caminant · 65–85 min amb pauses · circular",
-                  "dest": "Parc de Joan Miró, Barcelona"
-                },
-                {
-                  "n": 3,
-                  "name": "Plaça del Cinc d'Oros",
-                  "info": "4,44 km · 53–67 min caminant · 65–85 min amb pauses · circular",
-                  "dest": "Plaça del Cinc d'Oros, Barcelona"
-                },
-                {
-                  "n": 4,
-                  "name": "Plaça d'Urquinaona",
-                  "info": "3,9 km · 47–59 min caminant · 60–75 min amb pauses · circular",
-                  "dest": "Plaça d'Urquinaona, Barcelona"
-                },
                 {
                   "n": 5,
-                  "name": "Plaça de la Sagrada Família",
-                  "info": "5,52 km · 66–83 min caminant · 80–100 min amb pauses · circular",
-                  "dest": "Plaça de la Sagrada Família, Barcelona"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Sants-Montjuïc i Les Corts",
-          "maps": [
-            {
-              "mid": "1829F0jHRDRGKyxJ0U7KbMSfAHQ_lecw",
-              "title": "Barcelona · Sants-Montjuïc i Les Corts",
-              "ll": "41.3806,2.1355",
-              "z": 13
-            }
-          ],
-          "sections": [
-            {
-              "title": "Sants-Montjuïc",
-              "routes": [
-                {
-                  "n": 1,
-                  "name": "Castell de Montjuïc",
-                  "info": "2,97 km · 36–45 min caminant · 50–60 min amb pauses · circular",
-                  "dest": "Castell de Montjuïc, Barcelona"
-                },
-                {
-                  "n": 2,
-                  "name": "Estació superior del funicular de Montjuïc",
-                  "info": "3,15 km · 38–47 min caminant · 50–65 min amb pauses · circular",
-                  "dest": "Estació superior del funicular de Montjuïc, Barcelona"
-                },
-                {
-                  "n": 3,
-                  "name": "Avinguda de l'Estadi",
-                  "info": "2,77 km · 33–41 min caminant · 45–60 min amb pauses · circular",
-                  "dest": "Avinguda de l'Estadi, Barcelona"
-                },
-                {
-                  "n": 4,
-                  "name": "Plaça de Carles Buïgas",
-                  "info": "3,4 km · 41–51 min caminant · 55–70 min amb pauses · circular",
-                  "dest": "Plaça de Carles Buïgas, Barcelona"
-                },
-                {
-                  "n": 5,
-                  "name": "Plaça d'Espanya",
-                  "info": "5 km · 60–75 min caminant · 70–90 min amb pauses · circular",
-                  "dest": "Plaça d'Espanya, Barcelona"
+                  "name": "CAP Barceloneta",
+                  "info": "2,21 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Passeig Marítim de la Barceloneta - Oriol Bohigas i Guardiola, 25, Barcelona",
+                  "dest": "41.38337,2.19482"
                 },
                 {
                   "n": 6,
-                  "name": "Parc de l'Espanya Industrial",
-                  "info": "4,13 km · 50–62 min caminant · 60–80 min amb pauses · circular",
-                  "dest": "Parc de l'Espanya Industrial, Barcelona"
+                  "name": "CAP Casc Antic",
+                  "info": "2,14 km · 26–32 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer del Rec Comtal, 24, Barcelona",
+                  "dest": "41.39052,2.18055"
+                },
+                {
+                  "n": 7,
+                  "name": "CAP Doctor Lluís Sayé",
+                  "info": "2,18 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de Torres i Amat, 8, Barcelona",
+                  "dest": "41.38421,2.16499"
+                },
+                {
+                  "n": 8,
+                  "name": "CAP Drassanes",
+                  "info": "2,18 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Avinguda de les Drassanes, 17, Barcelona",
+                  "dest": "41.37652,2.17349"
+                },
+                {
+                  "n": 9,
+                  "name": "CAP Gòtic",
+                  "info": "2,21 km · 27–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Passatge de la Pau, 1, Barcelona",
+                  "dest": "41.37888,2.17695"
                 }
               ]
             },
             {
-              "title": "Les Corts",
+              "id": "cap-eixample",
+              "title": "Eixample",
+              "maps": [
+                {
+                  "mid": "19OnQBXFs6kcsubQeZtZOWnWrSoX2f6A",
+                  "title": "Barcelona · Eixample · rutes des dels CAP",
+                  "ll": "41.3972,2.1587",
+                  "z": 13,
+                  "label": "Eixample · 6 rutes des dels CAP"
+                }
+              ],
               "routes": [
                 {
-                  "n": 1,
-                  "name": "Parc i Roserar de Cervantes",
-                  "info": "6,38 km · 77–96 min caminant · 90–115 min amb pauses · circular",
-                  "dest": "Parc i Roserar de Cervantes, Barcelona"
+                  "n": 6,
+                  "name": "CAP Casanova",
+                  "info": "2,12 km · 25–32 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer del Rosselló, 161, Barcelona",
+                  "dest": "41.39036,2.15339"
                 },
                 {
-                  "n": 2,
-                  "name": "Facultat d'Economia i Empresa",
-                  "info": "4,03 km · 48–60 min caminant · 60–75 min amb pauses · circular",
-                  "dest": "Facultat d'Economia i Empresa, Barcelona"
+                  "n": 7,
+                  "name": "CAP Comte Borrell",
+                  "info": "2,18 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer del Comte Borrell, 305, Barcelona",
+                  "dest": "41.38971,2.14623"
                 },
                 {
-                  "n": 3,
-                  "name": "Plaça de la Reina Maria Cristina",
-                  "info": "4,92 km · 59–74 min caminant · 70–90 min amb pauses · circular",
-                  "dest": "Plaça de la Reina Maria Cristina, Barcelona"
+                  "n": 8,
+                  "name": "CAP Manso",
+                  "info": "2,27 km · 27–34 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de Manso, 19, Barcelona",
+                  "dest": "41.37642,2.16024"
+                },
+                {
+                  "n": 9,
+                  "name": "CAP Passeig de Sant Joan",
+                  "info": "2,2 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Passeig de Sant Joan, 20, Barcelona",
+                  "dest": "41.39252,2.17877"
+                },
+                {
+                  "n": 10,
+                  "name": "CAP Roger de Flor",
+                  "info": "2,23 km · 27–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de Roger de Flor, 194, Barcelona",
+                  "dest": "41.39860,2.17290"
+                },
+                {
+                  "n": 11,
+                  "name": "CAP Sagrada Família",
+                  "info": "2,23 km · 27–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de Còrsega, 643, Barcelona",
+                  "dest": "41.41008,2.17670"
                 }
               ]
-            }
-          ]
-        },
-        {
-          "title": "Sarrià-Sant Gervasi i Gràcia",
-          "maps": [
+            },
             {
-              "mid": "17jvwLIRLwUAqbomUoHrsueBLzajHtGc",
-              "title": "Barcelona · Sarrià-Sant Gervasi i Gràcia",
-              "ll": "41.4088,2.1366",
-              "z": 13
-            }
-          ],
-          "sections": [
-            {
-              "title": "Sarrià-Sant Gervasi",
+              "id": "cap-sants-montjuic",
+              "title": "Sants-Montjuïc",
+              "maps": [
+                {
+                  "mid": "1kXZlLYDA9NMeLfBmHoizXrELQ92L4GY",
+                  "title": "Barcelona · Sants-Montjuïc · rutes des dels CAP",
+                  "ll": "41.3751,2.1478",
+                  "z": 13,
+                  "label": "Sants-Montjuïc · 7 rutes des dels CAP"
+                }
+              ],
               "routes": [
                 {
-                  "n": 1,
-                  "name": "Plaça de Borràs",
-                  "info": "6,03 km · 72–91 min caminant · 85–110 min amb pauses · circular",
-                  "dest": "Plaça de Borràs, Barcelona"
+                  "n": 7,
+                  "name": "CAP Bordeta-Magòria",
+                  "info": "2,25 km · 27–34 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer del Corral, 41, Barcelona",
+                  "dest": "41.36919,2.13951"
                 },
                 {
-                  "n": 2,
-                  "name": "Plaça del Xiprer",
-                  "info": "4,11 km · 49–62 min caminant · 60–80 min amb pauses · circular",
-                  "dest": "Plaça del Xiprer, Barcelona"
+                  "n": 8,
+                  "name": "CAP Doctor Carles Ribas",
+                  "info": "2,28 km · 27–34 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer del Foc, 112, Barcelona",
+                  "dest": "41.35814,2.14450"
                 },
                 {
-                  "n": 3,
-                  "name": "Plaça de Molina",
-                  "info": "6,19 km · 74–93 min caminant · 85–110 min amb pauses · circular",
-                  "dest": "Plaça de Molina, Barcelona"
+                  "n": 9,
+                  "name": "CAP La Marina",
+                  "info": "2,22 km · 27–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de l’Amnistia Internacional, 8, Barcelona",
+                  "dest": "41.36188,2.13632"
                 },
+                {
+                  "n": 10,
+                  "name": "CAP Les Hortes",
+                  "info": "2,1 km · 25–31 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Nou de la Rambla, 169, Barcelona",
+                  "dest": "41.37175,2.16670"
+                },
+                {
+                  "n": 11,
+                  "name": "CAP Numància",
+                  "info": "2,15 km · 26–32 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de Numància, 15, Barcelona",
+                  "dest": "41.38190,2.14073"
+                },
+                {
+                  "n": 12,
+                  "name": "CAP Roger",
+                  "info": "2,26 km · 27–34 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de Roger, 48, Barcelona",
+                  "dest": "41.37724,2.12805"
+                },
+                {
+                  "n": 13,
+                  "name": "CAP Sants",
+                  "info": "2,12 km · 25–32 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Passatge del Vapor Vell, 6, Barcelona",
+                  "dest": "41.37686,2.13516"
+                }
+              ]
+            },
+            {
+              "id": "cap-les-corts",
+              "title": "Les Corts",
+              "maps": [
+                {
+                  "mid": "1pJC_4DyDizT_mpHBuoZ4uKjrBulLiik",
+                  "title": "Barcelona · Les Corts · rutes des dels CAP",
+                  "ll": "41.3867,2.1345",
+                  "z": 15,
+                  "label": "Les Corts · 2 rutes des dels CAP"
+                }
+              ],
+              "routes": [
                 {
                   "n": 4,
-                  "name": "Plaça de John F. Kennedy",
-                  "info": "5,19 km · 62–78 min caminant · 75–95 min amb pauses · circular",
-                  "dest": "Plaça de John F. Kennedy, Barcelona"
+                  "name": "CAP Les Corts",
+                  "info": "2,08 km · 25–31 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer de Mejía Lequerica, 1, Barcelona",
+                  "dest": "41.38370,2.12550"
                 },
                 {
                   "n": 5,
-                  "name": "Plaça del Carril",
-                  "info": "6,02 km · 72–90 min caminant · 85–105 min amb pauses · circular",
-                  "dest": "Plaça del Carril, Barcelona"
+                  "name": "CAP Montnegre",
+                  "info": "2,09 km · 25–31 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer del Montnegre, 21, Barcelona",
+                  "dest": "41.38748,2.13885"
                 }
               ]
             },
             {
+              "id": "cap-sarria-sant-gervasi",
+              "title": "Sarrià-Sant Gervasi",
+              "maps": [
+                {
+                  "mid": "1uwcW6ohMTSpUY8WAtDyDpMwhaBHyHrE",
+                  "title": "Barcelona · Sarrià-Sant Gervasi · rutes des dels CAP",
+                  "ll": "41.4178,2.1168",
+                  "z": 13,
+                  "label": "Sarrià-Sant Gervasi · 4 rutes des dels CAP"
+                }
+              ],
+              "routes": [
+                {
+                  "n": 6,
+                  "name": "CAP Adrià",
+                  "info": "2,25 km · 27–34 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de Vallmajor, 34, Barcelona",
+                  "dest": "41.40067,2.13872"
+                },
+                {
+                  "n": 7,
+                  "name": "CAP Les Planes",
+                  "info": "2,16 km · 26–32 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Passeig de Solé i Pla, 16, Barcelona",
+                  "dest": "41.42716,2.08867",
+                  "note": "Per carrers de barri i camins de Collserola, amb trams de terra i sense vorera. Té pendents pronunciats (uns 100 m de pujada)."
+                },
+                {
+                  "n": 8,
+                  "name": "CAP Sarrià",
+                  "info": "2,17 km · 26–32 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Via Augusta, 366, Barcelona",
+                  "dest": "41.40188,2.12145"
+                },
+                {
+                  "n": 9,
+                  "name": "CAP Vallvidrera",
+                  "info": "2,17 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer d’Elisa Moragas i Badia, 2, Barcelona",
+                  "dest": "41.41378,2.10411",
+                  "note": "Per carrers de barri i camins de Collserola, amb trams de terra i sense vorera. Té pendents pronunciats (uns 120 m de pujada)."
+                }
+              ]
+            },
+            {
+              "id": "cap-gracia",
               "title": "Gràcia",
+              "maps": [
+                {
+                  "mid": "1T_rTk2zYe_Ojb9h04jRqHk5-1FZlBsQ",
+                  "title": "Barcelona · Gràcia · rutes des dels CAP",
+                  "ll": "41.4096,2.1534",
+                  "z": 14,
+                  "label": "Gràcia · 5 rutes des dels CAP"
+                }
+              ],
               "routes": [
                 {
-                  "n": 1,
-                  "name": "Plaça del Cinc d'Oros",
-                  "info": "4,82 km · 58–72 min caminant · 70–90 min amb pauses · circular",
-                  "dest": "Plaça del Cinc d'Oros, Barcelona"
+                  "n": 5,
+                  "name": "CAP Larrard",
+                  "info": "2,18 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Travessera de Dalt, 79, Barcelona",
+                  "dest": "41.41039,2.15621"
                 },
                 {
-                  "n": 2,
-                  "name": "Plaça de Joanic",
-                  "info": "3,25 km · 39–49 min caminant · 50–65 min amb pauses · circular",
-                  "dest": "Plaça de Joanic, Barcelona"
+                  "n": 6,
+                  "name": "CAP Pare Claret",
+                  "info": "2,13 km · 26–32 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de Sant Antoni Maria Claret, 19, Barcelona",
+                  "dest": "41.40395,2.16472"
                 },
                 {
-                  "n": 3,
-                  "name": "Plaça de Lesseps",
-                  "info": "3,22 km · 39–48 min caminant · 50–65 min amb pauses · circular",
-                  "dest": "Plaça de Lesseps, Barcelona"
+                  "n": 7,
+                  "name": "CAP Sanllehy",
+                  "info": "2,31 km · 28–35 min caminant · 40–55 min amb pauses · circular",
+                  "address": "Avinguda de la Mare de Déu de Montserrat, 16, Barcelona",
+                  "dest": "41.41343,2.16100"
                 },
                 {
-                  "n": 4,
-                  "name": "Viaducte de Vallcarca",
-                  "info": "3,49 km · 42–52 min caminant · 55–70 min amb pauses · circular",
-                  "dest": "Viaducte de Vallcarca, Barcelona"
+                  "n": 8,
+                  "name": "CAP Vallcarca-Sant Gervasi",
+                  "info": "2,29 km · 27–34 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Avinguda de Vallcarca, 169, Barcelona",
+                  "dest": "41.41574,2.14188"
+                },
+                {
+                  "n": 9,
+                  "name": "CAP Vila de Gràcia – Cibeles",
+                  "info": "2,14 km · 26–32 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de Còrsega, 363, Barcelona",
+                  "dest": "41.39860,2.16208"
                 }
               ]
-            }
-          ]
-        },
-        {
-          "title": "Horta-Guinardó i Nou Barris",
-          "maps": [
+            },
             {
-              "mid": "1mWzTFrDRcxZuMooQFsbySzJtZXpO158",
-              "title": "Barcelona · Horta-Guinardó i Nou Barris",
-              "ll": "41.4313,2.1614",
-              "z": 13
-            }
-          ],
-          "sections": [
-            {
+              "id": "cap-horta-guinardo",
               "title": "Horta-Guinardó",
+              "maps": [
+                {
+                  "mid": "1T2Y-tdBOQH72TaV1ksQNqApX4wVe0r4",
+                  "title": "Barcelona · Horta-Guinardó · rutes des dels CAP",
+                  "ll": "41.4219,2.1633",
+                  "z": 14,
+                  "label": "Horta-Guinardó · 5 rutes des dels CAP"
+                }
+              ],
               "routes": [
                 {
-                  "n": 1,
-                  "name": "Parc del Laberint d'Horta",
-                  "info": "7,11 km · 85–107 min caminant · 95–125 min amb pauses · circular",
-                  "dest": "Parc del Laberint d'Horta, Barcelona"
+                  "n": 5,
+                  "name": "CAP El Carmel",
+                  "info": "2,24 km · 27–34 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de la Murtra, 130, Barcelona",
+                  "dest": "41.42088,2.15509",
+                  "note": "Té pendents pronunciats (uns 100 m de pujada) i algun tram d'escales."
                 },
                 {
-                  "n": 2,
-                  "name": "Plaça d'Eivissa",
-                  "info": "5,24 km · 63–79 min caminant · 75–95 min amb pauses · circular",
-                  "dest": "Plaça d'Eivissa, Barcelona"
+                  "n": 6,
+                  "name": "CAP Guinardó",
+                  "info": "2,24 km · 27–34 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de Teodor Llorente, 26, Barcelona",
+                  "dest": "41.41896,2.17893"
                 },
                 {
-                  "n": 3,
-                  "name": "Plaça d'Eivissa",
-                  "info": "4,11 km · 49–62 min caminant · 60–80 min amb pauses · circular",
-                  "dest": "Plaça d'Eivissa, Barcelona"
+                  "n": 7,
+                  "name": "CAP Horta",
+                  "info": "2,28 km · 27–34 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de Lisboa, 35, Barcelona",
+                  "dest": "41.42891,2.15703"
                 },
                 {
-                  "n": 4,
-                  "name": "Plaça d'Alfons el Savi",
-                  "info": "5,32 km · 64–80 min caminant · 75–95 min amb pauses · circular",
-                  "dest": "Plaça d'Alfons el Savi, Barcelona"
+                  "n": 8,
+                  "name": "CAP Sant Rafael",
+                  "info": "2,16 km · 26–32 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Passeig de la Vall d’Hebron, 107, Barcelona",
+                  "dest": "41.42655,2.14278"
+                },
+                {
+                  "n": 9,
+                  "name": "CAP Sardenya",
+                  "info": "2,17 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de Sardenya, 466, Barcelona",
+                  "dest": "41.40952,2.16524"
                 }
               ]
             },
             {
+              "id": "cap-nou-barris",
               "title": "Nou Barris",
+              "maps": [
+                {
+                  "mid": "1MBsS-L1IqAmjllJBOQ_JX4lhSNFWZEw",
+                  "title": "Barcelona · Nou Barris · rutes des dels CAP",
+                  "ll": "41.4479,2.1757",
+                  "z": 13,
+                  "label": "Nou Barris · 7 rutes des dels CAP"
+                }
+              ],
               "routes": [
                 {
-                  "n": 1,
-                  "name": "Estació de Sant Andreu Arenal",
-                  "info": "6,93 km · 83–104 min caminant · 95–120 min amb pauses · circular",
-                  "dest": "Estació de Sant Andreu Arenal, Barcelona"
+                  "n": 5,
+                  "name": "CAP Chafarinas",
+                  "info": "2,08 km · 25–31 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Via Favència, 297, Barcelona",
+                  "dest": "41.44672,2.18343"
                 },
                 {
-                  "n": 2,
-                  "name": "Plaça de Llucmajor",
-                  "info": "2,81 km · 34–42 min caminant · 45–60 min amb pauses · circular",
-                  "dest": "Plaça de Llucmajor, Barcelona"
+                  "n": 6,
+                  "name": "CAP Ciutat Meridiana",
+                  "info": "2,23 km · 27–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de Sant Feliu de Codines, 2, Barcelona",
+                  "dest": "41.46027,2.18145",
+                  "note": "Té pendents pronunciats (uns 120 m de pujada)."
                 },
                 {
-                  "n": 3,
-                  "name": "Plaça de Llucmajor",
-                  "info": "4,06 km · 49–61 min caminant · 60–80 min amb pauses · circular",
-                  "dest": "Plaça de Llucmajor, Barcelona"
+                  "n": 7,
+                  "name": "CAP Guineueta",
+                  "info": "2,19 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Passeig de Valldaura, 135, Barcelona",
+                  "dest": "41.43932,2.16615"
                 },
+                {
+                  "n": 8,
+                  "name": "CAP Rio de Janeiro",
+                  "info": "2,31 km · 28–35 min caminant · 40–55 min amb pauses · circular",
+                  "address": "Avinguda de Rio de Janeiro, 83, Barcelona",
+                  "dest": "41.43964,2.18194"
+                },
+                {
+                  "n": 9,
+                  "name": "CAP Roquetes",
+                  "info": "2,13 km · 26–32 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de Garigliano, 23, Barcelona",
+                  "dest": "41.44610,2.17395"
+                },
+                {
+                  "n": 10,
+                  "name": "CAP Turó de la Peira",
+                  "info": "2,16 km · 26–32 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer del Cadí, 58, Barcelona",
+                  "dest": "41.43330,2.17067"
+                },
+                {
+                  "n": 11,
+                  "name": "Centre Integral de Salut Cotxeres",
+                  "info": "2,21 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Avinguda dels Quinze, 18, Barcelona",
+                  "dest": "41.42612,2.17615"
+                }
+              ]
+            },
+            {
+              "id": "cap-sant-andreu",
+              "title": "Sant Andreu",
+              "maps": [
+                {
+                  "mid": "1XTyCyHTE_QwAbSLcLlCyJT8c6M-wYBw",
+                  "title": "Barcelona · Sant Andreu · rutes des dels CAP",
+                  "ll": "41.4397,2.1944",
+                  "z": 13,
+                  "label": "Sant Andreu · 5 rutes des dels CAP"
+                }
+              ],
+              "routes": [
                 {
                   "n": 4,
-                  "name": "Via Favència",
-                  "info": "5,79 km · 69–87 min caminant · 80–105 min amb pauses · circular",
-                  "dest": "Via Favència, Barcelona"
+                  "name": "CAP Bon Pastor",
+                  "info": "2,12 km · 25–32 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Passeig de Mollerussa, 67, Barcelona",
+                  "dest": "41.43893,2.20641"
+                },
+                {
+                  "n": 5,
+                  "name": "CAP Casernes",
+                  "info": "2,26 km · 27–34 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de Fernando Pessoa, 47, Barcelona",
+                  "dest": "41.44315,2.19297"
+                },
+                {
+                  "n": 6,
+                  "name": "CAP La Sagrera",
+                  "info": "2,23 km · 27–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de Garcilaso, 1, Barcelona",
+                  "dest": "41.42257,2.19056"
+                },
+                {
+                  "n": 7,
+                  "name": "CAP Sant Andreu",
+                  "info": "2,16 km · 26–32 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Avinguda Meridiana, 426, Barcelona",
+                  "dest": "41.43326,2.18355"
+                },
+                {
+                  "n": 8,
+                  "name": "CAP Trinitat Vella",
+                  "info": "2,19 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Via de Bàrcino, 88, Barcelona",
+                  "dest": "41.45109,2.19284",
+                  "note": "Inclou algun tram d'escales."
+                }
+              ]
+            },
+            {
+              "id": "cap-sant-marti",
+              "title": "Sant Martí",
+              "maps": [
+                {
+                  "mid": "1hfE-8NbdsRnmbRdXBXXSptDJa1dBGy0",
+                  "title": "Barcelona · Sant Martí · rutes des dels CAP",
+                  "ll": "41.4105,2.1997",
+                  "z": 13,
+                  "label": "Sant Martí · 8 rutes des dels CAP"
+                }
+              ],
+              "routes": [
+                {
+                  "n": 5,
+                  "name": "CAP Besòs",
+                  "info": "2,24 km · 27–34 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer d’Alfons el Magnànim, 57, Barcelona",
+                  "dest": "41.41548,2.21550",
+                  "note": "Inclou algun tram d'escales."
+                },
+                {
+                  "n": 6,
+                  "name": "CAP El Clot",
+                  "info": "2,19 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer del Concili de Trento, 25, Barcelona",
+                  "dest": "41.41178,2.19329"
+                },
+                {
+                  "n": 7,
+                  "name": "CAP La Pau",
+                  "info": "2,11 km · 25–32 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer de Pere Vergés, 3, Barcelona",
+                  "dest": "41.42331,2.20852"
+                },
+                {
+                  "n": 8,
+                  "name": "CAP Passeig Maragall",
+                  "info": "2,18 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Passeig de Maragall, 52, Barcelona",
+                  "dest": "41.41576,2.18060"
+                },
+                {
+                  "n": 9,
+                  "name": "CAP Poblenou",
+                  "info": "2,31 km · 28–35 min caminant · 40–55 min amb pauses · circular",
+                  "address": "Carrer de Lope de Vega, 138, Barcelona",
+                  "dest": "41.40575,2.20203"
+                },
+                {
+                  "n": 10,
+                  "name": "CAP Ramon Turró",
+                  "info": "2,2 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de Ramon Turró, 337, Barcelona",
+                  "dest": "41.40605,2.21108"
+                },
+                {
+                  "n": 11,
+                  "name": "CAP Sant Martí",
+                  "info": "2,31 km · 28–35 min caminant · 40–55 min amb pauses · circular",
+                  "address": "Carrer de Fluvià, 211, Barcelona",
+                  "dest": "41.41423,2.19736"
+                },
+                {
+                  "n": 12,
+                  "name": "CAP Vila Olímpica",
+                  "info": "2,28 km · 27–34 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Carrer de Joan Miró, 17, Barcelona",
+                  "dest": "41.39034,2.19502"
                 }
               ]
             }
           ]
         },
         {
-          "title": "Sant Andreu i Sant Martí",
-          "maps": [
+          "id": "caminant-fem-salut",
+          "title": "Rutes «Caminant fem salut»",
+          "nav": "Rutes «Caminant fem salut»",
+          "text": "42 rutes més llargues, d'uns 3 a 7 km, repartides pels 10 districtes de la ciutat. Gairebé totes són circulars i surten de places, parcs i equipaments. Tria el teu districte i obre'n la llista.",
+          "notice": {
+            "title": "Aquestes rutes no surten d'un CAP",
+            "html": [
+              "Si estàs passant un moment delicat, tingues-ho en compte: la ruta no acaba en un centre on et puguin atendre si ho necessites. Si et trobes malament, truca al <a href=\"tel:061\">061</a>; si penses en fer-te mal, al <a href=\"tel:024\">024</a>; i, en una emergència, al <a href=\"tel:112\">112</a>.",
+              "Són una adaptació dels itineraris urbans <a href=\"https://canalsalut.gencat.cat/.content/_Vida_saludable/Activitat_fisica/Rutes_saludables/rutes-pel-districte.pdf\" target=\"_blank\" rel=\"noopener\">«Caminant fem salut»</a>, publicats al Canal Salut de la Generalitat de Catalunya. Els recorreguts i els quilòmetres poden variar una mica respecte dels originals."
+            ]
+          },
+          "groups": [
             {
-              "mid": "1_yrvexXhnmh2KBoreZyUn9GHIzkutqs",
-              "title": "Barcelona · Sant Andreu i Sant Martí",
-              "ll": "41.4180,2.1991",
-              "z": 13
-            }
-          ],
-          "sections": [
-            {
-              "title": "Sant Andreu",
-              "routes": [
+              "title": "Ciutat Vella i Eixample",
+              "maps": [
                 {
-                  "n": 1,
-                  "name": "Plaça d'Orfila",
-                  "info": "6,83 km · 82–102 min caminant · 95–120 min amb pauses · circular",
-                  "dest": "Plaça d'Orfila, Barcelona"
+                  "mid": "1zpIwaRMa-fMSpxdQx2-ByxrVhKpIeYw",
+                  "title": "Barcelona · Ciutat Vella i Eixample",
+                  "ll": "41.3967,2.1699",
+                  "z": 13
+                }
+              ],
+              "sections": [
+                {
+                  "title": "Ciutat Vella",
+                  "routes": [
+                    {
+                      "n": 1,
+                      "name": "Parc de la Ciutadella",
+                      "info": "3,45 km · 41–52 min caminant · 55–70 min amb pauses · circular",
+                      "dest": "Parc de la Ciutadella, Barcelona"
+                    },
+                    {
+                      "n": 2,
+                      "name": "Plaça de Pau Vila",
+                      "info": "4,4 km · 53–66 min caminant · 65–85 min amb pauses · circular",
+                      "dest": "Plaça de Pau Vila, Barcelona"
+                    },
+                    {
+                      "n": 3,
+                      "name": "Plaça de Catalunya",
+                      "info": "3,75 km · 45–56 min caminant · 55–75 min amb pauses · circular",
+                      "dest": "Plaça de Catalunya, Barcelona"
+                    },
+                    {
+                      "n": 4,
+                      "name": "Plaça del Portal de la Pau",
+                      "info": "5,04 km · 60–76 min caminant · 70–95 min amb pauses · circular",
+                      "dest": "Plaça del Portal de la Pau, Barcelona"
+                    }
+                  ]
                 },
                 {
-                  "n": 2,
-                  "name": "Parc de la Pegaso",
-                  "info": "5,58 km · 67–84 min caminant · 80–100 min amb pauses · circular",
-                  "dest": "Parc de la Pegaso, Barcelona"
-                },
-                {
-                  "n": 3,
-                  "name": "Plaça dels Indians",
-                  "info": "4,93 km · 59–74 min caminant · 70–90 min amb pauses · circular",
-                  "dest": "Plaça dels Indians, Barcelona"
+                  "title": "Eixample",
+                  "routes": [
+                    {
+                      "n": 1,
+                      "name": "Plaça de la Universitat",
+                      "info": "3,61 km · 43–54 min caminant · 55–70 min amb pauses · circular",
+                      "dest": "Plaça de la Universitat, Barcelona"
+                    },
+                    {
+                      "n": 2,
+                      "name": "Parc de Joan Miró",
+                      "info": "4,47 km · 54–67 min caminant · 65–85 min amb pauses · circular",
+                      "dest": "Parc de Joan Miró, Barcelona"
+                    },
+                    {
+                      "n": 3,
+                      "name": "Plaça del Cinc d'Oros",
+                      "info": "4,44 km · 53–67 min caminant · 65–85 min amb pauses · circular",
+                      "dest": "Plaça del Cinc d'Oros, Barcelona"
+                    },
+                    {
+                      "n": 4,
+                      "name": "Plaça d'Urquinaona",
+                      "info": "3,9 km · 47–59 min caminant · 60–75 min amb pauses · circular",
+                      "dest": "Plaça d'Urquinaona, Barcelona"
+                    },
+                    {
+                      "n": 5,
+                      "name": "Plaça de la Sagrada Família",
+                      "info": "5,52 km · 66–83 min caminant · 80–100 min amb pauses · circular",
+                      "dest": "Plaça de la Sagrada Família, Barcelona"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "title": "Sant Martí",
-              "routes": [
+              "title": "Sants-Montjuïc i Les Corts",
+              "maps": [
                 {
-                  "n": 1,
-                  "name": "Plaça dels Voluntaris",
-                  "info": "4,07 km · 49–61 min caminant · 60–80 min amb pauses · lineal",
-                  "dest": "Plaça dels Voluntaris, Barcelona",
-                  "start": "Inici: Plaça dels Voluntaris · Final: Plaça d'Ernest Lluch i Martín"
+                  "mid": "1829F0jHRDRGKyxJ0U7KbMSfAHQ_lecw",
+                  "title": "Barcelona · Sants-Montjuïc i Les Corts",
+                  "ll": "41.3806,2.1355",
+                  "z": 13
+                }
+              ],
+              "sections": [
+                {
+                  "title": "Sants-Montjuïc",
+                  "routes": [
+                    {
+                      "n": 1,
+                      "name": "Castell de Montjuïc",
+                      "info": "2,97 km · 36–45 min caminant · 50–60 min amb pauses · circular",
+                      "dest": "Castell de Montjuïc, Barcelona"
+                    },
+                    {
+                      "n": 2,
+                      "name": "Estació superior del funicular de Montjuïc",
+                      "info": "3,15 km · 38–47 min caminant · 50–65 min amb pauses · circular",
+                      "dest": "Estació superior del funicular de Montjuïc, Barcelona"
+                    },
+                    {
+                      "n": 3,
+                      "name": "Avinguda de l'Estadi",
+                      "info": "2,77 km · 33–41 min caminant · 45–60 min amb pauses · circular",
+                      "dest": "Avinguda de l'Estadi, Barcelona"
+                    },
+                    {
+                      "n": 4,
+                      "name": "Plaça de Carles Buïgas",
+                      "info": "3,4 km · 41–51 min caminant · 55–70 min amb pauses · circular",
+                      "dest": "Plaça de Carles Buïgas, Barcelona"
+                    },
+                    {
+                      "n": 5,
+                      "name": "Plaça d'Espanya",
+                      "info": "5 km · 60–75 min caminant · 70–90 min amb pauses · circular",
+                      "dest": "Plaça d'Espanya, Barcelona"
+                    },
+                    {
+                      "n": 6,
+                      "name": "Parc de l'Espanya Industrial",
+                      "info": "4,13 km · 50–62 min caminant · 60–80 min amb pauses · circular",
+                      "dest": "Parc de l'Espanya Industrial, Barcelona"
+                    }
+                  ]
                 },
                 {
-                  "n": 2,
-                  "name": "Parc de Carles I",
-                  "info": "5,7 km · 68–85 min caminant · 80–100 min amb pauses · circular",
-                  "dest": "Parc de Carles I, Barcelona"
+                  "title": "Les Corts",
+                  "routes": [
+                    {
+                      "n": 1,
+                      "name": "Parc i Roserar de Cervantes",
+                      "info": "6,38 km · 77–96 min caminant · 90–115 min amb pauses · circular",
+                      "dest": "Parc i Roserar de Cervantes, Barcelona"
+                    },
+                    {
+                      "n": 2,
+                      "name": "Facultat d'Economia i Empresa",
+                      "info": "4,03 km · 48–60 min caminant · 60–75 min amb pauses · circular",
+                      "dest": "Facultat d'Economia i Empresa, Barcelona"
+                    },
+                    {
+                      "n": 3,
+                      "name": "Plaça de la Reina Maria Cristina",
+                      "info": "4,92 km · 59–74 min caminant · 70–90 min amb pauses · circular",
+                      "dest": "Plaça de la Reina Maria Cristina, Barcelona"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Sarrià-Sant Gervasi i Gràcia",
+              "maps": [
+                {
+                  "mid": "17jvwLIRLwUAqbomUoHrsueBLzajHtGc",
+                  "title": "Barcelona · Sarrià-Sant Gervasi i Gràcia",
+                  "ll": "41.4088,2.1366",
+                  "z": 13
+                }
+              ],
+              "sections": [
+                {
+                  "title": "Sarrià-Sant Gervasi",
+                  "routes": [
+                    {
+                      "n": 1,
+                      "name": "Plaça de Borràs",
+                      "info": "6,03 km · 72–91 min caminant · 85–110 min amb pauses · circular",
+                      "dest": "Plaça de Borràs, Barcelona"
+                    },
+                    {
+                      "n": 2,
+                      "name": "Plaça del Xiprer",
+                      "info": "4,11 km · 49–62 min caminant · 60–80 min amb pauses · circular",
+                      "dest": "Plaça del Xiprer, Barcelona"
+                    },
+                    {
+                      "n": 3,
+                      "name": "Plaça de Molina",
+                      "info": "6,19 km · 74–93 min caminant · 85–110 min amb pauses · circular",
+                      "dest": "Plaça de Molina, Barcelona"
+                    },
+                    {
+                      "n": 4,
+                      "name": "Plaça de John F. Kennedy",
+                      "info": "5,19 km · 62–78 min caminant · 75–95 min amb pauses · circular",
+                      "dest": "Plaça de John F. Kennedy, Barcelona"
+                    },
+                    {
+                      "n": 5,
+                      "name": "Plaça del Carril",
+                      "info": "6,02 km · 72–90 min caminant · 85–105 min amb pauses · circular",
+                      "dest": "Plaça del Carril, Barcelona"
+                    }
+                  ]
                 },
                 {
-                  "n": 3,
-                  "name": "Plaça de les Glòries Catalanes",
-                  "info": "5,7 km · 68–86 min caminant · 80–105 min amb pauses · circular",
-                  "dest": "Plaça de les Glòries Catalanes, Barcelona"
+                  "title": "Gràcia",
+                  "routes": [
+                    {
+                      "n": 1,
+                      "name": "Plaça del Cinc d'Oros",
+                      "info": "4,82 km · 58–72 min caminant · 70–90 min amb pauses · circular",
+                      "dest": "Plaça del Cinc d'Oros, Barcelona"
+                    },
+                    {
+                      "n": 2,
+                      "name": "Plaça de Joanic",
+                      "info": "3,25 km · 39–49 min caminant · 50–65 min amb pauses · circular",
+                      "dest": "Plaça de Joanic, Barcelona"
+                    },
+                    {
+                      "n": 3,
+                      "name": "Plaça de Lesseps",
+                      "info": "3,22 km · 39–48 min caminant · 50–65 min amb pauses · circular",
+                      "dest": "Plaça de Lesseps, Barcelona"
+                    },
+                    {
+                      "n": 4,
+                      "name": "Viaducte de Vallcarca",
+                      "info": "3,49 km · 42–52 min caminant · 55–70 min amb pauses · circular",
+                      "dest": "Viaducte de Vallcarca, Barcelona"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Horta-Guinardó i Nou Barris",
+              "maps": [
+                {
+                  "mid": "1mWzTFrDRcxZuMooQFsbySzJtZXpO158",
+                  "title": "Barcelona · Horta-Guinardó i Nou Barris",
+                  "ll": "41.4313,2.1614",
+                  "z": 13
+                }
+              ],
+              "sections": [
+                {
+                  "title": "Horta-Guinardó",
+                  "routes": [
+                    {
+                      "n": 1,
+                      "name": "Parc del Laberint d'Horta",
+                      "info": "7,11 km · 85–107 min caminant · 95–125 min amb pauses · circular",
+                      "dest": "Parc del Laberint d'Horta, Barcelona"
+                    },
+                    {
+                      "n": 2,
+                      "name": "Plaça d'Eivissa",
+                      "info": "5,24 km · 63–79 min caminant · 75–95 min amb pauses · circular",
+                      "dest": "Plaça d'Eivissa, Barcelona"
+                    },
+                    {
+                      "n": 3,
+                      "name": "Plaça d'Eivissa",
+                      "info": "4,11 km · 49–62 min caminant · 60–80 min amb pauses · circular",
+                      "dest": "Plaça d'Eivissa, Barcelona"
+                    },
+                    {
+                      "n": 4,
+                      "name": "Plaça d'Alfons el Savi",
+                      "info": "5,32 km · 64–80 min caminant · 75–95 min amb pauses · circular",
+                      "dest": "Plaça d'Alfons el Savi, Barcelona"
+                    }
+                  ]
                 },
                 {
-                  "n": 4,
-                  "name": "Plaça d'Artur Martorell",
-                  "info": "6,74 km · 81–101 min caminant · 95–120 min amb pauses · circular",
-                  "dest": "Plaça d'Artur Martorell, Barcelona"
+                  "title": "Nou Barris",
+                  "routes": [
+                    {
+                      "n": 1,
+                      "name": "Estació de Sant Andreu Arenal",
+                      "info": "6,93 km · 83–104 min caminant · 95–120 min amb pauses · circular",
+                      "dest": "Estació de Sant Andreu Arenal, Barcelona"
+                    },
+                    {
+                      "n": 2,
+                      "name": "Plaça de Llucmajor",
+                      "info": "2,81 km · 34–42 min caminant · 45–60 min amb pauses · circular",
+                      "dest": "Plaça de Llucmajor, Barcelona"
+                    },
+                    {
+                      "n": 3,
+                      "name": "Plaça de Llucmajor",
+                      "info": "4,06 km · 49–61 min caminant · 60–80 min amb pauses · circular",
+                      "dest": "Plaça de Llucmajor, Barcelona"
+                    },
+                    {
+                      "n": 4,
+                      "name": "Via Favència",
+                      "info": "5,79 km · 69–87 min caminant · 80–105 min amb pauses · circular",
+                      "dest": "Via Favència, Barcelona"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Sant Andreu i Sant Martí",
+              "maps": [
+                {
+                  "mid": "1_yrvexXhnmh2KBoreZyUn9GHIzkutqs",
+                  "title": "Barcelona · Sant Andreu i Sant Martí",
+                  "ll": "41.4180,2.1991",
+                  "z": 13
+                }
+              ],
+              "sections": [
+                {
+                  "title": "Sant Andreu",
+                  "routes": [
+                    {
+                      "n": 1,
+                      "name": "Plaça d'Orfila",
+                      "info": "6,83 km · 82–102 min caminant · 95–120 min amb pauses · circular",
+                      "dest": "Plaça d'Orfila, Barcelona"
+                    },
+                    {
+                      "n": 2,
+                      "name": "Parc de la Pegaso",
+                      "info": "5,58 km · 67–84 min caminant · 80–100 min amb pauses · circular",
+                      "dest": "Parc de la Pegaso, Barcelona"
+                    },
+                    {
+                      "n": 3,
+                      "name": "Plaça dels Indians",
+                      "info": "4,93 km · 59–74 min caminant · 70–90 min amb pauses · circular",
+                      "dest": "Plaça dels Indians, Barcelona"
+                    }
+                  ]
+                },
+                {
+                  "title": "Sant Martí",
+                  "routes": [
+                    {
+                      "n": 1,
+                      "name": "Plaça dels Voluntaris",
+                      "info": "4,07 km · 49–61 min caminant · 60–80 min amb pauses · lineal",
+                      "dest": "Plaça dels Voluntaris, Barcelona",
+                      "start": "Inici: Plaça dels Voluntaris · Final: Plaça d'Ernest Lluch i Martín"
+                    },
+                    {
+                      "n": 2,
+                      "name": "Parc de Carles I",
+                      "info": "5,7 km · 68–85 min caminant · 80–100 min amb pauses · circular",
+                      "dest": "Parc de Carles I, Barcelona"
+                    },
+                    {
+                      "n": 3,
+                      "name": "Plaça de les Glòries Catalanes",
+                      "info": "5,7 km · 68–86 min caminant · 80–105 min amb pauses · circular",
+                      "dest": "Plaça de les Glòries Catalanes, Barcelona"
+                    },
+                    {
+                      "n": 4,
+                      "name": "Plaça d'Artur Martorell",
+                      "info": "6,74 km · 81–101 min caminant · 95–120 min amb pauses · circular",
+                      "dest": "Plaça d'Artur Martorell, Barcelona"
+                    }
+                  ]
                 }
               ]
             }
           ]
         }
-      ],
-      "summary": "42 rutes pels 10 districtes"
+      ]
+    },
+    {
+      "course": "cuidar",
+      "text": "65 rutes circulars curtes, d'1,7 a 2,1 km (uns 20–30 minuts caminant), que surten d'un equipament comunitari del barri i hi tornen: casals de barri, casals de gent gran, centres cívics i biblioteques dels 10 districtes. Tria el teu districte, busca el teu barri i fes-hi el temps de reflexió de cada passa.",
+      "summary": "65 rutes des dels equipaments comunitaris",
+      "zones": {
+        "by": "district"
+      },
+      "groups": [
+        {
+          "id": "equipaments-ciutat-vella",
+          "title": "Ciutat Vella",
+          "district": "Ciutat Vella",
+          "maps": [
+            {
+              "mid": "1gc-8zRCwGnMmI5ZFOzliXUX3IHFzUbE",
+              "title": "Barcelona · Ciutat Vella · equipaments comunitaris",
+              "ll": "41.3841,2.1729",
+              "z": 14,
+              "label": "Ciutat Vella: Sant Pere, Santa Caterina i la Ribera; el Raval"
+            }
+          ],
+          "sections": [
+            {
+              "id": "equipaments-sant-pere-santa-caterina-i-la-ribera",
+              "title": "Sant Pere, Santa Caterina i la Ribera",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Biblioteca Francesca Bonnemaison",
+                  "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Sant Pere Més Baix, 7, Barcelona",
+                  "note": "Hi ha trams amb escales, que no són accessibles amb cadira de rodes."
+                },
+                {
+                  "n": 2,
+                  "name": "Casal de Barri Pou de la Figuera",
+                  "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Carrer Sant Pere Més Baix, 70, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "equipaments-el-raval",
+              "title": "El Raval",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri Raval",
+                  "info": "1,78 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Reina Amàlia, 31, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Casal de Gent Gran Josep Tarradellas",
+                  "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Carrer Caramelles, 3, Barcelona"
+                },
+                {
+                  "n": 3,
+                  "name": "Centre Cívic Drassanes",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Nou de la Rambla, 43, Barcelona"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "equipaments-eixample",
+          "title": "Eixample",
+          "district": "Eixample",
+          "maps": [
+            {
+              "mid": "1AEknmWPUZEhXRXdSGmfx91ilN6vfbys",
+              "title": "Barcelona · Eixample · equipaments comunitaris",
+              "ll": "41.3953,2.1693",
+              "z": 13,
+              "label": "Eixample: Sant Antoni; la Sagrada Família; el Fort Pienc"
+            }
+          ],
+          "sections": [
+            {
+              "id": "equipaments-sant-antoni",
+              "title": "Sant Antoni",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Biblioteca Sant Antoni – Joan Oliver",
+                  "info": "1,75 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Comte Borrell, 44-46, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Casal de Barri Espai Veïnal Calàbria 66",
+                  "info": "1,84 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Carrer Calàbria, 66, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "equipaments-la-sagrada-familia",
+              "title": "La Sagrada Família",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri Espai 210",
+                  "info": "1,78 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Padilla, 210, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Centre Cívic Sagrada Família",
+                  "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Carrer Provença, 480, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "equipaments-el-fort-pienc",
+              "title": "El Fort Pienc",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri Transformadors",
+                  "info": "1,81 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Ausiàs Marc, 60, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Centre Cívic Ateneu Fort Pienc",
+                  "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Plaça Fort Pienc, 4-5, Barcelona",
+                  "note": "Passa per el parc de l’Estació del Nord, que té horari d’obertura: consulta’l abans d’anar-hi."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "equipaments-sants-montjuic",
+          "title": "Sants-Montjuïc",
+          "district": "Sants-Montjuïc",
+          "maps": [
+            {
+              "mid": "16_VaREPGSrRYmjY-N_K5oPq1u8-m4HQ",
+              "title": "Barcelona · Sants-Montjuïc · equipaments comunitaris",
+              "ll": "41.3708,2.1482",
+              "z": 13,
+              "label": "Sants-Montjuïc: el Poble-sec; Sants; la Marina de Port"
+            }
+          ],
+          "sections": [
+            {
+              "id": "equipaments-el-poble-sec",
+              "title": "El Poble-sec",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Biblioteca El Poble-sec – Francesc Boix",
+                  "info": "1,81 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Blai, 34, Barcelona",
+                  "note": "Recorregut amb pujades i baixades (uns 61 m de desnivell entre el punt més baix i el més alt). Hi ha trams amb escales (al parc de la Primavera), que no són accessibles amb cadira de rodes."
+                }
+              ]
+            },
+            {
+              "id": "equipaments-sants",
+              "title": "Sants",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Biblioteca Vapor Vell",
+                  "info": "1,82 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Passatge del Vapor Vell, 1, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Casal de Barri Lleialtat Santsenca",
+                  "info": "1,94 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Olzinelles, 31, Barcelona",
+                  "note": "Passa per el parc de Can Batlló, que té horari d’obertura: consulta’l abans d’anar-hi."
+                }
+              ]
+            },
+            {
+              "id": "equipaments-la-marina-de-port",
+              "title": "La Marina de Port",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri La Vinya",
+                  "info": "1,91 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Alts Forns, 87, Barcelona",
+                  "note": "Hi ha trams amb escales (a la plaça del Moviment Obrer), que no són accessibles amb cadira de rodes."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "equipaments-les-corts",
+          "title": "Les Corts",
+          "district": "Les Corts",
+          "maps": [
+            {
+              "mid": "1VtwwHTaLKormJdkR8idccr963JrsHEM",
+              "title": "Barcelona · Les Corts · equipaments comunitaris",
+              "ll": "41.3811,2.1251",
+              "z": 15,
+              "label": "Les Corts: la Maternitat i Sant Ramon"
+            }
+          ],
+          "sections": [
+            {
+              "id": "equipaments-la-maternitat-i-sant-ramon",
+              "title": "La Maternitat i Sant Ramon",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Biblioteca Les Corts – Miquel Llongueras",
+                  "info": "1,76 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Travessera de les Corts, 58, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Centre Cívic Joan Oliver – Pere Quart",
+                  "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Comandant Benítez, 6, Barcelona"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "equipaments-sarria-sant-gervasi",
+          "title": "Sarrià-Sant Gervasi",
+          "district": "Sarrià-Sant Gervasi",
+          "maps": [
+            {
+              "mid": "12hf52UEiKWr_78M1252SOtXHGbz4hYI",
+              "title": "Barcelona · Sarrià-Sant Gervasi · equipaments comunitaris",
+              "ll": "41.4168,2.1240",
+              "z": 13,
+              "label": "Sarrià-Sant Gervasi: Vallvidrera, el Tibidabo i les Planes; el Putxet i el Farró; Sarrià"
+            }
+          ],
+          "sections": [
+            {
+              "id": "equipaments-vallvidrera-el-tibidabo-i-les-planes",
+              "title": "Vallvidrera, el Tibidabo i les Planes",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Biblioteca Collserola – Josep Miracle",
+                  "info": "1,89 km · 23–28 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Elisa Moragas i Badia, 16-34, Barcelona",
+                  "note": "Recorregut amb pujades i baixades (uns 53 m de desnivell entre el punt més baix i el més alt). Hi ha trams amb escales (al carrer d’en Manelic), que no són accessibles amb cadira de rodes."
+                },
+                {
+                  "n": 2,
+                  "name": "Casal de Barri Can Rectoret",
+                  "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Via Làctia, 4, Barcelona",
+                  "note": "Recorregut amb pujades i baixades (uns 112 m de desnivell entre el punt més baix i el més alt). Pel desnivell, és possible que necessitis més temps del que s’indica. Hi ha trams amb escales (al passatge del Garric), que no són accessibles amb cadira de rodes."
+                },
+                {
+                  "n": 3,
+                  "name": "Casal de Barri Mercat Cultural de Vallvidrera",
+                  "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Carrer Elisa Moragas i Badia, 2, Barcelona",
+                  "note": "Hi ha trams amb escales (al carrer de la Llicorella), que no són accessibles amb cadira de rodes."
+                }
+              ]
+            },
+            {
+              "id": "equipaments-el-putxet-i-el-farro",
+              "title": "El Putxet i el Farró",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri Espai Putxet",
+                  "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Marmellà, 13-21, Barcelona",
+                  "note": "Recorregut amb pujades i baixades (uns 54 m de desnivell entre el punt més baix i el més alt). Hi ha trams amb escales (al carrer del Pare Fidel Fita), que no són accessibles amb cadira de rodes."
+                },
+                {
+                  "n": 2,
+                  "name": "Centre Cívic Vil·la Urània",
+                  "info": "1,82 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Saragossa, 29, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "equipaments-sarria",
+              "title": "Sarrià",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Gent Gran Can Fàbregas",
+                  "info": "1,74 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Pere Figuera i Serra, 1, Barcelona",
+                  "note": "Hi ha trams amb escales (a la plaça de Mariano Meseguer), que no són accessibles amb cadira de rodes."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "equipaments-gracia",
+          "title": "Gràcia",
+          "district": "Gràcia",
+          "maps": [
+            {
+              "mid": "16rPxpXvFBeuwPvHEbtZmj32iJTls_Oo",
+              "title": "Barcelona · Gràcia · equipaments comunitaris",
+              "ll": "41.4171,2.1554",
+              "z": 13,
+              "label": "Gràcia: Vallcarca i els Penitents; la Salut; el Coll; el Camp d’en Grassot i Gràcia Nova"
+            }
+          ],
+          "sections": [
+            {
+              "id": "equipaments-vallcarca-i-els-penitents",
+              "title": "Vallcarca i els Penitents",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Biblioteca Jaume Fuster",
+                  "info": "1,81 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Plaça Lesseps, 20-22, Barcelona",
+                  "note": "Recorregut amb pujades i baixades (uns 48 m de desnivell entre el punt més baix i el més alt)."
+                },
+                {
+                  "n": 2,
+                  "name": "Casal de Barri Can Carol",
+                  "info": "1,70 km · 20–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Cambrils, 26-28, Barcelona",
+                  "note": "Hi ha trams amb escales, que no són accessibles amb cadira de rodes."
+                },
+                {
+                  "n": 3,
+                  "name": "Casal d’Avis de Penitents",
+                  "info": "1,89 km · 23–28 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Passeig Vall d’Hebron, 76-78, Barcelona",
+                  "note": "Hi ha trams amb escales (al carrer del Gòlgota), que no són accessibles amb cadira de rodes."
+                }
+              ]
+            },
+            {
+              "id": "equipaments-la-salut",
+              "title": "La Salut",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri Cardener",
+                  "info": "1,74 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Cardener, 45, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "equipaments-el-coll",
+              "title": "El Coll",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Centre Cívic El Coll – La Bruguera",
+                  "info": "1,77 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Aldea, 15, Barcelona",
+                  "note": "Recorregut amb pujades i baixades (uns 71 m de desnivell entre el punt més baix i el més alt). Hi ha trams amb escales (al carrer de Móra la Nova), que no són accessibles amb cadira de rodes. Passa per el parc del Carmel, que té horari d’obertura: consulta’l abans d’anar-hi."
+                }
+              ]
+            },
+            {
+              "id": "equipaments-el-camp-den-grassot-i-gracia-nova",
+              "title": "El Camp d’en Grassot i Gràcia Nova",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Centre Cívic La Sedeta",
+                  "info": "1,91 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Sicília, 321, Barcelona",
+                  "note": "Hi ha trams amb escales (als jardins de la Sedeta), que no són accessibles amb cadira de rodes."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "equipaments-horta-guinardo",
+          "title": "Horta-Guinardó",
+          "district": "Horta-Guinardó",
+          "maps": [
+            {
+              "mid": "1M31FQhGRLfqlvBZPoZc9HPW_s3jjZ8M",
+              "title": "Barcelona · Horta-Guinardó · equipaments comunitaris",
+              "ll": "41.4257,2.1607",
+              "z": 13,
+              "label": "Horta-Guinardó: el Baix Guinardó; Can Baró; la Vall d’Hebron; el Carmel; el Guinardó"
+            }
+          ],
+          "sections": [
+            {
+              "id": "equipaments-el-baix-guinardo",
+              "title": "El Baix Guinardó",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Biblioteca Guinardó – Mercè Rodoreda",
+                  "info": "1,82 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Camèlies, 76-80, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "equipaments-can-baro",
+              "title": "Can Baró",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri Can Baró – El Pirineu",
+                  "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Josep Serrano, 59-71, Barcelona",
+                  "note": "Recorregut amb pujades i baixades (uns 76 m de desnivell entre el punt més baix i el més alt). Hi ha trams amb escales (al parc del Guinardó), que no són accessibles amb cadira de rodes."
+                }
+              ]
+            },
+            {
+              "id": "equipaments-la-vall-dhebron",
+              "title": "La Vall d’Hebron",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri de la Vall d’Hebron Can Travi",
+                  "info": "1,90 km · 23–28 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Avinguda Cardenal Vidal i Barraquer, 45, Barcelona",
+                  "note": "Hi ha trams amb escales (als jardins de Rosa Luxemburg), que no són accessibles amb cadira de rodes."
+                }
+              ]
+            },
+            {
+              "id": "equipaments-el-carmel",
+              "title": "El Carmel",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri La Barraca del Carmel",
+                  "info": "1,79 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Llobregós, 107-113, Barcelona",
+                  "note": "Recorregut amb pujades i baixades (uns 50 m de desnivell entre el punt més baix i el més alt). Hi ha trams amb escales (al carrer de Peris i Mencheta), que no són accessibles amb cadira de rodes."
+                },
+                {
+                  "n": 2,
+                  "name": "Centre Cívic El Carmel",
+                  "info": "1,97 km · 24–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Santuari, 27-29, Barcelona",
+                  "note": "Recorregut amb pujades i baixades (uns 50 m de desnivell entre el punt més baix i el més alt). Hi ha trams amb escales (a la plaça de Salvador Allende), que no són accessibles amb cadira de rodes."
+                }
+              ]
+            },
+            {
+              "id": "equipaments-el-guinardo",
+              "title": "El Guinardó",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal d’Entitats Mas Guinardó",
+                  "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Plaça Salvador Riera, 2, Barcelona",
+                  "note": "Recorregut amb pujades i baixades (uns 46 m de desnivell entre el punt més baix i el més alt). Hi ha trams amb escales, que no són accessibles amb cadira de rodes."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "equipaments-nou-barris",
+          "title": "Nou Barris",
+          "district": "Nou Barris",
+          "maps": [
+            {
+              "mid": "1OrGtv8RKl0okY6QeAWJtRmgkJvIIlmY",
+              "title": "Barcelona · Nou Barris · equipaments comunitaris",
+              "ll": "41.4425,2.1772",
+              "z": 13,
+              "label": "Nou Barris: la Guineueta; Porta; Can Peguera; la Prosperitat; les Roquetes; la Trinitat Nova; Verdun; el Turó de la Peira; Vilapicina i la Torre Llobeta"
+            }
+          ],
+          "sections": [
+            {
+              "id": "equipaments-la-guineueta",
+              "title": "La Guineueta",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Biblioteca Nou Barris – Aurora Díaz Plaja",
+                  "info": "1,93 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Plaça Major de Nou Barris, 2, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "equipaments-porta",
+              "title": "Porta",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri Ateneu La Bòbila",
+                  "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Carrer Estudiant, 1, Barcelona",
+                  "note": "Hi ha trams amb escales (als jardins de Can Verdaguer), que no són accessibles amb cadira de rodes."
+                }
+              ]
+            },
+            {
+              "id": "equipaments-can-peguera",
+              "title": "Can Peguera",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri La Cosa Nostra",
+                  "info": "1,73 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Beret, 83, Barcelona",
+                  "note": "Hi ha trams amb escales (als jardins de Tiberio Ávila), que no són accessibles amb cadira de rodes."
+                }
+              ]
+            },
+            {
+              "id": "equipaments-la-prosperitat",
+              "title": "La Prosperitat",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri Prosperitat",
+                  "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Plaça d’Àngel Pestaña, 1, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "equipaments-les-roquetes",
+              "title": "Les Roquetes",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Centre Ton i Guida",
+                  "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Carrer Romaní, 6, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Casal de Gent Gran Roquetes",
+                  "info": "1,75 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Titellaires, 1, Barcelona",
+                  "note": "Recorregut amb pujades i baixades (uns 60 m de desnivell entre el punt més baix i el més alt). Hi ha trams amb escales (al carrer de Jaume Pinent), que no són accessibles amb cadira de rodes."
+                }
+              ]
+            },
+            {
+              "id": "equipaments-la-trinitat-nova",
+              "title": "La Trinitat Nova",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri Trinitat Nova – Som la Pera",
+                  "info": "1,79 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Garbí, 3, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "equipaments-verdun",
+              "title": "Verdun",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri Verdum",
+                  "info": "1,81 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Luz Casanova, 4, Barcelona",
+                  "note": "Recorregut amb pujades i baixades (uns 57 m de desnivell entre el punt més baix i el més alt). Hi ha trams amb escales (al parc de la Guineueta), que no són accessibles amb cadira de rodes."
+                }
+              ]
+            },
+            {
+              "id": "equipaments-el-turo-de-la-peira",
+              "title": "El Turó de la Peira",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Gent Gran Turó de la Peira",
+                  "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Carrer Doctor Pi i Molist, 39-63, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "equipaments-vilapicina-i-la-torre-llobeta",
+              "title": "Vilapicina i la Torre Llobeta",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Gent Gran Vilapicina i la Torre Llobeta",
+                  "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Carrer Carmen Laforet, 11, Barcelona"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "equipaments-sant-andreu",
+          "title": "Sant Andreu",
+          "district": "Sant Andreu",
+          "maps": [
+            {
+              "mid": "1hNEM2hPlnP2PCg5OTJCKwtuzYPHD774",
+              "title": "Barcelona · Sant Andreu · equipaments comunitaris",
+              "ll": "41.4370,2.1933",
+              "z": 13,
+              "label": "Sant Andreu: el Bon Pastor; Sant Andreu de Palomar; el Congrés i els Indians; Baró de Viver"
+            }
+          ],
+          "sections": [
+            {
+              "id": "equipaments-el-bon-pastor",
+              "title": "El Bon Pastor",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Biblioteca El Bon Pastor – Josefina Castellví",
+                  "info": "1,84 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Carrer Estadella, 64, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Casal de Gent Gran Bon Pastor",
+                  "info": "2,01 km · 24–30 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Alfarràs, 30-38, Barcelona"
+                },
+                {
+                  "n": 3,
+                  "name": "Centre Cívic del Bon Pastor",
+                  "info": "1,72 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Plaça Robert Gerhard, 3-4, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "equipaments-sant-andreu-de-palomar",
+              "title": "Sant Andreu de Palomar",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Biblioteca Ignasi Iglésias – Can Fabra",
+                  "info": "1,79 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Segre, 24-32, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Casal de Barri Ateneu L’Harmonia",
+                  "info": "1,94 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Sant Adrià, 20, Barcelona"
+                },
+                {
+                  "n": 3,
+                  "name": "Casal de Barri Can Portabella",
+                  "info": "2,06 km · 25–31 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Virgili, 18, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "equipaments-el-congres-i-els-indians",
+              "title": "El Congrés i els Indians",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri Congrés Indians",
+                  "info": "1,91 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Manigua, 25-35, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "equipaments-baro-de-viver",
+              "title": "Baró de Viver",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Gent Gran Baró de Viver",
+                  "info": "1,73 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Quito, 8-10, Barcelona",
+                  "note": "El casal és dins del Centre Cívic Baró de Viver."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "equipaments-sant-marti",
+          "title": "Sant Martí · Poblenou i litoral",
+          "district": "Sant Martí",
+          "maps": [
+            {
+              "mid": "1EvJQnaz8SM4eWxvzDngWd0IMAuIkm6g",
+              "title": "Barcelona · Sant Martí · Poblenou i litoral · equipaments comunitaris",
+              "ll": "41.4042,2.1999",
+              "z": 13,
+              "label": "Sant Martí · Poblenou i litoral: el Poblenou; el Parc i la Llacuna del Poblenou; Diagonal Mar i el Front Marítim del Poblenou"
+            }
+          ],
+          "sections": [
+            {
+              "id": "equipaments-el-poblenou",
+              "title": "El Poblenou",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Biblioteca El Poblenou – Manuel Arranz",
+                  "info": "1,79 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Joncar, 35, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Casal de Barri Bac de Roda – Poblenou",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Camí Antic de València, 106, Barcelona"
+                },
+                {
+                  "n": 3,
+                  "name": "Casal de Barri Poblenou",
+                  "info": "1,97 km · 24–30 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Rambla del Poblenou, 49, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "equipaments-el-parc-i-la-llacuna-del-poblenou",
+              "title": "El Parc i la Llacuna del Poblenou",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri La Llacuna",
+                  "info": "1,72 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Bolívia, 49, Barcelona"
+                },
+                {
+                  "n": 2,
+                  "name": "Casal de Gent Gran Parc Sandaru",
+                  "info": "1,91 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Buenaventura Muñoz, 21, Barcelona",
+                  "note": "El casal és dins del Centre Cívic Parc Sandaru. Passa per el parc de l’Estació del Nord, que té horari d’obertura: consulta’l abans d’anar-hi."
+                }
+              ]
+            },
+            {
+              "id": "equipaments-diagonal-mar-i-el-front-maritim-del-poblenou",
+              "title": "Diagonal Mar i el Front Marítim del Poblenou",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri Diagonal Mar",
+                  "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Selva de Mar, 22-32, Barcelona"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "equipaments-sant-marti-mapa-2",
+          "title": "Sant Martí · Clot, Verneda i Besòs",
+          "district": "Sant Martí",
+          "maps": [
+            {
+              "mid": "1YBbzWCpdXr_r8bDUPgCOzwaGj58ZnuY",
+              "title": "Barcelona · Sant Martí · Clot, Verneda i Besòs · equipaments comunitaris",
+              "ll": "41.4182,2.1969",
+              "z": 13,
+              "label": "Sant Martí · Clot, Verneda i Besòs: el Clot; el Camp de l’Arpa del Clot; Provençals del Poblenou; la Verneda i la Pau; el Besòs i el Maresme"
+            }
+          ],
+          "sections": [
+            {
+              "id": "equipaments-el-clot",
+              "title": "El Clot",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Gent Gran Parc del Clot",
+                  "info": "1,93 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Joan Casanelles, 1, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "equipaments-el-camp-de-larpa-del-clot",
+              "title": "El Camp de l’Arpa del Clot",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri Espai Antoni Miró Peris",
+                  "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Plaça Carme Montoriol, 10, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "equipaments-provencals-del-poblenou",
+              "title": "Provençals del Poblenou",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri Ca l’Isidret",
+                  "info": "1,96 km · 24–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Josep Pla, 174, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "equipaments-la-verneda-i-la-pau",
+              "title": "La Verneda i la Pau",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri Verneda",
+                  "info": "1,89 km · 23–28 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Santander, 6, Barcelona",
+                  "note": "Hi ha trams amb escales (al carrer del Rector de Vallfogona), que no són accessibles amb cadira de rodes."
+                },
+                {
+                  "n": 2,
+                  "name": "Casal de Barri La Pau",
+                  "info": "1,83 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Carrer Pere Vergés, 1, Barcelona"
+                }
+              ]
+            },
+            {
+              "id": "equipaments-el-besos-i-el-maresme",
+              "title": "El Besòs i el Maresme",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Casal de Barri del Besòs",
+                  "info": "1,79 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Cristóbal de Moura, 230-232, Barcelona"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "course": "mon",

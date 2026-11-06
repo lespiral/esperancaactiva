@@ -65,13 +65,13 @@ ZONES_TEXT = {
 }
 
 
-def add_zones(b, groups, course, cfg):
-    """Si un bloc té molts mapes, hi posa un desplegable per saltar al districte,
-    la zona o el mapa. Diversos grups (p. ex. un per districte): cada grup és una
-    opció (o cada districte, si el grup en té diversos). Un sol grup amb diversos
-    mapes: cada mapa és una opció. Amb "zones": {"by": "district"} al bloc, una
-    opció per districte (camp "district" de cada grup). Els textos es poden canviar
-    amb "zones" a la ciutat o al bloc: {"label": ..., "placeholder": ..., "back": ...}."""
+def add_zones(b, groups, course, cfg, pid=None):
+    """Si un bloc (o una part d'un bloc) té molts mapes, hi posa un desplegable per
+    saltar al districte, la zona o el mapa. Diversos grups (p. ex. un per districte):
+    cada grup és una opció (o cada districte, si el grup en té diversos). Un sol grup
+    amb diversos mapes: cada mapa és una opció. Amb "zones": {"by": "district"} al
+    bloc, una opció per districte (camp "district" de cada grup). Els textos es poden
+    canviar amb "zones" a la ciutat o al bloc: {"label": ..., "placeholder": ..., "back": ...}."""
     options, targets = [], []
     if len(groups) > 1 and cfg.get("by") == "district":
         # Diversos grups per districte (p. ex. un per mapa): una opció per districte,
@@ -104,7 +104,7 @@ def add_zones(b, groups, course, cfg):
     if len(options) < ZONES_MIN:
         return
     label, placeholder, back = ZONES_TEXT[kind]
-    pid = f"{course['anchor']}-tria"
+    pid = pid or f"{course['anchor']}-tria"
     b["zones"] = {"id": pid, "label": cfg.get("label", label), "placeholder": cfg.get("placeholder", placeholder), "options": options}
     for m, name in targets:
         m["label"] = m.get("label") or name   # cada mapa amb el seu nom a sobre
@@ -130,6 +130,34 @@ for s in fp["sections"]:
     s["items"] = [(it[0], bw_html if it[1] == "__before_walk__" else Markup(f"<p>{it[1]}</p>"), slugify(it[0]), it[2] if len(it) > 2 else None) for it in s["items"]]
 site["home"]["faq"] = [(q, Markup("<p>{}</p>").format(a)) for q, a in site["home"]["faq"]]
 
+def process_groups(groups, course):
+    """Posa els ids als grups, als districtes o barris i a les rutes, i l'enllaç al
+    mapa de cada ruta. Torna el nombre de rutes."""
+    total = 0
+    for g in groups:
+        if g.get("sections"):
+            g["id"] = g.get("id") or slugify(g["title"])
+            for s in g["sections"]:
+                s["id"] = s.get("id") or slugify(s["title"])
+                # Si un barri continua en un altre mapa, la secció nova porta un id propi
+                # (barri-sants-2) i les rutes mantenen el del barri (barri-sants-ruta-6).
+                prefix = s.get("route_prefix") or s["id"]
+                for r in s["routes"]:
+                    r["id"] = f"{prefix}-ruta-{r['n']}"
+                assign_maps(g, s["routes"])
+            g["count"] = sum(len(s["routes"]) for s in g["sections"])
+        else:
+            g["id"] = g.get("id") or (f"{course['anchor']}-rutes" if len(groups) == 1 else slugify(g["title"]))
+            # Un sol grup: /vic/#quan-el-mon-ruta-5. Diversos grups (p. ex. un per districte): /barcelona/#cap-gracia-ruta-6
+            prefix = course["anchor"] if len(groups) == 1 else g["id"]
+            for r in g["routes"]:
+                r["id"] = f"{prefix}-ruta-{r['n']}"
+            assign_maps(g, g["routes"])
+            g["count"] = len(g["routes"])
+        total += g["count"]
+    return total
+
+
 # Cities
 cities = []
 summaries = {}
@@ -145,31 +173,22 @@ for c in site["cities"]:
     for key, course in courses.items():
         b = by_course.get(key, {"course": key, "text": f"Encara no hi ha rutes d'aquest curs a {city['name']}. Mentrestant, pots fer el temps de reflexió de cada passa caminant a prop de casa o en un lloc tranquil."})
         b = dict(b, course=course)
-        groups = b.get("groups") or []
+        # Un bloc pot tenir diverses parts, cada una amb el seu títol, text, avís,
+        # grups i desplegable (Barcelona «Quan la vida»: rutes des dels CAP i rutes
+        # «Caminant fem salut»). Sense "parts", el bloc és una sola part sense títol.
+        parts = b.get("parts") or [{"groups": b.get("groups") or []}]
         total = 0
-        for g in groups:
-            if g.get("sections"):
-                g["id"] = g.get("id") or slugify(g["title"])
-                for s in g["sections"]:
-                    s["id"] = s.get("id") or slugify(s["title"])
-                    # Si un barri continua en un altre mapa, la secció nova porta un id propi
-                    # (barri-sants-2) i les rutes mantenen el del barri (barri-sants-ruta-6).
-                    prefix = s.get("route_prefix") or s["id"]
-                    for r in s["routes"]:
-                        r["id"] = f"{prefix}-ruta-{r['n']}"
-                    assign_maps(g, s["routes"])
-                g["count"] = sum(len(s["routes"]) for s in g["sections"])
-            else:
-                g["id"] = g.get("id") or (f"{course['anchor']}-rutes" if len(groups) == 1 else slugify(g["title"]))
-                # Un sol grup: /vic/#quan-el-mon-ruta-5. Diversos grups (p. ex. un per districte): /barcelona/#cap-gracia-ruta-6
-                prefix = course["anchor"] if len(groups) == 1 else g["id"]
-                for r in g["routes"]:
-                    r["id"] = f"{prefix}-ruta-{r['n']}"
-                assign_maps(g, g["routes"])
-                g["count"] = len(g["routes"])
-            total += g["count"]
-        b["groups"] = groups
-        add_zones(b, groups, course, dict(city.get("zones") or {}, **(b.get("zones") or {})))
+        for i, p in enumerate(parts):
+            assert i == 0 or p.get("id") and p.get("title"), "cada part, a partir de la segona, necessita id i title"
+            p["count"] = process_groups(p["groups"], course)
+            total += p["count"]
+            if p.get("notice"):
+                p["notice"] = dict(p["notice"], html=[Markup(h) for h in p["notice"]["html"]])
+            # La primera part manté el desplegable del curs (#quan-la-vida-tria); les altres, el seu (#caminant-fem-salut-tria)
+            cfg = dict(city.get("zones") or {}, **(b.get("zones") or {}), **(p.get("zones") or {}))
+            add_zones(p, p["groups"], course, cfg, pid=None if i == 0 else f"{p['id']}-tria")
+        b["parts"] = parts
+        b["groups"] = [g for p in parts for g in p["groups"]]
         b["total"] = total
         b["summary"] = b.get("summary") or ("Encara no hi ha rutes d'aquest curs" if not total else f"{total} rutes")
         course_summaries[key][city["slug"]] = {"text": b["summary"] if total else "Encara no hi ha rutes d'aquest curs. Pots caminar a prop de casa.", "has": bool(total)}
@@ -186,8 +205,11 @@ for city in cities:
     ids = []
     for b in city["blocks"]:
         ids.append(b["course"]["anchor"])
-        if b.get("zones"):
-            ids.append(b["zones"]["id"])
+        for p in b["parts"]:
+            if p.get("id"):
+                ids.append(p["id"])
+            if p.get("zones"):
+                ids.append(p["zones"]["id"])
         for g in b["groups"]:
             ids.append(g["id"])
             ids += [m["id"] for m in g["maps"] if m.get("id")]

@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% from "parts.html" import page_head, before_walk, picker %}
 
-{% macro route_item(r) -%}
+{% macro route_item(r, hl=4) -%}
 <li class="route" id="{{ r.id }}">
   <span class="route__n" aria-hidden="true">{{ r.n }}</span>
   <div class="route__body">
-    <h4 class="route__name"><span class="sr">Ruta {{ r.n }}: </span>{{ r.name }}</h4>
+    <h{{ hl }} class="route__name"><span class="sr">Ruta {{ r.n }}: </span>{{ r.name }}</h{{ hl }}>
     {% if r.start %}<p class="route__start">{{ r.start }}</p>{% endif %}
     <p class="route__info">{{ r.info }}</p>
     {% if r.address %}<p class="route__addr">{{ icon('pin') }}<span{% if '[' in r.address %} class="pending"{% endif %}>{{ r.address }}</span></p>{% endif %}
@@ -63,23 +63,47 @@
       <a class="btn btn--outline" href="{{ root }}{{ b.course.slug }}/">Torna al curs</a>
     </p>
 
-    {% if b.zones %}{{ picker(b.zones.id, b.zones.label, b.zones.placeholder, b.zones.options, 'nav', 'picker--zones') }}{% endif %}
+    {# Un bloc amb diverses parts (Barcelona «Quan la vida»): enllaços a cada part #}
+    {% set titled = b.parts|selectattr('title')|list %}
+    {% if titled|length > 1 %}
+    <nav class="partnav" aria-label="Tipus de rutes">
+      {% for p in titled %}<a class="partnav__a" href="#{{ p.id }}">{{ icon('arrow', 'i--down') }}<span><strong>{{ p.nav or p.title }}</strong><small>{{ p.count }} rutes</small></span></a>{% endfor %}
+    </nav>
+    {% endif %}
 
-    {% for g in b.groups %}
+    {% for p in b.parts %}
+    {% set hl = 4 if p.title else 3 %}
+    {% if p.title %}
+    <div class="part" id="{{ p.id }}">
+      <h3 class="part__title">{{ p.title }}</h3>
+      {% if p.text %}<p>{{ p.text }}</p>{% endif %}
+      {% if p.notice %}
+      <aside class="note note--care note--part" aria-label="{{ p.notice.title }}">
+        <p class="note__title">{{ icon('lifebuoy') }}{{ p.notice.title }}</p>
+        {% for h in p.notice.html %}<p class="note__p">{{ h }}</p>{% endfor %}
+      </aside>
+      {% endif %}
+    {% endif %}
+
+    {% if p.zones %}{{ picker(p.zones.id, p.zones.label, p.zones.placeholder, p.zones.options, 'nav', 'picker--zones') }}{% endif %}
+
+    {% for g in p.groups %}
     <div class="group" id="{{ g.id }}">
       {% for m in g.maps %}{{ map_box(m) }}{% endfor %}
       <details class="routes"{% if g.open %} open{% endif %}>
         <summary><span><strong>{{ g.title }}</strong>{% if g.count|string not in g.title %}<small>{{ g.count }} {{ 'ruta' if g.count == 1 else 'rutes' }}</small>{% endif %}</span>{{ icon('caret', 'faq__caret') }}</summary>
         {% if g.sections %}
           {% for s in g.sections %}
-          <h3 class="routes__district" id="{{ s.id }}">{{ s.title }}</h3>
-          <ol class="routes__list">{% for r in s.routes %}{{ route_item(r) }}{% endfor %}</ol>
+          <h{{ hl }} class="routes__district" id="{{ s.id }}">{{ s.title }}</h{{ hl }}>
+          <ol class="routes__list">{% for r in s.routes %}{{ route_item(r, hl + 1) }}{% endfor %}</ol>
           {% endfor %}
         {% else %}
-          <ol class="routes__list">{% for r in g.routes %}{{ route_item(r) }}{% endfor %}</ol>
+          <ol class="routes__list">{% for r in g.routes %}{{ route_item(r, hl + 1) }}{% endfor %}</ol>
         {% endif %}
       </details>
     </div>
+    {% endfor %}
+    {% if p.title %}</div>{% endif %}
     {% endfor %}
   </section>
   {% endfor %}
