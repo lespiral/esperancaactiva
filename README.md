@@ -41,6 +41,17 @@ Són a `src/templates/infografies/` (una per fitxer, copiada del bloc INICI–FI
 2. A `data/site.json`, a `cities`, afegeix-hi la ciutat (`slug`, `name`, `region`, `icon`), en ordre alfabètic. Sortirà sola als desplegables i a les targetes.
 3. Genera la web.
 
+## Pobles i comarques (territoris)
+
+Per al curs «Quan sostenir la vida es fa difícil», les rutes surten d'entitats de l'economia social i solidària de tot Catalunya (inventari de la Xarxa d'Ateneus Cooperatius). No s'agrupen per ateneus sinó per llocs: cada ruta va on comença.
+
+- Les ciutats amb pàgina (Barcelona, el Prat, Olot, Vic) tenen aquestes rutes al seu bloc `dia` (`#quan-sostenir`).
+- La resta va a una pàgina de territori: `data/<territori>.json` (p. ex. `baix-llobregat.json`) i, a `data/site.json`, la llista `territories` (`slug`, `name`, `region`, `icon`). Té la mateixa forma que una ciutat, però amb `"kind": "territory"`, i només surten els cursos que hi tenen rutes.
+- Dins el bloc, un grup per mapa (màxim 10 rutes) i una secció per municipi. Amb `"zones": {"by": "section", ...}` surt el desplegable «Vés directament al teu poble». Les rutes es numeren per municipi: `/baix-llobregat/#olesa-de-montserrat-ruta-1`; el municipi, `/baix-llobregat/#olesa-de-montserrat`.
+- `see_also`: enllaços a una altra pàgina, amb la ciutat i el curs (`{"text": ..., "city": "el-prat", "course": "dia"}`).
+- «Les ciutats» i la pàgina del curs tenen la secció «Pobles i comarques» (`territories_page` a `data/site.json`), amb les targetes dels territoris i el desplegable de tots els pobles.
+- Un grup que encara no té mapa porta `"maps": []` i `"map_pending": "<text>"`: surt un quadre amb el text i les rutes no tenen el botó «Obre el mapa».
+
 ## Desplegables «Vés directament a…»
 
 - A Inici, a Les ciutats i a cada pàgina de curs hi ha un desplegable que porta a la targeta de la ciutat triada (`#ciutat-olot`).
