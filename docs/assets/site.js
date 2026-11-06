@@ -43,4 +43,11 @@
       sel.value = '';
     });
   });
+
+  // Desplegables que porten a una altra pàgina (p. ex. «Vés directament al teu poble»)
+  Array.prototype.forEach.call(document.querySelectorAll('select[data-go]'), function (sel) {
+    sel.addEventListener('change', function () {
+      if (sel.value) location.href = sel.value;
+    });
+  });
 })();

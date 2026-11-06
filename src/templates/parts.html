@@ -36,6 +36,37 @@
 </div>
 {%- endmacro %}
 
+{# Desplegable que porta a una altra pàgina (p. ex. «Vés directament al teu poble»). options: (text, adreça relativa a l'arrel) #}
+{% macro go_picker(id, label, placeholder, options, root, cls='') -%}
+<div class="picker{% if cls %} {{ cls }}{% endif %}">
+  <label class="picker__label" for="{{ id }}">{{ icon('pin') }}<span>{{ label }}</span></label>
+  <div class="picker__box">
+    <select id="{{ id }}" class="picker__select" data-go>
+      <option value="">{{ placeholder }}</option>
+      {% for t, v in options %}<option value="{{ root }}{{ v }}">{{ t }}</option>{% endfor %}
+    </select>
+    {{ icon('caret', 'picker__caret') }}
+  </div>
+</div>
+{%- endmacro %}
+
+{# Targetes dels territoris (p. ex. el Baix Llobregat), com les de les ciutats #}
+{% macro territory_cards(territories, root, summaries, anchor='') -%}
+<ul class="cards cards--cities">
+  {% for t in territories if t.slug in summaries %}
+  <li class="card card--city card--territory" id="territori-{{ t.slug }}">
+    <a class="card__link" href="{{ root }}{{ t.slug }}/{% if anchor %}#{{ anchor }}{% endif %}">
+      <span class="card__icon" aria-hidden="true">{{ icon(t.icon) }}</span>
+      <span class="card__title">{{ t.name }}</span>
+      <span class="card__region">{{ t.region }}</span>
+      <span class="card__text">{{ summaries[t.slug].text }}</span>
+      <span class="card__more">Veure les rutes {{ icon('arrow') }}</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{%- endmacro %}
+
 {% macro city_cards(cities, root, summaries, anchor='', center=False) -%}
 {% set opts = [] %}{% for c in cities if c.slug %}{% set _ = opts.append((c.name, 'ciutat-' ~ c.slug)) %}{% endfor %}
 {{ picker('tria-ciutat', 'Vés directament a la teva ciutat', 'Tria una ciutat', opts, 'pin', 'picker--center' if center else '') }}
