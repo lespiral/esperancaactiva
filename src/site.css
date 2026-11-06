@@ -404,9 +404,11 @@ details[open] > summary .faq__caret { transform: rotate(180deg); }
 .gains__end { margin: 20px 0 0; padding: 14px 18px; border-left: 4px solid var(--sun); background: var(--sun-50); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; color: var(--green-900); }
 .about { display: flex; gap: 26px; align-items: flex-start; }
 .about__logo { flex: none; width: 200px; height: auto; padding: 10px 12px; background: #fff; border: 1px solid var(--line); border-radius: 14px; }
+.about__photo { flex: none; width: 180px; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 14px; border: 1px solid var(--line); background: var(--green-50); }
+.about__logo--small { display: block; width: 160px; margin-top: 18px; padding: 8px 10px; }
 .about h2 { font-size: 1.3rem; }
-.about p:last-child { margin-bottom: 0; }
-@media (max-width: 640px) { .about { flex-direction: column; gap: 16px; } }
+.about p:last-of-type { margin-bottom: 0; }
+@media (max-width: 640px) { .about { flex-direction: column; gap: 16px; } .about__photo { width: 140px; } }
 .note--care .note__title { color: var(--care-ink); }
 .note--care .note__title .i { color: var(--care-ink); width: 1.3em; height: 1.3em; margin: 0; }
 .note--care .note__p { display: block; }

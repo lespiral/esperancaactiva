@@ -69,10 +69,12 @@
   </section>
 
   <section class="panel about" id="sobre-el-facilitador" aria-labelledby="h-about">
-    {% if partners_logo %}<img class="about__logo" src="{{ root }}assets/img/lespiral-elara.png" alt="L'Espiral i Elara Social" width="200">{% endif %}
+    {% if cc.about_photo %}<img class="about__photo" src="{{ root }}assets/img/{{ cc.about_photo }}" alt="{{ cc.about_photo_alt }}" width="180" height="225" loading="lazy">
+    {% elif partners_logo %}<img class="about__logo" src="{{ root }}assets/img/lespiral-elara.png" alt="L'Espiral i Elara Social" width="200">{% endif %}
     <div>
       <h2 id="h-about">{{ cc.about_title }}</h2>
       {% for p in cc.about %}<p>{{ p }}</p>{% endfor %}
+      {% if cc.about_photo and partners_logo %}<img class="about__logo about__logo--small" src="{{ root }}assets/img/lespiral-elara.png" alt="L'Espiral i Elara Social" width="160" loading="lazy">{% endif %}
     </div>
   </section>
 
