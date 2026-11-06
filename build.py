@@ -185,6 +185,9 @@ for c in site["cities"] + site.get("territories", []):
     city.setdefault("title", f"Caminar per {city['name']}")
     city["icon"] = c["icon"]
     city["kind"] = "territory" if is_territory else "city"
+    # Enllaços a una altra pàgina, p. ex. {"text": ..., "city": "el-prat", "course": "dia"} → el-prat/#quan-sostenir
+    for s in city.get("see_also") or []:
+        s["href"] = f"{s['city']}/#{courses[s['course']]['anchor']}"
     by_course = {b["course"]: b for b in city["blocks"]}
     blocks = []
     for key, course in courses.items():
