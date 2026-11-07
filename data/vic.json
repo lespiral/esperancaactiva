@@ -2,7 +2,7 @@
   "slug": "vic",
   "name": "Vic",
   "region": "Osona",
-  "summary": "45 rutes curtes i circulars: pels parcs, des dels CAP i hospitals, des dels equipaments comunitaris i des de l'economia social.",
+  "summary": "44 rutes curtes i circulars: pels parcs, des dels CAP i hospitals, des dels equipaments comunitaris i des de l'economia social.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
   "blocks": [
     {
@@ -201,10 +201,10 @@
     },
     {
       "course": "mon",
-      "text": "23 rutes curtes i circulars pels parcs i espais verds de Vic, d'entre 1 i 2 km cadascuna (uns 20 minuts caminant). Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
+      "text": "22 rutes curtes i circulars pels parcs i espais verds de Vic, d'entre 1 i 2 km cadascuna (uns 20 minuts caminant). Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
       "groups": [
         {
-          "title": "Les 23 rutes",
+          "title": "Les 22 rutes",
           "maps": [
             {
               "mid": "1F6Z1mYqGp9cxWOXq0dha9m_aNUasrWw",
@@ -212,7 +212,7 @@
               "ll": "41.9285,2.2579",
               "z": 14,
               "label": "Rutes 1 a 10",
-              "routes": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+              "routes": [1, 2, 3, 4, 6, 7, 8, 9, 10]
             },
             {
               "mid": "1m_kpfFrRlgEIgT8WZ2aw_f-WQMgvs7A",
@@ -256,12 +256,6 @@
               "info": "1,57 km · 19–24 min caminant · 30–45 min amb pauses · circular",
               "note": "Inici a la riba del Mèder, al pont del Blanqueig.",
               "dest": "Pont del Blanqueig, Vic"
-            },
-            {
-              "n": 5,
-              "name": "Parc de Xavier Roca i Viñas",
-              "info": "1,72 km · 21–26 min caminant · 30–45 min amb pauses · circular",
-              "dest": "Parc de Xavier Roca i Viñas, Vic"
             },
             {
               "n": 6,
@@ -377,7 +371,7 @@
           ]
         }
       ],
-      "summary": "23 rutes pels parcs"
+      "summary": "22 rutes pels parcs"
     },
     {
       "course": "dia",
