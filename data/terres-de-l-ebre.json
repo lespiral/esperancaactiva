@@ -39,7 +39,8 @@
                   "name": "Ateneu Informàtic",
                   "info": "1,83 km · 21–28 min caminant · circular",
                   "address": "Carrer de Teodor González, 31, baixos, Tortosa",
-                  "desc": "Ateneu Informàtic ofereix consultoria, formació i auditoria en protecció de dades i privacitat per a empreses i organitzacions."
+                  "desc": "Ateneu Informàtic ofereix consultoria, formació i auditoria en protecció de dades i privacitat per a empreses i organitzacions.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-tortosa-ateneu-informatic-295087319"
                 }
               ]
             },
@@ -51,14 +52,16 @@
                   "name": "Fundació Gentis",
                   "info": "1,68 km · 20–26 min caminant · circular",
                   "address": "Carrer de Barcelona, 73, Amposta",
-                  "desc": "La Fundació Gentis promou la inclusió social mitjançant formació, orientació i inserció laboral i projectes d’acompanyament comunitari."
+                  "desc": "La Fundació Gentis promou la inclusió social mitjançant formació, orientació i inserció laboral i projectes d’acompanyament comunitari.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-amposta-fundacio-gentis-295087435"
                 },
                 {
                   "n": 2,
                   "name": "EPI Energia per la Igualtat",
                   "info": "1,83 km · 22–28 min caminant · circular",
                   "address": "Carrer Primer de Maig, 1, 3r B, Amposta",
-                  "desc": "EPI és una consultoria energètica que acompanya empreses i administracions en eficiència energètica, renovables i comunitats energètiques."
+                  "desc": "EPI és una consultoria energètica que acompanya empreses i administracions en eficiència energètica, renovables i comunitats energètiques.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-amposta-epi-energia-per-la-igualtat-295087089"
                 }
               ]
             },
@@ -70,7 +73,8 @@
                   "name": "Fundació Ulldecona",
                   "info": "1,88 km · 22–29 min caminant · circular",
                   "address": "Carrer del Maestrat, 1, Ulldecona",
-                  "desc": "La Fundació Ulldecona ofereix serveis de suport a persones amb dependència, inclòs l’acompanyament i el transport a equipaments i serveis."
+                  "desc": "La Fundació Ulldecona ofereix serveis de suport a persones amb dependència, inclòs l’acompanyament i el transport a equipaments i serveis.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-ulldecona-fundacio-ulldecona-295086659"
                 }
               ]
             },
@@ -82,7 +86,8 @@
                   "name": "AL FATRIYYA Agrícola Sant Isidre SCCL",
                   "info": "1,81 km · 21–28 min caminant · circular",
                   "address": "Avinguda de la Misericòrdia, 71, la Fatarella",
-                  "desc": "Agrícola Sant Isidre de la Fatarella és una cooperativa agrària que elabora i comercialitza productes com vi i oli vinculats al territori."
+                  "desc": "Agrícola Sant Isidre de la Fatarella és una cooperativa agrària que elabora i comercialitza productes com vi i oli vinculats al territori.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-la-fatarella-al-fatriyya-agricola-sant-isidre-sccl-295087520"
                 }
               ]
             }

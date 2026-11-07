@@ -4224,14 +4224,16 @@
                   "name": "Facto SCCL",
                   "info": "1,89 km · 22–29 min caminant · circular",
                   "address": "Carrer del Comerç, 33, entresol 1a, Barcelona",
-                  "desc": "Facto ofereix assessorament i gestió empresarial, formació i acompanyament a projectes de l’economia social i a administracions públiques."
+                  "desc": "Facto ofereix assessorament i gestió empresarial, formació i acompanyament a projectes de l’economia social i a administracions públiques.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-facto-sccl-barcelona-295073750"
                 },
                 {
                   "n": 2,
                   "name": "Col·lectiu Ronda",
                   "info": "1,79 km · 21–27 min caminant · circular",
                   "address": "Carrer de Trafalgar, 50-52, baixos, Barcelona",
-                  "desc": "Col·lectiu Ronda és una cooperativa d’advocacia i assessorament jurídic, laboral, fiscal i econòmic."
+                  "desc": "Col·lectiu Ronda és una cooperativa d’advocacia i assessorament jurídic, laboral, fiscal i econòmic.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-collectiu-ronda-barcelona-295075425"
                 }
               ]
             },
@@ -4244,14 +4246,16 @@
                   "name": "GEDI SCCL",
                   "info": "1,82 km · 21–28 min caminant · circular",
                   "address": "Carrer de Llull, 27–39, 2n 9a, Barcelona",
-                  "desc": "GEDI és una cooperativa que desenvolupa serveis i projectes d’atenció a les persones i acompanyament a organitzacions."
+                  "desc": "GEDI és una cooperativa que desenvolupa serveis i projectes d’atenció a les persones i acompanyament a organitzacions.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-barcelona-gedi-sccl-295088337"
                 },
                 {
                   "n": 2,
                   "name": "La Fàbrica Cooperativa",
                   "info": "2,08 km · 24–32 min caminant · circular",
                   "address": "Carrer d’Emília Coranty, 5–9 (Perquartu), Barcelona",
-                  "desc": "La Fàbrica Cooperativa acompanya comunitats per reforçar-ne l’organització i millorar les condicions de vida i els entorns que habiten."
+                  "desc": "La Fàbrica Cooperativa acompanya comunitats per reforçar-ne l’organització i millorar les condicions de vida i els entorns que habiten.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-la-fabrica-cooperativa-barcelona-295073924"
                 }
               ]
             }
@@ -4279,7 +4283,8 @@
                   "name": "femProcomuns",
                   "info": "2,01 km · 24–31 min caminant · circular",
                   "address": "Carrer de la Providència, 42, Barcelona",
-                  "desc": "femProcomuns impulsa projectes tecnològics i comunitaris basats en el procomú, amb eines digitals i iniciatives de cooperació oberta."
+                  "desc": "femProcomuns impulsa projectes tecnològics i comunitaris basats en el procomú, amb eines digitals i iniciatives de cooperació oberta.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-femprocomuns-barcelona-295073989"
                 }
               ]
             },
@@ -4292,7 +4297,8 @@
                   "name": "Travinae",
                   "info": "1,75 km · 21–27 min caminant · circular",
                   "address": "Ronda del General Mitre, 239, Barcelona",
-                  "desc": "Travinae és una cooperativa especialitzada en formació d’idiomes asiàtics, traducció, interpretació i mediació intercultural."
+                  "desc": "Travinae és una cooperativa especialitzada en formació d’idiomes asiàtics, traducció, interpretació i mediació intercultural.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-travinae-barcelona-295076516"
                 }
               ]
             }
@@ -4320,63 +4326,72 @@
                   "name": "Assemblea de Cooperació per la Pau (ACPP)",
                   "info": "1,99 km · 23–30 min caminant · circular",
                   "address": "Carrer d’Aragó, 186, 2n 4a, Barcelona",
-                  "desc": "L’Assemblea de Cooperació per la Pau impulsa projectes de cooperació, acció humanitària i intervenció social per defensar drets i promoure la pau."
+                  "desc": "L’Assemblea de Cooperació per la Pau impulsa projectes de cooperació, acció humanitària i intervenció social per defensar drets i promoure la pau.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-assemblea-de-cooperacio-per-la-pau-acpp-barcelona-295076065"
                 },
                 {
                   "n": 2,
                   "name": "Fundació Roca Galès",
                   "info": "1,89 km · 22–29 min caminant · circular",
                   "address": "Carrer d’Aragó, 281, 1r 1a, Barcelona",
-                  "desc": "La Fundació Roca Galès treballa per l’estudi, la difusió i la memòria del cooperativisme i l’economia social."
+                  "desc": "La Fundació Roca Galès treballa per l’estudi, la difusió i la memòria del cooperativisme i l’economia social.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-fundacio-roca-gales-barcelona-295075187"
                 },
                 {
                   "n": 3,
                   "name": "Xarxa d'Economia Solidària (XES), Calidoscoop SCCL, Sostre Cívic, Opcions SCCL i Espai Ambiental",
                   "info": "1,80 km · 21–28 min caminant · circular",
                   "address": "Carrer de Casp, 43, baixos, Barcelona",
-                  "desc": "La Xarxa d’Economia Solidària agrupa persones i organitzacions que impulsen una economia basada en la cooperació, el suport mutu i la transformació social. Calidoscoop és una cooperativa de consultoria social dedicada a la dinamització territorial de l’economia social, l’emprenedoria i el cooperativisme. Ofereix assessorament, formació i acompanyament a persones, organitzacions i administracions. Sostre Cívic promou projectes d’habitatge cooperatiu en cessió d’ús, amb propietat col·lectiva i gestió democràtica. Opcions difon informació i acompanya pràctiques de consum conscient amb criteris de justícia social i sostenibilitat. Espai Ambiental acompanya iniciatives comunitàries vinculades a l’ecologia i a la transició ecosocial."
+                  "desc": "La Xarxa d’Economia Solidària agrupa persones i organitzacions que impulsen una economia basada en la cooperació, el suport mutu i la transformació social. Calidoscoop és una cooperativa de consultoria social dedicada a la dinamització territorial de l’economia social, l’emprenedoria i el cooperativisme. Ofereix assessorament, formació i acompanyament a persones, organitzacions i administracions. Sostre Cívic promou projectes d’habitatge cooperatiu en cessió d’ús, amb propietat col·lectiva i gestió democràtica. Opcions difon informació i acompanya pràctiques de consum conscient amb criteris de justícia social i sostenibilitat. Espai Ambiental acompanya iniciatives comunitàries vinculades a l’ecologia i a la transició ecosocial.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-xarxa-deconomia-solidaria-xes-barcelona-295073657"
                 },
                 {
                   "n": 4,
                   "name": "COS Salut",
                   "info": "1,80 km · 21–28 min caminant · circular",
                   "address": "Carrer de la Indústria, 93, Barcelona",
-                  "desc": "COS és una cooperativa de serveis de salut que ofereix atenció en diferents especialitats i promou un model d’organització basat en la cooperació."
+                  "desc": "COS és una cooperativa de serveis de salut que ofereix atenció en diferents especialitats i promou un model d’organització basat en la cooperació.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-cos-salut-barcelona-295075803"
                 },
                 {
                   "n": 5,
                   "name": "Fundació ECOM",
                   "info": "1,91 km · 23–29 min caminant · circular",
                   "address": "Carrer de Llançà, 42, baixos, Barcelona",
-                  "desc": "La Fundació ECOM impulsa serveis i iniciatives adreçats a persones amb discapacitat física i orgànica. Treballa per millorar la seva qualitat de vida i autonomia personal, i ofereix formació als professionals que les acompanyen."
+                  "desc": "La Fundació ECOM impulsa serveis i iniciatives adreçats a persones amb discapacitat física i orgànica. Treballa per millorar la seva qualitat de vida i autonomia personal, i ofereix formació als professionals que les acompanyen.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-fundacio-ecom-barcelona-295073318"
                 },
                 {
                   "n": 6,
                   "name": "FCP Associats SCCL",
                   "info": "1,95 km · 23–29 min caminant · circular",
                   "address": "Carrer de Mallorca, 214, Barcelona",
-                  "desc": "FCP Associats, que treballa amb la marca La Qperativa, és una cooperativa de serveis d’assessoria i suport jurídic. Acompanya persones, empreses i projectes d’economia social en la gestió administrativa, laboral i societària, i en el desenvolupament cooperatiu."
+                  "desc": "FCP Associats, que treballa amb la marca La Qperativa, és una cooperativa de serveis d’assessoria i suport jurídic. Acompanya persones, empreses i projectes d’economia social en la gestió administrativa, laboral i societària, i en el desenvolupament cooperatiu.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-fcp-associats-sccl-barcelona-295072351"
                 },
                 {
                   "n": 7,
                   "name": "Aiguasol",
                   "info": "1,75 km · 21–27 min caminant · circular",
                   "address": "Carrer de Roger de Llúria, 29, 3r 2a, Barcelona",
-                  "desc": "Aiguasol ofereix consultoria energètica per millorar l’eficiència i l’impacte ambiental d’edificis, processos i sistemes."
+                  "desc": "Aiguasol ofereix consultoria energètica per millorar l’eficiència i l’impacte ambiental d’edificis, processos i sistemes.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-aiguasol-barcelona-295075616"
                 },
                 {
                   "n": 8,
                   "name": "La Formigueta Treballadora",
                   "info": "1,68 km · 20–26 min caminant · circular",
                   "address": "Rambla de Catalunya, 133, principal, Barcelona",
-                  "desc": "La Formigueta Treballadora és una associació que posa recursos formatius, organitzatius i de desenvolupament econòmic a disposició de les persones associades."
+                  "desc": "La Formigueta Treballadora és una associació que posa recursos formatius, organitzatius i de desenvolupament econòmic a disposició de les persones associades.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-barcelona-la-formigueta-treballadora-295086175"
                 },
                 {
                   "n": 9,
                   "name": "Set-C SCCL",
                   "info": "2,17 km · 26–33 min caminant · circular",
                   "address": "Ronda de Sant Pere, 19–21, 5è 5a, Barcelona",
-                  "desc": "Set-C ofereix assessorament jurídic, econòmic i fiscal, i serveis de gestió per a empreses i organitzacions."
+                  "desc": "Set-C ofereix assessorament jurídic, econòmic i fiscal, i serveis de gestió per a empreses i organitzacions.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-set-c-sccl-barcelona-295074568"
                 }
               ]
             }
@@ -4404,70 +4419,80 @@
                   "name": "La Tregua",
                   "info": "1,61 km · 19–25 min caminant · circular",
                   "address": "Carrer de Béjar, 43, Barcelona",
-                  "desc": "La Tregua és una cooperativa socioeducativa que desenvolupa tallers i projectes comunitaris amb l’art com a eina de transformació, des d’una mirada antiracista."
+                  "desc": "La Tregua és una cooperativa socioeducativa que desenvolupa tallers i projectes comunitaris amb l’art com a eina de transformació, des d’una mirada antiracista.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-la-tregua-barcelona-295075644"
                 },
                 {
                   "n": 2,
                   "name": "Raons Públiques SCCL",
                   "info": "1,93 km · 23–29 min caminant · circular",
                   "address": "Carrer de la Concòrdia, 30, baixos, Barcelona",
-                  "desc": "Raons és una cooperativa sense ànim de lucre que desenvolupa processos participatius i d’innovació social urbana. Acompanya persones, comunitats i organitzacions per pensar, dissenyar i transformar col·lectivament els espais on viuen, treballen i es relacionen."
+                  "desc": "Raons és una cooperativa sense ànim de lucre que desenvolupa processos participatius i d’innovació social urbana. Acompanya persones, comunitats i organitzacions per pensar, dissenyar i transformar col·lectivament els espais on viuen, treballen i es relacionen.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-raons-publiques-sccl-barcelona-295073067"
                 },
                 {
                   "n": 3,
                   "name": "Associació Coòpolis i Holon",
                   "info": "1,94 km · 23–30 min caminant · circular",
                   "address": "Carrer de la Constitució, 19–25, Bloc 4 (Can Batlló), Barcelona",
-                  "desc": "Coòpolis és l’ateneu cooperatiu de Barcelona i ofereix informació, formació i acompanyament per impulsar projectes de l’economia social i cooperativa. Holon és una agència cooperativa de disseny que desenvolupa productes, serveis i polítiques vinculats a les transicions ecosocials."
+                  "desc": "Coòpolis és l’ateneu cooperatiu de Barcelona i ofereix informació, formació i acompanyament per impulsar projectes de l’economia social i cooperativa. Holon és una agència cooperativa de disseny que desenvolupa productes, serveis i polítiques vinculats a les transicions ecosocials.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-associacio-coopolis-barcelona-295075394"
                 },
                 {
                   "n": 4,
                   "name": "Reflexes, MigrESS i Abarka Cooperativa",
                   "info": "1,85 km · 22–28 min caminant · circular",
                   "address": "Carrer de la Constitució, 19, Bloc 8, nau 54, Barcelona",
-                  "desc": "Reflexes és una cooperativa d’iniciativa social que ofereix serveis educatius. MigrESS impulsa la participació i l’organització de persones migrades i racialitzades en l’economia social i solidària. Abarka és una cooperativa d’iniciativa social impulsada per persones migrades i racialitzades que utilitza la gastronomia per crear oportunitats laborals i posar en valor cultures africanes."
+                  "desc": "Reflexes és una cooperativa d’iniciativa social que ofereix serveis educatius. MigrESS impulsa la participació i l’organització de persones migrades i racialitzades en l’economia social i solidària. Abarka és una cooperativa d’iniciativa social impulsada per persones migrades i racialitzades que utilitza la gastronomia per crear oportunitats laborals i posar en valor cultures africanes.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-reflexes-barcelona-295075523"
                 },
                 {
                   "n": 5,
                   "name": "La Ciutat Invisible",
                   "info": "1,90 km · 22–29 min caminant · circular",
                   "address": "Carrer de la Riera d’Escuder, 38, baixos, Barcelona",
-                  "desc": "La Ciutat Invisible és una cooperativa amb llibreria crítica i de proximitat, i projectes culturals i de producció pròpia."
+                  "desc": "La Ciutat Invisible és una cooperativa amb llibreria crítica i de proximitat, i projectes culturals i de producció pròpia.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-la-ciutat-invisible-barcelona-295075410"
                 },
                 {
                   "n": 6,
                   "name": "Almena Feminista",
                   "info": "1,81 km · 21–28 min caminant · circular",
                   "address": "Carrer de Mir Geribert, 8, tercera planta, Barcelona",
-                  "desc": "Almena és una cooperativa feminista que treballa en la prevenció i l’abordatge de les violències masclistes i la incorporació de la perspectiva de gènere."
+                  "desc": "Almena és una cooperativa feminista que treballa en la prevenció i l’abordatge de les violències masclistes i la incorporació de la perspectiva de gènere.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-almena-feminista-barcelona-295075885"
                 },
                 {
                   "n": 7,
                   "name": "La Dinamo Fundació",
                   "info": "1,83 km · 21–28 min caminant · circular",
                   "address": "Carrer d’en Blanco, 73, baixos, Barcelona",
-                  "desc": "La Dinamo és una fundació que promou el model d’habitatge cooperatiu en cessió d’ús."
+                  "desc": "La Dinamo és una fundació que promou el model d’habitatge cooperatiu en cessió d’ús.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-la-dinamo-fundacio-barcelona-295075678"
                 },
                 {
                   "n": 8,
                   "name": "Confederació de Cooperatives de Catalunya",
                   "info": "1,67 km · 20–26 min caminant · circular",
                   "address": "Carrer de Premià, 15, 2a planta, Barcelona",
-                  "desc": "La Confederació de Cooperatives de Catalunya representa el moviment cooperatiu català i promou el seu reconeixement, la col·laboració i el desenvolupament."
+                  "desc": "La Confederació de Cooperatives de Catalunya representa el moviment cooperatiu català i promou el seu reconeixement, la col·laboració i el desenvolupament.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-confederacio-de-cooperatives-de-catalunya-barcelona-295076599"
                 },
                 {
                   "n": 9,
                   "name": "La Pera Comunicació i Trama SCCL",
                   "info": "1,64 km · 19–25 min caminant · circular",
                   "address": "Carrer d’Olzinelles, 63, baixos (Espai Cultural La Hormigonera), Barcelona",
-                  "desc": "La Pera treballa en comunicació, audiovisuals, disseny gràfic i web i gestió cultural. Trama desenvolupa activitats culturals i educatives amb perspectiva de gènere, participació comunitària i atenció a la diversitat."
+                  "desc": "La Pera treballa en comunicació, audiovisuals, disseny gràfic i web i gestió cultural. Trama desenvolupa activitats culturals i educatives amb perspectiva de gènere, participació comunitària i atenció a la diversitat.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-la-pera-comunicacio-barcelona-295075420"
                 },
                 {
                   "n": 10,
                   "name": "Escola Popular Keras Buti SCCL",
                   "info": "1,71 km · 20–26 min caminant · circular",
                   "address": "Carrer d’Ulldecona, 24, Barcelona",
-                  "desc": "Keras Buti desenvolupa iniciatives de consum agroecològic i espais comunitaris vinculats al territori, l’economia social i la cultura."
+                  "desc": "Keras Buti desenvolupa iniciatives de consum agroecològic i espais comunitaris vinculats al territori, l’economia social i la cultura.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-escola-popular-keras-buti-sccl-barcelona-295076337"
                 }
               ]
             }

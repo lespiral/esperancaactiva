@@ -54,6 +54,8 @@ Per al curs «Quan sostenir la vida es fa difícil», les rutes surten d'entitat
 
 **Com es van posar les rutes de l'economia social (7 de novembre de 2026).** Les fitxes (KML d'una capa per ruta), el pla i els mids els fa ChatGPT (al Drive: «Checkpoint_MyMaps_…zip» i «Registre_My_Maps_Esperanca_Activa.xlsx»). `tools/ess_extract.py` en treu les rutes (entitats, «Sobre l'entitat», adreça, km, temps, requadre de cada mapa) i `tools/ess_site_data.py` escriu `data/<territori>.json`, `data/l-hospitalet.json`, el bloc `dia` de Barcelona, el Prat, Olot i Vic, i la llista de territoris de `data/site.json`. Si canvien els mapes: actualitzar els mids a `ess_extract.py`, tornar a executar tots dos scripts i `build.py`.
 
+**Enllaç «Obre-la a Wikiloc» (7 de novembre de 2026).** Les rutes de l'economia social també són a Wikiloc (usuari lespiral.elarasocial), una per entitat; ho va fer ChatGPT («Registre_publicacio_Wikiloc.csv» al Drive). `tools/ess_wikiloc.csv` en té l'id, el nom i l'adreça de Wikiloc, i `tools/ess_wikiloc.py` posa el camp `wikiloc` a cada ruta del bloc `dia`: la ruta de l'entitat principal de la seu (el primer nom de la ruta). Cal tornar-lo a executar després de `ess_site_data.py`. A la plantilla, l'enllaç surt al costat d'«Obre el mapa» només si la ruta té `wikiloc`.
+
 ## Desplegables «Vés directament a…»
 
 - A Inici, a Les ciutats i a cada pàgina de curs hi ha un desplegable que porta a la targeta de la ciutat triada (`#ciutat-olot`).

@@ -334,6 +334,11 @@ details[open] > summary .faq__caret { transform: rotate(180deg); }
 .route__go { display: inline-flex; align-items: center; gap: 6px; margin-top: 4px; font: 700 .93rem/1.2 var(--font-head); color: var(--green-800); text-decoration: none; padding: 8px 12px; border-radius: 999px; background: var(--green-50); border: 1px solid var(--green-100); }
 .route__go:hover { background: var(--green-800); color: #fff; border-color: var(--green-800); }
 .route__go .i { width: 1em; height: 1em; }
+.route__links { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; margin-top: 4px; }
+.route__links .route__go { margin-top: 0; }
+.route__wl { display: inline-flex; align-items: center; gap: 5px; font-size: .9rem; color: var(--green-700); text-decoration: underline; text-underline-offset: 2px; padding: 6px 0; }
+.route__wl:hover { color: var(--green-900); }
+.route__wl .i { width: .95em; height: .95em; }
 
 /* ---------- Una iniciativa de ---------- */
 .initiative { display: flex; align-items: center; justify-content: center; gap: 28px; text-align: left; flex-wrap: wrap; }

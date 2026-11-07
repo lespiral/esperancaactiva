@@ -46,35 +46,40 @@
                   "name": "Kult",
                   "info": "1,97 km · 23–30 min caminant · circular",
                   "address": "Carrer de la Foneria, 5–7, baixos, Manresa",
-                  "desc": "Kult impulsa una comunitat de pensament, cultura i acció, vinculada a la participació i al debat cultural."
+                  "desc": "Kult impulsa una comunitat de pensament, cultura i acció, vinculada a la participació i al debat cultural.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-kult-manresa-295074659"
                 },
                 {
                   "n": 2,
                   "name": "GEDI SCCL",
                   "info": "1,75 km · 20–27 min caminant · circular",
                   "address": "Carrer del Bruc, 59, baixos (l’Òrbita), Manresa",
-                  "desc": "GEDI és una cooperativa que desenvolupa serveis i projectes d’atenció a les persones i acompanyament a organitzacions."
+                  "desc": "GEDI és una cooperativa que desenvolupa serveis i projectes d’atenció a les persones i acompanyament a organitzacions.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-gedi-sccl-manresa-295074521"
                 },
                 {
                   "n": 3,
                   "name": "Casa de la Música de Manresa",
                   "info": "1,94 km · 23–30 min caminant · circular",
                   "address": "Carrer de Mossèn Jacint Verdaguer, 21, Manresa",
-                  "desc": "La Casa de la Música de Manresa ofereix formació, espais d’assaig, enregistrament i suport a la creació musical de l’escena local."
+                  "desc": "La Casa de la Música de Manresa ofereix formació, espais d’assaig, enregistrament i suport a la creació musical de l’escena local.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-casa-de-la-musica-de-manresa-manresa-295074662"
                 },
                 {
                   "n": 4,
                   "name": "Frescoop",
                   "info": "1,73 km · 20–26 min caminant · circular",
                   "address": "Carrer de Sallent, 28, Manresa",
-                  "desc": "Frescoop gestiona projectes alimentaris amb valor social i territorial, i comercialitza productes de proximitat i ecològics amb criteris de responsabilitat."
+                  "desc": "Frescoop gestiona projectes alimentaris amb valor social i territorial, i comercialitza productes de proximitat i ecològics amb criteris de responsabilitat.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-frescoop-manresa-295074593"
                 },
                 {
                   "n": 5,
                   "name": "Associació El CAE",
                   "info": "1,68 km · 20–26 min caminant · circular",
                   "address": "Carrer de Sant Joan Baptista de la Salle, 4–6, 1r, Manresa",
-                  "desc": "El CAE promou el joc, l’educació en el lleure i el voluntariat, amb formació, serveis educatius i suport a entitats de la Catalunya Central."
+                  "desc": "El CAE promou el joc, l’educació en el lleure i el voluntariat, amb formació, serveis educatius i suport a entitats de la Catalunya Central.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-associacio-el-cae-manresa-295074557"
                 }
               ]
             },
@@ -86,7 +91,8 @@
                   "name": "Cuidem Lluçanès",
                   "info": "2,02 km · 24–31 min caminant · circular",
                   "address": "Avinguda de Pompeu Fabra, 8 (L’Espai), Prats de Lluçanès",
-                  "desc": "Cuidem Lluçanès ofereix serveis d’acompanyament a la llar, neteja i suport a persones, entitats i esdeveniments."
+                  "desc": "Cuidem Lluçanès ofereix serveis d’acompanyament a la llar, neteja i suport a persones, entitats i esdeveniments.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-cuidem-llucanes-prats-de-llucanes-295074684"
                 }
               ]
             },
@@ -98,7 +104,8 @@
                   "name": "ARCA Associació d'Iniciatives Rurals",
                   "info": "1,61 km · 19–25 min caminant · circular",
                   "address": "Carrer d’Enric Prat de la Riba, 17–19, Torelló",
-                  "desc": "ARCA és una xarxa de suport al desenvolupament rural i marítim que acompanya i representa grups d’acció local."
+                  "desc": "ARCA és una xarxa de suport al desenvolupament rural i marítim que acompanya i representa grups d’acció local.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-arca-associacio-diniciatives-rurals-torello-295075243"
                 }
               ]
             },
@@ -110,7 +117,8 @@
                   "name": "Mixité",
                   "info": "1,82 km · 21–28 min caminant · circular",
                   "address": "Carrer de Barcelona, 40, Tona",
-                  "desc": "Mixité acompanya projectes participatius de desenvolupament i gestió del territori, amb criteris socials, ambientals i de cooperació ciutadana."
+                  "desc": "Mixité acompanya projectes participatius de desenvolupament i gestió del territori, amb criteris socials, ambientals i de cooperació ciutadana.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-tona-mixite-295088539"
                 }
               ]
             }

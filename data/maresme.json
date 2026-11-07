@@ -39,21 +39,24 @@
                   "name": "Facto SCCL",
                   "info": "2,00 km · 23–30 min caminant · circular",
                   "address": "Carrer d’Ernest Lluch, 32, TecnoCampus TCM2, planta 3a, oficina 19, Mataró",
-                  "desc": "Facto ofereix assessorament i gestió empresarial, formació i acompanyament a projectes de l’economia social i a administracions públiques."
+                  "desc": "Facto ofereix assessorament i gestió empresarial, formació i acompanyament a projectes de l’economia social i a administracions públiques.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-facto-sccl-mataro-295076659"
                 },
                 {
                   "n": 2,
                   "name": "Fundació Unió de Cooperadors de Mataró, Unió de Cooperadors de Mataró i Aiguamoll Música",
                   "info": "1,92 km · 23–29 min caminant · circular",
                   "address": "Carrer de Santa Rita, 1 (Cafè de Mar), Mataró",
-                  "desc": "La Fundació Unió de Cooperadors de Mataró dona suport a cooperatives i iniciatives de l’economia social, amb espais de cotreball i col·laboració al Cafè de Mar. La Unió de Cooperadors de Mataró treballa per preservar el patrimoni i la memòria cooperativa de la ciutat i impulsar el moviment cooperatiu. Aiguamoll Música ofereix serveis de distribució, comunicació, disseny i producció d’esdeveniments culturals i formació."
+                  "desc": "La Fundació Unió de Cooperadors de Mataró dona suport a cooperatives i iniciatives de l’economia social, amb espais de cotreball i col·laboració al Cafè de Mar. La Unió de Cooperadors de Mataró treballa per preservar el patrimoni i la memòria cooperativa de la ciutat i impulsar el moviment cooperatiu. Aiguamoll Música ofereix serveis de distribució, comunicació, disseny i producció d’esdeveniments culturals i formació.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-fundacio-unio-de-cooperadors-de-mataro-mataro-295076669"
                 },
                 {
                   "n": 3,
                   "name": "Musicop SCCL i Visualsonora",
                   "info": "1,77 km · 21–27 min caminant · circular",
                   "address": "Carrer de Serra i Moret, 6, Mataró",
-                  "desc": "Musicop és una cooperativa que desenvolupa projectes educatius, socials i culturals amb especial dedicació a l’educació musical. Visualsonora impulsa l’activitat musical amb projectes de formació, suport a la creació i programació de concerts."
+                  "desc": "Musicop és una cooperativa que desenvolupa projectes educatius, socials i culturals amb especial dedicació a l’educació musical. Visualsonora impulsa l’activitat musical amb projectes de formació, suport a la creació i programació de concerts.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-musicop-sccl-mataro-295076628"
                 }
               ]
             },
@@ -65,7 +68,8 @@
                   "name": "Agència Talaia, La Gûspira i Associació La Cartera",
                   "info": "1,68 km · 20–26 min caminant · circular",
                   "address": "Carrer de Sant Antoni, 61 (Ca la Cartera), Premià de Mar",
-                  "desc": "L’Agència Talaia és una cooperativa de comunicació i periodisme que treballa amb una mirada de transformació social. La Gûspira és una associació socioeducativa que promou la gestió cooperativa i no violenta dels conflictes. Ca la Cartera és un espai de cotreball de Premià de Mar que afavoreix la trobada entre persones i iniciatives de l’economia social."
+                  "desc": "L’Agència Talaia és una cooperativa de comunicació i periodisme que treballa amb una mirada de transformació social. La Gûspira és una associació socioeducativa que promou la gestió cooperativa i no violenta dels conflictes. Ca la Cartera és un espai de cotreball de Premià de Mar que afavoreix la trobada entre persones i iniciatives de l’economia social.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-agencia-talaia-premia-de-mar-295076726"
                 }
               ]
             }

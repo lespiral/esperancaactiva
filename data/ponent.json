@@ -39,7 +39,8 @@
                   "name": "Associació Talma",
                   "info": "2,17 km · 26–33 min caminant · circular",
                   "address": "Carrer de la Font del Gat, 2, baixos, Juneda",
-                  "desc": "Talma acompanya persones i famílies amb serveis de suport, orientació i oportunitats de participació i inclusió laboral."
+                  "desc": "Talma acompanya persones i famílies amb serveis de suport, orientació i oportunitats de participació i inclusió laboral.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-associacio-talma-juneda-295077391"
                 }
               ]
             },
@@ -51,7 +52,8 @@
                   "name": "Tres Cadires",
                   "info": "2,03 km · 24–31 min caminant · circular",
                   "address": "Carrer de Mallorca, 16, Arbeca",
-                  "desc": "Tres Cadires és una cooperativa d’Arbeca que elabora licors i vermuts artesans i impulsa l’agroecologia i l’economia social a Ponent."
+                  "desc": "Tres Cadires és una cooperativa d’Arbeca que elabora licors i vermuts artesans i impulsa l’agroecologia i l’economia social a Ponent.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-tres-cadires-arbeca-295077194"
                 }
               ]
             },
@@ -63,7 +65,8 @@
                   "name": "Leader Ponent",
                   "info": "1,74 km · 20–27 min caminant · circular",
                   "address": "Carrer de Prat de la Riba, 1, Mollerussa",
-                  "desc": "Leader Ponent acompanya empreses, persones emprenedores i iniciatives locals amb ajuts, assessorament i projectes de desenvolupament rural."
+                  "desc": "Leader Ponent acompanya empreses, persones emprenedores i iniciatives locals amb ajuts, assessorament i projectes de desenvolupament rural.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-leader-ponent-mollerussa-295077662"
                 }
               ]
             },
@@ -75,7 +78,8 @@
                   "name": "Genera Feminismes (Genera Cooperativa Feminista)",
                   "info": "1,79 km · 21–27 min caminant · circular",
                   "address": "Avinguda de Catalunya, 81, Cervera",
-                  "desc": "Genera és una cooperativa feminista que acompanya polítiques d’igualtat, participació i desenvolupament territorial amb perspectiva de gènere."
+                  "desc": "Genera és una cooperativa feminista que acompanya polítiques d’igualtat, participació i desenvolupament territorial amb perspectiva de gènere.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-genera-feminismes-genera-cooperativa-feminista-cervera-295077623"
                 }
               ]
             },
@@ -87,35 +91,40 @@
                   "name": "Btàctic",
                   "info": "1,59 km · 19–24 min caminant · circular",
                   "address": "Avinguda de Balmes, 34, 4t 1a B, Lleida",
-                  "desc": "Btàctic ofereix serveis tecnològics per a empreses i organitzacions, amb eines de programari lliure, col·laboració digital i serveis al núvol."
+                  "desc": "Btàctic ofereix serveis tecnològics per a empreses i organitzacions, amb eines de programari lliure, col·laboració digital i serveis al núvol.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-btactic-lleida-295077296"
                 },
                 {
                   "n": 2,
                   "name": "Obrint Portes",
                   "info": "1,89 km · 22–29 min caminant · circular",
                   "address": "Carrer del Camp de Mart, 13, local, Lleida",
-                  "desc": "Obrint Portes és una cooperativa que facilita l’accés a l’habitatge mitjançant rehabilitació i projectes de masoveria urbana."
+                  "desc": "Obrint Portes és una cooperativa que facilita l’accés a l’habitatge mitjançant rehabilitació i projectes de masoveria urbana.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-obrint-portes-lleida-295077222"
                 },
                 {
                   "n": 3,
                   "name": "La Baldufa Teatre",
                   "info": "1,71 km · 20–26 min caminant · circular",
                   "address": "Carrer del Músic Vivaldi, 12, baixos, Lleida",
-                  "desc": "La Baldufa crea espectacles teatrals multidisciplinaris, especialment per a públic infantil, amb una mirada vinculada a la solidaritat i el respecte."
+                  "desc": "La Baldufa crea espectacles teatrals multidisciplinaris, especialment per a públic infantil, amb una mirada vinculada a la solidaritat i el respecte.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-la-baldufa-teatre-lleida-295077359"
                 },
                 {
                   "n": 4,
                   "name": "Federació ALLEM",
                   "info": "1,98 km · 23–30 min caminant · circular",
                   "address": "Carrer de Pere de Cabrera, 16, 3-D, Lleida",
-                  "desc": "La Federació ALLEM agrupa entitats socials que treballen amb persones amb discapacitat, problemes de salut mental i altres situacions de vulnerabilitat."
+                  "desc": "La Federació ALLEM agrupa entitats socials que treballen amb persones amb discapacitat, problemes de salut mental i altres situacions de vulnerabilitat.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-federacio-allem-lleida-295077535"
                 },
                 {
                   "n": 5,
                   "name": "La Cristaleria Espai Esportiu",
                   "info": "1,69 km · 20–26 min caminant · circular",
                   "address": "Carrer de Sant Pere Claver, 4, Lleida",
-                  "desc": "La Cristaleria és un espai esportiu i social de Lleida que treballa la inclusió i l’acompanyament socioeducatiu mitjançant l’esport."
+                  "desc": "La Cristaleria és un espai esportiu i social de Lleida que treballa la inclusió i l’acompanyament socioeducatiu mitjançant l’esport.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-la-cristaleria-espai-esportiu-lleida-295077309"
                 }
               ]
             },
@@ -127,7 +136,8 @@
                   "name": "La Boqueria Taller d'Arquitectura",
                   "info": "1,75 km · 20–27 min caminant · circular",
                   "address": "Carrer d’Urgell, 57, baixos, Tàrrega",
-                  "desc": "La Boqueria és un taller d’arquitectura que desenvolupa projectes d’obra nova, rehabilitació i recerca amb criteris socials i ambientals."
+                  "desc": "La Boqueria és un taller d’arquitectura que desenvolupa projectes d’obra nova, rehabilitació i recerca amb criteris socials i ambientals.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-la-boqueria-taller-darquitectura-tarrega-295077524"
                 }
               ]
             }
@@ -154,7 +164,8 @@
                   "name": "La Sempre Viva Cures",
                   "info": "2,16 km · 25–33 min caminant · circular",
                   "address": "Avinguda de Lleida, 81, Bellpuig",
-                  "desc": "La SempreViva és una cooperativa de Bellpuig que ofereix serveis de cures i acompanyament a les persones."
+                  "desc": "La SempreViva és una cooperativa de Bellpuig que ofereix serveis de cures i acompanyament a les persones.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-la-sempre-viva-cures-bellpuig-295077291"
                 }
               ]
             },
@@ -166,7 +177,8 @@
                   "name": "Al Centro la Vida",
                   "info": "2,16 km · 25–33 min caminant · circular",
                   "address": "Carrer de Sant Pere, 5, Maldà",
-                  "desc": "Al Centro la Vida és una cooperativa que impulsa la revitalització rural amb projectes culturals i comunitaris, vinculats al Bar Centro de Maldà."
+                  "desc": "Al Centro la Vida és una cooperativa que impulsa la revitalització rural amb projectes culturals i comunitaris, vinculats al Bar Centro de Maldà.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-al-centro-la-vida-malda-295077242"
                 }
               ]
             }
