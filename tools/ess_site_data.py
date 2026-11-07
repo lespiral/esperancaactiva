@@ -75,10 +75,18 @@ ANCHOR = "quan-sostenir"
 PREFIX = "Rutes d'Esperança Activa - "
 
 
+# Noms i textos que l'Aleix ha corregit a mà (els mapes encara diuen el nom antic).
+FIX = {
+    "Alba Jussà": ("Cooperativa La Teia (abans «Alba Jussà»)",
+                   "La Cooperativa La Teia acompanya persones i famílies amb serveis de suport individualitzat i projectes d’inclusió social i laboral."),
+}
+
+
 def route_obj(r):
     ents = list(r["entities"])
     principal = ap(r["layer"].split(" - ", 1)[1])
     ents.sort(key=lambda e: 0 if ap(e["name"]) == principal or principal.startswith(ap(e["name"])) else 1)
+    ents = [dict(e, name=FIX[e["name"]][0], desc=FIX[e["name"]][1]) if e["name"] in FIX else e for e in ents]
     o = OD(n=r["number"], name=ap(join_i(e["name"] for e in ents)))
     a, b = mins(r["time"])
     o["info"] = f"{km_txt(r['km'])} km · {a}–{b} min caminant · circular"
