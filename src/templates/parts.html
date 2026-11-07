@@ -67,9 +67,9 @@
 </ul>
 {%- endmacro %}
 
-{% macro city_cards(cities, root, summaries, anchor='', center=False) -%}
+{% macro city_cards(cities, root, summaries, anchor='', center=False, pick=True) -%}
 {% set opts = [] %}{% for c in cities if c.slug %}{% set _ = opts.append((c.name, 'ciutat-' ~ c.slug)) %}{% endfor %}
-{{ picker('tria-ciutat', 'Vés directament a la teva ciutat', 'Tria una ciutat', opts, 'pin', 'picker--center' if center else '') }}
+{% if pick %}{{ picker('tria-ciutat', 'Vés directament a la teva ciutat', 'Tria una ciutat', opts, 'pin', 'picker--center' if center else '') }}{% endif %}
 <ul class="cards cards--cities">
   {% for c in cities %}
   {% if c.slug %}

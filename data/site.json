@@ -234,7 +234,7 @@
     "q1": "1. Què et porta aquí?",
     "q2": "2. On vols caminar?",
     "q2_text": "Cada ciutat té el seu mapa i les seves rutes. Surten de places, parcs i equipaments a prop de casa. N'hi ha de molt curtes, d'uns 10 minuts, i de més llargues, de més d'una hora.",
-    "q2_cities": "Ara hi ha rutes a Barcelona, el Prat de Llobregat, Olot i Vic, i se n'aniran afegint més.",
+    "q2_cities": "Ara hi ha rutes a Barcelona, l'Hospitalet de Llobregat, el Prat de Llobregat, Olot i Vic, i a pobles de moltes comarques. Se n'aniran afegint més.",
     "each_course": "Cada curs té les seves rutes a cada ciutat: el curs et dona la pràctica, i la ruta, el temps per caminar-la. La teva ciutat no hi és? Fes la caminada a prop de casa o en un lloc tranquil.",
     "how_title": "Com funciona",
     "how": [
@@ -269,8 +269,12 @@
   },
 
   "cities_page": {
-    "title": "Les ciutats",
-    "intro": "Caminar per fer el temps de reflexió de cada passa. Tria la teva ciutat i el teu curs."
+    "title": "Ciutats, pobles i comarques",
+    "intro": "Caminar per fer el temps de reflexió de cada passa. Hi ha rutes a ciutats i a pobles de moltes comarques: tria on vols caminar i el teu curs.",
+    "places_label": "Vés directament al teu poble o ciutat",
+    "jump_label": "Salta a",
+    "cities_title": "Ciutats",
+    "home_more": "Mira també els pobles i les comarques"
   },
 
   "territories_page": {

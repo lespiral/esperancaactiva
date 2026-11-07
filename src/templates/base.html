@@ -34,7 +34,7 @@
         <ul>
           <li><a href="{{ root }}"{% if section == 'inici' %} aria-current="page"{% endif %}>Inici</a></li>
           <li><a href="{{ root }}cursos/"{% if section == 'cursos' %} aria-current="page"{% endif %}>Els cursos</a></li>
-          <li><a href="{{ root }}ciutats/"{% if section == 'ciutats' %} aria-current="page"{% endif %}>Les ciutats</a></li>
+          <li><a href="{{ root }}ciutats/"{% if section == 'ciutats' %} aria-current="page"{% endif %}>{{ site.cities_page.title }}</a></li>
           <li><a href="{{ root }}preguntes/"{% if section == 'preguntes' %} aria-current="page"{% endif %}>Preguntes</a></li>
         </ul>
       </nav>
@@ -58,8 +58,8 @@
         <ul>{% for c in site.courses %}<li><a href="{{ root }}{{ c.slug }}/">{{ c.title }}</a></li>{% endfor %}</ul>
       </div>
       <div class="footer__col">
-        <p class="footer__h">Les ciutats</p>
-        <ul>{% for c in site.cities %}<li>{% if c.slug %}<a href="{{ root }}{{ c.slug }}/">{{ c.name }}</a>{% else %}{{ c.name }} · properament{% endif %}</li>{% endfor %}</ul>
+        <p class="footer__h">{{ site.cities_page.title }}</p>
+        <ul>{% for c in site.cities %}<li>{% if c.slug %}<a href="{{ root }}{{ c.slug }}/">{{ c.name }}</a>{% else %}{{ c.name }} · properament{% endif %}</li>{% endfor %}<li><a href="{{ root }}ciutats/#pobles-i-comarques">{{ site.territories_page.title }}</a></li></ul>
       </div>
       <div class="footer__col">
         <p class="footer__h">Contacte</p>

@@ -308,7 +308,7 @@ OUT.mkdir()
 
 render("home.html", "", section="inici")
 render("courses.html", "cursos", section="cursos", page_title="Els cursos", cp=site["courses_page"])
-render("cities.html", "ciutats", section="ciutats", page_title="Les ciutats", cp=site["cities_page"])
+render("cities.html", "ciutats", section="ciutats", page_title=site["cities_page"]["title"], cp=site["cities_page"])
 render("faq.html", "preguntes", section="preguntes", page_title="Preguntes", fp=fp)
 for c in site["courses"]:
     render("course.html", c["slug"], section="cursos", page_title=c["title"], page_description=c["subtitle"], course=c)

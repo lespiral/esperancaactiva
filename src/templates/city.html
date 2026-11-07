@@ -38,13 +38,14 @@
   <a class="pill" href="{{ root }}ciutats/#pobles-i-comarques">{{ icon('pin') }}Tots els pobles i les ciutats</a>
 </nav>
 {% else %}
-{{ page_head('Les ciutats · ' ~ city.region, city.title, city.intro) }}
+{{ page_head(site.cities_page.cities_title ~ ' · ' ~ city.region, city.title, city.intro) }}
 
 <nav class="pills wrap" aria-label="Canvia de ciutat">
   {% for c in site.cities %}
   {% if c.slug %}<a class="pill" href="{{ root }}{{ c.slug }}/"{% if c.slug == city.slug %} aria-current="page"{% endif %}>{{ icon(c.icon) }}{{ c.name }}</a>
   {% else %}<span class="pill pill--soon">{{ icon(c.icon) }}{{ c.name }} · properament</span>{% endif %}
   {% endfor %}
+  {% if territories %}<a class="pill" href="{{ root }}ciutats/#pobles-i-comarques">{{ icon('map') }}{{ site.territories_page.title }}</a>{% endif %}
 </nav>
 {% endif %}
 

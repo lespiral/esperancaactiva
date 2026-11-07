@@ -231,6 +231,15 @@ details[open] > summary .faq__caret { transform: rotate(180deg); }
 .pill:hover { border-color: var(--green-600); color: var(--green-900); }
 .pill[aria-current="page"] { background: var(--green-800); border-color: var(--green-800); color: #fff; }
 .pill--soon { color: #8a8270; border-style: dashed; background: transparent; }
+/* Ciutats, pobles i comarques: el desplegable i els salts, a dalt de tot */
+.pagehead__after { margin-top: -4px; }
+.pagehead__after .picker--center { margin-bottom: 16px; }
+.pills--jump { margin-bottom: 20px; }
+.pills--jump .pill { background: #fff; }
+.pill .pill__down { width: 1em; height: 1em; transform: rotate(90deg); opacity: .7; }
+@media (max-width: 560px) { .pills--jump { gap: 6px; } .pills--jump .pill { padding: 8px 12px; gap: 6px; font-size: .9rem; } }
+.band--cities .band__title { margin-bottom: 24px; }
+.band__more { margin: 4px 0 20px; }
 
 /* ---------- Plafons (pàgines de curs i ciutat) ---------- */
 .panel { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); padding: clamp(22px, 4vw, 38px); }
