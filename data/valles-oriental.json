@@ -39,7 +39,8 @@
                   "name": "La Clau Baix Montseny",
                   "info": "2,04 km · 24–31 min caminant · circular",
                   "address": "Carrer d’Alguersuari, 16, Sant Celoni",
-                  "desc": "La Clau és un casal del Baix Montseny que combina activitats culturals, gastronomia i trobada comunitària."
+                  "desc": "La Clau és un casal del Baix Montseny que combina activitats culturals, gastronomia i trobada comunitària.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-sant-celoni-la-clau-baix-montseny-295088441"
                 }
               ]
             },
@@ -51,7 +52,8 @@
                   "name": "Afadis Baix Montseny",
                   "info": "2,10 km · 25–32 min caminant · circular",
                   "address": "Passeig del Doctor Barri, 2, Santa Maria de Palautordera",
-                  "desc": "AFADIS Baix Montseny treballa per la inclusió social de persones amb discapacitat intel·lectual amb activitats, suports i participació comunitària."
+                  "desc": "AFADIS Baix Montseny treballa per la inclusió social de persones amb discapacitat intel·lectual amb activitats, suports i participació comunitària.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-santa-maria-de-palautordera-afadis-baix-montseny-295088012"
                 }
               ]
             },
@@ -63,21 +65,24 @@
                   "name": "La Magrana Vallesana",
                   "info": "2,00 km · 23–30 min caminant · circular",
                   "address": "Carrer de Joan Pere Fontanella, 45, Granollers",
-                  "desc": "La Magrana Vallesana agrupa persones consumidores i productores agroecològiques i promou el consum de productes ecològics i de proximitat a Granollers."
+                  "desc": "La Magrana Vallesana agrupa persones consumidores i productores agroecològiques i promou el consum de productes ecològics i de proximitat a Granollers.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-granollers-la-magrana-vallesana-295087976"
                 },
                 {
                   "n": 2,
                   "name": "La Fleca Digital SCCL, Neu al Carrer, Sauló Vinyes i Pins i COMSOC Comunicació Social",
                   "info": "1,92 km · 23–29 min caminant · circular",
                   "address": "Carrer d’Enric Prat de la Riba, 77 (Roca Umbert, Centre Audiovisual), Granollers",
-                  "desc": "La Fleca Digital és una cooperativa que desenvolupa webs, programari, disseny i comunicació digital. Neu al Carrer és una cooperativa que crea, produeix i acompanya projectes culturals i ofereix serveis de comunicació i gestió artística. Sauló Vinyes i Pins és una cooperativa dedicada al disseny gràfic i expositiu. COMSOC desenvolupa projectes d’educomunicació amb ràdio i pòdcast, amb formació i acompanyament a escoles, organitzacions i institucions."
+                  "desc": "La Fleca Digital és una cooperativa que desenvolupa webs, programari, disseny i comunicació digital. Neu al Carrer és una cooperativa que crea, produeix i acompanya projectes culturals i ofereix serveis de comunicació i gestió artística. Sauló Vinyes i Pins és una cooperativa dedicada al disseny gràfic i expositiu. COMSOC desenvolupa projectes d’educomunicació amb ràdio i pòdcast, amb formació i acompanyament a escoles, organitzacions i institucions.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-granollers-la-fleca-digital-sccl-295087912"
                 },
                 {
                   "n": 3,
                   "name": "Abacus SCCL",
                   "info": "1,62 km · 19–25 min caminant · circular",
                   "address": "Carrer de Pompeu Fabra, 5, Granollers",
-                  "desc": "Abacus és una cooperativa vinculada a l’educació i la cultura, amb llibreries, recursos educatius i projectes de producció de continguts."
+                  "desc": "Abacus és una cooperativa vinculada a l’educació i la cultura, amb llibreries, recursos educatius i projectes de producció de continguts.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-granollers-abacus-sccl-295087791"
                 }
               ]
             },
@@ -89,7 +94,8 @@
                   "name": "Apindep Ronçana",
                   "info": "1,75 km · 21–27 min caminant · circular",
                   "address": "Camí de Caldes, 37, Santa Eulàlia de Ronçana",
-                  "desc": "Apindep Ronçana és una cooperativa social de persones usuàries i famílies que ofereix serveis de suport a la dependència i a la diversitat funcional."
+                  "desc": "Apindep Ronçana és una cooperativa social de persones usuàries i famílies que ofereix serveis de suport a la dependència i a la diversitat funcional.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-santa-eulalia-de-roncana-apindep-roncana-295088118"
                 }
               ]
             },
@@ -101,7 +107,8 @@
                   "name": "Cooperativa 70",
                   "info": "1,67 km · 20–26 min caminant · circular",
                   "address": "Carrer de Font i Boet, 7, Caldes de Montbui",
-                  "desc": "Cooperativa 70 promou serveis i activitats de consum responsable, cultura, formació i participació social a Caldes de Montbui."
+                  "desc": "Cooperativa 70 promou serveis i activitats de consum responsable, cultura, formació i participació social a Caldes de Montbui.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-caldes-de-montbui-cooperativa-70-295088260"
                 }
               ]
             }

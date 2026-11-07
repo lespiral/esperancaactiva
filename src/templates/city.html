@@ -11,7 +11,10 @@
     {% if r.address %}<p class="route__addr">{{ icon('pin') }}<span{% if '[' in r.address %} class="pending"{% endif %}>{{ r.address }}</span></p>{% endif %}
     {% if r.note %}<p class="route__note{% if '[' in r.note %} pending{% endif %}">{{ r.note }}</p>{% endif %}
     {% if r.desc %}<p class="route__desc">{{ r.desc }}</p>{% endif %}
-    {% if r.map_url %}<a class="route__go" href="{{ r.map_url }}" target="_blank" rel="noopener" aria-label="Obre el mapa de la ruta {{ r.n }} ({{ r.map_title }})">{{ icon('map') }}Obre el mapa</a>{% endif %}
+    {% if r.map_url or r.wikiloc %}<div class="route__links">
+      {%- if r.map_url %}<a class="route__go" href="{{ r.map_url }}" target="_blank" rel="noopener" aria-label="Obre el mapa de la ruta {{ r.n }} ({{ r.map_title }})">{{ icon('map') }}Obre el mapa</a>{% endif %}
+      {%- if r.wikiloc %}<a class="route__wl" href="{{ r.wikiloc }}" target="_blank" rel="noopener" aria-label="Obre la ruta {{ r.n }} a Wikiloc (pestanya nova)">{{ icon('external') }}Obre-la a Wikiloc</a>{% endif -%}
+    </div>{% endif %}
   </div>
 </li>
 {%- endmacro %}

@@ -39,28 +39,32 @@
                   "name": "Sprint Coop",
                   "info": "1,83 km · 21–28 min caminant · circular",
                   "address": "Carrer de Lleó XIII, 42, Terrassa",
-                  "desc": "Sprint acompanya organitzacions en la gestió, la governança i el treball en equip, amb serveis de consultoria i assessorament."
+                  "desc": "Sprint acompanya organitzacions en la gestió, la governança i el treball en equip, amb serveis de consultoria i assessorament.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-terrassa-sprint-coop-295090033"
                 },
                 {
                   "n": 2,
                   "name": "La Natural Coopmunicació",
                   "info": "1,76 km · 21–27 min caminant · circular",
                   "address": "Carrer de Lleó XIII, 62, Terrassa",
-                  "desc": "La Natural Coopmunicació és una cooperativa de comunicació social que treballa amb perspectiva feminista, de proximitat i de transformació social."
+                  "desc": "La Natural Coopmunicació és una cooperativa de comunicació social que treballa amb perspectiva feminista, de proximitat i de transformació social.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-terrassa-la-natural-coopmunicacio-295089476"
                 },
                 {
                   "n": 3,
                   "name": "Ateneu Candela",
                   "info": "1,91 km · 22–29 min caminant · circular",
                   "address": "Carrer de Montserrat, 136, Terrassa",
-                  "desc": "L’Ateneu Candela és un centre social de Terrassa que acull iniciatives ciutadanes, activitats culturals i projectes comunitaris."
+                  "desc": "L’Ateneu Candela és un centre social de Terrassa que acull iniciatives ciutadanes, activitats culturals i projectes comunitaris.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-terrassa-ateneu-candela-295089705"
                 },
                 {
                   "n": 4,
                   "name": "Vesc",
                   "info": "1,75 km · 20–27 min caminant · circular",
                   "address": "Carrer de Sant Gaietà, 76, Terrassa",
-                  "desc": "Vesc treballa en la producció i gestió cultural, la contractació artística i l’organització de concerts i altres activitats."
+                  "desc": "Vesc treballa en la producció i gestió cultural, la contractació artística i l’organització de concerts i altres activitats.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-vesc-terrassa-295074675"
                 }
               ]
             },
@@ -72,21 +76,24 @@
                   "name": "La Sàrria",
                   "info": "1,65 km · 19–25 min caminant · circular",
                   "address": "Carrer de Fiveller, 171, Sabadell",
-                  "desc": "La Sàrria és una cooperativa de Sabadell que distribueix mercaderies urbanes amb bicicletes de càrrega."
+                  "desc": "La Sàrria és una cooperativa de Sabadell que distribueix mercaderies urbanes amb bicicletes de càrrega.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-sabadell-la-sarria-295089632"
                 },
                 {
                   "n": 2,
                   "name": "Estratègies Socials per al Territori i els Espais Lliures — Estel SCCL",
                   "info": "2,07 km · 24–32 min caminant · circular",
                   "address": "Carrer de la Creueta, 119, baixos esquerra (La Cooveta), Sabadell",
-                  "desc": "Estel és una cooperativa que desenvolupa estratègies urbanes i projectes d’espai públic amb participació i cooperació ciutadana."
+                  "desc": "Estel és una cooperativa que desenvolupa estratègies urbanes i projectes d’espai públic amb participació i cooperació ciutadana.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-sabadell-estrategies-socials-per-al-territori-i-els-espais-lliures-estel-s-295090160"
                 },
                 {
                   "n": 3,
                   "name": "L'Eixida i La Productora",
                   "info": "1,71 km · 20–26 min caminant · circular",
                   "address": "Carrer del Doctor Puig, 14 (Mala Peça), Sabadell",
-                  "desc": "L’Eixida és una cooperativa que acompanya la creació i consolidació de projectes comunitaris de l’economia social i solidària al Vallès. La Productora és una cooperativa audiovisual de Sabadell que crea projectes de comunicació visual amb mirada social i col·lectiva."
+                  "desc": "L’Eixida és una cooperativa que acompanya la creació i consolidació de projectes comunitaris de l’economia social i solidària al Vallès. La Productora és una cooperativa audiovisual de Sabadell que crea projectes de comunicació visual amb mirada social i col·lectiva.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-sabadell-leixida-295089371"
                 }
               ]
             },
@@ -98,7 +105,8 @@
                   "name": "GRACER",
                   "info": "1,56 km · 18–24 min caminant · circular",
                   "address": "Carrer d’Enric Granados, 77–79, Barberà del Vallès",
-                  "desc": "GRACER ofereix serveis de consultoria, assessoria, gestió empresarial i formació des d’un model cooperatiu."
+                  "desc": "GRACER ofereix serveis de consultoria, assessoria, gestió empresarial i formació des d’un model cooperatiu.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-gracer-barbera-del-valles-295074005"
                 }
               ]
             },
@@ -110,7 +118,8 @@
                   "name": "Arqbag SCCL",
                   "info": "1,87 km · 22–29 min caminant · circular",
                   "address": "Carrer de Pere Serra, 1–15, CRITT ETSAV, mòdul 17, Sant Cugat del Vallès",
-                  "desc": "Arqbag és una cooperativa d’arquitectura que desenvolupa projectes sostenibles i participatius sobre habitatge, espais i territori."
+                  "desc": "Arqbag és una cooperativa d’arquitectura que desenvolupa projectes sostenibles i participatius sobre habitatge, espais i territori.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-sant-cugat-del-valles-arqbag-sccl-295089910"
                 }
               ]
             }
