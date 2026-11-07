@@ -3,7 +3,7 @@
   "name": "El Prat de Llobregat",
   "title": "Caminar pel Prat de Llobregat",
   "region": "Baix Llobregat",
-  "summary": "17 circuits urbans, 7 rutes des dels equipaments i 9 rutes pel Delta del Llobregat.",
+  "summary": "17 circuits urbans, 7 rutes des dels equipaments, 9 pel Delta del Llobregat i 8 des de l'economia social.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
   "blocks": [
     {
@@ -299,74 +299,77 @@
     },
     {
       "course": "dia",
-      "text": "7 rutes circulars curtes, d'1,6 a 2,0 km (uns 20–30 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. En alguns punts hi ha diverses entitats al mateix lloc.",
-      "summary": "7 rutes des de l'economia social",
+      "text": "8 rutes circulars curtes, d'1,6 a 2,1 km (uns 19–32 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. En alguns punts hi ha diverses entitats al mateix lloc.",
+      "summary": "8 rutes des de l'economia social",
       "groups": [
         {
-          "title": "Les 7 rutes",
-          "map_pending": "El mapa d'aquestes rutes encara s'està preparant.",
-          "maps": [],
+          "id": "quan-sostenir-rutes",
+          "title": "Les 8 rutes",
+          "maps": [
+            {
+              "mid": "19C5B7AQ1L6l-jT4FGtGWpoOTlzY6SEM",
+              "title": "el Prat de Llobregat · economia social i solidària",
+              "ll": "41.3284,2.0955",
+              "z": 13,
+              "label": "8 rutes des de l'economia social"
+            }
+          ],
           "routes": [
             {
               "n": 1,
-              "name": "Cooperativa Obrera de Viviendas",
-              "info": "1,77 km · 21–27 min caminant · circular",
-              "address": "Plaça de Ramon Roigé i Badia, 3, el Prat de Llobregat",
-              "desc": "La Cooperativa Obrera de Viviendas és una cooperativa d’habitatges, consumidores i usuàries del Prat de Llobregat. Treballa per facilitar l’accés a un habitatge digne i assequible, i ofereix serveis i activitats que afavoreixen l’ajuda mútua i la vida comunitària.",
-              "records": ["03-017"]
+              "name": "Saó Prat SLU i Associació Saó",
+              "info": "1,80 km · 22–27 min caminant · circular",
+              "address": "Avinguda del Canal, 110, el Prat de Llobregat",
+              "desc": "L’empresa d’inserció SaóPrat genera oportunitats de feina i formació per a persones en situació de vulnerabilitat. Desenvolupa activitats com les reformes, la neteja i el disseny, combinant el treball professional amb l’acompanyament per a la inserció laboral. L’Associació SaóPrat acompanya infants, joves i famílies en situació de vulnerabilitat al Prat de Llobregat. Desenvolupa projectes educatius, socials i comunitaris per afavorir l’autonomia, la inclusió i les oportunitats de les persones."
             },
             {
               "n": 2,
-              "name": "Fundació Espigoladors",
-              "start": "Inici i final: obrador es im-perfect",
-              "info": "1,73 km · 21–26 min caminant · circular",
-              "address": "Carrer del Vallès, 57–59, el Prat de Llobregat",
-              "desc": "La Fundació Espigoladors treballa per reduir el malbaratament alimentari, facilitar l’accés a una alimentació saludable i generar oportunitats per a persones en situació de vulnerabilitat. Combina l’espigolament, la sensibilització i la transformació d’aliments vinculada a es im-perfect.",
-              "records": ["03-026"]
+              "name": "La Claqueta Social, Illa SCCL i La Llançadora",
+              "info": "1,92 km · 23–29 min caminant · circular",
+              "address": "Carrer de les Moreres, 119, el Prat de Llobregat",
+              "desc": "La Claqueta Social és una associació dedicada a la producció audiovisual i cultural amb finalitat social. Desenvolupa projectes de comunicació i esdeveniments per visibilitzar realitats socials, fomentar la consciència crítica i col·laborar amb la comunitat local. Illa Cooperativa de Serveis és una cooperativa del Prat vinculada a la producció i al suport logístic d’esdeveniments. La seva activitat inclou serveis de muntatge i subministrament de materials per a actes i festes. La Llançadora és una associació que promou l’economia social i solidària al Baix Llobregat. Ofereix assessorament tècnic, jurídic i econòmic a projectes, i desenvolupa acompanyaments, formacions i xerrades sobre iniciatives cooperatives i comunitàries."
             },
             {
               "n": 3,
-              "name": "SaóPrat i Associació Saó",
-              "info": "1,80 km · 22–27 min caminant · circular",
-              "address": "Avinguda del Canal, 110, el Prat de Llobregat",
-              "desc": "SaóPrat és una empresa d'inserció que ofereix feina i formació a persones en situació de vulnerabilitat. L'Associació Saó acompanya infants, joves i famílies del Prat amb projectes educatius, socials i comunitaris.",
-              "records": ["03-027", "03-028"]
+              "name": "Domingo Recreativos SCCL",
+              "info": "1,61 km · 19–24 min caminant · circular",
+              "address": "Carrer del Primer de Maig, 16, baixos, el Prat de Llobregat",
+              "desc": "Domingo Recreativos és una cooperativa especialitzada en disseny gràfic i comunicació. Desenvolupa projectes d’identitat visual, disseny expositiu, web i altres formats de comunicació, amb una mirada vinculada a la col·laboració local i la sostenibilitat."
             },
             {
               "n": 4,
-              "name": "Som Gestió, GATS, PLEGATS, Eh! Coop, Fundació Cívica Esperanzah i Correu Comunitari",
+              "name": "Som Gestió SCCL, GATS — Grups Associats pel Treball Sociocultural, PLEGATS, Eh! Coop SCCL, Fundació Cívica Esperanzah i Correu Comunitari",
               "info": "1,90 km · 23–28 min caminant · circular",
               "address": "Carrer del Riu Llobregat, 47, el Prat de Llobregat",
-              "note": "[PENDENT: confirmar que Correu Comunitari hi té activitat.]",
-              "desc": "Un mateix edifici amb sis entitats: Som Gestió (gestoria per a l'economia social), GATS (acció social i comunitària), PLEGATS (acompanya projectes d'economia social del Baix Llobregat), Eh! Coop (cultura i transformació social, organitza el Festival Esperanzah!), la Fundació Cívica Esperanzah (economia social i gestió ciutadana al Prat) i Correu Comunitari (repartiment urbà sostenible).",
-              "records": ["03-003", "03-010", "03-011", "03-012", "03-021", "03-022"]
+              "desc": "Som Gestió és una cooperativa que ofereix serveis de gestoria i assessorament econòmic, fiscal, comptable i laboral a associacions i empreses de l’economia social. Dona suport a la gestió de projectes i organitzacions del territori. GATS és una associació sense ànim de lucre dedicada a l’acció social i comunitària. Acompanya persones i col·lectius, promou la participació i treballa amb la cultura i l’economia social com a eines per afrontar les desigualtats. PLEGATS és una associació que promou la creació, la consolidació i la cooperació entre iniciatives d’economia social i solidària al Baix Llobregat. Ofereix acompanyament tècnic, jurídic i econòmic, així com formació i suport en subvencions. Eh! Coop és una cooperativa que treballa per la transformació social a través de la cultura. Organitza esdeveniments culturals i comunitaris, entre els quals el Festival Esperanzah!, vinculats a l’economia social i solidària i al territori. La Fundació Cívica Esperanzah promou l’economia social i solidària i la gestió ciutadana al Prat de Llobregat. Impulsa el treball en xarxa, l’enfortiment del teixit associatiu i projectes que donen resposta a necessitats de les persones i del territori. Correu Comunitari és una associació que té entre les seves finalitats impulsar iniciatives d’economia social i solidària vinculades a la distribució urbana sostenible i a la reducció de les emissions del repartiment a les ciutats."
             },
             {
               "n": 5,
-              "name": "La Claqueta Social, Illa i La Llançadora",
-              "info": "1,92 km · 23–29 min caminant · circular",
-              "address": "Carrer de les Moreres, 119, el Prat de Llobregat",
-              "note": "[PENDENT: confirmar que Illa i La Llançadora tenen la seu aquí.]",
-              "desc": "La Claqueta Social fa producció audiovisual i cultural amb finalitat social. Illa és una cooperativa de serveis per a esdeveniments. La Llançadora promou l'economia social i solidària al Baix Llobregat.",
-              "records": ["03-034", "03-015", "03-016"]
+              "name": "Fundació Espigoladors",
+              "info": "1,73 km · 21–26 min caminant · circular",
+              "address": "Carrer del Vallès, 57–59 (obrador es im-perfect), el Prat de Llobregat",
+              "desc": "La Fundació Espigoladors treballa per reduir el malbaratament alimentari, facilitar l’accés a una alimentació saludable i generar oportunitats per a persones en situació de vulnerabilitat. Combina l’espigolament, la sensibilització i la transformació d’aliments vinculada a es im-perfect."
             },
             {
               "n": 6,
-              "name": "Domingo Recreativos, Heres Social i La Rachola",
-              "start": "Inici i final: exterior d'UIKÚ",
-              "info": "1,61 km · 19–24 min caminant · circular",
-              "address": "Carrer del Primer de Maig, 16, el Prat de Llobregat",
-              "desc": "Tres cooperatives que comparteixen l'espai UIKÚ: Domingo Recreativos (disseny gràfic i comunicació), Heres Social (consultoria per a projectes amb impacte social) i La Rachola (arquitectura de proximitat i rehabilitació d'habitatges).",
-              "records": ["03-002", "03-006", "03-019"]
+              "name": "Cooperativa Obrera de Viviendas SCCL",
+              "info": "1,77 km · 21–27 min caminant · circular",
+              "address": "Plaça de Ramon Roigé i Badia, 3, el Prat de Llobregat",
+              "desc": "La Cooperativa Obrera de Viviendas és una cooperativa d’habitatges, consumidores i usuàries del Prat de Llobregat. Treballa per facilitar l’accés a un habitatge digne i assequible, i ofereix serveis i activitats que afavoreixen l’ajuda mútua i la vida comunitària."
             },
             {
               "n": 7,
-              "name": "Ajuntament del Prat de Llobregat",
-              "info": "2,00 km · 24–30 min caminant · circular",
-              "address": "Plaça de la Vila, 1, el Prat de Llobregat",
-              "note": "[PENDENT: surt d'una administració pública. Per decidir si es manté.]",
-              "desc": "L’Ajuntament del Prat de Llobregat és l’administració local de la ciutat. Gestiona serveis municipals i impulsa actuacions en àmbits com l’acció social, la cultura, l’educació, la participació ciutadana i la promoció de l’economia social i cooperativa.",
-              "records": ["03-004"]
+              "name": "Heres Social SCCL",
+              "info": "2,13 km · 26–32 min caminant · circular",
+              "address": "Carrer del Primer de Maig, 16, baixos, el Prat de Llobregat",
+              "desc": "Heres Social és una cooperativa de consultoria que acompanya projectes i organitzacions per avançar cap a una economia més social, sostenible i innovadora. Ofereix assessorament en emprenedoria, gestió de projectes, comunicació, innovació social i mesura de l’impacte, i promou la cooperació i les aliances per generar canvis positius en la societat i el medi ambient."
+            },
+            {
+              "n": 8,
+              "name": "La Rachola SCCL",
+              "info": "2,02 km · 24–30 min caminant · circular",
+              "address": "Carrer del Primer de Maig, 16, baixos, el Prat de Llobregat",
+              "desc": "La Rachola és una cooperativa d’arquitectura de proximitat del Prat de Llobregat. Treballa en projectes de rehabilitació i millora energètica dels edificis, amb l’objectiu de fer els habitatges més saludables, confortables i sostenibles."
             }
           ]
         }

@@ -1,0 +1,175 @@
+{
+  "slug": "terres-gironines",
+  "name": "Terres Gironines",
+  "kind": "territory",
+  "title": "Caminar per les Terres Gironines",
+  "region": "Terres Gironines",
+  "summary": "12 rutes de l'economia social i solidària en 6 municipis.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària.",
+  "see_also": [
+    {
+      "text": "Olot té pàgina pròpia, amb 1 ruta d'aquest curs.",
+      "city": "olot",
+      "course": "dia"
+    }
+  ],
+  "zones": {
+    "by": "section",
+    "label": "Vés directament al teu poble",
+    "placeholder": "Tria un poble",
+    "back": "Canvia de poble"
+  },
+  "blocks": [
+    {
+      "course": "dia",
+      "text": "12 rutes circulars curtes, d'1,7 a 2,2 km (uns 20–33 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. En alguns punts hi ha diverses entitats al mateix lloc.",
+      "summary": "12 rutes des de l'economia social",
+      "groups": [
+        {
+          "id": "quan-sostenir-mapa-1",
+          "title": "Figueres, Girona i Salt",
+          "maps": [
+            {
+              "mid": "1DINJUWHd8-ujf2WqVBvCi3_e5865bUU",
+              "title": "Terres Gironines · economia social i solidària (mapa 1 de 2)",
+              "ll": "42.1506,2.8712",
+              "z": 10,
+              "label": "Figueres, Girona i Salt · mapa 1 de 2"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Figueres",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Som Turisme",
+                  "info": "1,96 km · 23–30 min caminant · circular",
+                  "address": "Carrer de Siurana, 4, Figueres",
+                  "desc": "Som Turisme és una cooperativa que promou un model de turisme més democràtic i sostenible i acompanya agents turístics en la transformació ecosocial."
+                }
+              ]
+            },
+            {
+              "title": "Girona",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Fundació Gentis",
+                  "info": "2,16 km · 25–33 min caminant · circular",
+                  "address": "Carrer de la Garrotxa, 7, Girona",
+                  "desc": "La Fundació Gentis promou la inclusió social mitjançant formació, orientació i inserció laboral i projectes d’acompanyament comunitari."
+                },
+                {
+                  "n": 2,
+                  "name": "Glam",
+                  "info": "1,85 km · 22–28 min caminant · circular",
+                  "address": "Carrer de Santa Eugènia, 42 (Farinera Teixidor), Girona",
+                  "desc": "Glam és una agència cooperativa de comunicació i disseny que ofereix serveis de publicitat, creativitat i producció de continguts."
+                },
+                {
+                  "n": 3,
+                  "name": "Economia del Bé Comú",
+                  "info": "1,97 km · 23–30 min caminant · circular",
+                  "address": "Carrer de Saragossa, 27 (Centre Cívic Palau), Girona",
+                  "desc": "Economia del Bé Comú Girona promou pràctiques i iniciatives perquè l’activitat econòmica estigui al servei de les persones i del bé comú."
+                },
+                {
+                  "n": 4,
+                  "name": "La Juganera",
+                  "info": "1,97 km · 23–30 min caminant · circular",
+                  "address": "Carrer Nou, 4, Girona",
+                  "desc": "La Juganera és un espai especialitzat en jocs que ofereix assessorament per a persones de diferents edats i experiència."
+                },
+                {
+                  "n": 5,
+                  "name": "Avancem Santa Clara i Ecosol",
+                  "info": "1,91 km · 22–29 min caminant · circular",
+                  "address": "Pujada de la Mercè, 8, Girona",
+                  "desc": "Avancem Santa Clara facilita la inserció laboral amb formació i serveis professionals, com l’atenció domiciliària i la neteja. Ecosol és una empresa d’inserció de Càritas Girona que crea oportunitats laborals mitjançant serveis professionals amb criteris socials i ambientals."
+                }
+              ]
+            },
+            {
+              "title": "Salt",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Idària",
+                  "info": "1,67 km · 20–26 min caminant · circular",
+                  "address": "Carrer del Pintor Fortuny, 17, Salt",
+                  "desc": "Idària és una cooperativa d’iniciativa social i inserció laboral que desenvolupa serveis professionals i projectes socials."
+                },
+                {
+                  "n": 2,
+                  "name": "Ilabso (actualment Olma) i Som Provisionals",
+                  "info": "1,88 km · 22–29 min caminant · circular",
+                  "address": "Carrer de Sant Antoni, 1 (Factoria Cultural Coma Cros, viver d’empreses), Salt",
+                  "desc": "Olma, que integra els projectes d’Ilabso i Runa Blanca, treballa en recerca aplicada, diagnosi i avaluació de polítiques i projectes socials. Som Provisionals impulsa una xarxa de suport i informació per acompanyar les persones en les decisions i necessitats al voltant de la mort."
+                },
+                {
+                  "n": 3,
+                  "name": "Eina Activa",
+                  "info": "1,98 km · 23–30 min caminant · circular",
+                  "address": "Carrer Major, 334, Salt",
+                  "desc": "Eina Activa desenvolupa projectes i serveis vinculats a la rehabilitació d’habitatges, l’eficiència energètica i la transició energètica amb mirada social."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quan-sostenir-mapa-2",
+          "title": "Sant Hilari Sacalm, Santa Coloma de Farners i Riudarenes",
+          "maps": [
+            {
+              "mid": "1t2gJjh1dKINQvtav9HvuxoonhercRgI",
+              "title": "Terres Gironines · economia social i solidària (mapa 2 de 2)",
+              "ll": "41.8688,2.6136",
+              "z": 11,
+              "label": "Sant Hilari Sacalm, Santa Coloma de Farners i Riudarenes · mapa 2 de 2"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Sant Hilari Sacalm",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Divertus Cooperativa",
+                  "info": "1,88 km · 22–29 min caminant · circular",
+                  "address": "Carrer del Doctor Morales, 1–3, local, Sant Hilari Sacalm",
+                  "desc": "Divertus ofereix formació per a l’ocupació, orientació professional i suport a projectes d’emprenedoria."
+                }
+              ]
+            },
+            {
+              "title": "Santa Coloma de Farners",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "La Sobirana",
+                  "info": "2,11 km · 25–32 min caminant · circular",
+                  "address": "Carrer de Camprodon, 66, Santa Coloma de Farners",
+                  "desc": "La Sobirana és una cooperativa que elabora ratafies i licors i organitza visites, tasts i tallers a Santa Coloma de Farners."
+                }
+              ]
+            },
+            {
+              "title": "Riudarenes",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Fundació Emys",
+                  "info": "2,14 km · 25–33 min caminant · circular",
+                  "address": "Carretera de Santa Coloma, km 21,1 (Can Moragues), Riudarenes",
+                  "desc": "La Fundació Emys treballa per la conservació de la natura i la gestió sostenible del territori, especialment de les zones humides i la tortuga d’estany."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

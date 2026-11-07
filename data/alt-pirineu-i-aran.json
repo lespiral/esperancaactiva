@@ -1,0 +1,75 @@
+{
+  "slug": "alt-pirineu-i-aran",
+  "name": "Alt Pirineu i Aran",
+  "kind": "territory",
+  "title": "Caminar per l'Alt Pirineu i Aran",
+  "region": "Alt Pirineu i Aran",
+  "summary": "3 rutes de l'economia social i solidària en 3 municipis.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària.",
+  "zones": {
+    "by": "section",
+    "label": "Vés directament al teu poble",
+    "placeholder": "Tria un poble",
+    "back": "Canvia de poble"
+  },
+  "blocks": [
+    {
+      "course": "dia",
+      "text": "3 rutes circulars curtes, de 2,1 km (uns 24–33 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi.",
+      "summary": "3 rutes des de l'economia social",
+      "groups": [
+        {
+          "id": "quan-sostenir-rutes",
+          "title": "El Pont de Suert, Tremp i Sort",
+          "maps": [
+            {
+              "mid": "19vFO9pO_kcWzw7hYgYgrk233Yft_0LI",
+              "title": "Alt Pirineu i Aran · economia social i solidària",
+              "ll": "42.3259,0.9341",
+              "z": 10,
+              "label": "3 rutes des de l'economia social"
+            }
+          ],
+          "sections": [
+            {
+              "title": "El Pont de Suert",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Animació en Acció",
+                  "info": "2,14 km · 25–33 min caminant · circular",
+                  "address": "Carrer d’Avall, 6, 2n 1a, el Pont de Suert",
+                  "desc": "Animació en Acció desenvolupa activitats educatives, de lleure i de dinamització comunitària per a persones de diferents edats, afavorint la convivència i la participació."
+                }
+              ]
+            },
+            {
+              "title": "Tremp",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Alba Jussà",
+                  "info": "2,08 km · 24–32 min caminant · circular",
+                  "address": "Carrer de Pau Casals, 1 (Plaça Mossèn Casamir), Tremp",
+                  "desc": "Alba Jussà, que al seu web anuncia el nom Cooperativa La Teia, acompanya persones i famílies amb serveis de suport individualitzat i projectes d’inclusió social i laboral."
+                }
+              ]
+            },
+            {
+              "title": "Sort",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Entremons",
+                  "info": "2,10 km · 25–32 min caminant · circular",
+                  "address": "Carrer del Doctor Carles Pol i Aleu, 20, local, Sort",
+                  "desc": "EntreMons és una cooperativa d’assessoria i consultoria que acompanya persones i organitzacions en la gestió dels seus projectes."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

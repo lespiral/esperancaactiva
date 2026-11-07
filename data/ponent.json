@@ -1,0 +1,178 @@
+{
+  "slug": "ponent",
+  "name": "Ponent",
+  "kind": "territory",
+  "title": "Caminar per Ponent",
+  "region": "Ponent",
+  "summary": "12 rutes de l'economia social i solidària en 8 municipis.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària.",
+  "zones": {
+    "by": "section",
+    "label": "Vés directament al teu poble",
+    "placeholder": "Tria un poble",
+    "back": "Canvia de poble"
+  },
+  "blocks": [
+    {
+      "course": "dia",
+      "text": "12 rutes circulars curtes, d'1,6 a 2,2 km (uns 19–33 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi.",
+      "summary": "12 rutes des de l'economia social",
+      "groups": [
+        {
+          "id": "quan-sostenir-mapa-1",
+          "title": "Juneda, Arbeca, Mollerussa, Cervera, Lleida i Tàrrega",
+          "maps": [
+            {
+              "mid": "1Lk8Q49hAzzm1RbMjmqGJH90QJ7msKqo",
+              "title": "Ponent · economia social i solidària (mapa 1 de 2)",
+              "ll": "41.6427,0.9403",
+              "z": 10,
+              "label": "Juneda, Arbeca, Mollerussa, Cervera, Lleida i Tàrrega · mapa 1 de 2"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Juneda",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Associació Talma",
+                  "info": "2,17 km · 26–33 min caminant · circular",
+                  "address": "Carrer de la Font del Gat, 2, baixos, Juneda",
+                  "desc": "Talma acompanya persones i famílies amb serveis de suport, orientació i oportunitats de participació i inclusió laboral."
+                }
+              ]
+            },
+            {
+              "title": "Arbeca",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Tres Cadires",
+                  "info": "2,03 km · 24–31 min caminant · circular",
+                  "address": "Carrer de Mallorca, 16, Arbeca",
+                  "desc": "Tres Cadires és una cooperativa d’Arbeca que elabora licors i vermuts artesans i impulsa l’agroecologia i l’economia social a Ponent."
+                }
+              ]
+            },
+            {
+              "title": "Mollerussa",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Leader Ponent",
+                  "info": "1,74 km · 20–27 min caminant · circular",
+                  "address": "Carrer de Prat de la Riba, 1, Mollerussa",
+                  "desc": "Leader Ponent acompanya empreses, persones emprenedores i iniciatives locals amb ajuts, assessorament i projectes de desenvolupament rural."
+                }
+              ]
+            },
+            {
+              "title": "Cervera",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Genera Feminismes (Genera Cooperativa Feminista)",
+                  "info": "1,79 km · 21–27 min caminant · circular",
+                  "address": "Avinguda de Catalunya, 81, Cervera",
+                  "desc": "Genera és una cooperativa feminista que acompanya polítiques d’igualtat, participació i desenvolupament territorial amb perspectiva de gènere."
+                }
+              ]
+            },
+            {
+              "title": "Lleida",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Btàctic",
+                  "info": "1,59 km · 19–24 min caminant · circular",
+                  "address": "Avinguda de Balmes, 34, 4t 1a B, Lleida",
+                  "desc": "Btàctic ofereix serveis tecnològics per a empreses i organitzacions, amb eines de programari lliure, col·laboració digital i serveis al núvol."
+                },
+                {
+                  "n": 2,
+                  "name": "Obrint Portes",
+                  "info": "1,89 km · 22–29 min caminant · circular",
+                  "address": "Carrer del Camp de Mart, 13, local, Lleida",
+                  "desc": "Obrint Portes és una cooperativa que facilita l’accés a l’habitatge mitjançant rehabilitació i projectes de masoveria urbana."
+                },
+                {
+                  "n": 3,
+                  "name": "La Baldufa Teatre",
+                  "info": "1,71 km · 20–26 min caminant · circular",
+                  "address": "Carrer del Músic Vivaldi, 12, baixos, Lleida",
+                  "desc": "La Baldufa crea espectacles teatrals multidisciplinaris, especialment per a públic infantil, amb una mirada vinculada a la solidaritat i el respecte."
+                },
+                {
+                  "n": 4,
+                  "name": "Federació ALLEM",
+                  "info": "1,98 km · 23–30 min caminant · circular",
+                  "address": "Carrer de Pere de Cabrera, 16, 3-D, Lleida",
+                  "desc": "La Federació ALLEM agrupa entitats socials que treballen amb persones amb discapacitat, problemes de salut mental i altres situacions de vulnerabilitat."
+                },
+                {
+                  "n": 5,
+                  "name": "La Cristaleria Espai Esportiu",
+                  "info": "1,69 km · 20–26 min caminant · circular",
+                  "address": "Carrer de Sant Pere Claver, 4, Lleida",
+                  "desc": "La Cristaleria és un espai esportiu i social de Lleida que treballa la inclusió i l’acompanyament socioeducatiu mitjançant l’esport."
+                }
+              ]
+            },
+            {
+              "title": "Tàrrega",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "La Boqueria Taller d'Arquitectura",
+                  "info": "1,75 km · 20–27 min caminant · circular",
+                  "address": "Carrer d’Urgell, 57, baixos, Tàrrega",
+                  "desc": "La Boqueria és un taller d’arquitectura que desenvolupa projectes d’obra nova, rehabilitació i recerca amb criteris socials i ambientals."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quan-sostenir-mapa-2",
+          "title": "Bellpuig i Maldà",
+          "maps": [
+            {
+              "mid": "1QwUDDhxFKpy-1Phrn6-CDeHTELTl-Fs",
+              "title": "Ponent · economia social i solidària (mapa 2 de 2)",
+              "ll": "41.6095,1.0219",
+              "z": 11,
+              "label": "Bellpuig i Maldà · mapa 2 de 2"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Bellpuig",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "La Sempre Viva Cures",
+                  "info": "2,16 km · 25–33 min caminant · circular",
+                  "address": "Avinguda de Lleida, 81, Bellpuig",
+                  "desc": "La SempreViva és una cooperativa de Bellpuig que ofereix serveis de cures i acompanyament a les persones."
+                }
+              ]
+            },
+            {
+              "title": "Maldà",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Al Centro la Vida",
+                  "info": "2,16 km · 25–33 min caminant · circular",
+                  "address": "Carrer de Sant Pere, 5, Maldà",
+                  "desc": "Al Centro la Vida és una cooperativa que impulsa la revitalització rural amb projectes culturals i comunitaris, vinculats al Bar Centro de Maldà."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

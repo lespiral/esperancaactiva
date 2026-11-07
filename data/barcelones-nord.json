@@ -1,0 +1,153 @@
+{
+  "slug": "barcelones-nord",
+  "name": "Barcelonès Nord",
+  "kind": "territory",
+  "title": "Caminar pel Barcelonès Nord",
+  "region": "Barcelonès Nord",
+  "summary": "12 rutes de l'economia social i solidària en 3 municipis.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària.",
+  "zones": {
+    "by": "section",
+    "label": "Vés directament al teu poble",
+    "placeholder": "Tria un poble",
+    "back": "Canvia de poble"
+  },
+  "blocks": [
+    {
+      "course": "dia",
+      "text": "12 rutes circulars curtes, d'1,7 a 2,3 km (uns 20–35 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. En alguns punts hi ha diverses entitats al mateix lloc.",
+      "summary": "12 rutes des de l'economia social",
+      "groups": [
+        {
+          "id": "quan-sostenir-mapa-1",
+          "title": "Badalona",
+          "maps": [
+            {
+              "mid": "1D-EvgOZulK9hZcSh-V2oxDxkbJNP0PM",
+              "title": "Barcelonès Nord · economia social i solidària (mapa 1 de 2)",
+              "ll": "41.4536,2.2411",
+              "z": 14,
+              "label": "Badalona · mapa 1 de 2"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Badalona",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Unió Segones Oportunitats",
+                  "info": "2,25 km · 27–34 min caminant · circular",
+                  "address": "Carrer del General Moragues, 5, Badalona",
+                  "desc": "Unió Segones Oportunitats impulsa la reutilització de roba i mobles, tallers de costura i iniciatives comunitàries vinculades al consum responsable."
+                },
+                {
+                  "n": 2,
+                  "name": "Gramagraf",
+                  "info": "1,75 km · 20–27 min caminant · circular",
+                  "address": "Carrer dels Corders, 22–28, Badalona",
+                  "desc": "Gramagraf desenvolupa serveis de comunicació i producció gràfica, amb disseny, impressió i instal·lació de materials visuals."
+                },
+                {
+                  "n": 3,
+                  "name": "DIP Coop",
+                  "info": "1,83 km · 21–28 min caminant · circular",
+                  "address": "Carrer de Marina, 68, Badalona",
+                  "desc": "DIP és una cooperativa que dissenya i acompanya projectes socials i comunitaris, amb treball en l’àmbit de la diversitat i les polítiques migratòries."
+                },
+                {
+                  "n": 4,
+                  "name": "Te Creativa",
+                  "info": "1,73 km · 20–26 min caminant · circular",
+                  "address": "Carrer de Roger de Flor, 125, baixos, Badalona",
+                  "desc": "Te Creativa és una cooperativa que desenvolupa activitats i projectes d’arts plàstiques i visuals i promou la creació artística al territori."
+                },
+                {
+                  "n": 5,
+                  "name": "La Page Original",
+                  "info": "1,86 km · 22–28 min caminant · circular",
+                  "address": "Carrer de Santa Anna, 16, Badalona",
+                  "desc": "La Page Original és un estudi de comunicació visual que treballa en identitat gràfica, disseny editorial i projectes expositius."
+                },
+                {
+                  "n": 6,
+                  "name": "La Sargantana Dalt de la Vila SCCL",
+                  "info": "2,27 km · 27–35 min caminant · circular",
+                  "address": "Carrer de Sant Sebastià, 2, Badalona",
+                  "desc": "La Sargantana Dalt de la Vila és una cooperativa de Badalona vinculada a l’activitat de restauració."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quan-sostenir-mapa-2",
+          "title": "Santa Coloma de Gramenet i Sant Adrià de Besòs",
+          "maps": [
+            {
+              "mid": "1Rjycc3vfv69bgdp83ROVRvFt22hTrHE",
+              "title": "Barcelonès Nord · economia social i solidària (mapa 2 de 2)",
+              "ll": "41.4491,2.2102",
+              "z": 13,
+              "label": "Santa Coloma de Gramenet i Sant Adrià de Besòs · mapa 2 de 2"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Santa Coloma de Gramenet",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Capfoguer i Rodalies Cultural",
+                  "info": "1,77 km · 21–27 min caminant · circular",
+                  "address": "Avinguda de Santa Coloma, 104, Santa Coloma de Gramenet",
+                  "desc": "Capfoguer és una cooperativa de Santa Coloma de Gramenet dedicada a la cervesa artesana i a serveis de restauració i barra per a esdeveniments. Rodalies Cultural desenvolupa projectes comunitaris de mediació en arts visuals i plàstiques amb joves i artistes emergents."
+                },
+                {
+                  "n": 2,
+                  "name": "Fundació Tallers",
+                  "info": "2,15 km · 25–33 min caminant · circular",
+                  "address": "Carrer dels Almogàvers, 18, Santa Coloma de Gramenet",
+                  "desc": "Fundació Tallers treballa per la inclusió laboral de persones amb discapacitat i problemes de salut mental, amb orientació, formació i serveis professionals."
+                },
+                {
+                  "n": 3,
+                  "name": "Associació ISIL",
+                  "info": "1,74 km · 20–27 min caminant · circular",
+                  "address": "Carrer dels Pirineus, 52, local 7, Santa Coloma de Gramenet",
+                  "desc": "ISIL acompanya persones en processos d’autonomia i inclusió social i laboral, amb serveis residencials, formació i suport comunitari."
+                },
+                {
+                  "n": 4,
+                  "name": "Àgora Desenvolupament Personal",
+                  "info": "2,13 km · 25–32 min caminant · circular",
+                  "address": "Carrer de Sant Jeroni, 61, Santa Coloma de Gramenet",
+                  "desc": "Àgora ofereix acompanyament personal en diferents moments vitals, amb una proposta de treball centrada en el benestar i el desenvolupament personal."
+                },
+                {
+                  "n": 5,
+                  "name": "L'Obrador de Gramenet",
+                  "info": "2,33 km · 27–35 min caminant · circular",
+                  "address": "Carrer Major, 27, Santa Coloma de Gramenet",
+                  "desc": "L’Obrador de Gramenet és una cooperativa que elabora pa i altres productes de fleca de manera artesanal, amb massa mare i ingredients ecològics."
+                }
+              ]
+            },
+            {
+              "title": "Sant Adrià de Besòs",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Tallers Guinardó",
+                  "info": "2,17 km · 25–33 min caminant · circular",
+                  "address": "Via Trajana, 15, Sant Adrià de Besòs",
+                  "desc": "Tallers Guinardó acompanya persones en situació de vulnerabilitat en la inclusió social i laboral, amb serveis de suport i producció en paper i cartró."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

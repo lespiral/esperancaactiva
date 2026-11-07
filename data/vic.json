@@ -2,7 +2,7 @@
   "slug": "vic",
   "name": "Vic",
   "region": "Osona",
-  "summary": "44 rutes curtes i circulars: pels parcs, des dels CAP i hospitals i des dels equipaments comunitaris.",
+  "summary": "45 rutes curtes i circulars: pels parcs, des dels CAP i hospitals, des dels equipaments comunitaris i des de l'economia social.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
   "blocks": [
     {
@@ -379,6 +379,35 @@
         }
       ],
       "summary": "23 rutes pels parcs"
+    },
+    {
+      "course": "dia",
+      "text": "Una ruta circular curta, d'1,9 km (uns 22–29 minuts caminant), que surt d'una entitat de l'economia social i solidària i hi torna. Comença i acaba al carrer, davant de l'entitat: no cal entrar-hi.",
+      "summary": "1 ruta des de l'economia social",
+      "groups": [
+        {
+          "id": "quan-sostenir-rutes",
+          "title": "La ruta",
+          "maps": [
+            {
+              "mid": "1ByM3sgpT6L_zRhiucPoLw0x5SEGpjr4",
+              "title": "Vic · economia social i solidària",
+              "ll": "41.9264,2.2521",
+              "z": 15,
+              "label": "1 ruta des de l'economia social"
+            }
+          ],
+          "routes": [
+            {
+              "n": 1,
+              "name": "Dies d'Agost SCCL",
+              "info": "1,91 km · 22–29 min caminant · circular",
+              "address": "Carrer del Doctor Candi Bayés, 32, Vic",
+              "desc": "Dies d’Agost és una cooperativa de periodisme i comunicació que treballa amb projectes de l’economia social i de proximitat."
+            }
+          ]
+        }
+      ]
     }
   ]
 }

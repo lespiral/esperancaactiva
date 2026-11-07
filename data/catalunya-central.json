@@ -1,0 +1,122 @@
+{
+  "slug": "catalunya-central",
+  "name": "Catalunya Central",
+  "kind": "territory",
+  "title": "Caminar per la Catalunya Central",
+  "region": "Catalunya Central",
+  "summary": "8 rutes de l'economia social i solidària en 4 municipis.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària.",
+  "see_also": [
+    {
+      "text": "Vic té pàgina pròpia, amb 1 ruta d'aquest curs.",
+      "city": "vic",
+      "course": "dia"
+    }
+  ],
+  "zones": {
+    "by": "section",
+    "label": "Vés directament al teu poble",
+    "placeholder": "Tria un poble",
+    "back": "Canvia de poble"
+  },
+  "blocks": [
+    {
+      "course": "dia",
+      "text": "8 rutes circulars curtes, d'1,6 a 2,0 km (uns 19–31 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi.",
+      "summary": "8 rutes des de l'economia social",
+      "groups": [
+        {
+          "id": "quan-sostenir-rutes",
+          "title": "Manresa, Prats de Lluçanès, Torelló i Tona",
+          "maps": [
+            {
+              "mid": "1LtyhGM7AfXpcFiOFBuDeABV3idqXCSQ",
+              "title": "Catalunya Central · economia social i solidària",
+              "ll": "41.9583,2.0445",
+              "z": 9,
+              "label": "8 rutes des de l'economia social"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Manresa",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Kult",
+                  "info": "1,97 km · 23–30 min caminant · circular",
+                  "address": "Carrer de la Foneria, 5–7, baixos, Manresa",
+                  "desc": "Kult impulsa una comunitat de pensament, cultura i acció, vinculada a la participació i al debat cultural."
+                },
+                {
+                  "n": 2,
+                  "name": "GEDI SCCL",
+                  "info": "1,75 km · 20–27 min caminant · circular",
+                  "address": "Carrer del Bruc, 59, baixos (l’Òrbita), Manresa",
+                  "desc": "GEDI és una cooperativa que desenvolupa serveis i projectes d’atenció a les persones i acompanyament a organitzacions."
+                },
+                {
+                  "n": 3,
+                  "name": "Casa de la Música de Manresa",
+                  "info": "1,94 km · 23–30 min caminant · circular",
+                  "address": "Carrer de Mossèn Jacint Verdaguer, 21, Manresa",
+                  "desc": "La Casa de la Música de Manresa ofereix formació, espais d’assaig, enregistrament i suport a la creació musical de l’escena local."
+                },
+                {
+                  "n": 4,
+                  "name": "Frescoop",
+                  "info": "1,73 km · 20–26 min caminant · circular",
+                  "address": "Carrer de Sallent, 28, Manresa",
+                  "desc": "Frescoop gestiona projectes alimentaris amb valor social i territorial, i comercialitza productes de proximitat i ecològics amb criteris de responsabilitat."
+                },
+                {
+                  "n": 5,
+                  "name": "Associació El CAE",
+                  "info": "1,68 km · 20–26 min caminant · circular",
+                  "address": "Carrer de Sant Joan Baptista de la Salle, 4–6, 1r, Manresa",
+                  "desc": "El CAE promou el joc, l’educació en el lleure i el voluntariat, amb formació, serveis educatius i suport a entitats de la Catalunya Central."
+                }
+              ]
+            },
+            {
+              "title": "Prats de Lluçanès",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Cuidem Lluçanès",
+                  "info": "2,02 km · 24–31 min caminant · circular",
+                  "address": "Avinguda de Pompeu Fabra, 8 (L’Espai), Prats de Lluçanès",
+                  "desc": "Cuidem Lluçanès ofereix serveis d’acompanyament a la llar, neteja i suport a persones, entitats i esdeveniments."
+                }
+              ]
+            },
+            {
+              "title": "Torelló",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "ARCA Associació d'Iniciatives Rurals",
+                  "info": "1,61 km · 19–25 min caminant · circular",
+                  "address": "Carrer d’Enric Prat de la Riba, 17–19, Torelló",
+                  "desc": "ARCA és una xarxa de suport al desenvolupament rural i marítim que acompanya i representa grups d’acció local."
+                }
+              ]
+            },
+            {
+              "title": "Tona",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Mixité",
+                  "info": "1,82 km · 21–28 min caminant · circular",
+                  "address": "Carrer de Barcelona, 40, Tona",
+                  "desc": "Mixité acompanya projectes participatius de desenvolupament i gestió del territori, amb criteris socials, ambientals i de cooperació ciutadana."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

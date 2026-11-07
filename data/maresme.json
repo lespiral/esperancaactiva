@@ -1,0 +1,77 @@
+{
+  "slug": "maresme",
+  "name": "Maresme",
+  "kind": "territory",
+  "title": "Caminar pel Maresme",
+  "region": "Maresme",
+  "summary": "4 rutes de l'economia social i solidària en 2 municipis.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària.",
+  "zones": {
+    "by": "section",
+    "label": "Vés directament al teu poble",
+    "placeholder": "Tria un poble",
+    "back": "Canvia de poble"
+  },
+  "blocks": [
+    {
+      "course": "dia",
+      "text": "4 rutes circulars curtes, d'1,7 a 2,0 km (uns 20–30 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. En alguns punts hi ha diverses entitats al mateix lloc.",
+      "summary": "4 rutes des de l'economia social",
+      "groups": [
+        {
+          "id": "quan-sostenir-rutes",
+          "title": "Mataró i Premià de Mar",
+          "maps": [
+            {
+              "mid": "1v120S7Tp9Biz3tW89dgHIw7_AosAiYw",
+              "title": "Maresme · economia social i solidària",
+              "ll": "41.5226,2.4026",
+              "z": 12,
+              "label": "4 rutes des de l'economia social"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Mataró",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Facto SCCL",
+                  "info": "2,00 km · 23–30 min caminant · circular",
+                  "address": "Carrer d’Ernest Lluch, 32, TecnoCampus TCM2, planta 3a, oficina 19, Mataró",
+                  "desc": "Facto ofereix assessorament i gestió empresarial, formació i acompanyament a projectes de l’economia social i a administracions públiques."
+                },
+                {
+                  "n": 2,
+                  "name": "Fundació Unió de Cooperadors de Mataró, Unió de Cooperadors de Mataró i Aiguamoll Música",
+                  "info": "1,92 km · 23–29 min caminant · circular",
+                  "address": "Carrer de Santa Rita, 1 (Cafè de Mar), Mataró",
+                  "desc": "La Fundació Unió de Cooperadors de Mataró dona suport a cooperatives i iniciatives de l’economia social, amb espais de cotreball i col·laboració al Cafè de Mar. La Unió de Cooperadors de Mataró treballa per preservar el patrimoni i la memòria cooperativa de la ciutat i impulsar el moviment cooperatiu. Aiguamoll Música ofereix serveis de distribució, comunicació, disseny i producció d’esdeveniments culturals i formació."
+                },
+                {
+                  "n": 3,
+                  "name": "Musicop SCCL i Visualsonora",
+                  "info": "1,77 km · 21–27 min caminant · circular",
+                  "address": "Carrer de Serra i Moret, 6, Mataró",
+                  "desc": "Musicop és una cooperativa que desenvolupa projectes educatius, socials i culturals amb especial dedicació a l’educació musical. Visualsonora impulsa l’activitat musical amb projectes de formació, suport a la creació i programació de concerts."
+                }
+              ]
+            },
+            {
+              "title": "Premià de Mar",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Agència Talaia, La Gûspira i Associació La Cartera",
+                  "info": "1,68 km · 20–26 min caminant · circular",
+                  "address": "Carrer de Sant Antoni, 61 (Ca la Cartera), Premià de Mar",
+                  "desc": "L’Agència Talaia és una cooperativa de comunicació i periodisme que treballa amb una mirada de transformació social. La Gûspira és una associació socioeducativa que promou la gestió cooperativa i no violenta dels conflictes. Ca la Cartera és un espai de cotreball de Premià de Mar que afavoreix la trobada entre persones i iniciatives de l’economia social."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

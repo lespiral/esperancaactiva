@@ -1,0 +1,113 @@
+{
+  "slug": "valles-oriental",
+  "name": "Vallès Oriental",
+  "kind": "territory",
+  "title": "Caminar pel Vallès Oriental",
+  "region": "Vallès Oriental",
+  "summary": "7 rutes de l'economia social i solidària en 5 municipis.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària.",
+  "zones": {
+    "by": "section",
+    "label": "Vés directament al teu poble",
+    "placeholder": "Tria un poble",
+    "back": "Canvia de poble"
+  },
+  "blocks": [
+    {
+      "course": "dia",
+      "text": "7 rutes circulars curtes, d'1,6 a 2,1 km (uns 19–32 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. En alguns punts hi ha diverses entitats al mateix lloc.",
+      "summary": "7 rutes des de l'economia social",
+      "groups": [
+        {
+          "id": "quan-sostenir-rutes",
+          "title": "Sant Celoni, Santa Maria de Palautordera, Granollers, Santa Eulàlia de Ronçana i Caldes de Montbui",
+          "maps": [
+            {
+              "mid": "1AJ05l21sQ6iyq-cnBlKhhQUsziq2WZk",
+              "title": "Vallès Oriental · economia social i solidària",
+              "ll": "41.6623,2.3267",
+              "z": 11,
+              "label": "7 rutes des de l'economia social"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Sant Celoni",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "La Clau Baix Montseny",
+                  "info": "2,04 km · 24–31 min caminant · circular",
+                  "address": "Carrer d’Alguersuari, 16, Sant Celoni",
+                  "desc": "La Clau és un casal del Baix Montseny que combina activitats culturals, gastronomia i trobada comunitària."
+                }
+              ]
+            },
+            {
+              "title": "Santa Maria de Palautordera",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Afadis Baix Montseny",
+                  "info": "2,10 km · 25–32 min caminant · circular",
+                  "address": "Passeig del Doctor Barri, 2, Santa Maria de Palautordera",
+                  "desc": "AFADIS Baix Montseny treballa per la inclusió social de persones amb discapacitat intel·lectual amb activitats, suports i participació comunitària."
+                }
+              ]
+            },
+            {
+              "title": "Granollers",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "La Magrana Vallesana",
+                  "info": "2,00 km · 23–30 min caminant · circular",
+                  "address": "Carrer de Joan Pere Fontanella, 45, Granollers",
+                  "desc": "La Magrana Vallesana agrupa persones consumidores i productores agroecològiques i promou el consum de productes ecològics i de proximitat a Granollers."
+                },
+                {
+                  "n": 2,
+                  "name": "La Fleca Digital SCCL, Neu al Carrer, Sauló Vinyes i Pins i COMSOC Comunicació Social",
+                  "info": "1,92 km · 23–29 min caminant · circular",
+                  "address": "Carrer d’Enric Prat de la Riba, 77 (Roca Umbert, Centre Audiovisual), Granollers",
+                  "desc": "La Fleca Digital és una cooperativa que desenvolupa webs, programari, disseny i comunicació digital. Neu al Carrer és una cooperativa que crea, produeix i acompanya projectes culturals i ofereix serveis de comunicació i gestió artística. Sauló Vinyes i Pins és una cooperativa dedicada al disseny gràfic i expositiu. COMSOC desenvolupa projectes d’educomunicació amb ràdio i pòdcast, amb formació i acompanyament a escoles, organitzacions i institucions."
+                },
+                {
+                  "n": 3,
+                  "name": "Abacus SCCL",
+                  "info": "1,62 km · 19–25 min caminant · circular",
+                  "address": "Carrer de Pompeu Fabra, 5, Granollers",
+                  "desc": "Abacus és una cooperativa vinculada a l’educació i la cultura, amb llibreries, recursos educatius i projectes de producció de continguts."
+                }
+              ]
+            },
+            {
+              "title": "Santa Eulàlia de Ronçana",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Apindep Ronçana",
+                  "info": "1,75 km · 21–27 min caminant · circular",
+                  "address": "Camí de Caldes, 37, Santa Eulàlia de Ronçana",
+                  "desc": "Apindep Ronçana és una cooperativa social de persones usuàries i famílies que ofereix serveis de suport a la dependència i a la diversitat funcional."
+                }
+              ]
+            },
+            {
+              "title": "Caldes de Montbui",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Cooperativa 70",
+                  "info": "1,67 km · 20–26 min caminant · circular",
+                  "address": "Carrer de Font i Boet, 7, Caldes de Montbui",
+                  "desc": "Cooperativa 70 promou serveis i activitats de consum responsable, cultura, formació i participació social a Caldes de Montbui."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

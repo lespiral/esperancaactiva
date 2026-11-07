@@ -1,0 +1,132 @@
+{
+  "slug": "anoia-penedes-i-garraf",
+  "name": "Anoia, Penedès i Garraf",
+  "kind": "territory",
+  "title": "Caminar per l'Anoia, el Penedès i el Garraf",
+  "region": "Anoia, Penedès i Garraf",
+  "summary": "9 rutes de l'economia social i solidària en 6 municipis.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària.",
+  "zones": {
+    "by": "section",
+    "label": "Vés directament al teu poble",
+    "placeholder": "Tria un poble",
+    "back": "Canvia de poble"
+  },
+  "blocks": [
+    {
+      "course": "dia",
+      "text": "9 rutes circulars curtes, d'1,6 a 2,3 km (uns 19–34 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi.",
+      "summary": "9 rutes des de l'economia social",
+      "groups": [
+        {
+          "id": "quan-sostenir-rutes",
+          "title": "Avinyonet del Penedès, Vilafranca del Penedès, Sant Jaume dels Domenys, El Vendrell, Sant Pere de Ribes i Vilanova i la Geltrú",
+          "maps": [
+            {
+              "mid": "1qcCfGSqPYmlvZytkHwRzELBcX7mVpDU",
+              "title": "Anoia, Penedès i Garraf · economia social i solidària",
+              "ll": "41.3114,1.6550",
+              "z": 11,
+              "label": "9 rutes des de l'economia social"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Avinyonet del Penedès",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Arqueovitis SCCL",
+                  "info": "1,94 km · 23–30 min caminant · circular",
+                  "address": "Carrer del Carme, 1 bis, Avinyonet del Penedès",
+                  "desc": "ArqueoVitis és una cooperativa de recerca arqueològica, conservació i divulgació del patrimoni del Penedès. Desenvolupa projectes i activitats per acostar aquest patrimoni a la ciutadania."
+                }
+              ]
+            },
+            {
+              "title": "Vilafranca del Penedès",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Camerata Penedès SCCL",
+                  "info": "1,88 km · 22–29 min caminant · circular",
+                  "address": "Carrer de l’Escorxador, 19, Vilafranca del Penedès",
+                  "desc": "La Camerata és una orquestra amb residència a Vilafranca del Penedès que ofereix concerts i desenvolupa projectes musicals."
+                },
+                {
+                  "n": 2,
+                  "name": "La Fura Continguts SCCL",
+                  "info": "1,95 km · 23–30 min caminant · circular",
+                  "address": "Carrer de Santa Digna, 9, Vilafranca del Penedès",
+                  "desc": "La Fura és un mitjà d’informació de proximitat que cobreix l’actualitat de l’Alt Penedès, el Baix Penedès i el Garraf."
+                },
+                {
+                  "n": 3,
+                  "name": "Actua SCCL",
+                  "info": "2,26 km · 27–34 min caminant · circular",
+                  "address": "Carrer de Sant Raimon de Penyafort, 8, Vilafranca del Penedès",
+                  "desc": "Actua és una cooperativa d’iniciativa social que desenvolupa projectes socioeducatius, d’acompanyament a les persones i d’intervenció comunitària."
+                },
+                {
+                  "n": 4,
+                  "name": "Fundació Mas Albornà",
+                  "info": "1,67 km · 20–26 min caminant · circular",
+                  "address": "Plaça de la Verema, 1, Vilafranca del Penedès",
+                  "desc": "Mas Albornà treballa per la inclusió social i laboral de persones amb discapacitat a l’Alt Penedès, mitjançant serveis de suport i oportunitats de treball."
+                }
+              ]
+            },
+            {
+              "title": "Sant Jaume dels Domenys",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Cellers Domenys SCCL",
+                  "info": "1,73 km · 20–26 min caminant · circular",
+                  "address": "Carrer de Prat de la Riba, 18, Sant Jaume dels Domenys",
+                  "desc": "Cellers Domenys és una cooperativa agrària dedicada a l’elaboració i comercialització de vins i caves."
+                }
+              ]
+            },
+            {
+              "title": "El Vendrell",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Contrapunt SCCL",
+                  "info": "1,65 km · 19–25 min caminant · circular",
+                  "address": "Carretera de Valls, 92, el Vendrell",
+                  "desc": "Contrapunt és una cooperativa de músics vinculada a projectes educatius i culturals i a l’acompanyament d’iniciatives de l’economia social."
+                }
+              ]
+            },
+            {
+              "title": "Sant Pere de Ribes",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "AmbTu SCCL",
+                  "info": "2,10 km · 25–32 min caminant · circular",
+                  "address": "Carrer de Jaume Balmes, 56, baixos, Sant Pere de Ribes",
+                  "desc": "AmbTu acompanya entitats i projectes de l’economia social en la gestió econòmica, el finançament i la formació, amb l’objectiu de reforçar-ne la viabilitat i l’impacte social."
+                }
+              ]
+            },
+            {
+              "title": "Vilanova i la Geltrú",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Associació de Consum Responsable La Vinagreta",
+                  "info": "1,94 km · 23–30 min caminant · circular",
+                  "address": "Carrer de l’Ametller, 3, Vilanova i la Geltrú",
+                  "desc": "La Vinagreta organitza el consum col·lectiu de productes ecològics i de proximitat a Vilanova i la Geltrú, promovent la relació directa amb les productores i un consum responsable."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

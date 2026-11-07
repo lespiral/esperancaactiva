@@ -4,11 +4,11 @@
   "kind": "territory",
   "title": "Caminar pel Baix Llobregat",
   "region": "Baix Llobregat",
-  "summary": "11 rutes de l'economia social i solidària en 8 municipis.",
-  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària de la comarca.",
+  "summary": "5 rutes de l'economia social i solidària en 5 municipis.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària.",
   "see_also": [
     {
-      "text": "El Prat de Llobregat té pàgina pròpia, amb 7 rutes d'aquest curs.",
+      "text": "El Prat de Llobregat té pàgina pròpia, amb 8 rutes d'aquest curs.",
       "city": "el-prat",
       "course": "dia"
     }
@@ -22,26 +22,55 @@
   "blocks": [
     {
       "course": "dia",
-      "text": "11 rutes circulars curtes, d'1,5 a 2,1 km (uns 20–30 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. En alguns punts hi ha diverses entitats al mateix lloc.",
-      "summary": "11 rutes des de l'economia social",
+      "text": "5 rutes circulars curtes, d'1,7 a 2,1 km (uns 21–31 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi.",
+      "summary": "5 rutes des de l'economia social",
       "groups": [
         {
           "id": "quan-sostenir-rutes",
-          "title": "Les 11 rutes",
-          "map_pending": "El mapa d'aquestes rutes encara s'està preparant.",
-          "maps": [],
+          "title": "Sant Feliu de Llobregat, Viladecans, Castelldefels, Cornellà de Llobregat i Olesa de Montserrat",
+          "maps": [
+            {
+              "mid": "1m0sU9PJMKSuPcTS0nGQK_uJBirVn1rQ",
+              "title": "Baix Llobregat · economia social i solidària",
+              "ll": "41.4522,1.9767",
+              "z": 10,
+              "label": "5 rutes des de l'economia social"
+            }
+          ],
           "sections": [
+            {
+              "title": "Sant Feliu de Llobregat",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "MTK Space SCCL",
+                  "info": "1,83 km · 22–28 min caminant · circular",
+                  "address": "Carrer d’Anselm Clavé, 17, nau 15, polígon Matacàs, Sant Feliu de Llobregat",
+                  "desc": "MTK Space és una cooperativa audiovisual i cultural de Sant Feliu de Llobregat. Ofereix producció audiovisual, serveis de comunicació i espais de treball i rodatge, amb una manera de fer basada en la col·laboració i la sostenibilitat."
+                }
+              ]
+            },
+            {
+              "title": "Viladecans",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Delta Coop SCCL",
+                  "info": "1,73 km · 21–26 min caminant · circular",
+                  "address": "Carrer de Santiago Rusiñol i Prats, 6, baixos, Viladecans",
+                  "desc": "Delta és una cooperativa d’iniciativa social sense ànim de lucre especialitzada en l’atenció a la primera infància i les famílies. Gestiona centres de desenvolupament infantil i atenció precoç al Baix Llobregat."
+                }
+              ]
+            },
             {
               "title": "Castelldefels",
               "routes": [
                 {
                   "n": 1,
-                  "name": "Falt",
+                  "name": "Falt SCCL",
                   "info": "2,06 km · 25–31 min caminant · circular",
-                  "address": "Carrer del General Palafox, 8, Castelldefels",
-                  "note": "Té algun tram d'escales: no és accessible amb cadira de rodes.",
-                  "desc": "Falt és una cooperativa especialitzada en treballs en altura i en la formació per realitzar-los. Ofereix serveis de manteniment, rehabilitació, instal·lació de sistemes de protecció i altres intervencions que requereixen tècniques de treball vertical.",
-                  "records": ["03-023"]
+                  "address": "Carrer del General Palafox, 8, baixos, Castelldefels",
+                  "desc": "Falt és una cooperativa especialitzada en treballs en altura i en la formació per realitzar-los. Ofereix serveis de manteniment, rehabilitació, instal·lació de sistemes de protecció i altres intervencions que requereixen tècniques de treball vertical."
                 }
               ]
             },
@@ -53,36 +82,7 @@
                   "name": "Innobaix",
                   "info": "1,79 km · 22–27 min caminant · circular",
                   "address": "Plaça de Can Suris, s/n, Cornellà de Llobregat",
-                  "desc": "Innobaix és una entitat que connecta empreses, administracions, centres educatius i altres agents per impulsar la innovació al Baix Llobregat i l’Hospitalet. Promou projectes col·laboratius, emprenedoria i iniciatives de desenvolupament del talent.",
-                  "records": ["03-008"]
-                }
-              ]
-            },
-            {
-              "title": "Gavà",
-              "routes": [
-                {
-                  "n": 1,
-                  "name": "Ajuntament de Gavà",
-                  "info": "1,52 km · 18–23 min caminant · circular",
-                  "address": "Plaça de Jaume Balmes, s/n, Gavà",
-                  "note": "[PENDENT: surt d'una administració pública. Per decidir si es manté.]",
-                  "desc": "L’Ajuntament de Gavà és l’administració local de la ciutat. Presta serveis municipals i gestiona equipaments, espais públics i programes d’atenció a la ciutadania, cultura, educació i benestar social.",
-                  "records": ["03-033"]
-                }
-              ]
-            },
-            {
-              "title": "Molins de Rei",
-              "routes": [
-                {
-                  "n": 1,
-                  "name": "Ajuntament de Molins de Rei",
-                  "info": "1,73 km · 21–26 min caminant · circular",
-                  "address": "Plaça de Catalunya, 1, Molins de Rei",
-                  "note": "Té algun tram d'escales: no és accessible amb cadira de rodes. [PENDENT: surt d'una administració pública. Per decidir si es manté.]",
-                  "desc": "L’Ajuntament de Molins de Rei és l’administració local de la vila. Gestiona serveis i equipaments municipals i treballa en àmbits com l’atenció ciutadana, la cultura, la participació i el suport al teixit econòmic i associatiu.",
-                  "records": ["03-031"]
+                  "desc": "Innobaix és una entitat que connecta empreses, administracions, centres educatius i altres agents per impulsar la innovació al Baix Llobregat i l’Hospitalet. Promou projectes col·laboratius, emprenedoria i iniciatives de desenvolupament del talent."
                 }
               ]
             },
@@ -91,79 +91,10 @@
               "routes": [
                 {
                   "n": 1,
-                  "name": "Crearsa",
+                  "name": "Crearsa SCCL",
                   "info": "1,81 km · 22–27 min caminant · circular",
                   "address": "Carrer de Santa Oliva, 9, Olesa de Montserrat",
-                  "desc": "Crearsa és una cooperativa dedicada a la producció audiovisual, la comunicació responsable i la formació. Acompanya projectes amb vocació social i utilitza l’audiovisual per donar visibilitat a iniciatives i afavorir la transformació ecosocial.",
-                  "records": ["03-001"]
-                },
-                {
-                  "n": 2,
-                  "name": "Ajuntament d'Olesa de Montserrat",
-                  "info": "1,78 km · 21–27 min caminant · circular",
-                  "address": "Plaça de Fèlix Figueras i Aragay, s/n, Olesa de Montserrat",
-                  "note": "[PENDENT: surt d'una administració pública. Per decidir si es manté.]",
-                  "desc": "L’Ajuntament d’Olesa de Montserrat és l’administració local del municipi. Gestiona serveis i equipaments públics i impulsa actuacions d’atenció ciutadana, educació, cultura, participació i benestar de la població.",
-                  "records": ["03-032"]
-                }
-              ]
-            },
-            {
-              "title": "Sant Andreu de la Barca",
-              "routes": [
-                {
-                  "n": 1,
-                  "name": "Ajuntament de Sant Andreu de la Barca",
-                  "info": "2,06 km · 25–31 min caminant · circular",
-                  "address": "Plaça de l'Ajuntament, 1, Sant Andreu de la Barca",
-                  "note": "Té algun tram d'escales: no és accessible amb cadira de rodes. [PENDENT: surt d'una administració pública. Per decidir si es manté.]",
-                  "desc": "L’Ajuntament de Sant Andreu de la Barca és l’administració local del municipi. Presta serveis d’atenció ciutadana i impulsa actuacions de benestar social, cultura, educació, participació i millora de la ciutat.",
-                  "records": ["03-030"]
-                }
-              ]
-            },
-            {
-              "title": "Sant Feliu de Llobregat",
-              "routes": [
-                {
-                  "n": 1,
-                  "name": "MTK Space",
-                  "info": "1,83 km · 22–28 min caminant · circular",
-                  "address": "Carrer d'Anselm Clavé, 17 (polígon Matacàs), Sant Feliu de Llobregat",
-                  "note": "Té algun tram d'escales: no és accessible amb cadira de rodes.",
-                  "desc": "MTK Space és una cooperativa audiovisual i cultural de Sant Feliu de Llobregat. Ofereix producció audiovisual, serveis de comunicació i espais de treball i rodatge, amb una manera de fer basada en la col·laboració i la sostenibilitat.",
-                  "records": ["03-009"]
-                },
-                {
-                  "n": 2,
-                  "name": "Consell Comarcal del Baix Llobregat",
-                  "info": "1,70 km · 20–25 min caminant · circular",
-                  "address": "Parc de Torreblanca, Sant Feliu de Llobregat",
-                  "note": "Si entres al parc, respecta'n els horaris i els accessos. [PENDENT: surt d'una administració pública. Per decidir si es manté.]",
-                  "desc": "El Consell Comarcal del Baix Llobregat és una administració pública que dona suport als municipis i presta serveis d’abast comarcal. Treballa en àmbits com els serveis socials, el desenvolupament econòmic, la igualtat i la cooperació entre ajuntaments.",
-                  "records": ["03-005"]
-                }
-              ]
-            },
-            {
-              "title": "Viladecans",
-              "routes": [
-                {
-                  "n": 1,
-                  "name": "Delta Coop",
-                  "info": "1,73 km · 21–26 min caminant · circular",
-                  "address": "Carrer de Santiago Rusiñol i Prats, 6, Viladecans",
-                  "desc": "Delta és una cooperativa d’iniciativa social sense ànim de lucre especialitzada en l’atenció a la primera infància i les famílies. Gestiona centres de desenvolupament infantil i atenció precoç al Baix Llobregat.",
-                  "records": ["03-025"]
-                },
-                {
-                  "n": 2,
-                  "name": "Ajuntament de Viladecans",
-                  "info": "1,84 km · 22–28 min caminant · circular",
-                  "address": "Carrer de Jaume Abril, 2, Viladecans",
-                  "note": "[PENDENT: surt d'una administració pública. Per decidir si es manté.]",
-                  "desc": "L’Ajuntament de Viladecans és l’administració local del municipi. Presta serveis d’atenció ciutadana i gestiona equipaments i actuacions municipals en àmbits com l’educació, la cultura, els serveis socials i l’espai públic.",
-                  "records": ["03-020"]
+                  "desc": "Crearsa és una cooperativa dedicada a la producció audiovisual, la comunicació responsable i la formació. Acompanya projectes amb vocació social i utilitza l’audiovisual per donar visibilitat a iniciatives i afavorir la transformació ecosocial."
                 }
               ]
             }

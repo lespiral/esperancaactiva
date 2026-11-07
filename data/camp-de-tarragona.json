@@ -1,0 +1,206 @@
+{
+  "slug": "camp-de-tarragona",
+  "name": "Camp de Tarragona",
+  "kind": "territory",
+  "title": "Caminar pel Camp de Tarragona",
+  "region": "Camp de Tarragona",
+  "summary": "16 rutes de l'economia social i solidària en 8 municipis.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària.",
+  "zones": {
+    "by": "section",
+    "label": "Vés directament al teu poble",
+    "placeholder": "Tria un poble",
+    "back": "Canvia de poble"
+  },
+  "blocks": [
+    {
+      "course": "dia",
+      "text": "16 rutes circulars curtes, d'1,7 a 2,0 km (uns 20–31 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi.",
+      "summary": "16 rutes des de l'economia social",
+      "groups": [
+        {
+          "id": "quan-sostenir-mapa-1",
+          "title": "Valls, Reus, Santa Coloma de Queralt, Montblanc, L'Espluga de Francolí i Falset",
+          "maps": [
+            {
+              "mid": "1E_2hWdYRxZIfF4PNAUehlUH-uk0R1qk",
+              "title": "Camp de Tarragona · economia social i solidària (mapa 1 de 2)",
+              "ll": "41.4102,1.1011",
+              "z": 9,
+              "label": "Valls, Reus, Santa Coloma de Queralt, Montblanc, L'Espluga de Francolí i Falset · mapa 1 de 2"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Valls",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "L'Economat SCCL",
+                  "info": "2,05 km · 24–31 min caminant · circular",
+                  "address": "Carrer de la Carnisseria, 23-25, 1r 4a, Valls",
+                  "desc": "L’Economat acompanya projectes col·lectius i organitzacions per desenvolupar l’economia social i cooperativa al Camp de Tarragona."
+                },
+                {
+                  "n": 2,
+                  "name": "Milmans Assessoria SCCLP",
+                  "info": "1,83 km · 21–28 min caminant · circular",
+                  "address": "Carrer de la Carnisseria, 9, baixos, Valls",
+                  "desc": "MilMans és una assessoria cooperativa especialitzada en l’economia social, amb serveis laborals, fiscals i comptables."
+                }
+              ]
+            },
+            {
+              "title": "Reus",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Associació Reus Refugi",
+                  "info": "1,86 km · 22–28 min caminant · circular",
+                  "address": "Carrer de Martí Napolità, 7, 3r (Casal Despertaferro), Reus",
+                  "desc": "Reus Refugi acompanya persones migrades i refugiades, amb suport en tràmits i defensa dels seus drets."
+                },
+                {
+                  "n": 2,
+                  "name": "El Brot SCCL",
+                  "info": "2,01 km · 24–31 min caminant · circular",
+                  "address": "Carrer de Pròsper de Bofarull, 26, Reus",
+                  "desc": "El Brot és una cooperativa de consum de Reus que ofereix productes ecològics, de proximitat i de temporada."
+                },
+                {
+                  "n": 3,
+                  "name": "Ennatura't SCCL",
+                  "info": "1,96 km · 23–30 min caminant · circular",
+                  "address": "Passeig de Sunyer, 45 bis, 1r D, Reus",
+                  "desc": "Ennatura’t organitza activitats d’exercici físic i entrenament a l’aire lliure per a persones de diferents edats."
+                },
+                {
+                  "n": 4,
+                  "name": "La Caseta de l'Arbre SCCL",
+                  "info": "1,93 km · 23–29 min caminant · circular",
+                  "address": "Raval de Jesús, 32, Reus",
+                  "desc": "La Caseta de l’Arbre és una botiga de Reus amb joguines, materials de criança i altres productes seleccionats amb criteris pedagògics i ecològics."
+                }
+              ]
+            },
+            {
+              "title": "Santa Coloma de Queralt",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "L'Aresta SCCL",
+                  "info": "1,71 km · 20–26 min caminant · circular",
+                  "address": "Carrer Major, 19, Santa Coloma de Queralt",
+                  "desc": "L’Aresta impulsa projectes d’agroecologia, sobirania alimentària i educació ambiental, amb una mirada de transformació social i economia solidària."
+                }
+              ]
+            },
+            {
+              "title": "Montblanc",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Aprodisca",
+                  "info": "1,72 km · 20–26 min caminant · circular",
+                  "address": "Carrer de Josep Maria Poblet, 1, Montblanc",
+                  "desc": "Aprodisca acompanya persones amb discapacitat intel·lectual, problemes de salut mental o risc d’exclusió, promovent la formació, el treball i la participació comunitària."
+                }
+              ]
+            },
+            {
+              "title": "L'Espluga de Francolí",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Museu de la Vida Rural (actualment Museu Terra)",
+                  "info": "1,90 km · 22–29 min caminant · circular",
+                  "address": "Carretera de Montblanc, 35, l'Espluga de Francolí",
+                  "desc": "El Museu Terra és un centre cultural dedicat al món rural i a la sostenibilitat, amb exposicions, activitats i propostes educatives."
+                }
+              ]
+            },
+            {
+              "title": "Falset",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Agrícola Falset-Marçà SCCL",
+                  "info": "1,87 km · 22–29 min caminant · circular",
+                  "address": "Carrer de Miquel Barceló, 31, Falset",
+                  "desc": "Agrícola Falset-Marçà és una cooperativa agrària que elabora i comercialitza productes vinculats a la vinya i al territori."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quan-sostenir-mapa-2",
+          "title": "Tarragona i La Canonja",
+          "maps": [
+            {
+              "mid": "1cXr3zTl_RWtnwBwvpo7L-VrL62KXUyc",
+              "title": "Camp de Tarragona · economia social i solidària (mapa 2 de 2)",
+              "ll": "41.1454,1.2186",
+              "z": 12,
+              "label": "Tarragona i La Canonja · mapa 2 de 2"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Tarragona",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Associació Juvenil Ariadna",
+                  "info": "1,76 km · 21–27 min caminant · circular",
+                  "address": "Avinguda de Sant Salvador, 114 (Casal d’Entitats), Tarragona",
+                  "desc": "Ariadna desenvolupa projectes culturals i artístics amb participació activa del jovent i vinculació amb el territori."
+                },
+                {
+                  "n": 2,
+                  "name": "Cooperativa Obrera Tarraconense (COT)",
+                  "info": "1,92 km · 23–29 min caminant · circular",
+                  "address": "Carrer de Fortuny, 23, 1r, Tarragona",
+                  "desc": "La Cooperativa Obrera Tarraconense ofereix espais i activitats culturals, formació en arts escèniques i programació al Teatre el Magatzem."
+                },
+                {
+                  "n": 3,
+                  "name": "L'Escamot SCCL",
+                  "info": "1,85 km · 22–28 min caminant · circular",
+                  "address": "Carrer de Pin i Soler, 6, Tarragona",
+                  "desc": "L’Escamot promou la mobilitat activa i ciutats més habitables, amb formació en bicicleta, assessorament i projectes participatius."
+                },
+                {
+                  "n": 4,
+                  "name": "Col·lectiu Ronda SCCL",
+                  "info": "1,96 km · 23–30 min caminant · circular",
+                  "address": "Rambla Nova, 47, 2n 2a, Tarragona",
+                  "desc": "Col·lectiu Ronda és una cooperativa d’advocacia i assessorament jurídic, laboral, fiscal i econòmic."
+                },
+                {
+                  "n": 5,
+                  "name": "Associació QM Zero",
+                  "info": "1,89 km · 22–29 min caminant · circular",
+                  "address": "Via de l’Imperi Romà, 11, Tarragona",
+                  "desc": "Quilòmetre Zero impulsa oportunitats i vincles de suport mitjançant la mentoria, el voluntariat i l’acompanyament a persones migrades i joves."
+                }
+              ]
+            },
+            {
+              "title": "La Canonja",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "INSTA Serveis Jurídics Ambientals SCCLP",
+                  "info": "1,72 km · 20–26 min caminant · circular",
+                  "address": "Carrer de Masricart, 6A, baixos (El Bloc), la Canonja",
+                  "desc": "INSTA ofereix assessorament jurídic i consultoria ambiental, integrant el dret ambiental amb l’anàlisi del territori i la sostenibilitat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

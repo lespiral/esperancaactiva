@@ -1,0 +1,94 @@
+{
+  "slug": "terres-de-l-ebre",
+  "name": "Terres de l'Ebre",
+  "kind": "territory",
+  "title": "Caminar per les Terres de l'Ebre",
+  "region": "Terres de l'Ebre",
+  "summary": "5 rutes de l'economia social i solidària en 4 municipis.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària.",
+  "zones": {
+    "by": "section",
+    "label": "Vés directament al teu poble",
+    "placeholder": "Tria un poble",
+    "back": "Canvia de poble"
+  },
+  "blocks": [
+    {
+      "course": "dia",
+      "text": "5 rutes circulars curtes, d'1,7 a 1,9 km (uns 20–29 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi.",
+      "summary": "5 rutes des de l'economia social",
+      "groups": [
+        {
+          "id": "quan-sostenir-rutes",
+          "title": "Tortosa, Amposta, Ulldecona i La Fatarella",
+          "maps": [
+            {
+              "mid": "1oISpOH0r3sAczopfV_CJ7TSuyl0mR28",
+              "title": "Terres de l'Ebre · economia social i solidària",
+              "ll": "40.9509,0.5110",
+              "z": 9,
+              "label": "5 rutes des de l'economia social"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Tortosa",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Ateneu Informàtic",
+                  "info": "1,83 km · 21–28 min caminant · circular",
+                  "address": "Carrer de Teodor González, 31, baixos, Tortosa",
+                  "desc": "Ateneu Informàtic ofereix consultoria, formació i auditoria en protecció de dades i privacitat per a empreses i organitzacions."
+                }
+              ]
+            },
+            {
+              "title": "Amposta",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Fundació Gentis",
+                  "info": "1,68 km · 20–26 min caminant · circular",
+                  "address": "Carrer de Barcelona, 73, Amposta",
+                  "desc": "La Fundació Gentis promou la inclusió social mitjançant formació, orientació i inserció laboral i projectes d’acompanyament comunitari."
+                },
+                {
+                  "n": 2,
+                  "name": "EPI Energia per la Igualtat",
+                  "info": "1,83 km · 22–28 min caminant · circular",
+                  "address": "Carrer Primer de Maig, 1, 3r B, Amposta",
+                  "desc": "EPI és una consultoria energètica que acompanya empreses i administracions en eficiència energètica, renovables i comunitats energètiques."
+                }
+              ]
+            },
+            {
+              "title": "Ulldecona",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Fundació Ulldecona",
+                  "info": "1,88 km · 22–29 min caminant · circular",
+                  "address": "Carrer del Maestrat, 1, Ulldecona",
+                  "desc": "La Fundació Ulldecona ofereix serveis de suport a persones amb dependència, inclòs l’acompanyament i el transport a equipaments i serveis."
+                }
+              ]
+            },
+            {
+              "title": "La Fatarella",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "AL FATRIYYA Agrícola Sant Isidre SCCL",
+                  "info": "1,81 km · 21–28 min caminant · circular",
+                  "address": "Avinguda de la Misericòrdia, 71, la Fatarella",
+                  "desc": "Agrícola Sant Isidre de la Fatarella és una cooperativa agrària que elabora i comercialitza productes com vi i oli vinculats al territori."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
