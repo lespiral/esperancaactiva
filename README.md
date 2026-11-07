@@ -52,6 +52,8 @@ Per al curs «Quan sostenir la vida es fa difícil», les rutes surten d'entitat
 - «Les ciutats» i la pàgina del curs tenen la secció «Pobles i comarques» (`territories_page` a `data/site.json`), amb les targetes dels territoris i el desplegable de tots els pobles.
 - Un grup que encara no té mapa porta `"maps": []` i `"map_pending": "<text>"`: surt un quadre amb el text i les rutes no tenen el botó «Obre el mapa».
 
+**Com es van posar les rutes de l'economia social (7 de novembre de 2026).** Les fitxes (KML d'una capa per ruta), el pla i els mids els fa ChatGPT (al Drive: «Checkpoint_MyMaps_…zip» i «Registre_My_Maps_Esperanca_Activa.xlsx»). `tools/ess_extract.py` en treu les rutes (entitats, «Sobre l'entitat», adreça, km, temps, requadre de cada mapa) i `tools/ess_site_data.py` escriu `data/<territori>.json`, `data/l-hospitalet.json`, el bloc `dia` de Barcelona, el Prat, Olot i Vic, i la llista de territoris de `data/site.json`. Si canvien els mapes: actualitzar els mids a `ess_extract.py`, tornar a executar tots dos scripts i `build.py`.
+
 ## Desplegables «Vés directament a…»
 
 - A Inici, a Les ciutats i a cada pàgina de curs hi ha un desplegable que porta a la targeta de la ciutat triada (`#ciutat-olot`).
