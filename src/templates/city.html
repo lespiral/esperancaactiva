@@ -35,7 +35,7 @@
   {% for c in territories %}
   <a class="pill" href="{{ root }}{{ c.slug }}/"{% if c.slug == city.slug %} aria-current="page"{% endif %}>{{ icon(c.icon) }}{{ c.name }}</a>
   {% endfor %}
-  <a class="pill" href="{{ root }}ciutats/#pobles-i-comarques">{{ icon('pin') }}Tots els pobles i les ciutats</a>
+  <a class="pill" href="{{ root }}ciutats/">{{ icon('pin') }}{{ site.cities_page.title }}</a>
 </nav>
 {% else %}
 {{ page_head(site.cities_page.cities_title ~ ' · ' ~ city.region, city.title, city.intro) }}

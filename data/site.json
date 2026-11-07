@@ -4,7 +4,7 @@
     "url": "https://xn--esperanaactiva-mjb.cat/",
     "index": true
   },
-  "description": "Cursos digitals gratuïts de 7 passes i rutes a peu per la teva ciutat. Una pràctica, una caminada, un petit pas.",
+  "description": "Cursos digitals gratuïts de 7 passes i rutes a peu a prop de casa, per ciutats, pobles i comarques. Una pràctica, una caminada, un petit pas.",
   "contact": {
     "email": "elarasocial.com@gmail.com",
     "instagram": "@esperancaactiva.cat",
@@ -209,7 +209,7 @@
       ["El següent pas possible.", "Quina acció petita, concreta i realista puc fer ara?"]
     ],
     "walk_title": "Ara, on vols caminar?",
-    "walk_intro": "Tria la teva ciutat i fes el temps de reflexió de cada passa en una de les rutes. Si encara no hi ha rutes a prop teu, pots caminar pels voltants de casa o per un lloc tranquil."
+    "walk_intro": "Tria la teva ciutat o el teu poble i fes el temps de reflexió de cada passa en una de les rutes. Si encara no hi ha rutes a prop teu, pots caminar pels voltants de casa o per un lloc tranquil."
   },
 
   "safety_html": "Aquest curs no substitueix un procés de psicoteràpia ni un tractament mèdic o psicològic. Si estàs passant un moment molt difícil, parla amb el teu CAP o truca al <a href=\"tel:061\">061</a>. Si penses en fer-te mal, truca al <a href=\"tel:024\">024</a>. En una emergència, al <a href=\"tel:112\">112</a>.",
@@ -229,17 +229,17 @@
   },
 
   "home": {
-    "kicker": "Cursos digitals gratuïts · Rutes a peu per la teva ciutat",
-    "lead": "Una pràctica, una caminada, un petit pas. Tria el que et preocupa i la ciutat on vols caminar.",
+    "kicker": "Cursos digitals gratuïts · Rutes a peu a prop de casa",
+    "lead": "Una pràctica, una caminada, un petit pas. Tria el que et preocupa i on vols caminar.",
     "q1": "1. Què et porta aquí?",
     "q2": "2. On vols caminar?",
-    "q2_text": "Cada ciutat té el seu mapa i les seves rutes. Surten de places, parcs i equipaments a prop de casa. N'hi ha de molt curtes, d'uns 10 minuts, i de més llargues, de més d'una hora.",
+    "q2_text": "Cada ciutat, poble o comarca té el seu mapa i les seves rutes. Surten de places, parcs, equipaments i entitats a prop de casa. N'hi ha de molt curtes, d'uns 10 minuts, i de més llargues, de més d'una hora.",
     "q2_cities": "Ara hi ha rutes a Barcelona, l'Hospitalet de Llobregat, el Prat de Llobregat, Olot i Vic, i a pobles de moltes comarques. Se n'aniran afegint més.",
-    "each_course": "Cada curs té les seves rutes a cada ciutat: el curs et dona la pràctica, i la ruta, el temps per caminar-la. La teva ciutat no hi és? Fes la caminada a prop de casa o en un lloc tranquil.",
+    "each_course": "Cada curs té les seves rutes a cada lloc: el curs et dona la pràctica, i la ruta, el temps per caminar-la. No hi trobes el teu poble o la teva ciutat? Fes la caminada a prop de casa o en un lloc tranquil.",
     "how_title": "Com funciona",
     "how": [
       ["headphones", "1. Fes la pràctica", "Escolta l'àudio o mira el vídeo de la passa abans de sortir."],
-      ["map", "2. Tria una ruta", "Mira el mapa de la teva ciutat i escull la que s'adapti al teu temps."],
+      ["map", "2. Tria una ruta", "Mira el mapa de la teva ciutat, poble o comarca i escull la que s'adapti al teu temps."],
       ["sneaker", "3. Camina i observa", "Deixa que la pràctica t'acompanyi, al teu ritme i sense buscar respostes ràpides."],
       ["sun", "4. Porta-ho al dia a dia", "Pensa què t'emportes: una mirada nova, una necessitat o un petit pas possible."]
     ],
@@ -253,10 +253,10 @@
       ["Integra:", "un vídeo de tancament per portar-ho a la vida."]
     ],
     "faq": [
-      ["Hi ha rutes de tots els cursos a totes les ciutats?", "Encara no. Cada ciutat té rutes pensades per a cada curs i n'anem afegint. Si la teva ciutat encara no en té del teu curs, pots fer la caminada a prop de casa o en un lloc tranquil."],
+      ["Hi ha rutes de tots els cursos a totes les ciutats i pobles?", "Encara no. Les rutes es pensen per a cada curs i n'anem afegint. Si al teu poble o a la teva ciutat encara no n'hi ha del teu curs, pots fer la caminada a prop de casa o en un lloc tranquil."],
       ["És realment gratuït?", "Sí. Només t'has de donar d'alta a la plataforma dels cursos, i te'n pots donar de baixa quan vulguis."],
       ["És teràpia?", "No. És un minicurs vivencial de pràctiques i reflexió. Pot ajudar molt, però no substitueix la psicoteràpia si estàs en un moment clínicament delicat."],
-      ["La meva ciutat no hi és. Puc fer el curs?", "És clar. Pots fer el temps de reflexió en una passejada a prop de casa o en un lloc tranquil."]
+      ["On visc encara no hi ha rutes. Puc fer el curs?", "És clar. Pots fer el temps de reflexió en una passejada a prop de casa o en un lloc tranquil."]
     ],
     "nus_title": "Què és l'Esperança Activa?",
     "initiative_title": "Una iniciativa de",
@@ -265,7 +265,7 @@
 
   "courses_page": {
     "title": "Els cursos",
-    "intro": "Tria el tema que et preocupa. Cada curs és gratuït, té 7 passes i les seves rutes a cada ciutat."
+    "intro": "Tria el tema que et preocupa. Cada curs és gratuït, té 7 passes i les seves pròpies rutes a peu."
   },
 
   "cities_page": {
@@ -303,9 +303,9 @@
       {
         "title": "Sobre les rutes",
         "items": [
-          ["Hi ha rutes de tots els cursos a totes les ciutats?", "Encara no. Cada ciutat té rutes pensades per a cada curs i n'anem afegint. Si la teva ciutat encara no en té del teu curs, pots fer la caminada a prop de casa o en un lloc tranquil."],
-          ["La meva ciutat no hi és. Puc fer el curs?", "És clar. Pots fer el temps de reflexió en una passejada a prop de casa o en un lloc tranquil."],
-          ["Quant duren les rutes?", "Depèn de la ciutat i de la ruta. Al Prat hi ha circuits urbans de menys d'1 km (uns 10 a 15 minuts caminant), rutes d'1,5 a 3,5 km des dels equipaments municipals i rutes de 0,7 a 6 km pel Delta del Llobregat. A Vic, les rutes pels parcs fan d'1 a 2 km (uns 20 minuts); les que surten dels CAP i hospitals, uns 2 km (mitja hora caminant), i les dels equipaments comunitaris, d'1,8 a 2 km (uns 20–30 minuts). A Olot, les rutes fan de 0,6 a 3,2 km (de 7 a 47 minuts caminant). A Barcelona, les rutes des dels CAP fan uns 2 km (mitja hora caminant); les dels parcs i jardins, d'1,7 a 2,2 km, i les dels equipaments comunitaris, d'1,7 a 2,1 km (uns 20–30 minuts); i les rutes «Caminant fem salut», d'uns 3 a 7 km. Les rutes de l'economia social i solidària, a Barcelona, l'Hospitalet i molts pobles i ciutats de Catalunya, fan d'1,5 a 2,3 km (uns 18–35 minuts). A cada ruta hi trobaràs els quilòmetres i el temps aproximat, caminant i amb pauses."],
+          ["Hi ha rutes de tots els cursos a totes les ciutats i pobles?", "Encara no. Les rutes es pensen per a cada curs i n'anem afegint. Si al teu poble o a la teva ciutat encara no n'hi ha del teu curs, pots fer la caminada a prop de casa o en un lloc tranquil."],
+          ["On visc encara no hi ha rutes. Puc fer el curs?", "És clar. Pots fer el temps de reflexió en una passejada a prop de casa o en un lloc tranquil."],
+          ["Quant duren les rutes?", "Depèn del lloc i de la ruta. Al Prat hi ha circuits urbans de menys d'1 km (uns 10 a 15 minuts caminant), rutes d'1,5 a 3,5 km des dels equipaments municipals i rutes de 0,7 a 6 km pel Delta del Llobregat. A Vic, les rutes pels parcs fan d'1 a 2 km (uns 20 minuts); les que surten dels CAP i hospitals, uns 2 km (mitja hora caminant), i les dels equipaments comunitaris, d'1,8 a 2 km (uns 20–30 minuts). A Olot, les rutes fan de 0,6 a 3,2 km (de 7 a 47 minuts caminant). A Barcelona, les rutes des dels CAP fan uns 2 km (mitja hora caminant); les dels parcs i jardins, d'1,7 a 2,2 km, i les dels equipaments comunitaris, d'1,7 a 2,1 km (uns 20–30 minuts); i les rutes «Caminant fem salut», d'uns 3 a 7 km. Les rutes de l'economia social i solidària, a Barcelona, l'Hospitalet i molts pobles i ciutats de Catalunya, fan d'1,5 a 2,3 km (uns 18–35 minuts). A cada ruta hi trobaràs els quilòmetres i el temps aproximat, caminant i amb pauses."],
           ["Les rutes són circulars?", "La majoria sí: comencen i acaben al mateix lloc. Algunes van d'un punt a un altre; a cada ruta hi posa si és circular o lineal, i on comença i acaba."],
           ["Què he de tenir en compte abans de sortir?", "__before_walk__"]
         ]
