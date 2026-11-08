@@ -61,10 +61,10 @@ Per al curs «Quan sostenir la vida es fa difícil», les rutes surten d'entitat
 
 A Inici («2. On vols caminar?»), a dalt de «Ciutats, pobles i comarques» i a la pàgina del curs «Quan sostenir la vida es fa difícil» (8 de novembre de 2026, en lloc del desplegable llarg de tots els pobles):
 
-- Es tria la província, després la comarca i després el poble o la ciutat, que porta on hi ha les seves rutes (la pàgina de la ciutat o el municipi dins la pàgina del territori). Al mòbil es va pas a pas, amb el camí a dalt («Catalunya › Barcelona › Baix Llobregat»); a l'ordinador (760 px o més) es veuen les tres columnes alhora. A dalt hi ha un cercador de pobles i comarques; amb Retorn, va al primer resultat.
+- Es tria la província, després la comarca i després el poble o la ciutat, que porta on hi ha les seves rutes (la pàgina de la ciutat o el municipi dins la pàgina del territori). Al mòbil es va pas a pas, amb el camí a dalt («Catalunya › Barcelona › Baix Llobregat»); a l'ordinador es veuen les tres columnes alhora. A dalt hi ha un cercador de pobles i comarques; amb Retorn, va al primer resultat.
 - A la pàgina del curs només hi surten els llocs que tenen rutes d'aquest curs, amb aquestes rutes, i l'enllaç porta al bloc del curs.
 - `data/comarques.json`: la comarca i la província de cada ciutat i de cada poble amb rutes (`"Olesa de Montserrat": ["Baix Llobregat", "Barcelona"]`). Quan surti un poble nou, cal afegir-l'hi; si no, `build.py` s'atura i diu quins falten.
-- Codi: `place_tree()` a `build.py` (fa l'arbre i compta les rutes), la macro `place_nav` a `parts.html`, els estils `.placenav` a `site.css` i el codi a `site.js`. Els textos són a `data/site.json` › `place_nav`.
+- Codi: `place_path()` (a quina província i comarca va cada lloc) i `place_tree()` (fa l'arbre i compta les rutes) a `build.py`, la macro `place_nav` a `parts.html`, els estils `.placenav` a `site.css` i el codi a `site.js`. Els nivells i els textos són a `data/site.json` › `place_nav`, una columna per nivell. El codi és el mateix a la .org, que té un nivell més a dalt: la comunitat autònoma. Si les columnes no hi caben (menys d'uns 240 px cada una), el menú va pas a pas.
 - Sense JavaScript es veuen totes les llistes, amb el nom de la província i de la comarca a sobre.
 
 ## Desplegables «Vés directament a…»

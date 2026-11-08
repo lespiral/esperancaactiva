@@ -413,7 +413,7 @@ details[open] > summary .faq__caret { transform: rotate(180deg); }
 .placenav__crumb:focus-visible, .placenav__clear:focus-visible { outline: 3px solid var(--sun); outline-offset: -3px; border-radius: 6px; }
 .placenav__here { padding: 0 7px; font: 700 .95rem/1.2 var(--font-body); color: var(--green-900); }
 .placenav__title { margin: 0; padding: 0 7px; font-size: 1.1rem; outline: none; }
-.placenav__cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-left: -1px; }
+.placenav__cols { display: grid; grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr)); margin-left: -1px; }
 .placenav__col { min-width: 0; border-left: 1px solid var(--line); }
 .placenav__coltitle { margin: 0; padding: 16px 16px 12px; font-size: 1rem; }
 .placenav__list { list-style: none; margin: 0; padding: 0; }
@@ -434,26 +434,29 @@ details[open] > summary .faq__caret { transform: rotate(180deg); }
 .placenav__none { margin: 0; padding: 14px 16px 18px; border-top: 1px solid var(--line); }
 .placenav__reslist { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .placenav__foot { margin: 0; padding: 12px 16px; border-top: 1px solid var(--line); background: var(--green-50); font-size: .9rem; color: var(--green-700); text-align: center; }
-/* Sense JavaScript: totes les llistes, cada una amb el nom de la província o la comarca a sobre */
+/* Sense JavaScript: totes les llistes, cada una amb el nom del lloc de dalt (la província, la comarca…) */
 html:not(.js) .placenav__search { display: none; }
 html:not(.js) .placenav__list[data-name]::before { content: attr(data-name); display: block; padding: 12px 16px 6px; border-top: 1px solid var(--line); font: 700 .9rem/1.3 var(--font-head); color: var(--green-700); }
-/* Amb JavaScript: només la llista de la província i la comarca triades */
-.js .placenav__list[data-prov], .js .placenav__list[data-com] { display: none; }
+/* Amb JavaScript: a cada columna, només la llista del lloc triat a l'anterior (site.js posa is-open i is-shown) */
+.js .placenav__list[data-list] { display: none; }
 .js .placenav__list.is-open { display: block; }
-.js .placenav[data-level="0"] .placenav__hint[data-hint="prov"], .js .placenav:not([data-level="2"]) .placenav__hint[data-hint="com"] { display: block; }
-.placenav.is-searching .placenav__head, .placenav.is-searching .placenav__cols { display: none; }
+.js .placenav__hint.is-shown { display: block; }
 @media (max-width: 759px) {
   .placenav__search { max-width: none; }
   .placenav__cols { display: block; margin-left: 0; }
   .placenav__col { border-left: 0; }
   .placenav__reslist { grid-template-columns: minmax(0, 1fr); }
-  /* Al mòbil, pas a pas: el camí i el títol a dalt, i només la llista del pas on ets */
+  /* Al mòbil, pas a pas des del primer moment (abans que site.js posi is-steps) */
   .js .placenav__head { display: block; }
-  .js .placenav__coltitle, .js .placenav[data-level] .placenav__hint { display: none; }
-  .js .placenav[data-level="0"] .placenav__col--com, .js .placenav[data-level="0"] .placenav__col--town,
-  .js .placenav[data-level="1"] .placenav__col--prov, .js .placenav[data-level="1"] .placenav__col--town,
-  .js .placenav[data-level="2"] .placenav__col--prov, .js .placenav[data-level="2"] .placenav__col--com { display: none; }
+  .js .placenav__coltitle, .js .placenav__hint.is-shown, .js .placenav__col:not(.is-active) { display: none; }
 }
+/* Pas a pas, amb el camí i el títol a dalt i només la columna del pas on ets. site.js hi posa is-steps
+   quan les columnes no hi caben (al mòbil, o a la .org, amb quatre columnes, en pantalles mitjanes). */
+.placenav.is-steps .placenav__cols { display: block; margin-left: 0; }
+.placenav.is-steps .placenav__col { border-left: 0; }
+.placenav.is-steps .placenav__head { display: block; }
+.placenav.is-steps .placenav__coltitle, .placenav.is-steps .placenav__hint.is-shown, .placenav.is-steps .placenav__col:not(.is-active) { display: none; }
+.placenav.is-searching .placenav__head, .placenav.is-searching .placenav__cols { display: none; }
 .map__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; margin: 0 0 8px; }
 .map__head .map__label { margin: 0; }
 .map__back { display: inline-flex; align-items: center; gap: 4px; font-size: .92rem; font-weight: 700; white-space: nowrap; }

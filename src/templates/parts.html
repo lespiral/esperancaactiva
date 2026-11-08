@@ -50,12 +50,10 @@
 </div>
 {%- endmacro %}
 
-{# «1 ruta» / «5 rutes»: pair = ["1 ruta", "{n} rutes"] (data/site.json › place_nav) #}
-{% macro plural(pair, k) %}{{ pair[0] if k == 1 else pair[1]|replace('{n}', k|string) }}{% endmacro %}
-
-{# Menú «Tria on vols caminar»: província › comarca › poble o ciutat (tree = place_tree() de build.py).
+{# Menú «Tria on vols caminar», per nivells (tree = place_tree() de build.py; un nivell per columna de
+   site.json › place_nav: a la .cat, província › comarca › poble o ciutat; a la .org, amb la comunitat a dalt).
    Sense JavaScript es veuen totes les llistes. Amb JavaScript (site.js), al mòbil es va pas a pas
-   (amb el camí a dalt) i a l'ordinador es veuen les tres columnes. El cercador busca pobles i comarques. #}
+   (amb el camí a dalt) i a l'ordinador es veuen totes les columnes. El cercador busca pobles i comarques. #}
 {% macro place_nav(id, tree, root, L, course=False, cls='') -%}
 <div class="placenav{% if cls %} {{ cls }}{% endif %}" id="{{ id }}" data-placenav data-level="0" data-labels='{{ {"levels": L.levels, "root": L.root, "results": L.results}|tojson }}'>
   <div class="placenav__search">
@@ -70,37 +68,26 @@
       <nav class="placenav__crumbs" aria-label="{{ L.crumbs_label }}"><ol></ol></nav>
       <h3 class="placenav__title" tabindex="-1">{{ L.levels[0] }}</h3>
     </div>
-    <div class="placenav__cols">
-      <div class="placenav__col placenav__col--prov">
-        <h3 class="placenav__coltitle">{{ L.columns[0] }}</h3>
-        <ul class="placenav__list">
-          {%- for p in tree.provs %}
-          <li><button class="placenav__item" type="button" data-prov="{{ p.id }}" aria-expanded="false" aria-controls="{{ id }}-{{ p.id }}"><span class="placenav__txt"><span class="placenav__name">{{ p.name }}</span><span class="placenav__sub">{{ plural(L.coms, p.coms|length) }} · {{ plural(L.towns, p.n_towns) }}</span></span>{{ icon('caret', 'placenav__chev') }}</button></li>
-          {%- endfor %}
-        </ul>
-      </div>
-      <div class="placenav__col placenav__col--com">
-        <h3 class="placenav__coltitle">{{ L.columns[1] }}</h3>
-        <p class="placenav__hint" data-hint="prov">{{ L.hint_prov }}</p>
-        {%- for p in tree.provs %}
-        <ul class="placenav__list" id="{{ id }}-{{ p.id }}" data-prov="{{ p.id }}" data-name="{{ p.name }}">
-          {%- for c in p.coms %}
-          <li><button class="placenav__item" type="button" data-com="{{ p.id }}--{{ c.id }}" aria-expanded="false" aria-controls="{{ id }}-{{ p.id }}--{{ c.id }}"><span class="placenav__txt"><span class="placenav__name">{{ c.name }}</span><span class="placenav__sub">{{ plural(L.towns, c.towns|length) }} · {{ plural(L.routes, c.routes) }}</span></span>{{ icon('caret', 'placenav__chev') }}</button></li>
+    <div class="placenav__cols" style="--cols: {{ tree.depth }}">
+      {%- for d in range(tree.depth) %}
+      <div class="placenav__col{% if d == 0 %} is-active{% endif %}" data-depth="{{ d }}">
+        <h3 class="placenav__coltitle">{{ L.columns[d] }}</h3>
+        {%- if d %}
+        <p class="placenav__hint is-shown">{{ L.hints[d] }}</p>
+        {%- endif %}
+        {%- for lst in tree.lists if lst.level == d %}
+        <ul class="placenav__list{% if not d %} is-open{% endif %}" id="{{ id }}-{{ lst.id }}" data-list="{{ lst.id }}" data-depth="{{ d }}"{% if lst.name %} data-name="{{ lst.name }}"{% endif %}>
+          {%- for it in lst["items"] %}
+          {%- if it.href %}
+          <li><a class="placenav__item" href="{{ root }}{{ it.href }}" data-where="{{ it.where }}"><span class="placenav__txt"><span class="placenav__name">{{ it.name }}</span><span class="placenav__sub">{{ it.sub }}</span></span><span class="placenav__go">{{ L.go }}{{ icon('arrow') }}</span></a></li>
+          {%- else %}
+          <li><button class="placenav__item" type="button" data-open="{{ it.id }}" aria-expanded="false" aria-controls="{{ id }}-{{ it.id }}"><span class="placenav__txt"><span class="placenav__name">{{ it.name }}</span><span class="placenav__sub">{{ it.sub }}</span></span>{{ icon('caret', 'placenav__chev') }}</button></li>
+          {%- endif %}
           {%- endfor %}
         </ul>
         {%- endfor %}
       </div>
-      <div class="placenav__col placenav__col--town">
-        <h3 class="placenav__coltitle">{{ L.columns[2] }}</h3>
-        <p class="placenav__hint" data-hint="com">{{ L.hint_com }}</p>
-        {%- for p in tree.provs %}{% for c in p.coms %}
-        <ul class="placenav__list" id="{{ id }}-{{ p.id }}--{{ c.id }}" data-com="{{ p.id }}--{{ c.id }}" data-name="{{ c.name }}">
-          {%- for t in c.towns %}
-          <li><a class="placenav__item" href="{{ root }}{{ t.href }}" data-where="{{ c.name }} · {{ p.name }}"><span class="placenav__txt"><span class="placenav__name">{{ t.name }}</span><span class="placenav__sub">{{ plural(L.routes, t.routes) }}</span></span><span class="placenav__go">{{ L.go }}{{ icon('arrow') }}</span></a></li>
-          {%- endfor %}
-        </ul>
-        {%- endfor %}{% endfor %}
-      </div>
+      {%- endfor %}
     </div>
     <div class="placenav__results" hidden>
       <div class="placenav__reshead"><h3 class="placenav__restitle" aria-live="polite"></h3><button class="placenav__clear" type="button">{{ L["clear"] }}</button></div>

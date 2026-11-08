@@ -51,9 +51,8 @@
     });
   });
 
-  // Menú «Tria on vols caminar»: província › comarca › poble o ciutat.
-  // Al mòbil es va pas a pas, amb el camí a dalt; a l'ordinador es veuen les tres columnes alhora.
-  var narrow = window.matchMedia('(max-width: 759px)');
+  // Menú «Tria on vols caminar», per nivells (a la .cat, província › comarca › poble o ciutat).
+  // Al mòbil es va pas a pas, amb el camí a dalt; a l'ordinador es veuen totes les columnes alhora.
   function each(list, fn) { Array.prototype.forEach.call(list, fn); }
   function fold(s) {
     s = String(s || '');
@@ -70,21 +69,14 @@
     var resTitle = nav.querySelector('.placenav__restitle');
     var resList = nav.querySelector('.placenav__reslist');
     var none = nav.querySelector('.placenav__none');
-    var provBtns = nav.querySelectorAll('button[data-prov]');
-    var comBtns = nav.querySelectorAll('button[data-com]');
-    var comLists = nav.querySelectorAll('ul[data-prov]');
-    var townLists = nav.querySelectorAll('ul[data-com]');
-    var towns = nav.querySelectorAll('ul[data-com] a');
-    var state = { prov: '', com: '' };
+    var cols = nav.querySelectorAll('.placenav__col');
+    var lists = nav.querySelectorAll('ul[data-list]');
+    var btns = nav.querySelectorAll('button[data-open]');
+    var towns = nav.querySelectorAll('ul[data-list] a');
+    var path = [];  // les llistes obertes sota la primera, p. ex. ["barcelona", "barcelona--baix-llobregat"]
 
-    function mark(btns, attr, value) {
-      each(btns, function (b) {
-        var on = b.getAttribute(attr) === value;
-        b.classList.toggle('is-current', on);
-        b.setAttribute('aria-expanded', on ? 'true' : 'false');
-      });
-    }
-    function crumb(text, prov, com, here) {
+    function list(id) { return nav.querySelector('ul[data-list="' + id + '"]'); }
+    function crumb(text, upto, here) {
       var li = document.createElement('li');
       var el = document.createElement(here ? 'span' : 'button');
       el.textContent = text;
@@ -94,39 +86,53 @@
       } else {
         el.type = 'button';
         el.className = 'placenav__crumb';
-        el.addEventListener('click', function () { go(prov, com); });
+        el.addEventListener('click', function () { go(path.slice(0, upto)); });
       }
       li.appendChild(el);
       crumbs.appendChild(li);
     }
     function render() {
-      var level = !state.prov ? 0 : (!state.com ? 1 : 2);
+      var level = path.length;
       nav.setAttribute('data-level', level);
-      mark(provBtns, 'data-prov', state.prov);
-      mark(comBtns, 'data-com', state.com);
-      each(comLists, function (u) { u.classList.toggle('is-open', u.getAttribute('data-prov') === state.prov); });
-      each(townLists, function (u) { u.classList.toggle('is-open', u.getAttribute('data-com') === state.com); });
+      each(lists, function (u) {
+        var d = +u.getAttribute('data-depth');
+        u.classList.toggle('is-open', d === 0 || path[d - 1] === u.getAttribute('data-list'));
+      });
+      each(btns, function (b) {
+        var on = path.indexOf(b.getAttribute('data-open')) !== -1;
+        b.classList.toggle('is-current', on);
+        b.setAttribute('aria-expanded', on ? 'true' : 'false');
+      });
+      each(cols, function (c) {
+        var d = +c.getAttribute('data-depth');
+        c.classList.toggle('is-active', d === level);
+        var hint = c.querySelector('.placenav__hint');
+        if (hint) hint.classList.toggle('is-shown', d > level);
+      });
       title.textContent = L.levels[level];
       crumbs.textContent = '';
-      crumb(L.root, '', '', level === 0);
-      if (state.prov) crumb(nav.querySelector('ul[data-prov="' + state.prov + '"]').getAttribute('data-name'), state.prov, '', level === 1);
-      if (state.com) crumb(nav.querySelector('ul[data-com="' + state.com + '"]').getAttribute('data-name'), state.prov, state.com, true);
+      crumb(L.root, 0, level === 0);
+      path.forEach(function (id, k) { crumb(list(id).getAttribute('data-name'), k + 1, k === level - 1); });
     }
-    function go(prov, com) {
-      state.prov = prov; state.com = com;
+    function go(p) {
+      path = p;
       render();
-      // Al mòbil, la llista nova substitueix l'anterior: es torna a dalt del quadre i el focus va al títol del pas
-      if (narrow.matches) {
+      // Pas a pas, la llista nova substitueix l'anterior: es torna a dalt del quadre i el focus va al títol del pas
+      if (nav.classList.contains('is-steps')) {
         if (box.getBoundingClientRect().top < 0) box.scrollIntoView();
         try { title.focus({ preventScroll: true }); } catch (e) { title.focus(); }
       }
     }
-    each(provBtns, function (b) {
-      b.addEventListener('click', function () { go(b.getAttribute('data-prov'), ''); });
+    each(btns, function (b) {
+      b.addEventListener('click', function () {
+        var d = +b.closest('ul').getAttribute('data-depth');
+        go(path.slice(0, d).concat(b.getAttribute('data-open')));
+      });
     });
-    each(comBtns, function (b) {
-      b.addEventListener('click', function () { go(b.getAttribute('data-com').split('--')[0], b.getAttribute('data-com')); });
-    });
+    // Columnes si hi caben (uns 240 px cada una); si no, pas a pas
+    function fit() { nav.classList.toggle('is-steps', nav.clientWidth / cols.length < 240); }
+    fit();
+    window.addEventListener('resize', fit);
 
     // Cercador: pobles i ciutats pel nom o per la comarca i la província
     function search() {

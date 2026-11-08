@@ -253,10 +253,25 @@ def sort_key(name):
     return slugify(re.sub(r"^(El|La|Els|Les|L') ?", "", name))
 
 
+def place_path(name):
+    """On va un lloc al menú, de dalt a baix, sense el lloc: [província, comarca].
+    (A la .org: [comunitat, província, comarca].) Un nivell per columna de site.json › place_nav."""
+    com, prov = COMARQUES[slugify(name)]
+    return [prov, com]
+
+
+def plural(pair, n):
+    return pair[0] if n == 1 else pair[1].replace("{n}", str(n))
+
+
 def place_tree(course=None):
-    """Les ciutats i els pobles amb rutes, agrupats per província i comarca, amb l'adreça
-    (relativa a l'arrel) i el nombre de rutes de cada lloc. Amb un curs, només els llocs que
-    en tenen rutes, amb les rutes d'aquest curs, i l'adreça porta al bloc del curs."""
+    """Les ciutats i els pobles amb rutes, agrupats pels nivells de place_path() (a la .cat,
+    província i comarca), amb l'adreça (relativa a l'arrel) i el nombre de rutes de cada lloc.
+    Amb un curs, només els llocs que en tenen rutes, amb les rutes d'aquest curs, i l'adreça
+    porta al bloc del curs. Torna les llistes de cada nivell («lists»: id, nivell, nom i
+    elements) i el nombre de llocs («n»)."""
+    L = site["place_nav"]
+    depth = len(L["columns"])
     places = {}
 
     def add(name, href, n):
@@ -280,18 +295,46 @@ def place_tree(course=None):
     missing = sorted(p for p in places if slugify(p) not in COMARQUES)
     if missing:
         sys.exit("Falten la comarca i la província d'aquests llocs a data/comarques.json: " + ", ".join(missing))
-    tree = {}
+    root = {"name": None, "kids": {}, "towns": []}
     for p in places.values():
-        com, prov = COMARQUES[slugify(p["name"])]
-        tree.setdefault(prov, {}).setdefault(com, []).append(p)
-    provs = []
-    for prov in sorted(tree, key=sort_key):
-        coms = []
-        for com in sorted(tree[prov], key=sort_key):
-            towns = sorted(tree[prov][com], key=lambda p: sort_key(p["name"]))
-            coms.append({"name": com, "id": slugify(com), "towns": towns, "routes": sum(p["routes"] for p in towns)})
-        provs.append({"name": prov, "id": slugify(prov), "coms": coms, "n_towns": sum(len(c["towns"]) for c in coms)})
-    return {"provs": provs, "n": len(places)}
+        path = place_path(p["name"])
+        assert len(path) == depth - 1, f"{p['name']}: place_path() ha de tornar {depth - 1} noms"
+        node = root
+        for name in path:
+            node = node["kids"].setdefault(name, {"name": name, "kids": {}, "towns": []})
+        node["towns"].append(p)
+
+    def totals(node):
+        n, r = len(node["towns"]), sum(t["routes"] for t in node["towns"])
+        for k in node["kids"].values():
+            kn, kr = totals(k)
+            n, r = n + kn, r + kr
+        return n, r
+
+    # A les fitxes de la cerca, «comarca · província»; el primer nivell només si n'hi ha més d'un
+    skip_top = len(root["kids"]) == 1
+    lists = []
+
+    def walk(node, lid, level, names):
+        items = []
+        if level == depth - 1:
+            where = " · ".join(reversed(names[1:] if skip_top else names))
+            for t in sorted(node["towns"], key=lambda t: sort_key(t["name"])):
+                items.append({"name": t["name"], "href": t["href"], "sub": plural(L["routes"], t["routes"]), "where": where})
+        else:
+            for name in sorted(node["kids"], key=sort_key):
+                k = node["kids"][name]
+                n, r = totals(k)
+                sub = (plural(L["towns"], n) + " · " + plural(L["routes"], r)) if level + 1 == depth - 1 \
+                    else (plural(L["units"][level + 1], len(k["kids"])) + " · " + plural(L["towns"], n))
+                items.append({"name": name, "id": (f"{lid}--" if level else "") + slugify(name), "sub": sub})
+        lists.append({"id": lid, "level": level, "name": node["name"], "items": items})
+        for it in items:
+            if "id" in it:
+                walk(node["kids"][it["name"]], it["id"], level + 1, names + [it["name"]])
+
+    walk(root, "tots", 0, [])
+    return {"lists": lists, "depth": depth, "n": len(places), "skip_top": skip_top}
 
 
 # Sanity checks

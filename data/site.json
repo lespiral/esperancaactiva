@@ -293,8 +293,7 @@
     "crumbs_label": "On ets",
     "levels": ["Tria la província", "Tria la comarca", "Tria el poble o la ciutat"],
     "columns": ["1. Província", "2. Comarca", "3. Poble o ciutat"],
-    "hint_prov": "Tria primer una província.",
-    "hint_com": "Tria una comarca.",
+    "hints": ["", "Tria primer una província.", "Tria una comarca."],
     "go": "Rutes",
     "results": "Resultats per a «{q}»",
     "clear": "Esborra",
@@ -303,7 +302,7 @@
     "foot_course": "Ara hi ha rutes d'aquest curs a {n} pobles i ciutats.",
     "routes": ["1 ruta", "{n} rutes"],
     "towns": ["1 poble o ciutat", "{n} pobles i ciutats"],
-    "coms": ["1 comarca", "{n} comarques"]
+    "units": [["1 província", "{n} províncies"], ["1 comarca", "{n} comarques"]]
   },
 
   "faq_page": {
