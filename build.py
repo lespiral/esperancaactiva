@@ -245,6 +245,55 @@ def places_for(course=None):
     return res
 
 
+# Menú «Tria on vols caminar»: província › comarca › poble o ciutat (data/comarques.json)
+COMARQUES = {slugify(k): v for k, v in json.loads((DATA / "comarques.json").read_text(encoding="utf-8")).items() if not k.startswith("_")}
+
+
+def sort_key(name):
+    return slugify(re.sub(r"^(El|La|Els|Les|L') ?", "", name))
+
+
+def place_tree(course=None):
+    """Les ciutats i els pobles amb rutes, agrupats per província i comarca, amb l'adreça
+    (relativa a l'arrel) i el nombre de rutes de cada lloc. Amb un curs, només els llocs que
+    en tenen rutes, amb les rutes d'aquest curs, i l'adreça porta al bloc del curs."""
+    places = {}
+
+    def add(name, href, n):
+        p = places.setdefault(name, {"name": name, "href": href, "routes": 0})
+        p["routes"] += n
+
+    for city in cities:
+        if course:
+            b = next((b for b in city["blocks"] if b["course"]["key"] == course and b["total"]), None)
+            if b:
+                add(city["name"], f"{city['slug']}/#{b['course']['anchor']}", b["total"])
+        else:
+            add(city["name"], f"{city['slug']}/", sum(b["total"] for b in city["blocks"]))
+    for t in territories:
+        for b in t["blocks"]:
+            if course and b["course"]["key"] != course:
+                continue
+            for g in b["groups"]:
+                for s in g.get("sections") or []:
+                    add(s["title"], f"{t['slug']}/#{s['id']}", len(s["routes"]))
+    missing = sorted(p for p in places if slugify(p) not in COMARQUES)
+    if missing:
+        sys.exit("Falten la comarca i la província d'aquests llocs a data/comarques.json: " + ", ".join(missing))
+    tree = {}
+    for p in places.values():
+        com, prov = COMARQUES[slugify(p["name"])]
+        tree.setdefault(prov, {}).setdefault(com, []).append(p)
+    provs = []
+    for prov in sorted(tree, key=sort_key):
+        coms = []
+        for com in sorted(tree[prov], key=sort_key):
+            towns = sorted(tree[prov][com], key=lambda p: sort_key(p["name"]))
+            coms.append({"name": com, "id": slugify(com), "towns": towns, "routes": sum(p["routes"] for p in towns)})
+        provs.append({"name": prov, "id": slugify(prov), "coms": coms, "n_towns": sum(len(c["towns"]) for c in coms)})
+    return {"provs": provs, "n": len(places)}
+
+
 # Sanity checks
 all_ids = []
 n_routes = 0
@@ -281,7 +330,7 @@ env.globals.update(icon=icon, site=site, noindex=NOINDEX, version=str(int(time.t
                    logo=(SRC / "img" / "logo.png").exists(),
                    partners_logo=(SRC / "img" / "lespiral-elara.png").exists(),
                    summaries=summaries, course_summaries=course_summaries,
-                   territory_summaries=territory_summaries, places_for=places_for,
+                   territory_summaries=territory_summaries, places_for=places_for, place_tree=place_tree,
                    territories=[t for t in site.get("territories", []) if t.get("slug")],
                    cities_with_a=cities_with_a([c["name"] for c in site["cities"] if c.get("slug")]),
                    h=site["home"], cc=site["course_common"])

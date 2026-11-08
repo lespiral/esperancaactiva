@@ -285,6 +285,27 @@
     "kicker": "Pobles i comarques"
   },
 
+  "place_nav": {
+    "box_label": "Tria on vols caminar",
+    "search_label": "Busca el teu poble o ciutat",
+    "search_placeholder": "Escriu el nom, p. ex. Olesa",
+    "root": "Catalunya",
+    "crumbs_label": "On ets",
+    "levels": ["Tria la província", "Tria la comarca", "Tria el poble o la ciutat"],
+    "columns": ["1. Província", "2. Comarca", "3. Poble o ciutat"],
+    "hint_prov": "Tria primer una província.",
+    "hint_com": "Tria una comarca.",
+    "go": "Rutes",
+    "results": "Resultats per a «{q}»",
+    "clear": "Esborra",
+    "none": "Encara no hi ha rutes en aquest poble. Pots fer el curs igualment i caminar a prop de casa.",
+    "foot": "Ara hi ha rutes a {n} pobles i ciutats.",
+    "foot_course": "Ara hi ha rutes d'aquest curs a {n} pobles i ciutats.",
+    "routes": ["1 ruta", "{n} rutes"],
+    "towns": ["1 poble o ciutat", "{n} pobles i ciutats"],
+    "coms": ["1 comarca", "{n} comarques"]
+  },
+
   "faq_page": {
     "title": "Preguntes freqüents",
     "sections": [

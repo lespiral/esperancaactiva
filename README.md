@@ -38,8 +38,9 @@ Són a `src/templates/infografies/` (una per fitxer, copiada del bloc INICI–FI
 ## Afegir una ciutat
 
 1. Copia un fitxer de `data/` (per exemple `olot.json`) amb el nom de la ciutat nova (`girona.json`) i omple-hi les rutes i els mapes.
-2. A `data/site.json`, a `cities`, afegeix-hi la ciutat (`slug`, `name`, `region`, `icon`), en ordre alfabètic. Sortirà sola als desplegables i a les targetes.
-3. Genera la web.
+2. A `data/site.json`, a `cities`, afegeix-hi la ciutat (`slug`, `name`, `region`, `icon`), en ordre alfabètic. Sortirà sola al menú «Tria on vols caminar», als desplegables i a les targetes.
+3. Si la ciutat no és a `data/comarques.json`, afegeix-hi la comarca i la província (vegeu més avall). Si no hi és, `build.py` s'atura i diu quina falta.
+4. Genera la web.
 
 ## Pobles i comarques (territoris)
 
@@ -49,12 +50,22 @@ Per al curs «Quan sostenir la vida es fa difícil», les rutes surten d'entitat
 - La resta va a una pàgina de territori: `data/<territori>.json` (p. ex. `baix-llobregat.json`) i, a `data/site.json`, la llista `territories` (`slug`, `name`, `region`, `icon`). Té la mateixa forma que una ciutat, però amb `"kind": "territory"`, i només surten els cursos que hi tenen rutes.
 - Dins el bloc, un grup per mapa (màxim 10 rutes) i una secció per municipi. Amb `"zones": {"by": "section", ...}` surt el desplegable «Vés directament al teu poble». Les rutes es numeren per municipi: `/baix-llobregat/#olesa-de-montserrat-ruta-1`; el municipi, `/baix-llobregat/#olesa-de-montserrat`.
 - `see_also`: enllaços a una altra pàgina, amb la ciutat i el curs (`{"text": ..., "city": "el-prat", "course": "dia"}`).
-- «Les ciutats» i la pàgina del curs tenen la secció «Pobles i comarques» (`territories_page` a `data/site.json`), amb les targetes dels territoris i el desplegable de tots els pobles.
+- «Les ciutats» i la pàgina del curs tenen la secció «Pobles i comarques» (`territories_page` a `data/site.json`), amb les targetes dels territoris.
 - Un grup que encara no té mapa porta `"maps": []` i `"map_pending": "<text>"`: surt un quadre amb el text i les rutes no tenen el botó «Obre el mapa».
 
 **Com es van posar les rutes de l'economia social (7 de novembre de 2026).** Les fitxes (KML d'una capa per ruta), el pla i els mids els fa ChatGPT (al Drive: «Checkpoint_MyMaps_…zip» i «Registre_My_Maps_Esperanca_Activa.xlsx»). `tools/ess_extract.py` en treu les rutes (entitats, «Sobre l'entitat», adreça, km, temps, requadre de cada mapa) i `tools/ess_site_data.py` escriu `data/<territori>.json`, `data/l-hospitalet.json`, el bloc `dia` de Barcelona, el Prat, Olot i Vic, i la llista de territoris de `data/site.json`. Si canvien els mapes: actualitzar els mids a `ess_extract.py`, tornar a executar tots dos scripts i `build.py`.
 
 **Enllaç «Obre-la a Wikiloc» (7 de novembre de 2026).** Les rutes de l'economia social també són a Wikiloc (usuari lespiral.elarasocial), una per entitat; ho va fer ChatGPT («Registre_publicacio_Wikiloc.csv» al Drive). `tools/ess_wikiloc.csv` en té l'id, el nom i l'adreça de Wikiloc, i `tools/ess_wikiloc.py` posa el camp `wikiloc` a cada ruta del bloc `dia`: la ruta de l'entitat principal de la seu (el primer nom de la ruta). Cal tornar-lo a executar després de `ess_site_data.py`. A la plantilla, l'enllaç surt al costat d'«Obre el mapa» només si la ruta té `wikiloc`.
+
+## Menú «Tria on vols caminar» (província › comarca › poble)
+
+A Inici («2. On vols caminar?»), a dalt de «Ciutats, pobles i comarques» i a la pàgina del curs «Quan sostenir la vida es fa difícil» (8 de novembre de 2026, en lloc del desplegable llarg de tots els pobles):
+
+- Es tria la província, després la comarca i després el poble o la ciutat, que porta on hi ha les seves rutes (la pàgina de la ciutat o el municipi dins la pàgina del territori). Al mòbil es va pas a pas, amb el camí a dalt («Catalunya › Barcelona › Baix Llobregat»); a l'ordinador (760 px o més) es veuen les tres columnes alhora. A dalt hi ha un cercador de pobles i comarques; amb Retorn, va al primer resultat.
+- A la pàgina del curs només hi surten els llocs que tenen rutes d'aquest curs, amb aquestes rutes, i l'enllaç porta al bloc del curs.
+- `data/comarques.json`: la comarca i la província de cada ciutat i de cada poble amb rutes (`"Olesa de Montserrat": ["Baix Llobregat", "Barcelona"]`). Quan surti un poble nou, cal afegir-l'hi; si no, `build.py` s'atura i diu quins falten.
+- Codi: `place_tree()` a `build.py` (fa l'arbre i compta les rutes), la macro `place_nav` a `parts.html`, els estils `.placenav` a `site.css` i el codi a `site.js`. Els textos són a `data/site.json` › `place_nav`.
+- Sense JavaScript es veuen totes les llistes, amb el nom de la província i de la comarca a sobre.
 
 ## Desplegables «Vés directament a…»
 

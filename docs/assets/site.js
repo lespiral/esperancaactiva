@@ -50,4 +50,130 @@
       if (sel.value) location.href = sel.value;
     });
   });
+
+  // Menú «Tria on vols caminar»: província › comarca › poble o ciutat.
+  // Al mòbil es va pas a pas, amb el camí a dalt; a l'ordinador es veuen les tres columnes alhora.
+  var narrow = window.matchMedia('(max-width: 759px)');
+  function each(list, fn) { Array.prototype.forEach.call(list, fn); }
+  function fold(s) {
+    s = String(s || '');
+    if (s.normalize) s = s.normalize('NFD').replace(/[̀-ͯ]/g, '');
+    return s.replace(/[’`´]/g, "'").replace(/·/g, '').toLowerCase().trim();
+  }
+  each(document.querySelectorAll('[data-placenav]'), function (nav) {
+    var L = JSON.parse(nav.getAttribute('data-labels'));
+    var box = nav.querySelector('.placenav__box');
+    var title = nav.querySelector('.placenav__title');
+    var crumbs = nav.querySelector('.placenav__crumbs ol');
+    var input = nav.querySelector('.placenav__input');
+    var results = nav.querySelector('.placenav__results');
+    var resTitle = nav.querySelector('.placenav__restitle');
+    var resList = nav.querySelector('.placenav__reslist');
+    var none = nav.querySelector('.placenav__none');
+    var provBtns = nav.querySelectorAll('button[data-prov]');
+    var comBtns = nav.querySelectorAll('button[data-com]');
+    var comLists = nav.querySelectorAll('ul[data-prov]');
+    var townLists = nav.querySelectorAll('ul[data-com]');
+    var towns = nav.querySelectorAll('ul[data-com] a');
+    var state = { prov: '', com: '' };
+
+    function mark(btns, attr, value) {
+      each(btns, function (b) {
+        var on = b.getAttribute(attr) === value;
+        b.classList.toggle('is-current', on);
+        b.setAttribute('aria-expanded', on ? 'true' : 'false');
+      });
+    }
+    function crumb(text, prov, com, here) {
+      var li = document.createElement('li');
+      var el = document.createElement(here ? 'span' : 'button');
+      el.textContent = text;
+      if (here) {
+        el.className = 'placenav__here';
+        el.setAttribute('aria-current', 'location');
+      } else {
+        el.type = 'button';
+        el.className = 'placenav__crumb';
+        el.addEventListener('click', function () { go(prov, com); });
+      }
+      li.appendChild(el);
+      crumbs.appendChild(li);
+    }
+    function render() {
+      var level = !state.prov ? 0 : (!state.com ? 1 : 2);
+      nav.setAttribute('data-level', level);
+      mark(provBtns, 'data-prov', state.prov);
+      mark(comBtns, 'data-com', state.com);
+      each(comLists, function (u) { u.classList.toggle('is-open', u.getAttribute('data-prov') === state.prov); });
+      each(townLists, function (u) { u.classList.toggle('is-open', u.getAttribute('data-com') === state.com); });
+      title.textContent = L.levels[level];
+      crumbs.textContent = '';
+      crumb(L.root, '', '', level === 0);
+      if (state.prov) crumb(nav.querySelector('ul[data-prov="' + state.prov + '"]').getAttribute('data-name'), state.prov, '', level === 1);
+      if (state.com) crumb(nav.querySelector('ul[data-com="' + state.com + '"]').getAttribute('data-name'), state.prov, state.com, true);
+    }
+    function go(prov, com) {
+      state.prov = prov; state.com = com;
+      render();
+      // Al mòbil, la llista nova substitueix l'anterior: es torna a dalt del quadre i el focus va al títol del pas
+      if (narrow.matches) {
+        if (box.getBoundingClientRect().top < 0) box.scrollIntoView();
+        try { title.focus({ preventScroll: true }); } catch (e) { title.focus(); }
+      }
+    }
+    each(provBtns, function (b) {
+      b.addEventListener('click', function () { go(b.getAttribute('data-prov'), ''); });
+    });
+    each(comBtns, function (b) {
+      b.addEventListener('click', function () { go(b.getAttribute('data-com').split('--')[0], b.getAttribute('data-com')); });
+    });
+
+    // Cercador: pobles i ciutats pel nom o per la comarca i la província
+    function search() {
+      var raw = input.value.trim();
+      var q = fold(raw);
+      nav.classList.toggle('is-searching', !!q);
+      results.hidden = !q;
+      if (!q) return;
+      resTitle.textContent = L.results.replace('{q}', raw);
+      resList.textContent = '';
+      var found = [];
+      each(towns, function (a) {
+        var name = fold(a.querySelector('.placenav__name').textContent);
+        var where = a.getAttribute('data-where');
+        if (name.indexOf(q) === -1 && fold(where).indexOf(q) === -1) return;
+        var key = name.replace(/^(el|la|els|les|los|las|l') ?/, '');
+        var rank = key.indexOf(q) === 0 || name.indexOf(q) === 0 ? 0 : (name.indexOf(q) !== -1 ? 1 : 2);
+        found.push({ a: a, where: where, key: key, rank: rank });
+      });
+      // Primer els que es diuen així (Tarragona) i després els de la comarca o la província; en ordre alfabètic, sense l'article
+      found.sort(function (x, y) { return x.rank - y.rank || (x.key < y.key ? -1 : (x.key > y.key ? 1 : 0)); });
+      found.forEach(function (f) {
+        var c = f.a.cloneNode(true);
+        var sub = c.querySelector('.placenav__sub');
+        sub.textContent = f.where + ' · ' + sub.textContent;
+        var li = document.createElement('li');
+        li.appendChild(c);
+        resList.appendChild(li);
+      });
+      none.hidden = resList.children.length > 0;
+    }
+    input.addEventListener('input', search);
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') {
+        var first = resList.querySelector('a');
+        if (first) { e.preventDefault(); location.href = first.href; }
+      } else if (e.key === 'Escape' && input.value) {
+        input.value = '';
+        search();
+      }
+    });
+    nav.querySelector('.placenav__clear').addEventListener('click', function () {
+      input.value = '';
+      search();
+      input.focus();
+    });
+    render();
+    search();
+  });
 })();

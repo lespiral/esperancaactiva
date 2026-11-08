@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "parts.html" import page_head, city_cards, territory_cards, go_picker, safety %}
+{% from "parts.html" import page_head, city_cards, territory_cards, place_nav, safety %}
 
 {# Botó d'inscripció (porta directament al formulari de Thinkific) o «Properament», si el curs encara no està obert #}
 {% macro cta(course, note=True) -%}
@@ -82,7 +82,7 @@
     <h2 id="h-walk">{{ cc.walk_title }}</h2>
     <p>{{ cc.walk_intro }}</p>
     {% set tp = site.territories_page %}
-    {% if territory_summaries[course.key] %}{{ go_picker('tria-lloc', site.cities_page.places_label, tp.places_placeholder, places_for(course.key), root) }}{% endif %}
+    {% if territory_summaries[course.key] %}{{ place_nav('tria-lloc', place_tree(course.key), root, site.place_nav, course=True) }}{% endif %}
     {{ city_cards(site.cities, root, course_summaries[course.key], course.anchor, pick=not territory_summaries[course.key]) }}
     {% if territory_summaries[course.key] %}
     <h3 class="walk__sub" id="pobles-i-comarques">{{ tp.title }}</h3>
