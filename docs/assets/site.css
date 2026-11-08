@@ -407,7 +407,7 @@ details[open] > summary .faq__caret { transform: rotate(180deg); }
 .placenav__head { display: none; padding: 4px 8px 10px; }
 .placenav__crumbs ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; min-height: 44px; }
 .placenav__crumbs li { display: flex; align-items: center; }
-.placenav__crumbs li + li::before { content: "›"; color: var(--muted); padding: 0 1px; }
+.placenav__crumbs li:not(:last-child)::after { content: "›"; color: var(--muted); padding: 0 1px; }
 .placenav__crumb, .placenav__clear { min-height: 44px; padding: 0 7px; border: 0; background: none; font: 700 .95rem/1.2 var(--font-body); color: var(--green-700); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
 .placenav__crumb:hover, .placenav__clear:hover { color: var(--green-900); }
 .placenav__crumb:focus-visible, .placenav__clear:focus-visible { outline: 3px solid var(--sun); outline-offset: -3px; border-radius: 6px; }
