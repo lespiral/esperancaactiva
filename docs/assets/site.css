@@ -238,11 +238,7 @@ details[open] > summary .faq__caret { transform: rotate(180deg); }
 .pills--jump .pill { background: #fff; }
 .pill .pill__down { width: 1em; height: 1em; transform: rotate(90deg); opacity: .7; }
 @media (max-width: 560px) { .pills--jump { gap: 6px; } .pills--jump .pill { padding: 8px 12px; gap: 6px; font-size: .9rem; } }
-.pills--cities { margin: 20px 0 0; align-items: center; }
-.pills--cities .pills__label { flex-basis: 100%; text-align: center; font: 600 .85rem/1.2 var(--font-head); color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
-.pills--cities .pill { background: #fff; }
-@media (max-width: 560px) { .pills--cities { gap: 6px; } .pills--cities .pill { padding: 8px 12px; gap: 6px; font-size: .9rem; } }
-.band--cities .band__title { margin-bottom: 24px; }
+@media (max-width: 560px) { .band--cities .band__title { margin-bottom: 24px; }
 .band__more { margin: 4px 0 20px; }
 
 /* ---------- Plafons (pàgines de curs i ciutat) ---------- */

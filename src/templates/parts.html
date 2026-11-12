@@ -143,14 +143,6 @@
 </ul>
 {%- endmacro %}
 
-{% macro city_pills(cities, root, label) -%}
-{# Fila compacta de ciutats (sense targetes): drecera sota el selector de lloc #}
-<nav class="pills pills--cities" aria-label="{{ label }}">
-  <span class="pills__label">{{ label }}</span>
-  {% for c in cities %}{% if c.slug %}<a class="pill" href="{{ root }}{{ c.slug }}/">{{ icon('pin') }}{{ c.name }}</a>{% else %}<span class="pill pill--soon">{{ c.name }}</span>{% endif %}{% endfor %}
-</nav>
-{%- endmacro %}
-
 {% macro faq_item(q, a_html, id=None) -%}
 <details class="faq"{% if id %} id="{{ id }}"{% endif %}>
   <summary><span>{{ q }}</span>{{ icon('caret', 'faq__caret') }}</summary>

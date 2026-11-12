@@ -14,7 +14,7 @@
 <link rel="icon" type="image/png" sizes="48x48" href="../assets/img/favicon-48.png"><link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@600;700&display=swap">
-  <link rel="stylesheet" href="../assets/site.css?v=1794480200">
+  <link rel="stylesheet" href="../assets/site.css?v=1794489091">
 </head>
 <body>
   <a class="skip" href="#contingut">Salta al contingut</a>
@@ -802,62 +802,31 @@
   <section class="panel panel--plain" id="on-vols-caminar" aria-labelledby="h-walk">
     <h2 id="h-walk">Ara, on vols caminar?</h2>
     <p>Tria la teva ciutat o el teu poble i fes el temps de reflexió de cada passa en una de les rutes. Si encara no hi ha rutes a prop teu, pots caminar pels voltants de casa o per un lloc tranquil.</p>
-    <div class="picker">
-  <label class="picker__label" for="tria-ciutat"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></svg><span>Vés directament a la teva ciutat</span></label>
-  <div class="picker__box">
-    <select id="tria-ciutat" class="picker__select" data-jump>
-      <option value="">Tria una ciutat</option>
-<option value="ciutat-barcelona">Barcelona</option><option value="ciutat-el-prat">El Prat de Llobregat</option><option value="ciutat-l-hospitalet">L&#39;Hospitalet de Llobregat</option><option value="ciutat-olot">Olot</option><option value="ciutat-vic">Vic</option>    </select>
-    <svg class="i picker__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg>
+<div class="placenav" id="tria-lloc" data-placenav data-level="0" data-labels='{"levels": ["Tria la prov\u00edncia", "Tria la comarca", "Tria el poble o la ciutat"], "results": "Resultats per a \u00ab{q}\u00bb", "root": "Catalunya"}'>
+  <div class="placenav__search">
+    <label class="placenav__label" for="tria-lloc-q">Busca el teu poble o ciutat</label>
+    <div class="placenav__field">
+      <svg class="i placenav__glass" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"/></svg>
+      <input class="placenav__input" id="tria-lloc-q" type="search" placeholder="Escriu el nom, p. ex. Olesa" autocomplete="off" spellcheck="false" enterkeyhint="go">
+    </div>
   </div>
-</div><ul class="cards cards--cities">
-  <li class="card card--city" id="ciutat-barcelona">
-    <a class="card__link" href="../barcelona/#quan-la-vida">
-      <span class="card__icon" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M240,208H224V96a16,16,0,0,0-16-16H144V32a16,16,0,0,0-24.88-13.32L39.12,72A16,16,0,0,0,32,85.34V208H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM208,96V208H144V96ZM48,85.34,128,32V208H48ZM112,112v16a8,8,0,0,1-16,0V112a8,8,0,1,1,16,0Zm-32,0v16a8,8,0,0,1-16,0V112a8,8,0,1,1,16,0Zm0,56v16a8,8,0,0,1-16,0V168a8,8,0,0,1,16,0Zm32,0v16a8,8,0,0,1-16,0V168a8,8,0,0,1,16,0Z"/></svg></span>
-      <span class="card__title">Barcelona</span>
-      <span class="card__region">Barcelonès</span>
-      <span class="card__text">96 rutes: 54 des dels CAP i 42 més</span>
-      <span class="card__more">Veure les rutes <svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span>
-    </a>
-  </li>
-  <li class="card card--city" id="ciutat-el-prat">
-    <a class="card__link" href="../el-prat/#quan-la-vida">
-      <span class="card__icon" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M232,224H208V32h8a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16h8V224H24a8,8,0,0,0,0,16H232a8,8,0,0,0,0-16ZM64,32H192V224H160V184a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v40H64Zm80,192H112V192h32ZM88,64a8,8,0,0,1,8-8h16a8,8,0,0,1,0,16H96A8,8,0,0,1,88,64Zm48,0a8,8,0,0,1,8-8h16a8,8,0,0,1,0,16H144A8,8,0,0,1,136,64ZM88,104a8,8,0,0,1,8-8h16a8,8,0,0,1,0,16H96A8,8,0,0,1,88,104Zm48,0a8,8,0,0,1,8-8h16a8,8,0,0,1,0,16H144A8,8,0,0,1,136,104ZM88,144a8,8,0,0,1,8-8h16a8,8,0,0,1,0,16H96A8,8,0,0,1,88,144Zm48,0a8,8,0,0,1,8-8h16a8,8,0,0,1,0,16H144A8,8,0,0,1,136,144Z"/></svg></span>
-      <span class="card__title">El Prat de Llobregat</span>
-      <span class="card__region">Baix Llobregat</span>
-      <span class="card__text">17 circuits urbans curts</span>
-      <span class="card__more">Veure les rutes <svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span>
-    </a>
-  </li>
-  <li class="card card--city" id="ciutat-l-hospitalet">
-    <a class="card__link" href="../l-hospitalet/#quan-la-vida">
-      <span class="card__icon" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"/></svg></span>
-      <span class="card__title">L&#39;Hospitalet de Llobregat</span>
-      <span class="card__region">Barcelonès</span>
-      <span class="card__text">Encara no hi ha rutes d&#39;aquest curs. Pots caminar a prop de casa.</span>
-      <span class="card__more">Veure la ciutat <svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span>
-    </a>
-  </li>
-  <li class="card card--city" id="ciutat-olot">
-    <a class="card__link" href="../olot/#quan-la-vida">
-      <span class="card__icon" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M198.1,62.59a76,76,0,0,0-140.2,0A71.71,71.71,0,0,0,16,127.8C15.9,166,48,199,86.14,200A72.09,72.09,0,0,0,120,192.47V232a8,8,0,0,0,16,0V192.47A72.17,72.17,0,0,0,168,200l1.82,0C208,199,240.11,166,240,127.8A71.71,71.71,0,0,0,198.1,62.59ZM169.45,184a56.08,56.08,0,0,1-33.45-10v-41l43.58-21.78a8,8,0,1,0-7.16-14.32L136,115.06V88a8,8,0,0,0-16,0v51.06L83.58,120.84a8,8,0,1,0-7.16,14.32L120,156.94v17a56,56,0,0,1-33.45,10C56.9,183.23,31.92,157.52,32,127.84A55.77,55.77,0,0,1,67.11,76a8,8,0,0,0,4.53-4.67,60,60,0,0,1,112.72,0A8,8,0,0,0,188.89,76,55.79,55.79,0,0,1,224,127.84C224.08,157.52,199.1,183.23,169.45,184Z"/></svg></span>
-      <span class="card__title">Olot</span>
-      <span class="card__region">Garrotxa</span>
-      <span class="card__text">13 rutes des dels CAP, l&#39;hospital, places i parcs</span>
-      <span class="card__more">Veure les rutes <svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span>
-    </a>
-  </li>
-  <li class="card card--city" id="ciutat-vic">
-    <a class="card__link" href="../vic/#quan-la-vida">
-      <span class="card__icon" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M24,104H48v64H32a8,8,0,0,0,0,16H224a8,8,0,0,0,0-16H208V104h24a8,8,0,0,0,4.19-14.81l-104-64a8,8,0,0,0-8.38,0l-104,64A8,8,0,0,0,24,104Zm40,0H96v64H64Zm80,0v64H112V104Zm48,64H160V104h32ZM128,41.39,203.74,88H52.26ZM248,208a8,8,0,0,1-8,8H16a8,8,0,0,1,0-16H240A8,8,0,0,1,248,208Z"/></svg></span>
-      <span class="card__title">Vic</span>
-      <span class="card__region">Osona</span>
-      <span class="card__text">5 rutes des dels CAP i hospitals</span>
-      <span class="card__more">Veure les rutes <svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span>
-    </a>
-  </li>
-</ul>
+  <section class="placenav__box" aria-label="Tria on vols caminar">
+    <div class="placenav__head">
+      <nav class="placenav__crumbs" aria-label="On ets"><ol></ol></nav>
+      <h3 class="placenav__title" tabindex="-1">Tria la província</h3>
+    </div>
+    <div class="placenav__cols" style="--cols: 3">      <div class="placenav__col is-active" data-depth="0">
+        <h3 class="placenav__coltitle">1. Província</h3>        <ul class="placenav__list is-open" id="tria-lloc-tots" data-list="tots" data-depth="0">          <li><button class="placenav__item" type="button" data-open="barcelona" aria-expanded="false" aria-controls="tria-lloc-barcelona"><span class="placenav__txt"><span class="placenav__name">Barcelona</span><span class="placenav__sub">3 comarques · 3 pobles i ciutats</span></span><svg class="i placenav__chev" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></button></li>          <li><button class="placenav__item" type="button" data-open="girona" aria-expanded="false" aria-controls="tria-lloc-girona"><span class="placenav__txt"><span class="placenav__name">Girona</span><span class="placenav__sub">1 comarca · 1 poble o ciutat</span></span><svg class="i placenav__chev" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></button></li>        </ul>      </div>      <div class="placenav__col" data-depth="1">
+        <h3 class="placenav__coltitle">2. Comarca</h3>        <p class="placenav__hint is-shown">Tria primer una província.</p>        <ul class="placenav__list" id="tria-lloc-barcelona" data-list="barcelona" data-depth="1" data-name="Barcelona">          <li><button class="placenav__item" type="button" data-open="barcelona--baix-llobregat" aria-expanded="false" aria-controls="tria-lloc-barcelona--baix-llobregat"><span class="placenav__txt"><span class="placenav__name">Baix Llobregat</span><span class="placenav__sub">1 poble o ciutat · 17 rutes</span></span><svg class="i placenav__chev" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></button></li>          <li><button class="placenav__item" type="button" data-open="barcelona--barcelones" aria-expanded="false" aria-controls="tria-lloc-barcelona--barcelones"><span class="placenav__txt"><span class="placenav__name">Barcelonès</span><span class="placenav__sub">1 poble o ciutat · 96 rutes</span></span><svg class="i placenav__chev" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></button></li>          <li><button class="placenav__item" type="button" data-open="barcelona--osona" aria-expanded="false" aria-controls="tria-lloc-barcelona--osona"><span class="placenav__txt"><span class="placenav__name">Osona</span><span class="placenav__sub">1 poble o ciutat · 5 rutes</span></span><svg class="i placenav__chev" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></button></li>        </ul>        <ul class="placenav__list" id="tria-lloc-girona" data-list="girona" data-depth="1" data-name="Girona">          <li><button class="placenav__item" type="button" data-open="girona--garrotxa" aria-expanded="false" aria-controls="tria-lloc-girona--garrotxa"><span class="placenav__txt"><span class="placenav__name">Garrotxa</span><span class="placenav__sub">1 poble o ciutat · 13 rutes</span></span><svg class="i placenav__chev" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></button></li>        </ul>      </div>      <div class="placenav__col" data-depth="2">
+        <h3 class="placenav__coltitle">3. Poble o ciutat</h3>        <p class="placenav__hint is-shown">Tria una comarca.</p>        <ul class="placenav__list" id="tria-lloc-barcelona--baix-llobregat" data-list="barcelona--baix-llobregat" data-depth="2" data-name="Baix Llobregat">          <li><a class="placenav__item" href="../el-prat/#quan-la-vida" data-where="Baix Llobregat · Barcelona"><span class="placenav__txt"><span class="placenav__name">El Prat de Llobregat</span><span class="placenav__sub">17 rutes</span></span><span class="placenav__go">Rutes<svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span></a></li>        </ul>        <ul class="placenav__list" id="tria-lloc-barcelona--barcelones" data-list="barcelona--barcelones" data-depth="2" data-name="Barcelonès">          <li><a class="placenav__item" href="../barcelona/#quan-la-vida" data-where="Barcelonès · Barcelona"><span class="placenav__txt"><span class="placenav__name">Barcelona</span><span class="placenav__sub">96 rutes</span></span><span class="placenav__go">Rutes<svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span></a></li>        </ul>        <ul class="placenav__list" id="tria-lloc-barcelona--osona" data-list="barcelona--osona" data-depth="2" data-name="Osona">          <li><a class="placenav__item" href="../vic/#quan-la-vida" data-where="Osona · Barcelona"><span class="placenav__txt"><span class="placenav__name">Vic</span><span class="placenav__sub">5 rutes</span></span><span class="placenav__go">Rutes<svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span></a></li>        </ul>        <ul class="placenav__list" id="tria-lloc-girona--garrotxa" data-list="girona--garrotxa" data-depth="2" data-name="Garrotxa">          <li><a class="placenav__item" href="../olot/#quan-la-vida" data-where="Garrotxa · Girona"><span class="placenav__txt"><span class="placenav__name">Olot</span><span class="placenav__sub">13 rutes</span></span><span class="placenav__go">Rutes<svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></span></a></li>        </ul>      </div>    </div>
+    <div class="placenav__results" hidden>
+      <div class="placenav__reshead"><h3 class="placenav__restitle" aria-live="polite"></h3><button class="placenav__clear" type="button">Esborra</button></div>
+      <p class="placenav__none" hidden>Encara no hi ha rutes en aquest poble. Pots fer el curs igualment i caminar a prop de casa.</p>
+      <ul class="placenav__list placenav__reslist"></ul>
+    </div>
+    <p class="placenav__foot">Ara hi ha rutes d&#39;aquest curs a 4 pobles i ciutats.</p>
   </section>
+</div>  </section>
 
   <section class="others" aria-labelledby="h-others">
     <h2 id="h-others">Altres cursos</h2>
@@ -897,6 +866,6 @@
     </div>
   </footer>
 
-  <script src="../assets/site.js?v=1794480200" defer></script>
+  <script src="../assets/site.js?v=1794489091" defer></script>
 </body>
 </html>
