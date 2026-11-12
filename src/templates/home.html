@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "parts.html" import course_cards, city_cards, faq_item, place_nav %}
+{% from "parts.html" import course_cards, city_pills, faq_item, place_nav %}
 {% block content %}
 <section class="hero">
   <div class="wrap hero__in">
@@ -35,7 +35,7 @@
       <p>{{ h.q2_cities }}</p>
     </div>
     {{ place_nav('tria-lloc', place_tree(), root, site.place_nav, cls='placenav--center') }}
-    {{ city_cards(site.cities, root, summaries, center=True, pick=False) }}
+    {{ city_pills(site.cities, root, site.cities_page.quick_label) }}
     {% if territories %}<p class="block__actions block__actions--center band__more"><a class="btn btn--soft" href="{{ root }}ciutats/#pobles-i-comarques">{{ icon('map') }}{{ site.cities_page.home_more }}</a></p>{% endif %}
     <p class="band__after">{{ h.each_course }}</p>
   </div>
