@@ -1,39 +1,20 @@
 {% extends "base.html" %}
-{% from "parts.html" import page_head, city_cards, territory_cards, place_nav, before_walk %}
+{% from "parts.html" import page_head, place_nav, before_walk %}
 {% block content %}
-{% set tp = site.territories_page %}
 {{ page_head(None, cp.title, cp.intro) }}
-{# A dalt de tot, perquè al mòbil els pobles i les comarques queden molt avall #}
 <div class="wrap pagehead__after">
   {{ place_nav('tria-lloc', place_tree(), root, site.place_nav, cls='placenav--center') }}
-  {% if territories %}
-  <nav class="pills pills--jump" aria-label="{{ cp.jump_label }}">
-    <a class="pill" href="#ciutats">{{ icon('buildings') }}{{ cp.cities_title }}{{ icon('arrow', 'pill__down') }}</a>
-    <a class="pill" href="#pobles-i-comarques">{{ icon('map') }}{{ tp.title }}{{ icon('arrow', 'pill__down') }}</a>
-  </nav>
-  {% endif %}
 </div>
 <section class="band band--tight">
   <div class="wrap">
     <div class="infografia infografia--top">{% include "infografies/infografia-ciutats.html" %}</div>
-  </div>
-</section>
-<section class="band band--tight band--cities" id="ciutats" aria-labelledby="h-ciutats">
-  <div class="wrap">
-    <h2 class="band__title" id="h-ciutats">{{ cp.cities_title }}</h2>
-    {{ city_cards(site.cities, root, summaries, center=True, pick=False) }}
+    {% if site.cities %}
     <p class="band__after">{{ h.each_course }}</p>
+    {% else %}
+    <p class="band__after">{{ cp.empty }}</p>
+    {% endif %}
   </div>
 </section>
-{% if territories %}
-<section class="band band--tight band--territories" id="pobles-i-comarques" aria-labelledby="h-territoris">
-  <div class="wrap">
-    <h2 class="band__title" id="h-territoris">{{ tp.title }}</h2>
-    <p class="band__intro">{{ tp.intro }}</p>
-    {{ territory_cards(territories, root, summaries) }}
-  </div>
-</section>
-{% endif %}
 <div class="wrap wrap--mid stack stack--bottom">
   {{ before_walk(site.before_walk) }}
 </div>

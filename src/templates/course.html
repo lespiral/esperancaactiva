@@ -81,6 +81,7 @@
   <section class="panel panel--plain" id="on-vols-caminar" aria-labelledby="h-walk">
     <h2 id="h-walk">{{ cc.walk_title }}</h2>
     <p>{{ cc.walk_intro }}</p>
+    {% if course.walk_note %}<p>{{ course.walk_note }}</p>{% endif %}
     {% set pt = place_tree(course.key) %}
     {% if pt.n %}{{ place_nav('tria-lloc', pt, root, site.place_nav, course=True) }}{% else %}<p>Aviat hi haurà rutes d'aquest curs. Mentrestant, pots fer el temps de reflexió de cada passa caminant a prop de casa o en un lloc tranquil.</p>{% endif %}
   </section>
