@@ -482,12 +482,13 @@ html:not(.js) .placenav__list[data-name]::before { content: attr(data-name); dis
 .facts + .panel__cta { margin-top: 22px; }
 .cta-note { margin: 10px 0 0; color: var(--muted); font-size: .95rem; }
 .gains__end { margin: 20px 0 0; padding: 14px 18px; border-left: 4px solid var(--sun); background: var(--sun-50); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; color: var(--green-900); }
-.about { display: flex; gap: 26px; align-items: flex-start; }
-.about__photo { flex: none; width: 120px; height: 120px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 4px #fff, 0 0 0 6px var(--sun); }
-.about__eyebrow { margin: 0 0 6px; font: 700 .82rem/1.3 var(--font-head); letter-spacing: .08em; text-transform: uppercase; color: var(--green-600); }
+.about__row { display: flex; gap: 26px; align-items: flex-start; }
+.about__pic { flex: none; display: block; width: 120px; }
+.about__photo { display: block; width: 120px; height: 120px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 4px #fff, 0 0 0 6px var(--sun); }
+.about__eyebrow { margin: 0 0 16px; font: 700 .82rem/1.3 var(--font-head); letter-spacing: .08em; text-transform: uppercase; color: var(--green-600); }
 .about h2 { font-size: 1.3rem; }
 .about p:last-child { margin-bottom: 0; }
-@media (max-width: 640px) { .about { flex-direction: column; gap: 18px; } }
+@media (max-width: 640px) { .about__row { flex-direction: column; gap: 18px; } }
 .note--care .note__title { color: var(--care-ink); }
 .note--care .note__title .i { color: var(--care-ink); width: 1.3em; height: 1.3em; margin: 0; }
 .note--care .note__p { display: block; }

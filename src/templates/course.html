@@ -69,16 +69,18 @@
   </section>
 
   <section class="panel about" id="sobre-el-facilitador" aria-labelledby="h-about">
-    {% if facilitator_photo %}
-    <picture>
-      <source srcset="{{ root }}assets/img/aleix-boronat.webp" type="image/webp">
-      <img class="about__photo" src="{{ root }}assets/img/aleix-boronat.jpg" alt="Aleix Boronat" width="480" height="480" loading="lazy" decoding="async">
-    </picture>
-    {% endif %}
-    <div>
-      <p class="about__eyebrow">{{ cc.about_title }}</p>
-      <h2 id="h-about">{{ cc.about_name }}</h2>
-      {% for p in cc.about %}<p>{{ p }}</p>{% endfor %}
+    <p class="about__eyebrow">{{ cc.about_title }}</p>
+    <div class="about__row">
+      {% if facilitator_photo %}
+      <picture class="about__pic">
+        <source srcset="{{ root }}assets/img/aleix-boronat.webp" type="image/webp">
+        <img class="about__photo" src="{{ root }}assets/img/aleix-boronat.jpg" alt="Aleix Boronat" width="480" height="480" loading="lazy" decoding="async">
+      </picture>
+      {% endif %}
+      <div>
+        <h2 id="h-about">{{ cc.about_name }}</h2>
+        {% for p in cc.about %}<p>{{ p }}</p>{% endfor %}
+      </div>
     </div>
   </section>
 
