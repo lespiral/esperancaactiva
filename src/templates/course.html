@@ -69,19 +69,15 @@
   </section>
 
   <section class="panel about" id="sobre-el-facilitador" aria-labelledby="h-about">
-    {% if facilitator_photo or partners_logo %}
-    <div class="about__side">
-      {% if facilitator_photo %}
-      <picture>
-        <source srcset="{{ root }}assets/img/aleix-boronat.webp" type="image/webp">
-        <img class="about__photo" src="{{ root }}assets/img/aleix-boronat.jpg" alt="Aleix Boronat" width="480" height="480" loading="lazy" decoding="async">
-      </picture>
-      {% endif %}
-      {% if partners_logo %}<img class="about__logo" src="{{ root }}assets/img/lespiral-elara.png" alt="L'Espiral i Elara Social" width="200">{% endif %}
-    </div>
+    {% if facilitator_photo %}
+    <picture>
+      <source srcset="{{ root }}assets/img/aleix-boronat.webp" type="image/webp">
+      <img class="about__photo" src="{{ root }}assets/img/aleix-boronat.jpg" alt="Aleix Boronat" width="480" height="480" loading="lazy" decoding="async">
+    </picture>
     {% endif %}
     <div>
-      <h2 id="h-about">{{ cc.about_title }}</h2>
+      <p class="about__eyebrow">{{ cc.about_title }}</p>
+      <h2 id="h-about">{{ cc.about_name }}</h2>
       {% for p in cc.about %}<p>{{ p }}</p>{% endfor %}
     </div>
   </section>
