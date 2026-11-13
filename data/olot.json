@@ -2,7 +2,7 @@
   "slug": "olot",
   "name": "Olot",
   "region": "Garrotxa",
-  "summary": "14 rutes curtes i circulars, des dels CAP, l'hospital, places, ponts i parcs, i des de l'economia social.",
+  "summary": "16 rutes curtes i circulars, des dels CAP, l'hospital, places, ponts i parcs, i des de l'economia social.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
   "blocks": [
     {
@@ -134,29 +134,45 @@
     },
     {
       "course": "dia",
-      "text": "Una ruta circular curta, de 2,1 km (uns 25–33 minuts caminant), que surt d'una entitat de l'economia social i solidària i hi torna. Comença i acaba al carrer, davant de l'entitat: no cal entrar-hi. Al mateix lloc hi ha diverses entitats.",
-      "summary": "1 ruta des de l'economia social",
+      "text": "Tres rutes circulars curtes, de 2,0 a 2,1 km (de 24 a 33 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. Les tres entitats comparteixen seu, així que les tres rutes surten del mateix lloc.",
+      "summary": "3 rutes des de l'economia social",
       "groups": [
         {
           "id": "quan-sostenir-rutes",
-          "title": "La ruta",
+          "title": "Les rutes",
           "maps": [
             {
               "mid": "1Hm-KVicCx9MVexFnTeh84K2-QUot1qI",
               "title": "Olot · economia social i solidària",
               "ll": "42.1830,2.4945",
               "z": 15,
-              "label": "1 ruta des de l'economia social"
+              "label": "3 rutes des de l'economia social"
             }
           ],
           "routes": [
             {
               "n": 1,
-              "name": "Núria Social, Resilience Earth i Arriant Formació i Lleure",
+              "name": "Núria Social",
               "info": "2,14 km · 25–33 min caminant · circular",
-              "address": "Carrer de la Verge del Carme, 8 (Núria Social), Olot",
-              "desc": "Núria Social és un espai d’Olot que acull activitats i posa recursos a disposició d’entitats, cooperatives i ciutadania. Resilience Earth acompanya organitzacions, institucions i comunitats en processos de canvi i regeneració social i territorial. Arriant desenvolupa formació i activitats de lleure educatiu per a infants i joves.",
+              "address": "Carrer de la Verge del Carme, 8, Olot",
+              "desc": "Núria Social és un espai d’Olot que acull activitats i posa recursos a disposició d’entitats, cooperatives i ciutadania.",
               "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-nuria-social-olot-295078033"
+            },
+            {
+              "n": 2,
+              "name": "Resilience Earth",
+              "info": "2,00 km · 24–31 min caminant · circular",
+              "address": "Carrer de la Verge del Carme, 8 (Núria Social), Olot",
+              "desc": "Resilience Earth acompanya organitzacions, institucions i comunitats en processos de canvi i regeneració social i territorial.",
+              "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-resilience-earth-olot-295078043"
+            },
+            {
+              "n": 3,
+              "name": "Arriant Formació i Lleure",
+              "info": "2,03 km · 24–31 min caminant · circular",
+              "address": "Carrer de la Verge del Carme, 8 (Núria Social), Olot",
+              "desc": "Arriant desenvolupa formació i activitats de lleure educatiu per a infants i joves.",
+              "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-arriant-formacio-i-lleure-olot-295078075"
             }
           ]
         }
