@@ -483,6 +483,8 @@ html:not(.js) .placenav__list[data-name]::before { content: attr(data-name); dis
 .cta-note { margin: 10px 0 0; color: var(--muted); font-size: .95rem; }
 .gains__end { margin: 20px 0 0; padding: 14px 18px; border-left: 4px solid var(--sun); background: var(--sun-50); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; color: var(--green-900); }
 .about { display: flex; gap: 26px; align-items: flex-start; }
+.about__side { flex: none; display: flex; flex-direction: column; align-items: center; gap: 18px; }
+.about__photo { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 4px #fff, 0 0 0 6px var(--sun); }
 .about__logo { flex: none; width: 200px; height: auto; padding: 10px 12px; background: #fff; border: 1px solid var(--line); border-radius: 14px; }
 .about h2 { font-size: 1.3rem; }
 .about p:last-child { margin-bottom: 0; }

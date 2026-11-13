@@ -372,6 +372,7 @@ env = Environment(loader=FileSystemLoader(SRC / "templates"), autoescape=select_
 env.globals.update(icon=icon, site=site, noindex=NOINDEX, version=str(int(time.time())),
                    logo=(SRC / "img" / "logo.png").exists(),
                    partners_logo=(SRC / "img" / "lespiral-elara.png").exists(),
+                   facilitator_photo=(SRC / "img" / "aleix-boronat.jpg").exists(),
                    summaries=summaries, course_summaries=course_summaries,
                    territory_summaries=territory_summaries, places_for=places_for, place_tree=place_tree,
                    territories=[t for t in site.get("territories", []) if t.get("slug")],
