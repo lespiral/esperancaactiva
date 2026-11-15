@@ -6,7 +6,7 @@
   },
   "description": "Cursos digitals gratuïts de 7 passes i rutes a peu a prop de casa, per ciutats, pobles i comarques. Una pràctica, una caminada, un petit pas.",
   "contact": {
-    "email": "elarasocial.com@gmail.com",
+    "email": "esperanza@elarasocial.com",
     "instagram": "@esperancaactiva.cat",
     "instagram_url": "https://www.instagram.com/esperancaactiva.cat/",
     "phone": "672 86 32 02",
@@ -199,7 +199,7 @@
     "passes_list_title": "Les 7 passes, en una llista",
     "cta_building": true,
     "building_label": "En construcció",
-    "building_html": "No pots esperar? Escriu-nos a <a href=\"mailto:elarasocial.com@gmail.com\">elarasocial.com@gmail.com</a>.",
+    "building_html": "No pots esperar? Escriu-nos a <a href=\"mailto:esperanza@elarasocial.com\">esperanza@elarasocial.com</a>.",
     "soon_label": "Properament",
     "soon_text": "Aquest curs encara no està obert. Aviat t'hi podràs inscriure, també de manera gratuïta.",
     "passes_title": "Les 7 passes d'aquest curs",
@@ -337,6 +337,6 @@
       }
     ],
     "contact_title": "Tinc un altre dubte",
-    "contact_html": "Escriu-nos a <a href=\"mailto:elarasocial.com@gmail.com\">elarasocial.com@gmail.com</a> o envia'ns un missatge a Instagram, <a href=\"https://www.instagram.com/esperancaactiva.cat/\">@esperancaactiva.cat</a>."
+    "contact_html": "Escriu-nos a <a href=\"mailto:esperanza@elarasocial.com\">esperanza@elarasocial.com</a> o envia'ns un missatge a Instagram, <a href=\"https://www.instagram.com/esperancaactiva.cat/\">@esperancaactiva.cat</a>."
   }
 }
