@@ -77,7 +77,7 @@
     </div>
     <p>{{ b.text }}</p>
     <p class="block__actions">
-      {% if b.course.soon %}<span class="btn btn--soon">{{ cc.soon_label }}</span>{% else %}<a class="btn btn--primary" href="{{ b.course.thinkific }}">Comença el curs gratuït</a>{% endif %}
+      {% if b.course.soon %}<span class="btn btn--soon">{{ cc.soon_label }}</span>{% elif cc.cta_building %}<span class="btn btn--soon">{{ cc.building_label }}</span>{% else %}<a class="btn btn--primary" href="{{ b.course.thinkific }}">Comença el curs gratuït</a>{% endif %}
       <a class="btn btn--outline" href="{{ root }}{{ b.course.slug }}/">Torna al curs</a>
     </p>
     {% if city.see_also and b.total %}
