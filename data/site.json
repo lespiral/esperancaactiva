@@ -199,7 +199,7 @@
     "passes_list_title": "Les 7 passes, en una llista",
     "cta_building": true,
     "building_label": "En construcció",
-    "building_text": "Estem refent els vídeos d'aquest curs. Aviat t'hi podràs inscriure, també de manera gratuïta.",
+    "building_html": "No pots esperar? Escriu-nos a <a href=\"mailto:elarasocial.com@gmail.com\">elarasocial.com@gmail.com</a>.",
     "soon_label": "Properament",
     "soon_text": "Aquest curs encara no està obert. Aviat t'hi podràs inscriure, també de manera gratuïta.",
     "passes_title": "Les 7 passes d'aquest curs",

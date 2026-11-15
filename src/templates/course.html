@@ -8,7 +8,7 @@
 <p class="soon-note">{{ cc.soon_text }}</p>
 {% elif cc.cta_building %}
 <p class="panel__cta"><span class="btn btn--soon btn--lg">{{ cc.building_label }}</span></p>
-<p class="soon-note">{{ cc.building_text }}</p>
+<p class="soon-note">{{ cc.building_html|safe }}</p>
 {% else %}
 <p class="panel__cta"><a class="btn btn--primary btn--lg" href="{{ course.thinkific }}">Comença el curs gratuït {{ icon('arrow') }}</a></p>
 {% if note %}<p class="cta-note">{{ cc.cta_note }}</p>{% endif %}
