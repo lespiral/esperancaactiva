@@ -22,10 +22,10 @@ NOTES = {
     ("El Prat de Llobregat", 28): "Passa per una zona industrial i a prop de la carretera de l'Aviació: vigila el trànsit.",
 }
 CFG = {
-    "Vic": dict(file="vic", nom="Vic", de="de Vic", total=20, label="19 rutes des d'entitats del Tercer Sector Social",
+    "Vic": dict(file="vic", nom="Vic", de="de Vic", ciutat_adr="Vic", total=20, label="19 rutes des d'entitats del Tercer Sector Social",
         summary="20 rutes des d'entitats socials",
         block="Hi ha dos tipus de rutes: 1 ruta curta, d'1,9 km, que surt d'una entitat de l'economia social i solidària, i 19 rutes més llargues, de 3,7 a 4,2 km, que surten d'entitats del Tercer Sector Social. Totes són circulars i tornen al punt de sortida."),
-    "El Prat de Llobregat": dict(file="el-prat", nom="el Prat de Llobregat", de="del Prat de Llobregat", total=28, label="13 rutes des d'entitats del Tercer Sector Social",
+    "El Prat de Llobregat": dict(file="el-prat", nom="el Prat de Llobregat", de="del Prat de Llobregat", ciutat_adr="el Prat de Llobregat", total=28, label="13 rutes des d'entitats del Tercer Sector Social",
         summary="28 rutes des d'entitats socials",
         block="Hi ha dos tipus de rutes: 15 rutes curtes, d'1,6 a 2,1 km, que surten d'entitats de l'economia social i solidària, i 13 rutes més llargues, de 3,7 a 4,6 km, que surten d'entitats del Tercer Sector Social. Totes són circulars i tornen al punt de sortida."),
 }
@@ -48,7 +48,9 @@ for ciutat, cfg in CFG.items():
         maps.append({"mid": mid, "title": f"{cfg['nom']} · entitats del Tercer Sector Social, rutes {a}-{b}",
                      "ll": f"{lat:.4f},{lon:.4f}", "z": 14, "label": f"Rutes {a} a {b}", "routes": list(rng)})
     for r in rs:
-        x = {"n": int(r["n"]), "name": r["entitat"], "info": f"{cat_km(r['km'])} km aprox. · circular"}
+        km = float(r["km"])
+        x = {"n": int(r["n"]), "name": r["entitat"], "info": f"{cat_km(r['km'])} km aprox. · {round(km*12)}–{round(km*15)} min caminant · circular",
+             "address": f"{r['adreca']}, {cfg['ciutat_adr']}"}
         n = NOTES.get((ciutat, int(r["n"])))
         if n: x["note"] = n
         x["desc"] = r["descripcio"]
@@ -56,13 +58,14 @@ for ciutat, cfg in CFG.items():
         routes.append(x)
     n_new = len(routes)
     lo, hi = cat_km(min(kms)), cat_km(max(kms))
+    tmin, tmax = 5*round(min(kms)*12/5), 5*round(max(kms)*15/5)
     block = next(b for b in d["blocks"] if b["course"] == "dia")
     if "parts" in block:
         first = block["parts"][0]
     else:
         first = {"id": "economia-social", "title": "Rutes des de l'economia social", "text": block["text"], "groups": block["groups"]}
     new = {"id": "tercer-sector", "title": "Rutes des d'entitats del Tercer Sector Social", "nav": "Entitats del Tercer Sector Social",
-        "text": f"{n_new} rutes circulars, de {lo} a {hi} km (aproximadament d'1 h a 1 h 15 caminant), que surten d'una entitat del Tercer Sector Social {cfg['de']} i hi tornen. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan sostenir la vida es fa difícil», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
+        "text": f"{n_new} rutes circulars, de {lo} a {hi} km (uns {tmin}–{tmax} minuts caminant), que surten d'una entitat del Tercer Sector Social {cfg['de']} i hi tornen. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan sostenir la vida es fa difícil», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
         "notice": {"title": "Traçats orientatius", "html": [
             "Els traçats s'han reconstruït sobre OpenStreetMap a partir de l'adreça de cada entitat: no són traçats oficials. Camina amb atenció al trànsit i a l'estat dels camins.",
             "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."]},
