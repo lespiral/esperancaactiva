@@ -330,7 +330,31 @@
               "title": "el Prat de Llobregat · economia social i solidària",
               "ll": "41.3284,2.0955",
               "z": 13,
-              "label": "13 rutes des de l'economia social"
+              "label": "7 rutes des de l'economia social",
+              "routes": [
+                1,
+                2,
+                3,
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            {
+              "mid": "1fIJopgidoUyGuDO3OSH15GWUVt3Zsoo",
+              "title": "el Prat de Llobregat · economia social i solidària (seu Riu Llobregat, 47)",
+              "ll": "41.3173,2.0850",
+              "z": 15,
+              "label": "6 rutes des de la seu del carrer del Riu Llobregat, 47",
+              "routes": [
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ]
             }
           ],
           "routes": [
@@ -361,50 +385,50 @@
             {
               "n": 4,
               "name": "Som Gestió SCCL",
-              "info": "1,90 km · 23–28 min caminant · circular",
+              "info": "1,63 km · 20–24 min caminant · circular",
               "address": "Carrer del Riu Llobregat, 47, el Prat de Llobregat",
               "desc": "Som Gestió és una cooperativa que ofereix serveis de gestoria i assessorament econòmic, fiscal, comptable i laboral a associacions i empreses de l’economia social. Dona suport a la gestió de projectes i organitzacions del territori.",
-              "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-som-gestio-sccl-el-prat-de-llobregat-295072136"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296862993"
             },
             {
               "n": 5,
               "name": "GATS — Grups Associats pel Treball Sociocultural",
-              "info": "1,90 km · 23–28 min caminant · circular",
+              "info": "1,87 km · 22–28 min caminant · circular",
               "address": "Carrer del Riu Llobregat, 47 (Som Gestió SCCL), el Prat de Llobregat",
               "desc": "GATS és una associació sense ànim de lucre dedicada a l’acció social i comunitària. Acompanya persones i col·lectius, promou la participació i treballa amb la cultura i l’economia social com a eines per afrontar les desigualtats.",
-              "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-gats-grups-associats-pel-treball-sociocultural-el-prat-de-llobregat-295072567"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296863118"
             },
             {
               "n": 6,
               "name": "PLEGATS",
-              "info": "1,90 km · 23–28 min caminant · circular",
+              "info": "1,71 km · 21–26 min caminant · circular",
               "address": "Carrer del Riu Llobregat, 47 (Som Gestió SCCL), el Prat de Llobregat",
               "desc": "PLEGATS és una associació que promou la creació, la consolidació i la cooperació entre iniciatives d’economia social i solidària al Baix Llobregat. Ofereix acompanyament tècnic, jurídic i econòmic, així com formació i suport en subvencions.",
-              "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-plegats-el-prat-de-llobregat-295072631"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296863144"
             },
             {
               "n": 7,
               "name": "Eh! Coop SCCL",
-              "info": "1,90 km · 23–28 min caminant · circular",
+              "info": "1,78 km · 21–27 min caminant · circular",
               "address": "Carrer del Riu Llobregat, 47 (Som Gestió SCCL), el Prat de Llobregat",
               "desc": "Eh! Coop és una cooperativa que treballa per la transformació social a través de la cultura. Organitza esdeveniments culturals i comunitaris, entre els quals el Festival Esperanzah!, vinculats a l’economia social i solidària i al territori.",
-              "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-eh-coop-sccl-el-prat-de-llobregat-295072645"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296863182"
             },
             {
               "n": 8,
               "name": "Fundació Cívica Esperanzah",
-              "info": "1,90 km · 23–28 min caminant · circular",
+              "info": "1,71 km · 21–26 min caminant · circular",
               "address": "Carrer del Riu Llobregat, 47 (Som Gestió SCCL), el Prat de Llobregat",
               "desc": "La Fundació Cívica Esperanzah promou l’economia social i solidària i la gestió ciutadana al Prat de Llobregat. Impulsa el treball en xarxa, l’enfortiment del teixit associatiu i projectes que donen resposta a necessitats de les persones i del territori.",
-              "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-fundacio-civica-esperanzah-el-prat-de-llobregat-295072945"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296863220"
             },
             {
               "n": 9,
               "name": "Correu Comunitari",
-              "info": "1,90 km · 23–28 min caminant · circular",
+              "info": "1,72 km · 21–26 min caminant · circular",
               "address": "Carrer del Riu Llobregat, 47 (Som Gestió SCCL), el Prat de Llobregat",
               "desc": "Correu Comunitari és una associació que té entre les seves finalitats impulsar iniciatives d’economia social i solidària vinculades a la distribució urbana sostenible i a la reducció de les emissions del repartiment a les ciutats.",
-              "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-correu-comunitari-el-prat-de-llobregat-295072972"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296863274"
             },
             {
               "n": 10,
