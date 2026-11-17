@@ -23,7 +23,19 @@
     var opened = false;
     while (d) { if (!d.open) { d.open = true; opened = true; } d = d.parentElement && d.parentElement.closest('details'); }
     if (el.tagName === 'DETAILS' && !el.open) { el.open = true; opened = true; }
-    if (opened) el.scrollIntoView();
+    if (opened) goTo(el);
+  }
+  // Va a la ruta sense animació i la torna a posar bé quan la pàgina acaba de carregar-se (mapes, lletres…),
+  // perquè l'animació suau i els canvis de mida feien que s'arribés lluny de la ruta; si la persona fa scroll, s'hi deixa de tocar
+  function goTo(el) {
+    var touched = false;
+    function stop() { touched = true; }
+    ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (ev) { window.addEventListener(ev, stop, { once: true, passive: true }); });
+    function align() { if (!touched) el.scrollIntoView({ behavior: 'instant', block: 'start' }); }
+    align();
+    window.addEventListener('load', align);
+    setTimeout(align, 400);
+    setTimeout(align, 1200);
   }
   window.addEventListener('hashchange', openTarget);
   openTarget();
