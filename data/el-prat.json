@@ -3,7 +3,7 @@
   "name": "El Prat de Llobregat",
   "title": "Caminar pel Prat de Llobregat",
   "region": "Baix Llobregat",
-  "summary": "17 circuits urbans, 7 rutes des dels equipaments, 9 pel Delta del Llobregat i 13 des de l'economia social.",
+  "summary": "17 circuits urbans, 7 rutes des dels equipaments, 9 pel Delta del Llobregat i 15 des de l'economia social.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
   "blocks": [
     {
@@ -318,27 +318,38 @@
     },
     {
       "course": "dia",
-      "text": "13 rutes circulars curtes, d'1,6 a 2,1 km (uns 19–32 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. En alguns punts hi ha diverses entitats al mateix lloc.",
-      "summary": "13 rutes des de l'economia social",
+      "text": "15 rutes circulars curtes, d'1,6 a 2,1 km (uns 19–32 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. En alguns punts hi ha diverses entitats al mateix lloc.",
+      "summary": "15 rutes des de l'economia social",
       "groups": [
         {
           "id": "quan-sostenir-rutes",
-          "title": "Les 13 rutes",
+          "title": "Les 15 rutes",
           "maps": [
             {
               "mid": "19C5B7AQ1L6l-jT4FGtGWpoOTlzY6SEM",
               "title": "el Prat de Llobregat · economia social i solidària",
               "ll": "41.3284,2.0955",
               "z": 13,
-              "label": "7 rutes des de l'economia social",
+              "label": "6 rutes des de l'economia social",
               "routes": [
                 1,
+                5,
+                12,
+                13,
+                14,
+                15
+              ]
+            },
+            {
+              "mid": "1W4DwxfHPAehQVQ0sxpYMa44DkCBY27c",
+              "title": "el Prat de Llobregat · economia social i solidària (seu Carrer de les Moreres, 119)",
+              "ll": "41.3284,2.1058",
+              "z": 15,
+              "label": "3 rutes des de la seu del carrer de les Moreres, 119",
+              "routes": [
                 2,
                 3,
-                10,
-                11,
-                12,
-                13
+                4
               ]
             },
             {
@@ -348,12 +359,12 @@
               "z": 15,
               "label": "6 rutes des de la seu del carrer del Riu Llobregat, 47",
               "routes": [
-                4,
-                5,
                 6,
                 7,
                 8,
-                9
+                9,
+                10,
+                11
               ]
             }
           ],
@@ -368,14 +379,30 @@
             },
             {
               "n": 2,
-              "name": "La Claqueta Social, Illa SCCL i La Llançadora",
-              "info": "1,92 km · 23–29 min caminant · circular",
+              "name": "La Claqueta Social",
+              "info": "1,73 km · 21–26 min caminant · circular",
               "address": "Carrer de les Moreres, 119, el Prat de Llobregat",
-              "desc": "La Claqueta Social és una associació dedicada a la producció audiovisual i cultural amb finalitat social. Desenvolupa projectes de comunicació i esdeveniments per visibilitzar realitats socials, fomentar la consciència crítica i col·laborar amb la comunitat local. Illa Cooperativa de Serveis és una cooperativa del Prat vinculada a la producció i al suport logístic d’esdeveniments. La seva activitat inclou serveis de muntatge i subministrament de materials per a actes i festes. La Llançadora és una associació que promou l’economia social i solidària al Baix Llobregat. Ofereix assessorament tècnic, jurídic i econòmic a projectes, i desenvolupa acompanyaments, formacions i xerrades sobre iniciatives cooperatives i comunitàries.",
-              "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-la-claqueta-social-el-prat-de-llobregat-295073369"
+              "desc": "La Claqueta Social és una associació dedicada a la producció audiovisual i cultural amb finalitat social. Desenvolupa projectes de comunicació i esdeveniments per visibilitzar realitats socials, fomentar la consciència crítica i col·laborar amb la comunitat local.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296867580"
             },
             {
               "n": 3,
+              "name": "Illa SCCL",
+              "info": "1,79 km · 21–27 min caminant · circular",
+              "address": "Carrer de les Moreres, 119 (La Claqueta Social), el Prat de Llobregat",
+              "desc": "Illa Cooperativa de Serveis és una cooperativa del Prat vinculada a la producció i al suport logístic d’esdeveniments. La seva activitat inclou serveis de muntatge i subministrament de materials per a actes i festes.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296867641"
+            },
+            {
+              "n": 4,
+              "name": "La Llançadora",
+              "info": "1,82 km · 22–27 min caminant · circular",
+              "address": "Carrer de les Moreres, 119 (La Claqueta Social), el Prat de Llobregat",
+              "desc": "La Llançadora és una associació que promou l’economia social i solidària al Baix Llobregat. Ofereix assessorament tècnic, jurídic i econòmic a projectes, i desenvolupa acompanyaments, formacions i xerrades sobre iniciatives cooperatives i comunitàries.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296867729"
+            },
+            {
+              "n": 5,
               "name": "Domingo Recreativos SCCL",
               "info": "1,61 km · 19–24 min caminant · circular",
               "address": "Carrer del Primer de Maig, 16, baixos, el Prat de Llobregat",
@@ -383,7 +410,7 @@
               "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-el-prat-de-llobregat-domingo-recreativos-sccl-passejada-urbana-circular-295033129"
             },
             {
-              "n": 4,
+              "n": 6,
               "name": "Som Gestió SCCL",
               "info": "1,63 km · 20–24 min caminant · circular",
               "address": "Carrer del Riu Llobregat, 47, el Prat de Llobregat",
@@ -391,7 +418,7 @@
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296862993"
             },
             {
-              "n": 5,
+              "n": 7,
               "name": "GATS — Grups Associats pel Treball Sociocultural",
               "info": "1,87 km · 22–28 min caminant · circular",
               "address": "Carrer del Riu Llobregat, 47 (Som Gestió SCCL), el Prat de Llobregat",
@@ -399,7 +426,7 @@
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296863118"
             },
             {
-              "n": 6,
+              "n": 8,
               "name": "PLEGATS",
               "info": "1,71 km · 21–26 min caminant · circular",
               "address": "Carrer del Riu Llobregat, 47 (Som Gestió SCCL), el Prat de Llobregat",
@@ -407,7 +434,7 @@
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296863144"
             },
             {
-              "n": 7,
+              "n": 9,
               "name": "Eh! Coop SCCL",
               "info": "1,78 km · 21–27 min caminant · circular",
               "address": "Carrer del Riu Llobregat, 47 (Som Gestió SCCL), el Prat de Llobregat",
@@ -415,7 +442,7 @@
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296863182"
             },
             {
-              "n": 8,
+              "n": 10,
               "name": "Fundació Cívica Esperanzah",
               "info": "1,71 km · 21–26 min caminant · circular",
               "address": "Carrer del Riu Llobregat, 47 (Som Gestió SCCL), el Prat de Llobregat",
@@ -423,7 +450,7 @@
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296863220"
             },
             {
-              "n": 9,
+              "n": 11,
               "name": "Correu Comunitari",
               "info": "1,72 km · 21–26 min caminant · circular",
               "address": "Carrer del Riu Llobregat, 47 (Som Gestió SCCL), el Prat de Llobregat",
@@ -431,7 +458,7 @@
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296863274"
             },
             {
-              "n": 10,
+              "n": 12,
               "name": "Fundació Espigoladors",
               "info": "1,73 km · 21–26 min caminant · circular",
               "address": "Carrer del Vallès, 57–59 (obrador es im-perfect), el Prat de Llobregat",
@@ -439,7 +466,7 @@
               "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-fundacio-espigoladors-el-prat-de-llobregat-295073196"
             },
             {
-              "n": 11,
+              "n": 13,
               "name": "Cooperativa Obrera de Viviendas SCCL",
               "info": "1,77 km · 21–27 min caminant · circular",
               "address": "Plaça de Ramon Roigé i Badia, 3, el Prat de Llobregat",
@@ -447,7 +474,7 @@
               "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-cooperativa-obrera-de-viviendas-sccl-el-prat-de-llobregat-295072763"
             },
             {
-              "n": 12,
+              "n": 14,
               "name": "Heres Social SCCL",
               "info": "2,13 km · 26–32 min caminant · circular",
               "address": "Carrer del Primer de Maig, 16, baixos, el Prat de Llobregat",
@@ -455,7 +482,7 @@
               "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-el-prat-de-llobregat-heres-social-sccl-passejada-urbana-circular-295033487"
             },
             {
-              "n": 13,
+              "n": 15,
               "name": "La Rachola SCCL",
               "info": "2,02 km · 24–30 min caminant · circular",
               "address": "Carrer del Primer de Maig, 16, baixos, el Prat de Llobregat",
