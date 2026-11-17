@@ -22,10 +22,10 @@ NOTES = {
     ("El Prat de Llobregat", 28): "Passa per una zona industrial i a prop de la carretera de l'Aviació: vigila el trànsit.",
 }
 CFG = {
-    "Vic": dict(file="vic", nom="Vic", total=20, label="19 rutes des d'entitats del Tercer Sector Social",
+    "Vic": dict(file="vic", nom="Vic", de="de Vic", total=20, label="19 rutes des d'entitats del Tercer Sector Social",
         summary="20 rutes des d'entitats socials",
         block="Hi ha dos tipus de rutes: 1 ruta curta, d'1,9 km, que surt d'una entitat de l'economia social i solidària, i 19 rutes més llargues, de 3,7 a 4,2 km, que surten d'entitats del Tercer Sector Social. Totes són circulars i tornen al punt de sortida."),
-    "El Prat de Llobregat": dict(file="el-prat", nom="el Prat de Llobregat", total=28, label="13 rutes des d'entitats del Tercer Sector Social",
+    "El Prat de Llobregat": dict(file="el-prat", nom="el Prat de Llobregat", de="del Prat de Llobregat", total=28, label="13 rutes des d'entitats del Tercer Sector Social",
         summary="28 rutes des d'entitats socials",
         block="Hi ha dos tipus de rutes: 15 rutes curtes, d'1,6 a 2,1 km, que surten d'entitats de l'economia social i solidària, i 13 rutes més llargues, de 3,7 a 4,6 km, que surten d'entitats del Tercer Sector Social. Totes són circulars i tornen al punt de sortida."),
 }
@@ -45,7 +45,7 @@ for ciutat, cfg in CFG.items():
         lat = sum(float(r["lat"]) for r in sub) / len(sub)
         lon = sum(float(r["lon"]) for r in sub) / len(sub)
         a, b = min(rng), max(rng)
-        maps.append({"mid": mid, "title": f"{cfg['nom'][0].upper()+cfg['nom'][1:]} · entitats del Tercer Sector Social, rutes {a}-{b}",
+        maps.append({"mid": mid, "title": f"{cfg['nom']} · entitats del Tercer Sector Social, rutes {a}-{b}",
                      "ll": f"{lat:.4f},{lon:.4f}", "z": 14, "label": f"Rutes {a} a {b}", "routes": list(rng)})
     for r in rs:
         x = {"n": int(r["n"]), "name": r["entitat"], "info": f"{cat_km(r['km'])} km aprox. · circular"}
@@ -62,7 +62,7 @@ for ciutat, cfg in CFG.items():
     else:
         first = {"id": "economia-social", "title": "Rutes des de l'economia social", "text": block["text"], "groups": block["groups"]}
     new = {"id": "tercer-sector", "title": "Rutes des d'entitats del Tercer Sector Social", "nav": "Entitats del Tercer Sector Social",
-        "text": f"{n_new} rutes circulars, de {lo} a {hi} km (aproximadament d'1 h a 1 h 15 caminant), que surten d'una entitat del Tercer Sector Social de {cfg['nom']} i hi tornen. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan sostenir la vida es fa difícil», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
+        "text": f"{n_new} rutes circulars, de {lo} a {hi} km (aproximadament d'1 h a 1 h 15 caminant), que surten d'una entitat del Tercer Sector Social {cfg['de']} i hi tornen. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan sostenir la vida es fa difícil», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
         "notice": {"title": "Traçats orientatius", "html": [
             "Els traçats s'han reconstruït sobre OpenStreetMap a partir de l'adreça de cada entitat: no són traçats oficials. Camina amb atenció al trànsit i a l'estat dels camins.",
             "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."]},
