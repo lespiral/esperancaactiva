@@ -3,7 +3,7 @@
   "name": "El Prat de Llobregat",
   "title": "Caminar pel Prat de Llobregat",
   "region": "Baix Llobregat",
-  "summary": "17 circuits urbans, 7 rutes des dels equipaments, 9 pel Delta del Llobregat i 8 des de l'economia social.",
+  "summary": "17 circuits urbans, 7 rutes des dels equipaments, 9 pel Delta del Llobregat i 13 des de l'economia social.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
   "blocks": [
     {
@@ -19,7 +19,16 @@
               "ll": "41.3276,2.0965",
               "z": 15,
               "label": "Centre i nord · circuits 1, 2 i 8 a 13",
-              "routes": [1, 2, 8, 9, 10, 11, 12, 13]
+              "routes": [
+                1,
+                2,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
             },
             {
               "mid": "1GNmL1AS4U95g3CBT5uvu771vMEOIFM8",
@@ -27,7 +36,17 @@
               "ll": "41.3210,2.0946",
               "z": 15,
               "label": "Sud, Ribera Baixa i Llevant · circuits 3 a 7 i 14 a 17",
-              "routes": [3, 4, 5, 6, 7, 14, 15, 16, 17]
+              "routes": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                14,
+                15,
+                16,
+                17
+              ]
             }
           ],
           "routes": [
@@ -299,19 +318,19 @@
     },
     {
       "course": "dia",
-      "text": "8 rutes circulars curtes, d'1,6 a 2,1 km (uns 19–32 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. En alguns punts hi ha diverses entitats al mateix lloc.",
-      "summary": "8 rutes des de l'economia social",
+      "text": "13 rutes circulars curtes, d'1,6 a 2,1 km (uns 19–32 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. En alguns punts hi ha diverses entitats al mateix lloc.",
+      "summary": "13 rutes des de l'economia social",
       "groups": [
         {
           "id": "quan-sostenir-rutes",
-          "title": "Les 8 rutes",
+          "title": "Les 13 rutes",
           "maps": [
             {
               "mid": "19C5B7AQ1L6l-jT4FGtGWpoOTlzY6SEM",
               "title": "el Prat de Llobregat · economia social i solidària",
               "ll": "41.3284,2.0955",
               "z": 13,
-              "label": "8 rutes des de l'economia social"
+              "label": "13 rutes des de l'economia social"
             }
           ],
           "routes": [
@@ -341,14 +360,54 @@
             },
             {
               "n": 4,
-              "name": "Som Gestió SCCL, GATS — Grups Associats pel Treball Sociocultural, PLEGATS, Eh! Coop SCCL, Fundació Cívica Esperanzah i Correu Comunitari",
+              "name": "Som Gestió SCCL",
               "info": "1,90 km · 23–28 min caminant · circular",
               "address": "Carrer del Riu Llobregat, 47, el Prat de Llobregat",
-              "desc": "Som Gestió és una cooperativa que ofereix serveis de gestoria i assessorament econòmic, fiscal, comptable i laboral a associacions i empreses de l’economia social. Dona suport a la gestió de projectes i organitzacions del territori. GATS és una associació sense ànim de lucre dedicada a l’acció social i comunitària. Acompanya persones i col·lectius, promou la participació i treballa amb la cultura i l’economia social com a eines per afrontar les desigualtats. PLEGATS és una associació que promou la creació, la consolidació i la cooperació entre iniciatives d’economia social i solidària al Baix Llobregat. Ofereix acompanyament tècnic, jurídic i econòmic, així com formació i suport en subvencions. Eh! Coop és una cooperativa que treballa per la transformació social a través de la cultura. Organitza esdeveniments culturals i comunitaris, entre els quals el Festival Esperanzah!, vinculats a l’economia social i solidària i al territori. La Fundació Cívica Esperanzah promou l’economia social i solidària i la gestió ciutadana al Prat de Llobregat. Impulsa el treball en xarxa, l’enfortiment del teixit associatiu i projectes que donen resposta a necessitats de les persones i del territori. Correu Comunitari és una associació que té entre les seves finalitats impulsar iniciatives d’economia social i solidària vinculades a la distribució urbana sostenible i a la reducció de les emissions del repartiment a les ciutats.",
+              "desc": "Som Gestió és una cooperativa que ofereix serveis de gestoria i assessorament econòmic, fiscal, comptable i laboral a associacions i empreses de l’economia social. Dona suport a la gestió de projectes i organitzacions del territori.",
               "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-som-gestio-sccl-el-prat-de-llobregat-295072136"
             },
             {
               "n": 5,
+              "name": "GATS — Grups Associats pel Treball Sociocultural",
+              "info": "1,90 km · 23–28 min caminant · circular",
+              "address": "Carrer del Riu Llobregat, 47 (Som Gestió SCCL), el Prat de Llobregat",
+              "desc": "GATS és una associació sense ànim de lucre dedicada a l’acció social i comunitària. Acompanya persones i col·lectius, promou la participació i treballa amb la cultura i l’economia social com a eines per afrontar les desigualtats.",
+              "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-gats-grups-associats-pel-treball-sociocultural-el-prat-de-llobregat-295072567"
+            },
+            {
+              "n": 6,
+              "name": "PLEGATS",
+              "info": "1,90 km · 23–28 min caminant · circular",
+              "address": "Carrer del Riu Llobregat, 47 (Som Gestió SCCL), el Prat de Llobregat",
+              "desc": "PLEGATS és una associació que promou la creació, la consolidació i la cooperació entre iniciatives d’economia social i solidària al Baix Llobregat. Ofereix acompanyament tècnic, jurídic i econòmic, així com formació i suport en subvencions.",
+              "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-plegats-el-prat-de-llobregat-295072631"
+            },
+            {
+              "n": 7,
+              "name": "Eh! Coop SCCL",
+              "info": "1,90 km · 23–28 min caminant · circular",
+              "address": "Carrer del Riu Llobregat, 47 (Som Gestió SCCL), el Prat de Llobregat",
+              "desc": "Eh! Coop és una cooperativa que treballa per la transformació social a través de la cultura. Organitza esdeveniments culturals i comunitaris, entre els quals el Festival Esperanzah!, vinculats a l’economia social i solidària i al territori.",
+              "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-eh-coop-sccl-el-prat-de-llobregat-295072645"
+            },
+            {
+              "n": 8,
+              "name": "Fundació Cívica Esperanzah",
+              "info": "1,90 km · 23–28 min caminant · circular",
+              "address": "Carrer del Riu Llobregat, 47 (Som Gestió SCCL), el Prat de Llobregat",
+              "desc": "La Fundació Cívica Esperanzah promou l’economia social i solidària i la gestió ciutadana al Prat de Llobregat. Impulsa el treball en xarxa, l’enfortiment del teixit associatiu i projectes que donen resposta a necessitats de les persones i del territori.",
+              "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-fundacio-civica-esperanzah-el-prat-de-llobregat-295072945"
+            },
+            {
+              "n": 9,
+              "name": "Correu Comunitari",
+              "info": "1,90 km · 23–28 min caminant · circular",
+              "address": "Carrer del Riu Llobregat, 47 (Som Gestió SCCL), el Prat de Llobregat",
+              "desc": "Correu Comunitari és una associació que té entre les seves finalitats impulsar iniciatives d’economia social i solidària vinculades a la distribució urbana sostenible i a la reducció de les emissions del repartiment a les ciutats.",
+              "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-correu-comunitari-el-prat-de-llobregat-295072972"
+            },
+            {
+              "n": 10,
               "name": "Fundació Espigoladors",
               "info": "1,73 km · 21–26 min caminant · circular",
               "address": "Carrer del Vallès, 57–59 (obrador es im-perfect), el Prat de Llobregat",
@@ -356,7 +415,7 @@
               "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-fundacio-espigoladors-el-prat-de-llobregat-295073196"
             },
             {
-              "n": 6,
+              "n": 11,
               "name": "Cooperativa Obrera de Viviendas SCCL",
               "info": "1,77 km · 21–27 min caminant · circular",
               "address": "Plaça de Ramon Roigé i Badia, 3, el Prat de Llobregat",
@@ -364,7 +423,7 @@
               "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-cooperativa-obrera-de-viviendas-sccl-el-prat-de-llobregat-295072763"
             },
             {
-              "n": 7,
+              "n": 12,
               "name": "Heres Social SCCL",
               "info": "2,13 km · 26–32 min caminant · circular",
               "address": "Carrer del Primer de Maig, 16, baixos, el Prat de Llobregat",
@@ -372,7 +431,7 @@
               "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-el-prat-de-llobregat-heres-social-sccl-passejada-urbana-circular-295033487"
             },
             {
-              "n": 8,
+              "n": 13,
               "name": "La Rachola SCCL",
               "info": "2,02 km · 24–30 min caminant · circular",
               "address": "Carrer del Primer de Maig, 16, baixos, el Prat de Llobregat",
