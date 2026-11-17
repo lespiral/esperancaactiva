@@ -54,103 +54,120 @@
               "n": 1,
               "name": "Plaça de Catalunya",
               "info": "0,87 km · 10–13 min caminant · 20–35 min amb pauses · circular",
-              "dest": "41.32256,2.09237"
+              "dest": "41.32256,2.09237",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957499"
             },
             {
               "n": 2,
               "name": "Parc del Fondo d'en Peixo",
               "info": "0,83 km · 10–13 min caminant · 20–35 min amb pauses · circular",
-              "dest": "41.32775,2.09089"
+              "dest": "41.32775,2.09089",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957571"
             },
             {
               "n": 3,
               "name": "Parc Nou",
               "info": "0,86 km · 10–13 min caminant · 20–35 min amb pauses · circular",
-              "dest": "41.31413,2.0903"
+              "dest": "41.31413,2.0903",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957593"
             },
             {
               "n": 4,
               "name": "Plaça del Disset de Setembre",
               "info": "0,79 km · 9–12 min caminant · 20–30 min amb pauses · circular",
-              "dest": "41.32141,2.09614"
+              "dest": "41.32141,2.09614",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957611"
             },
             {
               "n": 5,
               "name": "Jardins del Cruz",
               "info": "0,73 km · 9–11 min caminant · 20–30 min amb pauses · circular",
-              "dest": "41.32203,2.09856"
+              "dest": "41.32203,2.09856",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957625"
             },
             {
               "n": 6,
               "name": "Plaça de Blanes",
               "info": "0,80 km · 10–12 min caminant · 20–30 min amb pauses · circular",
-              "dest": "41.32421,2.09907"
+              "dest": "41.32421,2.09907",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957664"
             },
             {
               "n": 7,
               "name": "Plaça de Louis Braille",
               "info": "0,86 km · 10–13 min caminant · 20–35 min amb pauses · circular",
-              "dest": "41.32571,2.10242"
+              "dest": "41.32571,2.10242",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957680"
             },
             {
               "n": 8,
               "name": "La Capsa",
               "info": "0,88 km · 11–13 min caminant · 20–35 min amb pauses · circular",
-              "dest": "41.32979,2.10338"
+              "dest": "41.32979,2.10338",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957694"
             },
             {
               "n": 9,
               "name": "Parc Yolanda Ramos",
               "info": "0,91 km · 11–14 min caminant · 20–35 min amb pauses · circular",
-              "dest": "41.33092,2.10054"
+              "dest": "41.33092,2.10054",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957715"
             },
             {
               "n": 10,
               "name": "Jardins d'Àngel Guimerà",
               "info": "0,91 km · 11–14 min caminant · 20–35 min amb pauses · circular",
-              "dest": "41.32974,2.0945"
+              "dest": "41.32974,2.0945",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957778"
             },
             {
               "n": 11,
               "name": "Jardins de l'Hort de la Virtudes",
               "info": "0,86 km · 10–13 min caminant · 20–35 min amb pauses · circular",
-              "dest": "41.33027,2.09603"
+              "dest": "41.33027,2.09603",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957843"
             },
             {
               "n": 12,
               "name": "Plaça de l'Església",
               "info": "0,88 km · 11–13 min caminant · 20–35 min amb pauses · circular",
-              "dest": "41.33086,2.09248"
+              "dest": "41.33086,2.09248",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957863"
             },
             {
               "n": 13,
               "name": "Plaça de Pau Casals",
               "info": "0,90 km · 11–14 min caminant · 20–35 min amb pauses · circular",
-              "dest": "41.32584,2.09388"
+              "dest": "41.32584,2.09388",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957886"
             },
             {
               "n": 14,
               "name": "Plaça de Sant Jordi",
               "info": "0,91 km · 11–14 min caminant · 20–35 min amb pauses · circular",
-              "dest": "41.32057,2.08706"
+              "dest": "41.32057,2.08706",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957915"
             },
             {
               "n": 15,
               "name": "Parc de la Solidaritat",
               "info": "0,71 km · 9–11 min caminant · 20–30 min amb pauses · circular",
-              "dest": "41.32229,2.0845"
+              "dest": "41.32229,2.0845",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957922"
             },
             {
               "n": 16,
               "name": "Jardins d'Andalusia",
               "info": "0,92 km · 11–14 min caminant · 20–35 min amb pauses · circular",
-              "dest": "41.32691,2.10522"
+              "dest": "41.32691,2.10522",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957942"
             },
             {
               "n": 17,
               "name": "Plaça d'Ovidi Montllor",
               "info": "0,92 km · 11–14 min caminant · 20–35 min amb pauses · circular",
-              "dest": "41.32637,2.10385"
+              "dest": "41.32637,2.10385",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958003"
             }
           ]
         }
@@ -253,63 +270,72 @@
               "name": "Riu – Cal Tet",
               "start": "Inici i final: Punt d'informació dels Espais Naturals del Riu",
               "info": "3,01 km · 36–45 min caminant · 45–65 min amb pauses · circular",
-              "dest": "41.31262,2.11598"
+              "dest": "41.31262,2.11598",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958017"
             },
             {
               "n": 2,
               "name": "Riu – Ca l'Arana – Cal Tet",
               "start": "Inici i final: Punt d'informació dels Espais Naturals del Riu",
               "info": "5,17 km · 62–78 min caminant · 70–100 min amb pauses · circular",
-              "dest": "41.31262,2.11598"
+              "dest": "41.31262,2.11598",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958042"
             },
             {
               "n": 3,
               "name": "La Bunyola – Carrabiners – Semàfor",
               "start": "Inici i final: Punt d'informació dels Espais Naturals del Riu",
               "info": "5,77 km · 69–87 min caminant · 80–105 min amb pauses · circular",
-              "dest": "41.31262,2.11598"
+              "dest": "41.31262,2.11598",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958061"
             },
             {
               "n": 4,
               "name": "Maresma de les Filipines",
               "start": "Inici i final: Centre d'informació de l'Espai Natural del Remolar-Filipines",
               "info": "1,47 km · 18–22 min caminant · 30–40 min amb pauses · circular",
-              "dest": "41.27883,2.06374"
+              "dest": "41.27883,2.06374",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958114"
             },
             {
               "n": 5,
               "name": "Basses de Can Dimoni",
               "start": "Inici i final: Entrada de les basses de Can Dimoni",
               "info": "0,69 km · 8–10 min caminant · 20–30 min amb pauses · circular",
-              "dest": "41.31036,2.04914"
+              "dest": "41.31036,2.04914",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958169"
             },
             {
               "n": 6,
               "name": "Litoral Prat – Remolar",
               "start": "Inici: Aparcament de l'inici de la platja del Prat · Final: Centre d'informació de l'Espai Natural del Remolar-Filipines",
               "info": "3,98 km · 48–60 min caminant · 60–80 min amb pauses · lineal",
-              "dest": "41.28632,2.10225"
+              "dest": "41.28632,2.10225",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958192"
             },
             {
               "n": 7,
               "name": "Tomb pel camp",
               "start": "Inici: Pas de vianants del carrer de Tarragona amb la Ronda de Llevant · Final: Masia de Can Comes, seu del Parc Agrari del Baix Llobregat",
               "info": "3,91 km · 47–59 min caminant · 55–80 min amb pauses · lineal",
-              "dest": "41.32483,2.10638"
+              "dest": "41.32483,2.10638",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958231"
             },
             {
               "n": 8,
               "name": "Cor del Delta",
               "start": "Inici: Aparcament de Cal Gana · Final: Punt d'informació dels Espais Naturals del Riu",
               "info": "3,07 km · 37–46 min caminant · 45–65 min amb pauses · lineal",
-              "dest": "41.32258,2.10196"
+              "dest": "41.32258,2.10196",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958252"
             },
             {
               "n": 9,
               "name": "Ruta dels Carrabiners",
               "start": "Inici: Aparcament de Cal Gana · Final: Edifici del Semàfor",
               "info": "4,95 km · 59–74 min caminant · 70–95 min amb pauses · lineal",
-              "dest": "41.32258,2.10196"
+              "dest": "41.32258,2.10196",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958282"
             }
           ]
         }

@@ -109,108 +109,124 @@
               "n": 1,
               "name": "Casal Cívic i Comunitari Vic – La Rambla",
               "info": "1,96 km · 23–29 min caminant · 35–50 min amb pauses · circular",
-              "address": "Rambla de l’Hospital, 15, Vic"
+              "address": "Rambla de l’Hospital, 15, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958463"
             },
             {
               "n": 2,
               "name": "Casal Cívic i Comunitari Vic – Mossèn Josep Guiteras",
               "info": "1,98 km · 23–30 min caminant · 35–50 min amb pauses · circular",
-              "address": "Carrer de la Soledat, 13, Vic"
+              "address": "Carrer de la Soledat, 13, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958496"
             },
             {
               "n": 3,
               "name": "Centre Cívic Can Pau Raba",
               "info": "1,98 km · 23–30 min caminant · 35–50 min amb pauses · circular",
-              "address": "Carrer del Raval Cortines, 24, Vic"
+              "address": "Carrer del Raval Cortines, 24, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958510"
             },
             {
               "n": 4,
               "name": "Centre Cívic Santa Anna",
               "info": "1,98 km · 23–30 min caminant · 35–50 min amb pauses · circular",
               "address": "Carrer de Tagamanent, 1, Vic",
-              "note": "Té uns 280 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja."
+              "note": "Té uns 280 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958515"
             },
             {
               "n": 5,
               "name": "Biblioteca Pilarin Bayés",
               "info": "1,99 km · 23–30 min caminant · 35–50 min amb pauses · circular",
               "address": "Passeig de la Generalitat, 1, Vic",
-              "note": "Té uns 130 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja."
+              "note": "Té uns 130 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958528"
             },
             {
               "n": 6,
               "name": "Espai Comunitari Remei–Estadi",
               "info": "1,88 km · 22–28 min caminant · 30–50 min amb pauses · circular",
               "address": "Passeig de la Generalitat, 31, Vic",
-              "note": "Té algun tram curt d’escales i uns 120 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja."
+              "note": "Té algun tram curt d’escales i uns 120 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958551"
             },
             {
               "n": 7,
               "name": "Centre Cívic Plaça d’Osona",
               "info": "1,98 km · 23–30 min caminant · 35–50 min amb pauses · circular",
               "address": "Plaça d’Osona, 3, Vic",
-              "note": "Té uns 100 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja."
+              "note": "Té uns 100 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958565"
             },
             {
               "n": 8,
               "name": "Centre Cívic El Montseny",
               "info": "2,02 km · 24–30 min caminant · 35–50 min amb pauses · circular",
               "address": "Avinguda del Montseny, 16, Vic",
-              "note": "Té algun tram curt d’escales i uns 110 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja."
+              "note": "Té algun tram curt d’escales i uns 110 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958573"
             },
             {
               "n": 9,
               "name": "Centre Cívic Serra-de-senferm",
               "info": "1,80 km · 21–27 min caminant · 30–45 min amb pauses · circular",
-              "address": "Carrer de la Riera Major, 2, Vic"
+              "address": "Carrer de la Riera Major, 2, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958597"
             },
             {
               "n": 10,
               "name": "Centre Cívic La Guixa (Sentfores)",
               "info": "1,98 km · 23–30 min caminant · 35–50 min amb pauses · circular",
               "address": "Carrer del Pla del Maset, s/n, Vic",
-              "note": "Té un tram per la carretera BV-4316, on cal caminar amb precaució. També té algun tram curt d’escales i uns 430 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja."
+              "note": "Té un tram per la carretera BV-4316, on cal caminar amb precaució. També té algun tram curt d’escales i uns 430 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958631"
             },
             {
               "n": 11,
               "name": "Centre Cívic Joan Triadú",
               "info": "1,99 km · 23–30 min caminant · 35–50 min amb pauses · circular",
-              "address": "Carrer de l’Arquebisbe Alemany, 5, Vic"
+              "address": "Carrer de l’Arquebisbe Alemany, 5, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958656"
             },
             {
               "n": 12,
               "name": "Espai ETC",
               "info": "1,82 km · 21–27 min caminant · 30–45 min amb pauses · circular",
               "address": "Passeig de la Generalitat, 46, Vic",
-              "note": "Té uns 180 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja."
+              "note": "Té uns 180 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958664"
             },
             {
               "n": 13,
               "name": "La Central",
               "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular",
               "address": "Plaça de Vicenç Albert Ballester, s/n, Vic",
-              "note": "Recorregut amb alguns pendents."
+              "note": "Recorregut amb alguns pendents.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958668"
             },
             {
               "n": 14,
               "name": "ACVIC Centre d’Arts Contemporànies",
               "info": "1,98 km · 23–30 min caminant · 35–50 min amb pauses · circular",
               "address": "Carrer de Sant Francesc, 1, Vic",
-              "note": "Recorregut amb alguns pendents. Passa pels camins del parc de Sant Julià d’Auvèrnia."
+              "note": "Recorregut amb alguns pendents. Passa pels camins del parc de Sant Julià d’Auvèrnia.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958676"
             },
             {
               "n": 15,
               "name": "L’Atlàntida – Centre d’Arts Escèniques d’Osona",
               "info": "1,90 km · 22–29 min caminant · 30–50 min amb pauses · circular",
               "address": "Carrer de Francesc Maria Masferrer, 4, Vic",
-              "note": "Recorregut amb alguns pendents."
+              "note": "Recorregut amb alguns pendents.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958690"
             },
             {
               "n": 16,
               "name": "L’Orfeó",
               "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
               "address": "Carrer de Sant Pere, 7, Vic",
-              "note": "Passa pels camins del parc de la Bassa dels Germans Maristes."
+              "note": "Passa pels camins del parc de la Bassa dels Germans Maristes.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958704"
             }
           ]
         }
@@ -279,137 +295,159 @@
               "n": 1,
               "name": "Parc de l'Era d'en Sellés",
               "info": "1,65 km · 20–25 min caminant · 30–45 min amb pauses · circular",
-              "dest": "Parc de l'Era d'en Sellés, Vic"
+              "dest": "Parc de l'Era d'en Sellés, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958733"
             },
             {
               "n": 2,
               "name": "Parc de Sant Llàtzer",
               "info": "1,56 km · 19–23 min caminant · 30–45 min amb pauses · circular",
-              "dest": "Parc de Sant Llàtzer, Vic"
+              "dest": "Parc de Sant Llàtzer, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958739"
             },
             {
               "n": 3,
               "name": "Parc de Jaume Balmes",
               "info": "1,64 km · 20–25 min caminant · 30–45 min amb pauses · circular",
-              "dest": "Parc de Jaume Balmes, Vic"
+              "dest": "Parc de Jaume Balmes, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958749"
             },
             {
               "n": 4,
               "name": "Parc del Blanqueig",
               "info": "1,57 km · 19–24 min caminant · 30–45 min amb pauses · circular",
               "note": "Inici a la riba del Mèder, al pont del Blanqueig.",
-              "dest": "Pont del Blanqueig, Vic"
+              "dest": "Pont del Blanqueig, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958799"
             },
             {
               "n": 6,
               "name": "Parc de Sant Jaume",
               "info": "1,63 km · 20–24 min caminant · 30–45 min amb pauses · circular",
-              "dest": "Parc de Sant Jaume, Vic"
+              "dest": "Parc de Sant Jaume, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958814"
             },
             {
               "n": 7,
               "name": "Parc de l'Horta d'en Pau",
               "info": "1,45 km · 17–22 min caminant · 25–40 min amb pauses · circular",
-              "dest": "Parc de l'Horta d'en Pau, Vic"
+              "dest": "Parc de l'Horta d'en Pau, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958821"
             },
             {
               "n": 8,
               "name": "Parc de l'Horta Vermella",
               "info": "1,6 km · 19–24 min caminant · 30–45 min amb pauses · circular",
-              "dest": "Parc de l'Horta Vermella, Vic"
+              "dest": "Parc de l'Horta Vermella, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958897"
             },
             {
               "n": 9,
               "name": "Parc de Santa Anna",
               "info": "1,52 km · 18–23 min caminant · 30–45 min amb pauses · circular",
-              "dest": "Parc de Santa Anna, Vic"
+              "dest": "Parc de Santa Anna, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958927"
             },
             {
               "n": 10,
               "name": "Parc d'Occitània",
               "info": "1,64 km · 20–25 min caminant · 30–45 min amb pauses · circular",
-              "dest": "Parc d'Occitània, Vic"
+              "dest": "Parc d'Occitània, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958938"
             },
             {
               "n": 11,
               "name": "Pla del Maset",
               "info": "1,64 km · 20–25 min caminant · 30–45 min amb pauses · circular",
               "note": "Inici al carrer del Pla del Maset (Sentfores). Té trams rurals.",
-              "dest": "Carrer del Pla del Maset, Vic"
+              "dest": "Carrer del Pla del Maset, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958966"
             },
             {
               "n": 12,
               "name": "Parc de Maria Àngels Anglada i d'Abadal",
               "info": "1,64 km · 20–25 min caminant · 30–45 min amb pauses · circular",
-              "dest": "Parc de Maria Àngels Anglada i d'Abadal, Vic"
+              "dest": "Parc de Maria Àngels Anglada i d'Abadal, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958982"
             },
             {
               "n": 13,
               "name": "Parc de Can Forcada",
               "info": "1,67 km · 20–25 min caminant · 30–45 min amb pauses · circular",
-              "dest": "Parc de Can Forcada, Vic"
+              "dest": "Parc de Can Forcada, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959004"
             },
             {
               "n": 14,
               "name": "Parc de l'Horta de la Sínia",
               "info": "1,57 km · 19–24 min caminant · 30–45 min amb pauses · circular",
-              "dest": "Parc de l'Horta de la Sínia, Vic"
+              "dest": "Parc de l'Horta de la Sínia, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959047"
             },
             {
               "n": 15,
               "name": "Parc d'Antoni Rovira i Virgili",
               "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular",
-              "dest": "Parc d'Antoni Rovira i Virgili, Vic"
+              "dest": "Parc d'Antoni Rovira i Virgili, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959092"
             },
             {
               "n": 16,
               "name": "Parc de Sant Julià d'Auvèrnia",
               "info": "1,62 km · 19–24 min caminant · 30–45 min amb pauses · circular",
-              "dest": "Parc de Sant Julià d'Auvèrnia, Vic"
+              "dest": "Parc de Sant Julià d'Auvèrnia, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959097"
             },
             {
               "n": 17,
               "name": "Parc dels Tortosins",
               "info": "1,54 km · 18–23 min caminant · 30–45 min amb pauses · circular",
               "note": "Bona part del recorregut passa per un polígon industrial.",
-              "dest": "Parc dels Tortosins, Vic"
+              "dest": "Parc dels Tortosins, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959103"
             },
             {
               "n": 18,
               "name": "Parc de Jaume Portell",
               "info": "1,6 km · 19–24 min caminant · 30–45 min amb pauses · circular",
-              "dest": "Parc de Jaume Portell, Vic"
+              "dest": "Parc de Jaume Portell, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959130"
             },
             {
               "n": 19,
               "name": "Parc de Miquel Coll i Alentorn",
               "info": "1,61 km · 19–24 min caminant · 30–45 min amb pauses · circular",
-              "dest": "Parc de Miquel Coll i Alentorn, Vic"
+              "dest": "Parc de Miquel Coll i Alentorn, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959148"
             },
             {
               "n": 20,
               "name": "Parc de Fèlix Macià i Bonaplata",
               "info": "1,65 km · 20–25 min caminant · 30–45 min amb pauses · circular",
-              "dest": "Parc de Fèlix Macià i Bonaplata, Vic"
+              "dest": "Parc de Fèlix Macià i Bonaplata, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959179"
             },
             {
               "n": 21,
               "name": "Parc de la Vall de Sau",
               "info": "1,65 km · 20–25 min caminant · 30–45 min amb pauses · circular",
-              "dest": "Parc de la Vall de Sau, Vic"
+              "dest": "Parc de la Vall de Sau, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959198"
             },
             {
               "n": 22,
               "name": "Passeig de Pep Ventura",
               "info": "1,6 km · 19–24 min caminant · 30–45 min amb pauses · circular",
-              "dest": "Passeig de Pep Ventura, Vic"
+              "dest": "Passeig de Pep Ventura, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959236"
             },
             {
               "n": 23,
               "name": "Bosc del Puig dels Jueus",
               "info": "0,96 km · 11–14 min caminant · 20–35 min amb pauses · circular",
               "note": "Camí de terra pel bosc, sense llum: millor de dia.",
-              "dest": "Bosc del Puig dels Jueus, Vic"
+              "dest": "Bosc del Puig dels Jueus, Vic",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959251"
             }
           ]
         }
