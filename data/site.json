@@ -41,6 +41,9 @@
     {"slug": "valles-oriental", "name": "Vallès Oriental", "region": "Caldes de Montbui, Granollers, Sant Celoni, Santa Eulàlia de Ronçana i Santa Maria de Palautordera", "icon": "footprints"}
   ],
 
+  "subpages": [
+    {"slug": "barcelona/taula-tercer-sector", "file": "barcelona-taula", "name": "Barcelona · Taula del Tercer Sector", "icon": "buildings"}
+  ],
   "courses": [
     {
       "key": "vida",

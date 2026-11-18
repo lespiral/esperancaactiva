@@ -284,3 +284,32 @@
       .catch(function () { busy(false); say(L.network); });
   });
 })();
+
+// Filtre d'entitats (subpàgines amb moltes rutes): amaga les rutes que no coincideixen amb el text
+(function () {
+  Array.prototype.forEach.call(document.querySelectorAll('[data-rfilter]'), function (box) {
+    var input = box.querySelector('.rfilter__input'), status = box.querySelector('.rfilter__status');
+    var section = box.closest('section') || document;
+    var tpl = box.getAttribute('data-count') || '{n}', empty = box.getAttribute('data-empty') || '';
+    function norm(s) { return String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
+    var items = Array.prototype.map.call(section.querySelectorAll('li.route'), function (li) {
+      var n = li.querySelector('.route__name');
+      return { li: li, t: norm(n ? n.textContent.replace(/^Ruta \d+:\s*/, '') : li.textContent) };
+    });
+    var groups = Array.prototype.map.call(section.querySelectorAll('.group'), function (g) {
+      return { g: g, d: g.querySelector('details.routes'), open: g.querySelector('details.routes') && g.querySelector('details.routes').open, items: items.filter(function (x) { return g.contains(x.li); }) };
+    });
+    function run() {
+      var q = norm(input.value.trim()), total = 0;
+      groups.forEach(function (g) {
+        var hits = 0;
+        g.items.forEach(function (x) { var ok = !q || x.t.indexOf(q) !== -1; x.li.hidden = !ok; if (ok) hits++; });
+        total += hits;
+        g.g.hidden = !!q && !hits;
+        if (g.d) g.d.open = q ? hits > 0 : g.open;
+      });
+      status.textContent = q ? (total ? tpl.replace('{n}', total) : empty) : '';
+    }
+    input.addEventListener('input', run);
+  });
+})();

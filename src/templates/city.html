@@ -40,12 +40,14 @@
   {% endfor %}
   <a class="pill" href="{{ root }}ciutats/">{{ icon('pin') }}{{ site.cities_page.title }}</a>
 </nav>
+{% elif city.kind == 'subpage' %}
+{{ page_head(site.cities_page.cities_title ~ ' · ' ~ city.name, city.title, city.intro) }}
 {% else %}
 {{ page_head(site.cities_page.cities_title ~ ' · ' ~ city.region, city.title, site.cities_page.city_intro) }}
 {% endif %}
 
 <div class="wrap wrap--mid stack">
-  {% if not is_territory %}<p class="langnote">{{ icon('info') }}<span>{{ site.cities_page.independent_note }}</span></p>{% endif %}
+  {% if not is_territory and city.kind != 'subpage' %}<p class="langnote">{{ icon('info') }}<span>{{ site.cities_page.independent_note }}</span></p>{% endif %}
   {% if city.blocks|length > 1 %}
   <nav class="jump" aria-label="Cursos en aquesta ciutat">
     <p class="jump__h">Tria el teu curs</p>
@@ -73,10 +75,25 @@
       {% if b.course.soon %}<span class="btn btn--soon">{{ cc.soon_label }}</span>{% elif cc.cta_building %}<span class="btn btn--soon">{{ cc.building_label }}</span>{% else %}<a class="btn btn--primary" href="{{ b.course.thinkific }}">Comença el curs gratuït</a>{% endif %}
       <a class="btn btn--outline" href="{{ root }}{{ b.course.slug }}/">Torna al curs</a>
     </p>
-    {% if city.see_also and b.total %}
+    {% set sa = b.see_also or city.see_also %}
+    {% if sa and b.total %}
     <ul class="see-also">
-      {% for s in city.see_also %}<li><a href="{{ root }}{{ s.href }}">{{ icon('arrow') }}<span>{{ s.text }}</span></a></li>{% endfor %}
+      {% for s in sa %}<li><a href="{{ root }}{{ s.href }}">{{ icon('arrow') }}<span>{{ s.text }}</span></a></li>{% endfor %}
     </ul>
+    {% endif %}
+
+    {% if b.notice %}
+    <aside class="note note--care note--part" aria-label="{{ b.notice.title }}">
+      <p class="note__title">{{ icon('lifebuoy') }}{{ b.notice.title }}</p>
+      {% for h in b.notice.html %}<p class="note__p">{{ h }}</p>{% endfor %}
+    </aside>
+    {% endif %}
+    {% if b.filter %}
+    <div class="rfilter" data-rfilter data-empty="{{ b.filter.empty }}" data-count="{{ b.filter.count }}">
+      <label class="rfilter__label" for="rf-{{ b.course.anchor }}">{{ icon('pin') }}{{ b.filter.label }}</label>
+      <input class="rfilter__input" id="rf-{{ b.course.anchor }}" type="search" placeholder="{{ b.filter.placeholder }}" autocomplete="off">
+      <p class="rfilter__status" role="status" aria-live="polite"></p>
+    </div>
     {% endif %}
 
     {# Un bloc amb diverses parts (Barcelona «Quan la vida»): enllaços a cada part #}

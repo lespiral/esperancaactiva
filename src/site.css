@@ -547,3 +547,10 @@ html:not(.js) .placenav__list[data-name]::before { content: attr(data-name); dis
 .nearby__link:hover { color: var(--green-900); }
 .nearby__note { margin: 4px 0 0; font-size: .88rem; color: var(--muted); }
 @media (max-width: 560px) { .nearby__row { flex-direction: column; } .nearby__go { width: 100%; } .nearby__locate { width: 100%; } }
+
+/* Filtre d'entitats */
+.rfilter { margin: 22px 0 0; padding: 14px 16px; background: var(--green-50); border-radius: var(--radius); }
+.rfilter__label { display: flex; align-items: center; gap: 8px; font-weight: 700; margin-bottom: 8px; }
+.rfilter__input { width: 100%; max-width: 420px; padding: 10px 12px; font: inherit; border: 1px solid #bcc9c3; border-radius: 8px; background: #fff; }
+.rfilter__status { margin: 8px 0 0; min-height: 1.2em; font-size: .95rem; }
+.group[hidden], .route[hidden] { display: none; }

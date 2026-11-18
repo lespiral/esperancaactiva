@@ -986,8 +986,9 @@
     },
     {
       "course": "cuidar",
-      "text": "65 rutes circulars curtes, d'1,7 a 2,1 km (uns 20–30 minuts caminant), que surten d'un equipament comunitari del barri i hi tornen: casals de barri, casals de gent gran, centres cívics i biblioteques dels 10 districtes. Tria el teu districte, busca el teu barri i fes-hi el temps de reflexió de cada passa.",
+      "text": "65 rutes circulars curtes, d'1,7 a 2,1 km (uns 20–30 minuts caminant), que surten d'un equipament comunitari del barri i hi tornen: casals de barri, casals de gent gran, centres cívics i biblioteques dels 10 districtes. Tria el teu districte, busca el teu barri i fes-hi el temps de reflexió de cada passa. A part, hi ha 698 rutes més, de 2,1 a 4,3 km, que surten d'entitats del Tercer Sector Social dels 10 districtes: les trobaràs en una pàgina pròpia.",
       "summary": "65 rutes des dels equipaments comunitaris",
+      "see_also": [{"text": "698 rutes més, des d'entitats del Tercer Sector Social: veure-les", "href": "barcelona/taula-tercer-sector/"}],
       "zones": {
         "by": "district"
       },
