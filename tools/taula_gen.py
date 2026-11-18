@@ -43,6 +43,7 @@ for dc, (nom, maps) in DISTRICTES.items():
         for n, c in zip(range(n0, n0 + cnt), codes):
             r = rows[c]; km = float(r["km"]); kms.append(km)
             x = {"n": n, "name": r["entitat"], "info": f"{cat_km(r['km'])} km aprox. · {round(km*12)}–{round(km*15)} min caminant · circular"}
+            if r["adreca"].strip(): x["address"] = r["adreca"].strip()
             if r["descripcio"].strip(): x["desc"] = r["descripcio"].strip()
             x["wikiloc"] = f"https://www.wikiloc.com/wikiloc/view.do?id={r['wikiloc']}"
             routes.append(x)
