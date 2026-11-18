@@ -176,3 +176,25 @@
 </aside>
 {% endif %}
 {%- endmacro %}
+
+{# Cerca per ubicació o adreça: llista de les rutes que comencen més a prop, per curs (src/site.js › data-nearby; dades a assets/rutas.json) #}
+{% macro nearby(L, root, course=None) -%}
+{% set nid = course or 'all' %}
+<section class="nearby" data-nearby data-src="{{ root }}assets/rutas.json" data-root="{{ root }}"{% if course %} data-course="{{ course }}"{% endif %} data-labels='{{ L.js|tojson }}' aria-labelledby="nearby-h-{{ nid }}">
+  <h3 class="nearby__title" id="nearby-h-{{ nid }}">{{ L.title }}</h3>
+  <p class="nearby__intro">{{ L.intro }}</p>
+  <div class="nearby__form">
+    <button class="btn btn--primary nearby__locate" type="button">{{ icon('pin') }}{{ L.locate }}</button>
+    <form class="nearby__addr" role="search">
+      <label class="nearby__label" for="nearby-q-{{ nid }}">{{ L.address_label }}</label>
+      <div class="nearby__row">
+        <input class="nearby__input" id="nearby-q-{{ nid }}" type="search" placeholder="{{ L.address_placeholder }}" autocomplete="street-address" enterkeyhint="search">
+        <button class="btn btn--outline nearby__go" type="submit">{{ L.search }}</button>
+      </div>
+    </form>
+  </div>
+  <p class="nearby__privacy">{{ L.privacy }}</p>
+  <p class="nearby__status" role="status" aria-live="polite"></p>
+  <div class="nearby__results" hidden></div>
+</section>
+{%- endmacro %}

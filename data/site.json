@@ -292,6 +292,33 @@
     "kicker": "Pobles i comarques"
   },
 
+  "nearby": {
+    "title": "Troba les rutes més properes a tu",
+    "intro": "Fes servir la teva ubicació o escriu una adreça i et mostrem, per a cada curs, les rutes que comencen més a prop.",
+    "locate": "Fer servir la meva ubicació",
+    "address_label": "O escriu una adreça",
+    "address_placeholder": "Carrer, número i població",
+    "search": "Cerca",
+    "privacy": "La teva ubicació no surt del dispositiu. Si escrius una adreça, s'envia a Nominatim (OpenStreetMap) per localitzar-la.",
+    "js": {
+      "locating": "Buscant la teva ubicació…",
+      "searching": "Buscant l'adreça…",
+      "denied": "No hem pogut saber on ets. Pots escriure una adreça.",
+      "unsupported": "El teu navegador no permet fer servir la ubicació. Pots escriure una adreça.",
+      "notfound": "No trobem aquesta adreça. Prova amb el carrer i la població.",
+      "network": "No hem pogut cercar l'adreça ara mateix. Torna-ho a provar d'aquí a una estona.",
+      "results": "Rutes que comencen més a prop de {where}",
+      "here": "la teva ubicació",
+      "note": "Les distàncies són en línia recta fins al punt d'inici.",
+      "course_none": "Encara no hi ha rutes d'aquest curs.",
+      "far": "Encara no hi ha rutes d'aquest curs a prop teu: la més propera és a {d}.",
+      "away": "a {d}",
+      "go": "Mira la ruta",
+      "map": "Obre el mapa",
+      "course_go": "Ves al curs"
+    }
+  },
+
   "place_nav": {
     "box_label": "Tria on vols caminar",
     "search_label": "Busca el teu poble o ciutat",

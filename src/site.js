@@ -183,3 +183,104 @@
     search();
   });
 })();
+
+// Cerca per ubicació o adreça: mostra, per curs, les rutes que comencen més a prop (dades a assets/rutas.json)
+(function () {
+  var box = document.querySelector('[data-nearby]');
+  if (!box) return;
+  var L = JSON.parse(box.getAttribute('data-labels'));
+  var root = box.getAttribute('data-root') || '';
+  var only = box.getAttribute('data-course');
+  var locBtn = box.querySelector('.nearby__locate');
+  var form = box.querySelector('.nearby__addr');
+  var input = box.querySelector('.nearby__input');
+  var status = box.querySelector('.nearby__status');
+  var out = box.querySelector('.nearby__results');
+  var lang = document.documentElement.lang || 'es';
+  var data = null, loading = null;
+
+  function load() {
+    if (data) return Promise.resolve(data);
+    if (!loading) loading = fetch(box.getAttribute('data-src')).then(function (r) { if (!r.ok) throw new Error('rutas'); return r.json(); }).then(function (d) { data = d; return d; });
+    return loading;
+  }
+  function km(lat1, lon1, lat2, lon2) {
+    var r = Math.PI / 180, dl = (lat2 - lat1) * r, dn = (lon2 - lon1) * r;
+    var a = Math.sin(dl / 2) * Math.sin(dl / 2) + Math.cos(lat1 * r) * Math.cos(lat2 * r) * Math.sin(dn / 2) * Math.sin(dn / 2);
+    return 12742 * Math.asin(Math.sqrt(a));
+  }
+  function fmt(d) {
+    var t = d < 1 ? (Math.max(10, Math.round(d * 100) * 10)) + ' m' : (d < 10 ? d.toFixed(1) : String(Math.round(d))) + ' km';
+    return t.replace('.', ',');
+  }
+  function say(t) { status.textContent = t || ''; }
+  function busy(on) { box.classList.toggle('is-busy', on); locBtn.disabled = on; }
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+
+  function show(lat, lon, where) {
+    load().then(function (d) {
+      out.textContent = '';
+      var head = el('h4', 'nearby__restitle', L.results.replace('{where}', where));
+      head.tabIndex = -1;
+      out.appendChild(head);
+      d.courses.forEach(function (c, ci) {
+        if (only && c.k !== only) return;
+        var list = [];
+        d.routes.forEach(function (r) { if (r[2] === ci) list.push({ r: r, d: km(lat, lon, r[0], r[1]) }); });
+        if (!list.length) return;
+        list.sort(function (a, b) { return a.d - b.d; });
+        var sec = el('section', 'nearby__course');
+        var h = el('h5', 'nearby__coursename');
+        var ca = el('a', null, c.t); ca.href = root + c.s + '/';
+        h.appendChild(ca); sec.appendChild(h);
+        if (list[0].d > 40) sec.appendChild(el('p', 'nearby__far', L.far.replace('{d}', fmt(list[0].d))));
+        var ul = el('ul', 'nearby__list');
+        list.slice(0, 3).forEach(function (x) {
+          var r = x.r, li = el('li', 'nearby__item');
+          var body = el('div', 'nearby__body');
+          body.appendChild(el('strong', 'nearby__name', r[6]));
+          body.appendChild(el('span', 'nearby__meta', r[4] + ' · ' + L.away.replace('{d}', fmt(x.d))));
+          li.appendChild(body);
+          var links = el('div', 'nearby__links');
+          var a1 = el('a', 'nearby__link', L.go); a1.href = root + r[3] + '/#' + r[5]; links.appendChild(a1);
+          if (r[7]) { var a2 = el('a', 'nearby__link nearby__link--map', L.map); a2.href = 'https://www.google.com/maps/d/viewer?mid=' + encodeURIComponent(r[7]); a2.target = '_blank'; a2.rel = 'noopener'; links.appendChild(a2); }
+          li.appendChild(links);
+          ul.appendChild(li);
+        });
+        sec.appendChild(ul);
+        out.appendChild(sec);
+      });
+      out.appendChild(el('p', 'nearby__note', L.note));
+      out.hidden = false;
+      say('');
+      busy(false);
+      head.focus({ preventScroll: true });
+      if (head.scrollIntoView) head.scrollIntoView({ block: 'nearest' });
+    }).catch(function () { busy(false); say(L.network); });
+  }
+
+  locBtn.addEventListener('click', function () {
+    if (!navigator.geolocation) { say(L.unsupported); return; }
+    busy(true); say(L.locating);
+    load();
+    navigator.geolocation.getCurrentPosition(function (p) {
+      show(p.coords.latitude, p.coords.longitude, L.here);
+    }, function () { busy(false); say(L.denied); }, { enableHighAccuracy: false, timeout: 15000, maximumAge: 300000 });
+  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var q = input.value.trim();
+    if (!q) { input.focus(); return; }
+    busy(true); say(L.searching);
+    load();
+    fetch('https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&countrycodes=es&accept-language=' + encodeURIComponent(lang) + '&q=' + encodeURIComponent(q))
+      .then(function (r) { if (!r.ok) throw new Error('geo'); return r.json(); })
+      .then(function (res) {
+        if (!res || !res.length) { busy(false); say(L.notfound); return; }
+        var where = String(res[0].display_name || q).split(', ').slice(0, 3).join(', ');
+        show(parseFloat(res[0].lat), parseFloat(res[0].lon), where);
+      })
+      .catch(function () { busy(false); say(L.network); });
+  });
+})();

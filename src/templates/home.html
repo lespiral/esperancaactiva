@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "parts.html" import course_cards, faq_item, place_nav %}
+{% from "parts.html" import course_cards, faq_item, place_nav, nearby %}
 {% block content %}
 <section class="hero">
   <div class="wrap hero__in">
@@ -35,6 +35,7 @@
       <p>{{ h.q2_cities }}</p>
     </div>
     {{ place_nav('tria-lloc', place_tree(), root, site.place_nav, cls='placenav--center') }}
+    {{ nearby(site.nearby, root) }}
     <p class="band__after">{{ h.each_course }}</p>
   </div>
 </section>

@@ -360,6 +360,28 @@ for city in cities + territories:
     dup = {i for i in ids if ids.count(i) > 1}
     assert not dup, f"ids repetits a {city['slug']}: {dup}"
 
+
+# Cerca per ubicació: punt d'inici de cada ruta (data/inicis.json, per pàgina i id de ruta) → docs/assets/rutas.json
+INICIS = json.loads((DATA / "inicis.json").read_text(encoding="utf-8")) if (DATA / "inicis.json").exists() else {}
+RUTAS, sense_inici = [], []
+for city in cities + territories:
+    ll = INICIS.get(city["slug"], {})
+    for b in city["blocks"]:
+        ci = list(courses).index(b["course"]["key"])
+        for g in b["groups"]:
+            for s in g.get("sections") or [g]:
+                for r in s["routes"]:
+                    c = ll.get(r["id"])
+                    if not c:
+                        sense_inici.append(f"{city['slug']}#{r['id']}")
+                        continue
+                    lat, lon = c.split(",")
+                    mid = r["map_url"].split("mid=")[-1] if r.get("map_url") else ""
+                    lloc = g["title"] if city["kind"] == "territory" else city["name"]
+                    RUTAS.append([float(lat), float(lon), ci, city["slug"], lloc, r["id"], r["name"], mid])
+if sense_inici:
+    print(f"ATENCIÓ: {len(sense_inici)} rutes sense punt d'inici a data/inicis.json (no surten a la cerca per ubicació): {', '.join(sense_inici[:8])}…")
+
 def cities_with_a(names):
     """«a Barcelona, el Prat de Llobregat, Olot i Vic»: la llista de ciutats per a una frase.
     L'article va en minúscula (el Prat) i «a el» es contrau («al Prat») si la llista en comença amb un."""
@@ -412,6 +434,7 @@ for t in territories:
 render("404.html", "404.html", page_title="Pàgina no trobada", root=BASE, base=BASE)
 
 (OUT / "assets").mkdir(exist_ok=True)
+(OUT / "assets" / "rutas.json").write_text(json.dumps({"courses": [{"k": k, "t": c["title"], "s": c["slug"]} for k, c in courses.items()], "routes": RUTAS}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 shutil.copy(SRC / "site.css", OUT / "assets" / "site.css")
 shutil.copy(SRC / "site.js", OUT / "assets" / "site.js")
 if (SRC / "img").exists():

@@ -1,9 +1,10 @@
 {% extends "base.html" %}
-{% from "parts.html" import page_head, place_nav, before_walk %}
+{% from "parts.html" import page_head, place_nav, before_walk, nearby %}
 {% block content %}
 {{ page_head(None, cp.title, cp.intro) }}
 <div class="wrap pagehead__after">
   {{ place_nav('tria-lloc', place_tree(), root, site.place_nav, cls='placenav--center') }}
+  {{ nearby(site.nearby, root) }}
 </div>
 <section class="band band--tight">
   <div class="wrap">
