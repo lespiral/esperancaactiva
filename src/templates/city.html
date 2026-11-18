@@ -41,18 +41,11 @@
   <a class="pill" href="{{ root }}ciutats/">{{ icon('pin') }}{{ site.cities_page.title }}</a>
 </nav>
 {% else %}
-{{ page_head(site.cities_page.cities_title ~ ' · ' ~ city.region, city.title, city.intro) }}
-
-<nav class="pills wrap" aria-label="Canvia de ciutat">
-  {% for c in site.cities %}
-  {% if c.slug %}<a class="pill" href="{{ root }}{{ c.slug }}/"{% if c.slug == city.slug %} aria-current="page"{% endif %}>{{ icon(c.icon) }}{{ c.name }}</a>
-  {% else %}<span class="pill pill--soon">{{ icon(c.icon) }}{{ c.name }} · properament</span>{% endif %}
-  {% endfor %}
-  <a class="pill" href="{{ root }}ciutats/">{{ icon('pin') }}{{ site.cities_page.title }}</a>
-</nav>
+{{ page_head(site.cities_page.cities_title ~ ' · ' ~ city.region, city.title, site.cities_page.city_intro) }}
 {% endif %}
 
 <div class="wrap wrap--mid stack">
+  {% if not is_territory %}<p class="langnote">{{ icon('info') }}<span>{{ site.cities_page.independent_note }}</span></p>{% endif %}
   {% if city.blocks|length > 1 %}
   <nav class="jump" aria-label="Cursos en aquesta ciutat">
     <p class="jump__h">Tria el teu curs</p>

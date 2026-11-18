@@ -274,6 +274,8 @@
   },
 
   "cities_page": {
+    "city_intro": "Rutes a peu per fer el temps de reflexió de cada passa dels cursos de Camins d'Esperança [Activa]. Cada curs té les seves rutes: tria el teu i camina.",
+    "independent_note": "Rutes independents. Aquestes rutes són una proposta d'Esperança Activa per caminar pel teu compte. No les organitzen ni les recomanen els centres, entitats o equipaments que apareixen com a punt de sortida, ni els seus gestors o administradors: el lloc és només la referència on comença i acaba el recorregut. Abans de sortir, valora l'estat del camí, el temps i les teves forces, i camina al teu ritme.",
     "title": "Ciutats, pobles i comarques",
     "intro": "Caminar per fer el temps de reflexió de cada passa. Hi ha rutes a ciutats i a pobles de moltes comarques: tria on vols caminar i el teu curs.",
     "places_label": "Vés directament al teu poble o ciutat",

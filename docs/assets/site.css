@@ -510,3 +510,7 @@ html:not(.js) .placenav__list[data-name]::before { content: attr(data-name); dis
 .see-also a { display: inline-flex; align-items: flex-start; gap: 8px; font-weight: 700; }
 .see-also .i { flex: none; margin-top: .2em; }
 .band--territories .cards--cities { grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); }
+
+/* Avís de rutes independents, sota el títol de cada pàgina de ciutat (igual que a la .org) */
+.langnote { display: flex; gap: 10px; align-items: flex-start; margin: 0; padding: 14px 18px; border-radius: var(--radius); background: var(--sun-50); border: 1px solid var(--sun-200); color: var(--ink); font-size: .98rem; }
+.langnote .i { color: var(--sun-ink); margin-top: .1em; }
