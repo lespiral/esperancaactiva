@@ -6,6 +6,97 @@
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
   "blocks": [
     {
+      "course": "vida",
+      "origin": "del CAP, de l'hospital, del CSMA i de carrers i passejos de Berga",
+      "credit": "Les rutes 4 a 7 segueixen les rutes saludables del PAFES (Pla d'Activitat Física, Esport i Salut) de Berga.",
+      "text": "7 rutes circulars, de 1,96 a 3,06 km (de 24 a 46 minuts caminant). Les rutes 1 a 3 surten del CAP, de l'hospital i del CSMA de Berga. Les rutes 4 a 7 segueixen les rutes saludables del PAFES (Pla d'Activitat Física, Esport i Salut) de Berga. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
+      "summary": "7 rutes des del CAP, l'hospital, el CSMA i rutes saludables",
+      "notice": {
+        "title": "Traçats orientatius i oficials",
+        "html": [
+          "Els traçats de les rutes 1 a 3 s'han reconstruït sobre OpenStreetMap a partir de la ubicació del punt de sortida: no són traçats oficials. Els de les rutes 4 a 7 són els de les rutes saludables del PAFES. Camina amb atenció al trànsit i a l'estat dels camins.",
+          "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "title": "Les 7 rutes",
+          "maps": [
+            {
+              "mid": "1XmQmYnFC_EK2-LRxX2cadCpp2kdgokM",
+              "title": "Berga · rutes del curs «Quan la vida et desborda»",
+              "ll": "42.1019,1.8473",
+              "z": 14,
+              "label": "7 rutes des del CAP i rutes saludables",
+              "routes": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          ],
+          "routes": [
+            {
+              "n": 1,
+              "name": "CAP Berguedà",
+              "info": "2,41 km · 29–36 min caminant · 40–55 min amb pauses · circular",
+              "address": "Carrer de Quim Serra, 1, Berga",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297130321"
+            },
+            {
+              "n": 2,
+              "name": "Hospital Sant Bernabé",
+              "info": "1,96 km · 24–29 min caminant · 35–50 min amb pauses · circular",
+              "address": "Carretera de Ribes, Berga",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297130571"
+            },
+            {
+              "n": 3,
+              "name": "CSMA Berguedà",
+              "info": "2,45 km · 29–37 min caminant · 40–55 min amb pauses · circular",
+              "address": "Plaça dels Països Catalans, Berga",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297130889"
+            },
+            {
+              "n": 4,
+              "name": "Camí de Sant Bartomeu · la Valldan",
+              "info": "2,81 km · 34–42 min caminant · 45–60 min amb pauses · circular",
+              "address": "Camí de Sant Bartomeu, Berga",
+              "note": "Desnivell d'uns 36 m, entre els 661 i els 697 m d'altitud.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297130961"
+            },
+            {
+              "n": 5,
+              "name": "Teatre Municipal · passeig de les Estaselles",
+              "info": "2,41 km · 29–36 min caminant · 40–55 min amb pauses · circular",
+              "note": "Desnivell d'uns 30 m, entre els 683 i els 713 m d'altitud.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131054"
+            },
+            {
+              "n": 6,
+              "name": "Passeig de la Indústria · la Gran Via",
+              "info": "2,89 km · 35–43 min caminant · 45–65 min amb pauses · circular",
+              "address": "Passeig de la Indústria, Berga",
+              "note": "Desnivell d'uns 34 m, entre els 660 i els 694 m d'altitud.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131196"
+            },
+            {
+              "n": 7,
+              "name": "CAP Berguedà · passeig de la Indústria",
+              "info": "3,06 km · 37–46 min caminant · 45–65 min amb pauses · circular",
+              "address": "Carrer de Quim Serra, 1, Berga",
+              "note": "Desnivell d'uns 45 m, entre els 676 i els 721 m d'altitud.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131310"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "course": "cuidar",
       "origin": "d'entitats del Tercer Sector Social (una ruta per entitat)",
       "text": "7 rutes circulars, de 2,5 a 2,6 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social de Berga i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
