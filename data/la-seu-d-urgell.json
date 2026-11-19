@@ -60,7 +60,8 @@
               "info": "2,06 km · 25–31 min caminant · 35–50 min amb pauses · circular",
               "address": "Passeig de Joan Brudieu, la Seu d'Urgell",
               "note": "Desnivell d'uns 14 m, entre els 674 i els 688 m d'altitud.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297132432"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297132432",
+              "pafes": true
             },
             {
               "n": 4,
@@ -68,7 +69,8 @@
               "info": "2,52 km · 30–38 min caminant · 40–60 min amb pauses · circular",
               "address": "Passeig de Joan Brudieu, la Seu d'Urgell",
               "note": "Desnivell d'uns 19 m, entre els 677 i els 696 m d'altitud.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297132596"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297132596",
+              "pafes": true
             },
             {
               "n": 5,
@@ -76,7 +78,8 @@
               "info": "1,57 km · 19–24 min caminant · 30–45 min amb pauses · circular",
               "address": "Passeig de Joan Brudieu, la Seu d'Urgell",
               "note": "Desnivell d'uns 12 m, entre els 682 i els 694 m d'altitud.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297132750"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297132750",
+              "pafes": true
             },
             {
               "n": 6,
@@ -84,7 +87,8 @@
               "info": "2,99 km · 36–45 min caminant · 45–65 min amb pauses · circular",
               "address": "Passeig de Joan Brudieu, la Seu d'Urgell",
               "note": "Desnivell d'uns 12 m, entre els 676 i els 688 m d'altitud.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297132875"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297132875",
+              "pafes": true
             }
           ]
         }

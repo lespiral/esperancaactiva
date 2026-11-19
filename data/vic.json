@@ -102,7 +102,8 @@
                   "info": "3,98 km · 48–60 min caminant · 60–80 min amb pauses · circular",
                   "address": "Carrer de Sant Jordi, Vic",
                   "note": "Desnivell d'uns 24 m, entre els 464 i els 488 m d'altitud.",
-                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297133130"
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297133130",
+                  "pafes": true
                 },
                 {
                   "n": 30,
@@ -110,7 +111,8 @@
                   "info": "2,94 km · 35–44 min caminant · 45–65 min amb pauses · circular",
                   "address": "Plaça de la Divina Pastora, Vic",
                   "note": "Desnivell d'uns 23 m, entre els 466 i els 489 m d'altitud.",
-                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297133287"
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297133287",
+                  "pafes": true
                 },
                 {
                   "n": 31,
@@ -118,7 +120,8 @@
                   "info": "2,91 km · 35–44 min caminant · 45–65 min amb pauses · circular",
                   "address": "Passeig de la Generalitat, Vic",
                   "note": "Desnivell d'uns 28 m, entre els 465 i els 493 m d'altitud.",
-                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297133377"
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297133377",
+                  "pafes": true
                 },
                 {
                   "n": 32,
@@ -126,7 +129,8 @@
                   "info": "3,77 km · 45–57 min caminant · 55–75 min amb pauses · circular",
                   "address": "Passatge Pla del Remei, 12, Vic",
                   "note": "Desnivell d'uns 24 m, entre els 473 i els 497 m d'altitud.",
-                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297133597"
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297133597",
+                  "pafes": true
                 }
               ]
             }

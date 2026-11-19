@@ -51,7 +51,8 @@
               "info": "3,01 km · 36–45 min caminant · 45–65 min amb pauses · circular",
               "address": "Carrer de Macià Bonaplata, Ripoll",
               "note": "Desnivell d'uns 32 m, entre els 670 i els 702 m d'altitud.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131543"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131543",
+              "pafes": true
             },
             {
               "n": 3,
@@ -59,7 +60,8 @@
               "info": "2,94 km · 35–44 min caminant · 45–65 min amb pauses · circular",
               "address": "Carrer de Macià Bonaplata, Ripoll",
               "note": "Desnivell d'uns 25 m, entre els 658 i els 683 m d'altitud.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131671"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131671",
+              "pafes": true
             },
             {
               "n": 4,
@@ -67,7 +69,8 @@
               "info": "2,25 km · 27–34 min caminant · 35–55 min amb pauses · circular",
               "address": "Carrer del Mestre Guich, Ripoll",
               "note": "Desnivell d'uns 36 m, entre els 669 i els 705 m d'altitud.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131834"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131834",
+              "pafes": true
             },
             {
               "n": 5,
@@ -75,7 +78,8 @@
               "info": "1,62 km · 19–24 min caminant · 30–45 min amb pauses · circular",
               "address": "Carrer del Mestre Guich, Ripoll",
               "note": "Desnivell d'uns 28 m, entre els 670 i els 698 m d'altitud.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131973"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131973",
+              "pafes": true
             }
           ]
         }

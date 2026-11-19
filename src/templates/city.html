@@ -5,7 +5,7 @@
 <li class="route" id="{{ r.id }}">
   <span class="route__n" aria-hidden="true">{{ r.n }}</span>
   <div class="route__body">
-    <h{{ hl }} class="route__name"><span class="sr">Ruta {{ r.n }}: </span>{{ r.name }}</h{{ hl }}>
+    <h{{ hl }} class="route__name"><span class="sr">Ruta {{ r.n }}: </span>{% if r.pafes %}<span class="route__tag" title="Ruta saludable del programa PAFES (Pla d&#39;Activitat Física, Esport i Salut)">Ruta PAFES</span>{% endif %}{{ r.name }}</h{{ hl }}>
     {% if r.start %}<p class="route__start">{{ r.start }}</p>{% endif %}
     <p class="route__info">{{ r.info }}</p>
     {% if r.address %}<p class="route__addr">{{ icon('pin') }}<span{% if '[' in r.address %} class="pending"{% endif %}>{{ r.address }}</span></p>{% endif %}

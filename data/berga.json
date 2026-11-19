@@ -67,14 +67,16 @@
               "info": "2,81 km · 34–42 min caminant · 45–60 min amb pauses · circular",
               "address": "Camí de Sant Bartomeu, Berga",
               "note": "Desnivell d'uns 36 m, entre els 661 i els 697 m d'altitud.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297130961"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297130961",
+              "pafes": true
             },
             {
               "n": 5,
               "name": "Teatre Municipal · passeig de les Estaselles",
               "info": "2,41 km · 29–36 min caminant · 40–55 min amb pauses · circular",
               "note": "Desnivell d'uns 30 m, entre els 683 i els 713 m d'altitud.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131054"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131054",
+              "pafes": true
             },
             {
               "n": 6,
@@ -82,7 +84,8 @@
               "info": "2,89 km · 35–43 min caminant · 45–65 min amb pauses · circular",
               "address": "Passeig de la Indústria, Berga",
               "note": "Desnivell d'uns 34 m, entre els 660 i els 694 m d'altitud.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131196"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131196",
+              "pafes": true
             },
             {
               "n": 7,
@@ -90,7 +93,8 @@
               "info": "3,06 km · 37–46 min caminant · 45–65 min amb pauses · circular",
               "address": "Carrer de Quim Serra, 1, Berga",
               "note": "Desnivell d'uns 45 m, entre els 676 i els 721 m d'altitud.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131310"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131310",
+              "pafes": true
             }
           ]
         }

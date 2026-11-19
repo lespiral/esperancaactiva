@@ -587,3 +587,6 @@ strong.mk { color: var(--green-900); font-weight: 700; background: linear-gradie
 .footer__sister { margin-top: .9em; }
 .footer__h a { color: inherit; text-decoration: none; }
 .footer__h a:hover, .footer__h a:focus-visible { text-decoration: underline; }
+
+/* Etiqueta de les rutes que segueixen el programa PAFES */
+.route__tag { display: block; width: fit-content; margin: 0 0 4px; padding: 2px 9px; border-radius: 999px; background: #E2C668; color: #1A4D40; font: 700 .68rem/1.5 var(--font-head); letter-spacing: .06em; text-transform: uppercase; }
