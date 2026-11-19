@@ -148,8 +148,8 @@
     },
     {
       "course": "cuidar",
-      "text": "Hi ha dos tipus de rutes: 16 rutes curtes, d'1,8 a 2 km, que surten d'equipaments comunitaris, i 19 rutes més llargues, de 3,7 a 4,2 km, que surten d'entitats del Tercer Sector Social. Totes són circulars i tornen al punt de sortida.",
-      "summary": "35 rutes des d'equipaments i entitats socials",
+      "text": "Hi ha tres tipus de rutes: 16 rutes curtes, d'1,8 a 2 km, que surten d'equipaments comunitaris; 1 ruta d'1,2 km, que surt d'un centre cívic i cultural; i 19 rutes més llargues, de 3,7 a 4,2 km, que surten d'entitats del Tercer Sector Social. Totes són circulars i tornen al punt de sortida.",
+      "summary": "36 rutes des d'equipaments, biblioteques, centres i entitats socials",
       "parts": [
         {
           "id": "equipaments",
@@ -540,6 +540,45 @@
                   "address": "Carrer del Dr. Junyent, 3, Vic",
                   "desc": "Osona contra el càncer és una associació sense ànim de lucre fundada a Osona l'abril de 1998 per ajudar les persones afectades de càncer i els seus familiars. Ofereix serveis d'ajuda i suport als malalts i fa prevenció i recerca.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-20-passejada-urbana-des-de-osona-contra-el-cancer-296951159"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "biblioteques-i-centres",
+          "title": "Rutes des de biblioteques i centres cívics i culturals",
+          "nav": "Biblioteques i centres",
+          "text": "1 ruta circular d'1,24 km (de 15 a 19 minuts caminant), que surt d'un centre cívic i cultural de Vic i hi torna. És un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Camina-hi amb calma.",
+          "notice": {
+            "title": "Traçats orientatius",
+            "html": [
+              "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada equipament: no són traçats oficials. Camina amb atenció al trànsit i a l'estat dels camins.",
+              "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+            ]
+          },
+          "groups": [
+            {
+              "id": "biblioteques-i-centres-rutes",
+              "title": "La ruta",
+              "maps": [
+                {
+                  "mid": "1jZ8jJ5wiPsmKa2mWo0g7VCS7jZiVaHU",
+                  "title": "Vic · biblioteques i centres cívics i culturals",
+                  "ll": "41.9303,2.2533",
+                  "z": 14,
+                  "label": "1 ruta des d'un centre cívic i cultural",
+                  "routes": [
+                    36
+                  ]
+                }
+              ],
+              "routes": [
+                {
+                  "n": 36,
+                  "name": "Casino de Vic",
+                  "info": "1,24 km · 15–19 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297216541"
                 }
               ]
             }

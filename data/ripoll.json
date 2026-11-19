@@ -94,83 +94,149 @@
     },
     {
       "course": "cuidar",
-      "text": "6 rutes circulars, de 2,4 a 2,6 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social de Ripoll i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
-      "summary": "6 rutes des d'entitats del Tercer Sector Social",
-      "notice": {
-        "title": "Traçats orientatius",
-        "html": [
-          "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada entitat: no són traçats oficials. Camina amb atenció al trànsit i a l'estat dels camins.",
-          "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
-        ]
-      },
-      "groups": [
+      "text": "Hi ha dos tipus de rutes: 6 rutes, de 2,4 a 2,6 km, que surten d'entitats del Tercer Sector Social, i 3 rutes més curtes, de 1,21 a 1,43 km, que surten de biblioteques i centres cívics i culturals. Totes són circulars i tornen al punt de sortida.",
+      "summary": "9 rutes des d'entitats del Tercer Sector Social, biblioteques i centres",
+      "parts": [
         {
-          "title": "Les 6 rutes",
-          "maps": [
+          "id": "tercer-sector",
+          "title": "Rutes des d'entitats del Tercer Sector Social",
+          "nav": "Entitats del Tercer Sector Social",
+          "text": "6 rutes circulars, de 2,4 a 2,6 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social de Ripoll i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
+          "notice": {
+            "title": "Traçats orientatius",
+            "html": [
+              "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada entitat: no són traçats oficials. Camina amb atenció al trànsit i a l'estat dels camins.",
+              "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+            ]
+          },
+          "groups": [
             {
-              "mid": "1zHC0MZLMFQJSoASvPHkelTg_h0WmKO8",
-              "title": "Ripoll · entitats del Tercer Sector Social",
-              "ll": "42.2026,2.1962",
-              "z": 14,
-              "label": "6 rutes des d'entitats del Tercer Sector Social",
+              "title": "Les 6 rutes",
+              "maps": [
+                {
+                  "mid": "1zHC0MZLMFQJSoASvPHkelTg_h0WmKO8",
+                  "title": "Ripoll · entitats del Tercer Sector Social",
+                  "ll": "42.2026,2.1962",
+                  "z": 14,
+                  "label": "6 rutes des d'entitats del Tercer Sector Social",
+                  "routes": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                  ]
+                }
+              ],
               "routes": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
+                {
+                  "n": 1,
+                  "name": "Associació de Gent Gran de Ripoll - Casal Cívic Ripoll",
+                  "info": "2,5 km aprox. · 30–37 min caminant · circular",
+                  "address": "Carrer Doctor Raguer, 20, Ripoll",
+                  "desc": "Entitat que treballa amb gent gran en l'àmbit de l'atenció diürna i els centres de dia.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107245"
+                },
+                {
+                  "n": 2,
+                  "name": "Creu Roja Oficina Local Ripoll",
+                  "info": "2,5 km aprox. · 30–37 min caminant · circular",
+                  "address": "Carretera C-17, km 93, Ripoll",
+                  "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107268"
+                },
+                {
+                  "n": 3,
+                  "name": "Càritas Ripoll",
+                  "info": "2,4 km aprox. · 29–36 min caminant · circular",
+                  "address": "Carrer Doctor Raguer, 12, Ripoll",
+                  "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107289"
+                },
+                {
+                  "n": 4,
+                  "name": "Fundació Guifré",
+                  "info": "2,4 km aprox. · 29–36 min caminant · circular",
+                  "address": "Avinguda Comte Guifré, 27, Ripoll",
+                  "desc": "Entitat que treballa amb gent gran en l'àmbit de l'atenció diürna i els centres de dia.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107306"
+                },
+                {
+                  "n": 5,
+                  "name": "Fundació Privada MAP",
+                  "info": "2,4 km aprox. · 29–36 min caminant · circular",
+                  "address": "Carrer Dalí, 6-8, Ripoll",
+                  "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció psicosocial i la rehabilitació.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107318"
+                },
+                {
+                  "n": 6,
+                  "name": "Llar Residència Ca l'Ametller",
+                  "info": "2,6 km aprox. · 31–39 min caminant · circular",
+                  "address": "Carrer Dalí, 6-8, Ripoll",
+                  "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció diürna i els centres de dia.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107331"
+                }
               ]
             }
-          ],
-          "routes": [
+          ]
+        },
+        {
+          "id": "biblioteques-i-centres",
+          "title": "Rutes des de biblioteques i centres cívics i culturals",
+          "nav": "Biblioteques i centres",
+          "text": "3 rutes circulars, de 1,21 a 1,43 km (de 15 a 21 minuts caminant), que surten d'una biblioteca o d'un centre cívic i cultural de Ripoll i hi tornen: una ruta per equipament. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'equipament que et quedi més a prop i camina-hi amb calma.",
+          "notice": {
+            "title": "Traçats orientatius",
+            "html": [
+              "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada equipament: no són traçats oficials. Camina amb atenció al trànsit i a l'estat dels camins.",
+              "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+            ]
+          },
+          "groups": [
             {
-              "n": 1,
-              "name": "Associació de Gent Gran de Ripoll - Casal Cívic Ripoll",
-              "info": "2,5 km aprox. · 30–37 min caminant · circular",
-              "address": "Carrer Doctor Raguer, 20, Ripoll",
-              "desc": "Entitat que treballa amb gent gran en l'àmbit de l'atenció diürna i els centres de dia.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107245"
-            },
-            {
-              "n": 2,
-              "name": "Creu Roja Oficina Local Ripoll",
-              "info": "2,5 km aprox. · 30–37 min caminant · circular",
-              "address": "Carretera C-17, km 93, Ripoll",
-              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107268"
-            },
-            {
-              "n": 3,
-              "name": "Càritas Ripoll",
-              "info": "2,4 km aprox. · 29–36 min caminant · circular",
-              "address": "Carrer Doctor Raguer, 12, Ripoll",
-              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107289"
-            },
-            {
-              "n": 4,
-              "name": "Fundació Guifré",
-              "info": "2,4 km aprox. · 29–36 min caminant · circular",
-              "address": "Avinguda Comte Guifré, 27, Ripoll",
-              "desc": "Entitat que treballa amb gent gran en l'àmbit de l'atenció diürna i els centres de dia.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107306"
-            },
-            {
-              "n": 5,
-              "name": "Fundació Privada MAP",
-              "info": "2,4 km aprox. · 29–36 min caminant · circular",
-              "address": "Carrer Dalí, 6-8, Ripoll",
-              "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció psicosocial i la rehabilitació.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107318"
-            },
-            {
-              "n": 6,
-              "name": "Llar Residència Ca l'Ametller",
-              "info": "2,6 km aprox. · 31–39 min caminant · circular",
-              "address": "Carrer Dalí, 6-8, Ripoll",
-              "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció diürna i els centres de dia.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107331"
+              "id": "biblioteques-i-centres-rutes",
+              "title": "Les 3 rutes",
+              "maps": [
+                {
+                  "mid": "1_pk-FTwvRoVTeEV15oa83zf496Wl4zw",
+                  "title": "Ripoll · biblioteques i centres cívics i culturals",
+                  "ll": "42.1984,2.1918",
+                  "z": 14,
+                  "label": "3 rutes des de biblioteques i centres",
+                  "routes": [
+                    7,
+                    8,
+                    9
+                  ]
+                }
+              ],
+              "routes": [
+                {
+                  "n": 7,
+                  "name": "Biblioteca Lambert Mata",
+                  "info": "1,28 km · 15–19 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Plaça de l'1 d'Octubre, 1, Ripoll",
+                  "note": "Una part del recorregut és per un passatge estret (el passatge de la sèquia Molinar, que a OpenStreetMap figura com a passatge) i per la carretera de Ribes, amb més trànsit.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297216237"
+                },
+                {
+                  "n": 8,
+                  "name": "Casal Cívic i Comunitari de Ripoll – La Devesa del Pla",
+                  "info": "1,43 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "note": "El recorregut creua o voreja la carretera de Barcelona, amb més trànsit, i passa pel pont de Ripoll.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297216266"
+                },
+                {
+                  "n": 9,
+                  "name": "Casal Cívic i Comunitari de Ripoll – Centre",
+                  "info": "1,21 km · 15–18 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer del Doctor Raguer, 20, Ripoll",
+                  "note": "El recorregut creua el pont d'Olot i voreja la carretera de Sant Joan, amb més trànsit.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297216290"
+                }
+              ]
             }
           ]
         }

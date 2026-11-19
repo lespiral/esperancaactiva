@@ -172,92 +172,161 @@
     },
     {
       "course": "cuidar",
-      "text": "7 rutes circulars, d'uns 2,5 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social d'Olot i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
-      "summary": "7 rutes des d'entitats del Tercer Sector Social",
-      "notice": {
-        "title": "Traçats orientatius",
-        "html": [
-          "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada entitat: no són traçats oficials. Camina amb atenció al trànsit i a l'estat dels camins.",
-          "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
-        ]
-      },
-      "groups": [
+      "text": "Hi ha dos tipus de rutes: 7 rutes, de 2,4 a 2,6 km, que surten d'entitats del Tercer Sector Social, i 4 rutes més curtes, de 1,17 a 1,36 km, que surten de biblioteques i centres cívics i culturals. Totes són circulars i tornen al punt de sortida.",
+      "summary": "11 rutes des d'entitats del Tercer Sector Social, biblioteques i centres",
+      "parts": [
         {
-          "title": "Les 7 rutes",
-          "maps": [
+          "id": "tercer-sector",
+          "title": "Rutes des d'entitats del Tercer Sector Social",
+          "nav": "Entitats del Tercer Sector Social",
+          "text": "7 rutes circulars, d'uns 2,5 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social d'Olot i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
+          "notice": {
+            "title": "Traçats orientatius",
+            "html": [
+              "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada entitat: no són traçats oficials. Camina amb atenció al trànsit i a l'estat dels camins.",
+              "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+            ]
+          },
+          "groups": [
             {
-              "mid": "1y1Ep2kCk2pB1clUc_4cRfVaOWKl5VFg",
-              "title": "Olot · entitats del Tercer Sector Social",
-              "ll": "42.1809,2.4869",
-              "z": 14,
-              "label": "7 rutes des d'entitats del Tercer Sector Social",
+              "title": "Les 7 rutes",
+              "maps": [
+                {
+                  "mid": "1y1Ep2kCk2pB1clUc_4cRfVaOWKl5VFg",
+                  "title": "Olot · entitats del Tercer Sector Social",
+                  "ll": "42.1809,2.4869",
+                  "z": 14,
+                  "label": "7 rutes des d'entitats del Tercer Sector Social",
+                  "routes": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                  ]
+                }
+              ],
               "routes": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                7
+                {
+                  "n": 1,
+                  "name": "AEiG Nostra Dona del Tura",
+                  "info": "2,5 km aprox. · 30–38 min caminant · circular",
+                  "address": "Carrer Molí d'en Climent, s/n, Olot",
+                  "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107024"
+                },
+                {
+                  "n": 2,
+                  "name": "Associació El Paraigua",
+                  "info": "2,5 km aprox. · 30–38 min caminant · circular",
+                  "address": "Carrer Cistell, 9, Olot",
+                  "desc": "Entitat que treballa amb persones amb problemes de salut mental en l'àmbit de l'atenció psicosocial i la rehabilitació.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107060"
+                },
+                {
+                  "n": 3,
+                  "name": "Associació de Gent Gran d'Olot",
+                  "info": "2,5 km aprox. · 30–38 min caminant · circular",
+                  "address": "Carrer Bisbe Lorenzana, 2, Olot",
+                  "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107074"
+                },
+                {
+                  "n": 4,
+                  "name": "Creu Roja Oficina Comarcal La Garrotxa",
+                  "info": "2,5 km aprox. · 30–37 min caminant · circular",
+                  "address": "Carrer Hondures, 5, Olot",
+                  "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107125"
+                },
+                {
+                  "n": 5,
+                  "name": "Càritas Garrotxa",
+                  "info": "2,5 km aprox. · 30–37 min caminant · circular",
+                  "address": "Carrer Ronda Paraires, 1, Olot",
+                  "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107132"
+                },
+                {
+                  "n": 6,
+                  "name": "INTEGRA, Associació per la inclusió de col·lectius en risc",
+                  "info": "2,5 km aprox. · 30–38 min caminant · circular",
+                  "address": "Carrer Serra i Ginesta, 14, Olot",
+                  "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció diürna i els centres de dia.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107161"
+                },
+                {
+                  "n": 7,
+                  "name": "L'Encant EI ADAD",
+                  "info": "2,5 km aprox. · 30–37 min caminant · circular",
+                  "address": "Carrer Fluvià, 18-20, Olot",
+                  "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la inserció laboral.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107204"
+                }
               ]
             }
-          ],
-          "routes": [
+          ]
+        },
+        {
+          "id": "biblioteques-i-centres",
+          "title": "Rutes des de biblioteques i centres cívics i culturals",
+          "nav": "Biblioteques i centres",
+          "text": "4 rutes circulars, de 1,17 a 1,36 km (de 14 a 20 minuts caminant), que surten d'una biblioteca o d'un centre cívic i cultural d'Olot i hi tornen: una ruta per equipament. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'equipament que et quedi més a prop i camina-hi amb calma.",
+          "notice": {
+            "title": "Traçats orientatius",
+            "html": [
+              "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada equipament: no són traçats oficials. Camina amb atenció al trànsit i a l'estat dels camins.",
+              "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+            ]
+          },
+          "groups": [
             {
-              "n": 1,
-              "name": "AEiG Nostra Dona del Tura",
-              "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "address": "Carrer Molí d'en Climent, s/n, Olot",
-              "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107024"
-            },
-            {
-              "n": 2,
-              "name": "Associació El Paraigua",
-              "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "address": "Carrer Cistell, 9, Olot",
-              "desc": "Entitat que treballa amb persones amb problemes de salut mental en l'àmbit de l'atenció psicosocial i la rehabilitació.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107060"
-            },
-            {
-              "n": 3,
-              "name": "Associació de Gent Gran d'Olot",
-              "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "address": "Carrer Bisbe Lorenzana, 2, Olot",
-              "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107074"
-            },
-            {
-              "n": 4,
-              "name": "Creu Roja Oficina Comarcal La Garrotxa",
-              "info": "2,5 km aprox. · 30–37 min caminant · circular",
-              "address": "Carrer Hondures, 5, Olot",
-              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107125"
-            },
-            {
-              "n": 5,
-              "name": "Càritas Garrotxa",
-              "info": "2,5 km aprox. · 30–37 min caminant · circular",
-              "address": "Carrer Ronda Paraires, 1, Olot",
-              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107132"
-            },
-            {
-              "n": 6,
-              "name": "INTEGRA, Associació per la inclusió de col·lectius en risc",
-              "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "address": "Carrer Serra i Ginesta, 14, Olot",
-              "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció diürna i els centres de dia.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107161"
-            },
-            {
-              "n": 7,
-              "name": "L'Encant EI ADAD",
-              "info": "2,5 km aprox. · 30–37 min caminant · circular",
-              "address": "Carrer Fluvià, 18-20, Olot",
-              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la inserció laboral.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107204"
+              "id": "biblioteques-i-centres-rutes",
+              "title": "Les 4 rutes",
+              "maps": [
+                {
+                  "mid": "1prNciU5HmnasbsXxDXvHlWudcav7J34",
+                  "title": "Olot · biblioteques i centres cívics i culturals",
+                  "ll": "42.1819,2.4889",
+                  "z": 14,
+                  "label": "4 rutes des de biblioteques i centres",
+                  "routes": [
+                    8,
+                    9,
+                    10,
+                    11
+                  ]
+                }
+              ],
+              "routes": [
+                {
+                  "n": 8,
+                  "name": "Biblioteca Marià Vayreda",
+                  "info": "1,35 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer del Pati, 2, Olot",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297216403"
+                },
+                {
+                  "n": 9,
+                  "name": "Casal Cívic i Comunitari d'Olot",
+                  "info": "1,29 km · 15–19 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297216414"
+                },
+                {
+                  "n": 10,
+                  "name": "Centre Cultural Els Catòlics",
+                  "info": "1,17 km · 14–18 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297216450"
+                },
+                {
+                  "n": 11,
+                  "name": "Casino Olotí",
+                  "info": "1,36 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297216482"
+                }
+              ]
             }
           ]
         }

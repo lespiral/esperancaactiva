@@ -103,146 +103,216 @@
     },
     {
       "course": "cuidar",
-      "text": "12 rutes circulars, de 2,4 a 2,5 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social de la Seu d'Urgell i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
-      "summary": "12 rutes des d'entitats del Tercer Sector Social",
-      "notice": {
-        "title": "Traçats orientatius",
-        "html": [
-          "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada entitat: no són traçats oficials. Camina amb atenció al trànsit i a l'estat dels camins.",
-          "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
-        ]
-      },
-      "groups": [
+      "text": "Hi ha dos tipus de rutes: 12 rutes, de 2,4 a 2,6 km, que surten d'entitats del Tercer Sector Social, i 4 rutes més curtes, de 1,15 a 1,36 km, que surten de biblioteques i centres cívics i culturals. Totes són circulars i tornen al punt de sortida.",
+      "summary": "16 rutes des d'entitats del Tercer Sector Social, biblioteques i centres",
+      "parts": [
         {
-          "title": "Les 12 rutes",
-          "maps": [
+          "id": "tercer-sector",
+          "title": "Rutes des d'entitats del Tercer Sector Social",
+          "nav": "Entitats del Tercer Sector Social",
+          "text": "12 rutes circulars, de 2,4 a 2,5 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social de la Seu d'Urgell i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
+          "notice": {
+            "title": "Traçats orientatius",
+            "html": [
+              "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada entitat: no són traçats oficials. Camina amb atenció al trànsit i a l'estat dels camins.",
+              "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+            ]
+          },
+          "groups": [
             {
-              "mid": "1PWP6nlux9IPCir6tinzLg8O0jW0jUGo",
-              "title": "La Seu d'Urgell · entitats del Tercer Sector Social (1/2)",
-              "ll": "42.3547,1.4601",
-              "z": 14,
-              "label": "Rutes 1 a 6",
+              "title": "Les 12 rutes",
+              "maps": [
+                {
+                  "mid": "1PWP6nlux9IPCir6tinzLg8O0jW0jUGo",
+                  "title": "La Seu d'Urgell · entitats del Tercer Sector Social (1/2)",
+                  "ll": "42.3547,1.4601",
+                  "z": 14,
+                  "label": "Rutes 1 a 6",
+                  "routes": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                  ]
+                },
+                {
+                  "mid": "1xq8OP3A4-BL5oeJjLDu___G8JarAEMg",
+                  "title": "La Seu d'Urgell · entitats del Tercer Sector Social (2/2)",
+                  "ll": "42.3571,1.4589",
+                  "z": 14,
+                  "label": "Rutes 7 a 12",
+                  "routes": [
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12
+                  ]
+                }
+              ],
               "routes": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
-              ]
-            },
-            {
-              "mid": "1xq8OP3A4-BL5oeJjLDu___G8JarAEMg",
-              "title": "La Seu d'Urgell · entitats del Tercer Sector Social (2/2)",
-              "ll": "42.3571,1.4589",
-              "z": 14,
-              "label": "Rutes 7 a 12",
-              "routes": [
-                7,
-                8,
-                9,
-                10,
-                11,
-                12
+                {
+                  "n": 1,
+                  "name": "AEiG Urgellenc",
+                  "info": "2,5 km aprox. · 30–37 min caminant · circular",
+                  "address": "Carrer d'Albert Vives, 12, la Seu d'Urgell",
+                  "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107340"
+                },
+                {
+                  "n": 2,
+                  "name": "Associació de Donants de Sang de l'Alt Urgell",
+                  "info": "2,5 km aprox. · 30–38 min caminant · circular",
+                  "address": "Passeig Joan Brudieu, 10, la Seu d'Urgell",
+                  "desc": "Entitat sense atenció directa que treballa en l'àmbit de la sensibilització.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107368"
+                },
+                {
+                  "n": 3,
+                  "name": "Associació de familiars i amics dels malalts mentals de l'Alt Urgell",
+                  "info": "2,4 km aprox. · 29–36 min caminant · circular",
+                  "address": "Passeig Joan Brudieu, 10-14, la Seu d'Urgell",
+                  "desc": "Entitat que treballa amb persones amb problemes de salut mental en l'àmbit de l'atenció psicosocial i la rehabilitació.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107427"
+                },
+                {
+                  "n": 4,
+                  "name": "Centre d'Esplai TxT",
+                  "info": "2,5 km aprox. · 30–38 min caminant · circular",
+                  "address": "Carrer Pati Palau, 1, la Seu d'Urgell",
+                  "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107439"
+                },
+                {
+                  "n": 5,
+                  "name": "Creu Roja Oficina Comarcal Alt Urgell",
+                  "info": "2,5 km aprox. · 30–37 min caminant · circular",
+                  "address": "Camí del Parc del Segre, s/n, la Seu d'Urgell",
+                  "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107464"
+                },
+                {
+                  "n": 6,
+                  "name": "Càritas Centre Sant Ot",
+                  "info": "2,5 km aprox. · 30–38 min caminant · circular",
+                  "address": "Carrer Bisbe Guitart, 27-29, la Seu d'Urgell",
+                  "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107489"
+                },
+                {
+                  "n": 7,
+                  "name": "Càritas Diocesana d'Urgell",
+                  "info": "2,5 km aprox. · 30–38 min caminant · circular",
+                  "address": "Carrer Bisbe Guitart, 27, la Seu d'Urgell",
+                  "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107521"
+                },
+                {
+                  "n": 8,
+                  "name": "Càritas Parroquial La Seu d'Urgell",
+                  "info": "2,5 km aprox. · 29–37 min caminant · circular",
+                  "address": "Carrer Mare Janer, 55, la Seu d'Urgell",
+                  "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107533"
+                },
+                {
+                  "n": 9,
+                  "name": "Esplai Gent Gran Seu d'Urgell",
+                  "info": "2,5 km aprox. · 30–38 min caminant · circular",
+                  "address": "Plaça Pati del Palau, s/n, la Seu d'Urgell",
+                  "desc": "Entitat que treballa amb gent gran en l'àmbit de l'educació en el lleure i els serveis educatius.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107550"
+                },
+                {
+                  "n": 10,
+                  "name": "Fundació Privada Integra Pirineus",
+                  "info": "2,5 km aprox. · 30–38 min caminant · circular",
+                  "address": "Passeig Joan Brudieu, 15, la Seu d'Urgell",
+                  "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la inserció laboral.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107567"
+                },
+                {
+                  "n": 11,
+                  "name": "L'Associació Claror – Alt Urgell",
+                  "info": "2,5 km aprox. · 30–38 min caminant · circular",
+                  "address": "Avinguda Valira, 19, la Seu d'Urgell",
+                  "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció psicosocial i la rehabilitació.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107590"
+                },
+                {
+                  "n": 12,
+                  "name": "Nou grapats, Empresa d'Inserció, S.L.U",
+                  "info": "2,5 km aprox. · 30–38 min caminant · circular",
+                  "address": "Avinguda Guillem Graell, 24, la Seu d'Urgell",
+                  "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la inserció laboral.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107606"
+                }
               ]
             }
-          ],
-          "routes": [
+          ]
+        },
+        {
+          "id": "biblioteques-i-centres",
+          "title": "Rutes des de biblioteques i centres cívics i culturals",
+          "nav": "Biblioteques i centres",
+          "text": "4 rutes circulars, de 1,15 a 1,36 km (de 14 a 20 minuts caminant), que surten d'una biblioteca o d'un centre cívic i cultural de la Seu d'Urgell i hi tornen: una ruta per equipament. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'equipament que et quedi més a prop i camina-hi amb calma.",
+          "notice": {
+            "title": "Traçats orientatius",
+            "html": [
+              "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada equipament: no són traçats oficials. Camina amb atenció al trànsit i a l'estat dels camins.",
+              "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+            ]
+          },
+          "groups": [
             {
-              "n": 1,
-              "name": "AEiG Urgellenc",
-              "info": "2,5 km aprox. · 30–37 min caminant · circular",
-              "address": "Carrer d'Albert Vives, 12, la Seu d'Urgell",
-              "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107340"
-            },
-            {
-              "n": 2,
-              "name": "Associació de Donants de Sang de l'Alt Urgell",
-              "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "address": "Passeig Joan Brudieu, 10, la Seu d'Urgell",
-              "desc": "Entitat sense atenció directa que treballa en l'àmbit de la sensibilització.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107368"
-            },
-            {
-              "n": 3,
-              "name": "Associació de familiars i amics dels malalts mentals de l'Alt Urgell",
-              "info": "2,4 km aprox. · 29–36 min caminant · circular",
-              "address": "Passeig Joan Brudieu, 10-14, la Seu d'Urgell",
-              "desc": "Entitat que treballa amb persones amb problemes de salut mental en l'àmbit de l'atenció psicosocial i la rehabilitació.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107427"
-            },
-            {
-              "n": 4,
-              "name": "Centre d'Esplai TxT",
-              "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "address": "Carrer Pati Palau, 1, la Seu d'Urgell",
-              "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107439"
-            },
-            {
-              "n": 5,
-              "name": "Creu Roja Oficina Comarcal Alt Urgell",
-              "info": "2,5 km aprox. · 30–37 min caminant · circular",
-              "address": "Camí del Parc del Segre, s/n, la Seu d'Urgell",
-              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107464"
-            },
-            {
-              "n": 6,
-              "name": "Càritas Centre Sant Ot",
-              "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "address": "Carrer Bisbe Guitart, 27-29, la Seu d'Urgell",
-              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107489"
-            },
-            {
-              "n": 7,
-              "name": "Càritas Diocesana d'Urgell",
-              "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "address": "Carrer Bisbe Guitart, 27, la Seu d'Urgell",
-              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107521"
-            },
-            {
-              "n": 8,
-              "name": "Càritas Parroquial La Seu d'Urgell",
-              "info": "2,5 km aprox. · 29–37 min caminant · circular",
-              "address": "Carrer Mare Janer, 55, la Seu d'Urgell",
-              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107533"
-            },
-            {
-              "n": 9,
-              "name": "Esplai Gent Gran Seu d'Urgell",
-              "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "address": "Plaça Pati del Palau, s/n, la Seu d'Urgell",
-              "desc": "Entitat que treballa amb gent gran en l'àmbit de l'educació en el lleure i els serveis educatius.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107550"
-            },
-            {
-              "n": 10,
-              "name": "Fundació Privada Integra Pirineus",
-              "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "address": "Passeig Joan Brudieu, 15, la Seu d'Urgell",
-              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la inserció laboral.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107567"
-            },
-            {
-              "n": 11,
-              "name": "L'Associació Claror – Alt Urgell",
-              "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "address": "Avinguda Valira, 19, la Seu d'Urgell",
-              "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció psicosocial i la rehabilitació.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107590"
-            },
-            {
-              "n": 12,
-              "name": "Nou grapats, Empresa d'Inserció, S.L.U",
-              "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "address": "Avinguda Guillem Graell, 24, la Seu d'Urgell",
-              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la inserció laboral.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107606"
+              "id": "biblioteques-i-centres-rutes",
+              "title": "Les 4 rutes",
+              "maps": [
+                {
+                  "mid": "1FIqJw2JrT7P1_wqNNBq17R5sVCIAUC0",
+                  "title": "La Seu d'Urgell · biblioteques i centres cívics i culturals",
+                  "ll": "42.3580,1.4607",
+                  "z": 14,
+                  "label": "4 rutes des de biblioteques i centres",
+                  "routes": [
+                    13,
+                    14,
+                    15,
+                    16
+                  ]
+                }
+              ],
+              "routes": [
+                {
+                  "n": 13,
+                  "name": "Biblioteca Sant Agustí",
+                  "info": "1,36 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer de Lluís de Sabater, 10-14, la Seu d'Urgell",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297216321"
+                },
+                {
+                  "n": 14,
+                  "name": "Casal Cívic i Comunitari de la Seu d'Urgell",
+                  "info": "1,32 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "note": "Un tram del recorregut és pel camí del Clos, que pot no estar asfaltat.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297216339"
+                },
+                {
+                  "n": 15,
+                  "name": "Sala de Cultura Sant Domènec",
+                  "info": "1,35 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297216353"
+                },
+                {
+                  "n": 16,
+                  "name": "Centre Cultural Les Monges",
+                  "info": "1,15 km · 14–17 min caminant · 25–35 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297216363"
+                }
+              ]
             }
           ]
         }
