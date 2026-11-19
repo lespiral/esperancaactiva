@@ -189,35 +189,40 @@
               "n": 1,
               "name": "AEiG Nostra Dona del Tura",
               "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "desc": "AEiG Nostra Dona del Tura és una entitat que treballa amb infants en l’àmbit de l’educació en el lleure i els serveis educatius. Té seu a Olot.",
+              "address": "Carrer Molí d'en Climent, s/n, Olot",
+              "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107024"
             },
             {
               "n": 2,
               "name": "Associació El Paraigua",
               "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "desc": "Associació El Paraigua és una entitat que treballa amb persones amb problemes de salut mental en l’àmbit de l’atenció psicosocial i la rehabilitació. Té seu a Olot.",
+              "address": "Carrer Cistell, 9, Olot",
+              "desc": "Entitat que treballa amb persones amb problemes de salut mental en l'àmbit de l'atenció psicosocial i la rehabilitació.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107060"
             },
             {
               "n": 3,
               "name": "Associació de Gent Gran d’Olot",
               "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "desc": "Associació de Gent Gran d’Olot és una entitat que treballa amb gent gran en l’àmbit cultural. Té seu a Olot.",
+              "address": "Carrer Bisbe Lorenzana, 2, Olot",
+              "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107074"
             },
             {
               "n": 4,
               "name": "Creu Roja Oficina Comarcal La Garrotxa",
               "info": "2,5 km aprox. · 30–37 min caminant · circular",
-              "desc": "Creu Roja Oficina Comarcal La Garrotxa és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la cobertura de necessitats bàsiques. Té seu a Olot.",
+              "address": "Carrer Hondures, 5, Olot",
+              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107125"
             },
             {
               "n": 5,
               "name": "Càritas Garrotxa",
               "info": "2,5 km aprox. · 30–37 min caminant · circular",
-              "desc": "Càritas Garrotxa és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la cobertura de necessitats bàsiques. Té seu a Olot.",
+              "address": "Carrer Ronda Paraires, 1, Olot",
+              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107132"
             },
             {
@@ -225,14 +230,15 @@
               "name": "INTEGRA, Associació per la inclusió de col·lectius en risc",
               "info": "2,5 km aprox. · 30–38 min caminant · circular",
               "address": "Carrer Serra i Ginesta, 14, Olot",
-              "desc": "INTEGRA, Associació per la inclusió de col·lectius en risc és una entitat que treballa amb persones amb discapacitat en l’àmbit de l’atenció diürna i els centres de dia. Té seu a Olot.",
+              "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció diürna i els centres de dia.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107161"
             },
             {
               "n": 7,
               "name": "L’Encant EI ADAD",
               "info": "2,5 km aprox. · 30–37 min caminant · circular",
-              "desc": "L’Encant EI ADAD és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la inserció laboral. Té seu a Olot.",
+              "address": "Carrer Fluvià, 18-20, Olot",
+              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la inserció laboral.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107204"
             }
           ]

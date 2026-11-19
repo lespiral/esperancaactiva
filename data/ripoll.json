@@ -41,42 +41,47 @@
               "n": 1,
               "name": "Associació de Gent Gran de Ripoll - Casal Cívic Ripoll",
               "info": "2,5 km aprox. · 30–37 min caminant · circular",
-              "desc": "Associació de Gent Gran de Ripoll - Casal Cívic Ripoll és una entitat que treballa amb gent gran en l’àmbit de l’atenció diürna i els centres de dia. Té seu a Ripoll.",
+              "address": "Carrer Doctor Raguer, 20, Ripoll",
+              "desc": "Entitat que treballa amb gent gran en l'àmbit de l'atenció diürna i els centres de dia.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107245"
             },
             {
               "n": 2,
               "name": "Creu Roja Oficina Local Ripoll",
               "info": "2,5 km aprox. · 30–37 min caminant · circular",
-              "desc": "Creu Roja Oficina Local Ripoll és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la cobertura de necessitats bàsiques. Té seu a Ripoll.",
+              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107268"
             },
             {
               "n": 3,
               "name": "Càritas Ripoll",
               "info": "2,4 km aprox. · 29–36 min caminant · circular",
-              "desc": "Càritas Ripoll és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la cobertura de necessitats bàsiques. Té seu a Ripoll.",
+              "address": "Carrer Doctor Raguer, 12, Ripoll",
+              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107289"
             },
             {
               "n": 4,
               "name": "Fundació Guifré",
               "info": "2,4 km aprox. · 29–36 min caminant · circular",
-              "desc": "Fundació Guifré és una entitat que treballa amb gent gran en l’àmbit de l’atenció diürna i els centres de dia. Té seu a Ripoll.",
+              "address": "Avinguda Comte Guifré, 27, Ripoll",
+              "desc": "Entitat que treballa amb gent gran en l'àmbit de l'atenció diürna i els centres de dia.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107306"
             },
             {
               "n": 5,
               "name": "Fundació Privada MAP",
               "info": "2,4 km aprox. · 29–36 min caminant · circular",
-              "desc": "Fundació Privada MAP és una entitat que treballa amb persones amb discapacitat en l’àmbit de l’atenció psicosocial i la rehabilitació. Té seu a Ripoll.",
+              "address": "Carrer Dalí, 6-8, Ripoll",
+              "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció psicosocial i la rehabilitació.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107318"
             },
             {
               "n": 6,
               "name": "Llar Residència Ca l’Ametller",
               "info": "2,6 km aprox. · 31–39 min caminant · circular",
-              "desc": "Llar Residència Ca l’Ametller és una entitat que treballa amb persones amb discapacitat en l’àmbit de l’atenció diürna i els centres de dia. Té seu a Ripoll.",
+              "address": "Carrer Dalí, 6-8, Ripoll",
+              "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció diürna i els centres de dia.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107331"
             }
           ]

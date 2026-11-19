@@ -42,49 +42,56 @@
               "n": 1,
               "name": "AEiG Santa Maria de Queralt i Geralda de Portella",
               "info": "2,5 km aprox. · 29–37 min caminant · circular",
-              "desc": "AEiG Santa Maria de Queralt i Geralda de Portella és una entitat que treballa amb infants en l’àmbit de l’educació en el lleure i els serveis educatius. Té seu a Berga.",
+              "address": "Carrer Castellar del Riu, 1, Berga",
+              "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106742"
             },
             {
               "n": 2,
               "name": "Associació Pro Disminuïts Psíquics del Berguedà",
               "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "desc": "Associació Pro Disminuïts Psíquics del Berguedà és una entitat que treballa amb persones amb discapacitat en l’àmbit de l’atenció psicosocial i la rehabilitació. Té seu a Berga.",
+              "address": "Carrer Elois, 1, Berga",
+              "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció psicosocial i la rehabilitació.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106868"
             },
             {
               "n": 3,
               "name": "Associació de Donants de Sang del Berguedà",
               "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "desc": "Associació de Donants de Sang del Berguedà és una entitat sense atenció directa que treballa en l’àmbit de la sensibilització. Té seu a Berga.",
+              "address": "Carrer Barcelona, 26, Berga",
+              "desc": "Entitat sense atenció directa que treballa en l'àmbit de la sensibilització.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106885"
             },
             {
               "n": 4,
               "name": "Associació de Gent Gran Berga Tagast",
               "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "desc": "Associació de Gent Gran Berga Tagast és una entitat que treballa amb gent gran en l’àmbit cultural. Té seu a Berga.",
+              "address": "Plaça Sant Joan, s/n, Berga",
+              "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106907"
             },
             {
               "n": 5,
               "name": "Creu Roja SAIER (Servei d’Atenció a Immigrants, Estrangers i Refugiats)",
               "info": "2,5 km aprox. · 30–37 min caminant · circular",
-              "desc": "Creu Roja SAIER (Servei d’Atenció a Immigrants, Estrangers i Refugiats) és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la cobertura de necessitats bàsiques. Té seu a Berga.",
+              "address": "Plaça Europa, 10, Berga",
+              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106914"
             },
             {
               "n": 6,
               "name": "Càritas Parroquial de Berga",
               "info": "2,6 km aprox. · 31–38 min caminant · circular",
-              "desc": "Càritas Parroquial de Berga és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de l’atenció psicosocial i la rehabilitació. Té seu a Berga.",
+              "address": "Carrer Anselm Clavé, 30, Berga",
+              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de l'atenció psicosocial i la rehabilitació.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106946"
             },
             {
               "n": 7,
               "name": "Grup Colònies a Borredà",
               "info": "2,5 km aprox. · 30–37 min caminant · circular",
-              "desc": "Grup Colònies a Borredà és una entitat que treballa amb infants en l’àmbit de l’educació en el lleure i els serveis educatius. Té seu a Berga.",
+              "address": "Carrer de Cervantes, 25, Berga",
+              "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106972"
             }
           ]
