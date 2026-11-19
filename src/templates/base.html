@@ -53,14 +53,14 @@
         <p>{{ site.footer.initiative }}</p>
         <p class="footer__motto">{{ site.footer.motto }}</p>
         <p>{{ site.footer.gaze }}</p>
+        <p class="footer__sister">{{ site.footer.sister_text }} <a href="{{ site.footer.sister_url }}" hreflang="es" lang="es">{{ site.footer.sister_label }}</a></p>
       </div>
       <div class="footer__col">
         <p class="footer__h">Els cursos</p>
         <ul>{% for c in site.courses %}<li><a href="{{ root }}{{ c.slug }}/">{{ c.title }}</a></li>{% endfor %}</ul>
       </div>
       <div class="footer__col">
-        <p class="footer__h">{{ site.cities_page.title }}</p>
-        <ul>{% for c in site.cities %}<li>{% if c.slug %}<a href="{{ root }}{{ c.slug }}/">{{ c.name }}</a>{% else %}{{ c.name }} · properament{% endif %}</li>{% endfor %}<li><a href="{{ root }}ciutats/">{{ site.territories_page.title }}</a></li></ul>
+        <p class="footer__h"><a href="{{ root }}ciutats/">{{ site.cities_page.title }}</a></p>
       </div>
       <div class="footer__col">
         <p class="footer__h">Contacte</p>

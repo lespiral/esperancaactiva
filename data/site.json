@@ -15,7 +15,10 @@
   "footer": {
     "initiative": "Una iniciativa de L'Espiral i Elara Social",
     "motto": "Cuidem les persones. Enfortim les comunitats",
-    "gaze": "Amb la mirada de la Prescripció Social (recomanar activitats i grups de la comunitat com a part de la cura) i la salut mental comunitària."
+    "gaze": "Amb la mirada de la Prescripció Social (recomanar activitats i grups de la comunitat com a part de la cura) i la salut mental comunitària.",
+    "sister_text": "En castellà:",
+    "sister_label": "esperanzaactiva.org",
+    "sister_url": "https://esperanzaactiva.org/"
   },
 
   "cities": [

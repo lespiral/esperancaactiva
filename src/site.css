@@ -584,4 +584,6 @@ strong.mk { color: var(--green-900); font-weight: 700; background: linear-gradie
 /* Subtítol del curs a les targetes (portada i pàgina de cursos) */
 .card--course .card__sub { margin: 0 0 10px; font: 700 1.02rem/1.45 var(--font-head); color: var(--green-800); }
 .card--course .card__sub span { background: linear-gradient(transparent 62%, rgba(226, 198, 104, .55) 62%); -webkit-box-decoration-break: clone; box-decoration-break: clone; }
-
+.footer__sister { margin-top: .9em; }
+.footer__h a { color: inherit; text-decoration: none; }
+.footer__h a:hover, .footer__h a:focus-visible { text-decoration: underline; }
