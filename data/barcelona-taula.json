@@ -8,6 +8,7 @@
  "blocks": [
   {
    "course": "cuidar",
+   "origin": "d'entitats del Tercer Sector Social dels 10 districtes (una ruta per entitat)",
    "text": "698 rutes circulars, de 2,1 a 4,3 km (uns 25–65 minuts caminant), que surten d'una entitat del Tercer Sector Social de Barcelona i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria el districte, busca l'entitat que et quedi més a prop i camina-hi amb calma.",
    "summary": "698 rutes des d'entitats del Tercer Sector Social",
    "zones": {
@@ -305,7 +306,7 @@
       },
       {
        "n": 29,
-       "name": "Associació Professionals d’autors i creadors de la Rumba Catalana",
+       "name": "Associació Professionals d'autors i creadors de la Rumba Catalana",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Passeig Colom, 6, Barcelona",
        "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297078056"
@@ -352,7 +353,7 @@
       },
       {
        "n": 33,
-       "name": "Associació Teràpia a l’Abast",
+       "name": "Associació Teràpia a l'Abast",
        "info": "2,5 km aprox. · 31–38 min caminant · circular",
        "address": "Carrer Portaferrissa, 18, Barcelona",
        "desc": "Entitat que treballa amb col·lectius diversos en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -360,7 +361,7 @@
       },
       {
        "n": 34,
-       "name": "Associació d’Ajuda a Assistents Socials Jubilades Equip 65",
+       "name": "Associació d'Ajuda a Assistents Socials Jubilades Equip 65",
        "info": "2,5 km aprox. · 31–38 min caminant · circular",
        "address": "Carrer Portaferrissa, 18, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -368,7 +369,7 @@
       },
       {
        "n": 35,
-       "name": "Associació d’Oci Inclusiu SARAU",
+       "name": "Associació d'Oci Inclusiu SARAU",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Correu Vell, 8, Barcelona",
        "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -392,7 +393,7 @@
       },
       {
        "n": 38,
-       "name": "Associació de Gent Gran de l’Esplai Barri de Ribera - Esplai Tantarantana",
+       "name": "Associació de Gent Gran de l'Esplai Barri de Ribera - Esplai Tantarantana",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Allada Vermell, 3, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -440,7 +441,7 @@
       },
       {
        "n": 42,
-       "name": "Aula d’Extensió Universitària Ciutat Vella per a la Gent Gran",
+       "name": "Aula d'Extensió Universitària Ciutat Vella per a la Gent Gran",
        "info": "2,6 km aprox. · 31–38 min caminant · circular",
        "address": "Carrer Reina Amàlia, 31, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de la formació i l'educació formal.",
@@ -448,7 +449,7 @@
       },
       {
        "n": 43,
-       "name": "Aula d’Extensió Universitària per a la Gent Gran dels Enginyers Industrials de Catalunya",
+       "name": "Aula d'Extensió Universitària per a la Gent Gran dels Enginyers Industrials de Catalunya",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Via Laietana, 39, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de la formació i l'educació formal.",
@@ -496,7 +497,7 @@
       },
       {
        "n": 49,
-       "name": "Centre d’Esplai Natzaret i Betània",
+       "name": "Centre d'Esplai Natzaret i Betània",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Escudellers, 48, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -544,7 +545,7 @@
       },
       {
        "n": 53,
-       "name": "Comissió Catalana d’Ajuda al Refugiat",
+       "name": "Comissió Catalana d'Ajuda al Refugiat",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer de la Junta de Comerç, 26, Barcelona",
        "desc": "Entitat que treballa amb persones nouvingudes i minories ètniques en l'àmbit dels drets humans.",
@@ -552,7 +553,7 @@
       },
       {
        "n": 54,
-       "name": "Coordinadora de Fundacions d’Habitatge Social de Catalunya",
+       "name": "Coordinadora de Fundacions d'Habitatge Social de Catalunya",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Rull, 1, Barcelona",
        "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit del dret a l'habitatge.",
@@ -576,7 +577,7 @@
       },
       {
        "n": 57,
-       "name": "Creu Roja Servei d’Atenció i Prevenció Sociosanitari (SAPS)",
+       "name": "Creu Roja Servei d'Atenció i Prevenció Sociosanitari (SAPS)",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Davant Portal Nou, 2, Barcelona",
        "desc": "Entitat que treballa amb persones drogodependents en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -624,7 +625,7 @@
      "routes": [
       {
        "n": 61,
-       "name": "Diversia, Associació de Promoció de la Diversitat i l’Intercanvi Cultural",
+       "name": "Diversia, Associació de Promoció de la Diversitat i l'Intercanvi Cultural",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Nou de Sant Francesc, 15, Barcelona",
        "desc": "Entitat que treballa amb persones nouvingudes i minories ètniques en l'àmbit cultural.",
@@ -648,7 +649,7 @@
       },
       {
        "n": 64,
-       "name": "Espai d’Inclusió i Formació Casc Antic",
+       "name": "Espai d'Inclusió i Formació Casc Antic",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Comerç, 42, Barcelona",
        "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de l'acompanyament i la tutela.",
@@ -688,7 +689,7 @@
       },
       {
        "n": 69,
-       "name": "Federació d’Entitats amb Projectes i Pisos Assistits",
+       "name": "Federació d'Entitats amb Projectes i Pisos Assistits",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Via Laietana, 48, Barcelona",
        "desc": "Entitat que treballa amb joves en l'àmbit del dret a l'habitatge.",
@@ -743,7 +744,7 @@
       },
       {
        "n": 74,
-       "name": "Fundació Ajuda i Esperança, Telèfon de l’esperança",
+       "name": "Fundació Ajuda i Esperança, Telèfon de l'esperança",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Avinguda del Portal de l'Àngel, 7, Barcelona",
        "desc": "Entitat que treballa amb col·lectius diversos en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -783,7 +784,7 @@
       },
       {
        "n": 79,
-       "name": "Fundació Foment de l’Habitatge Social",
+       "name": "Fundació Foment de l'Habitatge Social",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Via Laietana, 5, Barcelona",
        "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit del dret a l'habitatge.",
@@ -823,7 +824,7 @@
       },
       {
        "n": 82,
-       "name": "Fundació Privada La Roda d’Accions Culturals i del Lleure",
+       "name": "Fundació Privada La Roda d'Accions Culturals i del Lleure",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer de la Sèquia, 9-11, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -967,7 +968,7 @@
       },
       {
        "n": 98,
-       "name": "L’Hora de Déu",
+       "name": "L'Hora de Déu",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Rambla del Raval, 4, Barcelona",
        "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
@@ -983,7 +984,7 @@
       },
       {
        "n": 100,
-       "name": "Llar de l’Avi Carrer de la Cera",
+       "name": "Llar de l'Avi Carrer de la Cera",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer de la Cera, 11, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
@@ -1007,7 +1008,7 @@
      "routes": [
       {
        "n": 101,
-       "name": "L’Associació de Veïns del Raval",
+       "name": "L'Associació de Veïns del Raval",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Lleó, 26, Barcelona",
        "desc": "Entitat sense atenció directa que treballa en l'àmbit de l'acció cívica i comunitària.",
@@ -1167,7 +1168,7 @@
       },
       {
        "n": 9,
-       "name": "Agrupació d’Aules de Formació Permanent per a la Gent Gran de Catalunya",
+       "name": "Agrupació d'Aules de Formació Permanent per a la Gent Gran de Catalunya",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Casanova, 36, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de la formació i l'educació formal.",
@@ -1175,7 +1176,7 @@
       },
       {
        "n": 10,
-       "name": "Agrupació d’Empleats Jubilats i Pensionistes de la Caixa d’Estalvis i Pensions de Barcelona",
+       "name": "Agrupació d'Empleats Jubilats i Pensionistes de la Caixa d'Estalvis i Pensions de Barcelona",
        "info": "2,6 km aprox. · 31–38 min caminant · circular",
        "address": "Carrer París, 189, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de les xarxes i el suport a entitats.",
@@ -1271,7 +1272,7 @@
       },
       {
        "n": 20,
-       "name": "Associació Catalana d’Afectats per la Fibromiàlgia (FM-SFC-SQM)",
+       "name": "Associació Catalana d'Afectats per la Fibromiàlgia (FM-SFC-SQM)",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Gran Via de les Corts Catalanes, 491, Barcelona",
        "desc": "Entitat que treballa amb persones amb malalties en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -1295,7 +1296,7 @@
      "routes": [
       {
        "n": 21,
-       "name": "Associació Catalana d’Atàxies Hereditàries",
+       "name": "Associació Catalana d'Atàxies Hereditàries",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Gran Via de les Corts Catalanes, 562, Barcelona",
        "desc": "Entitat que treballa amb persones amb malalties en l'àmbit de la sensibilització.",
@@ -1303,7 +1304,7 @@
       },
       {
        "n": 22,
-       "name": "Associació Catalana d’Estimul al Depressiu",
+       "name": "Associació Catalana d'Estimul al Depressiu",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer de la Diputació, 135, Barcelona",
        "desc": "Entitat que treballa amb persones amb problemes de salut mental en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -1327,7 +1328,7 @@
       },
       {
        "n": 25,
-       "name": "Associació Coordinadora per l’Ancianitat (ACA)",
+       "name": "Associació Coordinadora per l'Ancianitat (ACA)",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Provença, 542-544, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -1406,7 +1407,7 @@
       },
       {
        "n": 33,
-       "name": "Associació Malalts d’Escoliosi (ASMADES)",
+       "name": "Associació Malalts d'Escoliosi (ASMADES)",
        "info": "2,4 km aprox. · 29–37 min caminant · circular",
        "address": "Carrer Nàpols, 137, Barcelona",
        "desc": "Entitat que treballa amb persones amb malalties en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -1414,7 +1415,7 @@
       },
       {
        "n": 34,
-       "name": "Associació contra l’Anorèxia i la Bulímia (ACAB)",
+       "name": "Associació contra l'Anorèxia i la Bulímia (ACAB)",
        "info": "2,6 km aprox. · 31–38 min caminant · circular",
        "address": "Carrer Mallorca, 198, Barcelona",
        "desc": "Entitat que treballa amb joves en l'àmbit de la cobertura de necessitats bàsiques.",
@@ -1422,7 +1423,7 @@
       },
       {
        "n": 35,
-       "name": "Associació d’Educació per a la Pau",
+       "name": "Associació d'Educació per a la Pau",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Calàbria, 150, Barcelona",
        "desc": "Entitat que treballa amb col·lectius diversos en l'àmbit de la sensibilització.",
@@ -1437,7 +1438,7 @@
       },
       {
        "n": 37,
-       "name": "Associació de Familiars de Malalts d’Alzheimer de Barcelona - AFAB",
+       "name": "Associació de Familiars de Malalts d'Alzheimer de Barcelona - AFAB",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Cartagena, 182, Barcelona",
        "desc": "Entitat que treballa amb persones amb malalties en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -1453,7 +1454,7 @@
       },
       {
        "n": 39,
-       "name": "Associacó Gent Gran de l’EspaiCaixa Bruc - Esplai Bruc",
+       "name": "Associacó Gent Gran de l'EspaiCaixa Bruc - Esplai Bruc",
        "info": "2,6 km aprox. · 31–39 min caminant · circular",
        "address": "Carrer Bruc, 72, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
@@ -1461,7 +1462,7 @@
       },
       {
        "n": 40,
-       "name": "Aula d’Extensió Universitària per a la Gent Gran “Ramon Juncosa”",
+       "name": "Aula d'Extensió Universitària per a la Gent Gran “Ramon Juncosa”",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Rocafort, 242 bis, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de la formació i l'educació formal.",
@@ -1485,7 +1486,7 @@
      "routes": [
       {
        "n": 41,
-       "name": "Aules d’Extensió Universitària per a la Gent Gran de Barcelona",
+       "name": "Aules d'Extensió Universitària per a la Gent Gran de Barcelona",
        "info": "2,6 km aprox. · 32–40 min caminant · circular",
        "address": "Carrer Casanova, 36, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de la formació i l'educació formal.",
@@ -1589,7 +1590,7 @@
       },
       {
        "n": 52,
-       "name": "Centre Comarcal Lleidatà - Associació Dones de l’Eixample",
+       "name": "Centre Comarcal Lleidatà - Associació Dones de l'Eixample",
        "info": "2,4 km aprox. · 29–37 min caminant · circular",
        "address": "Ronda de la Universitat, 1, Barcelona",
        "desc": "Entitat sense atenció directa que treballa en l'àmbit cultural.",
@@ -1597,7 +1598,7 @@
       },
       {
        "n": 53,
-       "name": "Centre Condal d’Artesania per Adolescents Psicòtics",
+       "name": "Centre Condal d'Artesania per Adolescents Psicòtics",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Muntaner, 217, Barcelona",
        "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció diürna i els centres de dia.",
@@ -1613,7 +1614,7 @@
       },
       {
        "n": 55,
-       "name": "Centre d’Atenció al Soci d’ATAM a Catalunya",
+       "name": "Centre d'Atenció al Soci d'ATAM a Catalunya",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Sant Antoni Maria Claret, 132, Barcelona",
        "desc": "Entitat que treballa amb persones amb discapacitat.",
@@ -1621,7 +1622,7 @@
       },
       {
        "n": 56,
-       "name": "Centre d’Educació Especial Fàsia Sl - Escola Fàsia Eixample",
+       "name": "Centre d'Educació Especial Fàsia Sl - Escola Fàsia Eixample",
        "info": "2,6 km aprox. · 31–39 min caminant · circular",
        "address": "Passatge Domingo, 3, Barcelona",
        "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de la formació i l'educació formal.",
@@ -1629,7 +1630,7 @@
       },
       {
        "n": 57,
-       "name": "Centre d’Esplai Grup de Gent",
+       "name": "Centre d'Esplai Grup de Gent",
        "info": "2,4 km aprox. · 29–36 min caminant · circular",
        "address": "Carrer Comte Borrell, 307, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -1637,7 +1638,7 @@
       },
       {
        "n": 58,
-       "name": "Centre d’Esplai Oriols",
+       "name": "Centre d'Esplai Oriols",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Villarroel, 83, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -1645,7 +1646,7 @@
       },
       {
        "n": 59,
-       "name": "Centre d’Esplai Passatge",
+       "name": "Centre d'Esplai Passatge",
        "info": "2,7 km aprox. · 32–40 min caminant · circular",
        "address": "Passatge Domingo, 3, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -1653,7 +1654,7 @@
       },
       {
        "n": 60,
-       "name": "Centre d’Esplai Sant Ignasi",
+       "name": "Centre d'Esplai Sant Ignasi",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Provença, 544, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -1677,7 +1678,7 @@
      "routes": [
       {
        "n": 61,
-       "name": "Centre d’Esplai Sant Isidor",
+       "name": "Centre d'Esplai Sant Isidor",
        "info": "2,5 km aprox. · 31–38 min caminant · circular",
        "address": "Carrer Comte d'Urgell, 178, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -1685,7 +1686,7 @@
       },
       {
        "n": 62,
-       "name": "Centre d’Estudis Naturistes",
+       "name": "Centre d'Estudis Naturistes",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Mallorca, 257, Barcelona",
        "desc": "Entitat que treballa amb col·lectius diversos en l'àmbit de la formació i l'educació formal.",
@@ -1733,7 +1734,7 @@
       },
       {
        "n": 68,
-       "name": "Club d’Avis les Saleses",
+       "name": "Club d'Avis les Saleses",
        "info": "2,4 km aprox. · 28–36 min caminant · circular",
        "address": "Carrer Consell de Cent, 403, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
@@ -1813,7 +1814,7 @@
       },
       {
        "n": 76,
-       "name": "Federació Catalana d’Esports per a Persones amb Discpacitat Intel.lectual",
+       "name": "Federació Catalana d'Esports per a Persones amb Discpacitat Intel.lectual",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Gran Via de les Corts Catalanes, 645, Barcelona",
        "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit esportiu.",
@@ -1829,7 +1830,7 @@
       },
       {
        "n": 78,
-       "name": "Federació d’Associacions de Familiars de Malalts d’Alzheimer i Altres Demències de Catalunya",
+       "name": "Federació d'Associacions de Familiars de Malalts d'Alzheimer i Altres Demències de Catalunya",
        "info": "2,8 km aprox. · 34–42 min caminant · circular",
        "address": "Carrer Cartagena, 182, Barcelona",
        "desc": "FAFAC és una federació que agrupa 16 associacions d'Alzheimer de Catalunya. Ofereix suport a les persones amb Alzheimer i a les seves famílies i promou la sensibilització social i la recerca sobre la malaltia.",
@@ -1837,7 +1838,7 @@
       },
       {
        "n": 79,
-       "name": "Federació d’Associacions de Gent Gran de Catalunya",
+       "name": "Federació d'Associacions de Gent Gran de Catalunya",
        "info": "2,2 km aprox. · 27–34 min caminant · circular",
        "address": "Carrer Casanova, 36, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de la formació i l'educació formal.",
@@ -2029,7 +2030,7 @@
       },
       {
        "n": 99,
-       "name": "Fundació Privada d’Ajuda i Investigació sobre el Trastorn Límit de Personalitat",
+       "name": "Fundació Privada d'Ajuda i Investigació sobre el Trastorn Límit de Personalitat",
        "info": "2,5 km aprox. · 31–38 min caminant · circular",
        "address": "Carrer Rocafort, 242 bis, Barcelona",
        "desc": "Entitat que treballa amb persones amb problemes de salut mental en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -2085,7 +2086,7 @@
       },
       {
        "n": 104,
-       "name": "Fòrum d’iniciatives en assistència i gestió en salut mental i addiccions a Catalunya",
+       "name": "Fòrum d'iniciatives en assistència i gestió en salut mental i addiccions a Catalunya",
        "info": "2,6 km aprox. · 31–39 min caminant · circular",
        "address": "Carrer València, 333, Barcelona",
        "desc": "El Fòrum Salut Mental i Addiccions és una associació que agrupa 23 entitats de salut mental i addiccions per a infants i adults a Catalunya, amb més d'un centenar de serveis. Treballa per la normalització i contra l'estigma i ofereix serveis a les entitats, formació i inserció laboral.",
@@ -2117,7 +2118,7 @@
       },
       {
        "n": 108,
-       "name": "INTRESS Centre d’Atenció a la Família",
+       "name": "INTRESS Centre d'Atenció a la Família",
        "info": "2,9 km aprox. · 34–43 min caminant · circular",
        "address": "Gran Via de les Corts Catalanes, 584, Barcelona",
        "desc": "INTRESS (Institut de Treball Social i Serveis Socials) acompanya persones en situació de vulnerabilitat o risc d'exclusió social amb serveis orientats a una societat més justa, amb enfocament en l'equitat, la innovació, la sostenibilitat i el feminisme.",
@@ -2125,7 +2126,7 @@
       },
       {
        "n": 109,
-       "name": "INTRESS Centre de serveis d’acolliment pre-adoptius i val·loració dels sol·licitants d’adopció nacional",
+       "name": "INTRESS Centre de serveis d'acolliment pre-adoptius i val·loració dels sol·licitants d'adopció nacional",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Comte Borrell, 115, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'acompanyament i la tutela.",
@@ -2133,7 +2134,7 @@
       },
       {
        "n": 110,
-       "name": "INTRESS Serveis d’acolliment simples en familia aliena Barcelona",
+       "name": "INTRESS Serveis d'acolliment simples en familia aliena Barcelona",
        "info": "3,0 km aprox. · 36–45 min caminant · circular",
        "address": "Gran Via de les Corts Catalanes, 584, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'acompanyament i la tutela.",
@@ -2165,7 +2166,7 @@
       },
       {
        "n": 112,
-       "name": "L’apòstrof - Serveis Integrals de Comunicació",
+       "name": "L'apòstrof - Serveis Integrals de Comunicació",
        "info": "2,6 km aprox. · 31–39 min caminant · circular",
        "address": "Carrer Casp, 43, Barcelona",
        "desc": "Entitat sense atenció directa que treballa en l'àmbit de les xarxes i el suport a entitats.",
@@ -2181,7 +2182,7 @@
       },
       {
        "n": 114,
-       "name": "Llar d’Avis Sant Ignasi de Loiola",
+       "name": "Llar d'Avis Sant Ignasi de Loiola",
        "info": "2,5 km aprox. · 29–37 min caminant · circular",
        "address": "Carrer Provença, 542-544, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
@@ -2229,7 +2230,7 @@
       },
       {
        "n": 120,
-       "name": "OBINSO. Obra d’Integració Social",
+       "name": "OBINSO. Obra d'Integració Social",
        "info": "2,6 km aprox. · 31–39 min caminant · circular",
        "address": "Carrer Villarroel, 81, Barcelona",
        "desc": "La Fundació Obra d'Integració Social (OBINSO) ofereix serveis en dos programes: el de tractament de les addiccions i el d'atenció a joves en situació d'exclusió social, per ajudar les persones a construir un futur amb més esperança i oportunitats.",
@@ -2277,7 +2278,7 @@
       },
       {
        "n": 124,
-       "name": "Recursos Solidaris, Empresa d’Inserció, SL",
+       "name": "Recursos Solidaris, Empresa d'Inserció, SL",
        "info": "2,6 km aprox. · 31–38 min caminant · circular",
        "address": "Carrer Consell de Cent, 145-147, Barcelona",
        "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la inserció laboral.",
@@ -2349,7 +2350,7 @@
      "routes": [
       {
        "n": 131,
-       "name": "Unió Catalana d’Hospitals",
+       "name": "Unió Catalana d'Hospitals",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer València, 333, Barcelona",
        "desc": "Entitat sense atenció directa que treballa en l'àmbit de les xarxes i el suport a entitats.",
@@ -2357,7 +2358,7 @@
       },
       {
        "n": 132,
-       "name": "Vincle, Associació per la recerca i l’acció social",
+       "name": "Vincle, Associació per la recerca i l'acció social",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Marina, 164, Barcelona",
        "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -2365,7 +2366,7 @@
       },
       {
        "n": 133,
-       "name": "Voluntariat d’Acció Socioeducativa",
+       "name": "Voluntariat d'Acció Socioeducativa",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Ronda Universitat, 22, Barcelona",
        "desc": "Entitat que treballa amb col·lectius diversos en l'àmbit de la sensibilització.",
@@ -2373,7 +2374,7 @@
       },
       {
        "n": 134,
-       "name": "Xarxa d’Economia Solidària",
+       "name": "Xarxa d'Economia Solidària",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Casp, 43, Barcelona",
        "desc": "Entitat sense atenció directa.",
@@ -2461,7 +2462,7 @@
       },
       {
        "n": 9,
-       "name": "Associació Catalana \"La Llar\" de l’Afectat d’Esclerosi Múltiple",
+       "name": "Associació Catalana \"La Llar\" de l'Afectat d'Esclerosi Múltiple",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Passeig de l'Exposició, 16-20, Barcelona",
        "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'assessorament legal.",
@@ -2485,7 +2486,7 @@
      "routes": [
       {
        "n": 10,
-       "name": "Associació Coordinadora d’entitats Sinergia Social",
+       "name": "Associació Coordinadora d'entitats Sinergia Social",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Via Laietana, 54, Barcelona",
        "desc": "Associació coordinadora que dona suport tècnic i organitzatiu a entitats dedicades al benestar i a l'interès general, en àmbits com els serveis socials, l'ocupació, la dependència, l'educació, la salut, l'habitatge o el medi ambient.",
@@ -2517,7 +2518,7 @@
       },
       {
        "n": 14,
-       "name": "Associació Grup d’Opinió Àmfora",
+       "name": "Associació Grup d'Opinió Àmfora",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Alpens, 32-34, Barcelona",
        "desc": "Entitat sense atenció directa que treballa en l'àmbit cultural.",
@@ -2525,7 +2526,7 @@
       },
       {
        "n": 15,
-       "name": "Associació Pallapupas - Pallassos d’Hospital",
+       "name": "Associació Pallapupas - Pallassos d'Hospital",
        "info": "2,6 km aprox. · 31–39 min caminant · circular",
        "address": "Carrer Sant Germà, 5, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit sociosanitari.",
@@ -2541,7 +2542,7 @@
       },
       {
        "n": 17,
-       "name": "Associació de Gent Gran de l’Esplai Santa Madrona",
+       "name": "Associació de Gent Gran de l'Esplai Santa Madrona",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Avinguda Paral·lel, 95, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
@@ -2589,7 +2590,7 @@
       },
       {
        "n": 21,
-       "name": "Associació de familiars d’afectats per trastorn de conducta",
+       "name": "Associació de familiars d'afectats per trastorn de conducta",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Numància, 29, Barcelona",
        "desc": "Entitat que treballa amb persones amb problemes de salut mental en l'àmbit de la sensibilització.",
@@ -2677,7 +2678,7 @@
       },
       {
        "n": 30,
-       "name": "Centre d’Esplai Spai-T",
+       "name": "Centre d'Esplai Spai-T",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Mare de Déu de Port, 135, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -2685,7 +2686,7 @@
       },
       {
        "n": 31,
-       "name": "Centre d’Esplai Xerinola",
+       "name": "Centre d'Esplai Xerinola",
        "info": "2,5 km aprox. · 29–37 min caminant · circular",
        "address": "Carrer Poeta Cabanyes, 80, Barcelona",
        "desc": "L'Esplai Xerinola és una entitat del barri del Poble Sec (Barcelona) que es defineix com un compromís educatiu i social. S'adreça a infants i joves de 5 a 16 anys, que hi poden anar els dissabtes.",
@@ -2693,7 +2694,7 @@
       },
       {
        "n": 32,
-       "name": "Centre d’Esplai Xiroia",
+       "name": "Centre d'Esplai Xiroia",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Begur, 8, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -2725,7 +2726,7 @@
       },
       {
        "n": 36,
-       "name": "Coordinadora d’Entitats del Poble Sec",
+       "name": "Coordinadora d'Entitats del Poble Sec",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Elkano, 24-26, Barcelona",
        "desc": "Entitat sense atenció directa que treballa en l'àmbit de les xarxes i el suport a entitats.",
@@ -2749,7 +2750,7 @@
      "routes": [
       {
        "n": 37,
-       "name": "Creu Roja Projecte d’Atenció Domiciliària a Malalts de Sida",
+       "name": "Creu Roja Projecte d'Atenció Domiciliària a Malalts de Sida",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Font Honrada, 10, Barcelona",
        "desc": "Entitat que treballa amb persones nouvingudes i minories ètniques en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -2837,7 +2838,7 @@
      "routes": [
       {
        "n": 46,
-       "name": "Fundació Centres d’Alt Rendiment Empresarial i Social",
+       "name": "Fundació Centres d'Alt Rendiment Empresarial i Social",
        "info": "2,9 km aprox. · 35–43 min caminant · circular",
        "address": "Carrer de l'Àrtic, 136, Barcelona",
        "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la inserció laboral.",
@@ -2933,7 +2934,7 @@
       },
       {
        "n": 56,
-       "name": "IPRES - Integració de persones en risc d’exclusió social",
+       "name": "IPRES - Integració de persones en risc d'exclusió social",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Rector Triadó, 52, Barcelona",
        "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit del treball protegit.",
@@ -3157,7 +3158,7 @@
       },
       {
        "n": 19,
-       "name": "Coordinadora d’Entitats de Persones amb Disminució de Les Corts",
+       "name": "Coordinadora d'Entitats de Persones amb Disminució de Les Corts",
        "info": "3,6 km aprox. · 44–55 min caminant · circular",
        "address": "Carrer Entença, 275, Barcelona",
        "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de les xarxes i el suport a entitats.",
@@ -3285,7 +3286,7 @@
      "routes": [
       {
        "n": 1,
-       "name": "AAT (Associació d’Acollida i Acció Terapèutica)",
+       "name": "AAT (Associació d'Acollida i Acció Terapèutica)",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Balmes, 184, Barcelona",
        "desc": "Entitat que treballa amb persones drogodependents en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -3381,7 +3382,7 @@
      "routes": [
       {
        "n": 11,
-       "name": "Associació ASSÍS Centre d’Acollida",
+       "name": "Associació ASSÍS Centre d'Acollida",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer d'Isaac Albéniz, 14-28, Barcelona",
        "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de l'atenció residencial.",
@@ -3413,7 +3414,7 @@
       },
       {
        "n": 15,
-       "name": "Associació Catalana d’Ostomitzats",
+       "name": "Associació Catalana d'Ostomitzats",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Rector Ubach, 37-39, Barcelona",
        "desc": "Entitat sense ànim de lucre que ofereix suport a persones amb ostomía i a les seves famílies perquè puguin viure amb normalitat en l'àmbit personal, familiar, social i laboral. Organitza activitats, tallers i orientació juridicolaboral.",
@@ -3421,7 +3422,7 @@
       },
       {
        "n": 16,
-       "name": "Associació Catalana d’Universitats Públiques",
+       "name": "Associació Catalana d'Universitats Públiques",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Avinguda del Tibidabo, 39, Barcelona",
        "desc": "Entitat que treballa amb joves en l'àmbit de la formació i l'educació formal.",
@@ -3517,7 +3518,7 @@
       },
       {
        "n": 26,
-       "name": "Aula d’Extensió Universitària CIC de la Gent Gran",
+       "name": "Aula d'Extensió Universitària CIC de la Gent Gran",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Via Augusta, 205, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de la formació i l'educació formal.",
@@ -3581,7 +3582,7 @@
       },
       {
        "n": 32,
-       "name": "Centre d’Esplai Sant Ildefons",
+       "name": "Centre d'Esplai Sant Ildefons",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Madrazo, 92, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -3589,7 +3590,7 @@
       },
       {
        "n": 33,
-       "name": "Centre d’Esplai Sant Vicenç de Sarrià",
+       "name": "Centre d'Esplai Sant Vicenç de Sarrià",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Pare Miquel de Sarrià, 8, Barcelona",
        "desc": "L'Esplai Sant Vicenç de Sarrià és un grup vinculat a la parròquia de Sant Vicenç de Sarrià (Barcelona). Impulsa el creixement personal i social i ofereix un espai d'oci i aprenentatge per a infants i joves de 6 a 18 anys.",
@@ -3597,7 +3598,7 @@
       },
       {
        "n": 34,
-       "name": "Centre d’Esplai Verge de la Pau",
+       "name": "Centre d'Esplai Verge de la Pau",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Plaça Ferran Casablancas, 4, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -3605,7 +3606,7 @@
       },
       {
        "n": 35,
-       "name": "Centre l’Alba",
+       "name": "Centre l'Alba",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Portolà, 6, Barcelona",
        "desc": "El Centre L'Alba és una organització sense ànim de lucre fundada a Barcelona el 1978. Atén infants i adolescents amb psicosi infantil, autisme i altres alteracions del desenvolupament, en l'àmbit educatiu i de salut mental, i busca ser un lloc de no exclusió.",
@@ -3629,7 +3630,7 @@
       },
       {
        "n": 38,
-       "name": "Facultat d’Educació Social i Treball Social Pere Tarrés (URL)",
+       "name": "Facultat d'Educació Social i Treball Social Pere Tarrés (URL)",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Santaló, 37, Barcelona",
        "desc": "Entitat sense atenció directa que treballa en l'àmbit de la formació i l'educació formal.",
@@ -3685,7 +3686,7 @@
       },
       {
        "n": 43,
-       "name": "Fundació Carta de la Pau Dirigida a l’ONU",
+       "name": "Fundació Carta de la Pau Dirigida a l'ONU",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Modolell, 41, Barcelona",
        "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cooperació internacional.",
@@ -3749,7 +3750,7 @@
      "routes": [
       {
        "n": 49,
-       "name": "Fundació Lliga Catalana d’ajuda oncològica Oncolliga-Fundació Oncolliga",
+       "name": "Fundació Lliga Catalana d'ajuda oncològica Oncolliga-Fundació Oncolliga",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Rector Ubach, 37-39, Barcelona",
        "desc": "Entitat que treballa amb persones amb malalties en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -3837,7 +3838,7 @@
      "routes": [
       {
        "n": 58,
-       "name": "Fundació Taller Escola d’Arts Sumptuàries d’Educació Especial - Teas",
+       "name": "Fundació Taller Escola d'Arts Sumptuàries d'Educació Especial - Teas",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Ronda General Mitre, 202-204, Barcelona",
        "desc": "La Fundació TEAS (Taller Escola d'Arts Sumptúries) és una entitat social sense ànim de lucre que afavoreix el progrés personal i el desenvolupament d'adults amb discapacitat intel·lectual mitjançant les arts, amb tallers de creació artística i artesanal i activitats de teràpia psicocorporal.",
@@ -3853,7 +3854,7 @@
       },
       {
        "n": 60,
-       "name": "Fundació per l’Educació i la Salut Mental (Fundació ESMEN)",
+       "name": "Fundació per l'Educació i la Salut Mental (Fundació ESMEN)",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer de les Escoles Pies, 119-121, Barcelona",
        "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -3949,7 +3950,7 @@
       },
       {
        "n": 70,
-       "name": "Llars de l’Amistat Cheshire Fundació Privada",
+       "name": "Llars de l'Amistat Cheshire Fundació Privada",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Benedetti, 60-62, Barcelona",
        "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció residencial.",
@@ -4053,7 +4054,7 @@
       },
       {
        "n": 6,
-       "name": "Acció Solidària Contra l’Atur",
+       "name": "Acció Solidària Contra l'Atur",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Riera Sant Miquel, 1 bis, Barcelona",
        "desc": "Entitat que treballa amb persones aturades en l'àmbit dels ajuts econòmics.",
@@ -4085,7 +4086,7 @@
       },
       {
        "n": 10,
-       "name": "Associació Catalana d’Integració i Desenvolupament Humà",
+       "name": "Associació Catalana d'Integració i Desenvolupament Humà",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Siracusa, 53, Barcelona",
        "desc": "Entitat catalana que, des de fa més de 30 anys, atén persones amb funcionament intel·lectual límit o discapacitat intel·lectual lleu amb una xarxa de serveis de la infància a l'edat adulta: educació, atenció psicosocial, inserció laboral, habitatge, lleure i suport jurídic.",
@@ -4213,7 +4214,7 @@
       },
       {
        "n": 22,
-       "name": "Associació de Jubilats i Pensionistes La Sedeta - Camp d’en Grassot",
+       "name": "Associació de Jubilats i Pensionistes La Sedeta - Camp d'en Grassot",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Sicília, 321, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
@@ -4237,7 +4238,7 @@
       },
       {
        "n": 25,
-       "name": "Associació de Sèniors de Catalunya per a l’orientació del talent emprenedor",
+       "name": "Associació de Sèniors de Catalunya per a l'orientació del talent emprenedor",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Avinguda Diagonal, 452, Barcelona",
        "desc": "Associació sense ànim de lucre de voluntariat sènior, formada per empresaris, directius i professionals, que posa la seva experiència al servei d'emprenedors i pimes amb assessorament i formació, i tutoritza estudiants universitaris.",
@@ -4253,7 +4254,7 @@
       },
       {
        "n": 27,
-       "name": "Aula d’Extensió Universitària de Gràcia",
+       "name": "Aula d'Extensió Universitària de Gràcia",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Maspons, 6, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de la formació i l'educació formal.",
@@ -4269,7 +4270,7 @@
       },
       {
        "n": 29,
-       "name": "Centre Transferència de Coneixement en l’Acció Social",
+       "name": "Centre Transferència de Coneixement en l'Acció Social",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Carolines, 10, Barcelona",
        "desc": "Entitat sense atenció directa que treballa en l'àmbit de la recerca i les noves tecnologies.",
@@ -4277,7 +4278,7 @@
       },
       {
        "n": 30,
-       "name": "Centre d’Esplai Abat Cassià",
+       "name": "Centre d'Esplai Abat Cassià",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer de Sors, 30, Barcelona",
        "desc": "El Centre d'Esplai Abat Cassià és una entitat de Barcelona que, des del 1967, educa infants i joves de 5 a 18 anys. Cada dissabte a la tarda ofereix activitats per grups d'edat, amb monitors de referència.",
@@ -4301,7 +4302,7 @@
      "routes": [
       {
        "n": 31,
-       "name": "Centre d’Esplai Josepets",
+       "name": "Centre d'Esplai Josepets",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Plaça de Lesseps, 25, Barcelona",
        "desc": "L'Esplai Josepets és un centre d'educació en el lleure que, des del 1965, treballa amb infants, adolescents i joves per ajudar-los a créixer amb eines per afrontar la vida amb llibertat i benestar.",
@@ -4309,7 +4310,7 @@
       },
       {
        "n": 32,
-       "name": "Centre d’Esplai Lisieux",
+       "name": "Centre d'Esplai Lisieux",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Via Augusta, 68, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -4317,7 +4318,7 @@
       },
       {
        "n": 33,
-       "name": "Centre d’Esplai Món Jove",
+       "name": "Centre d'Esplai Món Jove",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Gran de Gràcia, 236, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -4325,7 +4326,7 @@
       },
       {
        "n": 34,
-       "name": "Centre d’Esplai Oratori de Sant Felip Neri - JASD",
+       "name": "Centre d'Esplai Oratori de Sant Felip Neri - JASD",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Sol, 8, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -4333,7 +4334,7 @@
       },
       {
        "n": 35,
-       "name": "Centre d’Esplai Rikki Tikki Tavi",
+       "name": "Centre d'Esplai Rikki Tikki Tavi",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer de Ros de Olano, 7-9, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -4373,7 +4374,7 @@
       },
       {
        "n": 40,
-       "name": "Federació Catalana d’Autisme",
+       "name": "Federació Catalana d'Autisme",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Providència, 42, Barcelona",
        "desc": "La Federació Catalana d'Autisme reuneix 48 entitats del sector i defensa els drets de les persones autistes i de les seves famílies al llarg de la vida, amb incidència política, sensibilització social i reforç de les entitats.",
@@ -4397,7 +4398,7 @@
      "routes": [
       {
        "n": 41,
-       "name": "Federació Catalana d’Entitats d’Ajuda al Drogodependent",
+       "name": "Federació Catalana d'Entitats d'Ajuda al Drogodependent",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Quevedo, 2, Barcelona",
        "desc": "Entitat que treballa amb persones amb addiccions en l'àmbit de les addiccions.",
@@ -4405,7 +4406,7 @@
       },
       {
        "n": 42,
-       "name": "Federació d’Empreses d’Inserció de Catalunya",
+       "name": "Federació d'Empreses d'Inserció de Catalunya",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Passeig Sant Joan, 172, Barcelona",
        "desc": "FEICAT és la federació que representa i agrupa les empreses d'inserció de Catalunya. Contribueix a una societat més justa i inclusiva i s'adreça a persones en risc d'exclusió social, a qui ofereix ocupació i suport en un itinerari temporal d'inserció.",
@@ -4525,7 +4526,7 @@
       },
       {
        "n": 55,
-       "name": "L’Associació Drets Sexuals i Reproductius",
+       "name": "L'Associació Drets Sexuals i Reproductius",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer de la Granja, 19, Barcelona",
        "desc": "L'Associació Drets Sexuals i Reproductius és un col·lectiu feminista amb arrel comunitària i compromès amb els Drets Humans, que vol contribuir a la justícia sexual i reproductiva amb activitats, formacions i recursos per a professionals, activistes i persones interessades.",
@@ -4700,7 +4701,7 @@
       },
       {
        "n": 5,
-       "name": "Associació Aules d’Extensió Universitària per al Temps Lliure",
+       "name": "Associació Aules d'Extensió Universitària per al Temps Lliure",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer de Sant Antoni Maria Claret, 171, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de la formació i l'educació formal.",
@@ -4708,7 +4709,7 @@
       },
       {
        "n": 6,
-       "name": "Associació Catalana de Familiars de Malalts d’Esquizofrènia",
+       "name": "Associació Catalana de Familiars de Malalts d'Esquizofrènia",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Avinguda Frederic Rahola, 12, Barcelona",
        "desc": "Associació d'utilitat pública, fundada el 1999 per familiars de persones amb esquizofrènia, que ofereix suport, orientació i recursos a les persones amb esquizofrènia i a les seves famílies: atenció a famílies, activitats grupals, teràpia psicològica i xerrades de sensibilització.",
@@ -4732,7 +4733,7 @@
       },
       {
        "n": 9,
-       "name": "Associació d’ajuda per la fibromiàlgia de Catalunya",
+       "name": "Associació d'ajuda per la fibromiàlgia de Catalunya",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Tossa, 13, Barcelona",
        "desc": "Entitat que treballa amb persones amb malalties en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -4812,7 +4813,7 @@
       },
       {
        "n": 17,
-       "name": "Associació de Persones d’Edat de Dante - Esplai Dante",
+       "name": "Associació de Persones d'Edat de Dante - Esplai Dante",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Farners, 1-3, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
@@ -4820,7 +4821,7 @@
       },
       {
        "n": 18,
-       "name": "Aula d’Extensió Universitària d’Horta",
+       "name": "Aula d'Extensió Universitària d'Horta",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Feliu i Codina, 20, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de la formació i l'educació formal.",
@@ -4828,7 +4829,7 @@
       },
       {
        "n": 19,
-       "name": "Aula d’Extensió Universitària del Baix-Guinardó",
+       "name": "Aula d'Extensió Universitària del Baix-Guinardó",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Marina, 380, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de la formació i l'educació formal.",
@@ -4852,7 +4853,7 @@
      "routes": [
       {
        "n": 20,
-       "name": "Aula d’Extensió Universitària per a la Gent Gran Montbau",
+       "name": "Aula d'Extensió Universitària per a la Gent Gran Montbau",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Sorolla, 14, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de la formació i l'educació formal.",
@@ -4860,7 +4861,7 @@
       },
       {
        "n": 21,
-       "name": "Aula d’Extensió Universitària per al Temps Lliure",
+       "name": "Aula d'Extensió Universitària per al Temps Lliure",
        "info": "2,6 km aprox. · 31–39 min caminant · circular",
        "address": "Carrer Sant Antoni Maria Claret, 171, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de la formació i l'educació formal.",
@@ -4868,7 +4869,7 @@
       },
       {
        "n": 22,
-       "name": "Cades Centre d’Atenció Diürna Especialitzada",
+       "name": "Cades Centre d'Atenció Diürna Especialitzada",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Rambla de la Muntanya, 59, Barcelona",
        "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció diürna i els centres de dia.",
@@ -4884,7 +4885,7 @@
       },
       {
        "n": 24,
-       "name": "Casal Gent Gran Font d’en Fargues",
+       "name": "Casal Gent Gran Font d'en Fargues",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Pedrell, 67-69, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
@@ -4908,7 +4909,7 @@
       },
       {
        "n": 27,
-       "name": "Casal de Gent Gran Vall d’Hebron",
+       "name": "Casal de Gent Gran Vall d'Hebron",
        "info": "2,6 km aprox. · 32–39 min caminant · circular",
        "address": "Carrer Arquitecte Moragas, 5, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
@@ -4916,7 +4917,7 @@
       },
       {
        "n": 28,
-       "name": "Casal de Gent Gran d’Horta",
+       "name": "Casal de Gent Gran d'Horta",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer de Feliu i Codina, 37-43, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
@@ -4948,7 +4949,7 @@
       },
       {
        "n": 30,
-       "name": "Centre d’Esplai Aguiluchos",
+       "name": "Centre d'Esplai Aguiluchos",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer de Feliu i Codina, 59, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -4956,7 +4957,7 @@
       },
       {
        "n": 31,
-       "name": "Centre d’Esplai Arc Iris de l’Esperit Sant",
+       "name": "Centre d'Esplai Arc Iris de l'Esperit Sant",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Bergnes de las Casas, s/n, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -4964,7 +4965,7 @@
       },
       {
        "n": 32,
-       "name": "Centre d’Esplai La Gralla",
+       "name": "Centre d'Esplai La Gralla",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Avinguda Mare de Déu de Montserrat, 34-40, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -4972,7 +4973,7 @@
       },
       {
        "n": 33,
-       "name": "Centre d’Esplai Sant Cebrià",
+       "name": "Centre d'Esplai Sant Cebrià",
        "info": "2,7 km aprox. · 32–40 min caminant · circular",
        "address": "Carrer Besòs, 17, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -4980,7 +4981,7 @@
       },
       {
        "n": 34,
-       "name": "Centre d’Esplai Tonxué",
+       "name": "Centre d'Esplai Tonxué",
        "info": "2,4 km aprox. · 29–37 min caminant · circular",
        "address": "Carrer Doctor Letamendi, 63, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -4988,7 +4989,7 @@
       },
       {
        "n": 35,
-       "name": "Centre d’Esplai Trencaclosques",
+       "name": "Centre d'Esplai Trencaclosques",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer de Petrarca, 52, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -5084,7 +5085,7 @@
       },
       {
        "n": 45,
-       "name": "Fundació privada d’oncologia infantil Enriqueta Villavecchia",
+       "name": "Fundació privada d'oncologia infantil Enriqueta Villavecchia",
        "info": "2,6 km aprox. · 31–39 min caminant · circular",
        "address": "Carrer Sant Antoni Maria Claret, 167, Barcelona",
        "desc": "Entitat que treballa amb persones amb malalties en l'àmbit sociosanitari.",
@@ -5116,7 +5117,7 @@
      "routes": [
       {
        "n": 47,
-       "name": "Grup Especial d’Acompanyaments a Dones Maltractades",
+       "name": "Grup Especial d'Acompanyaments a Dones Maltractades",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Feliu i Codina, 20, Barcelona",
        "desc": "Entitat que treballa amb dones i persones LGTBI en l'àmbit de l'acompanyament i la tutela.",
@@ -5148,7 +5149,7 @@
       },
       {
        "n": 51,
-       "name": "Passar Via, Empresa d’Inserció, SL",
+       "name": "Passar Via, Empresa d'Inserció, SL",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Farnés, 15, Barcelona",
        "desc": "Passar Via és una empresa d'inserció laboral fundada el 1998 per la Fundació Els Tres Turons que ajuda persones amb dificultats per accedir al mercat de treball ordinari amb formació professional i acompanyament personalitzat.",
@@ -5180,7 +5181,7 @@
       },
       {
        "n": 55,
-       "name": "Voluntariat de l’Hospital Sant Rafael - Germanes Hospitalàries",
+       "name": "Voluntariat de l'Hospital Sant Rafael - Germanes Hospitalàries",
        "info": "2,5 km aprox. · 31–38 min caminant · circular",
        "address": "Avinguda Jordà, 8, Barcelona",
        "desc": "Entitat que treballa amb persones amb malalties en l'àmbit de la sensibilització.",
@@ -5236,7 +5237,7 @@
       },
       {
        "n": 5,
-       "name": "Associació Centre d’Higiene Mental Nou Barris",
+       "name": "Associació Centre d'Higiene Mental Nou Barris",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Avinguda de Borbó, 18, Barcelona",
        "desc": "Entitat que treballa amb persones amb problemes de salut mental en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -5316,7 +5317,7 @@
       },
       {
        "n": 13,
-       "name": "Associació d’Avis Pedraforca",
+       "name": "Associació d'Avis Pedraforca",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Pedraforca, 16-22, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
@@ -5348,7 +5349,7 @@
       },
       {
        "n": 17,
-       "name": "Aula d’Extensió Universitària per a la Gent Gran Torre Llobeta",
+       "name": "Aula d'Extensió Universitària per a la Gent Gran Torre Llobeta",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Plaça Carmen Laforet, 11, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de la formació i l'educació formal.",
@@ -5412,7 +5413,7 @@
       },
       {
        "n": 23,
-       "name": "Centre d’Esplai Druida",
+       "name": "Centre d'Esplai Druida",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Vesuvi, 35, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -5516,7 +5517,7 @@
       },
       {
        "n": 34,
-       "name": "Moviment d’Infants i Joves Santa Engràcia",
+       "name": "Moviment d'Infants i Joves Santa Engràcia",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Plaça Santa Engràcia, 1, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -5628,7 +5629,7 @@
       },
       {
        "n": 10,
-       "name": "Apepa, Associació Promotora de l’Educació Permanent d’Adults de Sant Andreu-Sagrera",
+       "name": "Apepa, Associació Promotora de l'Educació Permanent d'Adults de Sant Andreu-Sagrera",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Segadors, 2, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de la formació i l'educació formal.",
@@ -5708,7 +5709,7 @@
       },
       {
        "n": 18,
-       "name": "Associació d’Ajuda Social Cel Obert",
+       "name": "Associació d'Ajuda Social Cel Obert",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Avinguda Meridiana, 354, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -5716,7 +5717,7 @@
       },
       {
        "n": 19,
-       "name": "Associació d’Amputats Sant Jordi",
+       "name": "Associació d'Amputats Sant Jordi",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Cuba, 2, Barcelona",
        "desc": "Organització sense ànim de lucre que acompanya persones amb amputació, agènesi o altres discapacitats físiques i les seves famílies, per afavorir-ne la plena inclusió.",
@@ -5748,7 +5749,7 @@
      "routes": [
       {
        "n": 21,
-       "name": "Associació de Foment per a l’Ocupació contra l’Atur",
+       "name": "Associació de Foment per a l'Ocupació contra l'Atur",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Cardenal Tedeschini, 67, Barcelona",
        "desc": "Entitat que treballa amb persones aturades en l'àmbit de la inserció laboral.",
@@ -5772,7 +5773,7 @@
       },
       {
        "n": 24,
-       "name": "Associació de Persones d’Edat del Congrés - Esplai Congrés l’Espiga",
+       "name": "Associació de Persones d'Edat del Congrés - Esplai Congrés l'Espiga",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer L'Espiga, 15, Barcelona",
        "desc": "Entitat que treballa amb gent gran.",
@@ -5796,7 +5797,7 @@
       },
       {
        "n": 27,
-       "name": "Aula d’Extensió Universitària Sant Andreu",
+       "name": "Aula d'Extensió Universitària Sant Andreu",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Cuba, 2, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de la formació i l'educació formal.",
@@ -5820,7 +5821,7 @@
       },
       {
        "n": 30,
-       "name": "Casal d’Avis La Palmera",
+       "name": "Casal d'Avis La Palmera",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Olesa, 41, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
@@ -5852,7 +5853,7 @@
       },
       {
        "n": 32,
-       "name": "Centre d’Esplai El Drop",
+       "name": "Centre d'Esplai El Drop",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer de la Riera d'Horta, 51, Barcelona",
        "desc": "L'Esplai El Drop és un esplai del barri del Congrés i els Indians (Sant Andreu, Barcelona), fundat el 1975. Cada dissabte un equip de monitores voluntàries acompanya infants i joves de 5 a 16 anys en l'educació en el lleure.",
@@ -5860,7 +5861,7 @@
       },
       {
        "n": 33,
-       "name": "Centre d’Esplai La Sagrera",
+       "name": "Centre d'Esplai La Sagrera",
        "info": "2,6 km aprox. · 31–38 min caminant · circular",
        "address": "Plaça Jardins d'Elx, 1, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -5868,7 +5869,7 @@
       },
       {
        "n": 34,
-       "name": "Centre d’Esplai Sant Pacià",
+       "name": "Centre d'Esplai Sant Pacià",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Sòcrates, 43, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -5916,7 +5917,7 @@
       },
       {
        "n": 40,
-       "name": "Federació d’Associacions Culturals i Educatives de Persones Adultes",
+       "name": "Federació d'Associacions Culturals i Educatives de Persones Adultes",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Claramunt, 4, Barcelona",
        "desc": "La FACEPA és una federació d'associacions culturals i educatives que treballa amb persones adultes: alfabetització i formació digital, tertúlies dialògiques, grup de dones, cineforum i projectes europeus.",
@@ -5940,7 +5941,7 @@
      "routes": [
       {
        "n": 41,
-       "name": "Femarec - Integració Social, Laboral i Cultural de Col·lectius en Risc d’Exclusió",
+       "name": "Femarec - Integració Social, Laboral i Cultural de Col·lectius en Risc d'Exclusió",
        "info": "2,7 km aprox. · 32–40 min caminant · circular",
        "address": "Carrer Torrent de l'Estadella, 46, Barcelona",
        "desc": "Entitat que treballa amb joves en l'àmbit de l'assessorament legal.",
@@ -5956,7 +5957,7 @@
       },
       {
        "n": 43,
-       "name": "Fundació Obra Social d’Ajuda a les Persones amb Discapacitat Intel·lectual (OSAS)",
+       "name": "Fundació Obra Social d'Ajuda a les Persones amb Discapacitat Intel·lectual (OSAS)",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer de Manigua, 45-47, Barcelona",
        "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de la formació i l'educació formal.",
@@ -6052,7 +6053,7 @@
       },
       {
        "n": 53,
-       "name": "Trinijove, Empresa d’Inserció, SL",
+       "name": "Trinijove, Empresa d'Inserció, SL",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Turó de la Trinitat, 17, Barcelona",
        "desc": "La Fundació Privada Trinijove, des del 1985, impulsa programes de formació i inserció sociolaboral per superar situacions d'exclusió social, amb atenció a infants i famílies, formació professional, intermediació laboral i una empresa d'inserció.",
@@ -6132,7 +6133,7 @@
       },
       {
        "n": 8,
-       "name": "Associació Catalana de Malalts d’Hepatitis",
+       "name": "Associació Catalana de Malalts d'Hepatitis",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Pere Vergés, 1, Barcelona",
        "desc": "Entitat que treballa amb persones amb malalties en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -6308,7 +6309,7 @@
       },
       {
        "n": 26,
-       "name": "Associació per a la Recerca de Tractaments i Teràpies per Vèncer l’Autisme i Problemes de Desenvolupament (AVA)",
+       "name": "Associació per a la Recerca de Tractaments i Teràpies per Vèncer l'Autisme i Problemes de Desenvolupament (AVA)",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Independència, 289, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -6316,7 +6317,7 @@
       },
       {
        "n": 27,
-       "name": "Associació Àgora - Escola d’Adults La Verneda-Sant Martí",
+       "name": "Associació Àgora - Escola d'Adults La Verneda-Sant Martí",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Selva de Mar, 215, Barcelona",
        "desc": "Entitat que treballa amb col·lectius diversos en l'àmbit de la formació i l'educació formal.",
@@ -6324,7 +6325,7 @@
       },
       {
        "n": 28,
-       "name": "Aula d’Extensió Universitària Endavant Sant Marti",
+       "name": "Aula d'Extensió Universitària Endavant Sant Marti",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Pallars, 277, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de la formació i l'educació formal.",
@@ -6332,7 +6333,7 @@
       },
       {
        "n": 29,
-       "name": "Casal Ca l’Isidret",
+       "name": "Casal Ca l'Isidret",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Josep Pla, 184, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
@@ -6372,7 +6373,7 @@
       },
       {
        "n": 32,
-       "name": "Casal d’Avis Joan Maragall",
+       "name": "Casal d'Avis Joan Maragall",
        "info": "2,6 km aprox. · 31–39 min caminant · circular",
        "address": "Carrer Bermejo, 1, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
@@ -6427,7 +6428,7 @@
       },
       {
        "n": 39,
-       "name": "Centre d’Esplai Grups Barat",
+       "name": "Centre d'Esplai Grups Barat",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Lluís Borrassà, 12-18, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -6435,7 +6436,7 @@
       },
       {
        "n": 40,
-       "name": "Centre d’Esplai Joan Suñol",
+       "name": "Centre d'Esplai Joan Suñol",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer de València, 680, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -6459,7 +6460,7 @@
      "routes": [
       {
        "n": 41,
-       "name": "Centre d’Esplai MOVI de Poblenou",
+       "name": "Centre d'Esplai MOVI de Poblenou",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Pujades, 210, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -6467,7 +6468,7 @@
       },
       {
        "n": 42,
-       "name": "Centre d’Esplai Pare Abraham",
+       "name": "Centre d'Esplai Pare Abraham",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Jaume Vicens Vives, 6, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -6475,7 +6476,7 @@
       },
       {
        "n": 43,
-       "name": "Centre d’Esplai Sagrat Cor",
+       "name": "Centre d'Esplai Sagrat Cor",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Pere IV, 398, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -6483,7 +6484,7 @@
       },
       {
        "n": 44,
-       "name": "Centre d’Esplai Sant Josep de Calassanç",
+       "name": "Centre d'Esplai Sant Josep de Calassanç",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Passatge Lluïsa Vidal, 16, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -6491,7 +6492,7 @@
       },
       {
        "n": 45,
-       "name": "Centre d’Esplai Sant Paulí",
+       "name": "Centre d'Esplai Sant Paulí",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Alfons el Magnànim, 125, Barcelona",
        "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -6507,7 +6508,7 @@
       },
       {
        "n": 47,
-       "name": "Cooperativa d’Iniciativa Social, Gestió i Disseny, SCCL",
+       "name": "Cooperativa d'Iniciativa Social, Gestió i Disseny, SCCL",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Llull, 27, Barcelona",
        "desc": "Entitat que treballa amb col·lectius diversos en l'àmbit de la inserció laboral.",
@@ -6531,7 +6532,7 @@
       },
       {
        "n": 50,
-       "name": "Creu Roja Centre d’Atenció i Seguiment a les Drogodependències Lluis Comanys",
+       "name": "Creu Roja Centre d'Atenció i Seguiment a les Drogodependències Lluis Comanys",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Joan d'Àustria, 118, Barcelona",
        "desc": "Entitat que treballa amb persones amb malalties en l'àmbit de l'atenció domiciliària.",
@@ -6570,7 +6571,7 @@
       },
       {
        "n": 53,
-       "name": "Enruta’t ( entitat feminista i LGBTIQ+ )",
+       "name": "Enruta't ( entitat feminista i LGBTIQ+ )",
        "info": "2,5 km aprox. · 30–37 min caminant · circular",
        "address": "Carrer Llacuna, 2, Barcelona",
        "desc": "Entitat que treballa amb dones i persones LGTBI en l'àmbit de la sensibilització.",
@@ -6578,7 +6579,7 @@
       },
       {
        "n": 54,
-       "name": "Federació Catalana d’Entitats Contra el Càncer",
+       "name": "Federació Catalana d'Entitats Contra el Càncer",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Pere Vergés, 1, Barcelona",
        "desc": "La Federació Catalana d'Entitats contra el Càncer (Junts contra el Càncer) és una entitat de segon nivell que agrupa organitzacions per millorar la qualitat de vida de les persones amb càncer i les seves famílies, amb suport a les federades, voluntariat i programes de prevenció i atenció.",
@@ -6594,7 +6595,7 @@
       },
       {
        "n": 56,
-       "name": "Federació d’Entitats d’Assistència a l’Envelliment",
+       "name": "Federació d'Entitats d'Assistència a l'Envelliment",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Pere Vergés, 1, Barcelona",
        "desc": "La FEATE (Federació d'Entitats d'Atenció a l'Envelliment) és una federació del tercer sector social que acompanya l'envelliment i en defensa i representa els interessos davant l'administració i la societat.",
@@ -6602,7 +6603,7 @@
       },
       {
        "n": 57,
-       "name": "Federació d’Entitats d’Atenció al’Envelliment",
+       "name": "Federació d'Entitats d'Atenció al'Envelliment",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Pere Vergés, 1, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de les xarxes i el suport a entitats.",
@@ -6682,7 +6683,7 @@
       },
       {
        "n": 65,
-       "name": "Fundació Privada Casino l’Aliança del Poblenou",
+       "name": "Fundació Privada Casino l'Aliança del Poblenou",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Rambla del Poblenou, 42, Barcelona",
        "desc": "El Casino l'Aliança del Poblenou, coneguda popularment com l'Aliança, és una entitat de Barcelona amb més de 150 anys d'història centrada en les arts escèniques i la vida comunitària del barri, amb teatre, dansa, música, tallers, cinema i jocs de taula.",
@@ -6714,7 +6715,7 @@
       },
       {
        "n": 69,
-       "name": "Jubilats Col·legi Oficial d’Infermeria",
+       "name": "Jubilats Col·legi Oficial d'Infermeria",
        "info": "2,6 km aprox. · 31–39 min caminant · circular",
        "address": "Carrer Pujades, 350, Barcelona",
        "desc": "Entitat que treballa amb gent gran en l'àmbit de l'acció cívica i comunitària.",
@@ -6762,7 +6763,7 @@
       },
       {
        "n": 73,
-       "name": "Salta, Empresa d’Inserció, S.L.U.",
+       "name": "Salta, Empresa d'Inserció, S.L.U.",
        "info": "2,5 km aprox. · 30–38 min caminant · circular",
        "address": "Carrer Zamora, 103-105, Barcelona",
        "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de la inserció laboral.",

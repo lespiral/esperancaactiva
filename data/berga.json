@@ -7,6 +7,7 @@
   "blocks": [
     {
       "course": "cuidar",
+      "origin": "d'entitats del Tercer Sector Social (una ruta per entitat)",
       "text": "7 rutes circulars, de 2,5 a 2,6 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social de Berga i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
       "summary": "7 rutes des d'entitats del Tercer Sector Social",
       "notice": {
@@ -72,7 +73,7 @@
             },
             {
               "n": 5,
-              "name": "Creu Roja SAIER (Servei d’Atenció a Immigrants, Estrangers i Refugiats)",
+              "name": "Creu Roja SAIER (Servei d'Atenció a Immigrants, Estrangers i Refugiats)",
               "info": "2,5 km aprox. · 30–37 min caminant · circular",
               "address": "Plaça Europa, 10, Berga",
               "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",

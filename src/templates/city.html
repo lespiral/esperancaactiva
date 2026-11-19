@@ -47,13 +47,13 @@
 {% endif %}
 
 <div class="wrap wrap--mid stack">
-  {% if not is_territory and city.kind != 'subpage' %}<p class="langnote">{{ icon('info') }}<span>{{ site.cities_page.independent_note }}</span></p>{% endif %}
+  {% if city.kind != 'subpage' %}<p class="langnote">{{ icon('info') }}<span>{{ site.cities_page.independent_note }}</span></p>{% endif %}
   {% if city.blocks|length > 1 %}
   <nav class="jump" aria-label="Cursos en aquesta ciutat">
     <p class="jump__h">Tria el teu curs</p>
     <ul>
       {% for b in city.blocks %}
-      <li><a href="#{{ b.course.anchor }}">{{ icon(b.course.icon) }}<span><strong>{{ b.course.title }}</strong><small>{{ b.summary }}</small></span></a></li>
+      <li><a href="#{{ b.course.anchor }}">{{ icon(b.course.icon) }}<span><strong>{{ b.course.title }}</strong>{% if city.tele %}<small>{{ b.course.use }}</small><small>{{ b.tele }}</small>{% else %}<small>{{ b.summary }}</small>{% endif %}</span></a></li>
       {% endfor %}
     </ul>
   </nav>
@@ -70,7 +70,14 @@
       <span class="panel__icon" aria-hidden="true">{{ icon(b.course.icon) }}</span>
       <h2 id="h-{{ b.course.anchor }}">{{ b.course.title }}</h2>
     </div>
-    <p>{{ b.text }}</p>
+    {% if city.tele and b.total %}
+    {% if is_territory and b.course.soon %}<p class="soon-note"><span class="btn btn--soon">{{ cc.soon_label }}</span> {{ cc.soon_text }} <a href="mailto:{{ site.contact.email }}?subject={{ ("Avisa'm quan s'obri el curs: " ~ b.course.title)|urlencode }}">{{ cc.notify_label }}</a></p>{% endif %}
+    <p>{{ b.course.use }}</p>
+    <p><strong>{{ b.tele }}</strong></p>
+    {% if is_territory and b.course.territory_line %}<p>{{ b.course.territory_line }}</p>
+    {% else %}<p>Surten {{ b.origin }}. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.</p>{% endif %}
+    {% if b.credit %}<p><small>{{ b.credit }}</small></p>{% endif %}
+    {% else %}<p>{{ b.text }}</p>{% endif %}
     <p class="block__actions">
       {% if b.course.soon %}<span class="btn btn--soon">{{ cc.soon_label }}</span>{% elif cc.cta_building %}<span class="btn btn--soon">{{ cc.building_label }}</span>{% else %}<a class="btn btn--primary" href="{{ b.course.thinkific }}">Comença el curs gratuït</a>{% endif %}
       <a class="btn btn--outline" href="{{ root }}{{ b.course.slug }}/">Torna al curs</a>

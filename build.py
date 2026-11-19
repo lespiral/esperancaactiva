@@ -8,7 +8,8 @@ data/site.json, a "publish": {"url": ..., "index": true/false}.
 
 Els textos són a data/site.json i les rutes a data/<ciutat>.json.
 """
-import json, os, re, shutil, sys, time, unicodedata
+import json
+import math, os, re, shutil, sys, time, unicodedata
 from pathlib import Path
 from urllib.parse import quote
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -58,6 +59,39 @@ def assign_maps(g, routes):
             m = found[0]
         r["map_url"] = map_viewer(m["mid"])
         r["map_title"] = m["title"]
+
+
+def _route_list(groups):
+    for g in groups:
+        for s in g.get("sections") or []:
+            yield from s["routes"]
+        yield from g.get("routes") or []
+
+
+def _fmt(x, up=False):
+    """Un decimal, arrodonit cap a baix (mínim) o cap amunt (màxim) perquè el rang inclogui totes les rutes; sense «,0»."""
+    v = (math.ceil(x * 10 - 1e-9) if up else math.floor(x * 10 + 1e-9)) / 10
+    return f"{v:.1f}".replace(".", ",").removesuffix(",0")
+
+
+def _rang(a, b, fa, fb):
+    return fa if fa == fb else f"{fa}–{fb}"
+
+
+def telegraph(groups):
+    """«N rutes · X–Y km · A–B min caminant», calculat a partir del camp «info» de cada ruta
+    («2,56 km · 31–38 min caminant · …»): rang mínim–màxim global de totes les rutes del curs."""
+    routes = list(_route_list(groups))
+    kms, mins = [], []
+    for r in routes:
+        m = re.match(r"([\d,]+) km", r["info"]); w = re.search(r"(\d+)–(\d+) min caminant", r["info"])
+        assert m and w, f"«info» no reconegut a la ruta {r.get('id')}: {r['info']}"
+        kms.append(float(m.group(1).replace(",", "."))); mins += [int(w.group(1)), int(w.group(2))]
+    n = len(routes)
+    # Una sola ruta: la seva distància arrodonida; diverses: el rang que les inclou totes
+    km = f"{round(kms[0], 1):.1f}".replace(".", ",").removesuffix(",0") if n == 1 else _rang(0, 0, _fmt(min(kms)), _fmt(max(kms), True))
+    return (f"{n} {'ruta' if n == 1 else 'rutes'} · {km} km"
+            f" · {_rang(0, 0, str(min(mins)), str(max(mins)))} min caminant")
 
 
 # Desplegable «Vés directament a…»: surt dins d'un bloc de curs quan hi ha
@@ -141,7 +175,7 @@ for s in fp["sections"]:
     s["id"] = slugify(s["title"])
     # Cada pregunta: [pregunta, resposta] o [pregunta, resposta, infografia] (p. ex. "i-despres": la infografia surt dins la resposta)
     s["items"] = [(it[0], bw_html if it[1] == "__before_walk__" else Markup(f"<p>{it[1]}</p>"), slugify(it[0]), it[2] if len(it) > 2 else None) for it in s["items"]]
-site["home"]["faq"] = [(q, Markup("<p>{}</p>").format(a)) for q, a in site["home"]["faq"]]
+site["home"]["faq"] = [(q, Markup(f"<p>{a}</p>")) for q, a in site["home"]["faq"]]
 
 def process_groups(groups, course):
     """Posa els ids als grups, als districtes o barris i a les rutes, i l'enllaç al
@@ -219,9 +253,21 @@ for c in site["cities"] + site.get("territories", []) + site.get("subpages", [])
         b["groups"] = [g for p in parts for g in p["groups"]]
         b["total"] = total
         b["summary"] = b.get("summary") or ("Encara no hi ha rutes d'aquest curs" if not total else f"{total} rutes")
+        b["tele"] = telegraph(b["groups"]) if total else "Encara no hi ha rutes d'aquest curs"
         if not is_subpage:
           (territory_summaries if is_territory else course_summaries)[key][city["slug"]] = {"text": b["summary"] if total else "Encara no hi ha rutes d'aquest curs. Pots caminar a prop de casa.", "has": bool(total)}
         blocks.append(b)
+    # Meta descripció: nombre de rutes per curs (format curt), calculat; el «summary» del JSON només hi val si no hi ha cap ruta
+    counts = [f"{b['course']['short']}: {b['total']}" for b in blocks if b["total"]]
+    if counts and not is_territory:   # les pàgines de territori ja porten la seva meta telegràfica al JSON
+        city["summary"] = "Rutes a peu per curs. " + " · ".join(counts) + "."
+    # Pàgines amb el resum d'ús + dades telegràfiques: cada bloc amb rutes porta «origin» (d'on surten, amb la preposició)
+    # Els territoris sempre el fan servir: les targetes «Tria el teu curs» surten soles quan hi ha 2 cursos o més amb rutes;
+    # cada curs diu d'on surten amb «territory_line» a data/site.json (o amb «origin» al bloc).
+    city["tele"] = is_territory or any(b.get("origin") for b in blocks)
+    for b in blocks:
+        ok = b.get("origin") or (is_territory and b["course"].get("territory_line"))
+        assert not (city["tele"] and b["total"]) or ok, f"{city['slug']}: el bloc {b['course']['key']} necessita «origin» (o «territory_line» al curs)"
     # Primer els cursos que tenen rutes en aquesta ciutat; després, els que encara no en tenen
     city["blocks"] = [b for b in blocks if b["total"]] + [b for b in blocks if not b["total"]]
     if is_subpage:   # pàgina penjada d'una ciutat: no surt a les llistes de ciutats, menús ni resums

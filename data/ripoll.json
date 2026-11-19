@@ -7,6 +7,7 @@
   "blocks": [
     {
       "course": "cuidar",
+      "origin": "d'entitats del Tercer Sector Social (una ruta per entitat)",
       "text": "6 rutes circulars, de 2,4 a 2,6 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social de Ripoll i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
       "summary": "6 rutes des d'entitats del Tercer Sector Social",
       "notice": {
@@ -79,7 +80,7 @@
             },
             {
               "n": 6,
-              "name": "Llar Residència Ca l’Ametller",
+              "name": "Llar Residència Ca l'Ametller",
               "info": "2,6 km aprox. · 31–39 min caminant · circular",
               "address": "Carrer Dalí, 6-8, Ripoll",
               "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció diürna i els centres de dia.",

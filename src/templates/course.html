@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% from "parts.html" import page_head, city_cards, territory_cards, place_nav, safety, nearby %}
 
-{# Botó d'inscripció (porta directament al formulari de Thinkific) «Properament» si el curs encara no està obert, o «En construcció» (sense enllaç) mentre cc.cta_building sigui true #}
+{# Botó d'inscripció (porta directament al formulari de Thinkific) «Properament» si el curs encara no està obert, o «Properament» també (sense enllaç) mentre cc.cta_building sigui true #}
 {% macro cta(course, note=True) -%}
 {% if course.soon %}
 <p class="panel__cta"><span class="btn btn--soon btn--lg">{{ cc.soon_label }}</span></p>
-<p class="soon-note">{{ cc.soon_text }}</p>
+<p class="soon-note">{{ cc.soon_text }} <a href="mailto:{{ site.contact.email }}?subject={{ ("Avisa'm quan s'obri el curs: " ~ course.title)|urlencode }}">{{ cc.notify_label }}</a></p>
 {% elif cc.cta_building %}
 <p class="panel__cta"><span class="btn btn--soon btn--lg">{{ cc.building_label }}</span></p>
 <p class="soon-note">{{ cc.building_html|safe }}</p>
@@ -19,6 +19,7 @@
 {{ page_head(cc.kicker, course.title, course.subtitle) }}
 
 <div class="wrap wrap--mid">
+  <p class="center">{{ cc.same_phrases }}</p>
   <div class="infografia infografia--head">{% with escena = course.key %}{% include "infografies/infografia-capcalera-curs.html" %}{% endwith %}</div>
 </div>
 

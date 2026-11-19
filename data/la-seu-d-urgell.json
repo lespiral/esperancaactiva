@@ -1,12 +1,14 @@
 {
   "slug": "la-seu-d-urgell",
   "name": "La Seu d'Urgell",
+  "title": "Caminar per la Seu d'Urgell",
   "region": "Alt Urgell",
   "summary": "12 rutes circulars des d'entitats del Tercer Sector Social.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
   "blocks": [
     {
       "course": "cuidar",
+      "origin": "d'entitats del Tercer Sector Social (una ruta per entitat)",
       "text": "12 rutes circulars, de 2,4 a 2,5 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social de la Seu d'Urgell i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
       "summary": "12 rutes des d'entitats del Tercer Sector Social",
       "notice": {
@@ -62,7 +64,7 @@
             },
             {
               "n": 2,
-              "name": "Associació de Donants de Sang de l’Alt Urgell",
+              "name": "Associació de Donants de Sang de l'Alt Urgell",
               "info": "2,5 km aprox. · 30–38 min caminant · circular",
               "address": "Passeig Joan Brudieu, 10, la Seu d'Urgell",
               "desc": "Entitat sense atenció directa que treballa en l'àmbit de la sensibilització.",
@@ -70,7 +72,7 @@
             },
             {
               "n": 3,
-              "name": "Associació de familiars i amics dels malalts mentals de l’Alt Urgell",
+              "name": "Associació de familiars i amics dels malalts mentals de l'Alt Urgell",
               "info": "2,4 km aprox. · 29–36 min caminant · circular",
               "address": "Passeig Joan Brudieu, 10-14, la Seu d'Urgell",
               "desc": "Entitat que treballa amb persones amb problemes de salut mental en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -78,7 +80,7 @@
             },
             {
               "n": 4,
-              "name": "Centre d’Esplai TxT",
+              "name": "Centre d'Esplai TxT",
               "info": "2,5 km aprox. · 30–38 min caminant · circular",
               "address": "Carrer Pati Palau, 1, la Seu d'Urgell",
               "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -102,7 +104,7 @@
             },
             {
               "n": 7,
-              "name": "Càritas Diocesana d’Urgell",
+              "name": "Càritas Diocesana d'Urgell",
               "info": "2,5 km aprox. · 30–38 min caminant · circular",
               "address": "Carrer Bisbe Guitart, 27, la Seu d'Urgell",
               "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
@@ -110,7 +112,7 @@
             },
             {
               "n": 8,
-              "name": "Càritas Parroquial La Seu d’Urgell",
+              "name": "Càritas Parroquial La Seu d'Urgell",
               "info": "2,5 km aprox. · 29–37 min caminant · circular",
               "address": "Carrer Mare Janer, 55, la Seu d'Urgell",
               "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
@@ -118,7 +120,7 @@
             },
             {
               "n": 9,
-              "name": "Esplai Gent Gran Seu d’Urgell",
+              "name": "Esplai Gent Gran Seu d'Urgell",
               "info": "2,5 km aprox. · 30–38 min caminant · circular",
               "address": "Plaça Pati del Palau, s/n, la Seu d'Urgell",
               "desc": "Entitat que treballa amb gent gran en l'àmbit de l'educació en el lleure i els serveis educatius.",
@@ -134,7 +136,7 @@
             },
             {
               "n": 11,
-              "name": "L’Associació Claror – Alt Urgell",
+              "name": "L'Associació Claror – Alt Urgell",
               "info": "2,5 km aprox. · 30–38 min caminant · circular",
               "address": "Avinguda Valira, 19, la Seu d'Urgell",
               "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció psicosocial i la rehabilitació.",
@@ -142,7 +144,7 @@
             },
             {
               "n": 12,
-              "name": "Nou grapats, Empresa d’Inserció, S.L.U",
+              "name": "Nou grapats, Empresa d'Inserció, S.L.U",
               "info": "2,5 km aprox. · 30–38 min caminant · circular",
               "address": "Avinguda Guillem Graell, 24, la Seu d'Urgell",
               "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la inserció laboral.",

@@ -7,6 +7,7 @@
   "blocks": [
     {
       "course": "vida",
+      "origin": "dels CAP i dels hospitals de Vic",
       "text": "5 rutes circulars curtes, d'uns 2 km i mitja hora caminant, que surten dels centres d'atenció primària (CAP) i dels hospitals de Vic. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
       "groups": [
         {
@@ -64,6 +65,7 @@
     },
     {
       "course": "cuidar",
+      "origin": "d'equipaments comunitaris i d'entitats del Tercer Sector Social",
       "text": "Hi ha dos tipus de rutes: 16 rutes curtes, d'1,8 a 2 km, que surten d'equipaments comunitaris, i 19 rutes més llargues, de 3,7 a 4,2 km, que surten d'entitats del Tercer Sector Social. Totes són circulars i tornen al punt de sortida.",
       "summary": "35 rutes des d'equipaments i entitats socials",
       "parts": [
@@ -71,7 +73,7 @@
           "id": "equipaments",
           "title": "Rutes des dels equipaments comunitaris",
           "nav": "Rutes des dels equipaments comunitaris",
-          "text": "16 rutes circulars curtes, d’1,8 a 2 km (uns 20–30 minuts caminant), que surten d’un equipament comunitari de Vic i hi tornen: casals i centres cívics, una biblioteca, un espai comunitari i equipaments culturals. Tria el que tinguis més a prop i fes-hi el temps de reflexió de cada passa. Al mapa, cada ruta té la seva fitxa amb el recorregut.",
+          "text": "16 rutes circulars curtes, d'1,8 a 2 km (uns 20–30 minuts caminant), que surten d'un equipament comunitari de Vic i hi tornen: casals i centres cívics, una biblioteca, un espai comunitari i equipaments culturals. Tria el que tinguis més a prop i fes-hi el temps de reflexió de cada passa. Al mapa, cada ruta té la seva fitxa amb el recorregut.",
           "groups": [
             {
               "title": "Les 16 rutes",
@@ -116,7 +118,7 @@
                   "n": 1,
                   "name": "Casal Cívic i Comunitari Vic – La Rambla",
                   "info": "1,96 km · 23–29 min caminant · 35–50 min amb pauses · circular",
-                  "address": "Rambla de l’Hospital, 15, Vic",
+                  "address": "Rambla de l'Hospital, 15, Vic",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958463"
                 },
                 {
@@ -154,14 +156,14 @@
                   "name": "Espai Comunitari Remei–Estadi",
                   "info": "1,88 km · 22–28 min caminant · 30–50 min amb pauses · circular",
                   "address": "Passeig de la Generalitat, 31, Vic",
-                  "note": "Té algun tram curt d’escales i uns 120 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja.",
+                  "note": "Té algun tram curt d'escales i uns 120 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958551"
                 },
                 {
                   "n": 7,
-                  "name": "Centre Cívic Plaça d’Osona",
+                  "name": "Centre Cívic Plaça d'Osona",
                   "info": "1,98 km · 23–30 min caminant · 35–50 min amb pauses · circular",
-                  "address": "Plaça d’Osona, 3, Vic",
+                  "address": "Plaça d'Osona, 3, Vic",
                   "note": "Té uns 100 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958565"
                 },
@@ -170,7 +172,7 @@
                   "name": "Centre Cívic El Montseny",
                   "info": "2,02 km · 24–30 min caminant · 35–50 min amb pauses · circular",
                   "address": "Avinguda del Montseny, 16, Vic",
-                  "note": "Té algun tram curt d’escales i uns 110 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja.",
+                  "note": "Té algun tram curt d'escales i uns 110 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958573"
                 },
                 {
@@ -185,14 +187,14 @@
                   "name": "Centre Cívic La Guixa (Sentfores)",
                   "info": "1,98 km · 23–30 min caminant · 35–50 min amb pauses · circular",
                   "address": "Carrer del Pla del Maset, s/n, Vic",
-                  "note": "Té un tram per la carretera BV-4316, on cal caminar amb precaució. També té algun tram curt d’escales i uns 430 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja.",
+                  "note": "Té un tram per la carretera BV-4316, on cal caminar amb precaució. També té algun tram curt d'escales i uns 430 m de camí de terra o sense asfaltar, que pot estar enfangat els dies de pluja.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958631"
                 },
                 {
                   "n": 11,
                   "name": "Centre Cívic Joan Triadú",
                   "info": "1,99 km · 23–30 min caminant · 35–50 min amb pauses · circular",
-                  "address": "Carrer de l’Arquebisbe Alemany, 5, Vic",
+                  "address": "Carrer de l'Arquebisbe Alemany, 5, Vic",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958656"
                 },
                 {
@@ -213,15 +215,15 @@
                 },
                 {
                   "n": 14,
-                  "name": "ACVIC Centre d’Arts Contemporànies",
+                  "name": "ACVIC Centre d'Arts Contemporànies",
                   "info": "1,98 km · 23–30 min caminant · 35–50 min amb pauses · circular",
                   "address": "Carrer de Sant Francesc, 1, Vic",
-                  "note": "Recorregut amb alguns pendents. Passa pels camins del parc de Sant Julià d’Auvèrnia.",
+                  "note": "Recorregut amb alguns pendents. Passa pels camins del parc de Sant Julià d'Auvèrnia.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296958676"
                 },
                 {
                   "n": 15,
-                  "name": "L’Atlàntida – Centre d’Arts Escèniques d’Osona",
+                  "name": "L'Atlàntida – Centre d'Arts Escèniques d'Osona",
                   "info": "1,90 km · 22–29 min caminant · 30–50 min amb pauses · circular",
                   "address": "Carrer de Francesc Maria Masferrer, 4, Vic",
                   "note": "Recorregut amb alguns pendents.",
@@ -229,7 +231,7 @@
                 },
                 {
                   "n": 16,
-                  "name": "L’Orfeó",
+                  "name": "L'Orfeó",
                   "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
                   "address": "Carrer de Sant Pere, 7, Vic",
                   "note": "Passa pels camins del parc de la Bassa dels Germans Maristes.",
@@ -309,7 +311,7 @@
                   "name": "AEiG Guillem de Montrodon",
                   "info": "4,0 km aprox. · 48–60 min caminant · circular",
                   "address": "Plaça Santa Elisabet, 3-4, Vic",
-                  "desc": "Entitat que treballa amb infants en l’àmbit de l’educació en el lleure i els serveis educatius.",
+                  "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-2-passejada-urbana-des-de-laeig-guillem-de-montrodon-296949068"
                 },
                 {
@@ -318,15 +320,15 @@
                   "info": "3,8 km aprox. · 46–57 min caminant · circular",
                   "address": "Carrer Sant Francesc, 55, Vic",
                   "note": "Té un tram de camí sense asfaltar (al voltant del 19 % del recorregut).",
-                  "desc": "Entitat que treballa amb infants en l’àmbit de l’educació en el lleure i els serveis educatius.",
+                  "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-3-passejada-urbana-des-de-laeig-tsunami-296949378"
                 },
                 {
                   "n": 19,
-                  "name": "Associació de Disminuïts Físics d’Osona",
+                  "name": "Associació de Disminuïts Físics d'Osona",
                   "info": "4,0 km aprox. · 48–60 min caminant · circular",
                   "address": "Carrer Sant Pere, 9, Vic",
-                  "desc": "L’Associació de Diversitat Funcional d’Osona (ADFO) treballa per a la plena integració de les persones amb discapacitat física de la comarca d’Osona. Ofereix atenció integral a les persones i les seves famílies, assessora empreses i té un servei d’integració laboral en funcionament des del 2003.",
+                  "desc": "L'Associació de Diversitat Funcional d'Osona (ADFO) treballa per a la plena integració de les persones amb discapacitat física de la comarca d'Osona. Ofereix atenció integral a les persones i les seves famílies, assessora empreses i té un servei d'integració laboral en funcionament des del 2003.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-4-passejada-urbana-des-de-lassociacio-de-disminuits-fisics-dosona-296949527"
                 },
                 {
@@ -334,7 +336,7 @@
                   "name": "Associació Sant Tomàs Parmo",
                   "info": "3,8 km aprox. · 46–57 min caminant · circular",
                   "address": "Carrer Sot dels Pradals, 7, Vic",
-                  "desc": "L’Associació Sant Tomàs dona suport a persones amb discapacitat i a les seves famílies a Osona. Ofereix atenció precoç, educació especial, centre de dia, habitatge, atenció residencial i formació i inserció laboral, i gestiona empreses socials com Tac Osona.",
+                  "desc": "L'Associació Sant Tomàs dona suport a persones amb discapacitat i a les seves famílies a Osona. Ofereix atenció precoç, educació especial, centre de dia, habitatge, atenció residencial i formació i inserció laboral, i gestiona empreses socials com Tac Osona.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-5-passejada-urbana-des-de-lassociacio-sant-tomas-parmo-296949657"
                 },
                 {
@@ -342,15 +344,15 @@
                   "name": "Associació Tapís",
                   "info": "4,1 km aprox. · 49–61 min caminant · circular",
                   "address": "Carrer Adoberies, 9, Vic",
-                  "desc": "L’Associació Tapís treballa a Vic i a Osona amb persones que tenen dificultats d’inserció laboral i risc d’exclusió social. Té l’empresa d’inserció Treballs i Serveis Tapís, amb activitats de mecanitzats i manipulats, roba i neteja, i botigues de segona mà com El Fil.",
+                  "desc": "L'Associació Tapís treballa a Vic i a Osona amb persones que tenen dificultats d'inserció laboral i risc d'exclusió social. Té l'empresa d'inserció Treballs i Serveis Tapís, amb activitats de mecanitzats i manipulats, roba i neteja, i botigues de segona mà com El Fil.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-6-passejada-urbana-des-de-lassociacio-tapis-296949769"
                 },
                 {
                   "n": 22,
-                  "name": "Associació de Donants de Sang d’Osona",
+                  "name": "Associació de Donants de Sang d'Osona",
                   "info": "3,8 km aprox. · 46–57 min caminant · circular",
-                  "address": "Carrer Historiador Ramon d’Abadal i de Vinyals, 5, Vic",
-                  "desc": "Entitat sense atenció directa que treballa en l’àmbit de la sensibilització.",
+                  "address": "Carrer Historiador Ramon d'Abadal i de Vinyals, 5, Vic",
+                  "desc": "Entitat sense atenció directa que treballa en l'àmbit de la sensibilització.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-7-passejada-urbana-des-de-lassociacio-de-donants-de-sang-dosona-296949855"
                 },
                 {
@@ -358,7 +360,7 @@
                   "name": "Casal Claret",
                   "info": "3,8 km aprox. · 46–57 min caminant · circular",
                   "address": "Carrer Ramada, 14, Vic",
-                  "desc": "El Casal Claret és una entitat transversal d’acció social de Vic i Osona que treballa en la inclusió sociolaboral i l’acompanyament de dones i infants.",
+                  "desc": "El Casal Claret és una entitat transversal d'acció social de Vic i Osona que treballa en la inclusió sociolaboral i l'acompanyament de dones i infants.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-8-passejada-urbana-des-del-casal-claret-296949966"
                 },
                 {
@@ -366,7 +368,7 @@
                   "name": "Centre Especial de Treball Calandra",
                   "info": "4,1 km aprox. · 49–61 min caminant · circular",
                   "address": "Carrer Sot dels Pradals, 9, Vic",
-                  "desc": "Entitat que treballa amb persones amb discapacitat en l’àmbit del treball protegit.",
+                  "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit del treball protegit.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-9-passejada-urbana-des-del-centre-especial-de-treball-calandra-296950071"
                 },
                 {
@@ -374,23 +376,23 @@
                   "name": "Cet Areté",
                   "info": "4,0 km aprox. · 48–60 min caminant · circular",
                   "address": "Carrer Sant Miquel Xic, 1, Vic",
-                  "desc": "Entitat que treballa amb persones amb problemes de salut mental en l’àmbit del treball protegit.",
+                  "desc": "Entitat que treballa amb persones amb problemes de salut mental en l'àmbit del treball protegit.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-10-passejada-urbana-des-del-cet-arete-296950177"
                 },
                 {
                   "n": 26,
-                  "name": "Creu Roja Comarcal d’Osona",
+                  "name": "Creu Roja Comarcal d'Osona",
                   "info": "3,9 km aprox. · 47–58 min caminant · circular",
-                  "address": "Carrer Molí d’en Saborit, 5-7, Vic",
-                  "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la cobertura de necessitats bàsiques.",
+                  "address": "Carrer Molí d'en Saborit, 5-7, Vic",
+                  "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-11-passejada-urbana-des-de-la-creu-roja-comarcal-dosona-296950313"
                 },
                 {
                   "n": 27,
-                  "name": "Creu Roja Osona – Magatzem del Programa d’Aliments",
+                  "name": "Creu Roja Osona – Magatzem del Programa d'Aliments",
                   "info": "3,9 km aprox. · 47–58 min caminant · circular",
                   "address": "Carrer Joan Traveria, 10-12, Vic",
-                  "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la cobertura de necessitats bàsiques.",
+                  "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-12-passejada-urbana-des-de-la-creu-roja-osona-magatzem-del-programa-daliment-296950387"
                 },
                 {
@@ -398,7 +400,7 @@
                   "name": "Càritas Diocesana de Vic",
                   "info": "4,0 km aprox. · 48–60 min caminant · circular",
                   "address": "Carrer Bisbe Torras i Bages, 4, Vic",
-                  "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la cobertura de necessitats bàsiques.",
+                  "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-13-passejada-urbana-des-de-caritas-diocesana-de-vic-296950444"
                 },
                 {
@@ -406,15 +408,15 @@
                   "name": "Empresa Social Tac Osona Vic",
                   "info": "4,2 km aprox. · 50–63 min caminant · circular",
                   "address": "Carrer Sot dels Pradals, 7, Vic",
-                  "desc": "Tac Osona és una empresa d’economia social del grup Sant Tomàs que ofereix serveis a empreses i administracions: neteja, jardineria, manteniment de mobiliari urbà, càtering i bugaderia industrial. Crea oportunitats laborals per a persones amb discapacitat.",
+                  "desc": "Tac Osona és una empresa d'economia social del grup Sant Tomàs que ofereix serveis a empreses i administracions: neteja, jardineria, manteniment de mobiliari urbà, càtering i bugaderia industrial. Crea oportunitats laborals per a persones amb discapacitat.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-14-passejada-urbana-des-de-lempresa-social-tac-osona-vic-296950508"
                 },
                 {
                   "n": 30,
-                  "name": "Fundació Centre Mèdic Psicopedagògic d’Osona",
+                  "name": "Fundació Centre Mèdic Psicopedagògic d'Osona",
                   "info": "3,7 km aprox. · 44–56 min caminant · circular",
                   "address": "Carrer Josep Maria Selva, 2, Vic",
-                  "desc": "Osonament, de la Fundació Centre Mèdic Psicopedagògic d’Osona, acompanya persones amb problemes de salut mental i addiccions a Osona i el Lluçanès. Combina atenció sanitària, suport social i ajuda a la inserció laboral amb un enfocament comunitari, i ofereix recuperació, inserció laboral, habitatge, suport a les famílies i prevenció.",
+                  "desc": "Osonament, de la Fundació Centre Mèdic Psicopedagògic d'Osona, acompanya persones amb problemes de salut mental i addiccions a Osona i el Lluçanès. Combina atenció sanitària, suport social i ajuda a la inserció laboral amb un enfocament comunitari, i ofereix recuperació, inserció laboral, habitatge, suport a les famílies i prevenció.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-15-passejada-urbana-des-de-la-fundacio-centre-medic-psicopedagogic-dosona-296950654"
                 },
                 {
@@ -422,7 +424,7 @@
                   "name": "Fundació Projecte i Vida",
                   "info": "3,8 km aprox. · 46–57 min caminant · circular",
                   "address": "Carretera de Manlleu, 10, Vic",
-                  "desc": "La Fundació Projecte i Vida, creada el 2003 a Vic, ofereix serveis socioeducatius, residencials, de formació i comunitaris per a infants, joves i les seves famílies. Treballa per fomentar l’autonomia, crear aliances amb entitats públiques i privades per a la igualtat d’oportunitats i enfortir la resiliència.",
+                  "desc": "La Fundació Projecte i Vida, creada el 2003 a Vic, ofereix serveis socioeducatius, residencials, de formació i comunitaris per a infants, joves i les seves famílies. Treballa per fomentar l'autonomia, crear aliances amb entitats públiques i privades per a la igualtat d'oportunitats i enfortir la resiliència.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-16-passejada-urbana-des-de-la-fundacio-projecte-i-vida-296950855"
                 },
                 {
@@ -430,15 +432,15 @@
                   "name": "Fundació Suport Social Solidari",
                   "info": "3,8 km aprox. · 46–57 min caminant · circular",
                   "address": "Carretera de Manlleu, 8, Vic",
-                  "desc": "La Fundació Privada pel Suport Social Solidari, fundada el 2003 a Vic, ofereix serveis residencials i de suport a joves: habitatge, acompanyament en arribar a la majoria d’edat i activitats socials i educatives. També té un programa de joventut, suport a famílies i un programa de voluntariat.",
+                  "desc": "La Fundació Privada pel Suport Social Solidari, fundada el 2003 a Vic, ofereix serveis residencials i de suport a joves: habitatge, acompanyament en arribar a la majoria d'edat i activitats socials i educatives. També té un programa de joventut, suport a famílies i un programa de voluntariat.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-17-passejada-urbana-des-de-la-fundacio-suport-social-solidari-296950920"
                 },
                 {
                   "n": 33,
-                  "name": "Fundació Tutelar l’Esguard",
+                  "name": "Fundació Tutelar l'Esguard",
                   "info": "3,7 km aprox. · 44–56 min caminant · circular",
                   "address": "Carrer Sant Pere, 4, Vic",
-                  "desc": "La Fundació Tutelar L’Esguard dona suport a persones amb discapacitat, amb necessitats de salut mental i a persones grans a Osona i al Vallès Oriental, incloent-hi el suport en la presa de decisions. Actualment acompanya més de 240 persones.",
+                  "desc": "La Fundació Tutelar L'Esguard dona suport a persones amb discapacitat, amb necessitats de salut mental i a persones grans a Osona i al Vallès Oriental, incloent-hi el suport en la presa de decisions. Actualment acompanya més de 240 persones.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-18-passejada-urbana-des-de-la-fundacio-tutelar-lesguard-296950990"
                 },
                 {
@@ -446,7 +448,7 @@
                   "name": "Fundació Casa Caritat de Vic – Llar juvenil",
                   "info": "3,8 km aprox. · 46–57 min caminant · circular",
                   "address": "Avinguda Pius XII, 20, Vic",
-                  "desc": "Entitat que treballa amb joves en l’àmbit de l’atenció residencial.",
+                  "desc": "Entitat que treballa amb joves en l'àmbit de l'atenció residencial.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-19-passejada-urbana-des-de-la-fundacio-casa-caritat-de-vic-llar-juvenil-296951078"
                 },
                 {
@@ -454,7 +456,7 @@
                   "name": "Osona contra el Càncer",
                   "info": "3,8 km aprox. · 46–57 min caminant · circular",
                   "address": "Carrer del Dr. Junyent, 3, Vic",
-                  "desc": "Osona contra el càncer és una associació sense ànim de lucre fundada a Osona l’abril de 1998 per ajudar les persones afectades de càncer i els seus familiars. Ofereix serveis d’ajuda i suport als malalts i fa prevenció i recerca.",
+                  "desc": "Osona contra el càncer és una associació sense ànim de lucre fundada a Osona l'abril de 1998 per ajudar les persones afectades de càncer i els seus familiars. Ofereix serveis d'ajuda i suport als malalts i fa prevenció i recerca.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/ruta-desperanca-activa-20-passejada-urbana-des-de-osona-contra-el-cancer-296951159"
                 }
               ]
@@ -465,6 +467,7 @@
     },
     {
       "course": "mon",
+      "origin": "de parcs i espais verds de Vic",
       "text": "22 rutes curtes i circulars pels parcs i espais verds de Vic, d'entre 1 i 2 km cadascuna (uns 20 minuts caminant). Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
       "groups": [
         {
@@ -686,6 +689,8 @@
     },
     {
       "course": "dia",
+      "origin": "d'una entitat de l'economia social i solidària",
+      "credit": "Comença i acaba al carrer, davant de l'entitat: no cal entrar-hi.",
       "text": "Una ruta circular curta, d'1,9 km (uns 22–29 minuts caminant), que surt d'una entitat de l'economia social i solidària i hi torna. Comença i acaba al carrer, davant de l'entitat: no cal entrar-hi.",
       "summary": "1 ruta des de l'economia social",
       "groups": [
@@ -707,7 +712,7 @@
               "name": "Dies d'Agost SCCL",
               "info": "1,91 km · 22–29 min caminant · circular",
               "address": "Carrer del Doctor Candi Bayés, 32, Vic",
-              "desc": "Dies d’Agost és una cooperativa de periodisme i comunicació que treballa amb projectes de l’economia social i de proximitat.",
+              "desc": "Dies d'Agost és una cooperativa de periodisme i comunicació que treballa amb projectes de l'economia social i de proximitat.",
               "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-dies-dagost-sccl-vic-295074582"
             }
           ]

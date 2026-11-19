@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>document.documentElement.className += ' js';</script>
   <title>Els cursos · Camins d&#39;Esperança [Activa]</title>
-  <meta name="description" content="Cursos digitals gratuïts de 7 passes i rutes a peu a prop de casa, per ciutats, pobles i comarques. Una pràctica, una caminada, un petit pas.">
+  <meta name="description" content="Cursos digitals gratuïts de 7 passes per convertir el que et preocupa en un primer pas possible, amb rutes a peu a prop de casa. Una pràctica, una caminada, un petit pas.">
 <link rel="canonical" href="https://xn--esperanaactiva-mjb.cat/cursos/">
   <meta property="og:url" content="https://xn--esperanaactiva-mjb.cat/cursos/">  <meta property="og:title" content="Els cursos">
-  <meta property="og:description" content="Cursos digitals gratuïts de 7 passes i rutes a peu a prop de casa, per ciutats, pobles i comarques. Una pràctica, una caminada, un petit pas.">
+  <meta property="og:description" content="Cursos digitals gratuïts de 7 passes per convertir el que et preocupa en un primer pas possible, amb rutes a peu a prop de casa. Una pràctica, una caminada, un petit pas.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ca_ES">
 <link rel="icon" type="image/png" sizes="48x48" href="../assets/img/favicon-48.png"><link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@600;700&display=swap">
-  <link rel="stylesheet" href="../assets/site.css?v=1795087052">
+  <link rel="stylesheet" href="../assets/site.css?v=1795089737">
 </head>
 <body>
   <a class="skip" href="#contingut">Salta al contingut</a>
@@ -59,7 +59,7 @@
     <p class="vies__hint">Toca un curs per veure de què va.</p>
     <button class="vies__replay" type="button" hidden>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1M3.5 4v4.6h4.6"/></svg>
-      <span>Torna a caminar</span>
+      <span>Veure-ho de nou</span>
     </button>
   </div>
 </div>
@@ -260,11 +260,11 @@
   var BASE = "../";
   var COURSES = [
     { scene: "vida", title: "Quan la vida et desborda", short: "La vida et desborda", themes: "ansietat, dols, conflictes…",
-      text: "Ansietat, angoixa, massa pensaments o la sensació de no poder més.", href: "malestar-emocional/" },
+      text: "Ansietat, angoixa, massa pensaments o la sensació de no poder més.", href: "malestar-emocional/", soon: true },
     { scene: "cuidar", title: "Quan cuidar-nos és una tasca col·lectiva", short: "Cuidar-nos junts/es", themes: "soledat, falta de suport, aïllament…",
-      text: "Soledat, cansament emocional o falta d'espais on sentir-te escoltat/da.", href: "prescripcio-social/" },
+      text: "Soledat, cansament emocional o falta d'espais on sentir-te escoltat/da.", href: "prescripcio-social/", soon: true },
     { scene: "mon", title: "Quan el món et preocupa", short: "El món et preocupa", themes: "canvi climàtic, futur incert…",
-      text: "Crisi climàtica, sequeres, incendis o el món que deixarem.", href: "accio-climatica/" },
+      text: "Crisi climàtica, sequeres, incendis o el món que deixarem.", href: "accio-climatica/", soon: true },
     { scene: "casa", title: "Quan sostenir la vida es fa difícil", short: "Sostenir el dia a dia", themes: "feina, habitatge, precarietat…",
       text: "Precarietat, no arribar a final de mes, l\u0027habitatge o els ritmes de treball.", href: "economia-social/", soon: true }
   ];
@@ -275,7 +275,7 @@
   var WALK = { kick: "Rutes a peu", title: "Camina a prop de casa",
     text: "Ara hi ha rutes a Barcelona, Berga, el Prat de Llobregat, l\u0027Hospitalet de Llobregat, la Seu d\u0027Urgell, Olot, Ripoll i Vic, i a pobles de moltes comarques.", href: "ciutats/", link: "Tria on vols caminar" }; // ciutats de data/site.json
   var END = { kick: "On porta el camí", title: "Esperança Activa", text: "Una pràctica, una caminada, un petit pas." };
-  var KICK_COURSE = "Curs gratuït", KICK_SOON = "Properament", LINK_COURSE = "És el meu cas";
+  var KICK_COURSE = "Curs gratuït", KICK_SOON = "Properament", LINK_COURSE = "Veure aquest curs";
 
   /* ---------- PAISATGES DELS CURSOS (64 x 64) ---------- */
   var SCENES = {
@@ -670,27 +670,27 @@
     <ul class="cards cards--3">
   <li class="card card--course">
     <span class="card__icon" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M158.66,196.44l-32,48a8,8,0,1,1-13.32-8.88l32-48a8,8,0,0,1,13.32,8.88ZM232,92a76.08,76.08,0,0,1-76,76H132.28l-29.62,44.44a8,8,0,1,1-13.32-8.88L113.05,168H76A52,52,0,0,1,76,64a53.26,53.26,0,0,1,8.92.76A76.08,76.08,0,0,1,232,92Zm-16,0A60.06,60.06,0,0,0,96,88.46a8,8,0,0,1-16-.92q.21-3.66.77-7.23A38.11,38.11,0,0,0,76,80a36,36,0,0,0,0,72h80A60.07,60.07,0,0,0,216,92Z"/></svg></span>
-    <h2 class="card__title">Quan la vida et desborda</h2>
+<span class="card__badge">Properament</span>    <h2 class="card__title">Quan la vida et desborda</h2>
     <p class="card__text">Ansietat, angoixa, massa pensaments o la sensació de no poder més.</p>
-    <a class="btn btn--soft btn--block" href="../malestar-emocional/">És el meu cas</a>
+    <a class="btn btn--soft btn--block" href="../malestar-emocional/">Veure aquest curs</a>
   </li>
   <li class="card card--course">
     <span class="card__icon" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"/></svg></span>
-    <h2 class="card__title">Quan cuidar-nos és una tasca col·lectiva</h2>
+<span class="card__badge">Properament</span>    <h2 class="card__title">Quan cuidar-nos és una tasca col·lectiva</h2>
     <p class="card__text">Soledat, cansament emocional o falta d&#39;espais on sentir-te escoltat/da.</p>
-    <a class="btn btn--soft btn--block" href="../prescripcio-social/">És el meu cas</a>
+    <a class="btn btn--soft btn--block" href="../prescripcio-social/">Veure aquest curs</a>
   </li>
   <li class="card card--course">
     <span class="card__icon" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm88,104a87.62,87.62,0,0,1-6.4,32.94l-44.7-27.49a15.92,15.92,0,0,0-6.24-2.23l-22.82-3.08a16.11,16.11,0,0,0-16,7.86h-8.72l-3.8-7.86a15.91,15.91,0,0,0-11-8.67l-8-1.73L96.14,104h16.71a16.06,16.06,0,0,0,7.73-2l12.25-6.76a16.62,16.62,0,0,0,3-2.14l26.91-24.34A15.93,15.93,0,0,0,166,49.1l-.36-.65A88.11,88.11,0,0,1,216,128ZM143.31,41.34,152,56.9,125.09,81.24,112.85,88H96.14a16,16,0,0,0-13.88,8l-8.73,15.23L63.38,84.19,74.32,58.32a87.87,87.87,0,0,1,69-17ZM40,128a87.53,87.53,0,0,1,8.54-37.8l11.34,30.27a16,16,0,0,0,11.62,10l21.43,4.61L96.74,143a16.09,16.09,0,0,0,14.4,9h1.48l-7.23,16.23a16,16,0,0,0,2.86,17.37l.14.14L128,205.94l-1.94,10A88.11,88.11,0,0,1,40,128Zm102.58,86.78,1.13-5.81a16.09,16.09,0,0,0-4-13.9,1.85,1.85,0,0,1-.14-.14L120,174.74,133.7,144l22.82,3.08,45.72,28.12A88.18,88.18,0,0,1,142.58,214.78Z"/></svg></span>
-    <h2 class="card__title">Quan el món et preocupa</h2>
+<span class="card__badge">Properament</span>    <h2 class="card__title">Quan el món et preocupa</h2>
     <p class="card__text">Crisi climàtica, sequeres, incendis o el món que deixarem.</p>
-    <a class="btn btn--soft btn--block" href="../accio-climatica/">És el meu cas</a>
+    <a class="btn btn--soft btn--block" href="../accio-climatica/">Veure aquest curs</a>
   </li>
   <li class="card card--course">
     <span class="card__icon" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z"/></svg></span>
 <span class="card__badge">Properament</span>    <h2 class="card__title">Quan sostenir la vida es fa difícil</h2>
     <p class="card__text">Precarietat, no arribar a final de mes, l&#39;habitatge o els ritmes de treball.</p>
-    <a class="btn btn--soft btn--block" href="../economia-social/">És el meu cas</a>
+    <a class="btn btn--soft btn--block" href="../economia-social/">Veure aquest curs</a>
   </li>
 </ul>
   </div>
@@ -699,7 +699,7 @@
   <div class="wrap seven">
     <div class="seven__text">
       <h2 class="band__title band__title--left" id="h-seven">Cada curs, 7 passes</h2>
-      <p>Tots els cursos segueixen l&#39;Espiral del Treball que Reconnecta, de Joanna Macy, adaptada en <strong class="mk">set passes senzilles</strong>. Ho pots fer en 7 dies o <strong class="mk">al teu ritme</strong>, i <strong class="mk">no cal experiència</strong> en meditació.</p>
+      <p>Tots els cursos segueixen l&#39;Espiral del Treball que Reconnecta, de Joanna Macy, adaptada en <strong class="mk">set passes senzilles</strong>. </p>
     </div>
     <div class="seven__moments">
       <p class="seven__h">Cada passa té quatre moments:</p>
@@ -716,7 +716,7 @@
         <p class="footer__name"><img src="../assets/img/logo.png" alt="" width="40" height="40">Camins d&#39;Esperança [Activa]</p>
         <p>Una iniciativa de L&#39;Espiral i Elara Social</p>
         <p class="footer__motto">Cuidem les persones. Enfortim les comunitats</p>
-        <p>Amb la mirada de la Prescripció Social i la salut mental comunitària.</p>
+        <p>Amb la mirada de la Prescripció Social (recomanar activitats i grups de la comunitat com a part de la cura) i la salut mental comunitària.</p>
       </div>
       <div class="footer__col">
         <p class="footer__h">Els cursos</p>
@@ -737,6 +737,6 @@
     </div>
   </footer>
 
-  <script src="../assets/site.js?v=1795087052" defer></script>
+  <script src="../assets/site.js?v=1795089737" defer></script>
 </body>
 </html>

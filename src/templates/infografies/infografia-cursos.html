@@ -12,7 +12,7 @@
     <p class="vies__hint">Toca un curs per veure de què va.</p>
     <button class="vies__replay" type="button" hidden>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1M3.5 4v4.6h4.6"/></svg>
-      <span>Torna a caminar</span>
+      <span>Veure-ho de nou</span>
     </button>
   </div>
 </div>
@@ -213,11 +213,11 @@
   var BASE = "{{ root }}";
   var COURSES = [
     { scene: "vida", title: "Quan la vida et desborda", short: "La vida et desborda", themes: "ansietat, dols, conflictes…",
-      text: "Ansietat, angoixa, massa pensaments o la sensació de no poder més.", href: "malestar-emocional/" },
+      text: "Ansietat, angoixa, massa pensaments o la sensació de no poder més.", href: "malestar-emocional/"{% if (site.courses|selectattr("key", "equalto", "vida")|first).soon %}, soon: true{% endif %} },
     { scene: "cuidar", title: "Quan cuidar-nos és una tasca col·lectiva", short: "Cuidar-nos junts/es", themes: "soledat, falta de suport, aïllament…",
-      text: "Soledat, cansament emocional o falta d'espais on sentir-te escoltat/da.", href: "prescripcio-social/" },
+      text: "Soledat, cansament emocional o falta d'espais on sentir-te escoltat/da.", href: "prescripcio-social/"{% if (site.courses|selectattr("key", "equalto", "cuidar")|first).soon %}, soon: true{% endif %} },
     { scene: "mon", title: "Quan el món et preocupa", short: "El món et preocupa", themes: "canvi climàtic, futur incert…",
-      text: "Crisi climàtica, sequeres, incendis o el món que deixarem.", href: "accio-climatica/" },
+      text: "Crisi climàtica, sequeres, incendis o el món que deixarem.", href: "accio-climatica/"{% if (site.courses|selectattr("key", "equalto", "mon")|first).soon %}, soon: true{% endif %} },
     {# El 4t curs agafa de data/site.json la frase de la targeta i si encara no està obert («soon») #}
     {% set dia = site.courses|selectattr("key", "equalto", "dia")|first %}
     { scene: "casa", title: "Quan sostenir la vida es fa difícil", short: "Sostenir el dia a dia", themes: "feina, habitatge, precarietat…",
@@ -230,7 +230,7 @@
   var WALK = { kick: "Rutes a peu", title: "Camina a prop de casa",
     text: {{ ("Ara hi ha rutes " ~ cities_with_a ~ (", i a pobles de moltes comarques." if territories else "."))|tojson }}, href: "ciutats/", link: "Tria on vols caminar" }; // ciutats de data/site.json
   var END = { kick: "On porta el camí", title: "Esperança Activa", text: "Una pràctica, una caminada, un petit pas." };
-  var KICK_COURSE = "Curs gratuït", KICK_SOON = "Properament", LINK_COURSE = "És el meu cas";
+  var KICK_COURSE = "Curs gratuït", KICK_SOON = "Properament", LINK_COURSE = "Veure aquest curs";
 
   /* ---------- PAISATGES DELS CURSOS (64 x 64) ---------- */
   var SCENES = {

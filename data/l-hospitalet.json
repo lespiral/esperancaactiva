@@ -1,12 +1,15 @@
 {
   "slug": "l-hospitalet",
   "name": "L'Hospitalet de Llobregat",
+  "title": "Caminar per l'Hospitalet de Llobregat",
   "region": "Barcelonès",
   "summary": "10 rutes des d'entitats de l'economia social i solidària.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
   "blocks": [
     {
       "course": "dia",
+      "origin": "d'entitats de l'economia social i solidària",
+      "credit": "Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. En alguns punts hi ha diverses entitats al mateix lloc.",
       "text": "10 rutes circulars curtes, d'1,5 a 2,1 km (uns 18–32 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. En alguns punts hi ha diverses entitats al mateix lloc.",
       "summary": "10 rutes des de l'economia social",
       "groups": [
@@ -27,8 +30,8 @@
               "n": 1,
               "name": "La Suculenta",
               "info": "1,88 km · 22–29 min caminant · circular",
-              "address": "Avinguda d’Amèrica, 61 (edifici 61–67), l'Hospitalet de Llobregat",
-              "desc": "La Suculenta és una cooperativa que gestiona la cuina i el menjador del Casal Cívic i Comunitari de Bellvitge amb una proposta d’alimentació de proximitat.",
+              "address": "Avinguda d'Amèrica, 61 (edifici 61–67), l'Hospitalet de Llobregat",
+              "desc": "La Suculenta és una cooperativa que gestiona la cuina i el menjador del Casal Cívic i Comunitari de Bellvitge amb una proposta d'alimentació de proximitat.",
               "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-la-suculenta-lhospitalet-de-llobregat-295076090"
             },
             {
@@ -36,15 +39,15 @@
               "name": "Tallers Bellvitge",
               "info": "1,54 km · 18–24 min caminant · circular",
               "address": "Avinguda de la Mare de Déu de Bellvitge, 170, l'Hospitalet de Llobregat",
-              "desc": "Tallers Bellvitge, al Grup Cooperatiu TEB, ofereix suports i activitats ocupacionals i d’inclusió per a persones amb discapacitat intel·lectual.",
+              "desc": "Tallers Bellvitge, al Grup Cooperatiu TEB, ofereix suports i activitats ocupacionals i d'inclusió per a persones amb discapacitat intel·lectual.",
               "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-tallers-bellvitge-lhospitalet-de-llobregat-295076525"
             },
             {
               "n": 3,
               "name": "L'H en Bici i Associació L'H en Bici",
               "info": "2,08 km · 25–32 min caminant · circular",
-              "address": "Avinguda d’Europa, 174–176, altell, l'Hospitalet de Llobregat",
-              "desc": "L’H en Bici promou la mobilitat amb bicicleta mitjançant un espai comunitari, formació i serveis de ciclologística.",
+              "address": "Avinguda d'Europa, 174–176, altell, l'Hospitalet de Llobregat",
+              "desc": "L'H en Bici promou la mobilitat amb bicicleta mitjançant un espai comunitari, formació i serveis de ciclologística.",
               "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-lh-en-bici-lhospitalet-de-llobregat-295075912"
             },
             {
@@ -52,7 +55,7 @@
               "name": "Lacho Baji Cali",
               "info": "2,00 km · 24–31 min caminant · circular",
               "address": "Avinguda de Vilanova, 22, baixos, locals 1 i 3, l'Hospitalet de Llobregat",
-              "desc": "Lacho Baji Cali és una associació cultural gitana de l’Hospitalet que participa en projectes comunitaris, culturals i de convivència.",
+              "desc": "Lacho Baji Cali és una associació cultural gitana de l'Hospitalet que participa en projectes comunitaris, culturals i de convivència.",
               "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-lacho-baji-cali-lhospitalet-de-llobregat-295076620"
             },
             {
@@ -60,7 +63,7 @@
               "name": "Associació Mujeres Pa'lante",
               "info": "1,73 km · 20–26 min caminant · circular",
               "address": "Carrer de la Creu Roja, 8, local, l'Hospitalet de Llobregat",
-              "desc": "Mujeres Pa’lante és un espai de trobada, acollida i suport mutu entre dones migrades que promou l’autonomia i la defensa de drets.",
+              "desc": "Mujeres Pa'lante és un espai de trobada, acollida i suport mutu entre dones migrades que promou l'autonomia i la defensa de drets.",
               "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-associacio-mujeres-palante-lhospitalet-de-llobregat-295076503"
             },
             {
@@ -68,7 +71,7 @@
               "name": "Fundació Akwaba",
               "info": "1,52 km · 18–23 min caminant · circular",
               "address": "Carrer del Llobregat, 145, l'Hospitalet de Llobregat",
-              "desc": "La Fundació Akwaba desenvolupa projectes d’educació per la justícia global i iniciatives de participació i suport comunitari.",
+              "desc": "La Fundació Akwaba desenvolupa projectes d'educació per la justícia global i iniciatives de participació i suport comunitari.",
               "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-fundacio-akwaba-lhospitalet-de-llobregat-295076360"
             },
             {
@@ -76,7 +79,7 @@
               "name": "Llibreria Llavors i Espai Llavors SCCL",
               "info": "1,59 km · 19–24 min caminant · circular",
               "address": "Carrer del Llobregat, 66, l'Hospitalet de Llobregat",
-              "desc": "Llavors és una llibreria cooperativa de l’Hospitalet de Llobregat que combina la venda de llibres amb activitats culturals i de trobada veïnal.",
+              "desc": "Llavors és una llibreria cooperativa de l'Hospitalet de Llobregat que combina la venda de llibres amb activitats culturals i de trobada veïnal.",
               "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-llibreria-llavors-lhospitalet-de-llobregat-295076020"
             },
             {
@@ -91,7 +94,7 @@
               "n": 9,
               "name": "Illay Legal",
               "info": "1,63 km · 19–25 min caminant · circular",
-              "address": "Plaça d’Europa, 9–11, planta 14A, l'Hospitalet de Llobregat",
+              "address": "Plaça d'Europa, 9–11, planta 14A, l'Hospitalet de Llobregat",
               "desc": "Illay Legal ofereix assessorament jurídic en estrangeria, trasllat de residència i posada en marxa de negocis.",
               "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-illay-legal-lhospitalet-de-llobregat-295075635"
             },
@@ -100,7 +103,7 @@
               "name": "Centre d'Estudis Jaume Balmes (Institut Jaume Balmes al web de l'ateneu)",
               "info": "1,59 km · 19–24 min caminant · circular",
               "address": "Travessia Industrial, 157–161, l'Hospitalet de Llobregat",
-              "desc": "El Centre d’Estudis Jaume Balmes és un centre educatiu de l’Hospitalet de Llobregat amb ensenyaments de diferents etapes i formació professional.",
+              "desc": "El Centre d'Estudis Jaume Balmes és un centre educatiu de l'Hospitalet de Llobregat amb ensenyaments de diferents etapes i formació professional.",
               "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-centre-destudis-jaume-balmes-institut-jaume-balmes-al-web-de-lateneu-lhosp-295076095"
             }
           ]

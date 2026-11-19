@@ -12,6 +12,7 @@
   "blocks": [
     {
       "course": "vida",
+      "origin": "dels CAP i de places, parcs i equipaments de la ciutat",
       "text": "Hi ha dos tipus de rutes: 54 rutes curtes que surten dels CAP i, a part, 42 rutes més llargues que surten de places, parcs i equipaments de la ciutat. Tria les que et vagin millor.",
       "summary": "96 rutes: 54 des dels CAP i 42 més",
       "parts": [
@@ -159,7 +160,7 @@
                   "n": 9,
                   "name": "CAP La Marina",
                   "info": "2,22 km · 27–33 min caminant · 40–50 min amb pauses · circular",
-                  "address": "Carrer de l’Amnistia Internacional, 8, Barcelona",
+                  "address": "Carrer de l'Amnistia Internacional, 8, Barcelona",
                   "dest": "41.36188,2.13632"
                 },
                 {
@@ -260,7 +261,7 @@
                   "n": 9,
                   "name": "CAP Vallvidrera",
                   "info": "2,17 km · 26–33 min caminant · 40–50 min amb pauses · circular",
-                  "address": "Carrer d’Elisa Moragas i Badia, 2, Barcelona",
+                  "address": "Carrer d'Elisa Moragas i Badia, 2, Barcelona",
                   "dest": "41.41378,2.10411",
                   "note": "Per carrers de barri i camins de Collserola, amb trams de terra i sense vorera. Té pendents pronunciats (uns 120 m de pujada)."
                 }
@@ -355,7 +356,7 @@
                   "n": 8,
                   "name": "CAP Sant Rafael",
                   "info": "2,16 km · 26–32 min caminant · 40–50 min amb pauses · circular",
-                  "address": "Passeig de la Vall d’Hebron, 107, Barcelona",
+                  "address": "Passeig de la Vall d'Hebron, 107, Barcelona",
                   "dest": "41.42655,2.14278"
                 },
                 {
@@ -500,7 +501,7 @@
                   "n": 5,
                   "name": "CAP Besòs",
                   "info": "2,24 km · 27–34 min caminant · 40–50 min amb pauses · circular",
-                  "address": "Carrer d’Alfons el Magnànim, 57, Barcelona",
+                  "address": "Carrer d'Alfons el Magnànim, 57, Barcelona",
                   "dest": "41.41548,2.21550",
                   "note": "Inclou algun tram d'escales."
                 },
@@ -986,6 +987,7 @@
     },
     {
       "course": "cuidar",
+      "origin": "de casals de barri, casals de gent gran, centres cívics i biblioteques",
       "text": "65 rutes circulars curtes, d'1,7 a 2,1 km (uns 20–30 minuts caminant), que surten d'un equipament comunitari del barri i hi tornen: casals de barri, casals de gent gran, centres cívics i biblioteques dels 10 districtes. Tria el teu districte, busca el teu barri i fes-hi el temps de reflexió de cada passa. A part, hi ha 698 rutes més, de 2,1 a 4,3 km, que surten d'entitats del Tercer Sector Social dels 10 districtes: les trobaràs en una pàgina pròpia.",
       "summary": "65 rutes des dels equipaments comunitaris",
       "see_also": [{"text": "698 rutes més, des d'entitats del Tercer Sector Social: veure-les", "href": "barcelona/taula-tercer-sector/"}],
@@ -1127,7 +1129,7 @@
                   "name": "Centre Cívic Ateneu Fort Pienc",
                   "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular",
                   "address": "Plaça Fort Pienc, 4-5, Barcelona",
-                  "note": "Passa per el parc de l’Estació del Nord, que té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa per el parc de l'Estació del Nord, que té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296961304"
                 }
               ]
@@ -1178,7 +1180,7 @@
                   "name": "Casal de Barri Lleialtat Santsenca",
                   "info": "1,94 km · 23–29 min caminant · 35–50 min amb pauses · circular",
                   "address": "Carrer Olzinelles, 31, Barcelona",
-                  "note": "Passa per el parc de Can Batlló, que té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa per el parc de Can Batlló, que té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296961314"
                 }
               ]
@@ -1258,7 +1260,7 @@
                   "name": "Biblioteca Collserola – Josep Miracle",
                   "info": "1,89 km · 23–28 min caminant · 35–50 min amb pauses · circular",
                   "address": "Carrer Elisa Moragas i Badia, 16-34, Barcelona",
-                  "note": "Recorregut amb pujades i baixades (uns 53 m de desnivell entre el punt més baix i el més alt). Hi ha trams amb escales (al carrer d’en Manelic), que no són accessibles amb cadira de rodes.",
+                  "note": "Recorregut amb pujades i baixades (uns 53 m de desnivell entre el punt més baix i el més alt). Hi ha trams amb escales (al carrer d'en Manelic), que no són accessibles amb cadira de rodes.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296961341"
                 },
                 {
@@ -1266,7 +1268,7 @@
                   "name": "Casal de Barri Can Rectoret",
                   "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular",
                   "address": "Carrer Via Làctia, 4, Barcelona",
-                  "note": "Recorregut amb pujades i baixades (uns 112 m de desnivell entre el punt més baix i el més alt). Pel desnivell, és possible que necessitis més temps del que s’indica. Hi ha trams amb escales (al passatge del Garric), que no són accessibles amb cadira de rodes.",
+                  "note": "Recorregut amb pujades i baixades (uns 112 m de desnivell entre el punt més baix i el més alt). Pel desnivell, és possible que necessitis més temps del que s'indica. Hi ha trams amb escales (al passatge del Garric), que no són accessibles amb cadira de rodes.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296961344"
                 },
                 {
@@ -1326,7 +1328,7 @@
               "title": "Barcelona · Gràcia · equipaments comunitaris",
               "ll": "41.4171,2.1554",
               "z": 13,
-              "label": "Gràcia: Vallcarca i els Penitents; la Salut; el Coll; el Camp d’en Grassot i Gràcia Nova"
+              "label": "Gràcia: Vallcarca i els Penitents; la Salut; el Coll; el Camp d'en Grassot i Gràcia Nova"
             }
           ],
           "sections": [
@@ -1352,9 +1354,9 @@
                 },
                 {
                   "n": 3,
-                  "name": "Casal d’Avis de Penitents",
+                  "name": "Casal d'Avis de Penitents",
                   "info": "1,89 km · 23–28 min caminant · 35–50 min amb pauses · circular",
-                  "address": "Passeig Vall d’Hebron, 76-78, Barcelona",
+                  "address": "Passeig Vall d'Hebron, 76-78, Barcelona",
                   "note": "Hi ha trams amb escales (al carrer del Gòlgota), que no són accessibles amb cadira de rodes.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296961367"
                 }
@@ -1382,14 +1384,14 @@
                   "name": "Centre Cívic El Coll – La Bruguera",
                   "info": "1,77 km · 21–27 min caminant · 30–45 min amb pauses · circular",
                   "address": "Carrer Aldea, 15, Barcelona",
-                  "note": "Recorregut amb pujades i baixades (uns 71 m de desnivell entre el punt més baix i el més alt). Hi ha trams amb escales (al carrer de Móra la Nova), que no són accessibles amb cadira de rodes. Passa per el parc del Carmel, que té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Recorregut amb pujades i baixades (uns 71 m de desnivell entre el punt més baix i el més alt). Hi ha trams amb escales (al carrer de Móra la Nova), que no són accessibles amb cadira de rodes. Passa per el parc del Carmel, que té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296961380"
                 }
               ]
             },
             {
               "id": "equipaments-el-camp-den-grassot-i-gracia-nova",
-              "title": "El Camp d’en Grassot i Gràcia Nova",
+              "title": "El Camp d'en Grassot i Gràcia Nova",
               "routes": [
                 {
                   "n": 1,
@@ -1413,7 +1415,7 @@
               "title": "Barcelona · Horta-Guinardó · equipaments comunitaris",
               "ll": "41.4257,2.1607",
               "z": 13,
-              "label": "Horta-Guinardó: el Baix Guinardó; Can Baró; la Vall d’Hebron; el Carmel; el Guinardó"
+              "label": "Horta-Guinardó: el Baix Guinardó; Can Baró; la Vall d'Hebron; el Carmel; el Guinardó"
             }
           ],
           "sections": [
@@ -1446,11 +1448,11 @@
             },
             {
               "id": "equipaments-la-vall-dhebron",
-              "title": "La Vall d’Hebron",
+              "title": "La Vall d'Hebron",
               "routes": [
                 {
                   "n": 1,
-                  "name": "Casal de Barri de la Vall d’Hebron Can Travi",
+                  "name": "Casal de Barri de la Vall d'Hebron Can Travi",
                   "info": "1,90 km · 23–28 min caminant · 35–50 min amb pauses · circular",
                   "address": "Avinguda Cardenal Vidal i Barraquer, 45, Barcelona",
                   "note": "Hi ha trams amb escales (als jardins de Rosa Luxemburg), que no són accessibles amb cadira de rodes.",
@@ -1486,7 +1488,7 @@
               "routes": [
                 {
                   "n": 1,
-                  "name": "Casal d’Entitats Mas Guinardó",
+                  "name": "Casal d'Entitats Mas Guinardó",
                   "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular",
                   "address": "Plaça Salvador Riera, 2, Barcelona",
                   "note": "Recorregut amb pujades i baixades (uns 46 m de desnivell entre el punt més baix i el més alt). Hi ha trams amb escales, que no són accessibles amb cadira de rodes.",
@@ -1559,7 +1561,7 @@
                   "n": 1,
                   "name": "Casal de Barri Prosperitat",
                   "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular",
-                  "address": "Plaça d’Àngel Pestaña, 1, Barcelona",
+                  "address": "Plaça d'Àngel Pestaña, 1, Barcelona",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296961584"
                 }
               ]
@@ -1694,7 +1696,7 @@
                 },
                 {
                   "n": 2,
-                  "name": "Casal de Barri Ateneu L’Harmonia",
+                  "name": "Casal de Barri Ateneu L'Harmonia",
                   "info": "1,94 km · 23–29 min caminant · 35–50 min amb pauses · circular",
                   "address": "Carrer Sant Adrià, 20, Barcelona",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296961658"
@@ -1794,7 +1796,7 @@
                   "name": "Casal de Gent Gran Parc Sandaru",
                   "info": "1,91 km · 23–29 min caminant · 35–50 min amb pauses · circular",
                   "address": "Carrer Buenaventura Muñoz, 21, Barcelona",
-                  "note": "El casal és dins del Centre Cívic Parc Sandaru. Passa per el parc de l’Estació del Nord, que té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "El casal és dins del Centre Cívic Parc Sandaru. Passa per el parc de l'Estació del Nord, que té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296961698"
                 }
               ]
@@ -1824,7 +1826,7 @@
               "title": "Barcelona · Sant Martí · Clot, Verneda i Besòs · equipaments comunitaris",
               "ll": "41.4182,2.1969",
               "z": 13,
-              "label": "Sant Martí · Clot, Verneda i Besòs: el Clot; el Camp de l’Arpa del Clot; Provençals del Poblenou; la Verneda i la Pau; el Besòs i el Maresme"
+              "label": "Sant Martí · Clot, Verneda i Besòs: el Clot; el Camp de l'Arpa del Clot; Provençals del Poblenou; la Verneda i la Pau; el Besòs i el Maresme"
             }
           ],
           "sections": [
@@ -1843,7 +1845,7 @@
             },
             {
               "id": "equipaments-el-camp-de-larpa-del-clot",
-              "title": "El Camp de l’Arpa del Clot",
+              "title": "El Camp de l'Arpa del Clot",
               "routes": [
                 {
                   "n": 1,
@@ -1860,7 +1862,7 @@
               "routes": [
                 {
                   "n": 1,
-                  "name": "Casal de Barri Ca l’Isidret",
+                  "name": "Casal de Barri Ca l'Isidret",
                   "info": "1,96 km · 24–29 min caminant · 35–50 min amb pauses · circular",
                   "address": "Carrer Josep Pla, 174, Barcelona",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296961739"
@@ -1907,6 +1909,7 @@
     },
     {
       "course": "mon",
+      "origin": "de parcs, jardins i places dels 10 districtes",
       "text": "261 rutes curtes i circulars pels parcs i jardins dels 10 districtes de la ciutat, d'entre 1,7 i 2,2 km (uns 20–30 minuts caminant). Surten d'un parc, un jardí o una plaça i hi tornen. Tria el teu districte, busca el teu barri i fes-hi el temps de reflexió de cada passa.",
       "summary": "261 rutes pels parcs i jardins",
       "zones": {
@@ -1936,7 +1939,7 @@
                   "name": "Jardins de Rubió i Lluch",
                   "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular",
                   "address": "Carrer de l'Hospital, 56, Barcelona",
-                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Els jardins tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959575"
                 },
                 {
@@ -1944,14 +1947,14 @@
                   "name": "Jardins de Sant Pau del Camp",
                   "info": "1,94 km · 23–29 min caminant · 35–50 min amb pauses · circular",
                   "address": "Carrer de Sant Pau, 99, Barcelona",
-                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Els jardins tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959610"
                 },
                 {
                   "n": 3,
                   "name": "Plaça de Josep M. Folch i Torres",
                   "info": "1,74 km · 21–26 min caminant · 30–45 min amb pauses · circular",
-                  "note": "Passa pels jardins de Sant Pau del Camp, que tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pels jardins de Sant Pau del Camp, que tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959635"
                 }
               ]
@@ -1962,9 +1965,9 @@
               "routes": [
                 {
                   "n": 1,
-                  "name": "Jardí de la Casa d’Ignasi de Puig",
+                  "name": "Jardí de la Casa d'Ignasi de Puig",
                   "info": "1,79 km · 22–27 min caminant · 30–45 min amb pauses · circular",
-                  "note": "El jardí té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "El jardí té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959549"
                 },
                 {
@@ -1972,7 +1975,7 @@
                   "name": "Plaça Carme Simó",
                   "info": "1,84 km · 22–28 min caminant · 30–50 min amb pauses · circular",
                   "address": "Carrer del Sots-tinent Navarro, 12, Barcelona",
-                  "note": "L’espai té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "L'espai té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959561"
                 }
               ]
@@ -2004,7 +2007,7 @@
                   "name": "Parc de la Ciutadella",
                   "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular",
                   "address": "Entrada pel passeig de Picasso, Barcelona",
-                  "note": "El parc té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "El parc té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959487"
                 },
                 {
@@ -2038,14 +2041,14 @@
               "routes": [
                 {
                   "n": 1,
-                  "name": "Parc de l’Estació del Nord",
+                  "name": "Parc de l'Estació del Nord",
                   "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular",
-                  "note": "El parc té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "El parc té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959694"
                 },
                 {
                   "n": 2,
-                  "name": "Jardins de la Carretera Antiga d’Horta",
+                  "name": "Jardins de la Carretera Antiga d'Horta",
                   "info": "1,82 km · 22–27 min caminant · 30–45 min amb pauses · circular",
                   "address": "Carretera Antiga d'Horta, Barcelona",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959743"
@@ -2060,7 +2063,7 @@
                   "n": 4,
                   "name": "Plaça del Fort Pienc",
                   "info": "1,79 km · 22–27 min caminant · 30–45 min amb pauses · circular",
-                  "note": "Passa pel parc de l’Estació del Nord, que té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pel parc de l'Estació del Nord, que té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959749"
                 },
                 {
@@ -2085,12 +2088,12 @@
                   "n": 8,
                   "name": "Jardins de Lina Òdena",
                   "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular",
-                  "note": "Passa pel parc de l’Estació del Nord, que té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pel parc de l'Estació del Nord, que té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959788"
                 },
                 {
                   "n": 9,
-                  "name": "Jardins de Constança d’Aragó",
+                  "name": "Jardins de Constança d'Aragó",
                   "info": "1,98 km · 24–30 min caminant · 35–50 min amb pauses · circular",
                   "address": "Carrer de Roger de Flor, 194, Barcelona",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959841"
@@ -2119,9 +2122,9 @@
               "routes": [
                 {
                   "n": 10,
-                  "name": "Jardins d’Anaïs Napoleon",
+                  "name": "Jardins d'Anaïs Napoleon",
                   "info": "1,93 km · 23–29 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Passa pel parc de l’Estació del Nord, que té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pel parc de l'Estació del Nord, que té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959844"
                 },
                 {
@@ -2132,7 +2135,7 @@
                 },
                 {
                   "n": 12,
-                  "name": "Jardins d’Agustí Centelles",
+                  "name": "Jardins d'Agustí Centelles",
                   "info": "1,98 km · 24–30 min caminant · 35–50 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959850"
                 }
@@ -2169,7 +2172,7 @@
                 },
                 {
                   "n": 5,
-                  "name": "Plaça d’Henry Dunant",
+                  "name": "Plaça d'Henry Dunant",
                   "info": "1,82 km · 22–27 min caminant · 30–45 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959865"
                 },
@@ -2193,7 +2196,7 @@
               "title": "Barcelona · Eixample · parcs i jardins, mapa 3 de 6",
               "ll": "41.4020,2.1687",
               "z": 14,
-              "label": "Eixample · mapa 3 de 6: la Sagrada Família; la Dreta de l’Eixample"
+              "label": "Eixample · mapa 3 de 6: la Sagrada Família; la Dreta de l'Eixample"
             }
           ],
           "sections": [
@@ -2203,7 +2206,7 @@
               "routes": [
                 {
                   "n": 7,
-                  "name": "Jardins d’Enriqueta Sèculi",
+                  "name": "Jardins d'Enriqueta Sèculi",
                   "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959911"
                 },
@@ -2224,13 +2227,13 @@
             },
             {
               "id": "barri-la-dreta-de-leixample",
-              "title": "La Dreta de l’Eixample",
+              "title": "La Dreta de l'Eixample",
               "routes": [
                 {
                   "n": 1,
                   "name": "Jardins del Palau Robert",
                   "info": "2,00 km · 24–30 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Els jardins tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959870"
                 },
                 {
@@ -2243,7 +2246,7 @@
                   "n": 3,
                   "name": "Jardins de la Torre de les Aigües",
                   "info": "1,99 km · 24–30 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Els jardins tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959894"
                 },
                 {
@@ -2278,13 +2281,13 @@
               "title": "Barcelona · Eixample · parcs i jardins, mapa 4 de 6",
               "ll": "41.3891,2.1601",
               "z": 14,
-              "label": "Eixample · mapa 4 de 6: la Dreta de l’Eixample; l’Antiga Esquerra de l’Eixample"
+              "label": "Eixample · mapa 4 de 6: la Dreta de l'Eixample; l'Antiga Esquerra de l'Eixample"
             }
           ],
           "sections": [
             {
               "id": "barri-la-dreta-de-leixample-2",
-              "title": "La Dreta de l’Eixample",
+              "title": "La Dreta de l'Eixample",
               "routes": [
                 {
                   "n": 7,
@@ -2296,7 +2299,7 @@
                   "n": 8,
                   "name": "Placeta de Joan Brossa",
                   "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Passa pels jardins del Palau Robert, que tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pels jardins del Palau Robert, que tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959931"
                 },
                 {
@@ -2317,14 +2320,14 @@
             },
             {
               "id": "barri-lantiga-esquerra-de-leixample",
-              "title": "L’Antiga Esquerra de l’Eixample",
+              "title": "L'Antiga Esquerra de l'Eixample",
               "routes": [
                 {
                   "n": 1,
                   "name": "Jardins de Ferran Soldevila",
                   "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular",
                   "address": "Gran Via de les Corts Catalanes, 585, Barcelona",
-                  "note": "Els jardins són dins del recinte de la Universitat i tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Els jardins són dins del recinte de la Universitat i tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959959"
                 },
                 {
@@ -2335,7 +2338,7 @@
                 },
                 {
                   "n": 3,
-                  "name": "Jardins d’Ermessenda de Carcassona",
+                  "name": "Jardins d'Ermessenda de Carcassona",
                   "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959965"
                 },
@@ -2359,19 +2362,19 @@
               "title": "Barcelona · Eixample · parcs i jardins, mapa 5 de 6",
               "ll": "41.3864,2.1512",
               "z": 14,
-              "label": "Eixample · mapa 5 de 6: l’Antiga Esquerra de l’Eixample; la Nova Esquerra de l’Eixample"
+              "label": "Eixample · mapa 5 de 6: l'Antiga Esquerra de l'Eixample; la Nova Esquerra de l'Eixample"
             }
           ],
           "sections": [
             {
               "id": "barri-lantiga-esquerra-de-leixample-2",
-              "title": "L’Antiga Esquerra de l’Eixample",
+              "title": "L'Antiga Esquerra de l'Eixample",
               "routes": [
                 {
                   "n": 5,
                   "name": "Jardí d'Assumpció Català",
                   "info": "1,84 km · 22–28 min caminant · 30–50 min amb pauses · circular",
-                  "note": "Passa pels jardins de Rosa Deulofeu, que tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pels jardins de Rosa Deulofeu, que tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960003"
                 }
               ],
@@ -2379,20 +2382,20 @@
             },
             {
               "id": "barri-la-nova-esquerra-de-leixample",
-              "title": "La Nova Esquerra de l’Eixample",
+              "title": "La Nova Esquerra de l'Eixample",
               "routes": [
                 {
                   "n": 1,
                   "name": "Parc de Joan Miró",
                   "info": "1,93 km · 23–29 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Passa pel parc de l’Espanya Industrial, que té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pel parc de l'Espanya Industrial, que té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959973"
                 },
                 {
                   "n": 2,
                   "name": "Jardins de Rosa Deulofeu",
                   "info": "1,94 km · 23–29 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Els jardins tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959977"
                 },
                 {
@@ -2403,9 +2406,9 @@
                 },
                 {
                   "n": 4,
-                  "name": "Jardins d’Emma de Barcelona",
+                  "name": "Jardins d'Emma de Barcelona",
                   "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular",
-                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Els jardins tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959983"
                 },
                 {
@@ -2422,7 +2425,7 @@
                 },
                 {
                   "n": 7,
-                  "name": "Jardins d’Elena Maseras",
+                  "name": "Jardins d'Elena Maseras",
                   "info": "1,91 km · 23–29 min caminant · 35–50 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296959994"
                 },
@@ -2446,19 +2449,19 @@
               "title": "Barcelona · Eixample · parcs i jardins, mapa 6 de 6",
               "ll": "41.3837,2.1552",
               "z": 14,
-              "label": "Eixample · mapa 6 de 6: la Nova Esquerra de l’Eixample; Sant Antoni"
+              "label": "Eixample · mapa 6 de 6: la Nova Esquerra de l'Eixample; Sant Antoni"
             }
           ],
           "sections": [
             {
               "id": "barri-la-nova-esquerra-de-leixample-2",
-              "title": "La Nova Esquerra de l’Eixample",
+              "title": "La Nova Esquerra de l'Eixample",
               "routes": [
                 {
                   "n": 9,
                   "name": "Jardins de Montserrat",
                   "info": "1,75 km · 21–26 min caminant · 30–45 min amb pauses · circular",
-                  "note": "Passa pels jardins de Rosa Deulofeu, que tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pels jardins de Rosa Deulofeu, que tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960058"
                 }
               ],
@@ -2512,7 +2515,7 @@
                 },
                 {
                   "n": 8,
-                  "name": "Jardins de l’antic Cinema Urgell",
+                  "name": "Jardins de l'antic Cinema Urgell",
                   "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular",
                   "address": "Carrer del Comte Borrell, 82, Barcelona",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960056"
@@ -2543,35 +2546,35 @@
                   "n": 1,
                   "name": "Jardí Botànic de Barcelona",
                   "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular",
-                  "note": "L’entrada al jardí botànic és de pagament: la ruta comença a l’entrada i en fa la volta per fora.",
+                  "note": "L'entrada al jardí botànic és de pagament: la ruta comença a l'entrada i en fa la volta per fora.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960062"
                 },
                 {
                   "n": 2,
-                  "name": "Mirador de l’Alcalde",
+                  "name": "Mirador de l'Alcalde",
                   "info": "1,98 km · 24–30 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Recorregut amb pujades i baixades (uns 83 m de desnivell entre el punt més baix i el més alt). Passa pels jardins de Joan Brossa, que tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Recorregut amb pujades i baixades (uns 83 m de desnivell entre el punt més baix i el més alt). Passa pels jardins de Joan Brossa, que tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960067"
                 },
                 {
                   "n": 3,
                   "name": "Jardí Botànic Històric de Barcelona",
                   "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular",
-                  "note": "El jardí té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "El jardí té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960070"
                 },
                 {
                   "n": 4,
                   "name": "Jardins de Joan Maragall",
                   "info": "1,90 km · 23–28 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Els jardins només obren alguns dies i hores: la ruta comença a l’entrada; consulta’n l’horari si hi vols entrar.",
+                  "note": "Els jardins només obren alguns dies i hores: la ruta comença a l'entrada; consulta'n l'horari si hi vols entrar.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960072"
                 },
                 {
                   "n": 5,
                   "name": "Jardins de Mossèn Cinto Verdaguer",
                   "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular",
-                  "note": "Recorregut amb pujades i baixades (uns 67 m de desnivell entre el punt més baix i el més alt). Passa pels jardins de Joan Brossa, que tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Recorregut amb pujades i baixades (uns 67 m de desnivell entre el punt més baix i el més alt). Passa pels jardins de Joan Brossa, que tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960074"
                 },
                 {
@@ -2585,14 +2588,14 @@
                   "n": 7,
                   "name": "Jardins de Laribal",
                   "info": "1,84 km · 22–28 min caminant · 30–50 min amb pauses · circular",
-                  "note": "Recorregut amb pujades i baixades (uns 46 m de desnivell entre el punt més baix i el més alt). Passa pels jardins de Joan Maragall, que tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Recorregut amb pujades i baixades (uns 46 m de desnivell entre el punt més baix i el més alt). Passa pels jardins de Joan Maragall, que tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960113"
                 },
                 {
                   "n": 8,
                   "name": "Jardins del Teatre Grec",
                   "info": "1,91 km · 23–29 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Passa pels jardins de Joan Maragall, que tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pels jardins de Joan Maragall, que tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960118"
                 },
                 {
@@ -2634,21 +2637,21 @@
                   "n": 11,
                   "name": "Jardí de Petra Kelly",
                   "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular",
-                  "note": "Recorregut amb pujades i baixades (uns 77 m de desnivell entre el punt més baix i el més alt). El viver és un espai de treball i no tot és de lliure accés: la ruta comença a l’entrada.",
+                  "note": "Recorregut amb pujades i baixades (uns 77 m de desnivell entre el punt més baix i el més alt). El viver és un espai de treball i no tot és de lliure accés: la ruta comença a l'entrada.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960125"
                 },
                 {
                   "n": 12,
                   "name": "Jardins de Joan Brossa",
                   "info": "1,75 km · 21–26 min caminant · 30–45 min amb pauses · circular",
-                  "note": "Recorregut amb pujades i baixades (uns 64 m de desnivell entre el punt més baix i el més alt). Passa pels jardins del Mirador de l’Alcalde, que tenen horari d’obertura: consulta’l abans d’anar-hi. Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Recorregut amb pujades i baixades (uns 64 m de desnivell entre el punt més baix i el més alt). Passa pels jardins del Mirador de l'Alcalde, que tenen horari d'obertura: consulta'l abans d'anar-hi. Els jardins tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960128"
                 },
                 {
                   "n": 13,
                   "name": "Parc de la Primavera",
                   "info": "1,73 km · 21–26 min caminant · 30–45 min amb pauses · circular",
-                  "note": "Recorregut amb pujades i baixades (uns 66 m de desnivell entre el punt més baix i el més alt). Passa pels jardins de Joan Brossa, que tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Recorregut amb pujades i baixades (uns 66 m de desnivell entre el punt més baix i el més alt). Passa pels jardins de Joan Brossa, que tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960130"
                 },
                 {
@@ -2668,7 +2671,7 @@
                   "n": 16,
                   "name": "Jardins de les Escultures",
                   "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Recorregut amb pujades i baixades (uns 52 m de desnivell entre el punt més baix i el més alt). Passa pels jardins de Laribal i els jardins de Joan Maragall, que tenen horari d’obertura: consulta’l abans d’anar-hi. El jardí té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Recorregut amb pujades i baixades (uns 52 m de desnivell entre el punt més baix i el més alt). Passa pels jardins de Laribal i els jardins de Joan Maragall, que tenen horari d'obertura: consulta'l abans d'anar-hi. El jardí té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960213"
                 },
                 {
@@ -2681,7 +2684,7 @@
                   "n": 18,
                   "name": "Jardins de les Tres Xemeneies",
                   "info": "1,99 km · 24–30 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Passa pels jardins de Sant Pau del Camp, que tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pels jardins de Sant Pau del Camp, que tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960219"
                 },
                 {
@@ -2752,7 +2755,7 @@
                 },
                 {
                   "n": 3,
-                  "name": "Jardins de Ca l’Alena",
+                  "name": "Jardins de Ca l'Alena",
                   "info": "1,77 km · 21–27 min caminant · 30–45 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960250"
                 },
@@ -2778,7 +2781,7 @@
                   "n": 1,
                   "name": "Parc de la Font Florida",
                   "info": "1,73 km · 21–26 min caminant · 30–45 min amb pauses · circular",
-                  "note": "Passa pel parc de Can Batlló, que té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pel parc de Can Batlló, que té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960242"
                 }
               ]
@@ -2825,14 +2828,14 @@
                   "n": 1,
                   "name": "Jardins de Celestina Vigneaux",
                   "info": "2,00 km · 24–30 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Passa pel parc de Can Batlló, que té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pel parc de Can Batlló, que té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960345"
                 },
                 {
                   "n": 2,
                   "name": "Parc de Can Batlló",
                   "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular",
-                  "note": "El parc té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "El parc té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960349"
                 }
               ]
@@ -2868,9 +2871,9 @@
                 },
                 {
                   "n": 2,
-                  "name": "Parc de l’Espanya Industrial",
+                  "name": "Parc de l'Espanya Industrial",
                   "info": "1,78 km · 21–27 min caminant · 30–45 min amb pauses · circular",
-                  "note": "El parc té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "El parc té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960265"
                 },
                 {
@@ -2881,7 +2884,7 @@
                 },
                 {
                   "n": 4,
-                  "name": "Jardins d’Elisard Sala",
+                  "name": "Jardins d'Elisard Sala",
                   "info": "1,82 km · 22–27 min caminant · 30–45 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960271"
                 },
@@ -2917,7 +2920,7 @@
                   "n": 1,
                   "name": "Jardins de William Shakespeare",
                   "info": "1,82 km · 22–27 min caminant · 30–45 min amb pauses · circular",
-                  "note": "Passa pels jardins del Palau de Pedralbes, que tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pels jardins del Palau de Pedralbes, que tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960353"
                 },
                 {
@@ -2934,9 +2937,9 @@
                 },
                 {
                   "n": 4,
-                  "name": "Jardins d’Olga Sacharoff",
+                  "name": "Jardins d'Olga Sacharoff",
                   "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular",
-                  "note": "Passa pels jardins de Piscines i Esports, que tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pels jardins de Piscines i Esports, que tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960362"
                 },
                 {
@@ -3017,7 +3020,7 @@
                 },
                 {
                   "n": 16,
-                  "name": "Jardins d’Emília Miret i Soler",
+                  "name": "Jardins d'Emília Miret i Soler",
                   "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular",
                   "address": "Passatge de Rosa Leveroni, 2, Barcelona",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960457"
@@ -3026,7 +3029,7 @@
                   "n": 17,
                   "name": "Jardins de Gaietà Renom",
                   "info": "1,99 km · 24–30 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Els jardins tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960459"
                 },
                 {
@@ -3060,7 +3063,7 @@
               "routes": [
                 {
                   "n": 19,
-                  "name": "Jardins d’Àurea Cuadrado",
+                  "name": "Jardins d'Àurea Cuadrado",
                   "info": "1,93 km · 23–29 min caminant · 35–50 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960510"
                 }
@@ -3075,7 +3078,7 @@
                   "n": 1,
                   "name": "Jardins de la Maternitat",
                   "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular",
-                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Els jardins tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960465"
                 },
                 {
@@ -3088,7 +3091,7 @@
                   "n": 3,
                   "name": "Jardins de Bacardí",
                   "info": "1,90 km · 23–28 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Passa pels jardins de la Maternitat, que tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pels jardins de la Maternitat, que tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960470"
                 },
                 {
@@ -3099,13 +3102,13 @@
                 },
                 {
                   "n": 5,
-                  "name": "Jardins de Clot d’en Salvi",
+                  "name": "Jardins de Clot d'en Salvi",
                   "info": "1,76 km · 21–26 min caminant · 30–45 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960475"
                 },
                 {
                   "n": 6,
-                  "name": "Jardins d’Ernest Lluch",
+                  "name": "Jardins d'Ernest Lluch",
                   "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960499"
                 },
@@ -3147,7 +3150,7 @@
                   "n": 1,
                   "name": "Jardins del Palau de Pedralbes",
                   "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Els jardins tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960515"
                 },
                 {
@@ -3160,7 +3163,7 @@
                   "n": 3,
                   "name": "Jardins de Rubió i Tudurí",
                   "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Passa pels jardins del Palau de Pedralbes, que tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pels jardins del Palau de Pedralbes, que tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960519"
                 },
                 {
@@ -3233,7 +3236,7 @@
                 },
                 {
                   "n": 3,
-                  "name": "Parc del Castell de l’Oreneta",
+                  "name": "Parc del Castell de l'Oreneta",
                   "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular",
                   "note": "Recorregut amb pujades i baixades (uns 99 m de desnivell entre el punt més baix i el més alt).",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960561"
@@ -3254,7 +3257,7 @@
                   "n": 6,
                   "name": "Jardins del Doctor Castelló",
                   "info": "1,96 km · 23–29 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Passa pels jardins de Piscines i Esports, que tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pels jardins de Piscines i Esports, que tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960587"
                 },
                 {
@@ -3273,7 +3276,7 @@
                   "n": 9,
                   "name": "Jardins del Camp de Sarrià",
                   "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Passa pels jardins de Piscines i Esports, que tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pels jardins de Piscines i Esports, que tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960593"
                 }
               ]
@@ -3345,7 +3348,7 @@
                 },
                 {
                   "n": 3,
-                  "name": "Jardins d’Elvira Farreras Valentí",
+                  "name": "Jardins d'Elvira Farreras Valentí",
                   "info": "1,96 km · 23–29 min caminant · 35–50 min amb pauses · circular",
                   "note": "Recorregut amb pujades i baixades (uns 54 m de desnivell entre el punt més baix i el més alt).",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960665"
@@ -3358,7 +3361,7 @@
               "routes": [
                 {
                   "n": 1,
-                  "name": "Jardins de Ca n’Altimira",
+                  "name": "Jardins de Ca n'Altimira",
                   "info": "1,91 km · 23–29 min caminant · 35–50 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960597"
                 },
@@ -3394,7 +3397,7 @@
                   "n": 3,
                   "name": "Jardins de la Tamarita",
                   "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Els jardins tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960715"
                 },
                 {
@@ -3426,14 +3429,14 @@
                   "n": 1,
                   "name": "Jardins de Piscines i Esports",
                   "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular",
-                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Els jardins tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960695"
                 },
                 {
                   "n": 2,
                   "name": "Jardins de Moragas",
                   "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Els jardins tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960697"
                 },
                 {
@@ -3441,7 +3444,7 @@
                   "name": "Parc del Turó",
                   "info": "1,75 km · 21–26 min caminant · 30–45 min amb pauses · circular",
                   "address": "Avinguda de Pau Casals, 19, Barcelona",
-                  "note": "Passa pels jardins de Piscines i Esports, que tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pels jardins de Piscines i Esports, que tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960702"
                 },
                 {
@@ -3454,7 +3457,7 @@
                   "n": 5,
                   "name": "Jardins de Can Castelló",
                   "info": "1,78 km · 21–27 min caminant · 30–45 min amb pauses · circular",
-                  "note": "Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Els jardins tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960711"
                 }
               ]
@@ -3483,7 +3486,7 @@
                   "n": 6,
                   "name": "Jardí de la Fundació Julio Muñoz Ramonet",
                   "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular",
-                  "note": "Passa pels jardins de Moragas, que tenen horari d’obertura: consulta’l abans d’anar-hi. Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pels jardins de Moragas, que tenen horari d'obertura: consulta'l abans d'anar-hi. Els jardins tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960732"
                 },
                 {
@@ -3497,7 +3500,7 @@
                   "n": 8,
                   "name": "Jardins del Doctor Samuel Hahnemann",
                   "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Passa pels jardins de Piscines i Esports, que tenen horari d’obertura: consulta’l abans d’anar-hi. Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pels jardins de Piscines i Esports, que tenen horari d'obertura: consulta'l abans d'anar-hi. Els jardins tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960759"
                 }
               ],
@@ -3523,9 +3526,9 @@
                 },
                 {
                   "n": 3,
-                  "name": "Jardins d’Enric Sagnier",
+                  "name": "Jardins d'Enric Sagnier",
                   "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular",
-                  "note": "Passa pels jardins de Moragas, que tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pels jardins de Moragas, que tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960768"
                 },
                 {
@@ -3570,7 +3573,7 @@
                 },
                 {
                   "n": 2,
-                  "name": "Plaça d’Alfons Comín",
+                  "name": "Plaça d'Alfons Comín",
                   "info": "1,73 km · 21–26 min caminant · 30–45 min amb pauses · circular",
                   "address": "Plaça d'Alfons Comín, 11, Barcelona",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960780"
@@ -3617,7 +3620,7 @@
                   "n": 1,
                   "name": "Park Güell",
                   "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Recorregut amb pujades i baixades (uns 62 m de desnivell entre el punt més baix i el més alt). L’accés a l’interior del parc està regulat: consulta’n les condicions abans d’anar-hi. La ruta comença a l’entrada del carrer d’Olot i fa la volta pels carrers del voltant, sense entrar-hi.",
+                  "note": "Recorregut amb pujades i baixades (uns 62 m de desnivell entre el punt més baix i el més alt). L'accés a l'interior del parc està regulat: consulta'n les condicions abans d'anar-hi. La ruta comença a l'entrada del carrer d'Olot i fa la volta pels carrers del voltant, sense entrar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960798"
                 }
               ]
@@ -3641,7 +3644,7 @@
                 },
                 {
                   "n": 3,
-                  "name": "Plaça d’en Joanic",
+                  "name": "Plaça d'en Joanic",
                   "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960806"
                 }
@@ -3659,7 +3662,7 @@
               "title": "Barcelona · Gràcia · parcs i jardins, mapa 2 de 2",
               "ll": "41.4031,2.1610",
               "z": 14,
-              "label": "Gràcia · mapa 2 de 2: la Vila de Gràcia; el Camp d’en Grassot i Gràcia Nova"
+              "label": "Gràcia · mapa 2 de 2: la Vila de Gràcia; el Camp d'en Grassot i Gràcia Nova"
             }
           ],
           "sections": [
@@ -3684,7 +3687,7 @@
                   "n": 6,
                   "name": "Jardins de Salvador Espriu",
                   "info": "1,79 km · 22–27 min caminant · 30–45 min amb pauses · circular",
-                  "note": "Passa pels jardins del Palau Robert, que tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Passa pels jardins del Palau Robert, que tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960842"
                 },
                 {
@@ -3716,7 +3719,7 @@
             },
             {
               "id": "barri-el-camp-den-grassot-i-gracia-nova",
-              "title": "El Camp d’en Grassot i Gràcia Nova",
+              "title": "El Camp d'en Grassot i Gràcia Nova",
               "routes": [
                 {
                   "n": 1,
@@ -3732,7 +3735,7 @@
                 },
                 {
                   "n": 3,
-                  "name": "Jardins d’Antoni Puigvert",
+                  "name": "Jardins d'Antoni Puigvert",
                   "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960814"
                 }
@@ -3750,7 +3753,7 @@
               "title": "Barcelona · Horta-Guinardó · parcs i jardins, mapa 1 de 2",
               "ll": "41.4189,2.1602",
               "z": 14,
-              "label": "Horta-Guinardó · mapa 1 de 2: el Baix Guinardó; el Guinardó; la Font d’en Fargues; el Carmel"
+              "label": "Horta-Guinardó · mapa 1 de 2: el Baix Guinardó; el Guinardó; la Font d'en Fargues; el Carmel"
             }
           ],
           "sections": [
@@ -3762,7 +3765,7 @@
                   "n": 1,
                   "name": "Parc de les Aigües",
                   "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular",
-                  "note": "Recorregut amb pujades i baixades (uns 64 m de desnivell entre el punt més baix i el més alt). El parc té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Recorregut amb pujades i baixades (uns 64 m de desnivell entre el punt més baix i el més alt). El parc té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960857"
                 },
                 {
@@ -3780,7 +3783,7 @@
                 },
                 {
                   "n": 4,
-                  "name": "Jardins d’Hiroshima",
+                  "name": "Jardins d'Hiroshima",
                   "info": "1,76 km · 21–26 min caminant · 30–45 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960873"
                 }
@@ -3801,7 +3804,7 @@
             },
             {
               "id": "barri-la-font-den-fargues",
-              "title": "La Font d’en Fargues",
+              "title": "La Font d'en Fargues",
               "routes": [
                 {
                   "n": 1,
@@ -3820,14 +3823,14 @@
                   "n": 1,
                   "name": "Parc del Carmel",
                   "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular",
-                  "note": "Recorregut amb pujades i baixades (uns 89 m de desnivell entre el punt més baix i el més alt). El parc té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Recorregut amb pujades i baixades (uns 89 m de desnivell entre el punt més baix i el més alt). El parc té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960875"
                 },
                 {
                   "n": 2,
                   "name": "Jardins de Juan Ponce",
                   "info": "1,78 km · 21–27 min caminant · 30–45 min amb pauses · circular",
-                  "note": "Recorregut amb pujades i baixades (uns 73 m de desnivell entre el punt més baix i el més alt). Passa pel parc del Carmel, que té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Recorregut amb pujades i baixades (uns 73 m de desnivell entre el punt més baix i el més alt). Passa pel parc del Carmel, que té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960877"
                 },
                 {
@@ -3851,7 +3854,7 @@
               "title": "Barcelona · Horta-Guinardó · parcs i jardins, mapa 2 de 2",
               "ll": "41.4327,2.1505",
               "z": 14,
-              "label": "Horta-Guinardó · mapa 2 de 2: Montbau; la Vall d’Hebron; Horta"
+              "label": "Horta-Guinardó · mapa 2 de 2: Montbau; la Vall d'Hebron; Horta"
             }
           ],
           "sections": [
@@ -3863,12 +3866,12 @@
                   "n": 1,
                   "name": "Jardins del Palau de les Heures",
                   "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Recorregut amb pujades i baixades (uns 61 m de desnivell entre el punt més baix i el més alt). La ruta comença al carrer de l’Harmonia, a uns 90 m dels jardins, i fa la volta pels carrers de Montbau. Els jardins tenen horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Recorregut amb pujades i baixades (uns 61 m de desnivell entre el punt més baix i el més alt). La ruta comença al carrer de l'Harmonia, a uns 90 m dels jardins, i fa la volta pels carrers de Montbau. Els jardins tenen horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960909"
                 },
                 {
                   "n": 2,
-                  "name": "Parc del Laberint d’Horta",
+                  "name": "Parc del Laberint d'Horta",
                   "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960913"
                 }
@@ -3876,11 +3879,11 @@
             },
             {
               "id": "barri-la-vall-dhebron",
-              "title": "La Vall d’Hebron",
+              "title": "La Vall d'Hebron",
               "routes": [
                 {
                   "n": 1,
-                  "name": "Parc de la Vall d’Hebron",
+                  "name": "Parc de la Vall d'Hebron",
                   "info": "1,72 km · 21–26 min caminant · 30–45 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960927"
                 },
@@ -3888,7 +3891,7 @@
                   "n": 2,
                   "name": "Parc de Xavier Montsalvatge",
                   "info": "2,12 km · 25–32 min caminant · 35–50 min amb pauses · circular",
-                  "note": "Recorregut amb pujades i baixades (uns 50 m de desnivell entre el punt més baix i el més alt). El parc té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "Recorregut amb pujades i baixades (uns 50 m de desnivell entre el punt més baix i el més alt). El parc té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960935"
                 },
                 {
@@ -3918,7 +3921,7 @@
                 },
                 {
                   "n": 2,
-                  "name": "Parc de les Rieres d’Horta",
+                  "name": "Parc de les Rieres d'Horta",
                   "info": "1,69 km · 20–25 min caminant · 30–45 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296960906"
                 }
@@ -4191,7 +4194,7 @@
                 },
                 {
                   "n": 5,
-                  "name": "Parc d’Antoni Santiburcio",
+                  "name": "Parc d'Antoni Santiburcio",
                   "info": "1,81 km · 22–27 min caminant · 30–45 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296961023"
                 }
@@ -4246,13 +4249,13 @@
               "title": "Barcelona · Sant Martí · parcs i jardins, mapa 1 de 4",
               "ll": "41.4081,2.1885",
               "z": 14,
-              "label": "Sant Martí · mapa 1 de 4: el Camp de l’Arpa del Clot; el Clot; el Parc i la Llacuna del Poblenou"
+              "label": "Sant Martí · mapa 1 de 4: el Camp de l'Arpa del Clot; el Clot; el Parc i la Llacuna del Poblenou"
             }
           ],
           "sections": [
             {
               "id": "barri-el-camp-de-larpa-del-clot",
-              "title": "El Camp de l’Arpa del Clot",
+              "title": "El Camp de l'Arpa del Clot",
               "routes": [
                 {
                   "n": 1,
@@ -4292,7 +4295,7 @@
               "routes": [
                 {
                   "n": 2,
-                  "name": "Jardins d’Ada Byron",
+                  "name": "Jardins d'Ada Byron",
                   "info": "1,74 km · 21–26 min caminant · 30–45 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296961097"
                 },
@@ -4304,7 +4307,7 @@
                 },
                 {
                   "n": 4,
-                  "name": "Jardins de l’Illa Sancho de Ávila-Pamplona",
+                  "name": "Jardins de l'Illa Sancho de Ávila-Pamplona",
                   "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular",
                   "address": "Carrer de Sancho de Ávila, 19, Barcelona",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296961101"
@@ -4341,7 +4344,7 @@
                   "n": 2,
                   "name": "Parc de Carles I",
                   "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular",
-                  "note": "El parc té horari d’obertura: consulta’l abans d’anar-hi.",
+                  "note": "El parc té horari d'obertura: consulta'l abans d'anar-hi.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296961138"
                 },
                 {
@@ -4505,7 +4508,7 @@
                 },
                 {
                   "n": 2,
-                  "name": "Jardins d’Alícia de Larrocha",
+                  "name": "Jardins d'Alícia de Larrocha",
                   "info": "1,81 km · 22–27 min caminant · 30–45 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296961224"
                 },
@@ -4535,7 +4538,7 @@
                 },
                 {
                   "n": 2,
-                  "name": "Jardins d’Irene Polo",
+                  "name": "Jardins d'Irene Polo",
                   "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296961181"
                 }
@@ -4565,6 +4568,8 @@
     },
     {
       "course": "dia",
+      "origin": "d'entitats de l'economia social i solidària",
+      "credit": "Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. En alguns punts hi ha diverses entitats al mateix lloc.",
       "text": "25 rutes circulars curtes, d'1,6 a 2,2 km (uns 19–33 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. En alguns punts hi ha diverses entitats al mateix lloc.",
       "summary": "25 rutes des de l'economia social",
       "zones": {
@@ -4593,7 +4598,7 @@
                   "name": "Facto SCCL",
                   "info": "1,89 km · 22–29 min caminant · circular",
                   "address": "Carrer del Comerç, 33, entresol 1a, Barcelona",
-                  "desc": "Facto ofereix assessorament i gestió empresarial, formació i acompanyament a projectes de l’economia social i a administracions públiques.",
+                  "desc": "Facto ofereix assessorament i gestió empresarial, formació i acompanyament a projectes de l'economia social i a administracions públiques.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-facto-sccl-barcelona-295073750"
                 },
                 {
@@ -4601,7 +4606,7 @@
                   "name": "Col·lectiu Ronda",
                   "info": "1,79 km · 21–27 min caminant · circular",
                   "address": "Carrer de Trafalgar, 50-52, baixos, Barcelona",
-                  "desc": "Col·lectiu Ronda és una cooperativa d’advocacia i assessorament jurídic, laboral, fiscal i econòmic.",
+                  "desc": "Col·lectiu Ronda és una cooperativa d'advocacia i assessorament jurídic, laboral, fiscal i econòmic.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-collectiu-ronda-barcelona-295075425"
                 }
               ]
@@ -4615,15 +4620,15 @@
                   "name": "GEDI SCCL",
                   "info": "1,82 km · 21–28 min caminant · circular",
                   "address": "Carrer de Llull, 27–39, 2n 9a, Barcelona",
-                  "desc": "GEDI és una cooperativa que desenvolupa serveis i projectes d’atenció a les persones i acompanyament a organitzacions.",
+                  "desc": "GEDI és una cooperativa que desenvolupa serveis i projectes d'atenció a les persones i acompanyament a organitzacions.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-barcelona-gedi-sccl-295088337"
                 },
                 {
                   "n": 2,
                   "name": "La Fàbrica Cooperativa",
                   "info": "2,08 km · 24–32 min caminant · circular",
-                  "address": "Carrer d’Emília Coranty, 5–9 (Perquartu), Barcelona",
-                  "desc": "La Fàbrica Cooperativa acompanya comunitats per reforçar-ne l’organització i millorar les condicions de vida i els entorns que habiten.",
+                  "address": "Carrer d'Emília Coranty, 5–9 (Perquartu), Barcelona",
+                  "desc": "La Fàbrica Cooperativa acompanya comunitats per reforçar-ne l'organització i millorar les condicions de vida i els entorns que habiten.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-la-fabrica-cooperativa-barcelona-295073924"
                 }
               ]
@@ -4666,7 +4671,7 @@
                   "name": "Travinae",
                   "info": "1,75 km · 21–27 min caminant · circular",
                   "address": "Ronda del General Mitre, 239, Barcelona",
-                  "desc": "Travinae és una cooperativa especialitzada en formació d’idiomes asiàtics, traducció, interpretació i mediació intercultural.",
+                  "desc": "Travinae és una cooperativa especialitzada en formació d'idiomes asiàtics, traducció, interpretació i mediació intercultural.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-travinae-barcelona-295076516"
                 }
               ]
@@ -4694,16 +4699,16 @@
                   "n": 1,
                   "name": "Assemblea de Cooperació per la Pau (ACPP)",
                   "info": "1,99 km · 23–30 min caminant · circular",
-                  "address": "Carrer d’Aragó, 186, 2n 4a, Barcelona",
-                  "desc": "L’Assemblea de Cooperació per la Pau impulsa projectes de cooperació, acció humanitària i intervenció social per defensar drets i promoure la pau.",
+                  "address": "Carrer d'Aragó, 186, 2n 4a, Barcelona",
+                  "desc": "L'Assemblea de Cooperació per la Pau impulsa projectes de cooperació, acció humanitària i intervenció social per defensar drets i promoure la pau.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-assemblea-de-cooperacio-per-la-pau-acpp-barcelona-295076065"
                 },
                 {
                   "n": 2,
                   "name": "Fundació Roca Galès",
                   "info": "1,89 km · 22–29 min caminant · circular",
-                  "address": "Carrer d’Aragó, 281, 1r 1a, Barcelona",
-                  "desc": "La Fundació Roca Galès treballa per l’estudi, la difusió i la memòria del cooperativisme i l’economia social.",
+                  "address": "Carrer d'Aragó, 281, 1r 1a, Barcelona",
+                  "desc": "La Fundació Roca Galès treballa per l'estudi, la difusió i la memòria del cooperativisme i l'economia social.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-fundacio-roca-gales-barcelona-295075187"
                 },
                 {
@@ -4711,7 +4716,7 @@
                   "name": "Xarxa d'Economia Solidària (XES), Calidoscoop SCCL, Sostre Cívic, Opcions SCCL i Espai Ambiental",
                   "info": "1,80 km · 21–28 min caminant · circular",
                   "address": "Carrer de Casp, 43, baixos, Barcelona",
-                  "desc": "La Xarxa d’Economia Solidària agrupa persones i organitzacions que impulsen una economia basada en la cooperació, el suport mutu i la transformació social. Calidoscoop és una cooperativa de consultoria social dedicada a la dinamització territorial de l’economia social, l’emprenedoria i el cooperativisme. Ofereix assessorament, formació i acompanyament a persones, organitzacions i administracions. Sostre Cívic promou projectes d’habitatge cooperatiu en cessió d’ús, amb propietat col·lectiva i gestió democràtica. Opcions difon informació i acompanya pràctiques de consum conscient amb criteris de justícia social i sostenibilitat. Espai Ambiental acompanya iniciatives comunitàries vinculades a l’ecologia i a la transició ecosocial.",
+                  "desc": "La Xarxa d'Economia Solidària agrupa persones i organitzacions que impulsen una economia basada en la cooperació, el suport mutu i la transformació social. Calidoscoop és una cooperativa de consultoria social dedicada a la dinamització territorial de l'economia social, l'emprenedoria i el cooperativisme. Ofereix assessorament, formació i acompanyament a persones, organitzacions i administracions. Sostre Cívic promou projectes d'habitatge cooperatiu en cessió d'ús, amb propietat col·lectiva i gestió democràtica. Opcions difon informació i acompanya pràctiques de consum conscient amb criteris de justícia social i sostenibilitat. Espai Ambiental acompanya iniciatives comunitàries vinculades a l'ecologia i a la transició ecosocial.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-xarxa-deconomia-solidaria-xes-barcelona-295073657"
                 },
                 {
@@ -4719,7 +4724,7 @@
                   "name": "COS Salut",
                   "info": "1,80 km · 21–28 min caminant · circular",
                   "address": "Carrer de la Indústria, 93, Barcelona",
-                  "desc": "COS és una cooperativa de serveis de salut que ofereix atenció en diferents especialitats i promou un model d’organització basat en la cooperació.",
+                  "desc": "COS és una cooperativa de serveis de salut que ofereix atenció en diferents especialitats i promou un model d'organització basat en la cooperació.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-cos-salut-barcelona-295075803"
                 },
                 {
@@ -4735,7 +4740,7 @@
                   "name": "FCP Associats SCCL",
                   "info": "1,95 km · 23–29 min caminant · circular",
                   "address": "Carrer de Mallorca, 214, Barcelona",
-                  "desc": "FCP Associats, que treballa amb la marca La Qperativa, és una cooperativa de serveis d’assessoria i suport jurídic. Acompanya persones, empreses i projectes d’economia social en la gestió administrativa, laboral i societària, i en el desenvolupament cooperatiu.",
+                  "desc": "FCP Associats, que treballa amb la marca La Qperativa, és una cooperativa de serveis d'assessoria i suport jurídic. Acompanya persones, empreses i projectes d'economia social en la gestió administrativa, laboral i societària, i en el desenvolupament cooperatiu.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-fcp-associats-sccl-barcelona-295072351"
                 },
                 {
@@ -4743,7 +4748,7 @@
                   "name": "Aiguasol",
                   "info": "1,75 km · 21–27 min caminant · circular",
                   "address": "Carrer de Roger de Llúria, 29, 3r 2a, Barcelona",
-                  "desc": "Aiguasol ofereix consultoria energètica per millorar l’eficiència i l’impacte ambiental d’edificis, processos i sistemes.",
+                  "desc": "Aiguasol ofereix consultoria energètica per millorar l'eficiència i l'impacte ambiental d'edificis, processos i sistemes.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-aiguasol-barcelona-295075616"
                 },
                 {
@@ -4788,7 +4793,7 @@
                   "name": "La Tregua",
                   "info": "1,61 km · 19–25 min caminant · circular",
                   "address": "Carrer de Béjar, 43, Barcelona",
-                  "desc": "La Tregua és una cooperativa socioeducativa que desenvolupa tallers i projectes comunitaris amb l’art com a eina de transformació, des d’una mirada antiracista.",
+                  "desc": "La Tregua és una cooperativa socioeducativa que desenvolupa tallers i projectes comunitaris amb l'art com a eina de transformació, des d'una mirada antiracista.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-la-tregua-barcelona-295075644"
                 },
                 {
@@ -4796,7 +4801,7 @@
                   "name": "Raons Públiques SCCL",
                   "info": "1,93 km · 23–29 min caminant · circular",
                   "address": "Carrer de la Concòrdia, 30, baixos, Barcelona",
-                  "desc": "Raons és una cooperativa sense ànim de lucre que desenvolupa processos participatius i d’innovació social urbana. Acompanya persones, comunitats i organitzacions per pensar, dissenyar i transformar col·lectivament els espais on viuen, treballen i es relacionen.",
+                  "desc": "Raons és una cooperativa sense ànim de lucre que desenvolupa processos participatius i d'innovació social urbana. Acompanya persones, comunitats i organitzacions per pensar, dissenyar i transformar col·lectivament els espais on viuen, treballen i es relacionen.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-a-peu/camins-desperanca-activa-raons-publiques-sccl-barcelona-295073067"
                 },
                 {
@@ -4804,7 +4809,7 @@
                   "name": "Associació Coòpolis i Holon",
                   "info": "1,94 km · 23–30 min caminant · circular",
                   "address": "Carrer de la Constitució, 19–25, Bloc 4 (Can Batlló), Barcelona",
-                  "desc": "Coòpolis és l’ateneu cooperatiu de Barcelona i ofereix informació, formació i acompanyament per impulsar projectes de l’economia social i cooperativa. Holon és una agència cooperativa de disseny que desenvolupa productes, serveis i polítiques vinculats a les transicions ecosocials.",
+                  "desc": "Coòpolis és l'ateneu cooperatiu de Barcelona i ofereix informació, formació i acompanyament per impulsar projectes de l'economia social i cooperativa. Holon és una agència cooperativa de disseny que desenvolupa productes, serveis i polítiques vinculats a les transicions ecosocials.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-associacio-coopolis-barcelona-295075394"
                 },
                 {
@@ -4812,14 +4817,14 @@
                   "name": "Reflexes, MigrESS i Abarka Cooperativa",
                   "info": "1,85 km · 22–28 min caminant · circular",
                   "address": "Carrer de la Constitució, 19, Bloc 8, nau 54, Barcelona",
-                  "desc": "Reflexes és una cooperativa d’iniciativa social que ofereix serveis educatius. MigrESS impulsa la participació i l’organització de persones migrades i racialitzades en l’economia social i solidària. Abarka és una cooperativa d’iniciativa social impulsada per persones migrades i racialitzades que utilitza la gastronomia per crear oportunitats laborals i posar en valor cultures africanes.",
+                  "desc": "Reflexes és una cooperativa d'iniciativa social que ofereix serveis educatius. MigrESS impulsa la participació i l'organització de persones migrades i racialitzades en l'economia social i solidària. Abarka és una cooperativa d'iniciativa social impulsada per persones migrades i racialitzades que utilitza la gastronomia per crear oportunitats laborals i posar en valor cultures africanes.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-reflexes-barcelona-295075523"
                 },
                 {
                   "n": 5,
                   "name": "La Ciutat Invisible",
                   "info": "1,90 km · 22–29 min caminant · circular",
-                  "address": "Carrer de la Riera d’Escuder, 38, baixos, Barcelona",
+                  "address": "Carrer de la Riera d'Escuder, 38, baixos, Barcelona",
                   "desc": "La Ciutat Invisible és una cooperativa amb llibreria crítica i de proximitat, i projectes culturals i de producció pròpia.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-la-ciutat-invisible-barcelona-295075410"
                 },
@@ -4828,15 +4833,15 @@
                   "name": "Almena Feminista",
                   "info": "1,81 km · 21–28 min caminant · circular",
                   "address": "Carrer de Mir Geribert, 8, tercera planta, Barcelona",
-                  "desc": "Almena és una cooperativa feminista que treballa en la prevenció i l’abordatge de les violències masclistes i la incorporació de la perspectiva de gènere.",
+                  "desc": "Almena és una cooperativa feminista que treballa en la prevenció i l'abordatge de les violències masclistes i la incorporació de la perspectiva de gènere.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-almena-feminista-barcelona-295075885"
                 },
                 {
                   "n": 7,
                   "name": "La Dinamo Fundació",
                   "info": "1,83 km · 21–28 min caminant · circular",
-                  "address": "Carrer d’en Blanco, 73, baixos, Barcelona",
-                  "desc": "La Dinamo és una fundació que promou el model d’habitatge cooperatiu en cessió d’ús.",
+                  "address": "Carrer d'en Blanco, 73, baixos, Barcelona",
+                  "desc": "La Dinamo és una fundació que promou el model d'habitatge cooperatiu en cessió d'ús.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-la-dinamo-fundacio-barcelona-295075678"
                 },
                 {
@@ -4851,7 +4856,7 @@
                   "n": 9,
                   "name": "La Pera Comunicació i Trama SCCL",
                   "info": "1,64 km · 19–25 min caminant · circular",
-                  "address": "Carrer d’Olzinelles, 63, baixos (Espai Cultural La Hormigonera), Barcelona",
+                  "address": "Carrer d'Olzinelles, 63, baixos (Espai Cultural La Hormigonera), Barcelona",
                   "desc": "La Pera treballa en comunicació, audiovisuals, disseny gràfic i web i gestió cultural. Trama desenvolupa activitats culturals i educatives amb perspectiva de gènere, participació comunitària i atenció a la diversitat.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-la-pera-comunicacio-barcelona-295075420"
                 },
@@ -4859,8 +4864,8 @@
                   "n": 10,
                   "name": "Escola Popular Keras Buti SCCL",
                   "info": "1,71 km · 20–26 min caminant · circular",
-                  "address": "Carrer d’Ulldecona, 24, Barcelona",
-                  "desc": "Keras Buti desenvolupa iniciatives de consum agroecològic i espais comunitaris vinculats al territori, l’economia social i la cultura.",
+                  "address": "Carrer d'Ulldecona, 24, Barcelona",
+                  "desc": "Keras Buti desenvolupa iniciatives de consum agroecològic i espais comunitaris vinculats al territori, l'economia social i la cultura.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-escola-popular-keras-buti-sccl-barcelona-295076337"
                 }
               ]

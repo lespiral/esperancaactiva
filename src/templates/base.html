@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>document.documentElement.className += ' js';</script>
-  <title>{% if page_title %}{{ page_title }} · {% endif %}{{ site.name }}</title>
+  <title>{% if page_title %}{{ page_title }} · {{ site.name }}{% else %}{{ h.title or site.name }}{% endif %}</title>
   <meta name="description" content="{{ page_description or site.description }}">
   {% if noindex %}<meta name="robots" content="noindex">{% endif %}
   {% if canonical %}<link rel="canonical" href="{{ canonical }}">
