@@ -205,7 +205,7 @@
   var ICON_BACK = '<path d="M20 12a8 8 0 1 1-2.4-5.7M20 4.5v4h-4"/>';
 
   /* ---------- RITME (ms) ---------- */
-  var T_PAUSE = 520, T_MOVE = 680, T_BACK = 1150, T_LAP = 620, LAPS = 7;
+  var T_PAUSE = 520, T_MOVE = 680, T_BACK = 1150, T_LAP = 2400, LAPS = 7;
   var TALL = 700; // per sota d'aquesta amplada, la volta es llegeix de dalt a baix
 
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -333,7 +333,7 @@
   }
 
   /* ---------- PLA DE L'ANIMACIÓ ---------- */
-  // Primera volta a poc a poc (amb una pausa a cada moment) i sis voltes més ràpides: una per passa
+  // Primera volta a poc a poc (amb una pausa a cada moment) i sis voltes més suaus: una per passa
   function plan() {
     var segs = [], t = 0, L = G.L, T = G.total;
     function add(a, b, dur, lap, here, smoothIt) { segs.push({ t0: t, t1: t + dur, a: a, b: b, lap: lap, here: here, ease: smoothIt }); t += dur; }

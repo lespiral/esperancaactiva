@@ -14,7 +14,7 @@
 <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@600;700&display=swap">
-  <link rel="stylesheet" href="assets/site.css?v=1795092775">
+  <link rel="stylesheet" href="assets/site.css?v=1795096196">
 </head>
 <body>
   <a class="skip" href="#contingut">Salta al contingut</a>
@@ -44,7 +44,6 @@
     <p class="hero__kicker">Una pràctica, una caminada, un petit pas.</p>
     <h1 class="hero__title">Camins d'Esperança <span>[Activa]</span></h1>
     <p class="hero__lead">Cursos digitals gratuïts de 7 passes per convertir el que et preocupa en un primer pas possible, amb rutes a peu a prop de casa.</p>
-    <p class="hero__lead hero__def">L&#39;esperança activa no és un sentiment que arriba o no arriba: és una pràctica. Mirar la realitat tal com és, reconèixer cap on voldries que anés i fer-hi un pas. Aquí ho fem en set passes, caminant a prop de casa.</p>
     <div class="hero__actions">
       <a class="btn btn--light" href="#que-et-porta-aqui">Tria el teu curs</a>
       <a class="btn btn--ghost-light" href="#on-vols-caminar">Tria on vols caminar</a>
@@ -175,7 +174,7 @@
   var PAIN = { label: "El dolor i la incertesa", say: "es transformen en", kick: "On comences", title: "El dolor i la incertesa", text: "Què em pesa? Què necessita ser escoltat?" };
   // Els fils no porten avantítol al globus: «es transformen en…» ja surt al quadre de dalt
   var THREADS = [
-    { label: "Claredat", col: "#e2c668", kick: "", title: "Claredat", text: "Quina direcció voldria ajudar a fer possible?" },
+    { label: "Claredat", col: "#e2c668", kick: "", title: "Claredat", text: "Què em passa? Què necessito? Quina direcció vull prendre?" },
     { label: "Suport", col: "#2e7561", kick: "", title: "Suport", text: "Quines persones, llocs o recursos m'ajuden?" },
     { label: "Acció", col: "#1a4d40", kick: "", title: "Acció significativa", text: "Quina acció petita, concreta i realista puc fer ara?" }
   ];
@@ -779,7 +778,7 @@
   var ICON_BACK = '<path d="M20 12a8 8 0 1 1-2.4-5.7M20 4.5v4h-4"/>';
 
   /* ---------- RITME (ms) ---------- */
-  var T_PAUSE = 520, T_MOVE = 680, T_BACK = 1150, T_LAP = 620, LAPS = 7;
+  var T_PAUSE = 520, T_MOVE = 680, T_BACK = 1150, T_LAP = 2400, LAPS = 7;
   var TALL = 700; // per sota d'aquesta amplada, la volta es llegeix de dalt a baix
 
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -907,7 +906,7 @@
   }
 
   /* ---------- PLA DE L'ANIMACIÓ ---------- */
-  // Primera volta a poc a poc (amb una pausa a cada moment) i sis voltes més ràpides: una per passa
+  // Primera volta a poc a poc (amb una pausa a cada moment) i sis voltes més suaus: una per passa
   function plan() {
     var segs = [], t = 0, L = G.L, T = G.total;
     function add(a, b, dur, lap, here, smoothIt) { segs.push({ t0: t, t1: t + dur, a: a, b: b, lap: lap, here: here, ease: smoothIt }); t += dur; }
@@ -1563,6 +1562,6 @@
     </div>
   </footer>
 
-  <script src="assets/site.js?v=1795092775" defer></script>
+  <script src="assets/site.js?v=1795096196" defer></script>
 </body>
 </html>
