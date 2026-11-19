@@ -88,6 +88,12 @@
     </ul>
     {% endif %}
 
+    {% if b.notice_pafes %}
+    <aside class="note note--care note--part" aria-label="{{ b.notice_pafes.title }}">
+      <p class="note__title">{{ icon('lifebuoy') }}{{ b.notice_pafes.title }}</p>
+      {% for h in b.notice_pafes.html %}<p class="note__p">{{ h }}</p>{% endfor %}
+    </aside>
+    {% endif %}
     {% if b.notice %}
     <aside class="note note--care note--part" aria-label="{{ b.notice.title }}">
       <p class="note__title">{{ icon('lifebuoy') }}{{ b.notice.title }}</p>
@@ -116,6 +122,12 @@
     <div class="part" id="{{ p.id }}">
       <h3 class="part__title">{{ p.title }}</h3>
       {% if p.text %}<p>{{ p.text }}</p>{% endif %}
+      {% if p.notice_pafes %}
+      <aside class="note note--care note--part" aria-label="{{ p.notice_pafes.title }}">
+        <p class="note__title">{{ icon('lifebuoy') }}{{ p.notice_pafes.title }}</p>
+        {% for h in p.notice_pafes.html %}<p class="note__p">{{ h }}</p>{% endfor %}
+      </aside>
+      {% endif %}
       {% if p.notice %}
       <aside class="note note--care note--part" aria-label="{{ p.notice.title }}">
         <p class="note__title">{{ icon('lifebuoy') }}{{ p.notice.title }}</p>
