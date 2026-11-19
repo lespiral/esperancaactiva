@@ -20,9 +20,12 @@
 
   "cities": [
     {"slug": "barcelona", "name": "Barcelona", "region": "Barcelonès", "icon": "buildings"},
+    {"slug": "berga", "name": "Berga", "region": "Berguedà", "icon": "tree"},
     {"slug": "el-prat", "name": "El Prat de Llobregat", "region": "Baix Llobregat", "icon": "building"},
     {"slug": "l-hospitalet", "name": "L'Hospitalet de Llobregat", "region": "Barcelonès", "icon": "users-three"},
+    {"slug": "la-seu-d-urgell", "name": "La Seu d'Urgell", "region": "Alt Urgell", "icon": "footprints"},
     {"slug": "olot", "name": "Olot", "region": "Garrotxa", "icon": "tree"},
+    {"slug": "ripoll", "name": "Ripoll", "region": "Ripollès", "icon": "bank"},
     {"slug": "vic", "name": "Vic", "region": "Osona", "icon": "bank"}
   ],
 

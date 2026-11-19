@@ -1,0 +1,95 @@
+{
+  "slug": "berga",
+  "name": "Berga",
+  "region": "Berguedà",
+  "summary": "7 rutes circulars des d'entitats del Tercer Sector Social.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
+  "blocks": [
+    {
+      "course": "cuidar",
+      "text": "7 rutes circulars, de 2,5 a 2,6 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social de Berga i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
+      "summary": "7 rutes des d'entitats del Tercer Sector Social",
+      "notice": {
+        "title": "Traçats orientatius",
+        "html": [
+          "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada entitat: no són traçats oficials. Camina amb atenció al trànsit i a l'estat dels camins.",
+          "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "title": "Les 7 rutes",
+          "maps": [
+            {
+              "mid": "1uf3qwwi-ESqp5GNFA7V9w1GszSieiBY",
+              "title": "Berga · entitats del Tercer Sector Social",
+              "ll": "42.1016,1.8441",
+              "z": 14,
+              "label": "7 rutes des d'entitats del Tercer Sector Social",
+              "routes": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          ],
+          "routes": [
+            {
+              "n": 1,
+              "name": "AEiG Santa Maria de Queralt i Geralda de Portella",
+              "info": "2,5 km aprox. · 29–37 min caminant · circular",
+              "desc": "AEiG Santa Maria de Queralt i Geralda de Portella és una entitat que treballa amb infants en l’àmbit de l’educació en el lleure i els serveis educatius. Té seu a Berga.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106742"
+            },
+            {
+              "n": 2,
+              "name": "Associació Pro Disminuïts Psíquics del Berguedà",
+              "info": "2,5 km aprox. · 30–38 min caminant · circular",
+              "desc": "Associació Pro Disminuïts Psíquics del Berguedà és una entitat que treballa amb persones amb discapacitat en l’àmbit de l’atenció psicosocial i la rehabilitació. Té seu a Berga.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106868"
+            },
+            {
+              "n": 3,
+              "name": "Associació de Donants de Sang del Berguedà",
+              "info": "2,5 km aprox. · 30–38 min caminant · circular",
+              "desc": "Associació de Donants de Sang del Berguedà és una entitat sense atenció directa que treballa en l’àmbit de la sensibilització. Té seu a Berga.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106885"
+            },
+            {
+              "n": 4,
+              "name": "Associació de Gent Gran Berga Tagast",
+              "info": "2,5 km aprox. · 30–38 min caminant · circular",
+              "desc": "Associació de Gent Gran Berga Tagast és una entitat que treballa amb gent gran en l’àmbit cultural. Té seu a Berga.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106907"
+            },
+            {
+              "n": 5,
+              "name": "Creu Roja SAIER (Servei d’Atenció a Immigrants, Estrangers i Refugiats)",
+              "info": "2,5 km aprox. · 30–37 min caminant · circular",
+              "desc": "Creu Roja SAIER (Servei d’Atenció a Immigrants, Estrangers i Refugiats) és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la cobertura de necessitats bàsiques. Té seu a Berga.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106914"
+            },
+            {
+              "n": 6,
+              "name": "Càritas Parroquial de Berga",
+              "info": "2,6 km aprox. · 31–38 min caminant · circular",
+              "desc": "Càritas Parroquial de Berga és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de l’atenció psicosocial i la rehabilitació. Té seu a Berga.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106946"
+            },
+            {
+              "n": 7,
+              "name": "Grup Colònies a Borredà",
+              "info": "2,5 km aprox. · 30–37 min caminant · circular",
+              "desc": "Grup Colònies a Borredà és una entitat que treballa amb infants en l’àmbit de l’educació en el lleure i els serveis educatius. Té seu a Berga.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106972"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "slug": "la-seu-d-urgell",
+  "name": "La Seu d'Urgell",
+  "region": "Alt Urgell",
+  "summary": "12 rutes circulars des d'entitats del Tercer Sector Social.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
+  "blocks": [
+    {
+      "course": "cuidar",
+      "text": "12 rutes circulars, de 2,4 a 2,5 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social de la Seu d'Urgell i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
+      "summary": "12 rutes des d'entitats del Tercer Sector Social",
+      "notice": {
+        "title": "Traçats orientatius",
+        "html": [
+          "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada entitat: no són traçats oficials. Camina amb atenció al trànsit i a l'estat dels camins.",
+          "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "title": "Les 12 rutes",
+          "maps": [
+            {
+              "mid": "1PWP6nlux9IPCir6tinzLg8O0jW0jUGo",
+              "title": "La Seu d'Urgell · entitats del Tercer Sector Social (1/2)",
+              "ll": "42.3547,1.4601",
+              "z": 14,
+              "label": "Rutes 1 a 6",
+              "routes": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ]
+            },
+            {
+              "mid": "1xq8OP3A4-BL5oeJjLDu___G8JarAEMg",
+              "title": "La Seu d'Urgell · entitats del Tercer Sector Social (2/2)",
+              "ll": "42.3571,1.4589",
+              "z": 14,
+              "label": "Rutes 7 a 12",
+              "routes": [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ]
+            }
+          ],
+          "routes": [
+            {
+              "n": 1,
+              "name": "AEiG Urgellenc",
+              "info": "2,5 km aprox. · 30–37 min caminant · circular",
+              "address": "Carrer d'Albert Vives, 12, la Seu d'Urgell",
+              "desc": "AEiG Urgellenc és una entitat que treballa amb infants en l’àmbit de l’educació en el lleure i els serveis educatius. Té seu a La Seu d’Urgell.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107340"
+            },
+            {
+              "n": 2,
+              "name": "Associació de Donants de Sang de l’Alt Urgell",
+              "info": "2,5 km aprox. · 30–38 min caminant · circular",
+              "desc": "Associació de Donants de Sang de l’Alt Urgell és una entitat sense atenció directa que treballa en l’àmbit de la sensibilització. Té seu a La Seu d’Urgell.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107368"
+            },
+            {
+              "n": 3,
+              "name": "Associació de familiars i amics dels malalts mentals de l’Alt Urgell",
+              "info": "2,4 km aprox. · 29–36 min caminant · circular",
+              "desc": "Associació de familiars i amics dels malalts mentals de l’Alt Urgell és una entitat que treballa amb persones amb problemes de salut mental en l’àmbit de l’atenció psicosocial i la rehabilitació. Té seu a La Seu d’Urgell.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107427"
+            },
+            {
+              "n": 4,
+              "name": "Centre d’Esplai TxT",
+              "info": "2,5 km aprox. · 30–38 min caminant · circular",
+              "desc": "Centre d’Esplai TxT és una entitat que treballa amb infants en l’àmbit de l’educació en el lleure i els serveis educatius. Té seu a La Seu d’Urgell.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107439"
+            },
+            {
+              "n": 5,
+              "name": "Creu Roja Oficina Comarcal Alt Urgell",
+              "info": "2,5 km aprox. · 30–37 min caminant · circular",
+              "desc": "Creu Roja Oficina Comarcal Alt Urgell és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la cobertura de necessitats bàsiques. Té seu a La Seu d’Urgell.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107464"
+            },
+            {
+              "n": 6,
+              "name": "Càritas Centre Sant Ot",
+              "info": "2,5 km aprox. · 30–38 min caminant · circular",
+              "desc": "Càritas Centre Sant Ot és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la cobertura de necessitats bàsiques. Té seu a La Seu d’Urgell.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107489"
+            },
+            {
+              "n": 7,
+              "name": "Càritas Diocesana d’Urgell",
+              "info": "2,5 km aprox. · 30–38 min caminant · circular",
+              "desc": "Càritas Diocesana d’Urgell és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la cobertura de necessitats bàsiques. Té seu a La Seu d’Urgell.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107521"
+            },
+            {
+              "n": 8,
+              "name": "Càritas Parroquial La Seu d’Urgell",
+              "info": "2,5 km aprox. · 29–37 min caminant · circular",
+              "desc": "Càritas Parroquial La Seu d’Urgell és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la cobertura de necessitats bàsiques. Té seu a La Seu d’Urgell.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107533"
+            },
+            {
+              "n": 9,
+              "name": "Esplai Gent Gran Seu d’Urgell",
+              "info": "2,5 km aprox. · 30–38 min caminant · circular",
+              "desc": "Esplai Gent Gran Seu d’Urgell és una entitat que treballa amb gent gran en l’àmbit de l’educació en el lleure i els serveis educatius. Té seu a La Seu d’Urgell.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107550"
+            },
+            {
+              "n": 10,
+              "name": "Fundació Privada Integra Pirineus",
+              "info": "2,5 km aprox. · 30–38 min caminant · circular",
+              "desc": "Fundació Privada Integra Pirineus és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la inserció laboral. Té seu a La Seu d’Urgell.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107567"
+            },
+            {
+              "n": 11,
+              "name": "L’Associació Claror – Alt Urgell",
+              "info": "2,5 km aprox. · 30–38 min caminant · circular",
+              "desc": "L’Associació Claror – Alt Urgell és una entitat que treballa amb persones amb discapacitat en l’àmbit de l’atenció psicosocial i la rehabilitació. Té seu a La Seu d’Urgell.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107590"
+            },
+            {
+              "n": 12,
+              "name": "Nou grapats, Empresa d’Inserció, S.L.U",
+              "info": "2,5 km aprox. · 30–38 min caminant · circular",
+              "desc": "Nou grapats, Empresa d’Inserció, S.L.U és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la inserció laboral. Té seu a La Seu d’Urgell.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107606"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

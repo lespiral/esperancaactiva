@@ -2,7 +2,7 @@
   "slug": "olot",
   "name": "Olot",
   "region": "Garrotxa",
-  "summary": "16 rutes curtes i circulars, des dels CAP, l'hospital, places, ponts i parcs, i des de l'economia social.",
+  "summary": "23 rutes curtes i circulars, des dels CAP, l'hospital, places, ponts i parcs, des de l'economia social i des d'entitats del Tercer Sector Social.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
   "blocks": [
     {
@@ -19,7 +19,12 @@
               "ll": "42.1848,2.4832",
               "z": 14,
               "label": "Rutes 1 a 4 · des dels CAP i l'hospital",
-              "routes": [1, 2, 3, 4]
+              "routes": [
+                1,
+                2,
+                3,
+                4
+              ]
             },
             {
               "mid": "1OzONz_790ARxkF-3TEuEOlMr3MBZXcg",
@@ -27,7 +32,17 @@
               "ll": "42.1762,2.4793",
               "z": 14,
               "label": "Rutes 5 a 13 · rutes saludables PAFES",
-              "routes": [5, 6, 7, 8, 9, 10, 11, 12, 13]
+              "routes": [
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ]
             }
           ],
           "routes": [
@@ -139,7 +154,90 @@
     },
     {
       "course": "cuidar",
-      "text": "Encara no hi ha rutes d'aquest curs a Olot. Mentrestant, pots fer el temps de reflexió de cada passa caminant a prop de casa o en un lloc tranquil."
+      "text": "7 rutes circulars, d'uns 2,5 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social d'Olot i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
+      "summary": "7 rutes des d'entitats del Tercer Sector Social",
+      "notice": {
+        "title": "Traçats orientatius",
+        "html": [
+          "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada entitat: no són traçats oficials. Camina amb atenció al trànsit i a l'estat dels camins.",
+          "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "title": "Les 7 rutes",
+          "maps": [
+            {
+              "mid": "1y1Ep2kCk2pB1clUc_4cRfVaOWKl5VFg",
+              "title": "Olot · entitats del Tercer Sector Social",
+              "ll": "42.1809,2.4869",
+              "z": 14,
+              "label": "7 rutes des d'entitats del Tercer Sector Social",
+              "routes": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            }
+          ],
+          "routes": [
+            {
+              "n": 1,
+              "name": "AEiG Nostra Dona del Tura",
+              "info": "2,5 km aprox. · 30–38 min caminant · circular",
+              "desc": "AEiG Nostra Dona del Tura és una entitat que treballa amb infants en l’àmbit de l’educació en el lleure i els serveis educatius. Té seu a Olot.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107024"
+            },
+            {
+              "n": 2,
+              "name": "Associació El Paraigua",
+              "info": "2,5 km aprox. · 30–38 min caminant · circular",
+              "desc": "Associació El Paraigua és una entitat que treballa amb persones amb problemes de salut mental en l’àmbit de l’atenció psicosocial i la rehabilitació. Té seu a Olot.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107060"
+            },
+            {
+              "n": 3,
+              "name": "Associació de Gent Gran d’Olot",
+              "info": "2,5 km aprox. · 30–38 min caminant · circular",
+              "desc": "Associació de Gent Gran d’Olot és una entitat que treballa amb gent gran en l’àmbit cultural. Té seu a Olot.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107074"
+            },
+            {
+              "n": 4,
+              "name": "Creu Roja Oficina Comarcal La Garrotxa",
+              "info": "2,5 km aprox. · 30–37 min caminant · circular",
+              "desc": "Creu Roja Oficina Comarcal La Garrotxa és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la cobertura de necessitats bàsiques. Té seu a Olot.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107125"
+            },
+            {
+              "n": 5,
+              "name": "Càritas Garrotxa",
+              "info": "2,5 km aprox. · 30–37 min caminant · circular",
+              "desc": "Càritas Garrotxa és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la cobertura de necessitats bàsiques. Té seu a Olot.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107132"
+            },
+            {
+              "n": 6,
+              "name": "INTEGRA, Associació per la inclusió de col·lectius en risc",
+              "info": "2,5 km aprox. · 30–38 min caminant · circular",
+              "address": "Carrer Serra i Ginesta, 14, Olot",
+              "desc": "INTEGRA, Associació per la inclusió de col·lectius en risc és una entitat que treballa amb persones amb discapacitat en l’àmbit de l’atenció diürna i els centres de dia. Té seu a Olot.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107161"
+            },
+            {
+              "n": 7,
+              "name": "L’Encant EI ADAD",
+              "info": "2,5 km aprox. · 30–37 min caminant · circular",
+              "desc": "L’Encant EI ADAD és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la inserció laboral. Té seu a Olot.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107204"
+            }
+          ]
+        }
+      ]
     },
     {
       "course": "mon",

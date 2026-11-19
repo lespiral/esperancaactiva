@@ -1,0 +1,87 @@
+{
+  "slug": "ripoll",
+  "name": "Ripoll",
+  "region": "Ripollès",
+  "summary": "6 rutes circulars des d'entitats del Tercer Sector Social.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
+  "blocks": [
+    {
+      "course": "cuidar",
+      "text": "6 rutes circulars, de 2,4 a 2,6 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social de Ripoll i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
+      "summary": "6 rutes des d'entitats del Tercer Sector Social",
+      "notice": {
+        "title": "Traçats orientatius",
+        "html": [
+          "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada entitat: no són traçats oficials. Camina amb atenció al trànsit i a l'estat dels camins.",
+          "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "title": "Les 6 rutes",
+          "maps": [
+            {
+              "mid": "1zHC0MZLMFQJSoASvPHkelTg_h0WmKO8",
+              "title": "Ripoll · entitats del Tercer Sector Social",
+              "ll": "42.2026,2.1962",
+              "z": 14,
+              "label": "6 rutes des d'entitats del Tercer Sector Social",
+              "routes": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ]
+            }
+          ],
+          "routes": [
+            {
+              "n": 1,
+              "name": "Associació de Gent Gran de Ripoll - Casal Cívic Ripoll",
+              "info": "2,5 km aprox. · 30–37 min caminant · circular",
+              "desc": "Associació de Gent Gran de Ripoll - Casal Cívic Ripoll és una entitat que treballa amb gent gran en l’àmbit de l’atenció diürna i els centres de dia. Té seu a Ripoll.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107245"
+            },
+            {
+              "n": 2,
+              "name": "Creu Roja Oficina Local Ripoll",
+              "info": "2,5 km aprox. · 30–37 min caminant · circular",
+              "desc": "Creu Roja Oficina Local Ripoll és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la cobertura de necessitats bàsiques. Té seu a Ripoll.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107268"
+            },
+            {
+              "n": 3,
+              "name": "Càritas Ripoll",
+              "info": "2,4 km aprox. · 29–36 min caminant · circular",
+              "desc": "Càritas Ripoll és una entitat que treballa amb persones en situació de pobresa i exclusió social en l’àmbit de la cobertura de necessitats bàsiques. Té seu a Ripoll.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107289"
+            },
+            {
+              "n": 4,
+              "name": "Fundació Guifré",
+              "info": "2,4 km aprox. · 29–36 min caminant · circular",
+              "desc": "Fundació Guifré és una entitat que treballa amb gent gran en l’àmbit de l’atenció diürna i els centres de dia. Té seu a Ripoll.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107306"
+            },
+            {
+              "n": 5,
+              "name": "Fundació Privada MAP",
+              "info": "2,4 km aprox. · 29–36 min caminant · circular",
+              "desc": "Fundació Privada MAP és una entitat que treballa amb persones amb discapacitat en l’àmbit de l’atenció psicosocial i la rehabilitació. Té seu a Ripoll.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107318"
+            },
+            {
+              "n": 6,
+              "name": "Llar Residència Ca l’Ametller",
+              "info": "2,6 km aprox. · 31–39 min caminant · circular",
+              "desc": "Llar Residència Ca l’Ametller és una entitat que treballa amb persones amb discapacitat en l’àmbit de l’atenció diürna i els centres de dia. Té seu a Ripoll.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297107331"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
