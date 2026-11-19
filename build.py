@@ -242,13 +242,15 @@ for c in site["cities"] + site.get("territories", []) + site.get("subpages", [])
             assert i == 0 or p.get("id") and p.get("title"), "cada part, a partir de la segona, necessita id i title"
             p["count"] = process_groups(p["groups"], course)
             total += p["count"]
-            if p.get("notice"):
-                p["notice"] = dict(p["notice"], html=[Markup(h) for h in p["notice"]["html"]])
+            for nk in ("notice", "notice_pafes"):
+                if p.get(nk):
+                    p[nk] = dict(p[nk], html=[Markup(h) for h in p[nk]["html"]])
             # La primera part manté el desplegable del curs (#quan-la-vida-tria); les altres, el seu (#caminant-fem-salut-tria)
             cfg = dict(city.get("zones") or {}, **(b.get("zones") or {}), **(p.get("zones") or {}))
             add_zones(p, p["groups"], course, cfg, pid=None if i == 0 else f"{p['id']}-tria")
-        if b.get("notice"):
-            b["notice"] = dict(b["notice"], html=[Markup(h) for h in b["notice"]["html"]])
+        for nk in ("notice", "notice_pafes"):
+            if b.get(nk):
+                b[nk] = dict(b[nk], html=[Markup(h) for h in b[nk]["html"]])
         b["parts"] = parts
         b["groups"] = [g for p in parts for g in p["groups"]]
         b["total"] = total
