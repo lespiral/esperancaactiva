@@ -263,7 +263,7 @@
     "lead": "Cursos digitals gratuïts de 7 passes per convertir el que et preocupa en un primer pas possible, amb rutes a peu a prop de casa.",
     "q1": "Què et porta aquí?",
     "q2": "On vols caminar?",
-    "q2_text": "Cada ciutat, poble o comarca té el seu **mapa i les seves rutes**. Surten de places, parcs, equipaments i entitats **a prop de casa**. N'hi ha de molt curtes, d'uns 10 minuts, i de més llargues, de més d'una hora.",
+    "q2_text": "Cada ciutat, poble o comarca té el seu **mapa i les seves rutes**. **A prop de casa**. N'hi ha de molt curtes, d'uns 10 minuts, i de més llargues, de més d'una hora.",
     "q2_cities": "Se n'aniran afegint més, curs a curs.",
     "each_course": "Cada curs té les seves rutes a cada lloc: el curs et dona la pràctica, i la ruta, el temps per caminar-la. No hi trobes el teu poble o la teva ciutat? Fes la caminada a prop de casa o en un lloc tranquil.",
     "how_title": "Com funciona",
@@ -384,7 +384,7 @@
         "items": [
           ["Hi ha rutes de tots els cursos a totes les ciutats i pobles?", "Encara no. Les rutes es pensen per a cada curs i n'anem afegint. Si al teu poble o a la teva ciutat encara no n'hi ha del teu curs, pots fer la caminada a prop de casa o en un lloc tranquil."],
           ["On visc encara no hi ha rutes. Puc fer el curs?", "És clar. Pots fer el temps de reflexió en una passejada a prop de casa o en un lloc tranquil."],
-          ["Quant duren les rutes?", "Depèn del lloc i de la ruta. Al Prat hi ha circuits urbans de menys d'1 km (uns 10 a 15 minuts caminant), rutes d'1,5 a 3,5 km des dels equipaments municipals i rutes de 0,7 a 6 km pel Delta del Llobregat. A Vic, les rutes pels parcs fan d'1 a 2 km (uns 20 minuts); les que surten dels CAP i hospitals, uns 2 km (mitja hora caminant), i les dels equipaments comunitaris, d'1,8 a 2 km (uns 20–30 minuts). A Olot, les rutes fan de 0,6 a 3,2 km (de 7 a 47 minuts caminant). A Barcelona, les rutes des dels CAP fan uns 2 km (mitja hora caminant); les dels parcs i jardins, d'1,7 a 2,2 km, i les dels equipaments comunitaris, d'1,7 a 2,1 km (uns 20–30 minuts); i les rutes «Caminant fem salut», d'uns 3 a 7 km. Les rutes de l'economia social i solidària, a Barcelona, l'Hospitalet i molts pobles i ciutats de Catalunya, fan d'1,5 a 2,3 km (uns 18–35 minuts). A cada ruta hi trobaràs els quilòmetres i el temps aproximat, caminant i amb pauses."],
+          ["Quant duren les rutes?", "Depèn del lloc i de la ruta: n'hi ha de molt curtes, d'uns 10 minuts, i de més llargues, de més d'una hora. A cada ruta hi trobaràs els quilòmetres i el temps aproximat, caminant i amb pauses."],
           ["Les rutes són circulars?", "La majoria sí: comencen i acaben al mateix lloc. Algunes van d'un punt a un altre; a cada ruta hi posa si és circular o lineal, i on comença i acaba."],
           ["Què he de tenir en compte abans de sortir?", "__before_walk__"]
         ]

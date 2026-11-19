@@ -20,7 +20,7 @@
           "id": "rutes-cap",
           "title": "Rutes des dels CAP",
           "nav": "Rutes des dels CAP",
-          "text": "54 rutes circulars curtes, d'uns 2 km i mitja hora caminant, que surten dels centres d'atenció primària (CAP) dels 10 districtes de la ciutat. Tria el teu districte i obre'n la llista.",
+          "text": "54 rutes circulars curtes, d'uns 2 km i mitja hora caminant, repartides pels 10 districtes de la ciutat. Tria el teu districte i obre'n la llista.",
           "groups": [
             {
               "id": "cap-ciutat-vella",
@@ -562,7 +562,7 @@
           "id": "caminant-fem-salut",
           "title": "Rutes «Caminant fem salut»",
           "nav": "Rutes «Caminant fem salut»",
-          "text": "42 rutes més llargues, d'uns 3 a 7 km, repartides pels 10 districtes de la ciutat. Gairebé totes són circulars i surten de places, parcs i equipaments. Tria el teu districte i obre'n la llista.",
+          "text": "42 rutes més llargues, d'uns 3 a 7 km, repartides pels 10 districtes de la ciutat. Gairebé totes són circulars. Tria el teu districte i obre'n la llista.",
           "notice": {
             "title": "Aquestes rutes no surten d'un CAP",
             "html": [
