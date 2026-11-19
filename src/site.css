@@ -590,3 +590,6 @@ strong.mk { color: var(--green-900); font-weight: 700; background: linear-gradie
 
 /* Etiqueta de les rutes que segueixen el programa PAFES */
 .route__tag { display: block; width: fit-content; margin: 0 0 4px; padding: 2px 9px; border-radius: 999px; background: #E2C668; color: #1A4D40; font: 700 .68rem/1.5 var(--font-head); letter-spacing: .06em; text-transform: uppercase; }
+.footer__gaze { list-style: none; margin: .4em 0 1em; padding: 0; }
+.footer__gaze li { margin: 0; padding-left: 1.1em; position: relative; font-weight: 600; }
+.footer__gaze li::before { content: ""; position: absolute; left: 0; top: .6em; width: .45em; height: .45em; border-radius: 50%; background: var(--sun); }
