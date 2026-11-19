@@ -60,7 +60,8 @@
         <ul>{% for c in site.courses %}<li><a href="{{ root }}{{ c.slug }}/">{{ c.title }}</a></li>{% endfor %}</ul>
       </div>
       <div class="footer__col">
-        <p class="footer__h"><a href="{{ root }}ciutats/">{{ site.cities_page.title }}</a></p>
+        <p class="footer__h">{{ site.cities_page.title }}</p>
+        <ul><li><a href="{{ root }}ciutats/">{{ site.footer.cities_link }}</a></li></ul>
       </div>
       <div class="footer__col">
         <p class="footer__h">Contacte</p>
