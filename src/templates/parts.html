@@ -15,6 +15,7 @@
     <span class="card__icon" aria-hidden="true">{{ icon(c.icon) }}</span>
     {% if c.soon %}<span class="card__badge">{{ cc.soon_label }}</span>{% endif %}
     <h{{ heading_level }} class="card__title">{{ c.title }}</h{{ heading_level }}>
+    {% if c.subtitle %}<p class="card__sub"><span>{{ c.subtitle }}</span></p>{% endif %}
     <p class="card__text">{{ c.card }}</p>
     <a class="btn btn--soft btn--block" href="{{ root }}{{ c.slug }}/">Veure aquest curs</a>
   </li>

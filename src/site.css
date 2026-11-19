@@ -580,3 +580,8 @@ strong.mk { color: var(--green-900); font-weight: 700; background: linear-gradie
 /* Subtítol de cada curs: més gran i destacat, amb un subratllat groc suau */
 .pagehead .lead.lead--sub { max-width: 760px; margin: 18px auto 0; font: 700 clamp(1.3rem, 3.2vw, 1.75rem)/1.4 var(--font-head); color: var(--green-800); letter-spacing: -.005em; }
 .pagehead .lead.lead--sub span { background: linear-gradient(transparent 62%, rgba(226, 198, 104, .55) 62%); padding: 0 .08em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+
+/* Subtítol del curs a les targetes (portada i pàgina de cursos) */
+.card--course .card__sub { margin: 0 0 10px; font: 700 1.02rem/1.45 var(--font-head); color: var(--green-800); }
+.card--course .card__sub span { background: linear-gradient(transparent 62%, rgba(226, 198, 104, .55) 62%); -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+
