@@ -8,7 +8,7 @@
   "blocks": [
     {
       "course": "vida",
-      "origin": "dels CAP, del riu, de la platja i de l'Ajuntament",
+      "walks": true,
       "credit": "Sis rutes s'inspiren en les Rutes Saludables del programa PAFES (Pla d'Activitat Física, Esport i Salut) del Prat.",
       "text": "7 rutes circulars, de 2,1 a 3,6 km. Sis estan inspirades en les Rutes Saludables del programa PAFES (Pla d'Activitat Física, Esport i Salut) del Prat: tres surten dels centres d'atenció primària (CAP) i tres, del riu i la platja. La setena surt de l'Ajuntament. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
       "summary": "7 rutes des dels CAP, el riu, la platja i l'Ajuntament",
@@ -86,7 +86,6 @@
     },
     {
       "course": "cuidar",
-      "origin": "d'equipaments municipals i d'entitats del Tercer Sector Social",
       "text": "Hi ha dos tipus de rutes: 7 rutes que surten d'equipaments municipals i 13 rutes circulars, de 3,7 a 4,6 km, que surten d'entitats del Tercer Sector Social. Totes comencen i acaben al mateix lloc.",
       "summary": "20 rutes des d'equipaments i entitats socials",
       "parts": [
@@ -331,7 +330,6 @@
     },
     {
       "course": "mon",
-      "origin": "dels espais naturals del Delta del Llobregat i de places, parcs i jardins dels barris",
       "text": "Hi ha dos tipus de rutes: 9 rutes pels espais naturals del Delta del Llobregat (el riu, les llacunes, la platja i el Parc Agrari) i 17 circuits urbans curts, de 10 a 15 minuts caminant, que surten de places, parcs i jardins de tots els barris del Prat. Abans d'anar als espais naturals, comprova els horaris d'obertura.",
       "summary": "9 rutes pel Delta i 17 circuits urbans",
       "parts": [
@@ -602,7 +600,6 @@
     },
     {
       "course": "dia",
-      "origin": "d'entitats de l'economia social i solidària",
       "credit": "Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. En alguns punts hi ha diverses entitats al mateix lloc.",
       "text": "15 rutes circulars curtes, d'1,6 a 2,1 km (uns 19–32 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. En alguns punts hi ha diverses entitats al mateix lloc.",
       "summary": "15 rutes des de l'economia social",

@@ -261,13 +261,8 @@ for c in site["cities"] + site.get("territories", []) + site.get("subpages", [])
     counts = [f"{b['course']['short']}: {b['total']}" for b in blocks if b["total"]]
     if counts and not is_territory:   # les pàgines de territori ja porten la seva meta telegràfica al JSON
         city["summary"] = "Rutes a peu per curs. " + " · ".join(counts) + "."
-    # Pàgines amb el resum d'ús + dades telegràfiques: cada bloc amb rutes porta «origin» (d'on surten, amb la preposició)
-    # Els territoris sempre el fan servir: les targetes «Tria el teu curs» surten soles quan hi ha 2 cursos o més amb rutes;
-    # cada curs diu d'on surten amb «territory_line» a data/site.json (o amb «origin» al bloc).
-    city["tele"] = is_territory or any(b.get("origin") for b in blocks)
-    for b in blocks:
-        ok = b.get("origin") or (is_territory and b["course"].get("territory_line"))
-        assert not (city["tele"] and b["total"]) or ok, f"{city['slug']}: el bloc {b['course']['key']} necessita «origin» (o «territory_line» al curs)"
+    # Totes les pàgines de lloc porten el resum d'ús + dades telegràfiques; la frase d'on surten és genèrica per curs (data/site.json › origin_generic)
+    city["tele"] = True
     # Primer els cursos que tenen rutes en aquesta ciutat; després, els que encara no en tenen
     city["blocks"] = [b for b in blocks if b["total"]] + [b for b in blocks if not b["total"]]
     if is_subpage:   # pàgina penjada d'una ciutat: no surt a les llistes de ciutats, menús ni resums

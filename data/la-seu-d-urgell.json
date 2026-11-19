@@ -8,7 +8,7 @@
   "blocks": [
     {
       "course": "vida",
-      "origin": "del CAP, de la Fundació Sant Hospital i del passeig de Joan Brudieu, a la Seu d'Urgell",
+      "walks": true,
       "credit": "Les rutes 3 a 6 segueixen les rutes saludables del PAFES (Pla d'Activitat Física, Esport i Salut) de la Seu d'Urgell.",
       "text": "6 rutes circulars, de 1,57 a 2,99 km (de 19 a 45 minuts caminant). Les rutes 1 i 2 surten del CAP i de la Fundació Sant Hospital de la Seu d'Urgell. Les rutes 3 a 6 segueixen les rutes saludables del PAFES (Pla d'Activitat Física, Esport i Salut) de la Seu d'Urgell. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
       "summary": "6 rutes des del CAP, l'hospital i rutes saludables",
@@ -92,7 +92,6 @@
     },
     {
       "course": "cuidar",
-      "origin": "d'entitats del Tercer Sector Social (una ruta per entitat)",
       "text": "12 rutes circulars, de 2,4 a 2,5 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social de la Seu d'Urgell i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
       "summary": "12 rutes des d'entitats del Tercer Sector Social",
       "notice": {

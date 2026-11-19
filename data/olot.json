@@ -7,7 +7,7 @@
   "blocks": [
     {
       "course": "vida",
-      "origin": "dels CAP, de l'hospital i de places, ponts i parcs de la ciutat",
+      "walks": true,
       "credit": "Les rutes 5 a 13 s'inspiren en les rutes saludables del PAFES (Pla d'Activitat Física, Esport i Salut).",
       "text": "13 rutes circulars curtes, de 0,6 a 3,2 km (de 7 a 47 minuts caminant). Les rutes 1 a 4 surten dels centres d'atenció primària (CAP) i de l'hospital d'Olot. Les rutes 5 a 13 s'inspiren en les rutes saludables del PAFES (Pla d'Activitat Física, Esport i Salut) i surten de places, ponts i parcs de la ciutat. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
       "summary": "13 rutes des dels CAP, l'hospital, places i parcs",
@@ -156,7 +156,6 @@
     },
     {
       "course": "cuidar",
-      "origin": "d'entitats del Tercer Sector Social (una ruta per entitat)",
       "text": "7 rutes circulars, d'uns 2,5 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social d'Olot i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
       "summary": "7 rutes des d'entitats del Tercer Sector Social",
       "notice": {
@@ -254,7 +253,6 @@
     },
     {
       "course": "dia",
-      "origin": "d'entitats de l'economia social i solidària",
       "credit": "Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. Les tres entitats comparteixen seu, així que les tres rutes surten del mateix lloc.",
       "text": "Tres rutes circulars curtes, de 2,0 a 2,1 km (de 24 a 33 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. Les tres entitats comparteixen seu, així que les tres rutes surten del mateix lloc.",
       "summary": "3 rutes des de l'economia social",

@@ -7,7 +7,7 @@
   "blocks": [
     {
       "course": "vida",
-      "origin": "del CAP, de l'hospital, del CSMA i de carrers i passejos de Berga",
+      "walks": true,
       "credit": "Les rutes 4 a 7 segueixen les rutes saludables del PAFES (Pla d'Activitat Física, Esport i Salut) de Berga.",
       "text": "7 rutes circulars, de 1,96 a 3,06 km (de 24 a 46 minuts caminant). Les rutes 1 a 3 surten del CAP, de l'hospital i del CSMA de Berga. Les rutes 4 a 7 segueixen les rutes saludables del PAFES (Pla d'Activitat Física, Esport i Salut) de Berga. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
       "summary": "7 rutes des del CAP, l'hospital, el CSMA i rutes saludables",
@@ -98,7 +98,6 @@
     },
     {
       "course": "cuidar",
-      "origin": "d'entitats del Tercer Sector Social (una ruta per entitat)",
       "text": "7 rutes circulars, de 2,5 a 2,6 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social de Berga i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
       "summary": "7 rutes des d'entitats del Tercer Sector Social",
       "notice": {

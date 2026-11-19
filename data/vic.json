@@ -7,7 +7,7 @@
   "blocks": [
     {
       "course": "vida",
-      "origin": "dels CAP, dels hospitals i de carrers i places de Vic",
+      "walks": true,
       "text": "5 rutes circulars curtes, d'uns 2 km i mitja hora caminant, que surten dels centres d'atenció primària (CAP) i dels hospitals de Vic. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
       "summary": "5 rutes des dels CAP i hospitals",
       "parts": [
@@ -137,7 +137,6 @@
     },
     {
       "course": "cuidar",
-      "origin": "d'equipaments comunitaris i d'entitats del Tercer Sector Social",
       "text": "Hi ha dos tipus de rutes: 16 rutes curtes, d'1,8 a 2 km, que surten d'equipaments comunitaris, i 19 rutes més llargues, de 3,7 a 4,2 km, que surten d'entitats del Tercer Sector Social. Totes són circulars i tornen al punt de sortida.",
       "summary": "35 rutes des d'equipaments i entitats socials",
       "parts": [
@@ -539,7 +538,6 @@
     },
     {
       "course": "mon",
-      "origin": "de parcs i espais verds de Vic",
       "text": "22 rutes curtes i circulars pels parcs i espais verds de Vic, d'entre 1 i 2 km cadascuna (uns 20 minuts caminant). Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
       "groups": [
         {
@@ -761,7 +759,6 @@
     },
     {
       "course": "dia",
-      "origin": "d'una entitat de l'economia social i solidària",
       "credit": "Comença i acaba al carrer, davant de l'entitat: no cal entrar-hi.",
       "text": "Una ruta circular curta, d'1,9 km (uns 22–29 minuts caminant), que surt d'una entitat de l'economia social i solidària i hi torna. Comença i acaba al carrer, davant de l'entitat: no cal entrar-hi.",
       "summary": "1 ruta des de l'economia social",
