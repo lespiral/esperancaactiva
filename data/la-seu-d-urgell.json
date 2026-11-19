@@ -2,9 +2,91 @@
   "slug": "la-seu-d-urgell",
   "name": "La Seu d'Urgell",
   "region": "Alt Urgell",
-  "summary": "12 rutes circulars des d'entitats del Tercer Sector Social.",
+  "summary": "18 rutes circulars: des del CAP i l'hospital, de rutes saludables i des d'entitats del Tercer Sector Social.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
   "blocks": [
+    {
+      "course": "vida",
+      "text": "6 rutes circulars, de 1,57 a 2,99 km (de 19 a 45 minuts caminant). Les rutes 1 i 2 surten del CAP i de la Fundació Sant Hospital de la Seu d'Urgell. Les rutes 3 a 6 segueixen les rutes saludables del PAFES (Pla d'Activitat Física, Esport i Salut) de la Seu d'Urgell. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
+      "summary": "6 rutes des del CAP, l'hospital i rutes saludables",
+      "notice": {
+        "title": "Traçats orientatius i oficials",
+        "html": [
+          "Els traçats de les rutes 1 i 2 s'han reconstruït sobre OpenStreetMap a partir de la ubicació del punt de sortida: no són traçats oficials. Els de les rutes 3 a 6 són els de les rutes saludables del PAFES. Camina amb atenció al trànsit i a l'estat dels camins.",
+          "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "title": "Les 6 rutes",
+          "maps": [
+            {
+              "mid": "1ct73EgldXilDi_ET7lWdbUkbkq2BvRw",
+              "title": "La Seu d'Urgell · rutes del curs «Quan la vida et desborda»",
+              "ll": "42.3549,1.4604",
+              "z": 14,
+              "label": "6 rutes des del CAP i rutes saludables",
+              "routes": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ]
+            }
+          ],
+          "routes": [
+            {
+              "n": 1,
+              "name": "CAP de la Seu d'Urgell",
+              "info": "2,44 km · 29–37 min caminant · 40–55 min amb pauses · circular",
+              "address": "Carrer del Bisbe Guitart, 40, la Seu d'Urgell",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297132070"
+            },
+            {
+              "n": 2,
+              "name": "Fundació Sant Hospital",
+              "info": "1,94 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+              "address": "Plaça de Soldevila, 8, la Seu d'Urgell",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297132278"
+            },
+            {
+              "n": 3,
+              "name": "Passeig de Joan Brudieu · parc del Segre",
+              "info": "2,06 km · 25–31 min caminant · 35–50 min amb pauses · circular",
+              "address": "Passeig de Joan Brudieu, la Seu d'Urgell",
+              "note": "Desnivell d'uns 14 m, entre els 674 i els 688 m d'altitud.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297132432"
+            },
+            {
+              "n": 4,
+              "name": "Passeig de Joan Brudieu · parcs de Ponent",
+              "info": "2,52 km · 30–38 min caminant · 40–60 min amb pauses · circular",
+              "address": "Passeig de Joan Brudieu, la Seu d'Urgell",
+              "note": "Desnivell d'uns 19 m, entre els 677 i els 696 m d'altitud.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297132596"
+            },
+            {
+              "n": 5,
+              "name": "Passeig de Joan Brudieu · nucli antic",
+              "info": "1,57 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+              "address": "Passeig de Joan Brudieu, la Seu d'Urgell",
+              "note": "Desnivell d'uns 12 m, entre els 682 i els 694 m d'altitud.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297132750"
+            },
+            {
+              "n": 6,
+              "name": "Passeig de Joan Brudieu · Horta del Segre",
+              "info": "2,99 km · 36–45 min caminant · 45–65 min amb pauses · circular",
+              "address": "Passeig de Joan Brudieu, la Seu d'Urgell",
+              "note": "Desnivell d'uns 12 m, entre els 676 i els 688 m d'altitud.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297132875"
+            }
+          ]
+        }
+      ]
+    },
     {
       "course": "cuidar",
       "text": "12 rutes circulars, de 2,4 a 2,5 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social de la Seu d'Urgell i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",

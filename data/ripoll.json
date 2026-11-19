@@ -2,9 +2,84 @@
   "slug": "ripoll",
   "name": "Ripoll",
   "region": "Ripollès",
-  "summary": "6 rutes circulars des d'entitats del Tercer Sector Social.",
+  "summary": "11 rutes circulars: des del CAP, de rutes saludables i des d'entitats del Tercer Sector Social.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
   "blocks": [
+    {
+      "course": "vida",
+      "text": "5 rutes circulars, de 1,62 a 3,01 km (de 19 a 45 minuts caminant). La ruta 1 surt del CAP del Ripollès. Les rutes 2 a 5 segueixen les rutes saludables del PAFES (Pla d'Activitat Física, Esport i Salut) de Ripoll. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
+      "summary": "5 rutes des del CAP i rutes saludables",
+      "notice": {
+        "title": "Traçats orientatius i oficials",
+        "html": [
+          "Els traçats de la ruta 1 s'han reconstruït sobre OpenStreetMap a partir de la ubicació del punt de sortida: no són traçats oficials. Els de les rutes 2 a 5 són els de les rutes saludables del PAFES. Camina amb atenció al trànsit i a l'estat dels camins.",
+          "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "title": "Les 5 rutes",
+          "maps": [
+            {
+              "mid": "1NeDDXgfNGn828qgCvKZhVlBHDAeB9bY",
+              "title": "Ripoll · rutes del curs «Quan la vida et desborda»",
+              "ll": "42.1981,2.1926",
+              "z": 14,
+              "label": "5 rutes des del CAP i rutes saludables",
+              "routes": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            }
+          ],
+          "routes": [
+            {
+              "n": 1,
+              "name": "CAP Ripollès",
+              "info": "2,07 km · 25–31 min caminant · 35–50 min amb pauses · circular",
+              "address": "Carrer de Macià Bonaplata, 8, Ripoll",
+              "note": "Creua dues vegades el pont d'Olot.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131400"
+            },
+            {
+              "n": 2,
+              "name": "Carrer de Macià Bonaplata · Pla d'Ordina",
+              "info": "3,01 km · 36–45 min caminant · 45–65 min amb pauses · circular",
+              "address": "Carrer de Macià Bonaplata, Ripoll",
+              "note": "Desnivell d'uns 32 m, entre els 670 i els 702 m d'altitud.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131543"
+            },
+            {
+              "n": 3,
+              "name": "Carrer de Macià Bonaplata · parc botànic",
+              "info": "2,94 km · 35–44 min caminant · 45–65 min amb pauses · circular",
+              "address": "Carrer de Macià Bonaplata, Ripoll",
+              "note": "Desnivell d'uns 25 m, entre els 658 i els 683 m d'altitud.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131671"
+            },
+            {
+              "n": 4,
+              "name": "Carrer del Mestre Guich · Font del Sant",
+              "info": "2,25 km · 27–34 min caminant · 35–55 min amb pauses · circular",
+              "address": "Carrer del Mestre Guich, Ripoll",
+              "note": "Desnivell d'uns 36 m, entre els 669 i els 705 m d'altitud.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131834"
+            },
+            {
+              "n": 5,
+              "name": "Carrer del Mestre Guich · els ponts",
+              "info": "1,62 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+              "address": "Carrer del Mestre Guich, Ripoll",
+              "note": "Desnivell d'uns 28 m, entre els 670 i els 698 m d'altitud.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297131973"
+            }
+          ]
+        }
+      ]
+    },
     {
       "course": "cuidar",
       "text": "6 rutes circulars, de 2,4 a 2,6 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social de Ripoll i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",

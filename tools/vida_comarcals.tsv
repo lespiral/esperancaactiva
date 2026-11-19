@@ -1,0 +1,23 @@
+ciutat	n	nom	adreca	km	cam_min	cam_max	pau_min	pau_max	wikiloc	lat	lon	alt_min	alt_max	nota
+berga	1	CAP Berguedà	Carrer de Quim Serra, 1, Berga	2.41	29	36	40	55	297130321	42.10477	1.85344		
+berga	2	Hospital Sant Bernabé	Carretera de Ribes, Berga	1.96	24	29	35	50	297130571	42.10677	1.85262		
+berga	3	CSMA Berguedà	Plaça dels Països Catalans, Berga	2.45	29	37	40	55	297130889	42.10037	1.84337		
+berga	4	Camí de Sant Bartomeu · la Valldan	Camí de Sant Bartomeu, Berga	2.81	34	42	45	60	297130961	42.09007	1.83161	661	697	
+berga	5	Teatre Municipal · passeig de les Estaselles		2.41	29	36	40	55	297131054	42.10248	1.84379	683	713	
+berga	6	Passeig de la Indústria · la Gran Via	Passeig de la Indústria, Berga	2.89	35	43	45	65	297131196	42.10430	1.85333	660	694	
+berga	7	CAP Berguedà · passeig de la Indústria	Carrer de Quim Serra, 1, Berga	3.06	37	46	45	65	297131310	42.10460	1.85326	676	721	
+ripoll	1	CAP Ripollès	Carrer de Macià Bonaplata, 8, Ripoll	2.07	25	31	35	50	297131400	42.19804	2.19287			Creua dues vegades el pont d'Olot.
+ripoll	2	Carrer de Macià Bonaplata · Pla d'Ordina	Carrer de Macià Bonaplata, Ripoll	3.01	36	45	45	65	297131543	42.19804	2.19252	670	702	
+ripoll	3	Carrer de Macià Bonaplata · parc botànic	Carrer de Macià Bonaplata, Ripoll	2.94	35	44	45	65	297131671	42.19802	2.19253	658	683	
+ripoll	4	Carrer del Mestre Guich · Font del Sant	Carrer del Mestre Guich, Ripoll	2.25	27	34	35	55	297131834	42.19814	2.19253	669	705	
+ripoll	5	Carrer del Mestre Guich · els ponts	Carrer del Mestre Guich, Ripoll	1.62	19	24	30	45	297131973	42.19811	2.19257	670	698	
+seu	1	CAP de la Seu d'Urgell	Carrer del Bisbe Guitart, 40, la Seu d'Urgell	2.44	29	37	40	55	297132070	42.35544	1.45927			
+seu	2	Fundació Sant Hospital	Plaça de Soldevila, 8, la Seu d'Urgell	1.94	23	29	35	50	297132278	42.35479	1.46069			
+seu	3	Passeig de Joan Brudieu · parc del Segre	Passeig de Joan Brudieu, la Seu d'Urgell	2.06	25	31	35	50	297132432	42.35474	1.46068	674	688	
+seu	4	Passeig de Joan Brudieu · parcs de Ponent	Passeig de Joan Brudieu, la Seu d'Urgell	2.52	30	38	40	60	297132596	42.35473	1.46028	677	696	
+seu	5	Passeig de Joan Brudieu · nucli antic	Passeig de Joan Brudieu, la Seu d'Urgell	1.57	19	24	30	45	297132750	42.35474	1.46066	682	694	
+seu	6	Passeig de Joan Brudieu · Horta del Segre	Passeig de Joan Brudieu, la Seu d'Urgell	2.99	36	45	45	65	297132875	42.35473	1.46067	676	688	
+vic	29	Carrer de Sant Jordi · Calldetenes	Carrer de Sant Jordi, Vic	3.98	48	60	60	80	297133130	41.93088	2.26143	464	488	
+vic	30	Plaça de la Divina Pastora · carretera de Roda	Plaça de la Divina Pastora, Vic	2.94	35	44	45	65	297133287	41.93076	2.26029	466	489	
+vic	31	Passeig de la Generalitat · Horta Vermella	Passeig de la Generalitat, Vic	2.91	35	44	45	65	297133377	41.92100	2.25269	465	493	
+vic	32	CAP El Remei (Vic Sud) · zona universitària	Passatge Pla del Remei, 12, Vic	3.77	45	57	55	75	297133597	41.92098	2.25254	473	497	

@@ -2,65 +2,136 @@
   "slug": "vic",
   "name": "Vic",
   "region": "Osona",
-  "summary": "63 rutes circulars: pels parcs, des dels CAP i hospitals, des dels equipaments comunitaris i des d'entitats socials.",
+  "summary": "67 rutes circulars: pels parcs, des dels CAP i hospitals, de rutes saludables, des dels equipaments comunitaris i des d'entitats socials.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
   "blocks": [
     {
       "course": "vida",
       "text": "5 rutes circulars curtes, d'uns 2 km i mitja hora caminant, que surten dels centres d'atenció primària (CAP) i dels hospitals de Vic. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
-      "groups": [
+      "summary": "9 rutes des dels CAP, els hospitals i rutes saludables",
+      "parts": [
         {
-          "title": "Les 5 rutes",
-          "maps": [
+          "groups": [
             {
-              "mid": "1JXzA3SJbwXPhumtYZk-fgSzgvWjgFUs",
-              "title": "Vic · rutes des dels CAP i hospitals",
-              "ll": "41.9310,2.2542",
-              "z": 14,
-              "label": "5 rutes des dels CAP i hospitals"
+              "title": "Les 5 rutes",
+              "maps": [
+                {
+                  "mid": "1JXzA3SJbwXPhumtYZk-fgSzgvWjgFUs",
+                  "title": "Vic · rutes des dels CAP i hospitals",
+                  "ll": "41.9310,2.2542",
+                  "z": 14,
+                  "label": "5 rutes des dels CAP i hospitals"
+                }
+              ],
+              "routes": [
+                {
+                  "n": 24,
+                  "name": "CAP Osona (Vic Nord)",
+                  "info": "2,20 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Plaça de la Divina Pastora, Vic",
+                  "dest": "41.93098,2.2611"
+                },
+                {
+                  "n": 25,
+                  "name": "CAP El Remei (Vic Sud)",
+                  "info": "2,18 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Passatge Pla del Remei, 12, Vic",
+                  "note": "Té un tram d'uns 400 m de sauló, vora el Mèder.",
+                  "dest": "41.92115,2.25119"
+                },
+                {
+                  "n": 26,
+                  "name": "Hospital Universitari de Vic",
+                  "info": "2,12 km · 25–32 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer d'en Francesc Pla «el Vigatà», 1, Vic",
+                  "dest": "41.93632,2.26071"
+                },
+                {
+                  "n": 27,
+                  "name": "Hospital Universitari de la Santa Creu",
+                  "info": "2,24 km · 27–34 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Rambla de l'Hospital, 52, Vic",
+                  "dest": "41.92792,2.25216"
+                },
+                {
+                  "n": 28,
+                  "name": "Clínica de Vic",
+                  "info": "2,18 km · 26–33 min caminant · 40–50 min amb pauses · circular",
+                  "address": "Ronda de Francesc Camprodon, 4, Vic",
+                  "dest": "41.93442,2.25646"
+                }
+              ]
             }
-          ],
-          "routes": [
+          ]
+        },
+        {
+          "id": "rutes-saludables",
+          "title": "Rutes saludables PAFES",
+          "nav": "Rutes saludables PAFES",
+          "text": "4 rutes circulars, de 2,91 a 3,98 km (de 35 a 60 minuts caminant), que surten de carrers, places i un CAP de Vic i segueixen les rutes saludables del PAFES (Pla d'Activitat Física, Esport i Salut) de la ciutat. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
+          "notice": {
+            "title": "Traçats oficials",
+            "html": [
+              "Els traçats són els de les rutes saludables del PAFES de Vic. Camina amb atenció al trànsit i a l'estat dels camins."
+            ]
+          },
+          "groups": [
             {
-              "n": 24,
-              "name": "CAP Osona (Vic Nord)",
-              "info": "2,20 km · 26–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Plaça de la Divina Pastora, Vic",
-              "dest": "41.93098,2.2611"
-            },
-            {
-              "n": 25,
-              "name": "CAP El Remei (Vic Sud)",
-              "info": "2,18 km · 26–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Passatge Pla del Remei, 12, Vic",
-              "note": "Té un tram d'uns 400 m de sauló, vora el Mèder.",
-              "dest": "41.92115,2.25119"
-            },
-            {
-              "n": 26,
-              "name": "Hospital Universitari de Vic",
-              "info": "2,12 km · 25–32 min caminant · 35–50 min amb pauses · circular",
-              "address": "Carrer d'en Francesc Pla «el Vigatà», 1, Vic",
-              "dest": "41.93632,2.26071"
-            },
-            {
-              "n": 27,
-              "name": "Hospital Universitari de la Santa Creu",
-              "info": "2,24 km · 27–34 min caminant · 40–50 min amb pauses · circular",
-              "address": "Rambla de l'Hospital, 52, Vic",
-              "dest": "41.92792,2.25216"
-            },
-            {
-              "n": 28,
-              "name": "Clínica de Vic",
-              "info": "2,18 km · 26–33 min caminant · 40–50 min amb pauses · circular",
-              "address": "Ronda de Francesc Camprodon, 4, Vic",
-              "dest": "41.93442,2.25646"
+              "id": "quan-la-vida-pafes",
+              "title": "Les 4 rutes",
+              "maps": [
+                {
+                  "mid": "1B0gtXK-UcQSKiee-XKxNL5yREkSly0Q",
+                  "title": "Vic · rutes saludables PAFES",
+                  "ll": "41.9259,2.2567",
+                  "z": 14,
+                  "label": "Rutes 29 a 32 · rutes saludables PAFES",
+                  "routes": [
+                    29,
+                    30,
+                    31,
+                    32
+                  ]
+                }
+              ],
+              "routes": [
+                {
+                  "n": 29,
+                  "name": "Carrer de Sant Jordi · Calldetenes",
+                  "info": "3,98 km · 48–60 min caminant · 60–80 min amb pauses · circular",
+                  "address": "Carrer de Sant Jordi, Vic",
+                  "note": "Desnivell d'uns 24 m, entre els 464 i els 488 m d'altitud.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297133130"
+                },
+                {
+                  "n": 30,
+                  "name": "Plaça de la Divina Pastora · carretera de Roda",
+                  "info": "2,94 km · 35–44 min caminant · 45–65 min amb pauses · circular",
+                  "address": "Plaça de la Divina Pastora, Vic",
+                  "note": "Desnivell d'uns 23 m, entre els 466 i els 489 m d'altitud.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297133287"
+                },
+                {
+                  "n": 31,
+                  "name": "Passeig de la Generalitat · Horta Vermella",
+                  "info": "2,91 km · 35–44 min caminant · 45–65 min amb pauses · circular",
+                  "address": "Passeig de la Generalitat, Vic",
+                  "note": "Desnivell d'uns 28 m, entre els 465 i els 493 m d'altitud.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297133377"
+                },
+                {
+                  "n": 32,
+                  "name": "CAP El Remei (Vic Sud) · zona universitària",
+                  "info": "3,77 km · 45–57 min caminant · 55–75 min amb pauses · circular",
+                  "address": "Passatge Pla del Remei, 12, Vic",
+                  "note": "Desnivell d'uns 24 m, entre els 473 i els 497 m d'altitud.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297133597"
+                }
+              ]
             }
           ]
         }
-      ],
-      "summary": "5 rutes des dels CAP i hospitals"
+      ]
     },
     {
       "course": "cuidar",
