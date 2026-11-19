@@ -71,21 +71,17 @@
       "for_list": [
         "Estàs passant per una separació, un dol o una pèrdua important.",
         "Tens un conflicte familiar o relacional que et preocupa.",
-        "Estàs vivint una etapa d'ansietat, estrès, tristesa o cansament emocional.",
+        "Vius una etapa d'ansietat, estrès, tristesa o cansament emocional.",
         "Et sents bloquejat/da o no tens clar cap a on anar.",
-        "Et costa trobar espai mental perquè la preocupació ocupa massa lloc.",
-        "Voldries concretar un primer pas possible davant del que estàs vivint."
+        "Et costa trobar espai mental perquè la preocupació ocupa massa lloc."
       ],
-      "gains_intro": "En completar aquesta primera volta a l'Espiral podràs:",
+      "gains_intro": "En completar aquesta primera volta a l'Espiral podràs començar a:",
       "gains": [
         "reconnectar amb allò que encara té valor per a tu;",
-        "reconèixer persones i recursos que poden sostenir-te;",
-        "posar paraules a una preocupació concreta;",
-        "observar-la amb una mica més de perspectiva;",
-        "identificar persones o experiències que t'inspiren;",
-        "explorar què necessites i cap a on voldries orientar-te;",
+        "posar paraules a una preocupació concreta i observar-la amb una mica més de perspectiva;",
+        "reconèixer les persones i els recursos que et poden sostenir;",
         "distingir entre allò que pots fer i allò que no depèn només de tu;",
-        "i concretar un primer pas assumible."
+        "explorar què necessites i cap a on voldries orientar-te, i concretar un primer pas assumible."
       ],
       "gains_end": "No es tracta que el problema desaparegui en set passes. Es tracta de poder relacionar-t'hi amb una mica més de presència, suport i orientació."
     },
@@ -109,19 +105,16 @@
         "Sents que moltes persones han d'afrontar moments difícils amb poc suport.",
         "Et preocupa la manca d'espais on parlar i sentir-te escoltat/da sense judici.",
         "Voldries cuidar millor els teus vincles o aprendre a demanar suport quan el necessites.",
-        "T'interessen els grups d'ajuda mútua, les xarxes comunitàries o altres formes col·lectives de cura.",
-        "Voldries transformar una preocupació en una orientació i un primer pas possible."
+        "Et falta sentir-te part d'un grup, amb persones amb qui compartir una etapa de la vida o uns mateixos interessos.",
+        "T'interessen els grups d'ajuda mútua, les xarxes comunitàries o altres formes col·lectives de cura."
       ],
-      "gains_intro": "En completar aquesta primera volta a l'Espiral podràs:",
+      "gains_intro": "En completar aquesta primera volta a l'Espiral podràs començar a:",
       "gains": [
-        "reconnectar amb allò que té valor per a tu;",
-        "reconèixer persones, vincles i recursos que poden sostenir-te;",
-        "posar paraules a una preocupació concreta;",
-        "identificar experiències o persones que t'inspiren;",
-        "explorar quin futur més humà i cuidador voldries;",
-        "diferenciar entre cuidar i haver de carregar amb tot;",
-        "trobar quin paper pot tenir sentit per a tu;",
-        "i concretar un primer pas possible."
+        "reconèixer els vincles i les persones que ja et sostenen, i qui més t'agradaria tenir a prop;",
+        "posar paraules a allò que et preocupa i que et falta: escolta, companyia, suport;",
+        "imaginar quin futur més humà i cuidador voldries;",
+        "diferenciar entre cuidar i haver de carregar-ho tot tu;",
+        "trobar quin paper vols tenir en una xarxa de suport i concretar un primer pas possible, com apropar-te a un grup o a un espai de la teva comunitat."
       ],
       "gains_end": "No es tracta que, en set passes, desaparegui el malestar. Es tracta de poder relacionar-t'hi amb una mica més de suport, claredat i possibilitat de resposta."
     },
@@ -141,22 +134,19 @@
       "thinkific": "https://espiral-elara-social.thinkific.com/enroll/3836823",
       "for_lead": "La preocupació ecològica també parla del teu vincle amb el món viu.",
       "for_list": [
-        "Et preocupa el canvi climàtic i el futur del planeta.",
+        "Et preocupa el canvi climàtic, els incendis, les sequeres o el futur del planeta.",
         "Et dol la degradació dels ecosistemes o la pèrdua de biodiversitat.",
-        "Et preocupen els incendis, les sequeres, la contaminació o la desaparició d'espais naturals.",
         "Sents impotència perquè el que pots fer individualment sembla insuficient.",
         "Voldries implicar-te, però no tens clar de quina manera.",
         "Ja participes en iniciatives ambientals i vols sostenir el compromís sense esgotar-te."
       ],
-      "gains_intro": "En completar aquesta primera volta a l'Espiral podràs:",
+      "gains_intro": "En completar aquesta primera volta a l'Espiral podràs començar a:",
       "gains": [
         "reconnectar amb allò que estimes del món viu;",
-        "identificar suports, persones i iniciatives que t'inspiren;",
         "posar paraules a una preocupació ecològica concreta;",
-        "explorar quin futur voldries contribuir a cuidar;",
+        "identificar persones i iniciatives que t'inspiren i et sostenen;",
         "diferenciar responsabilitat d'hiperresponsabilització;",
-        "trobar quin paper pot tenir sentit per a tu;",
-        "i concretar un primer pas realista i assumible."
+        "explorar quin futur voldries contribuir a cuidar, quin paper hi pots tenir i concretar un primer pas realista."
       ],
       "gains_end": "No es tracta de resoldre la crisi climàtica individualment. Es tracta de trobar una manera més clara i sostenible de situar-te davant d'allò que t'importa."
     },
@@ -177,26 +167,19 @@
       "thinkific": "https://espiral-elara-social.thinkific.com/enroll/3835907",
       "for_lead": "Hi ha preocupacions que no són només personals.",
       "for_list": [
-        "Et preocupa la precarietat laboral o la dificultat de construir una vida estable.",
-        "Et genera inquietud l'accés a l'habitatge o la pressió econòmica quotidiana.",
+        "Et preocupen la precarietat, l'accés a l'habitatge o la pressió econòmica del dia a dia.",
         "Sents cansament davant de ritmes de treball cada vegada més exigents.",
-        "Et preocupa una organització de l'economia excessivament centrada en la productivitat i la competència.",
-        "Voldries que la feina tingués més sentit i fos més coherent amb els teus valors.",
+        "Et preocupa una economia massa centrada en la productivitat i la competència, i voldries una feina amb més sentit i més coherent amb els teus valors.",
         "T'interessen la cooperació, la cura, el suport mutu i les formes comunitàries d'organitzar la vida.",
-        "Davant dels problemes socials, de vegades oscil·les entre la impotència i la sensació que hauries de fer més.",
-        "Voldries transformar una preocupació en una orientació i un primer pas possible."
+        "Davant dels problemes socials, de vegades oscil·les entre la impotència i la sensació que hauries de fer més."
       ],
-      "gains_intro": "En completar aquesta primera volta a l'Espiral hauràs explorat una manera de:",
+      "gains_intro": "En completar aquesta primera volta a l'Espiral podràs començar a:",
       "gains": [
         "reconnectar amb allò que estimes i té valor per a tu;",
-        "reconèixer persones, xarxes i recursos que també sostenen la vida;",
-        "posar paraules a una preocupació concreta;",
-        "mirar-la sense haver de solucionar-la immediatament;",
-        "trobar persones, projectes o experiències que t'inspirin;",
-        "identificar cap a quin futur voldries orientar-te;",
-        "diferenciar entre responsabilitat i hiperresponsabilització;",
-        "explorar quin paper pots tenir dins d'una resposta més àmplia i col·lectiva;",
-        "i concretar un primer pas realista, assumible i coherent amb el que t'importa."
+        "reconèixer les persones, xarxes i recursos que també sostenen la vida;",
+        "posar paraules a una preocupació concreta i mirar-la sense haver de solucionar-la de seguida;",
+        "trobar persones, projectes o experiències que t'inspirin, i diferenciar responsabilitat d'hiperresponsabilització;",
+        "explorar quin paper pots tenir dins d'una resposta més col·lectiva i concretar un primer pas realista i coherent amb el que t'importa."
       ],
       "gains_end": "Al final, no necessàriament hauràs resolt el problema que et preocupa. Però pots haver canviat la posició des de la qual t'hi relaciones: amb una mica més d'espai, suport, claredat i possibilitat de resposta."
     }
