@@ -1,9 +1,9 @@
-{% macro page_head(kicker, title, lead=None, center=True) -%}
+{% macro page_head(kicker, title, lead=None, center=True, sub=False) -%}
 <section class="pagehead{% if center %} pagehead--center{% endif %}">
   <div class="wrap">
     {% if kicker %}<p class="kicker">{{ kicker }}</p>{% endif %}
     <h1>{{ title }}</h1>
-    {% if lead %}<p class="lead">{{ lead }}</p>{% endif %}
+    {% if lead %}<p class="lead{% if sub %} lead--sub{% endif %}">{% if sub %}<span>{{ lead }}</span>{% else %}{{ lead }}{% endif %}</p>{% endif %}
   </div>
 </section>
 {%- endmacro %}
