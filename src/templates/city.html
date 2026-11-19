@@ -32,7 +32,7 @@
 {% block content %}
 {% set is_territory = city.kind == 'territory' %}
 {% if is_territory %}
-{{ page_head(site.territories_page.kicker ~ ' · ' ~ city.region, city.title, city.intro) }}
+{{ page_head(site.territories_page.kicker ~ ' · ' ~ city.region, city.title, city.intro|hl) }}
 
 <nav class="pills wrap" aria-label="Canvia de territori">
   {% for c in territories %}
@@ -41,7 +41,7 @@
   <a class="pill" href="{{ root }}ciutats/">{{ icon('pin') }}{{ site.cities_page.title }}</a>
 </nav>
 {% elif city.kind == 'subpage' %}
-{{ page_head(site.cities_page.cities_title ~ ' · ' ~ city.name, city.title, city.intro) }}
+{{ page_head(site.cities_page.cities_title ~ ' · ' ~ city.name, city.title, city.intro|hl) }}
 {% else %}
 {{ page_head(site.cities_page.cities_title ~ ' · ' ~ city.region, city.title, site.cities_page.city_intro) }}
 {% endif %}

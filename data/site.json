@@ -150,7 +150,7 @@
       "title": "Quan sostenir la vida es fa difícil",
       "short": "Sostenir el dia a dia",
       "subtitle": "Feina, habitatge, precarietat i incertesa econòmica",
-      "walk_note": "Les rutes d'aquest curs surten d'entitats de l'economia social i solidària de Catalunya: cooperatives, associacions i fundacions. Les trobaràs per territoris o, directament, pel teu poble.",
+      "walk_note": "Les rutes d'aquest curs surten d'**entitats de l'economia social i solidària** de Catalunya: cooperatives, associacions i fundacions. Les trobaràs per territoris o, directament, pel teu poble.",
       "card": "Precarietat, no arribar a final de mes, l'habitatge o els ritmes de treball.",
       "icon": "house",
       "soon": true,
@@ -201,7 +201,7 @@
       "Aquest recorregut de 7 passes s'inspira en el Treball que Reconnecta, creat per Joanna Macy, i en les set frases per completar que Chris Johnstone ofereix a activehope.training. L'Esperança Activa no és un sentiment que arriba o no arriba: és una pràctica. Partir de la realitat tal com és, reconèixer cap on volem que vagin les coses i fer un pas en aquella direcció. Aquestes rutes la fan breu, accessible i repetible, per caminar-la quan et faci falta."
     ],
     "before_title": "Abans de començar",
-    "before_text": "El recorregut et convida a apropar-te al que et preocupa sense forçar-te i respectant els teus límits. Si alguna pràctica et remou més del que pots sostenir en aquell moment, pots aturar-te, descansar i reprendre-la un altre dia.",
+    "before_text": "El recorregut et convida a apropar-te al que et preocupa **sense forçar-te** i respectant els teus límits. Si alguna pràctica et remou més del que pots sostenir en aquell moment, pots aturar-te, descansar i reprendre-la un altre dia.",
     "passes_list_title": "Les 7 passes, en una llista",
     "cta_building": true,
     "building_label": "En construcció",
@@ -220,7 +220,7 @@
       ["El següent pas possible.", "Quina acció petita, concreta i realista puc fer ara?"]
     ],
     "walk_title": "Ara, on vols caminar?",
-    "walk_intro": "Tria la teva ciutat o el teu poble i fes el temps de reflexió de cada passa en una de les rutes. Si encara no hi ha rutes a prop teu, pots caminar pels voltants de casa o per un lloc tranquil."
+    "walk_intro": "Tria la teva ciutat o el teu poble i fes el **temps de reflexió** de cada passa en una de les rutes. Si encara no hi ha rutes a prop teu, pots caminar pels voltants de casa o per un lloc tranquil."
   },
 
   "safety_html": "Aquest curs no substitueix un procés de psicoteràpia ni un tractament mèdic o psicològic. Si estàs passant un moment molt difícil, parla amb el teu CAP o truca al <a href=\"tel:061\">061</a>. Si penses en fer-te mal, truca al <a href=\"tel:024\">024</a>. En una emergència, al <a href=\"tel:112\">112</a>.",
@@ -244,7 +244,7 @@
     "lead": "Una pràctica, una caminada, un petit pas. Tria el que et preocupa i on vols caminar.",
     "q1": "1. Què et porta aquí?",
     "q2": "2. On vols caminar?",
-    "q2_text": "Cada ciutat, poble o comarca té el seu mapa i les seves rutes. Surten de places, parcs, equipaments i entitats a prop de casa. N'hi ha de molt curtes, d'uns 10 minuts, i de més llargues, de més d'una hora.",
+    "q2_text": "Cada ciutat, poble o comarca té el seu **mapa i les seves rutes**. Surten de places, parcs, equipaments i entitats **a prop de casa**. N'hi ha de molt curtes, d'uns 10 minuts, i de més llargues, de més d'una hora.",
     "q2_cities": "Ara hi ha rutes a Barcelona, l'Hospitalet de Llobregat, el Prat de Llobregat, Olot i Vic, i a pobles de moltes comarques. Se n'aniran afegint més.",
     "each_course": "Cada curs té les seves rutes a cada lloc: el curs et dona la pràctica, i la ruta, el temps per caminar-la. No hi trobes el teu poble o la teva ciutat? Fes la caminada a prop de casa o en un lloc tranquil.",
     "how_title": "Com funciona",
@@ -255,7 +255,7 @@
       ["sun", "4. Porta-ho al dia a dia", "Pensa què t'emportes: una mirada nova, una necessitat o un petit pas possible."]
     ],
     "seven_title": "Cada curs, 7 passes",
-    "seven_text": "Tots els cursos segueixen l'Espiral del Treball que Reconnecta, de Joanna Macy, adaptada en set passes senzilles. Ho pots fer en 7 dies o al teu ritme, i no cal experiència en meditació.",
+    "seven_text": "Tots els cursos segueixen l'Espiral del Treball que Reconnecta, de Joanna Macy, adaptada en **set passes senzilles**. Ho pots fer en 7 dies o **al teu ritme**, i **no cal experiència** en meditació.",
     "seven_moments_title": "Cada passa té quatre moments:",
     "seven_moments": [
       ["Explora:", "un vídeo d'introducció de 3 a 5 minuts."],
@@ -276,14 +276,14 @@
 
   "courses_page": {
     "title": "Els cursos",
-    "intro": "Tria el tema que et preocupa. Cada curs és gratuït, té 7 passes i les seves pròpies rutes a peu."
+    "intro": "Tria el tema que et preocupa. Cada curs és **gratuït**, té **7 passes** i les seves **rutes a peu**."
   },
 
   "cities_page": {
     "city_intro": "Rutes a peu per fer el temps de reflexió de cada passa dels cursos de Camins d'Esperança [Activa]. Cada curs té les seves rutes: tria el teu i camina.",
     "independent_note": "Rutes independents. Aquestes rutes són una proposta d'Esperança Activa per caminar pel teu compte. No les organitzen ni les recomanen els centres, entitats o equipaments que apareixen com a punt de sortida, ni els seus gestors o administradors: el lloc és només la referència on comença i acaba el recorregut. Abans de sortir, valora l'estat del camí, el temps i les teves forces, i camina al teu ritme.",
     "title": "Ciutats, pobles i comarques",
-    "intro": "Caminar per fer el temps de reflexió de cada passa. Hi ha rutes a ciutats i a pobles de moltes comarques: tria on vols caminar i el teu curs.",
+    "intro": "Caminar per fer el **temps de reflexió** de cada passa. Hi ha rutes a ciutats i a pobles de moltes comarques: tria on vols caminar i el teu curs.",
     "places_label": "Vés directament al teu poble o ciutat",
     "jump_label": "Salta a",
     "cities_title": "Ciutats",
@@ -292,7 +292,7 @@
 
   "territories_page": {
     "title": "Pobles i comarques",
-    "intro": "Les rutes del curs «Quan sostenir la vida es fa difícil» surten d'entitats de l'economia social i solidària de tot Catalunya: cooperatives, associacions i fundacions. Les trobaràs per territoris o, directament, pel teu poble.",
+    "intro": "Les rutes del curs «Quan sostenir la vida es fa difícil» surten d'**entitats de l'economia social i solidària** de tot Catalunya: cooperatives, associacions i fundacions. Les trobaràs per territoris o, directament, pel teu poble.",
     "places_label": "Vés directament al teu poble",
     "places_placeholder": "Tria un poble o una ciutat",
     "kicker": "Pobles i comarques"

@@ -313,3 +313,22 @@
     input.addEventListener('input', run);
   });
 })();
+
+/* Lletres: l'ona dels títols s'obre en arribar-hi i el títol de la capçalera surt paraula a paraula */
+(function () {
+  var hs = document.querySelectorAll('main h2[id^="h-"], .health__h2');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }); }, { threshold: .6 });
+    Array.prototype.forEach.call(hs, function (h) { io.observe(h); });
+  } else Array.prototype.forEach.call(hs, function (h) { h.classList.add('is-in'); });
+  var h1 = document.querySelector('.pagehead h1');
+  if (h1 && !(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) {
+    var words = h1.textContent.trim().split(/\s+/);
+    h1.textContent = '';
+    words.forEach(function (w, i) {
+      var sp = document.createElement('span'); sp.className = 'w'; sp.style.setProperty('--i', i); sp.textContent = w;
+      h1.appendChild(sp); if (i < words.length - 1) h1.appendChild(document.createTextNode(' '));
+    });
+    h1.classList.add('is-split');
+  }
+})();
