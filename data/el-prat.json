@@ -3,20 +3,20 @@
   "name": "El Prat de Llobregat",
   "title": "Caminar pel Prat de Llobregat",
   "region": "Baix Llobregat",
-  "summary": "6 rutes des dels CAP, el riu i la platja, 7 des dels equipaments, 9 pel Delta, 17 circuits urbans i 28 des d'entitats socials.",
+  "summary": "7 rutes des dels CAP, el riu, la platja i l'Ajuntament, 7 des dels equipaments, 9 pel Delta, 17 circuits urbans i 28 des d'entitats socials.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
   "blocks": [
     {
       "course": "vida",
-      "text": "6 rutes circulars, de 2,1 a 3,6 km, inspirades en les Rutes Saludables del programa PAFES (Pla d'Activitat Física, Esport i Salut) del Prat. Tres surten dels centres d'atenció primària (CAP) i tres del riu i la platja. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
-      "summary": "6 rutes des dels CAP, el riu i la platja",
+      "text": "7 rutes circulars, de 2,1 a 3,6 km. Sis estan inspirades en les Rutes Saludables del programa PAFES (Pla d'Activitat Física, Esport i Salut) del Prat: tres surten dels centres d'atenció primària (CAP) i tres, del riu i la platja. La setena surt de l'Ajuntament. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
+      "summary": "7 rutes des dels CAP, el riu, la platja i l'Ajuntament",
       "groups": [
         {
-          "title": "Les 6 rutes",
+          "title": "Les 7 rutes",
           "maps": [
             {
               "mid": "PENDENT-MID",
-              "title": "El Prat · rutes inspirades en el PAFES",
+              "title": "El Prat · rutes des dels CAP, el riu, la platja i l'Ajuntament",
               "ll": "41.3250,2.0950",
               "z": 14
             }
@@ -69,6 +69,14 @@
               "info": "3,60 km · 43–54 min caminant · 55–75 min amb pauses · circular",
               "desc": "Basada en el Circuit Platja Llarg de les Rutes Saludables del programa PAFES (Pla d'Activitat Física, Esport i Salut) del Prat.",
               "dest": "41.32128,2.10156"
+            },
+            {
+              "n": 7,
+              "name": "Ajuntament · Cases de la Seda",
+              "start": "Inici i final: Ajuntament del Prat de Llobregat",
+              "info": "2,92 km · 35–44 min caminant · 45–65 min amb pauses · circular",
+              "desc": "Recorregut per l'estació, l'avinguda del Canal, les Cases de la Seda i el carrer de Jaume Casanovas.",
+              "dest": "41.33079,2.09299"
             }
           ]
         }
