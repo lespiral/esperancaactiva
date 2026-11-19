@@ -14,7 +14,7 @@
 <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@600;700&display=swap">
-  <link rel="stylesheet" href="assets/site.css?v=1795096196">
+  <link rel="stylesheet" href="assets/site.css?v=1795101115">
 </head>
 <body>
   <a class="skip" href="#contingut">Salta al contingut</a>
@@ -1051,13 +1051,13 @@
     </div>
 <div class="espi" data-espi>
   <div class="espi__grid">
-    <div class="espi__scene" role="group" aria-label="L'espiral de les 7 passes; cada passa té quatre moments">
+    <div class="espi__scene" role="group" aria-label="L'espiral de les 7 passes; cada passa té tres moments">
       <svg class="espi__svg" aria-hidden="true" focusable="false"></svg>
       <div class="espi__nodes"></div>
       <div class="espi__hub" aria-live="polite"><p class="espi__hk"></p><p class="espi__ht"></p><p class="espi__hx"></p></div>
     </div>
     <div class="espi__legend">
-      <p class="espi__lh">Cada passa, quatre moments</p>
+      <p class="espi__lh">Cada passa, tres moments</p>
       <ol class="espi__moments"></ol>
       <ul class="espi__chips"></ul>
     </div>
@@ -1127,7 +1127,7 @@
 .espi__lab--b { left: 0; top: calc(var(--node) / 2 + 13px); transform: translateX(-50%); text-align: center; }
 .espi--nolab .espi__lab { display: none; }
 
-/* Anell dels quatre moments de cada passa */
+/* Anell dels tres moments de cada passa */
 .espi__arc { fill: none; stroke: #d6ddd9; stroke-width: 4; stroke-linecap: round; transition: stroke .25s; }
 .espi__arc.is-on { stroke: var(--cs); }
 .espi__arc.is-now { stroke: #c9a53c; }
@@ -1139,7 +1139,7 @@
 .espi__hx { font-size: clamp(13px, calc(var(--hubw, 170px) * .085), 15px); line-height: 1.4; color: var(--cmuted); margin-top: 4px !important; text-wrap: balance; }
 .espi__hub.is-fresh { animation: espi-fade .4s ease; }
 
-/* Llegenda dels quatre moments */
+/* Llegenda dels tres moments */
 .espi__legend { padding: 28px 26px 24px 6px; display: flex; flex-direction: column; justify-content: center; }
 .espi--stack .espi__legend { padding: 16px 18px 22px; }
 .espi--stack .espi__moments { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
@@ -1207,13 +1207,12 @@
     ["El següent pas possible", "Quina acció petita, concreta i realista puc fer ara?"]
   ];
   var MOMENTS = [
-    { icon: "video", name: "Explora", time: "3-5 min", text: "Un vídeo d'introducció" },
     { icon: "phones", name: "Practica", time: "uns 15 min", text: "Una pràctica guiada" },
     { icon: "steps", name: "Camina", time: "", text: "Un temps de reflexió en una de les rutes" },
     { icon: "sun", name: "Integra", time: "", text: "Un vídeo de tancament per portar-ho a la vida" }
   ];
   var CHIPS = [["clock", "7 dies o al teu ritme"], ["leaf", "No cal experiència en meditació"]];
-  var HUB_START = ["L'Espiral", "7 passes", "Cada passa, quatre moments"];
+  var HUB_START = ["L'Espiral", "7 passes", "Cada passa, tres moments"];
   var HUB_END = ["Cada curs", "7 passes", "Les mateixes, amb la mirada de cada curs. Toca'n una per veure-la."]; // canvi de la web
   function kick(n) { return "Passa " + n + " de 7"; }
 
@@ -1330,11 +1329,11 @@
       '<path d="' + G.d + '" fill="none" stroke="#1a4d40" stroke-opacity=".35" stroke-width="4" stroke-linecap="round" stroke-dasharray="0.1 10"/>',
       '<path class="espi__walked" d="' + G.d + '" fill="none" stroke="#1a4d40" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>'
     );
-    // Anell de quatre arcs al voltant de cada passa
+    // Anell de tres arcs al voltant de cada passa
     var rr = G.node / 2 + 7;
     G.nodes.forEach(function (n, k) {
-      for (var j = 0; j < 4; j++) {
-        var a1 = (-90 + j * 90 + 9) * Math.PI / 180, a2 = (-90 + (j + 1) * 90 - 9) * Math.PI / 180;
+      for (var j = 0; j < 3; j++) {
+        var a1 = (-90 + j * 120 + 11) * Math.PI / 180, a2 = (-90 + (j + 1) * 120 - 11) * Math.PI / 180;
         out.push('<path class="espi__arc" data-k="' + k + '" data-j="' + j + '" d="M' + r1(n.x + Math.cos(a1) * rr) + ',' + r1(n.y + Math.sin(a1) * rr) +
           'A' + rr + ',' + rr + ' 0 0 1 ' + r1(n.x + Math.cos(a2) * rr) + ',' + r1(n.y + Math.sin(a2) * rr) + '"/>');
       }
@@ -1370,27 +1369,27 @@
   }
 
   /* ---------- PLA DE L'ANIMACIÓ ---------- */
-  // La primera passa a poc a poc (els quatre moments, un a un); les altres sis, més de pressa; i l'espiral continua
+  // La primera passa a poc a poc (els tres moments, un a un); les altres sis, més de pressa; i l'espiral continua
   function plan() {
     var segs = [], t = 0;
     function add(type, dur, k, j, a, b) { segs.push({ type: type, t0: t, t1: t + dur, k: k, j: j, a: a, b: b }); t += dur; }
     add("start", T_START, 0, -1, 0, 0);
     for (var k = 0; k < 7; k++) {
       if (k > 0) add("move", T_MOVE, k - 1, -1, G.L[k - 1], G.L[k]);
-      for (var j = 0; j < 4; j++) add("mom", k === 0 ? T_MOM1 : T_MOM, k, j, G.L[k], G.L[k]);
+      for (var j = 0; j < 3; j++) add("mom", k === 0 ? T_MOM1 : T_MOM, k, j, G.L[k], G.L[k]);
     }
     add("tail", T_TAIL, 6, -1, G.L[6], G.total);
     PLAN = { segs: segs, end: t };
   }
   function state(t) {
-    if (t >= PLAN.end) return { pos: G.total, cur: 6, mom: 4, now: -1, done: true, type: "end" };
+    if (t >= PLAN.end) return { pos: G.total, cur: 6, mom: 3, now: -1, done: true, type: "end" };
     var s = PLAN.segs[0];
     for (var i = 0; i < PLAN.segs.length; i++) if (t < PLAN.segs[i].t1) { s = PLAN.segs[i]; break; }
     var f = (t - s.t0) / (s.t1 - s.t0), pos = s.a + (s.b - s.a) * (s.type === "move" ? ease(f) : s.type === "tail" ? f : 0);
     return {
       pos: pos, type: s.type, done: false,
       cur: s.type === "move" ? s.k : s.k,          // última passa a la qual s'ha arribat
-      mom: s.type === "mom" ? s.j + 1 : s.type === "start" ? 0 : 4,   // moments encesos de la passa actual
+      mom: s.type === "mom" ? s.j + 1 : s.type === "start" ? 0 : 3,   // moments encesos de la passa actual
       now: s.type === "mom" ? s.j : -1
     };
   }
@@ -1562,6 +1561,6 @@
     </div>
   </footer>
 
-  <script src="assets/site.js?v=1795096196" defer></script>
+  <script src="assets/site.js?v=1795101115" defer></script>
 </body>
 </html>
