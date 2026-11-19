@@ -84,7 +84,8 @@
               "info": "2,36 km · 28–35 min caminant · 40–55 min amb pauses · circular",
               "address": "Plaça Major, Olot",
               "note": "Passa pel centre i el nucli antic, amb carrers estrets: vigila on comparteixes l'espai amb els cotxes.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296956842"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296956842",
+              "pafes": true
             },
             {
               "n": 6,
@@ -92,7 +93,8 @@
               "info": "2,25 km · 27–34 min caminant · 35–55 min amb pauses · circular",
               "address": "Pont de Sant Roc, Olot",
               "note": "Té uns 650 m de pista de terra i el camí dels Tossols: porta calçat còmode.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296956881"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296956881",
+              "pafes": true
             },
             {
               "n": 7,
@@ -100,7 +102,8 @@
               "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
               "address": "Parc de les Mores, carretera del Triai, a prop de l'avinguda de Sant Jordi, Olot",
               "note": "Té trams de pista de terra i de carretera local (la del Triai i la de la Moixina): camina pel marge i vigila el trànsit.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296956910"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296956910",
+              "pafes": true
             },
             {
               "n": 8,
@@ -108,7 +111,8 @@
               "info": "3,16 km · 38–47 min caminant · 50–65 min amb pauses · circular",
               "address": "Parc de les Mores, carretera del Triai, a prop de l'avinguda de Sant Jordi, Olot",
               "note": "És la més llarga. Va sobretot per carreteres locals (la del Triai, la de la Deu i la de la Moixina), amb un tram de pista de terra: camina pel marge i vigila el trànsit.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296956942"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296956942",
+              "pafes": true
             },
             {
               "n": 9,
@@ -116,7 +120,8 @@
               "info": "1,42 km · 17–21 min caminant · 25–40 min amb pauses · circular",
               "address": "Avinguda de Sant Jordi, cruïlla amb el camí dels Tres Roures, Olot",
               "note": "Va per pista de terra, camins i la carretera de la Deu: a la carretera, camina pel marge i vigila el trànsit.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296956972"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296956972",
+              "pafes": true
             },
             {
               "n": 10,
@@ -124,7 +129,8 @@
               "info": "1,23 km · 15–18 min caminant · 25–40 min amb pauses · circular",
               "address": "Plaça Amèrica, avinguda de l'Equador, Olot",
               "note": "El tram central passa per dins del Parc Nou: comprova que és obert abans d'anar-hi.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296956982"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296956982",
+              "pafes": true
             },
             {
               "n": 11,
@@ -132,7 +138,8 @@
               "info": "0,58 km · 7–9 min caminant · 15–30 min amb pauses · circular",
               "address": "Pont de Colom, avinguda de les Balears, Olot",
               "note": "Es pot allargar enllaçant-la amb la ruta 3, al pont de Ferro, o amb la 12, al pont de Colom.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957018"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957018",
+              "pafes": true
             },
             {
               "n": 12,
@@ -140,7 +147,8 @@
               "info": "0,98 km · 12–15 min caminant · 20–35 min amb pauses · circular",
               "address": "Pont de les Mores, avinguda d'Astúries, Olot",
               "note": "Es pot allargar enllaçant-la amb la ruta 11, al pont de Colom.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957037"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957037",
+              "pafes": true
             },
             {
               "n": 13,
@@ -148,7 +156,8 @@
               "info": "1,18 km · 14–18 min caminant · 25–40 min amb pauses · circular",
               "address": "Parc atlètic dels Tossols, via verda Olot–Girona, Olot",
               "note": "Un tram va per la via verda, que es comparteix amb bicicletes: vigila-les.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957075"
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=296957075",
+              "pafes": true
             }
           ]
         }
