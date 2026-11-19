@@ -17,7 +17,7 @@
     <h2 class="faq-h" id="h-ini">{{ h.initiative_title }}</h2>
     <div class="initiative initiative--left">
       {% if partners_logo %}<img class="initiative__logo" src="{{ root }}assets/img/lespiral-elara.png" alt="L'Espiral i Elara Social. Cuidem les persones. Enfortim les comunitats" width="300">{% endif %}
-      <p>{{ h.initiative_text }}</p>
+      <p>{{ h.initiative_text|elara }}</p>
     </div>
     <div class="infografia infografia--in">{% include "infografies/infografia-iniciativa.html" %}</div>
   </section>

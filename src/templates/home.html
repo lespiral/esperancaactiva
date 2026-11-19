@@ -74,7 +74,7 @@
     {% if partners_logo %}<img class="initiative__logo" src="{{ root }}assets/img/lespiral-elara.png" alt="L'Espiral i Elara Social. Cuidem les persones. Enfortim les comunitats" width="300">{% endif %}
     <div>
       <h2 class="initiative__h" id="h-ini">{{ h.initiative_title }}</h2>
-      <p>{{ h.initiative_text }}</p>
+      <p>{{ h.initiative_text|elara }}</p>
     </div>
   </div>
 </section>

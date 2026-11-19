@@ -83,7 +83,7 @@
       {% endif %}
       <div>
         <h2 id="h-about">{{ cc.about_name }}</h2>
-        {% for p in cc.about %}<p>{{ p }}</p>{% endfor %}
+        {% for p in cc.about %}<p>{{ p|elara }}</p>{% endfor %}
       </div>
     </div>
   </section>

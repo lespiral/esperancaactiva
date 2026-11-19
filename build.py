@@ -447,6 +447,11 @@ def hl(s):
     """Posa en <strong class="mk"> el que va entre **…** (paraules clau, amb subratllat suau)."""
     return Markup(re.sub(r"\*\*(.+?)\*\*", r'<strong class="mk">\1</strong>', str(Markup.escape(s))))
 
+def elara(s):
+    """Enllaça «Elara Social» amb la seva web (el text es manté escapat)."""
+    return Markup(str(Markup.escape(s)).replace("Elara Social", '<a href="https://elarasocial.com/" target="_blank" rel="noopener">Elara Social</a>'))
+
+
 
 def _marca(o):
     """Els textos de data/site.json amb **…** surten amb les paraules clau subratllades."""
@@ -460,6 +465,7 @@ def _marca(o):
 site_t = _marca(site)
 env = Environment(loader=FileSystemLoader(SRC / "templates"), autoescape=select_autoescape(["html"]), trim_blocks=True, lstrip_blocks=True)
 env.filters["hl"] = hl
+env.filters["elara"] = elara
 env.globals.update(icon=icon, site=site_t, noindex=NOINDEX, version=str(int(time.time())),
                    logo=(SRC / "img" / "logo.png").exists(),
                    partners_logo=(SRC / "img" / "lespiral-elara.png").exists(),
