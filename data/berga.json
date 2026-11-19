@@ -109,92 +109,155 @@
     },
     {
       "course": "cuidar",
-      "text": "7 rutes circulars, de 2,5 a 2,6 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social de Berga i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
-      "summary": "7 rutes des d'entitats del Tercer Sector Social",
-      "notice": {
-        "title": "Traçats orientatius",
-        "html": [
-          "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada entitat: no són traçats oficials. Camina amb atenció al trànsit i a l'estat dels camins.",
-          "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
-        ]
-      },
-      "groups": [
+      "text": "Hi ha dos tipus de rutes: 7 rutes, de 2,4 a 2,6 km, que surten d'entitats del Tercer Sector Social, i 3 rutes més curtes, de 1,23 a 1,36 km, que surten de biblioteques i centres cívics i culturals. Totes són circulars i tornen al punt de sortida.",
+      "summary": "10 rutes des d'entitats del Tercer Sector Social, biblioteques i centres",
+      "parts": [
         {
-          "title": "Les 7 rutes",
-          "maps": [
+          "id": "tercer-sector",
+          "title": "Rutes des d'entitats del Tercer Sector Social",
+          "nav": "Entitats del Tercer Sector Social",
+          "text": "7 rutes circulars, de 2,5 a 2,6 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social de Berga i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
+          "notice": {
+            "title": "Traçats orientatius",
+            "html": [
+              "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada entitat: no són traçats oficials. Camina amb atenció al trànsit i a l'estat dels camins.",
+              "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+            ]
+          },
+          "groups": [
             {
-              "mid": "1uf3qwwi-ESqp5GNFA7V9w1GszSieiBY",
-              "title": "Berga · entitats del Tercer Sector Social",
-              "ll": "42.1016,1.8441",
-              "z": 14,
-              "label": "7 rutes des d'entitats del Tercer Sector Social",
+              "title": "Les 7 rutes",
+              "maps": [
+                {
+                  "mid": "1uf3qwwi-ESqp5GNFA7V9w1GszSieiBY",
+                  "title": "Berga · entitats del Tercer Sector Social",
+                  "ll": "42.1016,1.8441",
+                  "z": 14,
+                  "label": "7 rutes des d'entitats del Tercer Sector Social",
+                  "routes": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                  ]
+                }
+              ],
               "routes": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                7
+                {
+                  "n": 1,
+                  "name": "AEiG Santa Maria de Queralt i Geralda de Portella",
+                  "info": "2,5 km aprox. · 29–37 min caminant · circular",
+                  "address": "Carrer Castellar del Riu, 1, Berga",
+                  "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106742"
+                },
+                {
+                  "n": 2,
+                  "name": "Associació Pro Disminuïts Psíquics del Berguedà",
+                  "info": "2,5 km aprox. · 30–38 min caminant · circular",
+                  "address": "Carrer Elois, 1, Berga",
+                  "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció psicosocial i la rehabilitació.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106868"
+                },
+                {
+                  "n": 3,
+                  "name": "Associació de Donants de Sang del Berguedà",
+                  "info": "2,5 km aprox. · 30–38 min caminant · circular",
+                  "address": "Carrer Barcelona, 26, Berga",
+                  "desc": "Entitat sense atenció directa que treballa en l'àmbit de la sensibilització.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106885"
+                },
+                {
+                  "n": 4,
+                  "name": "Associació de Gent Gran Berga Tagast",
+                  "info": "2,5 km aprox. · 30–38 min caminant · circular",
+                  "address": "Plaça Sant Joan, s/n, Berga",
+                  "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106907"
+                },
+                {
+                  "n": 5,
+                  "name": "Creu Roja SAIER (Servei d'Atenció a Immigrants, Estrangers i Refugiats)",
+                  "info": "2,5 km aprox. · 30–37 min caminant · circular",
+                  "address": "Plaça Europa, 10, Berga",
+                  "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106914"
+                },
+                {
+                  "n": 6,
+                  "name": "Càritas Parroquial de Berga",
+                  "info": "2,6 km aprox. · 31–38 min caminant · circular",
+                  "address": "Carrer Anselm Clavé, 30, Berga",
+                  "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de l'atenció psicosocial i la rehabilitació.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106946"
+                },
+                {
+                  "n": 7,
+                  "name": "Grup Colònies a Borredà",
+                  "info": "2,5 km aprox. · 30–37 min caminant · circular",
+                  "address": "Carrer de Cervantes, 25, Berga",
+                  "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106972"
+                }
               ]
             }
-          ],
-          "routes": [
+          ]
+        },
+        {
+          "id": "biblioteques-i-centres",
+          "title": "Rutes des de biblioteques i centres cívics i culturals",
+          "nav": "Biblioteques i centres",
+          "text": "3 rutes circulars, de 1,23 a 1,36 km (de 15 a 20 minuts caminant), que surten d'una biblioteca o d'un centre cívic i cultural de Berga i hi tornen: una ruta per equipament. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'equipament que et quedi més a prop i camina-hi amb calma.",
+          "notice": {
+            "title": "Traçats orientatius",
+            "html": [
+              "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada equipament: no són traçats oficials. Camina amb atenció al trànsit i a l'estat dels camins.",
+              "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+            ]
+          },
+          "groups": [
             {
-              "n": 1,
-              "name": "AEiG Santa Maria de Queralt i Geralda de Portella",
-              "info": "2,5 km aprox. · 29–37 min caminant · circular",
-              "address": "Carrer Castellar del Riu, 1, Berga",
-              "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106742"
-            },
-            {
-              "n": 2,
-              "name": "Associació Pro Disminuïts Psíquics del Berguedà",
-              "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "address": "Carrer Elois, 1, Berga",
-              "desc": "Entitat que treballa amb persones amb discapacitat en l'àmbit de l'atenció psicosocial i la rehabilitació.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106868"
-            },
-            {
-              "n": 3,
-              "name": "Associació de Donants de Sang del Berguedà",
-              "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "address": "Carrer Barcelona, 26, Berga",
-              "desc": "Entitat sense atenció directa que treballa en l'àmbit de la sensibilització.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106885"
-            },
-            {
-              "n": 4,
-              "name": "Associació de Gent Gran Berga Tagast",
-              "info": "2,5 km aprox. · 30–38 min caminant · circular",
-              "address": "Plaça Sant Joan, s/n, Berga",
-              "desc": "Entitat que treballa amb gent gran en l'àmbit cultural.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106907"
-            },
-            {
-              "n": 5,
-              "name": "Creu Roja SAIER (Servei d'Atenció a Immigrants, Estrangers i Refugiats)",
-              "info": "2,5 km aprox. · 30–37 min caminant · circular",
-              "address": "Plaça Europa, 10, Berga",
-              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de la cobertura de necessitats bàsiques.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106914"
-            },
-            {
-              "n": 6,
-              "name": "Càritas Parroquial de Berga",
-              "info": "2,6 km aprox. · 31–38 min caminant · circular",
-              "address": "Carrer Anselm Clavé, 30, Berga",
-              "desc": "Entitat que treballa amb persones en situació de pobresa i exclusió social en l'àmbit de l'atenció psicosocial i la rehabilitació.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106946"
-            },
-            {
-              "n": 7,
-              "name": "Grup Colònies a Borredà",
-              "info": "2,5 km aprox. · 30–37 min caminant · circular",
-              "address": "Carrer de Cervantes, 25, Berga",
-              "desc": "Entitat que treballa amb infants en l'àmbit de l'educació en el lleure i els serveis educatius.",
-              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297106972"
+              "id": "biblioteques-i-centres-rutes",
+              "title": "Les 3 rutes",
+              "maps": [
+                {
+                  "mid": "11O2_OfH97sTK4YRgM6SDa2owJfhi-ms",
+                  "title": "Berga · biblioteques i centres cívics i culturals",
+                  "ll": "42.1009,1.8482",
+                  "z": 14,
+                  "label": "3 rutes des de biblioteques i centres",
+                  "routes": [
+                    8,
+                    9,
+                    10
+                  ]
+                }
+              ],
+              "routes": [
+                {
+                  "n": 8,
+                  "name": "Biblioteca Ramon Vinyes i Cluet",
+                  "info": "1,23 km · 15–18 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Plaça d'Europa, 1, Berga",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297216079"
+                },
+                {
+                  "n": 9,
+                  "name": "Centre Cívic Santa Eulàlia",
+                  "info": "1,36 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer de Santa Eulàlia, 60, Berga",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297216202"
+                },
+                {
+                  "n": 10,
+                  "name": "Casal Cívic i Comunitari de Berga",
+                  "info": "1,28 km · 15–19 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297216214"
+                }
+              ]
             }
           ]
         }

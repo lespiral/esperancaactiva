@@ -1,0 +1,16 @@
+ciutat	codi	nom	adreca	km	cam_min	cam_max	pau_min	pau_max	wikiloc	lat	lon	nota
+berga	BER-CUI-001	Biblioteca Ramon Vinyes i Cluet	Plaça d'Europa, 1, Berga	1.23	15	18	25	40	297216079	42.09919	1.84721	
+berga	BER-CUI-002	Centre Cívic Santa Eulàlia	Carrer de Santa Eulàlia, 60, Berga	1.36	16	20	25	40	297216202	42.10159	1.85265	
+berga	BER-CUI-003	Casal Cívic i Comunitari de Berga		1.28	15	19	25	40	297216214	42.10198	1.84475	
+ripoll	RIP-CUI-001	Biblioteca Lambert Mata	Plaça de l'1 d'Octubre, 1, Ripoll	1.28	15	19	25	40	297216237	42.19963	2.18851	Una part del recorregut és per un passatge estret (el passatge de la sèquia Molinar, que a OpenStreetMap figura com a passatge) i per la carretera de Ribes, amb més trànsit.
+ripoll	RIP-CUI-002	Casal Cívic i Comunitari de Ripoll – La Devesa del Pla		1.43	17	21	25	40	297216266	42.19280	2.19489	El recorregut creua o voreja la carretera de Barcelona, amb més trànsit, i passa pel pont de Ripoll.
+ripoll	RIP-CUI-003	Casal Cívic i Comunitari de Ripoll – Centre	Carrer del Doctor Raguer, 20, Ripoll	1.21	15	18	25	40	297216290	42.20265	2.19209	El recorregut creua el pont d'Olot i voreja la carretera de Sant Joan, amb més trànsit.
+seu	SEU-CUI-001	Biblioteca Sant Agustí	Carrer de Lluís de Sabater, 10-14, la Seu d'Urgell	1.36	16	20	25	40	297216321	42.35541	1.46143	
+seu	SEU-CUI-002	Casal Cívic i Comunitari de la Seu d'Urgell		1.32	16	20	25	40	297216339	42.35952	1.45957	Un tram del recorregut és pel camí del Clos, que pot no estar asfaltat.
+seu	SEU-CUI-003	Sala de Cultura Sant Domènec		1.35	16	20	25	40	297216353	42.35856	1.46185	
+seu	SEU-CUI-004	Centre Cultural Les Monges		1.15	14	17	25	35	297216363	42.35838	1.46003	
+olot	OLO-CUI-001	Biblioteca Marià Vayreda	Carrer del Pati, 2, Olot	1.35	16	20	25	40	297216403	42.18220	2.48938	
+olot	OLO-CUI-002	Casal Cívic i Comunitari d'Olot		1.29	15	19	25	40	297216414	42.18085	2.48916	
+olot	OLO-CUI-003	Centre Cultural Els Catòlics		1.17	14	18	25	40	297216450	42.18176	2.48973	
+olot	OLO-CUI-004	Casino Olotí		1.36	16	20	25	40	297216482	42.18276	2.48724	
+vic	VIC-CUI-001	Casino de Vic		1.24	15	19	25	40	297216541	41.93030	2.25326	
