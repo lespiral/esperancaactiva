@@ -101,7 +101,7 @@
           "id": "tercer-sector",
           "title": "Rutes des d'entitats del Tercer Sector Social",
           "nav": "Entitats del Tercer Sector Social",
-          "text": "Surten d'entitats del Tercer Sector Social: espais on les persones s'acompanyen, es donen suport i fan comunitat. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
+          "text": "Surten d'entitats del Tercer Sector Social: espais on les persones s'acompanyen, es donen suport i fan comunitat. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa. Els espais i entitats de sortida no participen en les rutes ni les recomanen: només en són el punt de partida.",
           "notice": {
             "title": "Traçats orientatius",
             "html": [
@@ -187,7 +187,7 @@
           "id": "biblioteques-i-centres",
           "title": "Rutes des de biblioteques i centres cívics i culturals",
           "nav": "Biblioteques i centres",
-          "text": "Surten de biblioteques i centres cívics: espais públics de trobada, cultura i vida de barri. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
+          "text": "Surten de biblioteques i centres cívics: espais públics de trobada, cultura i vida de barri. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa. Els espais i entitats de sortida no participen en les rutes ni les recomanen: només en són el punt de partida.",
           "notice": {
             "title": "Traçats orientatius",
             "html": [
