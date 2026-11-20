@@ -560,11 +560,12 @@
         "tag": "Espai promotor",
         "name": "L'Espiral d'Osona",
         "start": "Passejada urbana des de L'Espiral d'Osona",
-        "info": "",
+        "info": "Ruta circular · 1,16 km · 14–17 min caminant",
         "address": "Ronda de Francesc Camprodon, 25, 1r 1a, Vic",
         "host": "Els acull: Osona Ioga.",
         "desc": "Centre de psicoteràpia i mindfulness de Vic.",
-        "web": "https://espiralosona.com/"
+        "web": "https://espiralosona.com/",
+        "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297345095"
       }
     ],
     "routes_map_url": "https://www.google.com/maps/d/viewer?mid=1blWNcMkPScCNo4YNSuHZMJNlyCT9jy0",
