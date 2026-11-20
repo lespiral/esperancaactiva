@@ -482,17 +482,9 @@
     "share_text": "Una caminada curta, gratuïta i amb mapa surt de la porta de [nom de l'espai]. Forma part de Camins d'Esperança [Activa]: cursos en línia gratuïts i rutes a peu per cuidar-nos i actuar plegats. Tota la informació, a esperançaactiva.cat",
     "share_extra": "Si es vol, també podem preparar un **codi QR** que porti directament a la ruta de l'espai, per penjar-lo a la recepció o a la sala.",
     "routes_title": "Troba la ruta de cada espai",
-    "routes_intro": "Cada espai té la seva ruta circular, que surt de la seva porta. Al mapa, cada ruta té la seva capa, amb el punt d'inici, el final i el traçat. Els espais **promotors** són els que impulsen el projecte; els espais **afins** són altres espais independents que comparteixen la mirada.",
-    "map_url": "https://www.google.com/maps/d/viewer?mid=1blWNcMkPScCNo4YNSuHZMJNlyCT9jy0",
+    "routes_intro": "Cada espai surt al mapa amb un marcador, amb el nom, l'adreça i els enllaços a la seva ruta. Cada espai té la seva ruta circular, que surt de la seva porta. Els espais **promotors** són els que impulsen el projecte; els espais **afins** són altres espais independents que comparteixen la mirada.",
+    "map_url": "https://www.google.com/maps/d/viewer?mid=190F3Xpvz2uEHsPec602iahqN84nJ3Ms",
     "map_btn": "Obre el mapa a pantalla completa",
-    "limits_title": "Sense compromís",
-    "limits": [
-      "No hi ha **cap conveni, quota ni exclusivitat**: els cursos i les rutes són públics i gratuïts.",
-      "L'espai **no gestiona inscripcions ni acompanya les rutes**. L'activitat l'ofereixen L'Espiral i Elara Social, i cada espai continua sent independent.",
-      "**No avalem ni certifiquem ningú**: només reconeixem una afinitat de valors. No hi ha cap segell, ni vol dir que l'espai compleixi cap criteri oficial.",
-      "El nom i l'adreça de l'espai surten com a punt de sortida de la ruta, **només si l'espai ho confirma** i és un local obert al públic.",
-      "Els cursos no substitueixen l'atenció clínica ni un tractament mèdic o psicològic."
-    ],
     "safety_html": "Si una persona està passant un moment molt difícil, l'atenció continua sent la del seu centre de salut o servei de referència. Si pensa en fer-se mal, pot trucar al <a href=\"tel:024\">024</a>. En una emergència, al <a href=\"tel:112\">112</a>.",
     "join_title": "Un espai afí? Sumar-s'hi",
     "join_intro": "Aquesta pàgina és per a espais que comparteixen tres àmbits de treball:",
@@ -504,8 +496,8 @@
     "join_end": "Si un espai s'hi reconeix, ens pot escriure i li preparem la ruta des de la seva porta. **Només surt al mapa qui ho confirma.** Dos projectes poden ser independents, sense formar cap associació ni empresa conjunta, i compartir una mirada comuna.",
     "contact_title": "Parlem?",
     "contact_html": "Si un espai vol tenir ruta, o que presentem el recurs a l'equip, pot escriure'ns.",
-    "map_mid": "1blWNcMkPScCNo4YNSuHZMJNlyCT9jy0",
-    "map_title": "Rutes dels espais afins",
+    "map_mid": "190F3Xpvz2uEHsPec602iahqN84nJ3Ms",
+    "map_title": "Espais afins · Camins d'Esperança [Activa]",
     "espais_title": "Les rutes d'ara",
     "espais_note": "A mesura que se sumin nous espais, s'afegiran aquí i al mapa.",
     "espais_open": "Obre el mapa",
@@ -545,6 +537,8 @@
         "desc": "Osona Ioga i Elara Social són dos projectes independents (no formen una associació ni una empresa conjunta), però comparteixen valors i una mirada comuna en tres àmbits: salut mental comunitària; economia social i solidària; acció climàtica i cultura del bé comú.",
         "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297255848"
       }
-    ]
+    ],
+    "routes_map_url": "https://www.google.com/maps/d/viewer?mid=1blWNcMkPScCNo4YNSuHZMJNlyCT9jy0",
+    "routes_map_btn": "Obre el mapa de les rutes"
   }
 }
