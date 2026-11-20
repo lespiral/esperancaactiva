@@ -145,7 +145,7 @@
     { label: "Suport", col: "#2e7561", kick: "", title: "Suport", text: "Quines persones, llocs o recursos m'ajuden?" },
     { label: "Acció", col: "#1a4d40", kick: "", title: "Acció significativa", text: "Quina acció petita, concreta i realista puc fer ara?" }
   ];
-  var HC = { kick: "Aquí es transforma", title: "El Treball que Reconnecta", label: "Treball que Reconnecta", say: "es transformen en",
+  var HC = { kick: "Aquí es transforma", title: "Un espai amb el Treball que Reconnecta", label: "El Treball que Reconnecta", say: "es transformen en",
     text: "La persona arriba amb dolor i incertesa. A l'espai pot trobar un recurs i, a partir d'aquí, claredat, suport i una acció possible. L'espai no ha d'organitzar res: només compartir-lo." };
   var CENTER = { title: "Esperança Activa", sub: "sostinguda per la comunitat", kick: "Què vol dir «esperança activa»?",
     text: "És el que proposa aquest curs: transformar el dolor i la incertesa en claredat, suport i acció significativa, sostinguda per la comunitat." };
@@ -193,7 +193,7 @@
       // Ordinador: nus → centre de salut → tros de trena → tres fils → corda → persones
       H = Math.round(clamp(W * .4, 380, 440));
       g.K = [W * .075, H * .5]; g.rk = clamp(W * .045, 36, 52);
-      g.hcs = Math.round(clamp(W * .11, 84, 92)); g.HC = [W * .245, H * .5];
+      g.hcs = Math.round(clamp(W * .115, 90, 98)); g.HC = [W * .245, H * .5];
       var rr = g.hcs * .68;
       g.S = [W * .526, H * .5]; g.B0 = [W * .68, H * .5];
       g.R = Math.round(Math.min(H * .24, W * .095)); g.E = [W * .72, H * .5]; g.C = [g.E[0] + g.R, H * .5];
@@ -203,7 +203,7 @@
     } else {
       // Mòbil: de dalt a baix
       g.K = [W * .5, 100]; g.rk = 36;
-      g.hcs = 84; g.HC = [W * .5, 244];
+      g.hcs = 90; g.HC = [W * .5, 244];
       var rr = g.hcs * .68;
       g.S = [W * .5, 244 + rr + 80]; g.B0 = [W * .5, 244 + rr + 80 + 124];
       g.R = Math.round(Math.min(W * .25, 95)); g.E = [W * .5, g.B0[1] + 50]; g.C = [W * .5, g.E[1] + g.R];
@@ -329,7 +329,7 @@
     });
     html.push('<div class="nus__node" style="left:' + r1(G.C[0]) + 'px;top:' + r1(G.C[1]) + 'px"><button type="button" class="nus__center" data-k="center"><b>' + esc(CENTER.title) + '</b><span>' + esc(CENTER.sub) + '</span></button></div>');
     var hcArrow = G.tall ? "M12 4.5v15M6 13.5l6 6 6-6" : "M4.5 12h15M13.5 6l6 6-6 6";
-    html.push('<div class="nus__node" style="left:' + r1(G.hc[0]) + 'px;top:' + r1(G.hc[1]) + 'px"><button type="button" class="nus__hcbtn" data-k="hc" aria-label="' + esc(HC.title) + '" style="width:' + r1(G.rr * 2) + 'px;height:' + r1(G.rr * 2) + 'px;padding-bottom:' + r1(G.rr * .24) + 'px;font-size:' + r1(clamp(G.rr * .22, 11.5, 13.5)) + 'px"><span>Treball que<br>Reconnecta</span></button></div>');
+    html.push('<div class="nus__node" style="left:' + r1(G.hc[0]) + 'px;top:' + r1(G.hc[1]) + 'px"><button type="button" class="nus__hcbtn" data-k="hc" aria-label="' + esc(HC.title) + '" style="width:' + r1(G.rr * 2) + 'px;height:' + r1(G.rr * 2) + 'px;padding-bottom:' + r1(G.rr * .24) + 'px;font-size:' + r1(clamp(G.rr * .19, 10.5, 12.5)) + 'px"><span>El Treball<br>que Reconnecta</span></button></div>');
     html.push('<div class="nus__node" style="left:' + r1(G.say[0]) + 'px;top:' + r1(G.say[1]) + 'px"><div class="nus__saytag"><span class="nus__say-in2">' + esc(HC.say) + '…<svg viewBox="0 0 24 24" aria-hidden="true"><path d="' + hcArrow + '"/></svg></span></div></div>');
     nodesBox.innerHTML = html.join("");
 
