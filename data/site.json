@@ -561,7 +561,8 @@
         "start": "Passejada urbana des de L'Espiral d'Osona",
         "info": "",
         "address": "Ronda de Francesc Camprodon, 25, 1r 1a, Vic",
-        "desc": "Centre de psicoteràpia i mindfulness de Vic. Els acull: Osona Ioga.",
+        "host": "Els acull: Osona Ioga.",
+        "desc": "Centre de psicoteràpia i mindfulness de Vic.",
         "web": "https://espiralosona.com/"
       }
     ],

@@ -623,3 +623,5 @@ strong.mk { color: var(--green-900); font-weight: 700; background: linear-gradie
 .pagehead--green h1 { color: #fff; }
 .pagehead--green .lead { color: #e7efeb; }
 .pagehead--green strong.mk, .pagehead--green .lead strong { color: var(--sun); background: none; }
+
+.route__host { display: inline-block; margin-left: 4px; padding: 1px 9px; border-radius: 999px; background: var(--sun-100); color: var(--green-900); font-weight: 700; }
