@@ -631,3 +631,6 @@ strong.mk { color: var(--green-900); font-weight: 700; background: linear-gradie
 @media (max-width: 640px) { #els-cursos .cards--3 { grid-template-columns: 1fr; } }
 #els-cursos .card--course { display: flex; flex-direction: column; align-items: center; }
 #els-cursos .card--course .btn { margin-top: auto; }
+
+/* Espais afins: amb 5 targetes, l'última ocupa tot l'ample al grup de 2 columnes */
+@media (min-width: 641px) { .feat > .feat__item:last-child:nth-child(odd) { grid-column: 1 / -1; } }
