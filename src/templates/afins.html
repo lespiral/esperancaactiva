@@ -71,7 +71,7 @@
             <span class="route__tag">{{ e.tag }}</span>
             <h4 class="route__name">{{ e.name }}</h4>
             <p class="route__start">{{ e.start }}</p>
-            <p class="route__info">{{ e.info }}</p>
+            {% if e.info %}<p class="route__info">{{ e.info }}</p>{% endif %}
             <p class="route__addr">{{ icon('pin') }}<span>{{ e.address }}</span></p>
             {% if e.note %}<p class="route__note">{{ e.note }}</p>{% endif %}
             <p class="route__desc">{{ e.desc }}</p>
