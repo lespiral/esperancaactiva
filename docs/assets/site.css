@@ -601,3 +601,16 @@ strong.mk { color: var(--green-900); font-weight: 700; background: linear-gradie
 .footer .footer__gaze { list-style: none; margin: .4em 0 1em; padding: 0; display: block; }
 .footer__gaze li { margin: 0; padding-left: 1.1em; position: relative; font-weight: 600; }
 .footer__gaze li::before { content: ""; position: absolute; left: 0; top: .6em; width: .45em; height: .45em; border-radius: 50%; background: var(--sun); }
+
+/* Pàgina d'espais afins: targetes de la primera secció i requadre destacat */
+.afins-recurs__intro { font-size: 1.1rem; max-width: 62ch; margin-bottom: 22px; }
+.feat { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.feat__item { display: flex; align-items: flex-start; gap: 16px; padding: 20px 22px; }
+.feat__icon { flex: none; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: var(--sun-100); color: var(--green-800); }
+.feat__icon .i { width: 28px; height: 28px; }
+.feat__title { font: 700 1.08rem/1.25 var(--font-head); color: var(--green-900); margin: 2px 0 4px; }
+.feat__text { margin: 0; color: var(--muted); line-height: 1.5; }
+.callout { display: flex; align-items: center; gap: 14px; margin: 20px 0 0; padding: 18px 22px; border-radius: var(--radius-lg); background: var(--green-800); color: #fff; font-size: 1.05rem; line-height: 1.45; }
+.callout .i { flex: none; width: 28px; height: 28px; color: var(--sun); }
+.callout strong, .callout strong.mk { color: var(--sun); background: none; }
+@media (max-width: 640px) { .feat { grid-template-columns: 1fr; } }

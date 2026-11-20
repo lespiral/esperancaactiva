@@ -463,14 +463,30 @@
     "title": "Un recurs per a les persones que passen per l'espai",
     "lead": "Una **caminada curta, gratuïta i amb mapa** que surt de la porta de l'espai, perquè les persones que hi venen puguin **prendre consciència de com se senten** i portar el que descobreixen a la vida quotidiana.",
     "res_title": "Una caminada que surt de la porta de l'espai",
-    "res_intro": "Per a un espai privat i independent, aquest recurs és una manera senzilla d'oferir **alguna cosa més** a les persones que venen a l'espai, siguin clients, alumnes, persones usuàries o participants d'un grup.",
+    "res_intro": "Una manera senzilla d'oferir **alguna cosa més** a les persones que venen a l'espai: clients, alumnes, persones usuàries o participants d'un grup.",
     "res": [
-      "Una **ruta a peu curta, gratuïta i amb mapa**, que comença a la porta de l'espai.",
-      "Cada persona la fa **sola i al seu ritme**: l'espai no ha d'organitzar ni acompanyar res.",
-      "Caminant, convida a **prendre consciència de com ens sentim** i del que ens sosté.",
-      "Ajuda a **portar els aprenentatges a la vida quotidiana**: es pot repetir i tornar-hi un altre dia."
+      [
+        "footprints",
+        "Una ruta a peu curta",
+        "Gratuïta i amb mapa, comença a la porta de l'espai."
+      ],
+      [
+        "users-three",
+        "Cada persona, al seu ritme",
+        "L'espai no ha d'organitzar ni acompanyar res."
+      ],
+      [
+        "heart",
+        "Prendre consciència",
+        "Caminant, convida a notar com ens sentim i què ens sosté."
+      ],
+      [
+        "sun",
+        "Portar-ho a la vida quotidiana",
+        "Es pot repetir i tornar-hi un altre dia."
+      ]
     ],
-    "res_end": "Serveix igual per a qui ve a una sessió, a una classe, a un taller o a un servei.",
+    "res_end": "Serveix igual per a qui ve a una **sessió**, a una **classe**, a un **taller** o a un **servei**.",
     "what_title": "Què és Camins d'Esperança [Activa]",
     "what": [
       "Són **cursos en línia gratuïts, de 7 passes**, per afrontar el que ens preocupa amb més presència, suport i un petit pas possible. Cada pas combina una breu explicació amb una pràctica guiada d'àudio o vídeo i una caminada de reflexió.",

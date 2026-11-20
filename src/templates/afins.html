@@ -5,11 +5,18 @@
 {{ page_head(pp.kicker, pp.title, pp.lead|hl) }}
 
 <div class="wrap wrap--mid stack stack--bottom health">
-  <section id="recurs" aria-labelledby="h-res">
+  <section id="recurs" class="afins-recurs" aria-labelledby="h-res">
     <h2 class="health__h2" id="h-res">{{ pp.res_title }}</h2>
-    <p>{{ pp.res_intro|hl }}</p>
-    <ul class="checks">{% for i in pp.res %}<li>{{ icon('check') }}<span>{{ i|hl }}</span></li>{% endfor %}</ul>
-    <p>{{ pp.res_end|hl }}</p>
+    <p class="afins-recurs__intro">{{ pp.res_intro|hl }}</p>
+    <ul class="cards feat">
+      {% for ic, t, x in pp.res %}
+      <li class="card feat__item">
+        <span class="feat__icon" aria-hidden="true">{{ icon(ic) }}</span>
+        <div><h3 class="feat__title">{{ t }}</h3><p class="feat__text">{{ x }}</p></div>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="callout">{{ icon('check') }}<span>{{ pp.res_end|hl }}</span></p>
   </section>
 
   <section id="com-funciona" aria-labelledby="h-how">
