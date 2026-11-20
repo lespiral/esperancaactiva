@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "parts.html" import page_head, safety, nearby %}
+{% from "parts.html" import course_cards, page_head, safety, nearby %}
 {# Pàgina per a entitats i espais afins (/entitats-i-espais-afins/), 20 de novembre de 2026. Esquelet de prat.html. Textos a data/site.json › afins_page. #}
 {% block content %}
 {{ page_head(pp.kicker, pp.title, pp.lead|hl, green=True) }}
@@ -41,6 +41,11 @@
     <h2 class="health__h2" id="h-what">{{ pp.what_title }}</h2>
     {% for p in pp.what %}<p>{{ p|hl }}</p>{% endfor %}
     <p class="health__more"><a class="btn btn--primary" href="{{ root }}cursos/">{{ pp.courses_btn }}</a></p>
+  </section>
+
+  <section id="els-cursos" aria-labelledby="h-courses">
+    <h2 class="health__h2" id="h-courses">{{ pp.courses_title }}</h2>
+    {{ course_cards(site.courses, root) }}
   </section>
 
   <section class="panel" id="com-donar-ho-a-coneixer" aria-labelledby="h-share">
