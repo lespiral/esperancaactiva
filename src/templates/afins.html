@@ -46,8 +46,39 @@
   <section class="panel panel--plain" id="rutes-dels-espais" aria-labelledby="h-routes">
     <h2 class="health__h2" id="h-routes">{{ pp.routes_title }}</h2>
     <p>{{ pp.routes_intro|hl }}</p>
-    {% if pp.map_url %}<p class="health__more"><a class="btn btn--primary" href="{{ pp.map_url }}">{{ pp.map_btn }}</a></p>{% endif %}
-    {{ nearby(site.nearby, root) }}
+    {% if pp.map_mid %}
+    <figure class="map">
+      <div class="map__frame">
+        <iframe src="https://www.google.com/maps/d/embed?mid={{ pp.map_mid }}&amp;ehbc=2E312F" title="Mapa: {{ pp.map_title }}" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <figcaption><a href="{{ pp.map_url }}" target="_blank" rel="noopener">{{ icon('external') }}{{ pp.map_btn }}</a></figcaption>
+    </figure>
+    {% endif %}
+    <h3 class="health__sub">{{ pp.espais_title }}</h3>
+    <div class="routes">
+      <ol class="routes__list">
+        {% for e in pp.espais %}
+        <li class="route" id="{{ e.id }}">
+          <span class="route__n" aria-hidden="true">{{ loop.index }}</span>
+          <div class="route__body">
+            <span class="route__tag">{{ e.tag }}</span>
+            <h4 class="route__name">{{ e.name }}</h4>
+            <p class="route__start">{{ e.start }}</p>
+            <p class="route__info">{{ e.info }}</p>
+            <p class="route__addr">{{ icon('pin') }}<span>{{ e.address }}</span></p>
+            {% if e.note %}<p class="route__note">{{ e.note }}</p>{% endif %}
+            <p class="route__desc">{{ e.desc }}</p>
+            <div class="route__links">
+              <a class="route__go" href="{{ pp.map_url }}" target="_blank" rel="noopener" aria-label="{{ pp.espais_open }}: {{ e.name }} (pestanya nova)">{{ icon('map') }}{{ pp.espais_open }}</a>
+              {%- if e.wikiloc %}<a class="route__wl" href="{{ e.wikiloc }}" target="_blank" rel="noopener" aria-label="{{ pp.espais_wl }}: {{ e.name }} (pestanya nova)">{{ icon('external') }}{{ pp.espais_wl }}</a>{% endif -%}
+              {%- if e.web %}<a class="route__wl" href="{{ e.web }}" target="_blank" rel="noopener" aria-label="{{ pp.espais_web }}: {{ e.name }} (pestanya nova)">{{ icon('external') }}{{ pp.espais_web }}</a>{% endif -%}
+            </div>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+    <p class="health__more">{{ pp.espais_note }}</p>
   </section>
 
   <section class="panel" id="sense-compromis" aria-labelledby="h-limits">

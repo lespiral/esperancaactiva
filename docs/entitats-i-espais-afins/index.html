@@ -14,7 +14,7 @@
 <link rel="icon" type="image/png" sizes="48x48" href="../assets/img/favicon-48.png"><link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@600;700&display=swap">
-  <link rel="stylesheet" href="../assets/site.css?v=1795201620">
+  <link rel="stylesheet" href="../assets/site.css?v=1795202718">
 </head>
 <body>
   <a class="skip" href="#contingut">Salta al contingut</a>
@@ -1497,24 +1497,58 @@
 
   <section class="panel panel--plain" id="rutes-dels-espais" aria-labelledby="h-routes">
     <h2 class="health__h2" id="h-routes">Troba la ruta de cada espai</h2>
-    <p>Cada espai afí té la seva ruta, que surt de la seva porta. Al mapa, els espais promotors del projecte (L&#39;Espiral del Prat, L&#39;Espiral d&#39;Osona i Elara Social) surten marcats com a <strong class="mk">projectes promotors</strong>, diferents dels espais afins externs. Es pot cercar la ruta més propera escrivint una adreça.</p>
-    <section class="nearby" data-nearby data-src="../assets/rutas.json" data-root="../" data-labels='{"away": "a {d}", "course_go": "Ves al curs", "course_none": "Encara no hi ha rutes d\u0027aquest curs.", "denied": "No hem pogut saber on ets. Pots escriure una adre\u00e7a.", "far": "Encara no hi ha rutes d\u0027aquest curs a prop teu: la m\u00e9s propera \u00e9s a {d}.", "go": "Mira la ruta", "here": "la teva ubicaci\u00f3", "locating": "Buscant la teva ubicaci\u00f3\u2026", "map": "Obre el mapa", "network": "No hem pogut cercar l\u0027adre\u00e7a ara mateix. Torna-ho a provar d\u0027aqu\u00ed a una estona.", "note": "Les dist\u00e0ncies s\u00f3n en l\u00ednia recta fins al punt d\u0027inici.", "notfound": "No trobem aquesta adre\u00e7a. Prova amb el carrer i la poblaci\u00f3.", "results": "Rutes que comencen m\u00e9s a prop de {where}", "searching": "Buscant l\u0027adre\u00e7a\u2026", "unsupported": "El teu navegador no permet fer servir la ubicaci\u00f3. Pots escriure una adre\u00e7a."}' aria-labelledby="nearby-h-all">
-  <h3 class="nearby__title" id="nearby-h-all">Troba les rutes més properes a tu</h3>
-  <p class="nearby__intro">Fes servir la teva ubicació o escriu una adreça i et mostrem, per a cada curs, les rutes que comencen més a prop.</p>
-  <div class="nearby__form">
-    <button class="btn btn--primary nearby__locate" type="button"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></svg>Fer servir la meva ubicació</button>
-    <form class="nearby__addr" role="search">
-      <label class="nearby__label" for="nearby-q-all">O escriu una adreça</label>
-      <div class="nearby__row">
-        <input class="nearby__input" id="nearby-q-all" type="search" placeholder="Carrer, número i població" autocomplete="street-address" enterkeyhint="search">
-        <button class="btn btn--outline nearby__go" type="submit">Cerca</button>
+    <p>Cada espai té la seva ruta circular, que surt de la seva porta. Al mapa, cada ruta té la seva capa, amb el punt d&#39;inici, el final i el traçat. Els espais <strong class="mk">promotors</strong> són els que impulsen el projecte; els espais <strong class="mk">afins</strong> són altres espais independents que comparteixen la mirada.</p>
+    <figure class="map">
+      <div class="map__frame">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1blWNcMkPScCNo4YNSuHZMJNlyCT9jy0&amp;ehbc=2E312F" title="Mapa: Rutes dels espais afins" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-    </form>
-  </div>
-  <p class="nearby__privacy">La teva ubicació no surt del dispositiu. Si escrius una adreça, s&#39;envia a Nominatim (OpenStreetMap) per localitzar-la.</p>
-  <p class="nearby__status" role="status" aria-live="polite"></p>
-  <div class="nearby__results" hidden></div>
-</section>
+      <figcaption><a href="https://www.google.com/maps/d/viewer?mid=1blWNcMkPScCNo4YNSuHZMJNlyCT9jy0" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M224,104a8,8,0,0,1-16,0V59.32l-66.33,66.34a8,8,0,0,1-11.32-11.32L196.68,48H152a8,8,0,0,1,0-16h64a8,8,0,0,1,8,8Zm-40,24a8,8,0,0,0-8,8v72H48V80h72a8,8,0,0,0,0-16H48A16,16,0,0,0,32,80V208a16,16,0,0,0,16,16H176a16,16,0,0,0,16-16V136A8,8,0,0,0,184,128Z"/></svg>Obre el mapa a pantalla completa</a></figcaption>
+    </figure>
+    <h3 class="health__sub">Les rutes d&#39;ara</h3>
+    <div class="routes">
+      <ol class="routes__list">
+        <li class="route" id="pra-cui-001">
+          <span class="route__n" aria-hidden="true">1</span>
+          <div class="route__body">
+            <span class="route__tag">Espai promotor</span>
+            <h4 class="route__name">L&#39;Espiral del Prat</h4>
+            <p class="route__start">Passejada urbana des de L&#39;Espiral del Prat</p>
+            <p class="route__info">Ruta circular · 1,29 km · 16–20 min caminant · 25–40 min amb pauses</p>
+            <p class="route__addr"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></svg><span>Carrer de Jaume Casanovas, 177, local 2, El Prat de Llobregat</span></p>
+            <p class="route__desc">Centre de psicologia que ofereix psicoteràpia gestalt i mindfulness terapèutic, i organitza tallers, sessions de grup i cursos.</p>
+            <div class="route__links">
+              <a class="route__go" href="https://www.google.com/maps/d/viewer?mid=1blWNcMkPScCNo4YNSuHZMJNlyCT9jy0" target="_blank" rel="noopener" aria-label="Obre el mapa: L&#39;Espiral del Prat (pestanya nova)"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M228.92,49.69a8,8,0,0,0-6.86-1.45L160.93,63.52,99.58,32.84a8,8,0,0,0-5.52-.6l-64,16A8,8,0,0,0,24,56V200a8,8,0,0,0,9.94,7.76l61.13-15.28,61.35,30.68A8.15,8.15,0,0,0,160,224a8,8,0,0,0,1.94-.24l64-16A8,8,0,0,0,232,200V56A8,8,0,0,0,228.92,49.69ZM104,52.94l48,24V203.06l-48-24ZM40,62.25l48-12v127.5l-48,12Zm176,131.5-48,12V78.25l48-12Z"/></svg>Obre el mapa</a><a class="route__wl" href="https://www.wikiloc.com/wikiloc/view.do?id=297339249" target="_blank" rel="noopener" aria-label="Obre-la a Wikiloc: L&#39;Espiral del Prat (pestanya nova)"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M224,104a8,8,0,0,1-16,0V59.32l-66.33,66.34a8,8,0,0,1-11.32-11.32L196.68,48H152a8,8,0,0,1,0-16h64a8,8,0,0,1,8,8Zm-40,24a8,8,0,0,0-8,8v72H48V80h72a8,8,0,0,0,0-16H48A16,16,0,0,0,32,80V208a16,16,0,0,0,16,16H176a16,16,0,0,0,16-16V136A8,8,0,0,0,184,128Z"/></svg>Obre-la a Wikiloc</a><a class="route__wl" href="https://lespiral.cat" target="_blank" rel="noopener" aria-label="Web de l&#39;espai: L&#39;Espiral del Prat (pestanya nova)"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M224,104a8,8,0,0,1-16,0V59.32l-66.33,66.34a8,8,0,0,1-11.32-11.32L196.68,48H152a8,8,0,0,1,0-16h64a8,8,0,0,1,8,8Zm-40,24a8,8,0,0,0-8,8v72H48V80h72a8,8,0,0,0,0-16H48A16,16,0,0,0,32,80V208a16,16,0,0,0,16,16H176a16,16,0,0,0,16-16V136A8,8,0,0,0,184,128Z"/></svg>Web de l&#39;espai</a></div>
+          </div>
+        </li>
+        <li class="route" id="pra-cui-002">
+          <span class="route__n" aria-hidden="true">2</span>
+          <div class="route__body">
+            <span class="route__tag">Espai promotor</span>
+            <h4 class="route__name">Elara Social</h4>
+            <p class="route__start">Passejada pels camins del riu Llobregat des d&#39;Elara Social</p>
+            <p class="route__info">Ruta circular · 6,42 km · 75–95 min caminant · 90–115 min amb pauses · desnivell aproximat de 2 a 14 m</p>
+            <p class="route__addr"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></svg><span>Carrer de Jaume Casanovas, 177, local 2, El Prat de Llobregat (mateixa adreça que L&#39;Espiral del Prat)</span></p>
+<p class="route__note">És una ruta llarga: convé portar aigua i calçat còmode.</p>            <p class="route__desc">Acompanya persones, grups i comunitats a trobar sentit i orientació en plena crisi ecosocial, combinant salut mental, economia solidària i acció climàtica. Impulsor de Camins d&#39;Esperança [Activa].</p>
+            <div class="route__links">
+              <a class="route__go" href="https://www.google.com/maps/d/viewer?mid=1blWNcMkPScCNo4YNSuHZMJNlyCT9jy0" target="_blank" rel="noopener" aria-label="Obre el mapa: Elara Social (pestanya nova)"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M228.92,49.69a8,8,0,0,0-6.86-1.45L160.93,63.52,99.58,32.84a8,8,0,0,0-5.52-.6l-64,16A8,8,0,0,0,24,56V200a8,8,0,0,0,9.94,7.76l61.13-15.28,61.35,30.68A8.15,8.15,0,0,0,160,224a8,8,0,0,0,1.94-.24l64-16A8,8,0,0,0,232,200V56A8,8,0,0,0,228.92,49.69ZM104,52.94l48,24V203.06l-48-24ZM40,62.25l48-12v127.5l-48,12Zm176,131.5-48,12V78.25l48-12Z"/></svg>Obre el mapa</a><a class="route__wl" href="https://www.wikiloc.com/wikiloc/view.do?id=297339523" target="_blank" rel="noopener" aria-label="Obre-la a Wikiloc: Elara Social (pestanya nova)"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M224,104a8,8,0,0,1-16,0V59.32l-66.33,66.34a8,8,0,0,1-11.32-11.32L196.68,48H152a8,8,0,0,1,0-16h64a8,8,0,0,1,8,8Zm-40,24a8,8,0,0,0-8,8v72H48V80h72a8,8,0,0,0,0-16H48A16,16,0,0,0,32,80V208a16,16,0,0,0,16,16H176a16,16,0,0,0,16-16V136A8,8,0,0,0,184,128Z"/></svg>Obre-la a Wikiloc</a><a class="route__wl" href="https://elarasocial.com" target="_blank" rel="noopener" aria-label="Web de l&#39;espai: Elara Social (pestanya nova)"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M224,104a8,8,0,0,1-16,0V59.32l-66.33,66.34a8,8,0,0,1-11.32-11.32L196.68,48H152a8,8,0,0,1,0-16h64a8,8,0,0,1,8,8Zm-40,24a8,8,0,0,0-8,8v72H48V80h72a8,8,0,0,0,0-16H48A16,16,0,0,0,32,80V208a16,16,0,0,0,16,16H176a16,16,0,0,0,16-16V136A8,8,0,0,0,184,128Z"/></svg>Web de l&#39;espai</a></div>
+          </div>
+        </li>
+        <li class="route" id="vic-cui-002">
+          <span class="route__n" aria-hidden="true">3</span>
+          <div class="route__body">
+            <span class="route__tag">Espai afí</span>
+            <h4 class="route__name">Osona Ioga</h4>
+            <p class="route__start">Passejada urbana des d&#39;Osona Ioga</p>
+            <p class="route__info">Ruta circular</p>
+            <p class="route__addr"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></svg><span>Ronda de Francesc Camprodon, 25, 1r 1a, Vic</span></p>
+            <p class="route__desc">Osona Ioga i Elara Social són dos projectes independents (no formen una associació ni una empresa conjunta), però comparteixen valors i una mirada comuna en tres àmbits: salut mental comunitària; economia social i solidària; acció climàtica i cultura del bé comú.</p>
+            <div class="route__links">
+              <a class="route__go" href="https://www.google.com/maps/d/viewer?mid=1blWNcMkPScCNo4YNSuHZMJNlyCT9jy0" target="_blank" rel="noopener" aria-label="Obre el mapa: Osona Ioga (pestanya nova)"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M228.92,49.69a8,8,0,0,0-6.86-1.45L160.93,63.52,99.58,32.84a8,8,0,0,0-5.52-.6l-64,16A8,8,0,0,0,24,56V200a8,8,0,0,0,9.94,7.76l61.13-15.28,61.35,30.68A8.15,8.15,0,0,0,160,224a8,8,0,0,0,1.94-.24l64-16A8,8,0,0,0,232,200V56A8,8,0,0,0,228.92,49.69ZM104,52.94l48,24V203.06l-48-24ZM40,62.25l48-12v127.5l-48,12Zm176,131.5-48,12V78.25l48-12Z"/></svg>Obre el mapa</a><a class="route__wl" href="https://www.wikiloc.com/wikiloc/view.do?id=297255848" target="_blank" rel="noopener" aria-label="Obre-la a Wikiloc: Osona Ioga (pestanya nova)"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M224,104a8,8,0,0,1-16,0V59.32l-66.33,66.34a8,8,0,0,1-11.32-11.32L196.68,48H152a8,8,0,0,1,0-16h64a8,8,0,0,1,8,8Zm-40,24a8,8,0,0,0-8,8v72H48V80h72a8,8,0,0,0,0-16H48A16,16,0,0,0,32,80V208a16,16,0,0,0,16,16H176a16,16,0,0,0,16-16V136A8,8,0,0,0,184,128Z"/></svg>Obre-la a Wikiloc</a></div>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <p class="health__more">A mesura que se sumin nous espais, s&#39;afegiran aquí i al mapa.</p>
   </section>
 
   <section class="panel" id="sense-compromis" aria-labelledby="h-limits">
@@ -1576,6 +1610,6 @@
     </div>
   </footer>
 
-  <script src="../assets/site.js?v=1795201620" defer></script>
+  <script src="../assets/site.js?v=1795202718" defer></script>
 </body>
 </html>

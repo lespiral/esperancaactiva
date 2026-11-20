@@ -482,9 +482,9 @@
     "share_text": "Una caminada curta, gratuïta i amb mapa surt de la porta de [nom de l'espai]. Forma part de Camins d'Esperança [Activa]: cursos en línia gratuïts i rutes a peu per cuidar-nos i actuar plegats. Tota la informació, a esperançaactiva.cat",
     "share_extra": "Si es vol, també podem preparar un **codi QR** que porti directament a la ruta de l'espai, per penjar-lo a la recepció o a la sala.",
     "routes_title": "Troba la ruta de cada espai",
-    "routes_intro": "Cada espai afí té la seva ruta, que surt de la seva porta. Al mapa, els espais promotors del projecte (L'Espiral del Prat, L'Espiral d'Osona i Elara Social) surten marcats com a **projectes promotors**, diferents dels espais afins externs. Es pot cercar la ruta més propera escrivint una adreça.",
-    "map_url": "",
-    "map_btn": "Veure el mapa d'espais afins",
+    "routes_intro": "Cada espai té la seva ruta circular, que surt de la seva porta. Al mapa, cada ruta té la seva capa, amb el punt d'inici, el final i el traçat. Els espais **promotors** són els que impulsen el projecte; els espais **afins** són altres espais independents que comparteixen la mirada.",
+    "map_url": "https://www.google.com/maps/d/viewer?mid=1blWNcMkPScCNo4YNSuHZMJNlyCT9jy0",
+    "map_btn": "Obre el mapa a pantalla completa",
     "limits_title": "Sense compromís",
     "limits": [
       "No hi ha **cap conveni, quota ni exclusivitat**: els cursos i les rutes són públics i gratuïts.",
@@ -503,6 +503,48 @@
     ],
     "join_end": "Si un espai s'hi reconeix, ens pot escriure i li preparem la ruta des de la seva porta. **Només surt al mapa qui ho confirma.** Dos projectes poden ser independents, sense formar cap associació ni empresa conjunta, i compartir una mirada comuna.",
     "contact_title": "Parlem?",
-    "contact_html": "Si un espai vol tenir ruta, o que presentem el recurs a l'equip, pot escriure'ns."
+    "contact_html": "Si un espai vol tenir ruta, o que presentem el recurs a l'equip, pot escriure'ns.",
+    "map_mid": "1blWNcMkPScCNo4YNSuHZMJNlyCT9jy0",
+    "map_title": "Rutes dels espais afins",
+    "espais_title": "Les rutes d'ara",
+    "espais_note": "A mesura que se sumin nous espais, s'afegiran aquí i al mapa.",
+    "espais_open": "Obre el mapa",
+    "espais_wl": "Obre-la a Wikiloc",
+    "espais_web": "Web de l'espai",
+    "espais": [
+      {
+        "id": "pra-cui-001",
+        "tag": "Espai promotor",
+        "name": "L'Espiral del Prat",
+        "start": "Passejada urbana des de L'Espiral del Prat",
+        "info": "Ruta circular · 1,29 km · 16–20 min caminant · 25–40 min amb pauses",
+        "address": "Carrer de Jaume Casanovas, 177, local 2, El Prat de Llobregat",
+        "desc": "Centre de psicologia que ofereix psicoteràpia gestalt i mindfulness terapèutic, i organitza tallers, sessions de grup i cursos.",
+        "web": "https://lespiral.cat",
+        "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297339249"
+      },
+      {
+        "id": "pra-cui-002",
+        "tag": "Espai promotor",
+        "name": "Elara Social",
+        "start": "Passejada pels camins del riu Llobregat des d'Elara Social",
+        "info": "Ruta circular · 6,42 km · 75–95 min caminant · 90–115 min amb pauses · desnivell aproximat de 2 a 14 m",
+        "address": "Carrer de Jaume Casanovas, 177, local 2, El Prat de Llobregat (mateixa adreça que L'Espiral del Prat)",
+        "note": "És una ruta llarga: convé portar aigua i calçat còmode.",
+        "desc": "Acompanya persones, grups i comunitats a trobar sentit i orientació en plena crisi ecosocial, combinant salut mental, economia solidària i acció climàtica. Impulsor de Camins d'Esperança [Activa].",
+        "web": "https://elarasocial.com",
+        "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297339523"
+      },
+      {
+        "id": "vic-cui-002",
+        "tag": "Espai afí",
+        "name": "Osona Ioga",
+        "start": "Passejada urbana des d'Osona Ioga",
+        "info": "Ruta circular",
+        "address": "Ronda de Francesc Camprodon, 25, 1r 1a, Vic",
+        "desc": "Osona Ioga i Elara Social són dos projectes independents (no formen una associació ni una empresa conjunta), però comparteixen valors i una mirada comuna en tres àmbits: salut mental comunitària; economia social i solidària; acció climàtica i cultura del bé comú.",
+        "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297255848"
+      }
+    ]
   }
 }
