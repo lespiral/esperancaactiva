@@ -195,7 +195,7 @@
       ["heart", "Gratuït"],
       ["headphones", "En línia i en català"],
       ["footprints", "7 passes, al teu ritme"],
-      ["plant", "No cal experiència en meditació"]
+      ["plant", "No cal experiència prèvia"]
     ],
     "cta_note": "El botó obre el formulari d'inscripció a la plataforma dels cursos. És gratuït i te'n pots donar de baixa quan vulguis.",
     "gains_title": "Què et pot aportar aquest curs?",
@@ -274,7 +274,7 @@
     "faq": [
       ["És realment gratuït?", "Sí. Només t'has de donar d'alta a la plataforma dels cursos. Guardarem les teves dades per enviar-te futures comunicacions, i sempre te'n podràs donar de baixa."],
       ["És teràpia?", "No. És un curs vivencial de pràctiques i reflexió. Pot ajudar molt, però no substitueix la psicoteràpia si estàs en un moment clínicament delicat. Si estàs passant un moment molt difícil, parla amb el teu CAP o truca al <a href=\"tel:061\">061</a>. Si penses en fer-te mal, truca al <a href=\"tel:024\">024</a>. En una emergència, al <a href=\"tel:112\">112</a>."],
-      ["He de tenir experiència en meditació?", "No. Les pràctiques estan pensades perquè siguin accessibles i progressives."],
+      ["He de tenir experiència prèvia?", "No. Les pràctiques estan pensades perquè siguin accessibles i progressives."],
       ["Hi ha rutes de tots els cursos a totes les ciutats i pobles?", "Encara no. Les rutes es pensen per a cada curs i n'anem afegint. Si al teu poble o a la teva ciutat encara no n'hi ha del teu curs, pots fer la caminada a prop de casa o en un lloc tranquil."],
       ["On visc encara no hi ha rutes. Puc fer el curs?", "És clar. Pots fer el temps de reflexió en una passejada a prop de casa o en un lloc tranquil."]
     ],
@@ -360,7 +360,7 @@
       {
         "title": "Sobre els cursos",
         "items": [
-          ["He de tenir experiència en meditació?", "No. Les pràctiques estan pensades perquè siguin accessibles i progressives."],
+          ["He de tenir experiència prèvia?", "No. Les pràctiques estan pensades perquè siguin accessibles i progressives."],
           ["És teràpia?", "No. És un curs vivencial de pràctiques i reflexió. Pot ajudar molt, però no substitueix la psicoteràpia si estàs en un moment clínicament delicat. Si estàs passant un moment molt difícil, parla amb el teu CAP o truca al <a href=\"tel:061\">061</a>. Si penses en fer-te mal, truca al <a href=\"tel:024\">024</a>. En una emergència, al <a href=\"tel:112\">112</a>."],
           ["I si em preocupa desbordar-me emocionalment?", "És una preocupació habitual. El curs està plantejat com un espai segur i respectuós on tu marques el ritme: pots parar, respirar o deixar-ho quan ho necessitis. Si estàs en un moment especialment sensible, ens ho pots comentar abans i ho valorem plegats."],
           ["És realment gratuït?", "Sí. Només t'has de donar d'alta a la plataforma dels cursos. Guardarem les teves dades per enviar-te futures comunicacions, i sempre te'n podràs donar de baixa."],
