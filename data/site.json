@@ -382,5 +382,72 @@
     ],
     "contact_title": "Tinc un altre dubte",
     "contact_html": "Escriu-nos a <a href=\"mailto:esperanza@elarasocial.com\">esperanza@elarasocial.com</a> o envia'ns un missatge a Instagram, <a href=\"https://www.instagram.com/esperancaactiva.cat/\">@esperancaactiva.cat</a>."
+  },
+  "prat_page": {
+    "kicker": "Per a entitats i equipaments del Prat",
+    "title": "Un recurs comunitari per a la teva entitat o equipament",
+    "lead": "Cursos en línia **gratuïts** i rutes a peu pel Prat que surten de les entitats i els equipaments de la ciutat. Una opció més per **orientar** les persones que viuen incertesa, soledat o malestar.",
+    "how_title": "Com pot arribar a la teva entitat",
+    "how_intro": "La teva entitat no ha d'organitzar res: només **orientar**. La resta ho fa cada persona al seu ritme.",
+    "nus_title": "Un camí que passa per la teva entitat",
+    "nus_intro": "Moltes persones arriben a una entitat, a un casal o a un servei amb dolor, incertesa o cansament. Allà reben un **recurs** i, amb ell, aquest malestar pot transformar-se en **claredat, suport i una acció possible**, sostinguts per la comunitat.",
+    "what_title": "Què és Camins d'Esperança [Activa]",
+    "what": [
+      "Són **cursos en línia gratuïts, de 7 passes**, per afrontar el que ens preocupa amb més presència, suport i un petit pas possible. Cada pas combina una breu explicació amb una pràctica guiada d'àudio o vídeo i una caminada de reflexió.",
+      "Cada curs va acompanyat de **rutes a peu, curtes i amb mapa**, que surten d'entitats, equipaments i espais del Prat. La persona les fa sola i al seu ritme, i així coneix llocs reals de la ciutat on hi ha gent que fa una tasca col·lectiva."
+    ],
+    "why_title": "Per què encaixa amb el que fa la teva entitat",
+    "why": [
+      "És un **recurs comunitari, gratuït i sense llista d'espera**.",
+      "Dona a les persones que viuen incertesa, soledat o malestar **alguna cosa concreta per fer** a prop de casa.",
+      "Les connecta amb **entitats, espais i projectes del Prat** on poden sentir que formen part d'una tasca col·lectiva.",
+      "Respecta els límits de cada persona: pot parar i tornar-hi un altre dia."
+    ],
+    "who_title": "Qui pot orientar cap a aquest recurs?",
+    "who_intro": "Qualsevol persona de l'equip o del voluntariat. Pot encaixar sobretot a:",
+    "who": [
+      [
+        "Equipaments municipals:",
+        "centres cívics, serveis de ciutadania, serveis de joventut i espais culturals."
+      ],
+      [
+        "Entitats del tercer sector i de l'economia social:",
+        "esplais, associacions, fundacions, cooperatives i serveis socials."
+      ],
+      [
+        "Serveis de salut i de salut comunitària:",
+        "centres d'atenció primària i equips que orienten cap a recursos del barri."
+      ]
+    ],
+    "who_end": "No cal **cap tràmit**: és un recurs públic i gratuït, obert a qualsevol persona.",
+    "courses_title": "Quin curs orientar",
+    "courses_intro": "Cada curs connecta amb situacions diferents que viu la gent del Prat.",
+    "courses_for": {
+      "vida": "Per a persones amb ansietat, dol, conflictes, cansament o moments de vulnerabilitat.",
+      "cuidar": "Per a persones amb solitud, cansament emocional o manca d'espais on sentir-se escoltades.",
+      "mon": "Per a persones que viuen la preocupació pel futur, l'ecoansietat o el malestar pel canvi climàtic.",
+      "dia": "Per a persones que viuen precarietat, dificultats amb l'habitatge o ritmes de feina que esgoten."
+    },
+    "course_btn": "Veure el curs",
+    "share_title": "Com donar-ho a conèixer",
+    "share_intro": "El més senzill és comentar-ho o passar l'enllaç. Si et serveix, pots fer servir aquest text:",
+    "share_text": "Hi ha un recurs gratuït que et pot acompanyar: cursos en línia de 7 passes i rutes a peu pel Prat que surten d'entitats i equipaments de la ciutat. El tens a esperançaactiva.cat",
+    "share_extra": "Si vols que t'expliquem el recurs a l'equip o a les persones que atens, escriu-nos.",
+    "routes_title": "Troba les rutes del Prat",
+    "routes_intro": "Al Prat hi ha rutes que surten de centres de salut, equipaments municipals, entitats del tercer sector, entitats de l'economia social i espais naturals. Mira si ja n'hi ha una que surti de la teva entitat o d'una de prop. Si encara no n'hi ha, escriu-nos.",
+    "routes_btn": "Veure les rutes",
+    "routes_all": "Totes les rutes del Prat",
+    "limits_title": "Sense compromís",
+    "limits": [
+      "No cal **cap conveni ni tràmit**: els cursos i les rutes són públics i gratuïts.",
+      "L'entitat **no gestiona inscripcions ni acompanya les rutes**. L'activitat l'ofereixen L'Espiral i Elara Social.",
+      "El nom de l'entitat o de l'equipament surt com a punt de sortida de la ruta, com a simple referència.",
+      "Els cursos no substitueixen l'atenció clínica ni un tractament mèdic o psicològic."
+    ],
+    "scenic_title": "El mateix camí, amb joves del Prat",
+    "scenic_html": "El Treball que Reconnecta també es vol portar a un procés de creació escènica i audiovisual amb joves pratencs, amb Xavier Esteban i Júlia Ibarz, que parteix del mateix camí: començar pel que estimen i decidir quin pas volen fer.",
+    "safety_html": "Si una persona està passant un moment molt difícil, l'atenció continua sent la del seu centre de salut o servei de referència. Si pensa en fer-se mal, pot trucar al <a href=\"tel:024\">024</a>. En una emergència, al <a href=\"tel:112\">112</a>.",
+    "contact_title": "Parlem?",
+    "contact_html": "Si vols que la teva entitat o el teu equipament tingui ruta, o que t'expliquem el recurs a l'equip, escriu-nos."
   }
 }

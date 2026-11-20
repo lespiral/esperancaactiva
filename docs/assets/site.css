@@ -555,6 +555,14 @@ html:not(.js) .placenav__list[data-name]::before { content: attr(data-name); dis
 .rfilter__status { margin: 8px 0 0; min-height: 1.2em; font-size: .95rem; }
 .group[hidden], .route[hidden] { display: none; }
 
+/* Pàgina «Per a entitats i equipaments del Prat» (20/11/2026): mateixos estils que la pàgina per a centres de salut de la .org */
+.health__sub { font-size: 1.1rem; margin: 22px 0 12px; }
+.health__courses { margin-top: 18px; }
+.health__courses--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.health__more { margin-top: 18px; }
+@media (max-width: 560px) { .health__courses--4 { grid-template-columns: 1fr; } }
+.health__quote { margin: 14px 0; padding: 16px 20px; border-left: 5px solid var(--sun); background: var(--green-50); border-radius: 0 var(--radius) var(--radius) 0; font-size: 1.05rem; line-height: 1.5; color: var(--green-900); }
+
 /* Estil de les lletres (com a elarasocial.com): ona amb solet sota els títols, paraules clau subratllades i capçalera animada */
 :root {
   --onada: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 18'%3E%3Cpath d='M3 10C14 3 26 3 38 9s24 7 36 1 20-6 28-2' fill='none' stroke='%232e7561' stroke-width='3.2' stroke-linecap='round'/%3E%3Ccircle cx='112' cy='8' r='5' fill='%23e2c668'/%3E%3C/svg%3E");

@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% from "parts.html" import page_head, safety, nearby %}
+{# Pàgina per a entitats i equipaments del Prat (/entitats-del-prat/). Adaptada de la pàgina per a centres de salut de la .org (20 de novembre de 2026). Textos a data/site.json › prat_page. Les dues infografies (volta i nus) són, de moment, les genèriques de la portada. #}
+{% block content %}
+{{ page_head(pp.kicker, pp.title, pp.lead|hl) }}
+
+<div class="wrap wrap--mid stack stack--bottom health">
+  <section id="com-funciona" aria-labelledby="h-how">
+    <h2 class="health__h2" id="h-how">{{ pp.how_title }}</h2>
+    <p>{{ pp.how_intro|hl }}</p>
+    <div class="infografia infografia--in">{% include "infografies/infografia-com-funciona.html" %}</div>
+  </section>
+
+  <section id="un-cami" aria-labelledby="h-nus">
+    <h2 class="health__h2" id="h-nus">{{ pp.nus_title }}</h2>
+    <p>{{ pp.nus_intro|hl }}</p>
+    <div class="infografia infografia--in">{% include "infografies/infografia-esperanca-activa.html" %}</div>
+  </section>
+
+  <section class="panel" id="que-es" aria-labelledby="h-what">
+    <h2 class="health__h2" id="h-what">{{ pp.what_title }}</h2>
+    {% for p in pp.what %}<p>{{ p|hl }}</p>{% endfor %}
+    <h3 class="health__sub">{{ pp.why_title }}</h3>
+    <ul class="checks">{% for i in pp.why %}<li>{{ icon('check') }}<span>{{ i|hl }}</span></li>{% endfor %}</ul>
+  </section>
+
+  <section class="panel" id="qui-orienta" aria-labelledby="h-who">
+    <h2 class="health__h2" id="h-who">{{ pp.who_title }}</h2>
+    <p>{{ pp.who_intro|hl }}</p>
+    <ul class="checks">{% for l, t in pp.who %}<li>{{ icon('check') }}<span><strong>{{ l }}</strong> {{ t|hl }}</span></li>{% endfor %}</ul>
+    <p>{{ pp.who_end|hl }}</p>
+  </section>
+
+  <section id="quin-curs-orientar" aria-labelledby="h-courses">
+    <h2 class="health__h2" id="h-courses">{{ pp.courses_title }}</h2>
+    <p>{{ pp.courses_intro|hl }}</p>
+    <ul class="cards health__courses health__courses--4">
+      {% for c in site.courses if c.key in pp.courses_for %}
+      <li class="card card--course">
+        <span class="card__icon" aria-hidden="true">{{ icon(c.icon) }}</span>
+        <h3 class="card__title">{{ c.title }}</h3>
+        <p class="card__text">{{ pp.courses_for[c.key] }}</p>
+        <a class="btn btn--soft btn--block" href="{{ root }}{{ c.slug }}/">{{ pp.course_btn }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="panel" id="com-donar-ho-a-coneixer" aria-labelledby="h-share">
+    <h2 class="health__h2" id="h-share">{{ pp.share_title }}</h2>
+    <p>{{ pp.share_intro|hl }}</p>
+    <blockquote class="health__quote">{{ pp.share_text }}</blockquote>
+    <p>{{ pp.share_extra|hl }}</p>
+  </section>
+
+  <section class="panel panel--plain" id="rutes-del-prat" aria-labelledby="h-routes">
+    <h2 class="health__h2" id="h-routes">{{ pp.routes_title }}</h2>
+    <p>{{ pp.routes_intro|hl }}</p>
+    <ul class="checks">
+      {% for b in prat.blocks %}
+      {% set c = b.course %}
+      <li>{{ icon('check') }}<span><strong>{{ c.title }}:</strong> {{ b.summary }} <a href="{{ root }}{{ prat.slug }}/#{{ c.anchor }}">{{ pp.routes_btn }}</a></span></li>
+      {% endfor %}
+    </ul>
+    <p class="health__more"><a class="btn btn--primary" href="{{ root }}{{ prat.slug }}/">{{ pp.routes_all }}</a></p>
+    {{ nearby(site.nearby, root) }}
+  </section>
+
+  <section class="panel" id="sense-compromis" aria-labelledby="h-limits">
+    <h2 class="health__h2" id="h-limits">{{ pp.limits_title }}</h2>
+    <ul class="checks">{% for i in pp.limits %}<li>{{ icon('check') }}<span>{{ i|hl|elara }}</span></li>{% endfor %}</ul>
+  </section>
+
+  <section class="panel panel--plain" id="joves" aria-labelledby="h-scenic">
+    <h2 class="health__h2" id="h-scenic">{{ pp.scenic_title }}</h2>
+    <p>{{ pp.scenic_html }}</p>
+  </section>
+
+  {{ safety(pp.safety_html) }}
+
+  <section class="contact-box" id="contacte" aria-labelledby="h-contact">
+    <h2 id="h-contact">{{ pp.contact_title }}</h2>
+    <p>{{ pp.contact_html }}</p>
+    <p class="contact-box__links">
+      <a class="btn btn--primary" href="mailto:{{ site.contact.email }}">{{ icon('mail') }}Escriu-nos</a>
+      <a class="btn btn--outline" href="{{ site.contact.instagram_url }}">{{ icon('instagram') }}{{ site.contact.instagram }}</a>
+    </p>
+  </section>
+</div>
+{% endblock %}
