@@ -48,13 +48,6 @@
     {{ course_cards(site.courses, root) }}
   </section>
 
-  <section class="panel" id="com-donar-ho-a-coneixer" aria-labelledby="h-share">
-    <h2 class="health__h2" id="h-share">{{ pp.share_title }}</h2>
-    <p>{{ pp.share_intro|hl }}</p>
-    <blockquote class="health__quote">{{ pp.share_text }}</blockquote>
-    <p>{{ pp.share_extra|hl }}</p>
-  </section>
-
   <section class="panel panel--plain" id="rutes-dels-espais" aria-labelledby="h-routes">
     <h2 class="health__h2" id="h-routes">{{ pp.routes_title }}</h2>
     <p>{{ pp.routes_intro|hl }}</p>
@@ -94,6 +87,13 @@
   </section>
 
   {{ safety(pp.safety_html) }}
+
+  <section class="panel" id="com-donar-ho-a-coneixer" aria-labelledby="h-share">
+    <h2 class="health__h2" id="h-share">{{ pp.share_title }}</h2>
+    <p>{{ pp.share_intro|hl }}</p>
+    <blockquote class="health__quote">{{ pp.share_text }}</blockquote>
+    <p>{{ pp.share_extra|hl }}</p>
+  </section>
 
   <section class="panel panel--plain" id="sumar-s-hi" aria-labelledby="h-join">
     <h2 class="health__h2" id="h-join">{{ pp.join_title }}</h2>

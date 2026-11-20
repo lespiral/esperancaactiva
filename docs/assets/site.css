@@ -625,3 +625,9 @@ strong.mk { color: var(--green-900); font-weight: 700; background: linear-gradie
 .pagehead--green strong.mk, .pagehead--green .lead strong { color: var(--sun); background: none; }
 
 .route__host { display: inline-block; margin-left: 4px; padding: 1px 9px; border-radius: 999px; background: var(--sun-100); color: var(--green-900); font-weight: 700; }
+
+/* Pàgina d'espais afins: els quatre cursos en 2 × 2 */
+#els-cursos .cards--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 640px) { #els-cursos .cards--3 { grid-template-columns: 1fr; } }
+#els-cursos .card--course { display: flex; flex-direction: column; align-items: center; }
+#els-cursos .card--course .btn { margin-top: auto; }
