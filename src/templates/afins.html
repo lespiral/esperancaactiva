@@ -51,6 +51,7 @@
   <section class="panel panel--plain" id="rutes-dels-espais" aria-labelledby="h-routes">
     <h2 class="health__h2" id="h-routes">{{ pp.routes_title }}</h2>
     <p>{{ pp.routes_intro|hl }}</p>
+    {{ nearby(pp.nearby_L, root, src='assets/espais.json', nid='espais', max=4) }}
     {% if pp.map_mid %}
     <figure class="map">
       <div class="map__frame">

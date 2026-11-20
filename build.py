@@ -507,6 +507,8 @@ render("faq.html", "preguntes", section="preguntes", page_title="Preguntes", fp=
 site_t["prat_page"]["safety_html"] = Markup(site["prat_page"]["safety_html"])
 prat_city = next(c for c in cities if c["slug"] == "el-prat")
 render("prat.html", "entitats-del-prat", section="entitats", page_title="Per a entitats i equipaments del Prat", page_description=site["prat_page"]["lead"].replace("**", ""), pp=site_t["prat_page"], prat=prat_city)
+_nb = dict(site_t["nearby"]); _nb.update({k: v for k, v in site_t["afins_page"]["nearby"].items() if k != "js"}); _nb["js"] = {**site_t["nearby"]["js"], **site_t["afins_page"]["nearby"]["js"]}
+site_t["afins_page"]["nearby_L"] = _nb
 site_t["afins_page"]["safety_html"] = Markup(site["afins_page"]["safety_html"])
 render("afins.html", "entitats-i-espais-afins", section="entitats", page_title="Per a entitats i espais afins", page_description=site["afins_page"]["lead"].replace("**", ""), pp=site_t["afins_page"])
 for c in site["courses"]:
@@ -520,6 +522,10 @@ for t in territories:
 render("404.html", "404.html", page_title="Pàgina no trobada", root=BASE, base=BASE)
 
 (OUT / "assets").mkdir(exist_ok=True)
+# Cerca per ubicació de la pàgina d'espais afins: només les rutes d'aquests espais (assets/espais.json, mateix format que rutas.json)
+_ap = site["afins_page"]
+_esp = [[float(e["ll"].split(",")[0]), float(e["ll"].split(",")[1]), 0, "entitats-i-espais-afins", e["town"], e["id"], e["name"], _ap["routes_map_url"].split("mid=")[-1]] for e in _ap["espais"]]
+(OUT / "assets" / "espais.json").write_text(json.dumps({"courses": [{"k": "espais", "t": "", "s": ""}], "routes": _esp}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 (OUT / "assets" / "rutas.json").write_text(json.dumps({"courses": [{"k": k, "t": c["title"], "s": c["slug"]} for k, c in courses.items()], "routes": RUTAS}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 shutil.copy(SRC / "site.css", OUT / "assets" / "site.css")
 shutil.copy(SRC / "site.js", OUT / "assets" / "site.js")

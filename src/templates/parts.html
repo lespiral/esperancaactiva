@@ -178,9 +178,9 @@
 {%- endmacro %}
 
 {# Cerca per ubicació o adreça: llista de les rutes que comencen més a prop, per curs (src/site.js › data-nearby; dades a assets/rutas.json) #}
-{% macro nearby(L, root, course=None) -%}
-{% set nid = course or 'all' %}
-<section class="nearby" data-nearby data-src="{{ root }}assets/rutas.json" data-root="{{ root }}"{% if course %} data-course="{{ course }}"{% endif %} data-labels='{{ L.js|tojson }}' aria-labelledby="nearby-h-{{ nid }}">
+{% macro nearby(L, root, course=None, src=None, nid=None, max=None) -%}
+{% set nid = nid or course or 'all' %}
+<section class="nearby" data-nearby data-src="{{ root }}{{ src or 'assets/rutas.json' }}" data-root="{{ root }}"{% if max %} data-max="{{ max }}"{% endif %}{% if course %} data-course="{{ course }}"{% endif %} data-labels='{{ L.js|tojson }}' aria-labelledby="nearby-h-{{ nid }}">
   <h3 class="nearby__title" id="nearby-h-{{ nid }}">{{ L.title }}</h3>
   <p class="nearby__intro">{{ L.intro }}</p>
   <div class="nearby__form">

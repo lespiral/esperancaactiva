@@ -499,6 +499,14 @@
     ],
     "courses_btn": "Veure els cursos",
     "courses_title": "Els quatre cursos",
+    "nearby": {
+      "title": "Troba l'espai més proper a tu",
+      "intro": "Fes servir la teva ubicació o escriu una adreça i et mostrem els espais amb ruta, del més proper al més llunyà.",
+      "js": {
+        "results": "Espais més propers a {where}",
+        "far": "Encara no hi ha cap espai a prop teu: el més proper és a {d}."
+      }
+    },
     "share_title": "Com donar-ho a conèixer",
     "share_intro": "El més senzill és comentar-ho o passar l'enllaç de la ruta de l'espai. Si serveix, es pot fer servir aquest text per a un butlletí, les xarxes o el taulell:",
     "share_text": "Una caminada curta, gratuïta i amb mapa surt de la porta de [nom de l'espai]. Forma part de Camins d'Esperança [Activa]: cursos en línia gratuïts i rutes a peu per cuidar-nos i actuar plegats. Tota la informació, a esperançaactiva.cat",
@@ -528,6 +536,8 @@
     "espais": [
       {
         "id": "pra-cui-001",
+        "ll": "41.32182,2.09493",
+        "town": "El Prat de Llobregat",
         "tag": "Espai promotor",
         "name": "L'Espiral del Prat",
         "start": "Passejada urbana des de L'Espiral del Prat",
@@ -539,6 +549,8 @@
       },
       {
         "id": "pra-cui-002",
+        "ll": "41.32182,2.09493",
+        "town": "El Prat de Llobregat",
         "tag": "Espai promotor",
         "name": "Elara Social",
         "start": "Passejada pels camins del riu Llobregat des d'Elara Social",
@@ -551,6 +563,8 @@
       },
       {
         "id": "vic-cui-002",
+        "ll": "41.933989,2.254349",
+        "town": "Vic",
         "tag": "Espai afí",
         "name": "Osona Ioga",
         "start": "Passejada urbana des d'Osona Ioga",
@@ -562,6 +576,8 @@
       },
       {
         "id": "vic-cui-003",
+        "ll": "41.933989,2.254349",
+        "town": "Vic",
         "tag": "Espai promotor",
         "name": "L'Espiral d'Osona",
         "start": "Passejada urbana des de L'Espiral d'Osona",

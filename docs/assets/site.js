@@ -191,6 +191,7 @@
   var L = JSON.parse(box.getAttribute('data-labels'));
   var root = box.getAttribute('data-root') || '';
   var only = box.getAttribute('data-course');
+  var max = parseInt(box.getAttribute('data-max'), 10) || 3;
   var locBtn = box.querySelector('.nearby__locate');
   var form = box.querySelector('.nearby__addr');
   var input = box.querySelector('.nearby__input');
@@ -230,12 +231,14 @@
         if (!list.length) return;
         list.sort(function (a, b) { return a.d - b.d; });
         var sec = el('section', 'nearby__course');
-        var h = el('h5', 'nearby__coursename');
-        var ca = el('a', null, c.t); ca.href = root + c.s + '/';
-        h.appendChild(ca); sec.appendChild(h);
+        if (c.t) {
+          var h = el('h5', 'nearby__coursename');
+          var ca = el('a', null, c.t); ca.href = root + c.s + '/';
+          h.appendChild(ca); sec.appendChild(h);
+        }
         if (list[0].d > 40) sec.appendChild(el('p', 'nearby__far', L.far.replace('{d}', fmt(list[0].d))));
         var ul = el('ul', 'nearby__list');
-        list.slice(0, 3).forEach(function (x) {
+        list.slice(0, max).forEach(function (x) {
           var r = x.r, li = el('li', 'nearby__item');
           var body = el('div', 'nearby__body');
           body.appendChild(el('strong', 'nearby__name', r[6]));
