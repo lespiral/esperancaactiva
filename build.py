@@ -507,6 +507,8 @@ render("faq.html", "preguntes", section="preguntes", page_title="Preguntes", fp=
 site_t["prat_page"]["safety_html"] = Markup(site["prat_page"]["safety_html"])
 prat_city = next(c for c in cities if c["slug"] == "el-prat")
 render("prat.html", "entitats-del-prat", section="entitats", page_title="Per a entitats i equipaments del Prat", page_description=site["prat_page"]["lead"].replace("**", ""), pp=site_t["prat_page"], prat=prat_city)
+site_t["afins_page"]["safety_html"] = Markup(site["afins_page"]["safety_html"])
+render("afins.html", "entitats-i-espais-afins", section="entitats", page_title="Per a entitats i espais afins", page_description=site["afins_page"]["lead"].replace("**", ""), pp=site_t["afins_page"])
 for c in site["courses"]:
     render("course.html", c["slug"], section="cursos", page_title=c["title"], page_description=c["subtitle"], course=c)
 for city in cities:

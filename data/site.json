@@ -451,5 +451,52 @@
     "safety_html": "Si una persona està passant un moment molt difícil, l'atenció continua sent la del seu centre de salut o servei de referència. Si pensa en fer-se mal, pot trucar al <a href=\"tel:024\">024</a>. En una emergència, al <a href=\"tel:112\">112</a>.",
     "contact_title": "Parlem?",
     "contact_html": "Si una entitat o un equipament vol tenir ruta, o que presentem el recurs a l'equip, pot escriure'ns."
+  },
+  "afins_page": {
+    "kicker": "Per a entitats i espais afins",
+    "title": "Un recurs per a les persones que passen per l'espai",
+    "lead": "Una **caminada curta, gratuïta i amb mapa** que surt de la porta de l'espai, perquè les persones que hi venen puguin **prendre consciència de com se senten** i portar el que descobreixen a la vida quotidiana.",
+    "res_title": "Una caminada que surt de la porta de l'espai",
+    "res_intro": "Per a un espai privat i independent, aquest recurs és una manera senzilla d'oferir **alguna cosa més** a les persones que venen a l'espai, siguin clients, alumnes, persones usuàries o participants d'un grup.",
+    "res": [
+      "Una **ruta a peu curta, gratuïta i amb mapa**, que comença a la porta de l'espai.",
+      "Cada persona la fa **sola i al seu ritme**: l'espai no ha d'organitzar ni acompanyar res.",
+      "Caminant, convida a **prendre consciència de com ens sentim** i del que ens sosté.",
+      "Ajuda a **portar els aprenentatges a la vida quotidiana**: es pot repetir i tornar-hi un altre dia."
+    ],
+    "res_end": "Serveix igual per a qui ve a una sessió, a una classe, a un taller o a un servei.",
+    "what_title": "Què és Camins d'Esperança [Activa]",
+    "what": [
+      "Són **cursos en línia gratuïts, de 7 passes**, per afrontar el que ens preocupa amb més presència, suport i un petit pas possible. Cada pas combina una breu explicació amb una pràctica guiada d'àudio o vídeo i una caminada de reflexió.",
+      "Cada curs va acompanyat de **rutes a peu, curtes i amb mapa**, que surten d'entitats, equipaments i espais com aquest. La persona les fa sola i al seu ritme, i així coneix llocs reals on hi ha gent que fa una tasca col·lectiva."
+    ],
+    "courses_btn": "Veure els cursos",
+    "share_title": "Com donar-ho a conèixer",
+    "share_intro": "El més senzill és comentar-ho o passar l'enllaç de la ruta de l'espai. Si serveix, es pot fer servir aquest text per a un butlletí, les xarxes o el taulell:",
+    "share_text": "Una caminada curta, gratuïta i amb mapa surt de la porta de [nom de l'espai]. Forma part de Camins d'Esperança [Activa]: cursos en línia gratuïts i rutes a peu per cuidar-nos i actuar plegats. Tota la informació, a esperançaactiva.cat",
+    "share_extra": "Si es vol, també podem preparar un **codi QR** que porti directament a la ruta de l'espai, per penjar-lo a la recepció o a la sala.",
+    "routes_title": "Troba la ruta de cada espai",
+    "routes_intro": "Cada espai afí té la seva ruta, que surt de la seva porta. Al mapa, els espais promotors del projecte (L'Espiral del Prat, L'Espiral d'Osona i Elara Social) surten marcats com a **projectes promotors**, diferents dels espais afins externs. Es pot cercar la ruta més propera escrivint una adreça.",
+    "map_url": "",
+    "map_btn": "Veure el mapa d'espais afins",
+    "limits_title": "Sense compromís",
+    "limits": [
+      "No hi ha **cap conveni, quota ni exclusivitat**: els cursos i les rutes són públics i gratuïts.",
+      "L'espai **no gestiona inscripcions ni acompanya les rutes**. L'activitat l'ofereixen L'Espiral i Elara Social, i cada espai continua sent independent.",
+      "**No avalem ni certifiquem ningú**: només reconeixem una afinitat de valors. No hi ha cap segell, ni vol dir que l'espai compleixi cap criteri oficial.",
+      "El nom i l'adreça de l'espai surten com a punt de sortida de la ruta, **només si l'espai ho confirma** i és un local obert al públic.",
+      "Els cursos no substitueixen l'atenció clínica ni un tractament mèdic o psicològic."
+    ],
+    "safety_html": "Si una persona està passant un moment molt difícil, l'atenció continua sent la del seu centre de salut o servei de referència. Si pensa en fer-se mal, pot trucar al <a href=\"tel:024\">024</a>. En una emergència, al <a href=\"tel:112\">112</a>.",
+    "join_title": "Un espai afí? Sumar-s'hi",
+    "join_intro": "Aquesta pàgina és per a espais que comparteixen tres àmbits de treball:",
+    "join": [
+      "**Salut mental comunitària.**",
+      "**Economia social i solidària.**",
+      "**Acció climàtica i cultura del bé comú.**"
+    ],
+    "join_end": "Si un espai s'hi reconeix, ens pot escriure i li preparem la ruta des de la seva porta. **Només surt al mapa qui ho confirma.** Dos projectes poden ser independents, sense formar cap associació ni empresa conjunta, i compartir una mirada comuna.",
+    "contact_title": "Parlem?",
+    "contact_html": "Si un espai vol tenir ruta, o que presentem el recurs a l'equip, pot escriure'ns."
   }
 }

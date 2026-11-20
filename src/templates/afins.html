@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% from "parts.html" import page_head, safety, nearby %}
+{# Pàgina per a entitats i espais afins (/entitats-i-espais-afins/), 20 de novembre de 2026. Esquelet de prat.html. Textos a data/site.json › afins_page. #}
+{% block content %}
+{{ page_head(pp.kicker, pp.title, pp.lead|hl) }}
+
+<div class="wrap wrap--mid stack stack--bottom health">
+  <section id="recurs" aria-labelledby="h-res">
+    <h2 class="health__h2" id="h-res">{{ pp.res_title }}</h2>
+    <p>{{ pp.res_intro|hl }}</p>
+    <ul class="checks">{% for i in pp.res %}<li>{{ icon('check') }}<span>{{ i|hl }}</span></li>{% endfor %}</ul>
+    <p>{{ pp.res_end|hl }}</p>
+  </section>
+
+  <section class="panel" id="que-es" aria-labelledby="h-what">
+    <h2 class="health__h2" id="h-what">{{ pp.what_title }}</h2>
+    {% for p in pp.what %}<p>{{ p|hl }}</p>{% endfor %}
+    <p class="health__more"><a class="btn btn--primary" href="{{ root }}cursos/">{{ pp.courses_btn }}</a></p>
+  </section>
+
+  <section class="panel" id="com-donar-ho-a-coneixer" aria-labelledby="h-share">
+    <h2 class="health__h2" id="h-share">{{ pp.share_title }}</h2>
+    <p>{{ pp.share_intro|hl }}</p>
+    <blockquote class="health__quote">{{ pp.share_text }}</blockquote>
+    <p>{{ pp.share_extra|hl }}</p>
+  </section>
+
+  <section class="panel panel--plain" id="rutes-dels-espais" aria-labelledby="h-routes">
+    <h2 class="health__h2" id="h-routes">{{ pp.routes_title }}</h2>
+    <p>{{ pp.routes_intro|hl }}</p>
+    {% if pp.map_url %}<p class="health__more"><a class="btn btn--primary" href="{{ pp.map_url }}">{{ pp.map_btn }}</a></p>{% endif %}
+    {{ nearby(site.nearby, root) }}
+  </section>
+
+  <section class="panel" id="sense-compromis" aria-labelledby="h-limits">
+    <h2 class="health__h2" id="h-limits">{{ pp.limits_title }}</h2>
+    <ul class="checks">{% for i in pp.limits %}<li>{{ icon('check') }}<span>{{ i|hl|elara }}</span></li>{% endfor %}</ul>
+  </section>
+
+  {{ safety(pp.safety_html) }}
+
+  <section class="panel panel--plain" id="sumar-s-hi" aria-labelledby="h-join">
+    <h2 class="health__h2" id="h-join">{{ pp.join_title }}</h2>
+    <p>{{ pp.join_intro|hl }}</p>
+    <ul class="checks">{% for i in pp.join %}<li>{{ icon('check') }}<span>{{ i|hl }}</span></li>{% endfor %}</ul>
+    <p>{{ pp.join_end|hl }}</p>
+    <p class="health__more"><a class="btn btn--primary" href="mailto:{{ site.contact.email }}">{{ icon('mail') }}Escriu-nos</a></p>
+  </section>
+
+  <section class="contact-box" id="contacte" aria-labelledby="h-contact">
+    <h2 id="h-contact">{{ pp.contact_title }}</h2>
+    <p>{{ pp.contact_html }}</p>
+    <p class="contact-box__links">
+      <a class="btn btn--primary" href="mailto:{{ site.contact.email }}">{{ icon('mail') }}Escriu-nos</a>
+      <a class="btn btn--outline" href="{{ site.contact.instagram_url }}">{{ icon('instagram') }}{{ site.contact.instagram }}</a>
+    </p>
+  </section>
+</div>
+{% endblock %}
