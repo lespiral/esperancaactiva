@@ -53,7 +53,7 @@
     <p class="jump__h">Tria el teu curs</p>
     <ul>
       {% for b in city.blocks %}
-      <li><a href="#{{ b.course.anchor }}">{{ icon(b.course.icon) }}<span><strong>{{ b.course.title }}</strong>{% if city.tele %}<small>{{ b.course.use }}</small><small>{{ b.tele }}</small>{% else %}<small>{{ b.summary }}</small>{% endif %}</span></a></li>
+      <li><a href="#{{ b.course.anchor }}">{{ icon(b.course.icon) }}<span><strong>{{ b.course.title }}</strong>{% if city.tele %}<small>{{ b.course.subtitle }}</small><small>{{ b.tele }}</small>{% else %}<small>{{ b.summary }}</small>{% endif %}</span></a></li>
       {% endfor %}
     </ul>
   </nav>
@@ -121,6 +121,7 @@
     {% if p.title %}
     <div class="part" id="{{ p.id }}">
       <h3 class="part__title">{{ p.title }}</h3>
+      {% if p.tele is string %}<p><strong>{{ p.tele }}</strong></p>{% endif %}
       {% if p.text %}<p>{{ p.text }}</p>{% endif %}
       {% if p.notice_pafes %}
       <aside class="note note--care note--part" aria-label="{{ p.notice_pafes.title }}">

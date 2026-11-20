@@ -241,6 +241,8 @@ for c in site["cities"] + site.get("territories", []) + site.get("subpages", [])
         for i, p in enumerate(parts):
             assert i == 0 or p.get("id") and p.get("title"), "cada part, a partir de la segona, necessita id i title"
             p["count"] = process_groups(p["groups"], course)
+            if p.get("tele") is True and p["count"]:
+                p["tele"] = telegraph(p["groups"])
             total += p["count"]
             for nk in ("notice", "notice_pafes"):
                 if p.get(nk):

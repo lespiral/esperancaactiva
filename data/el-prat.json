@@ -106,7 +106,7 @@
           "id": "equipaments",
           "title": "Rutes des dels equipaments municipals",
           "nav": "Rutes des dels equipaments municipals",
-          "text": "7 rutes des dels equipaments municipals. Cada ruta comença i acaba en un equipament on pots descobrir activitats i recursos de la comunitat.",
+          "text": "Surten d'espais on la gent es troba, s'acompanya i es dona suport, o on es crea comunitat. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
           "groups": [
             {
               "title": "Les 7 rutes",
@@ -177,13 +177,14 @@
                 }
               ]
             }
-          ]
+          ],
+          "tele": true
         },
         {
           "id": "tercer-sector",
           "title": "Rutes des d'entitats del Tercer Sector Social",
           "nav": "Entitats del Tercer Sector Social",
-          "text": "13 rutes circulars, de 3,7 a 4,6 km (uns 45–70 minuts caminant). Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
+          "text": "Surten d'entitats del Tercer Sector Social: espais on les persones s'acompanyen, es donen suport i fan comunitat. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
           "notice": {
             "title": "Traçats orientatius",
             "html": [
@@ -337,7 +338,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tele": true
         }
       ]
     },

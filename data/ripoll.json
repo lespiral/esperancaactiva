@@ -101,7 +101,7 @@
           "id": "tercer-sector",
           "title": "Rutes des d'entitats del Tercer Sector Social",
           "nav": "Entitats del Tercer Sector Social",
-          "text": "6 rutes circulars, de 2,4 a 2,6 km (uns 30–40 minuts caminant), que surten d'una entitat del Tercer Sector Social de Ripoll i hi tornen: una ruta per entitat. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
+          "text": "Surten d'entitats del Tercer Sector Social: espais on les persones s'acompanyen, es donen suport i fan comunitat. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
           "notice": {
             "title": "Traçats orientatius",
             "html": [
@@ -180,13 +180,14 @@
                 }
               ]
             }
-          ]
+          ],
+          "tele": true
         },
         {
           "id": "biblioteques-i-centres",
           "title": "Rutes des de biblioteques i centres cívics i culturals",
           "nav": "Biblioteques i centres",
-          "text": "3 rutes circulars, de 1,21 a 1,43 km (de 15 a 21 minuts caminant), que surten d'una biblioteca o d'un centre cívic i cultural de Ripoll i hi tornen: una ruta per equipament. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'equipament que et quedi més a prop i camina-hi amb calma.",
+          "text": "Surten de biblioteques i centres cívics: espais públics de trobada, cultura i vida de barri. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
           "notice": {
             "title": "Traçats orientatius",
             "html": [
@@ -238,7 +239,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tele": true
         }
       ]
     }
