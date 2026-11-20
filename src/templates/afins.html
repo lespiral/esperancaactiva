@@ -60,8 +60,8 @@
       <figcaption><a href="{{ pp.map_url }}" target="_blank" rel="noopener">{{ icon('external') }}{{ pp.map_btn }}</a> &nbsp;·&nbsp; <a href="{{ pp.routes_map_url }}" target="_blank" rel="noopener">{{ icon('map') }}{{ pp.routes_map_btn }}</a></figcaption>
     </figure>
     {% endif %}
-    <h3 class="health__sub">{{ pp.espais_title }}</h3>
-    <div class="routes">
+    <details class="routes" id="les-rutes">
+      <summary><span><strong>{{ pp.espais_title }}</strong><small>{{ pp.espais|length }} rutes</small></span>{{ icon('caret', 'faq__caret') }}</summary>
       <ol class="routes__list">
         {% for e in pp.espais %}
         <li class="route" id="{{ e.id }}">
@@ -83,7 +83,7 @@
         </li>
         {% endfor %}
       </ol>
-    </div>
+    </details>
     <p class="health__more">{{ pp.espais_note }}</p>
   </section>
 
