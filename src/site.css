@@ -614,3 +614,12 @@ strong.mk { color: var(--green-900); font-weight: 700; background: linear-gradie
 .callout .i { flex: none; width: 28px; height: 28px; color: var(--sun); }
 .callout strong, .callout strong.mk { color: var(--sun); background: none; }
 @media (max-width: 640px) { .feat { grid-template-columns: 1fr; } }
+
+/* Capçalera verda (com la portada), per a la pàgina d'espais afins */
+.pagehead--green { position: relative; overflow: hidden; background: var(--green-800); color: #fff; padding-bottom: clamp(44px, 7vw, 72px); margin-bottom: clamp(28px, 5vw, 48px); }
+.pagehead--green::before { content: ""; position: absolute; inset: auto -10% -60% -10%; height: 90%; background: radial-gradient(closest-side, rgba(226, 198, 104, .28), rgba(226, 198, 104, 0)); pointer-events: none; }
+.pagehead--green::after { content: ""; position: absolute; inset: 0; background: radial-gradient(60% 80% at 85% 0%, rgba(255, 255, 255, .07), transparent 70%); pointer-events: none; }
+.pagehead--green .wrap { position: relative; z-index: 1; }
+.pagehead--green h1 { color: #fff; }
+.pagehead--green .lead { color: #e7efeb; }
+.pagehead--green strong.mk, .pagehead--green .lead strong { color: var(--sun); background: none; }
