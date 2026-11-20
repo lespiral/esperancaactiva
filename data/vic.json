@@ -155,7 +155,7 @@
           "id": "equipaments",
           "title": "Rutes des dels equipaments comunitaris",
           "nav": "Rutes des dels equipaments comunitaris",
-          "text": "16 rutes circulars curtes, d'1,8 a 2 km (uns 20–30 minuts caminant). Tria el que tinguis més a prop i fes-hi el temps de reflexió de cada passa. Al mapa, cada ruta té la seva fitxa amb el recorregut.",
+          "text": "Surten d'espais on la gent es troba, s'acompanya i es dona suport, o on es crea comunitat. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
           "groups": [
             {
               "title": "Les 16 rutes",
@@ -321,13 +321,14 @@
                 }
               ]
             }
-          ]
+          ],
+          "tele": true
         },
         {
           "id": "tercer-sector",
           "title": "Rutes des d'entitats del Tercer Sector Social",
           "nav": "Entitats del Tercer Sector Social",
-          "text": "19 rutes circulars, de 3,7 a 4,2 km (uns 45–65 minuts caminant). Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria l'entitat que et quedi més a prop i camina-hi amb calma.",
+          "text": "Surten d'entitats del Tercer Sector Social: espais on les persones s'acompanyen, es donen suport i fan comunitat. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
           "notice": {
             "title": "Traçats orientatius",
             "html": [
@@ -543,13 +544,14 @@
                 }
               ]
             }
-          ]
+          ],
+          "tele": true
         },
         {
           "id": "biblioteques-i-centres",
           "title": "Rutes des de biblioteques i centres cívics i culturals",
           "nav": "Biblioteques i centres",
-          "text": "1 ruta circular d'1,24 km (de 15 a 19 minuts caminant), que surt d'un centre cívic i cultural de Vic i hi torna. És un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Camina-hi amb calma.",
+          "text": "Surten de biblioteques i centres cívics: espais públics de trobada, cultura i vida de barri. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
           "notice": {
             "title": "Traçats orientatius",
             "html": [
@@ -582,7 +584,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "tele": true
         }
       ]
     },
