@@ -75,6 +75,7 @@
     <p>{{ b.course.use }}</p>
     <p><strong>{{ b.tele }}</strong></p>
     {% set gen = b.course.origin_generic_walks if (b.walks and b.course.origin_generic_walks) else b.course.origin_generic %}<p>{{ gen }} {{ cc.origin_tail }}</p>
+    <p><small>{{ cc.origin_note }}</small></p>
     {% if b.credit %}<p><small>{{ b.credit }}</small></p>{% endif %}
     {% else %}<p>{{ b.text }}</p>{% endif %}
     <p class="block__actions">
