@@ -14,7 +14,7 @@
 <link rel="icon" type="image/png" sizes="48x48" href="../assets/img/favicon-48.png"><link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@600;700&display=swap">
-  <link rel="stylesheet" href="../assets/site.css?v=1795188301">
+  <link rel="stylesheet" href="../assets/site.css?v=1795188738">
 </head>
 <body>
   <a class="skip" href="#contingut">Salta al contingut</a>
@@ -41,16 +41,16 @@
   <main id="contingut">
 <section class="pagehead pagehead--center">
   <div class="wrap">
-<p class="kicker">Per a entitats i equipaments del Prat</p>    <h1>Un recurs comunitari per a la teva entitat o equipament</h1>
+<p class="kicker">Per a entitats i equipaments del Prat</p>    <h1>Un recurs comunitari per a entitats i equipaments</h1>
 <p class="lead">Cursos en línia <strong class="mk">gratuïts</strong> i rutes a peu pel Prat que surten de les entitats i els equipaments de la ciutat. Una opció més per <strong class="mk">orientar</strong> les persones que viuen incertesa, soledat o malestar.</p>  </div>
 </section>
 
 <div class="wrap wrap--mid stack stack--bottom health">
   <section id="com-funciona" aria-labelledby="h-how">
-    <h2 class="health__h2" id="h-how">Com pot arribar a la teva entitat</h2>
-    <p>La teva entitat no ha d&#39;organitzar res: només <strong class="mk">orientar</strong>. La resta ho fa cada persona al seu ritme.</p>
+    <h2 class="health__h2" id="h-how">Com pot arribar a l&#39;entitat</h2>
+    <p>L&#39;entitat no ha d&#39;organitzar res: només <strong class="mk">orientar</strong>. La resta ho fa cada persona al seu ritme.</p>
     <div class="infografia infografia--in"><div class="volta" data-volta>
-  <div class="volta__scene" role="group" aria-label="Com funciona: practica, tria una ruta, camina i porta-ho al dia a dia; i torna a començar a cada passa">
+  <div class="volta__scene" role="group" aria-label="Com funciona: la persona fa la pràctica, tria una ruta des d'una entitat, camina i s'ho porta al dia a dia; i torna a començar a cada passa">
     <svg class="volta__svg" aria-hidden="true" focusable="false"></svg>
     <div class="volta__nodes"></div>
     <div class="volta__pop" aria-live="polite"><p class="volta__pk"></p><p class="volta__pt"></p><p class="volta__px"></p></div>
@@ -213,18 +213,18 @@
 
   /* ---------- TEXTOS (els de la web; es poden canviar aquí) ---------- */
   var STEPS = [
-    { scene: "escolta", title: "Fes la pràctica", sub: "Àudio o vídeo, abans de sortir",
-      text: "Escolta l'àudio o mira el vídeo de la passa abans de sortir." },
-    { scene: "mapa", title: "Tria una ruta", sub: "La que s'adapti al teu temps",
-      text: "Mira el mapa de la teva ciutat, poble o comarca i escull la que s'adapti al teu temps. A cada passa, la mateixa o una altra." },
-    { scene: "camina", title: "Camina i observa", sub: "Al teu ritme",
-      text: "Deixa que la pràctica t'acompanyi, al teu ritme i sense buscar respostes ràpides." },
-    { scene: "porta", title: "Porta-ho al dia a dia", sub: "Un petit pas possible",
-      text: "Pensa què t'emportes: una mirada nova, una necessitat o un petit pas possible." }
+    { scene: "escolta", title: "Fa la pràctica", sub: "Àudio o vídeo, abans de sortir",
+      text: "La persona escolta l'àudio o mira el vídeo de la passa abans de sortir." },
+    { scene: "mapa", title: "Tria una ruta des d'una entitat", sub: "Segons el seu temps",
+      text: "Mira el mapa del Prat i escull una ruta que surt d'una entitat o d'un equipament de la ciutat: la que s'adapti al seu temps. A cada passa, la mateixa o una altra." },
+    { scene: "camina", title: "Camina i observa", sub: "Al seu ritme",
+      text: "Deixa que la pràctica l'acompanyi, al seu ritme i sense buscar respostes ràpides. L'entitat només és el punt de sortida: no organitza la ruta." },
+    { scene: "porta", title: "Ho porta al dia a dia", sub: "Un petit pas possible",
+      text: "Pensa què se'n porta: una mirada nova, una necessitat o un petit pas possible." }
   ];
   var BACK = { title: "I torna a començar", sub: "Cada passa, una volta: per la mateixa ruta o per una altra",
     kick: "Cada curs, 7 passes",
-    text: "Cada passa del curs fa aquesta volta. Pots caminar sempre la mateixa ruta o triar-ne una altra dels mapes de Camins d'Esperança [Activa]." };
+    text: "Cada passa del curs fa aquesta volta. La persona pot caminar sempre la mateixa ruta o triar-ne una altra dels mapes de Camins d'Esperança [Activa]. L'entitat només la proposa una vegada." };
   var KICK = "Com funciona · ";
 
   function route(i, d, x, y) {
@@ -236,9 +236,10 @@
       '<path class="vt-phones" d="M21 33a11 12 0 0 1 22 0"/><rect class="vt-cup" x="18.5" y="30" width="6" height="10" rx="3"/><rect class="vt-cup" x="39.5" y="30" width="6" height="10" rx="3"/>' +
       '<path class="vt-wave" d="M13 30a9 9 0 0 0 0 11M51 30a9 9 0 0 1 0 11"/><path class="vt-wave" d="M8.5 26.5a14 14 0 0 0 0 18M55.5 26.5a14 14 0 0 1 0 18"/>',
     mapa: '<path class="vt-panel" d="M10 19l14-5v35l-14 5z"/><path class="vt-panel vt-panel--b" d="M24 14l16 5v35l-16-5z"/><path class="vt-panel" d="M40 19l14-5v35l-14 5z"/>' +
-      route(0, "M15 46c5-7 10-1 15-8s7-11 12-12 6-2 7-4", 49, 23) +
-      route(1, "M14 22c7 1 9 9 15 11s10 3 12 9 3 7 6 9", 47, 51) +
-      route(2, "M44 47c-6-3-6-10-12-12s-8-6-9-12-3-5-5-7", 18, 17),
+      route(0, "M32 38c3-6 10-4 13-9s3-6 4-9", 49, 21) +
+      route(1, "M31 38c-4-5-11-3-14-8s-1-6-1-9", 16, 21) +
+      route(2, "M39 46c5-2 9-1 12-5", 51, 41) +
+      '<rect class="vt-glass" x="25" y="41" width="14" height="13"/><path class="vt-frame" d="M22 41l10-8 10 8M25 41v13h14V41"/><rect class="vt-sill" x="29" y="46" width="6" height="8" rx="1"/>',
     camina: '<path class="vt-hill" d="M0 40C14 34 30 36 40 39S58 40 64 37V64H0Z"/>' +
       '<path class="vt-trail" d="M30 66C24 56 40 50 33 43S29 36 34 33"/>' +
       '<line class="vt-trunk" x1="14" y1="44" x2="14" y2="36"/><circle class="vt-tree" cx="14" cy="32" r="6"/>' +
@@ -521,10 +522,10 @@
   </section>
 
   <section id="un-cami" aria-labelledby="h-nus">
-    <h2 class="health__h2" id="h-nus">Un camí que passa per la teva entitat</h2>
+    <h2 class="health__h2" id="h-nus">Un camí que passa per l&#39;entitat</h2>
     <p>Moltes persones arriben a una entitat, a un casal o a un servei amb dolor, incertesa o cansament. Allà reben un <strong class="mk">recurs</strong> i, amb ell, aquest malestar pot transformar-se en <strong class="mk">claredat, suport i una acció possible</strong>, sostinguts per la comunitat.</p>
     <div class="infografia infografia--in"><div class="nus" data-nus>
-  <div class="nus__scene" role="group" aria-label="El dolor i la incertesa es transformen en claredat, suport i acció significativa, sostinguda per la comunitat">
+  <div class="nus__scene" role="group" aria-label="El dolor i la incertesa arriben a l'entitat; allà, amb el Treball que Reconnecta, es transformen en claredat, suport i acció significativa, i s'obre un camí cap a l'Esperança Activa, sostinguda per la comunitat">
     <svg class="nus__svg" aria-hidden="true" focusable="false"></svg>
     <div class="nus__nodes"></div>
     <div class="nus__pop" aria-live="polite"><p class="nus__pk"></p><p class="nus__pt"></p><p class="nus__px"></p></div>
@@ -572,8 +573,30 @@
 .nus__tag--pain.nus--r { transform: translate(0, -50%); }
 .nus__tag--pain.nus--b { transform: translate(-50%, 0); max-width: 250px; }
 .nus__tag--pain.nus--c { transform: translate(-50%, -50%); }
+.nus__tag--pain.nus--a { transform: translate(-50%, -100%); max-width: 250px; }
 .nus__tag--pain.nus--t { transform: translate(-50%, 0); max-width: 290px; }
 .nus__pl { display: block; }
+/* Centre de salut (adaptació 18/11/2026): gris fins que hi arriben els fils, i després en color */
+.nus__hcbtn { position: absolute; left: 0; top: 0; transform: translate(-50%, -50%); padding: 0 0 25% 0; border: 0; border-radius: 50%; background: transparent; cursor: pointer; -webkit-appearance: none; appearance: none; display: flex; align-items: flex-end; justify-content: center; text-align: center; font-family: var(--fh); font-weight: 700; line-height: 1.15; color: var(--cmuted); transition: color .6s; }
+.nus__hcbtn.is-on { color: var(--c9); }
+.nus__hcbtn.is-sel span { text-decoration: underline; text-decoration-color: var(--cs); text-decoration-thickness: 3px; text-underline-offset: 3px; }
+.nus__hcbtn:focus { outline: none; }
+.nus__hcbtn:focus-visible { outline: 3px solid var(--c7); outline-offset: 2px; }
+/* «se transforman en…»: quadre sobre el tros de trena que surt del centre */
+.nus__saytag { position: absolute; left: 0; top: 0; transform: translate(-50%, -50%); width: max-content; padding: 5px 12px 6px; border-radius: 999px; border: 2px solid #2e7561; background: #fff; color: var(--c6); opacity: 0; transition: opacity .5s; pointer-events: none; }
+.nus.is-say .nus__saytag { opacity: 1; }
+.nus__say-in2 { display: flex; align-items: center; gap: .35em; font: italic 700 clamp(13.5px, calc(var(--sw, 1000px) * .0165), 15.5px)/1.25 var(--fb); white-space: nowrap; }
+.nus__say-in2 svg { flex: none; width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.hc-ring { fill: #fff; stroke: #c9d2ce; transition: stroke .8s; }
+.hc-body { fill: #e3e7e5; transition: fill .8s; }
+.hc-line { fill: none; stroke: #8e9b95; stroke-width: 2.4; stroke-linejoin: round; transition: stroke .8s; }
+.hc-cross { fill: #a3afa9; transition: fill .8s; }
+.hc-door { fill: #8e9b95; transition: fill .8s; }
+.nus__hc.is-on .hc-ring { stroke: #e2c668; }
+.nus__hc.is-on .hc-body { fill: #f8e8b8; }
+.nus__hc.is-on .hc-line, .nus__hc.is-on .hc-door { stroke: #1a4d40; fill-opacity: 1; }
+.nus__hc.is-on .hc-door { fill: #1a4d40; stroke: none; }
+.nus__hc.is-on .hc-cross { fill: #2e7561; }
 /* «es transformen en…»: surt sola al cap d'uns segons, sota «El dolor i la incertesa» */
 .nus__say { display: grid; grid-template-rows: 0fr; opacity: 0; transition: grid-template-rows .6s ease, opacity .5s .2s, margin-top .6s; }
 .nus__say-in { min-height: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; gap: .35em; color: var(--c6); font-family: var(--fb); font-style: italic; font-weight: 700; font-size: 1.04em; white-space: nowrap; }
@@ -643,18 +666,20 @@
   var PAIN = { label: "El dolor i la incertesa", say: "es transformen en", kick: "On comences", title: "El dolor i la incertesa", text: "Què em pesa? Què necessita ser escoltat?" };
   // Els fils no porten avantítol al globus: «es transformen en…» ja surt al quadre de dalt
   var THREADS = [
-    { label: "Claredat", col: "#e2c668", kick: "", title: "Claredat", text: "Què em passa? Què necessito? Quina direcció vull prendre?" },
+    { label: "Claredat", col: "#e2c668", kick: "", title: "Claredat", text: "Què em passa? Què necessito?" },
     { label: "Suport", col: "#2e7561", kick: "", title: "Suport", text: "Quines persones, llocs o recursos m'ajuden?" },
     { label: "Acció", col: "#1a4d40", kick: "", title: "Acció significativa", text: "Quina acció petita, concreta i realista puc fer ara?" }
   ];
+  var HC = { kick: "Aquí es transforma", title: "Una entitat amb el Treball que Reconnecta", label: "Treball que Reconnecta", say: "es transformen en",
+    text: "La persona arriba amb dolor i incertesa. A l'entitat pot trobar un recurs comunitari i, a partir d'aquí, claredat, suport i una acció possible. L'entitat no ha d'organitzar res: només orientar." };
   var CENTER = { title: "Esperança Activa", sub: "sostinguda per la comunitat", kick: "Què vol dir «esperança activa»?",
     text: "És el que proposa aquest curs: transformar el dolor i la incertesa en claredat, suport i acció significativa, sostinguda per la comunitat." };
 
   /* ---------- RITME (ms) ----------
      El nus tremola (dolor) → surt «es transformen en…» → el nus es desembolica →
      en surten els tres fils → la corda → les persones → Esperança Activa. */
-  var T = { say: 800, loose0: 1100, loose1: 2700, threads0: 2000, threads1: 3400, fade0: 2400, fade1: 3600,
-            braid0: 3400, braid1: 4900, figs0: 4800, figStep: 150, center: 6000, end: 6700 };
+  var T = { travel0: 900, travel1: 2100, hc: 2100, b1a: 2300, b1b: 3100, say: 2700, threads0: 3100, threads1: 4400,
+            braid0: 4300, braid1: 5700, figs0: 5600, figStep: 150, center: 6800, end: 7500 };
   var TALL = 720;
 
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -690,22 +715,38 @@
   function geometry(W) {
     var g = { W: W, tall: W < TALL }, H;
     if (!g.tall) {
-      // Ordinador: d'esquerra a dreta
-      H = Math.round(clamp(W * .37, 350, 430));
-      g.K = [W * .11, H * .5]; g.rk = clamp(W * .045, 36, 52);
-      g.B0 = [W * .44, H * .5]; g.R = Math.round(Math.min(H * .25, W * .1)); g.E = [W * .62, H * .5]; g.C = [g.E[0] + g.R, H * .5];
-      g.dir = [1, 0]; g.spread = [0, H * .3]; g.entry = Math.PI;
-      g.painLab = { x: g.K[0], y: g.K[1] + g.rk + 18, cls: "nus--b" };
+      // Ordinador: nus → centre de salut → tros de trena → tres fils → corda → persones
+      H = Math.round(clamp(W * .4, 380, 440));
+      g.K = [W * .075, H * .5]; g.rk = clamp(W * .045, 36, 52);
+      g.hcs = Math.round(clamp(W * .11, 84, 92)); g.HC = [W * .245, H * .5];
+      var rr = g.hcs * .68;
+      g.S = [W * .526, H * .5]; g.B0 = [W * .68, H * .5];
+      g.R = Math.round(Math.min(H * .24, W * .095)); g.E = [W * .72, H * .5]; g.C = [g.E[0] + g.R, H * .5];
+      g.dir = [1, 0]; g.spread = [0, H * .22]; g.entry = Math.PI; g.tagT = .5;
+      g.painLab = { x: (g.K[0] + g.HC[0]) / 2, y: g.K[1] - g.rk - 24, cls: "nus--a" };
+      g.say = [(g.HC[0] + rr + g.S[0]) / 2, H * .5];
     } else {
       // Mòbil: de dalt a baix
-      // El quadre de dalt queda ancorat per dalt (té dues línies) i el nus baixa 16 px
-      g.K = [W * .5, 116]; g.rk = 36;
-      g.B0 = [W * .5, 330]; g.R = Math.round(Math.min(W * .25, 95)); g.E = [W * .5, 392]; g.C = [W * .5, 392 + g.R];
-      g.dir = [0, 1]; g.spread = [W * .34, 0]; g.entry = -Math.PI / 2;
+      g.K = [W * .5, 100]; g.rk = 36;
+      g.hcs = 84; g.HC = [W * .5, 244];
+      var rr = g.hcs * .68;
+      g.S = [W * .5, 244 + rr + 80]; g.B0 = [W * .5, 244 + rr + 80 + 124];
+      g.R = Math.round(Math.min(W * .25, 95)); g.E = [W * .5, g.B0[1] + 50]; g.C = [W * .5, g.E[1] + g.R];
+      g.dir = [0, 1]; g.spread = [W * .34, 0]; g.entry = -Math.PI / 2; g.tagT = .55;
       g.painLab = { x: g.K[0], y: 12, cls: "nus--t" };
+      g.say = [W * .5, (244 + rr + g.S[1]) / 2];
       H = Math.round(g.C[1] + g.R + 64);
     }
-    g.H = H;
+    g.H = H; g.hc = g.HC; g.rr = rr;
+    // El camí del nus fins al centre de salut (puntejat, amb una punta de fletxa)
+    var rc = rr + 5;
+    if (!g.tall) {
+      var x0 = g.K[0] + g.rk + 4, x1 = g.HC[0] - rc;
+      g.route = "M" + r1(x0) + "," + r1(g.K[1]) + "H" + r1(x1) + "M" + r1(x1 - 8) + "," + r1(g.K[1] - 7) + "L" + r1(x1) + "," + r1(g.K[1]) + "L" + r1(x1 - 8) + "," + r1(g.K[1] + 7);
+    } else {
+      var y0 = g.K[1] + g.rk + 10, y1 = g.HC[1] - rc;
+      g.route = "M" + r1(g.K[0]) + "," + r1(y0) + "V" + r1(y1) + "M" + r1(g.K[0] - 7) + "," + r1(y1 - 8) + "L" + r1(g.K[0]) + "," + r1(y1) + "L" + r1(g.K[0] + 7) + "," + r1(y1 - 8);
+    }
     // El nus: dues línies embolicades (a0, r0). Cada punt sap on ha d'anar quan es desembolica (a1, r1):
     // una anella tranquil·la, amb els punts en ordre al voltant del centre.
     function loose(n, i, a0, r0, ph) {
@@ -719,10 +760,10 @@
     for (var j = 0; j < 11; j++) g.kQ.push(loose(11, j, j * 2.6 + .7, g.rk * (.3 + .5 * rnd()), .3));
     // Tres fils que surten del nus i s'ajunten
     g.threads = [-1, 0, 1].map(function (o, i) {
-      var p0 = g.K, p3 = g.B0, L = [p3[0] - p0[0], p3[1] - p0[1]];
+      var p0 = g.S, p3 = g.B0, L = [p3[0] - p0[0], p3[1] - p0[1]];
       var c1 = [p0[0] + L[0] * .3 + g.spread[0] * o, p0[1] + L[1] * .3 + g.spread[1] * o];
       var c2 = [p0[0] + L[0] * .72 + g.spread[0] * o, p0[1] + L[1] * .72 + g.spread[1] * o];
-      var mid = bez(p0, c1, c2, p3, .52);
+      var mid = bez(p0, c1, c2, p3, g.tagT);
       return { d: "M" + r1(p0[0]) + "," + r1(p0[1]) + "C" + r1(c1[0]) + "," + r1(c1[1]) + " " + r1(c2[0]) + "," + r1(c2[1]) + " " + r1(p3[0]) + "," + r1(p3[1]), mid: mid };
     });
     // La corda: tres fils trenats, des de la unió fins a l'anell, i l'anell sencer
@@ -737,6 +778,16 @@
     var A = g.tall ? 5 : 6, lam = g.tall ? 40 : 48;
     g.strands = [0, 1, 2].map(function (k) {
       var ph = k * 2 * Math.PI / 3, pts = cl.map(function (c, i) {
+        var o = A * Math.sin(2 * Math.PI * (i * step) / lam + ph);
+        return r1(c[0] + c[2] * o) + "," + r1(c[1] + c[3] * o);
+      });
+      return "M" + pts.join("L");
+    });
+    // El tros de trena que surt del centre de salut (de la seva porta fins on es separen els tres fils)
+    var cl1 = [], dx1 = g.S[0] - g.HC[0], dy1 = g.S[1] - g.HC[1], len1 = Math.sqrt(dx1 * dx1 + dy1 * dy1);
+    for (s = 0; s < len1; s += step) cl1.push([g.HC[0] + dx1 * s / len1, g.HC[1] + dy1 * s / len1, dy1 / len1 * -1, dx1 / len1]);
+    g.strands1 = [0, 1, 2].map(function (k) {
+      var ph = k * 2 * Math.PI / 3, pts = cl1.map(function (c, i) {
         var o = A * Math.sin(2 * Math.PI * (i * step) / lam + ph);
         return r1(c[0] + c[2] * o) + "," + r1(c[1] + c[3] * o);
       });
@@ -764,15 +815,25 @@
       '<radialGradient id="nus-glow"><stop offset="0" stop-color="#f1e3b0" stop-opacity=".9"/><stop offset=".55" stop-color="#f8efd2" stop-opacity=".45"/><stop offset="1" stop-color="#fcf8ea" stop-opacity="0"/></radialGradient></defs>',
       '<rect width="' + W + '" height="' + H + '" fill="url(#nus-bg)"/>',
       '<circle class="nus__glow" cx="' + r1(G.C[0]) + '" cy="' + r1(G.C[1]) + '" r="' + r1(G.R * 2.2) + '" fill="url(#nus-glow)"/>',
+      '<path class="nus__route" d="' + G.route + '" fill="none" stroke="#a3afa9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 8"/>',
       '<g class="nus__knot" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="#7f8b86" stroke-width="3"/><path stroke="#a3afa9" stroke-width="2.2"/></g>'
     );
     G.threads.forEach(function (t, i) {
       out.push('<path class="nus__thread" d="' + t.d + '" pathLength="1" fill="none" stroke="' + THREADS[i].col + '" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="1 1" stroke-dashoffset="1"/>');
     });
+    G.strands1.forEach(function (d, i) {
+      out.push('<path class="nus__strand nus__b1" d="' + d + '" pathLength="1" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 1" stroke-dashoffset="1"/>' +
+        '<path class="nus__strand nus__b1" d="' + d + '" pathLength="1" fill="none" stroke="' + THREADS[i].col + '" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 1" stroke-dashoffset="1"/>');
+    });
     G.strands.forEach(function (d, i) {
       out.push('<path class="nus__strand" d="' + d + '" pathLength="1" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 1" stroke-dashoffset="1"/>' +
         '<path class="nus__strand" d="' + d + '" pathLength="1" fill="none" stroke="' + THREADS[i].col + '" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 1" stroke-dashoffset="1"/>');
     });
+    var rr = G.rr, ki = rr / 48;
+    out.push('<g class="nus__hc" transform="translate(' + r1(G.hc[0]) + ',' + r1(G.hc[1]) + ')"><circle class="hc-ring" r="' + r1(rr) + '" stroke-width="3"/>' +
+      '<g transform="translate(0 ' + r1(-rr * .34) + ') scale(' + r3(ki) + ') translate(-32 -32)"><rect class="hc-body" x="14" y="26" width="36" height="26" rx="2"/>' +
+      '<path class="hc-line" d="M10 28L32 11l22 17M14 28v24h36V28"/><path class="hc-cross" d="M32 35.5c-3.6-2.5-6-4.4-6-6.8a3.4 3.4 0 0 1 6-2.1 3.4 3.4 0 0 1 6 2.1c0 2.4-2.4 4.3-6 6.8z"/>' +
+      '<rect class="hc-door" x="28" y="42" width="8" height="10" rx="1"/></g></g>');
     var cols = ["#2e7561", "#22604f", "#c9a53c", "#1a4d40", "#2e7561", "#6f5711", "#22604f"], R = G.R, sc = G.tall ? .9 : 1;
     G.figs.forEach(function (th, i) {
       var deg = th * 180 / Math.PI + 90;
@@ -787,19 +848,23 @@
     var html = [];
     // La fletxa de «es transformen en…» apunta cap on van els fils: avall al mòbil, a la dreta a l'ordinador
     var arrow = G.tall ? "M12 4.5v15M6 13.5l6 6 6-6" : "M4.5 12h15M13.5 6l6 6-6 6";
-    html.push('<div class="nus__node" style="left:' + r1(G.painLab.x) + 'px;top:' + r1(G.painLab.y) + 'px"><button type="button" class="nus__tag nus__tag--pain ' + G.painLab.cls + '" data-k="pain">' +
-      '<span class="nus__pl">' + esc(PAIN.label) + '</span>' +
-      '<span class="nus__say"><span class="nus__say-in">' + esc(PAIN.say) + '…<svg viewBox="0 0 24 24" aria-hidden="true"><path d="' + arrow + '"/></svg></span></span></button></div>');
+    html.push('<div class="nus__node" style="left:' + r1(G.painLab.x) + 'px;top:' + r1(G.painLab.y) + 'px"><button type="button" class="nus__tag nus__tag--pain ' + G.painLab.cls + '" data-k="pain"><span class="nus__pl">' + esc(PAIN.label) + '</span></button></div>');
     G.threads.forEach(function (t, i) {
       html.push('<div class="nus__node" style="left:' + r1(t.mid[0]) + 'px;top:' + r1(t.mid[1]) + 'px"><button type="button" class="nus__tag" data-k="t' + i + '" style="--col:' + THREADS[i].col + '">' + esc(THREADS[i].label) + '</button></div>');
     });
     html.push('<div class="nus__node" style="left:' + r1(G.C[0]) + 'px;top:' + r1(G.C[1]) + 'px"><button type="button" class="nus__center" data-k="center"><b>' + esc(CENTER.title) + '</b><span>' + esc(CENTER.sub) + '</span></button></div>');
+    var hcArrow = G.tall ? "M12 4.5v15M6 13.5l6 6 6-6" : "M4.5 12h15M13.5 6l6 6-6 6";
+    html.push('<div class="nus__node" style="left:' + r1(G.hc[0]) + 'px;top:' + r1(G.hc[1]) + 'px"><button type="button" class="nus__hcbtn" data-k="hc" aria-label="' + esc(HC.title) + '" style="width:' + r1(G.rr * 2) + 'px;height:' + r1(G.rr * 2) + 'px;padding-bottom:' + r1(G.rr * .24) + 'px;font-size:' + r1(clamp(G.rr * .22, 11.5, 13.5)) + 'px"><span>Treball que<br>Reconnecta</span></button></div>');
+    html.push('<div class="nus__node" style="left:' + r1(G.say[0]) + 'px;top:' + r1(G.say[1]) + 'px"><div class="nus__saytag"><span class="nus__say-in2">' + esc(HC.say) + '…<svg viewBox="0 0 24 24" aria-hidden="true"><path d="' + hcArrow + '"/></svg></span></div></div>');
     nodesBox.innerHTML = html.join("");
 
+    G.hcEl = svg.querySelector(".nus__hc");
+    G.hcBtn = nodesBox.querySelector(".nus__hcbtn");
+    G.b1Els = Array.prototype.slice.call(svg.querySelectorAll(".nus__b1"));
     G.knotEl = svg.querySelector(".nus__knot");
     G.knotPaths = svg.querySelectorAll(".nus__knot path");
     G.threadEls = Array.prototype.slice.call(svg.querySelectorAll(".nus__thread"));
-    G.strandEls = Array.prototype.slice.call(svg.querySelectorAll(".nus__strand"));
+    G.strandEls = Array.prototype.slice.call(svg.querySelectorAll(".nus__strand:not(.nus__b1)"));
     G.figEls = Array.prototype.slice.call(svg.querySelectorAll(".nus__fig"));
     G.tags = Array.prototype.slice.call(nodesBox.querySelectorAll("[data-k^='t']"));
     G.center = nodesBox.querySelector(".nus__center");
@@ -820,10 +885,6 @@
     node.style.top = r1(G.painLab.y) + "px";
     var left = G.pain.getBoundingClientRect().left - sr.left;
     if (left < 12) node.style.left = r1(G.painLab.x + 12 - left) + "px";
-    if (G.tall) return;
-    var pr = G.pain.getBoundingClientRect(), a = G.tags[2], am = G.threads[2].mid;
-    if (pr.right - sr.left + 8 > am[0] - a.offsetWidth / 2 && pr.top - sr.top < am[1] + a.offsetHeight / 2 + 8)
-      node.style.top = r1(am[1] + a.offsetHeight / 2 + 10) + "px";
   }
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitPain);
 
@@ -831,21 +892,21 @@
   // El nus: primer tremola, embolicat; després es desembolica fins a fer una anella tranquil·la i s'esvaeix
   // mentre en surten els fils. Amb «reduir moviment» es queda embolicat, quiet i esvaït.
   function knot(t) {
-    var u = reduce ? 0 : ease((t - T.loose0) / (T.loose1 - T.loose0)), calm = reduce ? 0 : 1 - u, w = t / 1000;
-    var jit = G.rk * .08 * calm;
+    var m = reduce ? 0 : ease((t - T.travel0) / (T.travel1 - T.travel0)), w = t / 1000;
+    var calm = reduce ? 0 : 1, jit = G.rk * .08 * calm;
     function pts(L, k) {
       return L.map(function (p, i) {
-        var a = p.a0 + (p.a1 - p.a0) * u, r = p.r0 + (p.r1 - p.r0) * u;
-        return [G.K[0] + Math.cos(a) * r + Math.sin(w * 5.3 + i * 1.7 + k) * jit,
-                G.K[1] + Math.sin(a) * r + Math.cos(w * 4.4 + i * 2.3 + k) * jit];
+        return [G.K[0] + Math.cos(p.a0) * p.r0 + Math.sin(w * 5.3 + i * 1.7 + k) * jit,
+                G.K[1] + Math.sin(p.a0) * p.r0 + Math.cos(w * 4.4 + i * 2.3 + k) * jit];
       });
     }
     G.knotPaths[0].setAttribute("d", curve(pts(G.kP, 0)) + "Z");
     G.knotPaths[1].setAttribute("d", curve(pts(G.kQ, 1)) + "Z");
-    var f = ease((t - T.fade0) / (T.fade1 - T.fade0));
-    var rot = 5 * Math.sin(w * 2 * Math.PI / 1.5) * calm, sc = (1 + .04 * Math.sin(w * 2 * Math.PI / 1.1) * calm) * (1 - .2 * f);
-    G.knotEl.setAttribute("transform", "translate(" + r1(G.K[0]) + " " + r1(G.K[1]) + ") rotate(" + r1(rot) + ") scale(" + r3(sc) + ") translate(" + r1(-G.K[0]) + " " + r1(-G.K[1]) + ")");
-    G.knotEl.style.opacity = r3(1 - .66 * f);
+    var f = reduce ? .66 : ease((t - T.travel1 + 600) / 600);
+    var rot = 5 * Math.sin(w * 2 * Math.PI / 1.5) * calm, sc = (1 + .04 * Math.sin(w * 2 * Math.PI / 1.1) * calm) * (1 - .45 * m);
+    var dx = (G.HC[0] - G.K[0]) * m, dy = (G.HC[1] - G.K[1]) * m;
+    G.knotEl.setAttribute("transform", "translate(" + r1(dx) + " " + r1(dy) + ") translate(" + r1(G.K[0]) + " " + r1(G.K[1]) + ") rotate(" + r1(rot) + ") scale(" + r3(sc) + ") translate(" + r1(-G.K[0]) + " " + r1(-G.K[1]) + ")");
+    G.knotEl.style.opacity = r3(1 - f);
   }
 
   function apply() {
@@ -858,14 +919,19 @@
       p.setAttribute("stroke-dashoffset", r3(off));
       p.style.opacity = off >= 1 ? 0 : 1; // sense el puntet de la punta abans d'hora
     });
+    var b1 = clamp((t - T.b1a) / (T.b1b - T.b1a), 0, 1);
+    G.b1Els.forEach(function (p) { p.setAttribute("stroke-dashoffset", r3(1 - b1)); p.style.opacity = b1 > 0 ? 1 : 0; });
     var br = clamp((t - T.braid0) / (T.braid1 - T.braid0), 0, 1);
     G.strandEls.forEach(function (p) { p.setAttribute("stroke-dashoffset", r3(1 - br)); p.style.opacity = br > 0 ? 1 : 0; });
     var figsOn = G.figEls.map(function (f, i) { return t >= T.figs0 + i * T.figStep ? 1 : 0; }).join("");
-    var tagsOn = G.tags.map(function (g, i) { return th * 1.15 - i * .07 >= .55 ? 1 : 0; }).join("");
-    var key = [t >= T.say, figsOn, tagsOn, t >= T.center, t >= T.end, S.sel].join("|");
+    var tagsOn = G.tags.map(function (g, i) { return th * 1.15 - i * .07 >= G.tagT + .04 ? 1 : 0; }).join("");
+    var hcOn = t >= T.hc;
+    var key = [t >= T.say, figsOn, tagsOn, hcOn, t >= T.center, t >= T.end, S.sel].join("|");
     if (key === lastKey) return;
     lastKey = key;
     root.classList.toggle("is-say", t >= T.say);
+    G.hcEl.classList.toggle("is-on", hcOn); G.hcBtn.classList.toggle("is-on", hcOn);
+    G.hcBtn.classList.toggle("is-sel", S.sel === "hc");
     root.classList.toggle("is-done", t >= T.end);
     G.figEls.forEach(function (f, i) { f.classList.toggle("is-on", figsOn.charAt(i) === "1"); });
     G.tags.forEach(function (g, i) { g.classList.toggle("is-on", tagsOn.charAt(i) === "1"); g.classList.toggle("is-sel", S.sel === "t" + i); });
@@ -877,7 +943,8 @@
 
   /* ---------- GLOBUS ---------- */
   function openPop(k) {
-    var d = k === "pain" ? PAIN : k === "center" ? CENTER : THREADS[+k.slice(1)];
+    if (k === "hc-tag") k = "hc";
+    var d = k === "pain" ? PAIN : k === "center" ? CENTER : k === "hc" ? HC : THREADS[+k.slice(1)];
     var el = nodesBox.querySelector('[data-k="' + k + '"]'), r = el.getBoundingClientRect(), sr = scene.getBoundingClientRect();
     var at = [r.left - sr.left + r.width / 2, r.top - sr.top + r.height / 2], half = r.height / 2 + 10;
     var pk = pop.querySelector(".nus__pk");
@@ -892,7 +959,7 @@
     pop.style.left = r1(x) + "px";
     pop.style.top = r1(clamp(y, 8, G.H - ph - 8)) + "px";
   }
-  function select(k) { S.sel = k; lastKey = ""; apply(); if (k) openPop(k); else pop.classList.remove("is-open"); }
+  function select(k) { if (k === "hc-tag") k = "hc"; S.sel = k; lastKey = ""; apply(); if (k) openPop(k); else pop.classList.remove("is-open"); }
 
   /* ---------- ANIMACIÓ ---------- */
   function tick(ts) {
@@ -955,7 +1022,7 @@
 
   <section class="panel" id="que-es" aria-labelledby="h-what">
     <h2 class="health__h2" id="h-what">Què és Camins d&#39;Esperança [Activa]</h2>
-<p>Són <strong class="mk">cursos en línia gratuïts, de 7 passes</strong>, per afrontar el que ens preocupa amb més presència, suport i un petit pas possible. Cada pas combina una breu explicació amb una pràctica guiada d&#39;àudio o vídeo i una caminada de reflexió.</p><p>Cada curs va acompanyat de <strong class="mk">rutes a peu, curtes i amb mapa</strong>, que surten d&#39;entitats, equipaments i espais del Prat. La persona les fa sola i al seu ritme, i així coneix llocs reals de la ciutat on hi ha gent que fa una tasca col·lectiva.</p>    <h3 class="health__sub">Per què encaixa amb el que fa la teva entitat</h3>
+<p>Són <strong class="mk">cursos en línia gratuïts, de 7 passes</strong>, per afrontar el que ens preocupa amb més presència, suport i un petit pas possible. Cada pas combina una breu explicació amb una pràctica guiada d&#39;àudio o vídeo i una caminada de reflexió.</p><p>Cada curs va acompanyat de <strong class="mk">rutes a peu, curtes i amb mapa</strong>, que surten d&#39;entitats, equipaments i espais del Prat. La persona les fa sola i al seu ritme, i així coneix llocs reals de la ciutat on hi ha gent que fa una tasca col·lectiva.</p>    <h3 class="health__sub">Per què encaixa amb el que fa l&#39;entitat</h3>
     <ul class="checks"><li><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span>És un <strong class="mk">recurs comunitari, gratuït i sense llista d&#39;espera</strong>.</span></li><li><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span>Dona a les persones que viuen incertesa, soledat o malestar <strong class="mk">alguna cosa concreta per fer</strong> a prop de casa.</span></li><li><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span>Les connecta amb <strong class="mk">entitats, espais i projectes del Prat</strong> on poden sentir que formen part d&#39;una tasca col·lectiva.</span></li><li><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span>Respecta els límits de cada persona: pot parar i tornar-hi un altre dia.</span></li></ul>
   </section>
 
@@ -999,14 +1066,14 @@
 
   <section class="panel" id="com-donar-ho-a-coneixer" aria-labelledby="h-share">
     <h2 class="health__h2" id="h-share">Com donar-ho a conèixer</h2>
-    <p>El més senzill és comentar-ho o passar l&#39;enllaç. Si et serveix, pots fer servir aquest text:</p>
+    <p>El més senzill és comentar-ho o passar l&#39;enllaç. Si serveix, es pot fer servir aquest text:</p>
     <blockquote class="health__quote">Hi ha un recurs gratuït que et pot acompanyar: cursos en línia de 7 passes i rutes a peu pel Prat que surten d&#39;entitats i equipaments de la ciutat. El tens a esperançaactiva.cat</blockquote>
-    <p>Si vols que t&#39;expliquem el recurs a l&#39;equip o a les persones que atens, escriu-nos.</p>
+    <p>Si l&#39;equip o les persones ateses ho necessiten, també podem presentar el recurs: escriu-nos.</p>
   </section>
 
   <section class="panel panel--plain" id="rutes-del-prat" aria-labelledby="h-routes">
     <h2 class="health__h2" id="h-routes">Troba les rutes del Prat</h2>
-    <p>Al Prat hi ha rutes que surten de centres de salut, equipaments municipals, entitats del tercer sector, entitats de l&#39;economia social i espais naturals. Mira si ja n&#39;hi ha una que surti de la teva entitat o d&#39;una de prop. Si encara no n&#39;hi ha, escriu-nos.</p>
+    <p>Al Prat hi ha rutes que surten de centres de salut, equipaments municipals, entitats del tercer sector, entitats de l&#39;economia social i espais naturals. Si una entitat o un equipament encara no en té, pot escriure&#39;ns.</p>
     <ul class="checks">
       <li><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span><strong>Quan la vida et desborda:</strong> 7 rutes des dels CAP, el riu, la platja i l&#39;Ajuntament <a href="../el-prat/#quan-la-vida">Veure les rutes</a></span></li>
       <li><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span><strong>Quan cuidar-nos és una tasca col·lectiva:</strong> 20 rutes des d&#39;equipaments i entitats socials <a href="../el-prat/#quan-cuidar-nos">Veure les rutes</a></span></li>
@@ -1050,7 +1117,7 @@
 
   <section class="contact-box" id="contacte" aria-labelledby="h-contact">
     <h2 id="h-contact">Parlem?</h2>
-    <p>Si vols que la teva entitat o el teu equipament tingui ruta, o que t&#39;expliquem el recurs a l&#39;equip, escriu-nos.</p>
+    <p>Si una entitat o un equipament vol tenir ruta, o que presentem el recurs a l&#39;equip, pot escriure&#39;ns.</p>
     <p class="contact-box__links">
       <a class="btn btn--primary" href="mailto:esperanza@elarasocial.com"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></svg>Escriu-nos</a>
       <a class="btn btn--outline" href="https://www.instagram.com/esperancaactiva.cat/"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"/></svg>@esperancaactiva.cat</a>
@@ -1089,6 +1156,6 @@
     </div>
   </footer>
 
-  <script src="../assets/site.js?v=1795188301" defer></script>
+  <script src="../assets/site.js?v=1795188738" defer></script>
 </body>
 </html>

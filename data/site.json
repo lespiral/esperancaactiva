@@ -385,18 +385,18 @@
   },
   "prat_page": {
     "kicker": "Per a entitats i equipaments del Prat",
-    "title": "Un recurs comunitari per a la teva entitat o equipament",
+    "title": "Un recurs comunitari per a entitats i equipaments",
     "lead": "Cursos en línia **gratuïts** i rutes a peu pel Prat que surten de les entitats i els equipaments de la ciutat. Una opció més per **orientar** les persones que viuen incertesa, soledat o malestar.",
-    "how_title": "Com pot arribar a la teva entitat",
-    "how_intro": "La teva entitat no ha d'organitzar res: només **orientar**. La resta ho fa cada persona al seu ritme.",
-    "nus_title": "Un camí que passa per la teva entitat",
+    "how_title": "Com pot arribar a l'entitat",
+    "how_intro": "L'entitat no ha d'organitzar res: només **orientar**. La resta ho fa cada persona al seu ritme.",
+    "nus_title": "Un camí que passa per l'entitat",
     "nus_intro": "Moltes persones arriben a una entitat, a un casal o a un servei amb dolor, incertesa o cansament. Allà reben un **recurs** i, amb ell, aquest malestar pot transformar-se en **claredat, suport i una acció possible**, sostinguts per la comunitat.",
     "what_title": "Què és Camins d'Esperança [Activa]",
     "what": [
       "Són **cursos en línia gratuïts, de 7 passes**, per afrontar el que ens preocupa amb més presència, suport i un petit pas possible. Cada pas combina una breu explicació amb una pràctica guiada d'àudio o vídeo i una caminada de reflexió.",
       "Cada curs va acompanyat de **rutes a peu, curtes i amb mapa**, que surten d'entitats, equipaments i espais del Prat. La persona les fa sola i al seu ritme, i així coneix llocs reals de la ciutat on hi ha gent que fa una tasca col·lectiva."
     ],
-    "why_title": "Per què encaixa amb el que fa la teva entitat",
+    "why_title": "Per què encaixa amb el que fa l'entitat",
     "why": [
       "És un **recurs comunitari, gratuït i sense llista d'espera**.",
       "Dona a les persones que viuen incertesa, soledat o malestar **alguna cosa concreta per fer** a prop de casa.",
@@ -430,11 +430,11 @@
     },
     "course_btn": "Veure el curs",
     "share_title": "Com donar-ho a conèixer",
-    "share_intro": "El més senzill és comentar-ho o passar l'enllaç. Si et serveix, pots fer servir aquest text:",
+    "share_intro": "El més senzill és comentar-ho o passar l'enllaç. Si serveix, es pot fer servir aquest text:",
     "share_text": "Hi ha un recurs gratuït que et pot acompanyar: cursos en línia de 7 passes i rutes a peu pel Prat que surten d'entitats i equipaments de la ciutat. El tens a esperançaactiva.cat",
-    "share_extra": "Si vols que t'expliquem el recurs a l'equip o a les persones que atens, escriu-nos.",
+    "share_extra": "Si l'equip o les persones ateses ho necessiten, també podem presentar el recurs: escriu-nos.",
     "routes_title": "Troba les rutes del Prat",
-    "routes_intro": "Al Prat hi ha rutes que surten de centres de salut, equipaments municipals, entitats del tercer sector, entitats de l'economia social i espais naturals. Mira si ja n'hi ha una que surti de la teva entitat o d'una de prop. Si encara no n'hi ha, escriu-nos.",
+    "routes_intro": "Al Prat hi ha rutes que surten de centres de salut, equipaments municipals, entitats del tercer sector, entitats de l'economia social i espais naturals. Si una entitat o un equipament encara no en té, pot escriure'ns.",
     "routes_btn": "Veure les rutes",
     "routes_all": "Totes les rutes del Prat",
     "limits_title": "Sense compromís",
@@ -448,6 +448,6 @@
     "scenic_html": "El Treball que Reconnecta també es vol portar a un procés de creació escènica i audiovisual amb joves pratencs, amb Xavier Esteban i Júlia Ibarz, que parteix del mateix camí: començar pel que estimen i decidir quin pas volen fer.",
     "safety_html": "Si una persona està passant un moment molt difícil, l'atenció continua sent la del seu centre de salut o servei de referència. Si pensa en fer-se mal, pot trucar al <a href=\"tel:024\">024</a>. En una emergència, al <a href=\"tel:112\">112</a>.",
     "contact_title": "Parlem?",
-    "contact_html": "Si vols que la teva entitat o el teu equipament tingui ruta, o que t'expliquem el recurs a l'equip, escriu-nos."
+    "contact_html": "Si una entitat o un equipament vol tenir ruta, o que presentem el recurs a l'equip, pot escriure'ns."
   }
 }

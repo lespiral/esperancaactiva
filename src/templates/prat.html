@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% from "parts.html" import page_head, safety, nearby %}
-{# Pàgina per a entitats i equipaments del Prat (/entitats-del-prat/). Adaptada de la pàgina per a centres de salut de la .org (20 de novembre de 2026). Textos a data/site.json › prat_page. Les dues infografies (volta i nus) són, de moment, les genèriques de la portada. #}
+{# Pàgina per a entitats i equipaments del Prat (/entitats-del-prat/). Adaptada de la pàgina per a centres de salut de la .org (20 de novembre de 2026). Textos a data/site.json › prat_page. Infografies pròpies: infografia-entitats-volta.html i infografia-entitats-nus.html. #}
 {% block content %}
 {{ page_head(pp.kicker, pp.title, pp.lead|hl) }}
 
@@ -8,13 +8,13 @@
   <section id="com-funciona" aria-labelledby="h-how">
     <h2 class="health__h2" id="h-how">{{ pp.how_title }}</h2>
     <p>{{ pp.how_intro|hl }}</p>
-    <div class="infografia infografia--in">{% include "infografies/infografia-com-funciona.html" %}</div>
+    <div class="infografia infografia--in">{% include "infografies/infografia-entitats-volta.html" %}</div>
   </section>
 
   <section id="un-cami" aria-labelledby="h-nus">
     <h2 class="health__h2" id="h-nus">{{ pp.nus_title }}</h2>
     <p>{{ pp.nus_intro|hl }}</p>
-    <div class="infografia infografia--in">{% include "infografies/infografia-esperanca-activa.html" %}</div>
+    <div class="infografia infografia--in">{% include "infografies/infografia-entitats-nus.html" %}</div>
   </section>
 
   <section class="panel" id="que-es" aria-labelledby="h-what">
