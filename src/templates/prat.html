@@ -17,6 +17,12 @@
     <div class="infografia infografia--in">{% include "infografies/infografia-entitats-nus.html" %}</div>
   </section>
 
+  <section id="espiral" aria-labelledby="h-spiral">
+    <h2 class="health__h2" id="h-spiral">{{ pp.spiral_title }}</h2>
+    <p>{{ pp.spiral_intro|hl }}</p>
+    <div class="infografia infografia--in">{% with ritme = "7 dies o al seu ritme" %}{% include "infografies/infografia-7-passes.html" %}{% endwith %}</div>
+  </section>
+
   <section class="panel" id="que-es" aria-labelledby="h-what">
     <h2 class="health__h2" id="h-what">{{ pp.what_title }}</h2>
     {% for p in pp.what %}<p>{{ p|hl }}</p>{% endfor %}

@@ -1,5 +1,5 @@
 {# infografia-7-passes.html: copiat del bloc INICI–FINAL de la carpeta «Infografies web» (5 de novembre de 2026). #}
-<div class="espi" data-espi{% if curs %} data-curs="{{ curs }}"{% endif %}>
+<div class="espi" data-espi{% if ritme %} data-ritme="{{ ritme }}"{% endif %}{% if curs %} data-curs="{{ curs }}"{% endif %}>
   <div class="espi__grid">
     <div class="espi__scene" role="group" aria-label="L'espiral de les 7 passes; cada passa té tres moments">
       <svg class="espi__svg" aria-hidden="true" focusable="false"></svg>
@@ -164,6 +164,8 @@
   var CHIPS = [["clock", "7 dies o al teu ritme"], ["leaf", "No cal experiència en meditació"]];
   var HUB_START = ["L'Espiral", "7 passes", "Cada passa, tres moments"];
   var HUB_END = ["Cada curs", "7 passes", "Les mateixes, amb la mirada de cada curs. Toca'n una per veure-la."]; // canvi de la web
+  var ritme = root.getAttribute("data-ritme");
+  if (ritme) CHIPS[0][1] = ritme;
   function kick(n) { return "Passa " + n + " de 7"; }
 
   /* ---------- A LA PÀGINA DE CADA CURS ----------
