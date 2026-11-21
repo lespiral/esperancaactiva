@@ -274,21 +274,24 @@
               "info": "1,37 km · 16–21 min caminant · 25–40 min amb pauses · circular",
               "address": "Carrer Vell, 3, Ripoll",
               "note": "El recorregut creua ponts i voreja la carretera d'Olot, amb més trànsit.",
-              "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352025"
+              "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352025",
+              "desc": "La Lluerna és la llibreria cooperativa de Ripoll, que organitza clubs de lectura i activitats culturals al Ripollès."
             },
             {
               "n": 2,
               "name": "Fundació MAP",
               "info": "1,37 km · 16–21 min caminant · 25–40 min amb pauses · circular",
               "note": "Un tram del recorregut és per la Ruta del Ferro i del Carbó, un camí que pot no estar asfaltat.",
-              "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352058"
+              "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352058",
+              "desc": "La Fundació MAP és l'entitat del Ripollès que atén persones amb discapacitat i ho combina amb formació i feina des d'una empresa d'economia social."
             },
             {
               "n": 3,
               "name": "Obrador Ricolta (Beget, Camprodon)",
               "info": "1,33 km · 16–20 min caminant · 25–40 min amb pauses · circular",
               "note": "Hi ha trànsit a la carretera d'Oix a Beget: camina per la vora i amb atenció.",
-              "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297470045"
+              "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297470045",
+              "desc": "L'Obrador Ricolta és una cooperativa que ha tornat el forn de pa a Beget i que també treballa la comunicació i el disseny des de l'economia social i solidària."
             }
           ]
         }

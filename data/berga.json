@@ -295,7 +295,8 @@
               "info": "1,36 km · 16–20 min caminant · 25–40 min amb pauses · circular",
               "address": "Carrer de M. Buxadé, 18, Berga",
               "note": "El recorregut inclou trams de pujada (la pujada del Castell i la pujada de Cal Parraquer).",
-              "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297351562"
+              "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297351562",
+              "desc": "Cal Blanxart és una cooperativa d'habitatge en cessió d'ús que rehabilita un gran edifici del casc antic de Berga com a projecte de ciutat, amb espais comunitaris i per a entitats."
             },
             {
               "n": 2,
@@ -303,7 +304,8 @@
               "info": "1,40 km · 17–21 min caminant · 25–40 min amb pauses · circular",
               "address": "Plaça d'Europa, 3, Berga",
               "note": "Un tram del recorregut és per la carretera de Sant Fruitós, amb més trànsit.",
-              "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297351880"
+              "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297351880",
+              "desc": "La Fundació Horitzó treballa per la salut mental al Berguedà: ofereix acompanyament i projectes d'inserció laboral a persones amb problemes de salut mental o en risc d'exclusió."
             },
             {
               "n": 3,
@@ -311,7 +313,8 @@
               "info": "1,14 km · 14–17 min caminant · 25–35 min amb pauses · circular",
               "address": "Cal Vidal, s/n, Puig-reig",
               "note": "Un tram del recorregut és per un camí que pot no estar asfaltat.",
-              "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297469581"
+              "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297469581",
+              "desc": "Vidàlia és una cooperativa d'habitatge que rehabilita la colònia tèxtil de Cal Vidal, a Puig-reig, i hi viu en comunitat, amb espais i tasques compartits."
             }
           ]
         }

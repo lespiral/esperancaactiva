@@ -427,7 +427,8 @@
                   "name": "La Granja de la Fageda",
                   "info": "1,40 km · 17–21 min caminant · 25–40 min amb pauses · circular",
                   "note": "El tram final passa per la sortida d'un aparcament.",
-                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352122"
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352122",
+                  "desc": "La Fageda és una cooperativa de la Garrotxa que elabora productes làctics, com els iogurts, i dona feina a persones amb trastorn mental."
                 },
                 {
                   "n": 5,
@@ -435,7 +436,8 @@
                   "info": "1,41 km · 17–21 min caminant · 25–40 min amb pauses · circular",
                   "address": "Plaça Major, Santa Pau",
                   "note": "La cooperativa és fora del nucli de Santa Pau: la ruta surt de la plaça Major. Hi ha trànsit a la carretera de Santa Pau a Mieres: camina per la vora i amb atenció.",
-                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297470316"
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297470316",
+                  "desc": "La Fageda és una cooperativa de la Garrotxa que elabora productes làctics, com els iogurts, i dona feina a persones amb trastorn mental."
                 }
               ]
             }

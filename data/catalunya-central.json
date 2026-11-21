@@ -144,7 +144,8 @@
                   "n": 1,
                   "name": "Sambucus",
                   "info": "1,39 km · 17–21 min caminant · 25–40 min amb pauses · circular",
-                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352170"
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352170",
+                  "desc": "Sambucus és una cooperativa de Manlleu que porta un restaurant de cuina de mercat al mercat municipal i conrea plantes aromàtiques i medicinals."
                 }
               ]
             },
@@ -157,7 +158,8 @@
                   "info": "1,33 km · 16–20 min caminant · 25–40 min amb pauses · circular",
                   "address": "Carrer de Vila-seca, 29, Sant Vicenç de Torelló",
                   "note": "Bona part del recorregut és per camins que poden no estar asfaltats.",
-                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352226"
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352226",
+                  "desc": "Sequoia és una cooperativa d'habitatge en cessió d'ús on viu una comunitat que s'autogestiona, amb hort, forn de pa i activitats culturals."
                 }
               ]
             },
@@ -171,7 +173,8 @@
                   "name": "Osonament",
                   "info": "1,33 km · 16–20 min caminant · 25–40 min amb pauses · circular",
                   "note": "Un tram del recorregut és per la carretera de Conanglell, amb més trànsit.",
-                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352296"
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352296",
+                  "desc": "Osonament és una entitat que treballa per la prevenció i l'atenció a la salut mental a Torelló i la Vall del Ges, amb activitats comunitàries i de rehabilitació."
                 }
               ]
             },
@@ -183,7 +186,8 @@
                   "name": "Olost i Santa Creu Sostenible",
                   "info": "1,40 km · 17–21 min caminant · 25–40 min amb pauses · circular",
                   "note": "Hi ha trams per la carretera de Vic, amb més trànsit, i per un camí que pot no estar asfaltat.",
-                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352410"
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352410",
+                  "desc": "Olost i Santa Creu Sostenible és una cooperativa que fa de comunitat energètica local: veïnes i veïns gestionen i comparteixen energia renovable."
                 }
               ]
             },
@@ -195,7 +199,8 @@
                   "name": "Balenyà Sostenible",
                   "info": "1,17 km · 14–18 min caminant · 25–40 min amb pauses · circular",
                   "note": "El recorregut passa per la carretera de Ribes, amb més trànsit.",
-                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352479"
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352479",
+                  "desc": "Balenyà Sostenible és una cooperativa i comunitat energètica sense ànim de lucre, que també treballa perquè les persones vulnerables tinguin accés a l'energia."
                 }
               ]
             },
@@ -208,7 +213,8 @@
                   "info": "1,42 km · 17–21 min caminant · 25–40 min amb pauses · circular",
                   "address": "Carretera de Balenyà, 101, Taradell",
                   "note": "La ruta surt d'un carrer proper, al nucli, i no del número de la carretera: el tram final és per la carretera de Balenyà, amb més trànsit.",
-                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352568"
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352568",
+                  "desc": "Taradell Sostenible és una cooperativa que fa de comunitat energètica local: veïnes i veïns gestionen i comparteixen energia renovable."
                 }
               ]
             }
