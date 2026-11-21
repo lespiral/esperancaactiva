@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% from "parts.html" import page_head %}
+{% block content %}
+{{ page_head(None, lp.title) }}
+<div class="wrap wrap--narrow legal">
+{{ lp.body }}
+</div>
+{% endblock %}

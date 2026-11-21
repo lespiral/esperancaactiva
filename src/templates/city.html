@@ -82,6 +82,7 @@
       {% if b.course.soon %}<span class="btn btn--soon">{{ cc.soon_label }}</span>{% elif cc.cta_building %}<span class="btn btn--soon">{{ cc.building_label }}</span>{% else %}<a class="btn btn--primary" href="{{ b.course.thinkific }}">Comença el curs gratuït</a>{% endif %}
       <a class="btn btn--outline" href="{{ root }}{{ b.course.slug }}/">Torna al curs</a>
     </p>
+    {% if school_privacy_url and not b.course.soon and not cc.cta_building %}<p class="cta-privacy"><a href="{{ school_privacy_url }}" target="_blank" rel="noopener">Política de privacitat de l'escola en línia</a></p>{% endif %}
     {% set sa = b.see_also or city.see_also %}
     {% if sa and b.total %}
     <ul class="see-also">

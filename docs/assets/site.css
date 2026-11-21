@@ -2,6 +2,12 @@
    Colors de la marca: verd fosc #1A4D40, groc #E2C668, crema #F8F5EF.
    Lletres: Montserrat (títols) i Lato (text). */
 
+/* Tipus de lletra servits des d'aquesta web (sense Google Fonts) */
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 600 700; font-display: swap; src: url("fonts/montserrat-600-700.woff") format("woff"); }
+@font-face { font-family: "Lato"; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/lato-normal.woff") format("woff"); }
+@font-face { font-family: "Lato"; font-style: normal; font-weight: 700; font-display: swap; src: url("fonts/lato-bold.woff") format("woff"); }
+@font-face { font-family: "Lato"; font-style: italic; font-weight: 400; font-display: swap; src: url("fonts/lato-normal-italic.woff") format("woff"); }
+
 :root {
   --green-900: #11352c;
   --green-800: #1a4d40;
@@ -634,3 +640,12 @@ strong.mk { color: var(--green-900); font-weight: 700; background: linear-gradie
 
 /* Espais afins: amb 5 targetes, l'última ocupa tot l'ample al grup de 2 columnes */
 @media (min-width: 641px) { .feat > .feat__item:last-child:nth-child(odd) { grid-column: 1 / -1; } }
+
+/* Enllaços legals del peu i pàgines legals */
+.footer__legal { grid-column: 1 / -1; border-top: 1px solid rgba(255, 255, 255, .18); padding-top: 18px; display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: .92rem; }
+.footer__legal a { text-decoration: underline; text-underline-offset: 3px; }
+.legal { padding-bottom: 56px; }
+.legal h2 { font-size: 1.3rem; margin-top: 1.6em; }
+.legal ul { padding-left: 1.2em; }
+.legal__date { color: var(--muted); font-size: .95rem; }
+.cta-privacy { margin: 6px 0 0; color: var(--muted); font-size: .92rem; }
