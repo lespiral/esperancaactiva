@@ -319,6 +319,50 @@
           ]
         }
       ]
+    },
+    {
+      "course": "mon",
+      "text": "2 rutes circulars: un sender fins al santuari de Queralt i un circuit pels parcs. Surten d'un lloc concret de la ciutat i hi tornen. Tria la que s'adapti al teu dia i fes-hi el temps de reflexió de cada passa.",
+      "summary": "2 rutes: senders i parcs",
+      "notice": {
+        "title": "Traçats i punts d'inici",
+        "html": [
+          "Els traçats oficials són simplificats: els quilòmetres poden diferir lleugerament dels de les webs d'origen. Als circuits de parc, el traçat és reconstruït sobre OpenStreetMap i el punt d'inici és aproximat. Camina amb atenció al trànsit i a l'estat dels camins.",
+          "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "title": "Les 2 rutes",
+          "maps": [
+            {
+              "mid": "1wMbfTmTqIfcwvtpCxH1aTiQwcd8IKDY",
+              "title": "Berga · parcs, camins i senders",
+              "ll": "42.1010,1.8426",
+              "z": 13,
+              "label": "2 rutes"
+            }
+          ],
+          "routes": [
+            {
+              "n": 1,
+              "name": "A Queralt per les capelles",
+              "info": "7,50 km · 90–112 min caminant · 100–130 min amb pauses · circular",
+              "address": "Plaça de Sant Francesc, Berga",
+              "note": "Pujada continuada fins al santuari de Queralt, amb trams per camins que poden no estar asfaltats. Porta aigua i calçat adequat. El track oficial surt uns 120 m al nord de la plaça.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297505733"
+            },
+            {
+              "n": 2,
+              "name": "Parc del Pla de l'Alemany",
+              "info": "1,94 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+              "address": "Parc del Pla de l'Alemany, Berga",
+              "note": "Circuit urbà curt per parcs i carrers; travessa amb atenció els carrers amb trànsit. Alguns trams tenen pendent suau.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297506623"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

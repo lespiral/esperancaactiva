@@ -336,7 +336,47 @@
     },
     {
       "course": "mon",
-      "text": "Encara no hi ha rutes d'aquest curs a Olot. Mentrestant, pots fer el temps de reflexió de cada passa caminant a prop de casa, per un parc o en un lloc tranquil."
+      "text": "2 rutes circulars: un sender pels volcans del Montsacopa i del Montolivet i un circuit pel Parc Nou. Surten d'un lloc concret de la ciutat i hi tornen. Tria la que s'adapti al teu dia i fes-hi el temps de reflexió de cada passa.",
+      "summary": "2 rutes: senders i parcs",
+      "notice": {
+        "title": "Traçats i punts d'inici",
+        "html": [
+          "Els traçats oficials són simplificats: els quilòmetres poden diferir lleugerament dels de les webs d'origen. Als circuits de parc, el traçat és reconstruït sobre OpenStreetMap i el punt d'inici és aproximat. Camina amb atenció al trànsit i a l'estat dels camins.",
+          "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "title": "Les 2 rutes",
+          "maps": [
+            {
+              "mid": "1DhKBnpVjSynhhWsJ7IarbbArii2AFjw",
+              "title": "Olot · parcs, camins i senders",
+              "ll": "42.1763,2.4824",
+              "z": 13,
+              "label": "2 rutes"
+            }
+          ],
+          "routes": [
+            {
+              "n": 1,
+              "name": "Volcans del Montsacopa i del Montolivet",
+              "info": "8,25 km · 99–124 min caminant · 110–145 min amb pauses · circular",
+              "address": "Plaça de Clarà, Olot",
+              "note": "Pujades als dos volcans (desnivell acumulat de 328 m) i camins que poden no estar asfaltats. Segons Ohgarrotxa, l'accés a la pedrera del Montsacopa està tancat per un despreniment: comprova'n l'estat abans de sortir.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297506852"
+            },
+            {
+              "n": 2,
+              "name": "Parc Nou",
+              "info": "1,62 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+              "address": "Parc Nou, Olot",
+              "note": "Circuit urbà curt per parcs i carrers; travessa amb atenció els carrers amb trànsit. Alguns trams del parc poden tenir pendent.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297507038"
+            }
+          ]
+        }
+      ]
     },
     {
       "course": "dia",

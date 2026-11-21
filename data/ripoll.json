@@ -296,6 +296,66 @@
           ]
         }
       ]
+    },
+    {
+      "course": "mon",
+      "text": "4 rutes circulars: tres senders i un circuit pel Parc Temàtic del Pirineu. Surten d'un lloc concret de la ciutat i hi tornen. Tria la que s'adapti al teu dia i fes-hi el temps de reflexió de cada passa.",
+      "summary": "4 rutes: senders i parcs",
+      "notice": {
+        "title": "Traçats i punts d'inici",
+        "html": [
+          "Els traçats oficials són simplificats: els quilòmetres poden diferir lleugerament dels de les webs d'origen. Als circuits de parc, el traçat és reconstruït sobre OpenStreetMap i el punt d'inici és aproximat. Camina amb atenció al trànsit i a l'estat dels camins.",
+          "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "title": "Les 4 rutes",
+          "maps": [
+            {
+              "mid": "1YjyjUS6aLBZhyJuGR28pZl_Q61-S1LI",
+              "title": "Ripoll · parcs, camins i senders",
+              "ll": "42.1995,2.1904",
+              "z": 13,
+              "label": "4 rutes"
+            }
+          ],
+          "routes": [
+            {
+              "n": 1,
+              "name": "Ruta arquitectònica de Ripoll",
+              "info": "1,82 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+              "address": "Plaça de l'Abat Oliba, Ripoll",
+              "note": "Recorregut urbà pel nucli de Ripoll, amb algun tram amb pendent i carrers amb trànsit que cal travessar amb atenció.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297506338"
+            },
+            {
+              "n": 2,
+              "name": "Font del Clot dels Vents – Font dels Pintors",
+              "info": "7,42 km · 89–111 min caminant · 100–130 min amb pauses · circular",
+              "address": "Plaça de l'Abat Oliba, Ripoll",
+              "note": "Camins i corriols que poden no estar asfaltats, amb trams amb pendent. Porta aigua i calçat còmode, i no beguis aigua de les fonts si no n'indiquen la potabilitat. El GPX d'origen anomena la primera font «Clot dels Verns».",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297506001"
+            },
+            {
+              "n": 3,
+              "name": "Mirador de Santa Maria del Catllar",
+              "info": "9,38 km · 113–141 min caminant · 125–160 min amb pauses · circular",
+              "address": "Raval de Barcelona, Ripoll",
+              "note": "Camins de muntanya que poden no estar asfaltats, amb trams amb pendent i poca ombra. Porta aigua, calçat adequat i comprova el temps abans de sortir.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297506200"
+            },
+            {
+              "n": 4,
+              "name": "Parc Temàtic del Pirineu i ribera del Ter",
+              "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+              "address": "Parc Temàtic del Pirineu, Ripoll",
+              "note": "Circuit urbà curt per parcs i carrers; travessa amb atenció els carrers amb trànsit. Pel tram de la ribera del riu, vigila el terra si ha plogut.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297506454"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

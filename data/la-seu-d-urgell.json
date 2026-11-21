@@ -355,6 +355,50 @@
           ]
         }
       ]
+    },
+    {
+      "course": "mon",
+      "text": "2 rutes circulars: un sender per la ribera del Segre i un circuit pels parcs. Surten d'un lloc concret de la ciutat i hi tornen. Tria la que s'adapti al teu dia i fes-hi el temps de reflexió de cada passa.",
+      "summary": "2 rutes: senders i parcs",
+      "notice": {
+        "title": "Traçats i punts d'inici",
+        "html": [
+          "Els traçats oficials són simplificats: els quilòmetres poden diferir lleugerament dels de les webs d'origen. Als circuits de parc, el traçat és reconstruït sobre OpenStreetMap i el punt d'inici és aproximat. Camina amb atenció al trànsit i a l'estat dels camins.",
+          "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "title": "Les 2 rutes",
+          "maps": [
+            {
+              "mid": "1U4ydgxRRUmOug_3JDM3r6TdNYpotObU",
+              "title": "La Seu d'Urgell · parcs, camins i senders",
+              "ll": "42.3577,1.4625",
+              "z": 13,
+              "label": "2 rutes"
+            }
+          ],
+          "routes": [
+            {
+              "n": 1,
+              "name": "Volta al Segre des del Parc Olímpic del Segre",
+              "info": "8,72 km · 105–131 min caminant · 115–150 min amb pauses · circular",
+              "address": "Parc Olímpic del Segre, la Seu d'Urgell",
+              "note": "Camins vora el riu, amb algun tram amb pujades (desnivell acumulat de 142 m) i poca ombra. Porta aigua i protecció solar, i comprova l'estat dels camins abans de sortir.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297504734"
+            },
+            {
+              "n": 2,
+              "name": "Parc de la Boixadera",
+              "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+              "address": "Parc de la Boixadera, la Seu d'Urgell",
+              "note": "Circuit urbà curt per parcs i carrers; travessa amb atenció els carrers amb trànsit.",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297506734"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
