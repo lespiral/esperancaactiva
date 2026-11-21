@@ -117,7 +117,7 @@ def add_zones(b, groups, course, cfg, pid=None):
         # Funciona amb un sol grup o amb diversos (un per mapa).
         kind = "zona"
         for g in groups:
-            options += [(s["title"], s["id"]) for s in g.get("sections") or []]
+            options += [(s.get("nav") or s["title"], s["id"]) for s in g.get("sections") or []]
             if g["maps"]:
                 targets.append((g["maps"][0], g["title"]))
     elif len(groups) > 1 and cfg.get("by") == "district":

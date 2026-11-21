@@ -511,7 +511,13 @@
 "manresa-ruta-5":"41.72613,1.82584",
 "prats-de-llucanes-ruta-1":"42.00892,2.03188",
 "torello-ruta-1":"42.04861,2.26489",
-"tona-ruta-1":"41.84889,2.22798"
+"tona-ruta-1":"41.84889,2.22798",
+"manlleu-ruta-1":"42.00491,2.28572",
+"sant-vicenc-de-torello-ruta-1":"42.06136,2.25445",
+"torello-osonament-ruta-1":"42.05174,2.25090",
+"olost-ruta-1":"41.98592,2.09592",
+"els-hostalets-de-balenya-ruta-1":"41.81554,2.23556",
+"taradell-ruta-1":"41.87147,2.28463"
 },
 "el-prat":{
 "quan-la-vida-ruta-1":"41.32894,2.10212",
@@ -618,6 +624,8 @@
 "quan-sostenir-ruta-1":"42.18301,2.49182",
 "quan-sostenir-ruta-2":"42.18301,2.49182",
 "quan-sostenir-ruta-3":"42.18301,2.49182",
+"quan-sostenir-ruta-4":"42.18110,2.48795",
+"quan-sostenir-ruta-5":"42.14442,2.57133",
 "quan-cuidar-nos-ruta-1":"42.18221,2.48802",
 "quan-cuidar-nos-ruta-2":"42.18588,2.47377",
 "quan-cuidar-nos-ruta-3":"42.18077,2.48928",
@@ -1472,7 +1480,10 @@
 "quan-cuidar-nos-ruta-7":"42.10010,1.84180",
 "quan-cuidar-nos-ruta-8":"42.09919,1.84721",
 "quan-cuidar-nos-ruta-9":"42.10159,1.85265",
-"quan-cuidar-nos-ruta-10":"42.10198,1.84475"
+"quan-cuidar-nos-ruta-10":"42.10198,1.84475",
+"quan-sostenir-ruta-1":"42.10509,1.84742",
+"quan-sostenir-ruta-2":"42.09937,1.84781",
+"quan-sostenir-ruta-3":"41.94441,1.88066"
 },
 "ripoll":{
 "quan-la-vida-ruta-1":"42.19804,2.19287",
@@ -1488,7 +1499,10 @@
 "quan-cuidar-nos-ruta-6":"42.21147,2.20531",
 "quan-cuidar-nos-ruta-7":"42.19963,2.18851",
 "quan-cuidar-nos-ruta-8":"42.19280,2.19489",
-"quan-cuidar-nos-ruta-9":"42.20265,2.19209"
+"quan-cuidar-nos-ruta-9":"42.20265,2.19209",
+"quan-sostenir-ruta-1":"42.19954,2.19092",
+"quan-sostenir-ruta-2":"42.21169,2.20494",
+"quan-sostenir-ruta-3":"42.32018,2.48166"
 },
 "la-seu-d-urgell":{
 "quan-la-vida-ruta-1":"42.35544,1.45927",
@@ -1512,6 +1526,7 @@
 "quan-cuidar-nos-ruta-13":"42.35541,1.46143",
 "quan-cuidar-nos-ruta-14":"42.35952,1.45957",
 "quan-cuidar-nos-ruta-15":"42.35856,1.46185",
-"quan-cuidar-nos-ruta-16":"42.35838,1.46003"
+"quan-cuidar-nos-ruta-16":"42.35838,1.46003",
+"quan-sostenir-ruta-1":"42.35764,1.45727"
 }
 }

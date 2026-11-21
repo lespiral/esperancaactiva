@@ -319,6 +319,41 @@
           "tele": true
         }
       ]
+    },
+    {
+      "course": "dia",
+      "text": "1 ruta circular curta, d'1,40 km, que surt d'una cooperativa o d'una entitat d'economia solidària i hi torna. Comença i acaba al carrer, davant de l'entitat: no cal entrar-hi.",
+      "summary": "1 ruta des de cooperatives i economia solidària",
+      "notice": {
+        "title": "Traçats orientatius",
+        "html": [
+          "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada cooperativa o entitat: no són traçats oficials, i els punts de sortida són aproximats. Camina amb atenció al trànsit i a l'estat dels camins.",
+          "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "title": "La ruta",
+          "maps": [
+            {
+              "mid": "1ro-2RoWoXAH6YccM--zvnfeXR7UFu1U",
+              "title": "La Seu d'Urgell · cooperatives i economia solidària",
+              "ll": "42.3576,1.4573",
+              "z": 14,
+              "label": "1 ruta des de cooperatives i economia solidària"
+            }
+          ],
+          "routes": [
+            {
+              "n": 1,
+              "name": "Integra Pirineus",
+              "info": "1,40 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+              "address": "Carrer de Llorenç Tomàs i Costa, 58, la Seu d'Urgell",
+              "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352095"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

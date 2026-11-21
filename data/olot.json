@@ -341,47 +341,106 @@
     {
       "course": "dia",
       "credit": "Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. Les tres entitats comparteixen seu, així que les tres rutes surten del mateix lloc.",
-      "text": "Tres rutes circulars curtes, de 2,0 a 2,1 km (de 24 a 33 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi. Les tres entitats comparteixen seu, així que les tres rutes surten del mateix lloc.",
-      "summary": "3 rutes des de l'economia social",
-      "groups": [
+      "text": "Hi ha dos tipus de rutes: 3 rutes, de 2,0 a 2,1 km, que surten d'entitats de l'economia social i solidària, i 2 rutes més curtes, d'1,40 a 1,41 km, que surten de cooperatives. Totes són circulars i tornen al punt de sortida.",
+      "summary": "5 rutes des de l'economia social, cooperatives i entitats solidàries",
+      "parts": [
         {
-          "id": "quan-sostenir-rutes",
-          "title": "Les rutes",
-          "maps": [
+          "id": "economia-social",
+          "title": "Rutes des d'entitats de l'economia social i solidària",
+          "nav": "Economia social i solidària",
+          "text": "Surten d'entitats de l'economia social i solidària que comparteixen seu: les tres rutes surten del mateix lloc. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
+          "groups": [
             {
-              "mid": "1Hm-KVicCx9MVexFnTeh84K2-QUot1qI",
-              "title": "Olot · economia social i solidària",
-              "ll": "42.1830,2.4945",
-              "z": 15,
-              "label": "3 rutes des de l'economia social"
+              "id": "quan-sostenir-rutes",
+              "title": "Les rutes",
+              "maps": [
+                {
+                  "mid": "1Hm-KVicCx9MVexFnTeh84K2-QUot1qI",
+                  "title": "Olot · economia social i solidària",
+                  "ll": "42.1830,2.4945",
+                  "z": 15,
+                  "label": "3 rutes des de l'economia social"
+                }
+              ],
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Núria Social",
+                  "info": "2,14 km · 25–33 min caminant · circular",
+                  "address": "Carrer de la Verge del Carme, 8, Olot",
+                  "desc": "Núria Social és un espai d'Olot que acull activitats i posa recursos a disposició d'entitats, cooperatives i ciutadania.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-nuria-social-olot-295078033"
+                },
+                {
+                  "n": 2,
+                  "name": "Resilience Earth",
+                  "info": "2,00 km · 24–31 min caminant · circular",
+                  "address": "Carrer de la Verge del Carme, 8 (Núria Social), Olot",
+                  "desc": "Resilience Earth acompanya organitzacions, institucions i comunitats en processos de canvi i regeneració social i territorial.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-resilience-earth-olot-295078043"
+                },
+                {
+                  "n": 3,
+                  "name": "Arriant Formació i Lleure",
+                  "info": "2,03 km · 24–31 min caminant · circular",
+                  "address": "Carrer de la Verge del Carme, 8 (Núria Social), Olot",
+                  "desc": "Arriant desenvolupa formació i activitats de lleure educatiu per a infants i joves.",
+                  "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-arriant-formacio-i-lleure-olot-295078075"
+                }
+              ]
             }
           ],
-          "routes": [
+          "tele": true
+        },
+        {
+          "id": "cooperatives-i-economia-solidaria",
+          "title": "Rutes des de cooperatives i economia solidària",
+          "nav": "Cooperatives i economia solidària",
+          "text": "Surten de cooperatives i d'entitats d'economia solidària: espais on les persones treballen i es relacionen cooperant en lloc de competir. Tria la que tinguis més a prop i fes-hi el temps de reflexió de cada passa.",
+          "notice": {
+            "title": "Traçats orientatius",
+            "html": [
+              "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada cooperativa o entitat: no són traçats oficials, i els punts de sortida són aproximats. Camina amb atenció al trànsit i a l'estat dels camins.",
+              "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+            ]
+          },
+          "groups": [
             {
-              "n": 1,
-              "name": "Núria Social",
-              "info": "2,14 km · 25–33 min caminant · circular",
-              "address": "Carrer de la Verge del Carme, 8, Olot",
-              "desc": "Núria Social és un espai d'Olot que acull activitats i posa recursos a disposició d'entitats, cooperatives i ciutadania.",
-              "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-nuria-social-olot-295078033"
-            },
-            {
-              "n": 2,
-              "name": "Resilience Earth",
-              "info": "2,00 km · 24–31 min caminant · circular",
-              "address": "Carrer de la Verge del Carme, 8 (Núria Social), Olot",
-              "desc": "Resilience Earth acompanya organitzacions, institucions i comunitats en processos de canvi i regeneració social i territorial.",
-              "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-resilience-earth-olot-295078043"
-            },
-            {
-              "n": 3,
-              "name": "Arriant Formació i Lleure",
-              "info": "2,03 km · 24–31 min caminant · circular",
-              "address": "Carrer de la Verge del Carme, 8 (Núria Social), Olot",
-              "desc": "Arriant desenvolupa formació i activitats de lleure educatiu per a infants i joves.",
-              "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-arriant-formacio-i-lleure-olot-295078075"
+              "id": "cooperatives-rutes",
+              "title": "Les 2 rutes",
+              "maps": [
+                {
+                  "mid": "1pJz5IBuIboQkVKpSS1B9VXXTmDEaZKE",
+                  "title": "Olot · cooperatives i economia solidària",
+                  "ll": "42.1628,2.5296",
+                  "z": 11,
+                  "label": "2 rutes des de cooperatives i economia solidària",
+                  "routes": [
+                    4,
+                    5
+                  ]
+                }
+              ],
+              "routes": [
+                {
+                  "n": 4,
+                  "name": "La Granja de la Fageda",
+                  "info": "1,40 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "note": "El tram final passa per la sortida d'un aparcament.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352122"
+                },
+                {
+                  "n": 5,
+                  "name": "La Fageda (plaça Major de Santa Pau)",
+                  "info": "1,41 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Plaça Major, Santa Pau",
+                  "note": "La cooperativa és fora del nucli de Santa Pau: la ruta surt de la plaça Major. Hi ha trànsit a la carretera de Santa Pau a Mieres: camina per la vora i amb atenció.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297470316"
+                }
+              ]
             }
-          ]
+          ],
+          "tele": true
         }
       ]
     }

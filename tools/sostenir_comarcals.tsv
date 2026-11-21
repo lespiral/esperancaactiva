@@ -1,0 +1,16 @@
+ciutat	codi	nom	adreca	km	cam_min	cam_max	pau_min	pau_max	wikiloc	lat	lon	nota	seccio
+berga	BER-SOS-001	Cal Blanxart	Carrer de M. Buxadé, 18, Berga	1.36	16	20	25	40	297351562	42.10509	1.84742	El recorregut inclou trams de pujada (la pujada del Castell i la pujada de Cal Parraquer).	
+berga	BER-SOS-002	Fundació Horitzó	Plaça d'Europa, 3, Berga	1.40	17	21	25	40	297351880	42.09937	1.84781	Un tram del recorregut és per la carretera de Sant Fruitós, amb més trànsit.	
+berga	BER-SOS-003	Vidàlia (Cal Vidal, Puig-reig)	Cal Vidal, s/n, Puig-reig	1.14	14	17	25	35	297469581	41.94441	1.88066	Un tram del recorregut és per un camí que pot no estar asfaltat.	
+ripoll	RIP-SOS-001	La Lluerna	Carrer Vell, 3, Ripoll	1.37	16	21	25	40	297352025	42.19954	2.19092	El recorregut creua ponts i voreja la carretera d'Olot, amb més trànsit.	
+ripoll	RIP-SOS-002	Fundació MAP		1.37	16	21	25	40	297352058	42.21169	2.20494	Un tram del recorregut és per la Ruta del Ferro i del Carbó, un camí que pot no estar asfaltat.	
+ripoll	RIP-SOS-003	Obrador Ricolta (Beget, Camprodon)		1.33	16	20	25	40	297470045	42.32018	2.48166	Hi ha trànsit a la carretera d'Oix a Beget: camina per la vora i amb atenció.	
+seu	SEU-SOS-001	Integra Pirineus	Carrer de Llorenç Tomàs i Costa, 58, la Seu d'Urgell	1.40	17	21	25	40	297352095	42.35764	1.45727		
+olot	OLO-SOS-001	La Granja de la Fageda		1.40	17	21	25	40	297352122	42.18110	2.48795	El tram final passa per la sortida d'un aparcament.	
+olot	OLO-SOS-002	La Fageda (plaça Major de Santa Pau)	Plaça Major, Santa Pau	1.41	17	21	25	40	297470316	42.14442	2.57133	La cooperativa és fora del nucli de Santa Pau: la ruta surt de la plaça Major. Hi ha trànsit a la carretera de Santa Pau a Mieres: camina per la vora i amb atenció.	
+osona	OSO-SOS-001	Sambucus		1.39	17	21	25	40	297352170	42.00491	2.28572		Manlleu
+osona	OSO-SOS-002	Cooperativa Sequoia	Carrer de Vila-seca, 29, Sant Vicenç de Torelló	1.33	16	20	25	40	297352226	42.06136	2.25445	Bona part del recorregut és per camins que poden no estar asfaltats.	Sant Vicenç de Torelló
+osona	OSO-SOS-003	Osonament		1.33	16	20	25	40	297352296	42.05174	2.25090	Un tram del recorregut és per la carretera de Conanglell, amb més trànsit.	Torelló
+osona	OSO-SOS-004	Olost i Santa Creu Sostenible		1.40	17	21	25	40	297352410	41.98592	2.09592	Hi ha trams per la carretera de Vic, amb més trànsit, i per un camí que pot no estar asfaltat.	Olost
+osona	OSO-SOS-005	Balenyà Sostenible		1.17	14	18	25	40	297352479	41.81554	2.23556	El recorregut passa per la carretera de Ribes, amb més trànsit.	Els Hostalets de Balenyà
+osona	OSO-SOS-006	Taradell Sostenible	Carretera de Balenyà, 101, Taradell	1.42	17	21	25	40	297352568	41.87147	2.28463	La ruta surt d'un carrer proper, al nucli, i no del número de la carretera: el tram final és per la carretera de Balenyà, amb més trànsit.	Taradell

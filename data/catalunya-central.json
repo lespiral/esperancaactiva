@@ -4,7 +4,7 @@
   "kind": "territory",
   "title": "Caminar per la Catalunya Central",
   "region": "Catalunya Central",
-  "summary": "8 rutes de l'economia social i solidària en 4 municipis.",
+  "summary": "14 rutes de l'economia social i solidària en 10 municipis.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària.",
   "see_also": [
     {
@@ -22,8 +22,8 @@
   "blocks": [
     {
       "course": "dia",
-      "text": "8 rutes circulars curtes, d'1,6 a 2,0 km (uns 19–31 minuts caminant), que surten d'una entitat de l'economia social i solidària i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi.",
-      "summary": "8 rutes des de l'economia social",
+      "text": "14 rutes circulars curtes, d'1,2 a 2,0 km, que surten d'una entitat de l'economia social i solidària o d'una cooperativa i hi tornen: cooperatives, associacions i fundacions que treballen per l'habitatge, la feina, la cultura, l'alimentació o les cures. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi.",
+      "summary": "14 rutes des de l'economia social",
       "groups": [
         {
           "id": "quan-sostenir-rutes",
@@ -119,6 +119,96 @@
                   "address": "Carrer de Barcelona, 40, Tona",
                   "desc": "Mixité acompanya projectes participatius de desenvolupament i gestió del territori, amb criteris socials, ambientals i de cooperació ciutadana.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-tona-mixite-295088539"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "osona-rutes",
+          "title": "Osona",
+          "maps": [
+            {
+              "mid": "1MFsFJaw1_t1G1H0K4wYnDMKxgKw655E",
+              "title": "Osona · cooperatives i economia solidària",
+              "ll": "41.9652,2.2345",
+              "z": 10,
+              "label": "6 rutes des de cooperatives i economia solidària"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Manlleu",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Sambucus",
+                  "info": "1,39 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352170"
+                }
+              ]
+            },
+            {
+              "title": "Sant Vicenç de Torelló",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Cooperativa Sequoia",
+                  "info": "1,33 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer de Vila-seca, 29, Sant Vicenç de Torelló",
+                  "note": "Bona part del recorregut és per camins que poden no estar asfaltats.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352226"
+                }
+              ]
+            },
+            {
+              "title": "Torelló",
+              "id": "torello-osonament",
+              "nav": "Torelló · Osonament",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Osonament",
+                  "info": "1,33 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "note": "Un tram del recorregut és per la carretera de Conanglell, amb més trànsit.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352296"
+                }
+              ]
+            },
+            {
+              "title": "Olost",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Olost i Santa Creu Sostenible",
+                  "info": "1,40 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "note": "Hi ha trams per la carretera de Vic, amb més trànsit, i per un camí que pot no estar asfaltat.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352410"
+                }
+              ]
+            },
+            {
+              "title": "Els Hostalets de Balenyà",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Balenyà Sostenible",
+                  "info": "1,17 km · 14–18 min caminant · 25–40 min amb pauses · circular",
+                  "note": "El recorregut passa per la carretera de Ribes, amb més trànsit.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352479"
+                }
+              ]
+            },
+            {
+              "title": "Taradell",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Taradell Sostenible",
+                  "info": "1,42 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carretera de Balenyà, 101, Taradell",
+                  "note": "La ruta surt d'un carrer proper, al nucli, i no del número de la carretera: el tram final és per la carretera de Balenyà, amb més trànsit.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352568"
                 }
               ]
             }

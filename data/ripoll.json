@@ -243,6 +243,56 @@
           "tele": true
         }
       ]
+    },
+    {
+      "course": "dia",
+      "text": "3 rutes circulars curtes, de 1,33 a 1,37 km, que surten d'una cooperativa o d'una entitat d'economia solidària i hi tornen. Comencen i acaben al carrer, davant de l'entitat: no cal entrar-hi.",
+      "summary": "3 rutes des de cooperatives i economia solidària",
+      "notice": {
+        "title": "Traçats orientatius",
+        "html": [
+          "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada cooperativa o entitat: no són traçats oficials, i els punts de sortida són aproximats. Camina amb atenció al trànsit i a l'estat dels camins.",
+          "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "title": "Les 3 rutes",
+          "maps": [
+            {
+              "mid": "1RVZqOlQNlK7fOk5a2v4xBfemvnqp5HI",
+              "title": "Ripoll · cooperatives i economia solidària",
+              "ll": "42.2438,2.2925",
+              "z": 14,
+              "label": "3 rutes des de cooperatives i economia solidària"
+            }
+          ],
+          "routes": [
+            {
+              "n": 1,
+              "name": "La Lluerna",
+              "info": "1,37 km · 16–21 min caminant · 25–40 min amb pauses · circular",
+              "address": "Carrer Vell, 3, Ripoll",
+              "note": "El recorregut creua ponts i voreja la carretera d'Olot, amb més trànsit.",
+              "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352025"
+            },
+            {
+              "n": 2,
+              "name": "Fundació MAP",
+              "info": "1,37 km · 16–21 min caminant · 25–40 min amb pauses · circular",
+              "note": "Un tram del recorregut és per la Ruta del Ferro i del Carbó, un camí que pot no estar asfaltat.",
+              "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297352058"
+            },
+            {
+              "n": 3,
+              "name": "Obrador Ricolta (Beget, Camprodon)",
+              "info": "1,33 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+              "note": "Hi ha trànsit a la carretera d'Oix a Beget: camina per la vora i amb atenció.",
+              "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297470045"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
