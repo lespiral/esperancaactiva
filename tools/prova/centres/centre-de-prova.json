@@ -3,5 +3,11 @@
   "consentiment": true,
   "nom": "Centre de prova",
   "ciutat": "Ciutat de prova",
-  "benvinguda": "Text de benvinguda fictici, escrit pel centre en dues o tres línies. Aquesta pàgina només serveix per veure el format i no es publica."
+  "benvinguda": "Text de benvinguda fictici, escrit pel centre en dues o tres línies. Aquesta pàgina només serveix per veure el format i no es publica.",
+  "rutes": [
+    {"nom": "Passejada urbana de prova", "info": "Ruta circular · 1,00 km · 12–15 min caminant (dades fictícies)", "adreca": "Carrer de Prova, 1, Ciutat de prova", "mapa": "https://www.google.com/maps/d/viewer?mid=prova"}
+  ],
+  "sobre": "Text fictici sobre el centre, escrit pel centre i revisat amb ell abans de publicar.",
+  "web": "https://example.org/",
+  "contacte": {"email": "centre@example.org", "telefon": "600 000 000"}
 }

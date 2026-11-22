@@ -607,4 +607,7 @@ else:
 if (ROOT / "CNAME").exists():
     shutil.copy(ROOT / "CNAME", OUT / "CNAME")
 
+_pend = sorted(str(f.relative_to(OUT)) for f in OUT.rglob("*.html") if "[PENDENT" in f.read_text(encoding="utf-8"))
+if _pend:
+    print(f"ATENCIÓ: [PENDENT] visible a {len(_pend)} pàgina(es) generades (no es poden publicar així): {', '.join(_pend[:6])}")
 print(f"Fet: {len(cities)} ciutats, {len(territories)} territoris, {n_routes} rutes, {sum(len(g['maps']) for c in cities + territories for b in c['blocks'] for g in b['groups'])} mapes. adreça={SITE_URL} cercadors={'no' if NOINDEX else 'sí'}")

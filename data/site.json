@@ -308,7 +308,7 @@
       ["He de tenir experiència prèvia?", "No. Les pràctiques estan pensades perquè siguin accessibles i progressives."],
       ["Hi ha rutes de tots els cursos a totes les ciutats i pobles?", "Encara no. Les rutes es pensen per a cada curs i n'anem afegint. Si al teu poble o a la teva ciutat encara no n'hi ha del teu curs, pots fer la caminada a prop de casa o en un lloc tranquil."],
       ["On visc encara no hi ha rutes. Puc fer el curs?", "És clar. Pots fer el temps de reflexió en una passejada a prop de casa o en un lloc tranquil."],
-      ["Sóc d'una entitat: ho podem fer amb el nostre equip?", "Sí, és el que volem provar. <a href=\"mailto:esperanza@elarasocial.com\">Escriu-nos</a> i ho dissenyem plegats. Fem una prova pilot gratuïta amb poques entitats. Tens més informació a la pàgina d'entitats d'<a href=\"https://elarasocial.com/entitats/\" target=\"_blank\" rel=\"noopener\">Elara Social</a> (s'obre a Elara Social)."]
+      ["Sóc d'una entitat: ho podem fer amb el nostre equip?", "Sí. Podeu orientar-hi les persones sense cap acord, fer-vos centre col·laborador o encarregar-nos un curs a mida. Ho expliquem a Elara Social.</p><p><a class=\"btn btn--soft\" href=\"https://elarasocial.com/entitats/\" target=\"_blank\" rel=\"noopener\">Veure què us proposem <span class=\"ext__note ext__note--on\">(s'obre a Elara Social)</span></a>"]
     ],
     "nus_title": "Què és l'Esperança Activa?",
     "nus_lead": "No és optimisme ni esperar que tot vagi bé. És mirar de cara allò que ens preocupa i triar, amb altres, un pas concret.",
@@ -327,10 +327,9 @@
     },
     "entities": {
       "kicker": "Per a entitats",
-      "title": "Voleu fer aquest camí amb el vostre equip?",
-      "text": "Si sou una cooperativa, associació o col·lectiu, podem adaptar les 7 passes i les caminades al vostre espai. Estem començant i busquem les primeres entitats aliades.",
-      "pending": "La primera col·laboració és una prova pilot gratuïta, que dissenyem plegats.",
-      "buttons": [["Per a entitats, a Elara Social", "https://elarasocial.com/entitats/", true], ["Centres col·laboradors", "centres-colaboradors/"]],
+      "title": "El vostre espai pot ser un punt de partida",
+      "text": "Si sou un centre de salut, una escola, un servei municipal, una cooperativa o un col·lectiu, podeu orientar cap a aquests cursos i rutes. Estem començant i busquem els primers centres col·laboradors.",
+      "buttons": [["Veure què us proposem", "https://elarasocial.com/entitats/", true], ["Veure els centres col·laboradors", "centres-colaboradors/"]],
       "external_note": "s'obre a Elara Social"
     },
     "therapy": {
@@ -560,7 +559,7 @@
       {
         "title": "Per a entitats",
         "items": [
-          ["Sóc d'una entitat: ho podem fer amb el nostre equip?", "Sí, és el que volem provar. <a href=\"mailto:esperanza@elarasocial.com\">Escriu-nos</a> i ho dissenyem plegats. Fem una prova pilot gratuïta amb poques entitats. Tens més informació a la pàgina d'entitats d'<a href=\"https://elarasocial.com/entitats/\" target=\"_blank\" rel=\"noopener\">Elara Social</a> (s'obre a Elara Social)."]
+          ["Sóc d'una entitat: ho podem fer amb el nostre equip?", "Sí. Podeu orientar-hi les persones sense cap acord, fer-vos centre col·laborador o encarregar-nos un curs a mida. Ho expliquem a Elara Social.</p><p><a class=\"btn btn--soft\" href=\"https://elarasocial.com/entitats/\" target=\"_blank\" rel=\"noopener\">Veure què us proposem <span class=\"ext__note ext__note--on\">(s'obre a Elara Social)</span></a>"]
         ]
       }
     ],
@@ -781,7 +780,7 @@
   "centres_page": {
     "kicker": "Camins d'Esperança [Activa]",
     "title": "Centres col·laboradors",
-    "lead": "[PENDENT: text d'introducció de l'apartat 8]",
+    "lead": "Espais que orienten cap a Camins d'Esperança [Activa] i comparteixen els seus valors [PENDENT: criteri].",
     "empty": "Encara no hi ha centres col·laboradors. Estem començant.",
     "list_title": "Centres col·laboradors",
     "list_visit": "Veure la pàgina del centre",
@@ -789,18 +788,26 @@
     "promoters_intro": "Els espais promotors són els que impulsen el projecte.",
     "promoters": ["pra-cui-001", "pra-cui-002"],
     "promoters_map_btn": "Obre el mapa de les rutes",
-    "first_title": "Voleu que el vostre centre sigui el primer?",
-    "first_btn": "Parlem-ne a Elara Social",
-    "first_url": "https://elarasocial.com/entitats/",
+    "first_btn": "Voleu que el vostre centre sigui el primer?",
+    "first_url": "https://elarasocial.com/entitats/centre-colaborador/",
     "first_note": "s'obre a Elara Social"
   },
 
   "centre_page": {
     "badge": "Centre col·laborador",
-    "title": "Fes la teva primera passa",
+    "routes_btn": "Veure les rutes",
     "courses_btn": "Veure els cursos",
-    "routes_btn": "Rutes a prop del centre",
-    "courses_title": "Els cursos",
+    "courses_title": "Fes la teva primera passa",
+    "courses_intro": "Cursos en línia gratuïts de set passes cada un. Els cursos són en preparació; les rutes ja es poden fer.",
+    "routes_title": "Rutes a prop del centre",
+    "routes_open": "Obre el mapa",
+    "routes_wl": "Obre-la a Wikiloc",
+    "routes_note": "La fas sola i al teu ritme. Pots parar i reprendre-ho un altre dia.",
+    "how_title": "Com funciona",
+    "how": [["{nom} t'ho proposa", "A través de qui t'orienta"], ["Fas la pràctica", "Una pràctica guiada d'uns 15 minuts, a casa"], ["Camines des de la porta del centre", "Al teu ritme"], ["T'ho portes al dia a dia", "Un petit pas possible"]],
+    "about_title": "Sobre {nom}",
+    "about_web": "Visita la web del centre",
+    "contact_title": "Contacte del centre",
     "note": "orienta cap a aquest recurs. Camins d'Esperança [Activa] és una iniciativa de L'Espiral i Elara Social. El centre no avala resultats de salut."
   },
 
