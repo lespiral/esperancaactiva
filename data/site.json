@@ -31,7 +31,6 @@
     "notify": "Avisa'm quan s'obri"
   },
 
-  "map_gate": {"btn": "Mostra el mapa", "text": "Aquest mapa és de Google My Maps i no es carrega fins que el mostris.", "note": "En mostrar-lo, el teu navegador es connecta a Google. <a href=\"/politica-de-galetes/\">Més informació</a>."},
   "waitlist": {
     "mode": "mailto",
     "action": "",
