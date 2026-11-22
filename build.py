@@ -16,7 +16,8 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup
 
 ROOT = Path(__file__).resolve().parent
-DATA, SRC, OUT = ROOT / "data", ROOT / "src", ROOT / "docs"
+# BUILD_OUT permet generar a una altra carpeta (renders de prova) sense tocar docs/
+DATA, SRC, OUT = ROOT / "data", ROOT / "src", Path(os.environ.get("BUILD_OUT") or ROOT / "docs")
 
 from urllib.parse import urlparse
 
@@ -485,9 +486,12 @@ PAGES = []
 def render(template, path, **ctx):
     depth = len([p for p in path.split("/") if p])
     root = ctx.pop("root", "../" * depth)
+    redirect_to = ctx.get("redirect_to")
     canonical = None if path.endswith(".html") else SITE_URL + (path + "/" if path else "")
-    if canonical:
+    if canonical and not redirect_to:
         PAGES.append(canonical)
+    if redirect_to:   # pàgina de redirecció: el canonical és la pàgina nova i no surt al sitemap
+        canonical = redirect_to
     if isinstance(ctx.get("page_description"), str):
         ctx["page_description"] = ctx["page_description"].replace("**", "")
     html = env.get_template(template).render(root=root, canonical=canonical, **ctx)
@@ -499,6 +503,45 @@ def render(template, path, **ctx):
 if OUT.exists():
     shutil.rmtree(OUT)
 OUT.mkdir()
+
+# ---- Redireccions cap a les pàgines d'entitats d'Elara Social (data/site.json › redirects) ----
+# GitHub Pages no fa 301: cada pàgina antiga es converteix en una pàgina amb meta refresh, canonical i enllaç visible.
+# Desactivades fins que l'Aleix confirmi que les pàgines d'Elara són en producció ("active": true, o REDIRECTS=1 per a renders de prova).
+_rd = site["redirects"]
+REDIR = {src_: dst for src_, dst in _rd["items"]} if (_rd.get("active") or os.environ.get("REDIRECTS") == "1") else {}
+_render = render
+
+
+def render(template, path, **ctx):
+    if path in REDIR:
+        return _render("redirect.html", path, section="entitats", page_title=_rd["title"], redirect_to=REDIR[path], rd=_rd, root=ctx.get("root", "../" * len([p for p in path.split("/") if p])))
+    return _render(template, path, **ctx)
+
+
+# ---- Centres col·laboradors: data/centres/<slug>.json → /centres/<slug>/ ----
+# Cada fitxer ha de dur "consentiment": true (acord per escrit del centre). Sense això, el build s'atura.
+# Cap centre està publicat. CENTRES_PROVA=1 hi suma tools/prova/centres/ (dades fictícies; només per a renders locals amb BUILD_OUT).
+CENTRE_REQUIRED = ("nom", "ciutat", "benvinguda")
+CENTRES = []
+_cfiles = sorted((DATA / "centres").glob("*.json")) if (DATA / "centres").exists() else []
+if os.environ.get("CENTRES_PROVA") == "1":
+    _cfiles += sorted((ROOT / "tools" / "prova" / "centres").glob("*.json"))
+for _f in _cfiles:
+    _c = json.loads(_f.read_text(encoding="utf-8"))
+    if _c.get("consentiment") is not True:
+        sys.exit(f"{_f.name}: falta \"consentiment\": true (acord per escrit del centre). Cap centre ni logo es publica sense consentiment.")
+    _miss = [k for k in CENTRE_REQUIRED if not str(_c.get(k) or "").strip()]
+    if _miss:
+        sys.exit(f"{_f.name}: falten camps: {', '.join(_miss)}")
+    _c["slug"] = _f.stem
+    if not re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", _c["slug"]):
+        sys.exit(f"{_f.name}: el nom del fitxer (slug) només pot dur minúscules, xifres i guions")
+    if _c.get("logo") and not (SRC / "img" / "centres" / _c["logo"]).exists():
+        sys.exit(f"{_f.name}: el logo src/img/centres/{_c['logo']} no existeix")
+    CENTRES.append(_c)
+_dup = {c["slug"] for c in CENTRES if [x["slug"] for x in CENTRES].count(c["slug"]) > 1}
+assert not _dup, f"centres repetits: {_dup}"
+CENTRES.sort(key=lambda c: sort_key(c["nom"]))
 
 render("home.html", "", section="inici")
 render("courses.html", "cursos", section="cursos", page_title="Els cursos", cp=site_t["courses_page"])
@@ -517,6 +560,12 @@ _nb = dict(site_t["nearby"]); _nb.update({k: v for k, v in site_t["afins_page"][
 site_t["afins_page"]["nearby_L"] = _nb
 site_t["afins_page"]["safety_html"] = Markup(site["afins_page"]["safety_html"])
 render("afins.html", "entitats-i-espais-afins", section="entitats", page_title="Per a entitats i espais afins", page_description=site["afins_page"]["lead"].replace("**", ""), pp=site_t["afins_page"])
+# Centres col·laboradors: la pàgina de llista (amb els espais promotors) i una pàgina per centre
+_ap = site_t["afins_page"]
+_promoters = [next(e for e in _ap["espais"] if e["id"] == i) for i in site["centres_page"]["promoters"]]
+render("centres.html", "centres-colaboradors", section="entitats", page_title=site["centres_page"]["title"], page_description="Centres que col·laboren amb Camins d'Esperança [Activa]. Encara no n'hi ha cap: estem començant.", cp=site_t["centres_page"], ap=_ap, promoters=_promoters, centres=CENTRES)
+for _c in CENTRES:
+    render("centre.html", f"centres/{_c['slug']}", section="entitats", page_title=f"{_c['nom']} · {site['centre_page']['badge']}", page_description=_c["benvinguda"], centre=_c, ce=site_t["centre_page"], centre_prova=bool(_c.get("prova")))
 for c in site["courses"]:
     render("course.html", c["slug"], section="cursos", page_title=c["title"], page_description=c["subtitle"], course=c)
 for city in cities:
@@ -558,4 +607,7 @@ else:
 if (ROOT / "CNAME").exists():
     shutil.copy(ROOT / "CNAME", OUT / "CNAME")
 
+_pend = sorted(str(f.relative_to(OUT)) for f in OUT.rglob("*.html") if "[PENDENT" in f.read_text(encoding="utf-8"))
+if _pend:
+    print(f"ATENCIÓ: [PENDENT] visible a {len(_pend)} pàgina(es) generades (no es poden publicar així): {', '.join(_pend[:6])}")
 print(f"Fet: {len(cities)} ciutats, {len(territories)} territoris, {n_routes} rutes, {sum(len(g['maps']) for c in cities + territories for b in c['blocks'] for g in b['groups'])} mapes. adreça={SITE_URL} cercadors={'no' if NOINDEX else 'sí'}")

@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% from "parts.html" import page_head %}
+{# Centres col·laboradors (/centres-colaboradors/), 22 de novembre de 2026. Textos a data/site.json › centres_page.
+   Sense cap centre publicat: «Encara no hi ha centres col·laboradors». Els centres surten de data/centres/<slug>.json (amb consentiment). #}
+{% block content %}
+{{ page_head(cp.kicker, cp.title, cp.lead, green=True) }}
+
+<div class="wrap wrap--mid stack stack--bottom health">
+  <section id="centres" aria-labelledby="h-centres">
+    {% if centres %}
+    <h2 class="health__h2" id="h-centres">{{ cp.list_title }}</h2>
+    <ul class="cards">
+      {% for c in centres %}
+      <li class="card centres__item"><h3 class="card__title">{{ c.nom }}</h3><p class="card__sub"><span>{{ c.ciutat }}</span></p><a class="btn btn--soft btn--block" href="{{ root }}centres/{{ c.slug }}/">{{ cp.list_visit }}</a></li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <h2 class="sr-only" id="h-centres">{{ cp.list_title }}</h2>
+    <p class="callout">{{ icon('check') }}<span>{{ cp.empty }}</span></p>
+    {% endif %}
+  </section>
+
+  <section class="panel panel--plain" id="espais-promotors" aria-labelledby="h-prom">
+    <h2 class="health__h2" id="h-prom">{{ cp.promoters_title }}</h2>
+    <p>{{ cp.promoters_intro }}</p>
+    <div class="routes"><ol class="routes__list">
+      {% for e in promoters %}
+      <li class="route" id="{{ e.id }}">
+        <span class="route__n" aria-hidden="true">{{ loop.index }}</span>
+        <div class="route__body">
+          <span class="route__tag">{{ e.tag }}</span>
+          <h3 class="route__name">{{ e.name }}</h3>
+          <p class="route__start">{{ e.start }}</p>
+          {% if e.info %}<p class="route__info">{{ e.info }}</p>{% endif %}
+          <p class="route__addr">{{ icon('pin') }}<span>{{ e.address }}</span></p>
+          {% if e.note %}<p class="route__note">{{ e.note }}</p>{% endif %}
+          <p class="route__desc">{{ e.desc }}</p>
+          <div class="route__links">
+            <a class="route__go" href="{{ ap.routes_map_url }}" target="_blank" rel="noopener" aria-label="{{ ap.espais_open }}: {{ e.name }} (pestanya nova)">{{ icon('map') }}{{ ap.espais_open }}</a>
+            {%- if e.wikiloc %}<a class="route__wl" href="{{ e.wikiloc }}" target="_blank" rel="noopener" aria-label="{{ ap.espais_wl }}: {{ e.name }} (pestanya nova)">{{ icon('external') }}{{ ap.espais_wl }}</a>{% endif -%}
+            {%- if e.web %}<a class="route__wl" href="{{ e.web }}" target="_blank" rel="noopener" aria-label="{{ ap.espais_web }}: {{ e.name }} (pestanya nova)">{{ icon('external') }}{{ ap.espais_web }}</a>{% endif -%}
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ol></div>
+    <p class="health__more"><a href="{{ ap.routes_map_url }}" target="_blank" rel="noopener">{{ icon('map') }}{{ cp.promoters_map_btn }}</a></p>
+  </section>
+
+  <section class="contact-box" id="el-primer" aria-labelledby="h-first">
+    <h2 class="sr-only" id="h-first">{{ cp.first_btn }}</h2>
+    <p class="contact-box__links">
+      <a class="btn btn--primary" href="{{ cp.first_url }}" target="_blank" rel="noopener">{{ cp.first_btn }}{{ icon('external', 'ext__i') }}<span class="ext__note ext__note--on ext__note--block">{{ cp.first_note }}</span></a>
+    </p>
+  </section>
+</div>
+{% endblock %}

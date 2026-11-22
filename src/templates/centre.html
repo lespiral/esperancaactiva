@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% from "parts.html" import course_cards, therapy_box %}
+{# Pàgina d'un centre col·laborador (/centres/<slug>/). Es genera de data/centres/<slug>.json, que ha de dur "consentiment": true.
+   Ordre (pla «01 Pla - Pàgines per a entitats», apartat 5): benvinguda → «Fes la teva primera passa» (cursos) → rutes a prop del centre → com funciona → sobre el centre → límits. #}
+{% block content %}
+{% if centre.prova %}<div class="centre__prova" role="note"><div class="wrap">Pàgina de prova amb dades fictícies. No es publica.</div></div>{% endif %}
+<section class="pagehead pagehead--center pagehead--green">
+  <div class="wrap">
+    <p class="centre__id">
+      {% if centre.logo %}<img class="centre__logo" src="{{ root }}assets/img/centres/{{ centre.logo }}" alt="" width="44" height="44">{% endif %}
+      <span class="centre__badge">{{ ce.badge }} · {{ centre.ciutat }}</span>
+    </p>
+    <h1>{{ centre.nom }}</h1>
+    <p class="lead">{{ centre.benvinguda }}</p>
+    <p class="centre__actions">
+      <a class="btn btn--light" href="#cursos">{{ ce.courses_btn }}</a>
+      {% if centre.rutes %}<a class="btn btn--ghost-light" href="#rutes">{{ ce.routes_btn }}</a>{% endif %}
+    </p>
+  </div>
+</section>
+
+<div class="wrap wrap--mid stack stack--bottom health">
+  <section id="cursos" aria-labelledby="h-courses">
+    <h2 class="health__h2" id="h-courses">{{ ce.courses_title }}</h2>
+    <p>{{ ce.courses_intro }}</p>
+    {{ course_cards(site.courses, root) }}
+  </section>
+
+  {% if centre.rutes %}
+  <section class="panel panel--plain" id="rutes" aria-labelledby="h-routes">
+    <h2 class="health__h2" id="h-routes">{{ ce.routes_title }}</h2>
+    <div class="routes"><ol class="routes__list">
+      {% for r in centre.rutes %}
+      <li class="route">
+        <span class="route__n" aria-hidden="true">{{ loop.index }}</span>
+        <div class="route__body">
+          <h3 class="route__name">{{ r.nom }}</h3>
+          {% if r.info %}<p class="route__info">{{ r.info }}</p>{% endif %}
+          {% if r.adreca %}<p class="route__addr">{{ icon('pin') }}<span>{{ r.adreca }}</span></p>{% endif %}
+          <div class="route__links">
+            {%- if r.mapa %}<a class="route__go" href="{{ r.mapa }}" target="_blank" rel="noopener" aria-label="{{ ce.routes_open }}: {{ r.nom }} (pestanya nova)">{{ icon('map') }}{{ ce.routes_open }}</a>{% endif -%}
+            {%- if r.wikiloc %}<a class="route__wl" href="{{ r.wikiloc }}" target="_blank" rel="noopener" aria-label="{{ ce.routes_wl }}: {{ r.nom }} (pestanya nova)">{{ icon('external') }}{{ ce.routes_wl }}</a>{% endif -%}
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ol></div>
+    <p class="health__more">{{ ce.routes_note }}</p>
+  </section>
+  {% endif %}
+
+  <section id="com-funciona" aria-labelledby="h-how">
+    <h2 class="health__h2" id="h-how">{{ ce.how_title }}</h2>
+    <ol class="centre__steps">
+      {% for t, s in ce.how %}
+      <li class="card"><span class="route__n" aria-hidden="true">{{ loop.index }}</span><strong>{{ t|replace('{nom}', centre.nom) }}</strong><span>{{ s }}</span></li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  {% if centre.sobre or centre.contacte %}
+  <section class="panel" id="sobre" aria-labelledby="h-about">
+    <h2 class="health__h2" id="h-about">{{ ce.about_title|replace('{nom}', centre.nom) }}</h2>
+    {% if centre.sobre %}<p>{{ centre.sobre }}</p>{% endif %}
+    {% if centre.web %}<p><a class="btn btn--soft" href="{{ centre.web }}" target="_blank" rel="noopener">{{ ce.about_web }}{{ icon('external', 'ext__i') }}</a></p>{% endif %}
+    {% if centre.contacte %}<p class="centre__contact"><strong>{{ ce.contact_title }}:</strong>
+      {% if centre.contacte.email %}<a href="mailto:{{ centre.contacte.email }}">{{ centre.contacte.email }}</a>{% endif %}
+      {% if centre.contacte.telefon %} · <a href="tel:{{ centre.contacte.telefon|replace(' ', '') }}">{{ centre.contacte.telefon }}</a>{% endif %}</p>{% endif %}
+  </section>
+  {% endif %}
+
+  {% if h.therapy %}{{ therapy_box(h.therapy) }}{% endif %}
+
+  <p class="health__more centre__note">{{ centre.nom }} {{ ce.note }}</p>
+</div>
+{% endblock %}

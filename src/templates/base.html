@@ -6,7 +6,8 @@
   <script>document.documentElement.className += ' js';</script>
   <title>{% if page_title %}{{ page_title }} · {{ site.name }}{% else %}{{ h.title or site.name }}{% endif %}</title>
   <meta name="description" content="{{ page_description or site.description }}">
-  {% if noindex %}<meta name="robots" content="noindex">{% endif %}
+  {% if noindex or centre_prova %}<meta name="robots" content="noindex">{% endif %}
+  {% if redirect_to %}<meta http-equiv="refresh" content="0; url={{ redirect_to }}">{% endif %}
   {% if canonical %}<link rel="canonical" href="{{ canonical }}">
   <meta property="og:url" content="{{ canonical }}">{% endif %}
   <meta property="og:title" content="{{ page_title or site.name }}">
@@ -44,7 +45,10 @@
           <li><a href="{{ root }}cursos/"{% if section == 'cursos' %} aria-current="page"{% endif %}>Els cursos</a></li>
           <li><a href="{{ root }}ciutats/"{% if section == 'ciutats' %} aria-current="page"{% endif %}>{{ site.cities_page.title }}</a></li>
           <li><a href="{{ root }}preguntes/"{% if section == 'preguntes' %} aria-current="page"{% endif %}>Preguntes</a></li>
-          {% if site.nav and site.nav.entities %}<li><a href="{{ root }}{{ site.nav.entities_url }}"{% if section == site.nav.entities_section %} aria-current="page"{% endif %}>{{ site.nav.entities }}</a></li>{% endif %}
+          {% if site.nav and site.nav.entities %}
+          {% if site.nav.entities_external %}<li><a class="menu__ext" href="{{ site.nav.entities_url }}" target="_blank" rel="noopener" title="{{ site.nav.entities_note }}">{{ site.nav.entities }}{{ icon('external', 'ext__i') }}<span class="ext__note">{{ site.nav.entities_note }}</span></a></li>
+          {% else %}<li><a href="{{ root }}{{ site.nav.entities_url }}"{% if section == site.nav.entities_section %} aria-current="page"{% endif %}>{{ site.nav.entities }}</a></li>{% endif %}
+          {% endif %}
           {# Només al menú del mòbil: botó final per apuntar-se a la llista d'espera, mentre hi hagi cursos «Properament» #}
           {% if site.nav and site.nav.notify and site.waitlist and site.courses|selectattr('soon')|list|length > 0 %}<li class="menu__cta"><a href="{{ root }}#t-avisem">{{ site.nav.notify }}</a></li>{% endif %}
         </ul>
@@ -75,6 +79,16 @@
         <p class="footer__h">{{ site.cities_page.title }}</p>
         <ul><li><a href="{{ root }}ciutats/">{{ site.footer.cities_link }}</a></li></ul>
       </div>
+      {% if site.footer.entities_links %}
+      <div class="footer__col">
+        <p class="footer__h">{{ site.footer.entities_h }}</p>
+        <ul>
+          {% for l in site.footer.entities_links %}{% set label = l[0] %}{% set url = l[1] %}
+          <li>{% if l[2] %}<a href="{{ url }}" target="_blank" rel="noopener">{{ label }}{{ icon('external', 'ext__i') }}<span class="ext__note ext__note--on ext__note--block">{{ site.footer.external_note }}</span></a>{% else %}<a href="{{ root }}{{ url }}">{{ label }}</a>{% endif %}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
       <div class="footer__col">
         <p class="footer__h">Contacte</p>
         <ul class="footer__contact">
