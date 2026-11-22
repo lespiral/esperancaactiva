@@ -108,3 +108,15 @@ Les 65 rutes de Barcelona des dels equipaments comunitaris («Quan cuidar-nos é
 Les 16 rutes de Vic des dels equipaments comunitaris («Quan cuidar-nos és una tasca col·lectiva», 6 de novembre de 2026) vénen de les fitxes dels 2 mapes de My Maps «Rutes d’Esperança Activa - Vic · equipaments comunitaris» (rutes 1–8 i 9–16): el nom i l’adreça del punt d’inici, els km, el temps caminant i amb pauses i, de l’apartat «Accessibilitat i seguretat», els trams de terra, d’escales o per carretera i els pendents. Tenen numeració pròpia (1 a 16), diferent de la dels parcs (1 a 23) i de la dels CAP i hospitals (24 a 28).
 
 Les 261 rutes de Barcelona pels parcs i jardins («Quan el món et preocupa», 5 de novembre de 2026) vénen del full «Rutes Barcelona - Parcs i jardins» (pestanyes «Rutes» i «Mapes») i de les fitxes dels 31 mapes de My Maps: el nom i l'adreça del punt d'inici, els km i el temps caminant i amb pauses. De les observacions del full només s'hi posen les que serveixen a qui camina (horaris, pendents, on comença la ruta).
+
+## Redisseny de novembre de 2026 (CTA, avís, xifres, entitats, ajuda)
+
+Tot és a `data/site.json` i les plantilles; el mateix codi a la .cat i a la .org.
+- **Botons del hero:** `home.hero_actions`. `soon` (si hi ha algun curs amb `"soon": true`) o `open` (quan tots els cursos estiguin oberts).
+- **Franja de xifres:** `home.stats`. Les xifres es calculen en generar (llocs, àrees, cursos, passes); `areas_by` és `leaf` (comarques, .cat) o `top` (comunitats, .org). No s'escriu cap xifra a mà.
+- **Avís «Avisa'm quan s'obri»:** `waitlist` (macro `waitlist` a `parts.html`). `mode: "mailto"` obre un correu a `contact.email` amb l'assumpte; `mode: "form"` mostra un camp de correu que envia a `action`. L'aspecte és el mateix. `opening` (data d'obertura) i `privacy` buits = no es mostren.
+- **Banda «Per a entitats»:** `home.entities` (text, botons i, a la .org, `mail`). La pregunta d'entitats és a `home.faq` i a `faq_page`.
+- **Caixa «No és teràpia»:** `home.therapy`. La .cat porta 061/024/112; la .org, només 024/112 (el 061 és de Catalunya).
+- **Menú:** `nav.entities*` i `nav.notify` (botó d'avís al mòbil). **.org:** franja superior `langbar` amb enllaç a la .cat. **.cat:** `place_nav.none_link` als resultats buits del cercador.
+- **Mòbil i accessibilitat:** al final de `src/site.css`. Les infografies tenen lletres de 11–13,5 px i alguns botons petits: es van deixar perquè són ginys posicionats.
+- La .org ja no és «només Cataluña»: té també Madrid i Santiago de Compostela (veure `data/lugares.json`).
