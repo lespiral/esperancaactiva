@@ -123,7 +123,7 @@ Tot és a `data/site.json` i les plantilles; el mateix codi a la .cat i a la .or
 
 ## Entitats cap a Elara Social i centres col·laboradors (22 de novembre de 2026, branca `entitats-elara-nov-2026`)
 
-- **Menú, banda de la portada, FAQ i peu:** «Per a entitats» porta a https://elarasocial.com/entitats/ (enllaç extern, marcat «s'obre a Elara Social»). Textos a `data/site.json` › `nav`, `home.entities`, `home.faq`/`faq_page` i `footer.entities_*`. Els textos de banda, FAQ i peu són provisionals fins a posar-hi els de l'apartat 8 del pla d'Elara.
+- **Menú, banda de la portada, FAQ i peu:** «Per a entitats» porta a https://elarasocial.com/entitats/ (enllaç extern, marcat «s'obre a Elara Social»). Textos a `data/site.json` › `nav`, `home.entities`, `home.faq`/`faq_page` i `footer.entities_*`.
 - **`/centres-colaboradors/`:** `data/site.json` › `centres_page`, plantilla `centres.html`. Sense cap centre publicat diu «Encara no hi ha centres col·laboradors. Estem començant.» i mostra els «Espais promotors» (L'Espiral del Prat i Elara Social, ids a `centres_page.promoters`, dades i mapa de `afins_page`). No s'hi incrusta el mapa de punts perquè hi surt Osona Ioga.
 - **Un centre:** `data/centres/<slug>.json` → `/centres/<slug>/` (plantilla `centre.html`, textos a `centre_page`). Camps: `nom`, `ciutat`, `benvinguda`, `consentiment: true` (obligatori: sense això `build.py` s'atura), `logo` (opcional, a `src/img/centres/`) i `rutes_url` (opcional). Cap centre ni entitat externa hi surt sense acord escrit de l'Aleix.
 - **Renders de prova:** `BUILD_OUT=/tmp/prova CENTRES_PROVA=1 REDIRECTS=1 python3 build.py` genera a una altra carpeta (sense tocar `docs/`) amb el centre fictici de `tools/prova/centres/` i les redireccions actives. Mai s'ha de publicar.

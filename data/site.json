@@ -789,7 +789,7 @@
     "promoters": ["pra-cui-001", "pra-cui-002"],
     "promoters_map_btn": "Obre el mapa de les rutes",
     "first_btn": "Voleu que el vostre centre sigui el primer?",
-    "first_url": "https://elarasocial.com/entitats/centre-colaborador/",
+    "first_url": "https://elarasocial.com/entitats-centre-colaborador/",
     "first_note": "s'obre a Elara Social"
   },
 
@@ -812,16 +812,16 @@
   },
 
   "redirects": {
-    "active": false,
+    "active": true,
     "title": "Aquesta pàgina s'ha mogut",
     "text": "Ara la trobaràs a Elara Social.",
     "link": "Anar a la pàgina nova",
     "note": "s'obre a Elara Social",
     "items": [
-      ["entitats-i-espais-afins", "https://elarasocial.com/entitats/entitats-collectius/"],
+      ["entitats-i-espais-afins", "https://elarasocial.com/entitats-collectius/"],
       ["entitats-del-prat", "https://elarasocial.com/entitats/"],
-      ["centres-de-salut", "https://elarasocial.com/entitats/salut/"],
-      ["centres-educatius", "https://elarasocial.com/entitats/escoles/"]
+      ["centres-de-salut", "https://elarasocial.com/entitats-salut/"],
+      ["centres-educatius", "https://elarasocial.com/entitats-escoles/"]
     ]
   }
 }
