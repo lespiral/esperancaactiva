@@ -56,7 +56,7 @@
     {% if pp.map_mid %}
     <figure class="map">
       <div class="map__frame">
-        <iframe src="https://www.google.com/maps/d/embed?mid={{ pp.map_mid }}&amp;ehbc=2E312F" title="Mapa: {{ pp.map_title }}" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map__gate"><p class="map__gate-text">{{ site.map_gate.text }}</p><button type="button" class="btn btn--primary map__load" data-src="https://www.google.com/maps/d/embed?mid={{ pp.map_mid }}&amp;ehbc=2E312F" data-title="Mapa: {{ pp.map_title }}">{{ site.map_gate.btn }}</button><p class="map__gate-note">{{ site.map_gate.note|safe }}</p></div>
       </div>
       <figcaption><a href="{{ pp.map_url }}" target="_blank" rel="noopener">{{ icon('external') }}{{ pp.map_btn }}</a> &nbsp;·&nbsp; <a href="{{ pp.routes_map_url }}" target="_blank" rel="noopener">{{ icon('map') }}{{ pp.routes_map_btn }}</a></figcaption>
     </figure>
