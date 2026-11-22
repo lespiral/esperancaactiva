@@ -103,6 +103,12 @@
     {% if pt.n %}{{ place_nav('tria-lloc', pt, root, site.place_nav, course=True) }}{{ nearby(site.nearby, root, course.key) }}{% else %}<p>Aviat hi haurà rutes d'aquest curs. Mentrestant, pots fer el temps de reflexió de cada passa caminant a prop de casa o en un lloc tranquil.</p>{% endif %}
   </section>
 
+  <section class="panel panel--plain next" id="i-despres" aria-labelledby="h-next">
+    <h2 id="h-next">{{ cc.next_title }}</h2>
+    <p>{{ cc.next_text }}</p>
+    <p><a class="btn" href="{{ cc.next_url }}" target="_blank" rel="noopener">{{ cc.next_btn }} {{ icon('arrow') }}</a></p>
+  </section>
+
   <section class="others" aria-labelledby="h-others">
     <h2 id="h-others">Altres cursos</h2>
     <ul>
