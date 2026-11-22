@@ -12,6 +12,7 @@
 {% else %}
 <p class="panel__cta"><a class="btn btn--primary btn--lg" href="{{ course.thinkific }}">Comença el curs gratuït {{ icon('arrow') }}</a></p>
 {% if note %}<p class="cta-note">{{ cc.cta_note }}</p>{% endif %}
+{% if school_privacy_url %}<p class="cta-privacy"><a href="{{ school_privacy_url }}" target="_blank" rel="noopener">Política de privacitat de l'escola en línia</a></p>{% endif %}
 {% endif %}
 {%- endmacro %}
 
