@@ -286,6 +286,15 @@
       })
       .catch(function () { busy(false); say(L.network); });
   });
+
+  // Enllaç amb l'adreça ja escrita (p. ex. des d'elarasocial.com): /ciutats/?q=Vic omple el camp i fa la cerca
+  try {
+    var pre = new URLSearchParams(location.search).get('q');
+    if (pre && pre.trim() && pre.length <= 200) {
+      input.value = pre.trim();
+      if (form.requestSubmit) form.requestSubmit(); else form.dispatchEvent(new Event('submit', { cancelable: true }));
+    }
+  } catch (e) {}
 })();
 
 // Filtre d'entitats (subpàgines amb moltes rutes): amaga les rutes que no coincideixen amb el text
