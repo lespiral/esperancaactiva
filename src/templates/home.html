@@ -93,7 +93,7 @@
       <p>{{ h.entities.text }}</p>
       <p><strong>{{ h.entities.pending }}</strong></p>
       <div class="entities__actions">
-        {% for label, url in h.entities.buttons %}<a class="btn {{ 'btn--light' if loop.first else 'btn--ghost-light' }}" href="{{ root }}{{ url }}">{{ label }}</a>{% endfor %}
+        {% for b in h.entities.buttons %}{% set label = b[0] %}{% set url = b[1] %}{% if b[2] %}<a class="btn {{ 'btn--light' if loop.first else 'btn--ghost-light' }}" href="{{ url }}" target="_blank" rel="noopener">{{ label }}{{ icon('external', 'ext__i') }}<span class="ext__note ext__note--on">{{ h.entities.external_note }}</span></a>{% else %}<a class="btn {{ 'btn--light' if loop.first else 'btn--ghost-light' }}" href="{{ root }}{{ url }}">{{ label }}</a>{% endif %}{% endfor %}
         {% if h.entities.mail %}<a class="btn btn--ghost-light" href="mailto:{{ site.contact.email }}">{{ icon('mail') }}{{ h.entities.mail }}</a>{% endif %}
       </div>
     </div>

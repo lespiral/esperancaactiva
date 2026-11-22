@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{# Pàgina de redirecció (meta refresh al <head> de base.html, canonical a la pàgina nova, enllaç visible). Dades a data/site.json › redirects. #}
+{% block content %}
+<section class="wrap wrap--narrow redirect">
+  <h1>{{ rd.title }}</h1>
+  <p>{{ rd.text }}</p>
+  <p><a class="btn btn--primary" href="{{ redirect_to }}">{{ rd.link }}{{ icon('external', 'ext__i') }}<span class="ext__note ext__note--on">{{ rd.note }}</span></a></p>
+  <p><a href="{{ redirect_to }}">{{ redirect_to }}</a></p>
+</section>
+{% endblock %}

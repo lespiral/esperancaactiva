@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% from "parts.html" import course_cards, therapy_box %}
+{# Pàgina d'un centre col·laborador (/centres/<slug>/). Es genera de data/centres/<slug>.json, que ha de dur "consentiment": true. #}
+{% block content %}
+{% if centre.prova %}<div class="centre__prova" role="note"><div class="wrap">Pàgina de prova amb dades fictícies. No es publica.</div></div>{% endif %}
+<section class="pagehead pagehead--center pagehead--green">
+  <div class="wrap">
+    <p class="centre__id">
+      {% if centre.logo %}<img class="centre__logo" src="{{ root }}assets/img/centres/{{ centre.logo }}" alt="" width="44" height="44">{% endif %}
+      <span class="centre__name">{{ centre.nom }} · {{ centre.ciutat }}</span>
+      <span class="centre__badge">{{ ce.badge }}</span>
+    </p>
+    <h1>{{ ce.title }}</h1>
+    <p class="lead">{{ centre.benvinguda }}</p>
+    <p class="centre__actions">
+      <a class="btn btn--light" href="{{ root }}cursos/">{{ ce.courses_btn }}</a>
+      <a class="btn btn--ghost-light" href="{{ centre.rutes_url if centre.rutes_url and centre.rutes_url.startswith('http') else root + (centre.rutes_url or 'ciutats/') }}">{{ ce.routes_btn }}</a>
+    </p>
+  </div>
+</section>
+
+<div class="wrap wrap--mid stack stack--bottom health">
+  <section id="els-cursos" aria-labelledby="h-courses">
+    <h2 class="health__h2" id="h-courses">{{ ce.courses_title }}</h2>
+    {{ course_cards(site.courses, root) }}
+  </section>
+
+  {% if h.therapy %}{{ therapy_box(h.therapy) }}{% endif %}
+
+  <p class="health__more centre__note">{{ centre.nom }} {{ ce.note }}</p>
+</div>
+{% endblock %}
