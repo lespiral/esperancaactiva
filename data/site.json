@@ -320,7 +320,7 @@
       "title": "Voleu fer aquest camí amb el vostre equip?",
       "text": "Si sou una cooperativa, associació o col·lectiu, podem adaptar les 7 passes i les caminades al vostre espai. Estem començant i busquem les primeres entitats aliades.",
       "pending": "La primera col·laboració és una prova pilot gratuïta, que dissenyem plegats.",
-      "buttons": [["Entitats del Prat", "entitats-del-prat/"], ["Entitats i espais afins", "entitats-i-espais-afins/"]]
+      "buttons": [["Entitats del Prat", "entitats-del-prat/"], ["Entitats i espais afins", "entitats-i-espais-afins/"], ["Per a CAP i centres de salut", "centres-de-salut/"]]
     },
     "therapy": {
       "title": "No és teràpia",
@@ -403,6 +403,63 @@
     "units": [["1 província", "{n} províncies"], ["1 comarca", "{n} comarques"]]
   },
 
+  "health_page": {
+    "kicker": "Per a CAP i centres de salut",
+    "title": "Un recurs comunitari per al teu CAP",
+    "lead": "Cursos en línia **gratuïts** i rutes a peu que surten del teu centre. Una opció més per **orientar** les persones que arriben amb malestar emocional.",
+    "nus_title": "Un camí que passa pel teu centre",
+    "nus_intro": "Moltes persones arriben al CAP amb dolor i incertesa. Allà reben un **recurs** i, amb ell, aquest malestar pot transformar-se en **claredat, suport i una acció possible**, sostinguts per la comunitat.",
+    "how_title": "Com pot entrar al teu centre",
+    "how_intro": "El teu centre no ha d'organitzar res: només **orientar**. La resta ho fa cada persona al seu ritme.",
+    "what_title": "Què és Camins d'Esperança [Activa]",
+    "what": [
+      "Són **cursos en línia gratuïts, de 7 passes**, per afrontar el que ens preocupa amb més presència, suport i un petit pas possible. Cada pas combina una breu explicació amb una pràctica guiada d'àudio o vídeo, i una caminada de reflexió.",
+      "Cada curs va acompanyat de **rutes a peu, curtes i circulars**, que surten d'equipaments del barri, com els centres de salut. La persona les fa sola i al seu ritme."
+    ],
+    "why_title": "Per què encaixa amb el que fa el teu centre",
+    "why": [
+      "És un **recurs comunitari, gratuït i sense llista d'espera**.",
+      "Dona a les persones amb malestar emocional **alguna cosa concreta a fer** entre visites, a prop de casa.",
+      "Parteix d'un lloc que ja coneixen: el teu centre.",
+      "Respecta els límits de cada persona: pot parar i reprendre-ho un altre dia."
+    ],
+    "who_title": "Qui pot orientar cap a aquest recurs?",
+    "who_intro": "Qualsevol persona de l'equip. Si al teu centre hi ha algú que orienta cap a recursos comunitaris, és qui hi encaixa millor:",
+    "who": [
+      [
+        "A Catalunya:",
+        "el referent de benestar emocional i comunitari del centre, o qui porti la prescripció social (infermeria, treball social o medicina de família)."
+      ],
+      [
+        "En altres territoris:",
+        "sol ser el treball social sanitari o l'equip de salut comunitària, que recomanen actius per a la salut del barri."
+      ]
+    ],
+    "who_end": "No cal **cap tràmit**: és un recurs públic i gratuït, obert a qualsevol persona.",
+    "courses_title": "Quin curs orientar",
+    "courses_intro": "Aquests dos són els que millor encaixen amb el que arriba a un centre de salut.",
+    "courses_for": {
+      "vida": "Per a persones amb ansietat, dols, conflictes, cansament o moments de vulnerabilitat.",
+      "cuidar": "Per a persones amb solitud, cansament emocional o manca d'espais on sentir-se escoltades."
+    },
+    "course_btn": "Veure el curs",
+    "share_title": "Com donar-ho a conèixer",
+    "share_intro": "El més senzill és comentar-ho a la visita o passar l'enllaç. Si et serveix, pots fer servir aquest text:",
+    "share_text": "Hi ha un recurs gratuït que et pot acompanyar entre visites: cursos en línia de 7 passes i rutes a peu pel teu barri. El tens a esperançaactiva.cat",
+    "share_extra": "Si et serveix una fitxa per a l'equip o un cartell amb codi QR per a la sala d'espera, escriu-nos.",
+    "routes_title": "Troba la ruta del teu centre",
+    "routes_intro": "Mira si ja hi ha una ruta que surt del teu centre de salut o d'un de proper. Si encara no n'hi ha cap, escriu-nos.",
+    "limits_title": "Sense compromís",
+    "limits": [
+      "No cal **cap conveni ni tràmit**: els cursos i les rutes són públics i gratuïts.",
+      "El centre **no gestiona inscripcions ni acompanya les rutes**. L'activitat l'ofereixen L'Espiral i Elara Social.",
+      "El nom del centre apareix com a punt de sortida de la ruta.",
+      "Els cursos no substitueixen l'atenció clínica ni un tractament mèdic o psicològic."
+    ],
+    "safety_html": "Si una persona està passant un moment molt difícil, l'atenció continua sent la del CAP. Si pensa en fer-se mal, pot trucar al <a href=\"tel:024\">024</a>. En una emergència, al <a href=\"tel:112\">112</a>.",
+    "contact_title": "Parlem?",
+    "contact_html": "Si vols que el teu centre tingui ruta, o que us expliquem el recurs a l'equip, escriu-nos."
+  },
   "faq_page": {
     "title": "Preguntes freqüents",
     "sections": [

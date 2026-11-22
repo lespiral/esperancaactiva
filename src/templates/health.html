@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% from "parts.html" import page_head, place_nav, safety, nearby %}
+{# Pàgina per a professionals dels CAP i centres de salut (/centres-de-salut/), versió en català de la de la .org (22 de novembre de 2026). Textos a data/site.json › health_page. #}
+{% block content %}
+{{ page_head(hp.kicker, hp.title, hp.lead|hl, cls='pagehead--health') }}
+
+<div class="wrap wrap--mid stack stack--bottom health">
+  <section id="com-funciona" aria-labelledby="h-how">
+    <h2 class="health__h2" id="h-how">{{ hp.how_title }}</h2>
+    <p>{{ hp.how_intro|hl }}</p>
+    <div class="infografia infografia--in">{% include "infografies/infografia-centres-de-salut.html" %}</div>
+  </section>
+
+  <section id="un-cami" aria-labelledby="h-nus">
+    <h2 class="health__h2" id="h-nus">{{ hp.nus_title }}</h2>
+    <p>{{ hp.nus_intro|hl }}</p>
+    <div class="infografia infografia--in">{% include "infografies/infografia-centres-esperanca-activa.html" %}</div>
+  </section>
+
+  <section class="panel" id="que-es" aria-labelledby="h-what">
+    <h2 class="health__h2" id="h-what">{{ hp.what_title }}</h2>
+    {% for p in hp.what %}<p>{{ p|hl }}</p>{% endfor %}
+    <h3 class="health__sub">{{ hp.why_title }}</h3>
+    <ul class="checks">{% for i in hp.why %}<li>{{ icon('check') }}<span>{{ i|hl }}</span></li>{% endfor %}</ul>
+  </section>
+
+  <section class="panel" id="qui-orienta" aria-labelledby="h-who">
+    <h2 class="health__h2" id="h-who">{{ hp.who_title }}</h2>
+    <p>{{ hp.who_intro|hl }}</p>
+    <ul class="checks">{% for l, t in hp.who %}<li>{{ icon('check') }}<span><strong>{{ l }}</strong> {{ t|hl }}</span></li>{% endfor %}</ul>
+    <p>{{ hp.who_end|hl }}</p>
+  </section>
+
+  <section id="quin-curs-orientar" aria-labelledby="h-courses">
+    <h2 class="health__h2" id="h-courses">{{ hp.courses_title }}</h2>
+    <p>{{ hp.courses_intro|hl }}</p>
+    <ul class="cards cards--3 health__courses">
+      {% for c in site.courses if c.key in hp.courses_for %}
+      <li class="card card--course">
+        <span class="card__icon" aria-hidden="true">{{ icon(c.icon) }}</span>
+        <h3 class="card__title">{{ c.title }}</h3>
+        <p class="card__text">{{ hp.courses_for[c.key] }}</p>
+        <a class="btn btn--soft btn--block" href="{{ root }}{{ c.slug }}/">{{ hp.course_btn }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="panel" id="com-donar-ho-a-coneixer" aria-labelledby="h-share">
+    <h2 class="health__h2" id="h-share">{{ hp.share_title }}</h2>
+    <p>{{ hp.share_intro|hl }}</p>
+    <blockquote class="health__quote">{{ hp.share_text }}</blockquote>
+    <p>{{ hp.share_extra|hl }}</p>
+  </section>
+
+  <section class="panel panel--plain" id="el-teu-centre" aria-labelledby="h-routes">
+    <h2 class="health__h2" id="h-routes">{{ hp.routes_title }}</h2>
+    <p>{{ hp.routes_intro|hl }}</p>
+    {% set pt = place_tree('vida') %}
+    {% if pt.n %}{{ place_nav('tria-lloc', pt, root, site.place_nav, course=True) }}{{ nearby(site.nearby, root, 'vida') }}{% endif %}
+  </section>
+
+  <section class="panel" id="sense-compromis" aria-labelledby="h-limits">
+    <h2 class="health__h2" id="h-limits">{{ hp.limits_title }}</h2>
+    <ul class="checks">{% for i in hp.limits %}<li>{{ icon('check') }}<span>{{ i|hl|elara }}</span></li>{% endfor %}</ul>
+  </section>
+
+  {{ safety(hp.safety_html) }}
+
+  <section class="contact-box" id="contacte" aria-labelledby="h-contact">
+    <h2 id="h-contact">{{ hp.contact_title }}</h2>
+    <p>{{ hp.contact_html }}</p>
+    <p class="contact-box__links">
+      <a class="btn btn--primary" href="mailto:{{ site.contact.email }}">{{ icon('mail') }}Escriu-nos</a>
+      <a class="btn btn--outline" href="{{ site.contact.instagram_url }}">{{ icon('instagram') }}{{ site.contact.instagram }}</a>
+    </p>
+  </section>
+</div>
+{% endblock %}
