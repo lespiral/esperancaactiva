@@ -24,6 +24,27 @@
     "sister_url": "https://esperanzaactiva.org/"
   },
 
+  "nav": {
+    "entities": "Per a entitats",
+    "entities_url": "entitats-i-espais-afins/",
+    "entities_section": "entitats",
+    "notify": "Avisa'm quan s'obri"
+  },
+
+  "waitlist": {
+    "mode": "mailto",
+    "action": "",
+    "title": "T'avisem quan s'obri el primer curs",
+    "field": "El teu correu electrònic",
+    "button": "Avisa'm quan s'obri",
+    "note": "Només t'escrivim per avisar-te. Pots donar-te de baixa quan vulguis.",
+    "privacy": "[PENDENT: privacitat]",
+    "opening_label": "Data d'obertura del primer curs:",
+    "opening": "[PENDENT]",
+    "subject": "Avisa'm quan s'obri el primer curs",
+    "subject_course": "Avisa'm quan s'obri el curs: {curs}"
+  },
+
   "cities": [
     {"slug": "barcelona", "name": "Barcelona", "region": "Barcelonès", "icon": "buildings"},
     {"slug": "berga", "name": "Berga", "region": "Berguedà", "icon": "tree"},
@@ -276,9 +297,36 @@
       ["És teràpia?", "No. És un curs vivencial de pràctiques i reflexió. Pot ajudar molt, però no substitueix la psicoteràpia si estàs en un moment clínicament delicat. Si estàs passant un moment molt difícil, parla amb el teu CAP o truca al <a href=\"tel:061\">061</a>. Si penses en fer-te mal, truca al <a href=\"tel:024\">024</a>. En una emergència, al <a href=\"tel:112\">112</a>."],
       ["He de tenir experiència prèvia?", "No. Les pràctiques estan pensades perquè siguin accessibles i progressives."],
       ["Hi ha rutes de tots els cursos a totes les ciutats i pobles?", "Encara no. Les rutes es pensen per a cada curs i n'anem afegint. Si al teu poble o a la teva ciutat encara no n'hi ha del teu curs, pots fer la caminada a prop de casa o en un lloc tranquil."],
-      ["On visc encara no hi ha rutes. Puc fer el curs?", "És clar. Pots fer el temps de reflexió en una passejada a prop de casa o en un lloc tranquil."]
+      ["On visc encara no hi ha rutes. Puc fer el curs?", "És clar. Pots fer el temps de reflexió en una passejada a prop de casa o en un lloc tranquil."],
+      ["Sóc d'una entitat: ho podem fer amb el nostre equip?", "Sí, és el que volem provar. <a href=\"mailto:esperanza@elarasocial.com\">Escriu-nos</a> i ho dissenyem plegats. <span class=\"pending\">[PENDENT: resposta definitiva]</span>"]
     ],
     "nus_title": "Què és l'Esperança Activa?",
+    "nus_lead": "No és optimisme ni esperar que tot vagi bé. És mirar de cara allò que ens preocupa i triar, amb altres, un pas concret.",
+    "hero_actions": {
+      "soon": ["Troba una ruta a prop teu", "Avisa'm quan s'obri el primer curs"],
+      "open": ["Tria el teu curs", "Tria on vols caminar"]
+    },
+    "stats": {
+      "label": "El projecte en xifres",
+      "areas_by": "leaf",
+      "places": "pobles i ciutats amb rutes",
+      "areas": "comarques",
+      "courses_soon": "cursos en preparació",
+      "courses": "cursos",
+      "steps": "passes per curs, gratuïtes"
+    },
+    "entities": {
+      "kicker": "Per a entitats",
+      "title": "Voleu fer aquest camí amb el vostre equip?",
+      "text": "Si sou una cooperativa, associació o col·lectiu, podem adaptar les 7 passes i les caminades al vostre espai. Estem començant i busquem les primeres entitats aliades.",
+      "pending": "[PENDENT: condicions de la primera col·laboració]",
+      "buttons": [["Entitats del Prat", "entitats-del-prat/"], ["Entitats i espais afins", "entitats-i-espais-afins/"]]
+    },
+    "therapy": {
+      "title": "No és teràpia",
+      "text": "És un curs vivencial de pràctiques i reflexió: no substitueix la psicoteràpia ni un tractament mèdic o psicològic. Si estàs passant un moment molt difícil, parla amb el teu CAP o truca:",
+      "phones": [["061", "CAP · salut"], ["024", "si penses en fer-te mal"], ["112", "emergència"]]
+    },
     "initiative_title": "Una iniciativa de",
     "initiative_text": "L'Espiral i Elara Social, amb la mirada de la Prescripció Social (recomanar activitats i grups de la comunitat com a part de la cura) i la salut mental comunitària."
   },
@@ -347,6 +395,7 @@
     "results": "Resultats per a «{q}»",
     "clear": "Esborra",
     "none": "Encara no hi ha rutes en aquest poble. Pots fer el curs igualment i caminar a prop de casa.",
+    "none_link": {"text": "Ets fora de Catalunya?", "label": "esperanzaactiva.org", "url": "https://esperanzaactiva.org/", "lang": "es"},
     "foot": "Ara hi ha rutes a {n} pobles i ciutats.",
     "foot_course": "Ara hi ha rutes d'aquest curs a {n} pobles i ciutats.",
     "routes": ["1 ruta", "{n} rutes"],
@@ -377,6 +426,12 @@
           ["Quant duren les rutes?", "Depèn del lloc i de la ruta: n'hi ha de molt curtes, d'uns 10 minuts, i de més llargues, de més d'una hora. A cada ruta hi trobaràs els quilòmetres i el temps aproximat, caminant i amb pauses."],
           ["Les rutes són circulars?", "La majoria sí: comencen i acaben al mateix lloc. Algunes van d'un punt a un altre; a cada ruta hi posa si és circular o lineal, i on comença i acaba."],
           ["Què he de tenir en compte abans de sortir?", "__before_walk__"]
+        ]
+      },
+      {
+        "title": "Per a entitats",
+        "items": [
+          ["Sóc d'una entitat: ho podem fer amb el nostre equip?", "Sí, és el que volem provar. <a href=\"mailto:esperanza@elarasocial.com\">Escriu-nos</a> i ho dissenyem plegats. <span class=\"pending\">[PENDENT: resposta definitiva]</span>"]
         ]
       }
     ],

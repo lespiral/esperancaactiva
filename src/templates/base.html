@@ -22,6 +22,16 @@
 <body>
   <a class="skip" href="#contingut">Salta al contingut</a>
 
+  {# Franja superior per saber on ets i anar a l'altra web (només la .org; data/site.json › langbar) #}
+  {% if site.langbar %}
+  <div class="langbar">
+    <div class="wrap langbar__in">
+      <p>{{ site.langbar.here }}</p>
+      <p>{{ site.langbar.ask }} <a href="{{ site.footer.sister_url }}" hreflang="{{ site.langbar.lang }}" lang="{{ site.langbar.lang }}">{{ site.langbar.link }}</a></p>
+    </div>
+  </div>
+  {% endif %}
+
   <header class="topbar">
     <div class="wrap topbar__in">
       <a class="brand" href="{{ root }}" aria-label="{{ site.name }}, inici">
@@ -37,6 +47,9 @@
           <li><a href="{{ root }}cursos/"{% if section == 'cursos' %} aria-current="page"{% endif %}>Els cursos</a></li>
           <li><a href="{{ root }}ciutats/"{% if section == 'ciutats' %} aria-current="page"{% endif %}>{{ site.cities_page.title }}</a></li>
           <li><a href="{{ root }}preguntes/"{% if section == 'preguntes' %} aria-current="page"{% endif %}>Preguntes</a></li>
+          {% if site.nav and site.nav.entities %}<li><a href="{{ root }}{{ site.nav.entities_url }}"{% if section == site.nav.entities_section %} aria-current="page"{% endif %}>{{ site.nav.entities }}</a></li>{% endif %}
+          {# Només al menú del mòbil: botó final per apuntar-se a la llista d'espera, mentre hi hagi cursos «Properament» #}
+          {% if site.nav and site.nav.notify and site.waitlist and site.courses|selectattr('soon')|list|length > 0 %}<li class="menu__cta"><a href="{{ root }}#t-avisem">{{ site.nav.notify }}</a></li>{% endif %}
         </ul>
       </nav>
     </div>

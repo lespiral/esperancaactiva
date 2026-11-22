@@ -91,7 +91,7 @@
     </div>
     <div class="placenav__results" hidden>
       <div class="placenav__reshead"><h3 class="placenav__restitle" aria-live="polite"></h3><button class="placenav__clear" type="button">{{ L["clear"] }}</button></div>
-      <p class="placenav__none" hidden>{{ L.none }}</p>
+      <p class="placenav__none" hidden>{{ L.none }}{% if L.none_link %} <span class="placenav__other">{{ L.none_link.text }} <a href="{{ L.none_link.url }}" hreflang="{{ L.none_link.lang }}" lang="{{ L.none_link.lang }}">{{ L.none_link.label }}</a></span>{% endif %}</p>
       <ul class="placenav__list placenav__reslist"></ul>
     </div>
     <p class="placenav__foot">{{ (L.foot_course if course else L.foot)|replace('{n}', tree.n|string) }}</p>
@@ -175,6 +175,44 @@
   <p>{{ icon('lifebuoy') }}<span>{{ html }}</span></p>
 </aside>
 {% endif %}
+{%- endmacro %}
+
+{# Llista d'espera: «T'avisem quan s'obri el primer curs» (portada i pàgines de curs mentre el curs és «Properament»; textos a data/site.json › waitlist).
+   Mecanisme: amb "mode": "mailto" (el de ara) és un botó que obre el correu amb assumpte, sense cap camp; amb "mode": "form" surt el camp
+   del correu i el formulari s'envia a "action" (un formulari de Google, l'eina dels cursos…). L'estructura visual és la mateixa: només canvia l'acció. #}
+{% macro waitlist(W, subject, id='t-avisem') -%}
+<section class="waitlist" id="{{ id }}" aria-labelledby="{{ id }}-h">
+  <div class="waitlist__in">
+    <span class="waitlist__icon" aria-hidden="true">{{ icon('mail') }}</span>
+    <div class="waitlist__body">
+      <h2 class="waitlist__title" id="{{ id }}-h">{{ W.title }}</h2>
+      {% if W.mode == 'form' %}
+      <form class="waitlist__form" action="{{ W.action }}" method="post">
+        <div class="waitlist__field">
+          <label class="waitlist__label" for="{{ id }}-email">{{ W.field }}</label>
+          <input class="waitlist__input" id="{{ id }}-email" name="email" type="email" required autocomplete="email" inputmode="email">
+        </div>
+        <button class="btn btn--primary btn--lg" type="submit">{{ W.button }}</button>
+      </form>
+      {% else %}
+      <p class="waitlist__cta"><a class="btn btn--primary btn--lg" href="mailto:{{ site.contact.email }}?subject={{ subject|urlencode }}">{{ icon('mail') }}{{ W.button }}</a></p>
+      {% endif %}
+      <p class="waitlist__note">{{ W.note }} <span class="pending">{{ W.privacy }}</span></p>
+      <p class="waitlist__date">{{ W.opening_label }} <span class="pending">{{ W.opening }}</span></p>
+    </div>
+  </div>
+</section>
+{%- endmacro %}
+
+{# Caixa «No és teràpia» amb els telèfons com a botons grans (T = data/site.json › home.therapy; a la .org només 024 i 112) #}
+{% macro therapy_box(T) -%}
+<aside class="therapy" aria-labelledby="no-es-terapia-h">
+  <h2 class="therapy__title" id="no-es-terapia-h">{{ icon('lifebuoy') }}{{ T.title }}</h2>
+  <p>{{ T.text }}</p>
+  <ul class="therapy__phones therapy__phones--{{ T.phones|length }}">
+    {% for num, label in T.phones %}<li><a class="therapy__tel" href="tel:{{ num }}"><span class="therapy__num">{{ num }}</span><span class="therapy__lbl">{{ label }}</span></a></li>{% endfor %}
+  </ul>
+</aside>
 {%- endmacro %}
 
 {# Cerca per ubicació o adreça: llista de les rutes que comencen més a prop, per curs (src/site.js › data-nearby; dades a assets/rutas.json) #}

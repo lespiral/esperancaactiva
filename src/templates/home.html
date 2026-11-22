@@ -1,22 +1,46 @@
 {% extends "base.html" %}
-{% from "parts.html" import course_cards, faq_item, place_nav, nearby %}
+{% from "parts.html" import course_cards, faq_item, place_nav, nearby, waitlist, therapy_box %}
 {% block content %}
+{# Mentre algun curs sigui «Properament» (soon), el primer botó porta a les rutes i el segon a la llista d'espera; si cap ho és, tornen els textos de sempre (h.hero_actions.open) #}
+{% set soon = site.courses|selectattr('soon')|list|length > 0 %}
+{% set pt = place_tree() %}
 <section class="hero">
   <div class="wrap hero__in">
     <p class="hero__kicker">{{ h.kicker }}</p>
     <h1 class="hero__title">Camins d'Esperança <span>[Activa]</span></h1>
     <p class="hero__lead">{{ h.lead }}</p>
     <div class="hero__actions">
-      <a class="btn btn--light" href="#que-et-porta-aqui">Tria el teu curs</a>
-      <a class="btn btn--ghost-light" href="#on-vols-caminar">Tria on vols caminar</a>
+      {% if soon %}
+      <a class="btn btn--light" href="#on-vols-caminar">{{ h.hero_actions.soon[0] }}</a>
+      <a class="btn btn--ghost-light" href="#t-avisem">{{ h.hero_actions.soon[1] }}</a>
+      {% else %}
+      <a class="btn btn--light" href="#que-et-porta-aqui">{{ h.hero_actions.open[0] }}</a>
+      <a class="btn btn--ghost-light" href="#on-vols-caminar">{{ h.hero_actions.open[1] }}</a>
+      {% endif %}
     </div>
   </div>
 </section>
+
+{# Franja de xifres: tot surt del build (llocs amb rutes, comarques o nivell de dalt, cursos i passes), res escrit a mà #}
+{% if h.stats %}
+{% set areas = (pt.lists|selectattr('level', 'equalto', pt.depth - 1)|list|length) if h.stats.areas_by == 'leaf' else (pt.lists[0]['items']|length) %}
+<section class="stats" aria-label="{{ h.stats.label }}">
+  <div class="wrap">
+    <ul class="stats__list">
+      <li><span class="stats__n">{{ pt.n }}</span><span class="stats__l">{{ h.stats.places }}</span></li>
+      <li><span class="stats__n">{{ areas }}</span><span class="stats__l">{{ h.stats.areas }}</span></li>
+      <li><span class="stats__n">{{ site.courses|length }}</span><span class="stats__l">{{ h.stats.courses_soon if soon else h.stats.courses }}</span></li>
+      <li><span class="stats__n">{{ cc.passes|length }}</span><span class="stats__l">{{ h.stats.steps }}</span></li>
+    </ul>
+  </div>
+</section>
+{% endif %}
 
 <section class="band band--white" id="que-es-l-esperanca-activa" aria-labelledby="h-nus">
   <div class="wrap">
     <h2 class="band__title" id="h-nus">{{ h.nus_title }}</h2>
     {% include "infografies/infografia-esperanca-activa.html" %}
+    {% if h.nus_lead %}<p class="lede">{{ h.nus_lead }}</p>{% endif %}
   </div>
 </section>
 
@@ -24,6 +48,7 @@
   <div class="wrap">
     <h2 class="band__title" id="h-q1">{{ h.q1 }}</h2>
     {{ course_cards(site.courses, root) }}
+    {% if soon and site.waitlist %}{{ waitlist(site.waitlist, site.waitlist.subject) }}{% endif %}
   </div>
 </section>
 
@@ -34,7 +59,7 @@
       <p>{{ h.q2_text }}</p>
       <p>{{ h.q2_cities }}</p>
     </div>
-    {{ place_nav('tria-lloc', place_tree(), root, site.place_nav, cls='placenav--center') }}
+    {{ place_nav('tria-lloc', pt, root, site.place_nav, cls='placenav--center') }}
     {{ nearby(site.nearby, root) }}
     <p class="band__after">{{ h.each_course }}</p>
   </div>
@@ -59,8 +84,26 @@
   </div>
 </section>
 
+{% if h.entities %}
+<section class="band band--deep" id="per-a-entitats" aria-labelledby="entitats-h">
+  <div class="wrap">
+    <div class="entities">
+      <p class="entities__kicker">{{ h.entities.kicker }}</p>
+      <h2 class="entities__title" id="entitats-h">{{ h.entities.title }}</h2>
+      <p>{{ h.entities.text }}</p>
+      <p><span class="pending">{{ h.entities.pending }}</span></p>
+      <div class="entities__actions">
+        {% for label, url in h.entities.buttons %}<a class="btn {{ 'btn--light' if loop.first else 'btn--ghost-light' }}" href="{{ root }}{{ url }}">{{ label }}</a>{% endfor %}
+        {% if h.entities.mail %}<a class="btn btn--ghost-light" href="mailto:{{ site.contact.email }}">{{ icon('mail') }}{{ h.entities.mail }}</a>{% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <section class="band band--white" id="preguntes-frequents" aria-labelledby="h-faq">
   <div class="wrap wrap--narrow">
+    {% if h.therapy %}{{ therapy_box(h.therapy) }}{% endif %}
     <h2 class="band__title" id="h-faq">Preguntes freqüents</h2>
     <div class="faqs">
       {% for q, a in h.faq %}{{ faq_item(q, a) }}{% endfor %}

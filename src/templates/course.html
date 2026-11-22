@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "parts.html" import page_head, city_cards, territory_cards, place_nav, safety, nearby %}
+{% from "parts.html" import page_head, city_cards, territory_cards, place_nav, safety, nearby, waitlist %}
 
 {# Botó d'inscripció (porta directament al formulari de Thinkific) «Properament» si el curs encara no està obert, o «Properament» també (sense enllaç) mentre cc.cta_building sigui true #}
 {% macro cta(course, note=True) -%}
@@ -17,6 +17,11 @@
 
 {% block content %}
 {{ page_head(cc.kicker, course.title, course.subtitle, sub=True) }}
+
+{# Mentre el curs és «Properament», la llista d'espera va a dalt de tot #}
+{% if course.soon and site.waitlist %}
+<div class="wrap wrap--mid">{{ waitlist(site.waitlist, site.waitlist.subject_course|replace('{curs}', course.title)) }}</div>
+{% endif %}
 
 <div class="wrap wrap--mid">
   <p class="center">{{ course.passes_lead }}</p>
