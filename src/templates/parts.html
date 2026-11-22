@@ -198,7 +198,7 @@
       <p class="waitlist__cta"><a class="btn btn--primary btn--lg" href="mailto:{{ site.contact.email }}?subject={{ subject|urlencode }}">{{ icon('mail') }}{{ W.button }}</a></p>
       {% endif %}
       <p class="waitlist__note">{{ W.note }} <span class="pending">{{ W.privacy }}</span></p>
-      <p class="waitlist__date">{{ W.opening_label }} <span class="pending">{{ W.opening }}</span></p>
+      {% if W.opening %}<p class="waitlist__date">{{ W.opening_label }} {{ W.opening }}</p>{% endif %}
     </div>
   </div>
 </section>

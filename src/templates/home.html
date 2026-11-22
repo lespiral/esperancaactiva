@@ -91,7 +91,7 @@
       <p class="entities__kicker">{{ h.entities.kicker }}</p>
       <h2 class="entities__title" id="entitats-h">{{ h.entities.title }}</h2>
       <p>{{ h.entities.text }}</p>
-      <p><span class="pending">{{ h.entities.pending }}</span></p>
+      <p><strong>{{ h.entities.pending }}</strong></p>
       <div class="entities__actions">
         {% for label, url in h.entities.buttons %}<a class="btn {{ 'btn--light' if loop.first else 'btn--ghost-light' }}" href="{{ root }}{{ url }}">{{ label }}</a>{% endfor %}
         {% if h.entities.mail %}<a class="btn btn--ghost-light" href="mailto:{{ site.contact.email }}">{{ icon('mail') }}{{ h.entities.mail }}</a>{% endif %}

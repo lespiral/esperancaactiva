@@ -40,7 +40,7 @@
     "note": "Només t'escrivim per avisar-te. Pots donar-te de baixa quan vulguis.",
     "privacy": "[PENDENT: privacitat]",
     "opening_label": "Data d'obertura del primer curs:",
-    "opening": "[PENDENT]",
+    "opening": "",
     "subject": "Avisa'm quan s'obri el primer curs",
     "subject_course": "Avisa'm quan s'obri el curs: {curs}"
   },
@@ -298,7 +298,7 @@
       ["He de tenir experiència prèvia?", "No. Les pràctiques estan pensades perquè siguin accessibles i progressives."],
       ["Hi ha rutes de tots els cursos a totes les ciutats i pobles?", "Encara no. Les rutes es pensen per a cada curs i n'anem afegint. Si al teu poble o a la teva ciutat encara no n'hi ha del teu curs, pots fer la caminada a prop de casa o en un lloc tranquil."],
       ["On visc encara no hi ha rutes. Puc fer el curs?", "És clar. Pots fer el temps de reflexió en una passejada a prop de casa o en un lloc tranquil."],
-      ["Sóc d'una entitat: ho podem fer amb el nostre equip?", "Sí, és el que volem provar. <a href=\"mailto:esperanza@elarasocial.com\">Escriu-nos</a> i ho dissenyem plegats. <span class=\"pending\">[PENDENT: resposta definitiva]</span>"]
+      ["Sóc d'una entitat: ho podem fer amb el nostre equip?", "Sí, és el que volem provar. <a href=\"mailto:esperanza@elarasocial.com\">Escriu-nos</a> i ho dissenyem plegats. Fem una prova pilot gratuïta amb poques entitats."]
     ],
     "nus_title": "Què és l'Esperança Activa?",
     "nus_lead": "No és optimisme ni esperar que tot vagi bé. És mirar de cara allò que ens preocupa i triar, amb altres, un pas concret.",
@@ -319,7 +319,7 @@
       "kicker": "Per a entitats",
       "title": "Voleu fer aquest camí amb el vostre equip?",
       "text": "Si sou una cooperativa, associació o col·lectiu, podem adaptar les 7 passes i les caminades al vostre espai. Estem començant i busquem les primeres entitats aliades.",
-      "pending": "[PENDENT: condicions de la primera col·laboració]",
+      "pending": "La primera col·laboració és una prova pilot gratuïta, que dissenyem plegats.",
       "buttons": [["Entitats del Prat", "entitats-del-prat/"], ["Entitats i espais afins", "entitats-i-espais-afins/"]]
     },
     "therapy": {
@@ -431,7 +431,7 @@
       {
         "title": "Per a entitats",
         "items": [
-          ["Sóc d'una entitat: ho podem fer amb el nostre equip?", "Sí, és el que volem provar. <a href=\"mailto:esperanza@elarasocial.com\">Escriu-nos</a> i ho dissenyem plegats. <span class=\"pending\">[PENDENT: resposta definitiva]</span>"]
+          ["Sóc d'una entitat: ho podem fer amb el nostre equip?", "Sí, és el que volem provar. <a href=\"mailto:esperanza@elarasocial.com\">Escriu-nos</a> i ho dissenyem plegats. Fem una prova pilot gratuïta amb poques entitats."]
         ]
       }
     ],
