@@ -324,7 +324,7 @@
       "title": "Voleu fer aquest camí amb el vostre equip?",
       "text": "Si sou una cooperativa, associació o col·lectiu, podem adaptar les 7 passes i les caminades al vostre espai. Estem començant i busquem les primeres entitats aliades.",
       "pending": "La primera col·laboració és una prova pilot gratuïta, que dissenyem plegats.",
-      "buttons": [["Entitats del Prat", "entitats-del-prat/"], ["Entitats i espais afins", "entitats-i-espais-afins/"], ["Per a CAP i centres de salut", "centres-de-salut/"]]
+      "buttons": [["Entitats del Prat", "entitats-del-prat/"], ["Entitats i espais afins", "entitats-i-espais-afins/"], ["Per a CAP i centres de salut", "centres-de-salut/"], ["Per a centres educatius", "centres-educatius/"]]
     },
     "therapy": {
       "title": "No és teràpia",
@@ -463,6 +463,67 @@
     "safety_html": "Si una persona està passant un moment molt difícil, l'atenció continua sent la del CAP. Si pensa en fer-se mal, pot trucar al <a href=\"tel:024\">024</a>. En una emergència, al <a href=\"tel:112\">112</a>.",
     "contact_title": "Parlem?",
     "contact_html": "Si vols que el teu centre tingui ruta, o que us expliquem el recurs a l'equip, escriu-nos."
+  },
+  "edu_page": {
+    "kicker": "Per a centres educatius",
+    "title": "Un recurs per a la comunitat educativa",
+    "lead": "Cursos en línia **gratuïts** i rutes a peu circulars que surten de la porta del centre educatiu. Una proposta per a **mestres, educadors i famílies**.",
+    "how_title": "Com pot arribar al teu centre",
+    "how_intro": "El teu centre no ha d'organitzar res: només **compartir-ho**. La resta ho fa cada persona al seu ritme.",
+    "nus_title": "Un camí que passa pel teu centre",
+    "nus_intro": "Moltes persones de la comunitat educativa porten dolor, preocupació o cansament. Al centre poden trobar un **recurs** i, amb ell, aquest malestar pot transformar-se en **claredat, suport i una acció possible**, sostinguts per la comunitat.",
+    "what_title": "Què és Camins d'Esperança [Activa]",
+    "what": [
+      "Són **cursos en línia gratuïts, de 7 passes**, per afrontar el que ens preocupa amb més presència, suport i un petit pas possible. Cada passa combina una breu explicació amb una pràctica guiada d'àudio o vídeo, i una caminada de reflexió.",
+      "Cada curs va acompanyat de **rutes a peu, curtes i circulars**. Les d'aquesta pàgina surten de la porta de centres educatius. La persona les fa sola i al seu ritme."
+    ],
+    "why_title": "Per què pot encaixar al teu centre",
+    "why": [
+      "És un **recurs comunitari i gratuït**.",
+      "Dona a mestres, educadors i famílies **alguna cosa concreta a fer** fora de l'horari escolar, a prop del centre.",
+      "Parteix d'un lloc que ja coneixen: el teu centre.",
+      "Respecta els límits de cada persona: pot parar i reprendre-ho un altre dia."
+    ],
+    "who_title": "Qui ho pot compartir?",
+    "who_intro": "Qualsevol persona de la comunitat educativa:",
+    "who": [
+      [
+        "Mestres i educadors:",
+        "poden comentar-ho o passar l'enllaç a companys i a famílies."
+      ],
+      [
+        "Equips directius i d'orientació:",
+        "poden incloure'l entre els recursos que ja comparteixen."
+      ],
+      [
+        "Famílies i AFA:",
+        "poden donar-ho a conèixer a altres famílies."
+      ]
+    ],
+    "who_end": "No cal **cap tràmit**: és un recurs obert a qualsevol persona.",
+    "courses_title": "Quin curs triar",
+    "courses_intro": "Aquests dos són els que més s'acosten a les necessitats del dia a dia d'un centre educatiu.",
+    "courses_for": {
+      "vida": "Per a moments de cansament, estrès, dol o vulnerabilitat.",
+      "cuidar": "Per a qui té cura d'altres persones i necessita espais on sentir-se escoltat."
+    },
+    "course_btn": "Veure el curs",
+    "share_title": "Com donar-ho a conèixer",
+    "share_intro": "El més senzill és comentar-ho o passar l'enllaç. Si et serveix, pots fer servir aquest text:",
+    "share_text": "Hi ha un recurs gratuït per a mestres, educadors i famílies: cursos en línia de 7 passes i rutes a peu circulars que surten de la porta del centre. Ho trobaràs a esperançaactiva.cat",
+    "routes_title": "Troba la ruta del teu centre",
+    "routes_intro": "Cada ruta és circular, curta i surt de la porta d'un centre educatiu.",
+    "routes_soon": "Estem preparant les rutes. Aviat podràs trobar la del teu centre. Si vols que t'avisem, escriu-nos.",
+    "limits_title": "Sense compromís",
+    "limits": [
+      "No cal **cap conveni ni tràmit**: els cursos i les rutes són públics i gratuïts.",
+      "El centre **no gestiona inscripcions ni acompanya les rutes**. L'activitat l'ofereixen L'Espiral i Elara Social.",
+      "El nom del centre apareix com a punt de sortida de la ruta.",
+      "Els cursos no substitueixen l'atenció psicològica ni un tractament mèdic."
+    ],
+    "safety_html": "Si una persona està passant un moment molt difícil, l'atenció continua sent la del seu centre de salut. Si pensa en fer-se mal, pot trucar al <a href=\"tel:024\">024</a>. En una emergència, al <a href=\"tel:112\">112</a>.",
+    "contact_title": "Parlem?",
+    "contact_html": "Si vols que t'expliquem el recurs al teu centre, o que t'avisem quan hi hagi la ruta, escriu-nos."
   },
   "faq_page": {
     "title": "Preguntes freqüents",
@@ -628,6 +689,7 @@
     "share_text": "Una caminada curta, gratuïta i amb mapa surt de la porta de [nom de l'espai]. Forma part de Camins d'Esperança [Activa]: cursos en línia gratuïts i rutes a peu per cuidar-nos i actuar plegats. Tota la informació, a esperançaactiva.cat",
     "share_extra": "Si es vol, també podem preparar un **codi QR** que porti directament a la ruta de l'espai, per penjar-lo a la recepció o a la sala.",
     "routes_title": "Troba la ruta de cada espai",
+    "prat_link": "Mira també les entitats del Prat",
     "routes_intro": "Cada espai surt al mapa amb un marcador, amb el nom, l'adreça i els enllaços a la seva ruta. Cada espai té la seva ruta circular, que surt de la seva porta. Els espais **promotors** són els que impulsen el projecte; els espais **afins** són altres espais independents que comparteixen la mirada.",
     "map_url": "https://www.google.com/maps/d/viewer?mid=190F3Xpvz2uEHsPec602iahqN84nJ3Ms",
     "map_btn": "Obre el mapa a pantalla completa",

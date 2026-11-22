@@ -506,6 +506,9 @@ render("cities.html", "ciutats", section="ciutats", page_title=site_t["cities_pa
 render("faq.html", "preguntes", section="preguntes", page_title="Preguntes", fp=fp)
 hp = site["health_page"]
 hp["safety_html"] = Markup(hp["safety_html"])
+ep = site["edu_page"]
+ep["safety_html"] = Markup(ep["safety_html"])
+render("educ.html", "centres-educatius", section="educatius", page_title="Per a centres educatius", page_description=ep["lead"].replace("**", ""), ep=ep)
 render("health.html", "centres-de-salut", section="centres", page_title="Per a CAP i centres de salut", page_description=hp["lead"].replace("**", ""), hp=hp)
 site_t["prat_page"]["safety_html"] = Markup(site["prat_page"]["safety_html"])
 prat_city = next(c for c in cities if c["slug"] == "el-prat")

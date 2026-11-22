@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% from "parts.html" import page_head, safety %}
+{# Pàgina per a centres educatius (/centres-educatius/), 22 de novembre de 2026. Esquelet de health.html. Textos a data/site.json › edu_page. Les rutes encara no hi són: la secció de rutes diu «aviat». #}
+{% block content %}
+{{ page_head(ep.kicker, ep.title, ep.lead|hl, cls='pagehead--health') }}
+
+<div class="wrap wrap--mid stack stack--bottom health">
+  <section id="com-funciona" aria-labelledby="h-how">
+    <h2 class="health__h2" id="h-how">{{ ep.how_title }}</h2>
+    <p>{{ ep.how_intro|hl }}</p>
+    <div class="infografia infografia--in">{% include "infografies/infografia-centres-educatius.html" %}</div>
+  </section>
+
+  <section id="un-cami" aria-labelledby="h-nus">
+    <h2 class="health__h2" id="h-nus">{{ ep.nus_title }}</h2>
+    <p>{{ ep.nus_intro|hl }}</p>
+    <div class="infografia infografia--in">{% include "infografies/infografia-centres-educatius-esperanca.html" %}</div>
+  </section>
+
+  <section class="panel" id="que-es" aria-labelledby="h-what">
+    <h2 class="health__h2" id="h-what">{{ ep.what_title }}</h2>
+    {% for p in ep.what %}<p>{{ p|hl }}</p>{% endfor %}
+    <h3 class="health__sub">{{ ep.why_title }}</h3>
+    <ul class="checks">{% for i in ep.why %}<li>{{ icon('check') }}<span>{{ i|hl }}</span></li>{% endfor %}</ul>
+  </section>
+
+  <section class="panel" id="qui-orienta" aria-labelledby="h-who">
+    <h2 class="health__h2" id="h-who">{{ ep.who_title }}</h2>
+    <p>{{ ep.who_intro|hl }}</p>
+    <ul class="checks">{% for l, t in ep.who %}<li>{{ icon('check') }}<span><strong>{{ l }}</strong> {{ t|hl }}</span></li>{% endfor %}</ul>
+    <p>{{ ep.who_end|hl }}</p>
+  </section>
+
+  <section id="quin-curs-orientar" aria-labelledby="h-courses">
+    <h2 class="health__h2" id="h-courses">{{ ep.courses_title }}</h2>
+    <p>{{ ep.courses_intro|hl }}</p>
+    <ul class="cards cards--3 health__courses">
+      {% for c in site.courses if c.key in ep.courses_for %}
+      <li class="card card--course">
+        <span class="card__icon" aria-hidden="true">{{ icon(c.icon) }}</span>
+        <h3 class="card__title">{{ c.title }}</h3>
+        <p class="card__text">{{ ep.courses_for[c.key] }}</p>
+        <a class="btn btn--soft btn--block" href="{{ root }}{{ c.slug }}/">{{ ep.course_btn }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="panel" id="com-donar-ho-a-coneixer" aria-labelledby="h-share">
+    <h2 class="health__h2" id="h-share">{{ ep.share_title }}</h2>
+    <p>{{ ep.share_intro|hl }}</p>
+    <blockquote class="health__quote">{{ ep.share_text }}</blockquote>
+  </section>
+
+  <section class="panel panel--plain" id="el-teu-centre" aria-labelledby="h-routes">
+    <h2 class="health__h2" id="h-routes">{{ ep.routes_title }}</h2>
+    <p>{{ ep.routes_intro|hl }}</p>
+    <p class="health__soon">{{ ep.routes_soon }}</p>
+  </section>
+
+  <section class="panel" id="sense-compromis" aria-labelledby="h-limits">
+    <h2 class="health__h2" id="h-limits">{{ ep.limits_title }}</h2>
+    <ul class="checks">{% for i in ep.limits %}<li>{{ icon('check') }}<span>{{ i|hl|elara }}</span></li>{% endfor %}</ul>
+  </section>
+
+  {{ safety(ep.safety_html) }}
+
+  <section class="contact-box" id="contacte" aria-labelledby="h-contact">
+    <h2 id="h-contact">{{ ep.contact_title }}</h2>
+    <p>{{ ep.contact_html }}</p>
+    <p class="contact-box__links">
+      <a class="btn btn--primary" href="mailto:{{ site.contact.email }}">{{ icon('mail') }}Escriu-nos</a>
+      <a class="btn btn--outline" href="{{ site.contact.instagram_url }}">{{ icon('instagram') }}{{ site.contact.instagram }}</a>
+    </p>
+  </section>
+</div>
+{% endblock %}
