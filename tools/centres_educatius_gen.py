@@ -54,7 +54,7 @@ def info(r):
 def route(r, n):
     x = {"n": n, "name": r["nom"], "info": info(r)}
     if r["adreca"]: x["address"] = r["adreca"]
-    if int(r["repeteix"]): x["note"] = f"Aproximadament un {r['repeteix']} % del recorregut es fa d'anada i tornada pel mateix camí."
+    if int(r["repeteix"]): x["note"] = "Una part del recorregut es fa d'anada i tornada pel mateix camí."
     x["desc"] = r["desc"]
     x["wikiloc"] = f"https://ca.wikiloc.com/wikiloc/view.do?id={r['wikiloc']}"
     return x
