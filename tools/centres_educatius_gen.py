@@ -28,8 +28,7 @@ NOTICE = {"title": "Traçats orientatius", "html": [
     "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada centre: no són traçats oficials i no s'han revisat a peu. "
     "Algunes rutes tornen per una part del mateix camí (la fitxa de cada ruta ho diu). Camina amb atenció al trànsit i a l'estat dels camins. "
     "El centre només és el punt de sortida de la ruta: no l'organitza ni la recomana.", LINK]}
-REFLEX = ("Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», "
-          "adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten.")
+REFLEX = ("Són espais on la gent aprèn, es troba i fa comunitat. Tria el centre que tinguis més a prop i fes-hi el temps de reflexió de cada passa.")
 CITY_FILE = {"berga": "berga", "ripoll": "ripoll", "olot": "olot", "seu": "la-seu-d-urgell"}
 CITY_NAME = {"berga": "Berga", "ripoll": "Ripoll", "olot": "Olot", "seu": "la Seu d'Urgell"}
 CITY_DE = {"berga": "de Berga", "ripoll": "de Ripoll", "olot": "d'Olot", "seu": "de la Seu d'Urgell"}
@@ -148,8 +147,8 @@ def territory(page):
     tmin = min(int(re.search(r"(\d+)–\d+ min caminant", x["info"]).group(1)) for x in allr)
     tmax = max(int(re.search(r"\d+–(\d+) min caminant", x["info"]).group(1)) for x in allr)
     b = {"course": "cuidar",
-         "text": (f"{n} rutes circulars curtes, {cuina(min(kms), max(kms))} (de {tmin} a {tmax} minuts caminant), que surten d'un centre educatiu públic "
-                  f"(escola, institut, llar d'infants, escola de música o d'adults) i hi tornen: una ruta per centre. {REFLEX} "
+         "text": (f"{n} rutes circulars curtes, {cuina(min(kms), max(kms))} (de {tmin} a {tmax} minuts caminant), que surten de centres educatius públics "
+                  f"(escoles, instituts, llars d'infants, escoles de música i d'adults) i hi tornen: una ruta per centre. {REFLEX} "
                   "Comencen i acaben al carrer, davant del centre: no cal entrar-hi."),
          "summary": f"{n} rutes des de centres educatius", "notice": NOTICE, "groups": groups}
     return d, b, ids
@@ -216,8 +215,8 @@ for key, fname in CITY_FILE.items():
     tmin = min(int(re.search(r"(\d+)–\d+ min caminant", x["info"]).group(1)) for x in new)
     tmax = max(int(re.search(r"\d+–(\d+) min caminant", x["info"]).group(1)) for x in new)
     part = {"id": PID, "title": "Rutes des de centres educatius", "nav": "Centres educatius",
-            "text": (f"{nn} rutes circulars curtes, {cuina(min(kms), max(kms))} (de {tmin} a {tmax} minuts caminant), que surten d'un centre educatiu públic {CITY_DE[key]} "
-                     f"(escola, institut, llar d'infants, escola de música o d'adults) i hi tornen: una ruta per centre. {REFLEX} Tria el centre que et quedi més a prop."),
+            "text": (f"{nn} rutes circulars curtes, {cuina(min(kms), max(kms))} (de {tmin} a {tmax} minuts caminant), que surten de centres educatius públics {CITY_DE[key]} "
+                     f"(escoles, instituts, llars d'infants, escoles de música i d'adults) i hi tornen: una ruta per centre. {REFLEX}"),
             "notice": NOTICE, "groups": out_groups, "tele": True}
     b["parts"].append(part)
     # text i resum del bloc, pels comptes de cada part
