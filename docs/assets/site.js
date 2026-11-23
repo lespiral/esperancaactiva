@@ -344,19 +344,3 @@
     h1.classList.add('is-split');
   }
 })();
-
-/* Mapes de Google My Maps: es carreguen només quan es fa clic a «Mostra el mapa» */
-document.addEventListener('click', function (e) {
-  var b = e.target.closest ? e.target.closest('.map__load') : null;
-  if (!b) return;
-  var frame = b.closest('.map__frame');
-  if (!frame) return;
-  var f = document.createElement('iframe');
-  f.src = b.getAttribute('data-src');
-  f.title = b.getAttribute('data-title') || '';
-  f.setAttribute('allowfullscreen', '');
-  f.referrerPolicy = 'no-referrer-when-downgrade';
-  while (frame.firstChild) frame.removeChild(frame.firstChild);
-  frame.appendChild(f);
-});
-

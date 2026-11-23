@@ -23,7 +23,7 @@
 <figure class="map"{% if m.id %} id="{{ m.id }}"{% endif %}>
   {% if m.label %}<div class="map__head"><p class="map__label">{{ icon('map') }}{{ m.label }}</p>{% if m.back %}<a class="map__back" href="#{{ m.back.href }}">{{ icon('caret', 'i--up') }}{{ m.back.text }}</a>{% endif %}</div>{% endif %}
   <div class="map__frame">
-    <div class="map__gate"><p class="map__gate-text">{{ site.map_gate.text }}</p><button type="button" class="btn btn--primary map__load" data-src="https://www.google.com/maps/d/embed?mid={{ m.mid }}&amp;ehbc=2E312F&amp;ll={{ m.ll }}&amp;z={{ m.z }}" data-title="Mapa: {{ m.title }}">{{ site.map_gate.btn }}</button><p class="map__gate-note">{{ site.map_gate.note|safe }}</p></div>
+    <iframe src="https://www.google.com/maps/d/embed?mid={{ m.mid }}&amp;ehbc=2E312F&amp;ll={{ m.ll }}&amp;z={{ m.z }}" title="Mapa: {{ m.title }}" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
   <figcaption><a href="https://www.google.com/maps/d/viewer?mid={{ m.mid }}" target="_blank" rel="noopener">{{ icon('external') }}Obre el mapa a pantalla completa</a></figcaption>
 </figure>
