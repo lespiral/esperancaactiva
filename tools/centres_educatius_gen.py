@@ -13,7 +13,7 @@ comarca, adreça, km i minuts; registre_mymaps_publicats.csv: enllaç de cada ma
 del perfil Espiral.ElaraSocial). Temps: caminada = km × 12–15 min; amb pauses = +10 / +20 min arrodonit a 5. Adreça només on el
 registre en dona una amb carrer (les abreviacions «p.», «Ajuntament», «Zona Escolar», «Finca…» no es publiquen). El tipus de
 centre de la frase (`desc`) es treu del nom. Els traçats són reconstruïts sobre OpenStreetMap i no s'han revisat a peu; si el
-registre diu que un tram es fa d'anada i tornada, la ruta ho porta com a nota.
+registre diu que un tram es fa d'anada i tornada, la ruta ho diu a la línia d'info (sense nota).
 """
 import csv, json, math, pathlib, re, unicodedata
 from collections import OrderedDict, defaultdict
@@ -54,7 +54,6 @@ def info(r):
 def route(r, n):
     x = {"n": n, "name": r["nom"], "info": info(r)}
     if r["adreca"]: x["address"] = r["adreca"]
-    if int(r["repeteix"]): x["note"] = "Una part del recorregut es fa d'anada i tornada pel mateix camí."
     x["desc"] = r["desc"]
     x["wikiloc"] = f"https://ca.wikiloc.com/wikiloc/view.do?id={r['wikiloc']}"
     return x
