@@ -114,9 +114,14 @@ def titol_grup(muns):
 def territory(page):
     path = ROOT / f"data/{page}.json"
     d = json.loads(path.read_text(encoding="utf-8"))
-    if any(b["course"] == "cuidar" for b in d["blocks"]):
+    blk = next((b for b in d["blocks"] if b["course"] == "cuidar"), None)
+    have = {g["maps"][0]["mid"] for g in blk["groups"]} if blk else set()
+    rs = [r for r in by_page[page] if mid(r["mapa_url"]) not in have]   # els mapes que ja hi són no es toquen
+    if not rs:
         print(page, ": ja hi és; res a fer"); return None
-    rs = [r for r in by_page[page]]
+    if blk:
+        old_mun = {s["title"] for g in blk["groups"] for s in g["sections"]}
+        assert not old_mun & {r["municipi"] for r in rs}, "municipi en un mapa nou i en un d'antic"
     groups, used, ids = [], {}, {}
     for mp in sorted({r["mapa"] for r in rs}, key=lambda m: map_order(by_map[m][0])):
         here = [r for r in by_map[mp] if r["pagina"] == page]
@@ -146,10 +151,17 @@ def territory(page):
     kms = [float(x["info"].split(" km")[0].replace(",", ".")) for x in allr]
     tmin = min(int(re.search(r"(\d+)–\d+ min caminant", x["info"]).group(1)) for x in allr)
     tmax = max(int(re.search(r"\d+–(\d+) min caminant", x["info"]).group(1)) for x in allr)
+    if blk:   # mapes nous a un bloc que ja existeix: s'afegeixen els grups, ordenats per comarca i número de mapa
+        blk["groups"] += groups
+        gkey = lambda g: (re.sub(r"-\d+$", "", g["id"]), int(re.search(r"-(\d+)$", g["id"]).group(1)))
+        blk["groups"].sort(key=gkey)
+        tot = sum(len(s["routes"]) for g in blk["groups"] for s in g["sections"])
+        blk["summary"] = f"{tot} rutes des de centres educatius"
+        return d, blk, ids, True
     b = {"course": "cuidar",
          "text": TXT,
          "summary": f"{n} rutes des de centres educatius", "notice": NOTICE, "groups": groups}
-    return d, b, ids
+    return d, b, ids, False
 
 
 used_n = {}
@@ -164,20 +176,21 @@ for page in ("alt-pirineu-i-aran", "catalunya-central", "camp-de-tarragona", "po
     used_n.clear()
     res = territory(page)
     if res is None: continue
-    d, b, ids = res
-    b["see_also"] = [{"text": f"{CITY_NAME[c][0].upper() + CITY_NAME[c][1:]} té pàgina pròpia, amb {sum(1 for r in by_page[c])} rutes d'aquest curs.", "city": c if c != "seu" else "la-seu-d-urgell", "course": "cuidar"}
-                     for c in SEE.get(page, [])]
-    if not b["see_also"]: del b["see_also"]
-    d["blocks"].append(b)
+    d, b, ids, extended = res
+    if not extended:
+        b["see_also"] = [{"text": f"{CITY_NAME[c][0].upper() + CITY_NAME[c][1:]} té pàgina pròpia, amb {sum(1 for r in by_page[c])} rutes d'aquest curs.", "city": c if c != "seu" else "la-seu-d-urgell", "course": "cuidar"}
+                         for c in SEE.get(page, [])]
+        if not b["see_also"]: del b["see_also"]
+        d["blocks"].append(b)
     ess = sum(len(s["routes"]) for bl in d["blocks"] if bl["course"] == "dia" for g in bl["groups"] for s in g["sections"])
     nmun = len({s["title"] for bl in d["blocks"] for g in bl["groups"] for s in g.get("sections", [])})
     ncur = sum(len(s["routes"]) for g in b["groups"] for s in g["sections"])
     d["summary"] = f"{ess} rutes de l'economia social i solidària i {ncur} de centres educatius en {nmun} municipis."
     d["intro"] = "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària i de centres educatius."
-    if page in TERR_REGION: d["region"] = TERR_REGION[page]
+    if page in TERR_REGION and not extended: d["region"] = TERR_REGION[page]
     (ROOT / f"data/{page}.json").write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     put_inicis(page, ids)
-    print(page, ncur, "rutes noves,", len({s['title'] for g in b['groups'] for s in g['sections']}), "municipis")
+    print(page, ncur, "rutes (total del bloc),", len({s['title'] for g in b['groups'] for s in g['sections']}), "municipis")
 
 # ---------- Pàgines de ciutat ----------
 LABEL = {"tercer-sector": "d'entitats del Tercer Sector Social", "biblioteques-i-centres": "de biblioteques i centres cívics i culturals",
