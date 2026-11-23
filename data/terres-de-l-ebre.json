@@ -3,9 +3,9 @@
   "name": "Terres de l'Ebre",
   "kind": "territory",
   "title": "Caminar per les Terres de l'Ebre",
-  "region": "Terres de l'Ebre",
-  "summary": "5 rutes de l'economia social i solidària en 4 municipis.",
-  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària.",
+  "region": "Baix Ebre, Montsià, Ribera d'Ebre i Terra Alta",
+  "summary": "5 rutes de l'economia social i solidària i 57 de centres educatius en 29 municipis.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària i de centres educatius.",
   "zones": {
     "by": "section",
     "label": "Vés directament al teu poble",
@@ -88,6 +88,798 @@
                   "address": "Avinguda de la Misericòrdia, 71, la Fatarella",
                   "desc": "Agrícola Sant Isidre de la Fatarella és una cooperativa agrària que elabora i comercialitza productes com vi i oli vinculats al territori.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-la-fatarella-al-fatriyya-agricola-sant-isidre-sccl-295087520"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "course": "cuidar",
+      "text": "57 rutes circulars curtes, de 0,98 a 2,03 km (de 12 a 30 minuts caminant), que surten d'un centre educatiu públic (escola, institut, llar d'infants, escola de música o d'adults) i hi tornen: una ruta per centre. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Comencen i acaben al carrer, davant del centre: no cal entrar-hi.",
+      "summary": "57 rutes des de centres educatius",
+      "notice": {
+        "title": "Traçats orientatius",
+        "html": [
+          "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada centre: no són traçats oficials i no s'han revisat a peu. Algunes rutes tornen per una part del mateix camí (la fitxa de cada ruta ho diu). Camina amb atenció al trànsit i a l'estat dels camins. El centre només és el punt de sortida de la ruta: no l'organitza ni la recomana.",
+          "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "id": "centres-educatius-ribera-d-ebre-1",
+          "title": "Rasquera, Miravet i 3 municipis més",
+          "maps": [
+            {
+              "mid": "1L66MK-rbsSC8ohyOhXlCOEqPUKOOEbM",
+              "title": "Ribera d'Ebre · mapa 01 de 04 · Rasquera, Miravet i 3 municipis més",
+              "ll": "41.0471,0.6203",
+              "z": 11,
+              "label": "Ribera d'Ebre · mapa 1 de 4"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Rasquera",
+              "id": "rasquera-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Les Eres de Rasquera - ZER La Font de l'Aiguadí",
+                  "info": "1,51 km · 18–23 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Júlia Pellisa, s/n, Rasquera",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297840348"
+                }
+              ]
+            },
+            {
+              "title": "Miravet",
+              "id": "miravet-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Roc Llop i Convalia - ZER Benissanet-Miravet",
+                  "info": "1,51 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer La Creu, s/n, Miravet",
+                  "note": "Aproximadament un 50 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297840456"
+                }
+              ]
+            },
+            {
+              "title": "Ginestar",
+              "id": "ginestar-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Pàmies - ZER La Font de l'Aiguadí",
+                  "info": "1,50 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Riu, 9, Ginestar",
+                  "note": "Aproximadament un 15 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297840538"
+                }
+              ]
+            },
+            {
+              "title": "Benissanet",
+              "id": "benissanet-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants Municipal de Benissanet",
+                  "info": "1,54 km · 19–23 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer de la Barca, s/n, Benissanet",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297840612"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Antoni Nat - ZER Benissanet-Miravet",
+                  "info": "1,36 km · 16–20 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Reus, s/n, Benissanet",
+                  "note": "Aproximadament un 15 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297840805"
+                },
+                {
+                  "n": 3,
+                  "name": "Esc. de Música Municipal de Benissanet",
+                  "info": "1,20 km · 14–18 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "note": "Aproximadament un 14 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297840864"
+                }
+              ]
+            },
+            {
+              "title": "Móra d'Ebre",
+              "id": "mora-d-ebre-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Esc. Mús. i D. i de Dansa",
+                  "info": "1,62 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Plaça de la Cultura, 1, Móra d'Ebre",
+                  "desc": "Escola pública de música i dansa.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297840978"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Lluís Viñas i Viñoles",
+                  "info": "1,54 km · 18–23 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Mestres, 7, Móra d'Ebre",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297841087"
+                },
+                {
+                  "n": 3,
+                  "name": "EOI Ribera d'Ebre",
+                  "info": "1,54 km · 18–23 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer de les Comarques Catalanes, 103, Móra d'Ebre",
+                  "desc": "Escola oficial d'idiomes.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297841202"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-ribera-d-ebre-2",
+          "title": "Móra d'Ebre, Tivissa i 1 municipi més",
+          "maps": [
+            {
+              "mid": "1XcSVcvYALcvIgF7uS2bPQlck01HNMJE",
+              "title": "Ribera d'Ebre · mapa 02 de 04 · Móra d'Ebre, Tivissa i 1 municipi més",
+              "ll": "41.0714,0.6900",
+              "z": 11,
+              "label": "Ribera d'Ebre · mapa 2 de 4"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Móra d'Ebre",
+              "id": "mora-d-ebre-centres-educatius-2",
+              "route_prefix": "mora-d-ebre-centres-educatius",
+              "nav": "Móra d'Ebre (mapa 2)",
+              "routes": [
+                {
+                  "n": 4,
+                  "name": "Institut Julio Antonio",
+                  "info": "1,21 km · 15–18 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer Comarques Catalanes, 103, Móra d'Ebre",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297841264"
+                },
+                {
+                  "n": 5,
+                  "name": "CFA Ribera d'Ebre",
+                  "info": "1,30 km · 16–19 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Avinguda Comarques Catalanes, 103, Móra d'Ebre",
+                  "note": "Aproximadament un 11 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Centre públic de formació de persones adultes.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297841337"
+                },
+                {
+                  "n": 6,
+                  "name": "Llar d'infants La Morera",
+                  "info": "1,41 km · 17–21 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Santiago Rusiñol, 22, Móra d'Ebre",
+                  "note": "Aproximadament un 22 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297841489"
+                }
+              ]
+            },
+            {
+              "title": "Tivissa",
+              "id": "tivissa-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Marcel·lí Domingo",
+                  "info": "1,56 km · 19–23 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Costa de l'Era, 18, Tivissa",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297841588"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Ding-Dong",
+                  "info": "1,58 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Costa de l'Era, s/n, Tivissa",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297841676"
+                },
+                {
+                  "n": 3,
+                  "name": "Escola Josep Riba - ZER Les Vinyes",
+                  "info": "1,28 km · 15–19 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer de les Escoles, 18, Tivissa",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297841841"
+                }
+              ]
+            },
+            {
+              "title": "Móra la Nova",
+              "id": "mora-la-nova-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "EA Municipal d'Arts Plàstiques i Disseny Josep Casadó",
+                  "info": "1,50 km · 18–22 min caminant · 30–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Avinguda Lluís Companys, 17, Móra la Nova",
+                  "note": "Aproximadament un 28 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola d'art pública.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297841935"
+                },
+                {
+                  "n": 2,
+                  "name": "Institut Escola 3 d'Abril",
+                  "info": "1,46 km · 17–22 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer Àngel Guimerà, 2, Móra la Nova",
+                  "desc": "Institut escola públic, amb educació infantil, primària i secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297842035"
+                },
+                {
+                  "n": 3,
+                  "name": "Llar d'infants Municipal de Móra la Nova El Comellar",
+                  "info": "1,23 km · 15–18 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Prolongació del Carrer de la Vinya, s/n, Móra la Nova",
+                  "note": "Aproximadament un 18 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297842169"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-ribera-d-ebre-3",
+          "title": "La Torre de l'Espanyol, Garcia i 2 municipis més",
+          "maps": [
+            {
+              "mid": "1A7c6zytfdYfxczWo7vZFd8W8h3t-0lA",
+              "title": "Ribera d'Ebre · mapa 03 de 04 · La Torre de l'Espanyol, Garcia i 2 municipis més",
+              "ll": "41.1641,0.6079",
+              "z": 12,
+              "label": "Ribera d'Ebre · mapa 3 de 4"
+            }
+          ],
+          "sections": [
+            {
+              "title": "La Torre de l'Espanyol",
+              "id": "la-torre-de-l-espanyol-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola El Tormo - ZER Ribera d'Ebre Nord",
+                  "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Era, s/n, La Torre de l'Espanyol",
+                  "note": "Aproximadament un 18 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297842280"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants La Torre de l'Espanyol",
+                  "info": "1,67 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer de l'Era, s/n, La Torre de l'Espanyol",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297842379"
+                },
+                {
+                  "n": 3,
+                  "name": "Aula Municipal de Música de la Torre de l'Espanyol",
+                  "info": "1,77 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Balmes, 7, 1r 2a, La Torre de l'Espanyol",
+                  "desc": "Aula municipal de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297842442"
+                }
+              ]
+            },
+            {
+              "title": "Garcia",
+              "id": "garcia-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola El Verger - ZER Ribera d'Ebre Nord",
+                  "info": "1,67 km · 20–25 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Afores, s/n, Garcia",
+                  "note": "Aproximadament un 29 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297842538"
+                }
+              ]
+            },
+            {
+              "title": "Ascó",
+              "id": "asco-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Esc. de Música Municipal",
+                  "info": "1,23 km · 15–18 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Plaça Major, 1, Ascó",
+                  "note": "Aproximadament un 28 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297842679"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Vailets",
+                  "info": "1,11 km · 13–17 min caminant · 25–35 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Farinera, s/n, Ascó",
+                  "note": "Aproximadament un 27 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297842850"
+                },
+                {
+                  "n": 3,
+                  "name": "Escola Sant Miquel",
+                  "info": "1,29 km · 15–19 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer Sant Miquel, s/n, Ascó",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297842948"
+                }
+              ]
+            },
+            {
+              "title": "Vinebre",
+              "id": "vinebre-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Les Eres - ZER Ribera d'Ebre Nord",
+                  "info": "1,45 km · 17–22 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Torre, s/n, Vinebre",
+                  "note": "Aproximadament un 24 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297843069"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-ribera-d-ebre-4",
+          "title": "Vinebre, Flix i 2 municipis més",
+          "maps": [
+            {
+              "mid": "1eSEDmKosC93Ad_TLSTuByuTNfPtDSjU",
+              "title": "Ribera d'Ebre · mapa 04 de 04 · Vinebre, Flix i 2 municipis més",
+              "ll": "41.2342,0.5784",
+              "z": 11,
+              "label": "Ribera d'Ebre · mapa 4 de 4"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Vinebre",
+              "id": "vinebre-centres-educatius-2",
+              "route_prefix": "vinebre-centres-educatius",
+              "nav": "Vinebre (mapa 4)",
+              "routes": [
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Miquel Bosch",
+                  "info": "1,48 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "address": "Carrer de la Torre, s/n, Vinebre",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297843230"
+                }
+              ]
+            },
+            {
+              "title": "Flix",
+              "id": "flix-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Enric Grau i Fontserè",
+                  "info": "1,56 km · 19–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Salvador Espriu, 2, Flix",
+                  "note": "Aproximadament un 30 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297843341"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Pam i Toc",
+                  "info": "2,03 km · 24–30 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Escoles, 43, Flix",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297843493"
+                },
+                {
+                  "n": 3,
+                  "name": "Esc. de Música Municipal",
+                  "info": "1,42 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer Sant Jordi, 3, Flix",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297843620"
+                },
+                {
+                  "n": 4,
+                  "name": "Institut de Flix",
+                  "info": "1,11 km · 13–17 min caminant · 25–35 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Salvador Espriu, 1, Flix",
+                  "note": "Aproximadament un 23 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297843742"
+                }
+              ]
+            },
+            {
+              "title": "La Palma d'Ebre",
+              "id": "la-palma-d-ebre-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola 1 d'Abril - ZER Ebre",
+                  "info": "0,98 km · 12–15 min caminant · 20–35 min amb pauses · circular",
+                  "address": "Carrer Major, s/n, La Palma d'Ebre",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297843876"
+                }
+              ]
+            },
+            {
+              "title": "Riba-roja d'Ebre",
+              "id": "riba-roja-d-ebre-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Sant Agustí - ZER Ebre",
+                  "info": "1,17 km · 14–18 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer Sant Agustí, s/n, Riba-roja d'Ebre",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297844019"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Els Figotets",
+                  "info": "1,47 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "address": "Carrer Reus, 3, Riba-roja d'Ebre",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297844160"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-terra-alta-1",
+          "title": "Arnes, Caseres i 4 municipis més",
+          "maps": [
+            {
+              "mid": "1KHI-cTXPOeLvmscSUmGJ3OzUaW3Jz-A",
+              "title": "Terra Alta · mapa 01 de 03 · Arnes, Caseres i 4 municipis més",
+              "ll": "41.0022,0.3278",
+              "z": 10,
+              "label": "Terra Alta · mapa 1 de 3"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Arnes",
+              "id": "arnes-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola La Miranda - ZER Ports-Algars",
+                  "info": "1,53 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Dr. Trueta, s/n, Arnes",
+                  "note": "Aproximadament un 19 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297847315"
+                }
+              ]
+            },
+            {
+              "title": "Caseres",
+              "id": "caseres-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola La Gessera - ZER Ports-Algars",
+                  "info": "1,48 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "address": "Carrer les Eres, s/n, Caseres",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297847477"
+                }
+              ]
+            },
+            {
+              "title": "Horta de Sant Joan",
+              "id": "horta-de-sant-joan-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants l'Esquirol",
+                  "info": "1,75 km · 21–26 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer d'Aureli Serres, 8, Horta de Sant Joan",
+                  "note": "Aproximadament un 23 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297847611"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Montsagre",
+                  "info": "1,73 km · 21–26 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Escoles, s/n, Horta de Sant Joan",
+                  "note": "Aproximadament un 43 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297847792"
+                }
+              ]
+            },
+            {
+              "title": "Prat de Comte",
+              "id": "prat-de-comte-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Mare de Déu de la Fontcalda - ZER Ports-Algars",
+                  "info": "1,56 km · 19–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer La Bassa, s/n, Prat de Comte",
+                  "note": "Aproximadament un 30 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297847879"
+                }
+              ]
+            },
+            {
+              "title": "Bot",
+              "id": "bot-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Sant Blai - ZER Terra Alta-Centre",
+                  "info": "1,58 km · 19–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Caseres, 50, Bot",
+                  "note": "Aproximadament un 38 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297848040"
+                }
+              ]
+            },
+            {
+              "title": "Batea",
+              "id": "batea-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants Los Raïmets",
+                  "info": "1,55 km · 19–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Major, 27, Batea",
+                  "note": "Aproximadament un 12 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297848165"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Municipal Los Carrollets",
+                  "info": "1,43 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Avinguda Terra Alta, 64, Batea",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297848317"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-terra-alta-2",
+          "title": "Batea, Gandesa i 2 municipis més",
+          "maps": [
+            {
+              "mid": "1ZX3DIyEB-2oFZnCQOj874Wbi0F5bQAM",
+              "title": "Terra Alta · mapa 02 de 03 · Batea, Gandesa i 2 municipis més",
+              "ll": "41.0550,0.4147",
+              "z": 11,
+              "label": "Terra Alta · mapa 2 de 3"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Batea",
+              "id": "batea-centres-educatius-2",
+              "route_prefix": "batea-centres-educatius",
+              "nav": "Batea (mapa 2)",
+              "routes": [
+                {
+                  "n": 3,
+                  "name": "Institut Escola Mare de Déu del Portal",
+                  "info": "1,61 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer del Cós, 8, Batea",
+                  "desc": "Institut escola públic, amb educació infantil, primària i secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297848436"
+                }
+              ]
+            },
+            {
+              "title": "Gandesa",
+              "id": "gandesa-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Institut Terra Alta",
+                  "info": "1,86 km · 22–28 min caminant · 30–50 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carretera de Vilalba, 30, Gandesa",
+                  "note": "Aproximadament un 28 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297848637"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Gandesa",
+                  "info": "1,34 km · 16–20 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Teresa Borràs Domènech, 4, Gandesa",
+                  "note": "Aproximadament un 11 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297848812"
+                },
+                {
+                  "n": 3,
+                  "name": "Escola Puig Cavaller",
+                  "info": "1,72 km · 21–26 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Teresa Borràs Domènech, s/n, Gandesa",
+                  "note": "Aproximadament un 13 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297848922"
+                },
+                {
+                  "n": 4,
+                  "name": "Escola agrària de Gandesa",
+                  "info": "1,60 km · 19–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Teresa Borràs i Domènech, s/n, Gandesa",
+                  "note": "Aproximadament un 24 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola agrària pública de formació professional.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297849072"
+                }
+              ]
+            },
+            {
+              "title": "Corbera d'Ebre",
+              "id": "corbera-d-ebre-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Doctor Ferran - ZER Terra Alta-Centre",
+                  "info": "1,68 km · 20–25 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Calvari, 18, Corbera d'Ebre",
+                  "note": "Aproximadament un 14 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297849221"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants de Corbera d'Ebre",
+                  "info": "1,16 km · 14–17 min caminant · 25–35 min amb pauses · circular",
+                  "address": "Carrer de Sant Isidre, s/n, Corbera d'Ebre",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297849362"
+                }
+              ]
+            },
+            {
+              "title": "El Pinell de Brai",
+              "id": "el-pinell-de-brai-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Cèsar Martinell - ZER Terra Alta-Centre",
+                  "info": "1,43 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Avinguda de Catalunya, 4, El Pinell de Brai",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297849439"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-terra-alta-3",
+          "title": "El Pinell de Brai, La Fatarella i 2 municipis més",
+          "maps": [
+            {
+              "mid": "1-tS9aQGmYJiDmTyPaCdVie-mPXRrpLU",
+              "title": "Terra Alta · mapa 03 de 03 · El Pinell de Brai, La Fatarella i 2 municipis més",
+              "ll": "41.0986,0.4339",
+              "z": 11,
+              "label": "Terra Alta · mapa 3 de 3"
+            }
+          ],
+          "sections": [
+            {
+              "title": "El Pinell de Brai",
+              "id": "el-pinell-de-brai-centres-educatius-2",
+              "route_prefix": "el-pinell-de-brai-centres-educatius",
+              "nav": "El Pinell de Brai (mapa 3)",
+              "routes": [
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Els Tracalets",
+                  "info": "1,33 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Avinguda de Catalunya, 21, El Pinell de Brai",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297849538"
+                }
+              ]
+            },
+            {
+              "title": "La Fatarella",
+              "id": "la-fatarella-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Esc. de Música Municipal de La Fatarella",
+                  "info": "1,75 km · 21–26 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer del Forn, 2,, La Fatarella",
+                  "note": "Aproximadament un 12 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297849617"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Los Castellets - ZER Terra Alta Nord",
+                  "info": "1,77 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carretera de Camposines, 4, La Fatarella",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297849770"
+                },
+                {
+                  "n": 3,
+                  "name": "Llar d'infants Municipal",
+                  "info": "1,62 km · 19–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Avinguda Catalunya, 3 baix, La Fatarella",
+                  "note": "Aproximadament un 45 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297849919"
+                }
+              ]
+            },
+            {
+              "title": "Vilalba dels Arcs",
+              "id": "vilalba-dels-arcs-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola El Diví Mestre - ZER Terra Alta Nord",
+                  "info": "1,46 km · 18–22 min caminant · 30–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carretera de Gandesa, s/n, Vilalba dels Arcs",
+                  "note": "Aproximadament un 13 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297850005"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Bressol Els Catxapets",
+                  "info": "1,36 km · 16–20 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Gandesa, 22, Vilalba dels Arcs",
+                  "note": "Aproximadament un 25 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola bressol pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297850113"
+                }
+              ]
+            },
+            {
+              "title": "La Pobla de Massaluca",
+              "id": "la-pobla-de-massaluca-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola L'Ametller - ZER Terra Alta Nord",
+                  "info": "1,93 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer La Bassa, 66, La Pobla de Massaluca",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297850269"
                 }
               ]
             }

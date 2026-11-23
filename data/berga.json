@@ -109,8 +109,8 @@
     },
     {
       "course": "cuidar",
-      "text": "Hi ha dos tipus de rutes: 7 rutes, de 2,4 a 2,6 km, que surten d'entitats del Tercer Sector Social, i 3 rutes més curtes, de 1,23 a 1,36 km, que surten de biblioteques i centres cívics i culturals. Totes són circulars i tornen al punt de sortida.",
-      "summary": "10 rutes des d'entitats del Tercer Sector Social, biblioteques i centres",
+      "text": "Hi ha tres tipus de rutes: 7 rutes, de 2,50 a 2,60 km, que surten d'entitats del Tercer Sector Social, 3 rutes, de 1,23 a 1,36 km, que surten de biblioteques i centres cívics i culturals i 10 rutes, de 1,09 a 1,84 km, que surten de centres educatius públics. Totes tornen al punt de sortida.",
+      "summary": "20 rutes des d'entitats del Tercer Sector Social, biblioteques i centres educatius",
       "parts": [
         {
           "id": "tercer-sector",
@@ -257,6 +257,151 @@
                   "name": "Casal Cívic i Comunitari de Berga",
                   "info": "1,28 km · 15–19 min caminant · 25–40 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297216214"
+                }
+              ]
+            }
+          ],
+          "tele": true
+        },
+        {
+          "id": "centres-educatius",
+          "title": "Rutes des de centres educatius",
+          "nav": "Centres educatius",
+          "text": "10 rutes circulars curtes, de 1,09 a 1,84 km (de 13 a 28 minuts caminant), que surten d'un centre educatiu públic de Berga (escola, institut, llar d'infants, escola de música o d'adults) i hi tornen: una ruta per centre. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria el centre que et quedi més a prop.",
+          "notice": {
+            "title": "Traçats orientatius",
+            "html": [
+              "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada centre: no són traçats oficials i no s'han revisat a peu. Algunes rutes tornen per una part del mateix camí (la fitxa de cada ruta ho diu). Camina amb atenció al trànsit i a l'estat dels camins. El centre només és el punt de sortida de la ruta: no l'organitza ni la recomana.",
+              "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+            ]
+          },
+          "groups": [
+            {
+              "id": "centres-educatius-1",
+              "title": "Mapa 3 de 5 (7 rutes)",
+              "maps": [
+                {
+                  "mid": "1PLI9V6zXOKUWpiGiH2z6jMRAaS7Qw5Q",
+                  "title": "Berguedà · mapa 03 de 05 · Gironella, Berga",
+                  "ll": "42.0617,1.8589",
+                  "z": 11,
+                  "label": "Berguedà · mapa 3 de 5",
+                  "routes": [
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17
+                  ]
+                }
+              ],
+              "routes": [
+                {
+                  "n": 11,
+                  "name": "Escola Santa Eulàlia",
+                  "info": "1,70 km · 20–26 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Olvan, s/n, Berga",
+                  "note": "Aproximadament un 26 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297828550"
+                },
+                {
+                  "n": 12,
+                  "name": "Institut Guillem de Berguedà",
+                  "info": "1,09 km · 13–16 min caminant · 25–35 min amb pauses · circular",
+                  "address": "Camí de Pedret, 2, Berga",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297828617"
+                },
+                {
+                  "n": 13,
+                  "name": "EOI del Berguedà",
+                  "info": "1,69 km · 20–25 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Camí de Pedret, 2, Berga",
+                  "note": "Aproximadament un 17 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola oficial d'idiomes.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297828642"
+                },
+                {
+                  "n": 14,
+                  "name": "CFA Berguedà",
+                  "info": "1,26 km · 15–19 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Camí de Pedret, 2, Berga",
+                  "desc": "Centre públic de formació de persones adultes.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297828695"
+                },
+                {
+                  "n": 15,
+                  "name": "Escola de la Valldan",
+                  "info": "1,24 km · 15–19 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Plaça Major, s/n, Berga",
+                  "note": "Aproximadament un 42 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297828774"
+                },
+                {
+                  "n": 16,
+                  "name": "Institut Serra de Noet",
+                  "info": "1,61 km · 19–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Pla de l'Alemany, 40, Berga",
+                  "note": "Aproximadament un 10 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297828810"
+                },
+                {
+                  "n": 17,
+                  "name": "Llar d'infants Flor de Neu",
+                  "info": "1,34 km · 16–20 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Sardana, 28, Berga",
+                  "note": "Aproximadament un 25 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297828879"
+                }
+              ]
+            },
+            {
+              "id": "centres-educatius-2",
+              "title": "Mapa 4 de 5 (3 rutes)",
+              "maps": [
+                {
+                  "mid": "18N6Sii33XUODTy7W3cHB2Wdo0nVw-9A",
+                  "title": "Berguedà · mapa 04 de 05 · Berga, Casserres i 2 municipis més",
+                  "ll": "42.1075,1.8354",
+                  "z": 10,
+                  "label": "Berguedà · mapa 4 de 5",
+                  "routes": [
+                    18,
+                    19,
+                    20
+                  ]
+                }
+              ],
+              "routes": [
+                {
+                  "n": 18,
+                  "name": "Esc. de Música Municipal",
+                  "info": "1,84 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Carrer Mestre de Pedret, 2, Berga",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297828942"
+                },
+                {
+                  "n": 19,
+                  "name": "Cons. de Música dels Pirineus",
+                  "info": "1,28 km · 15–19 min caminant · 25–40 min amb pauses · circular",
+                  "desc": "Conservatori públic de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297829036"
+                },
+                {
+                  "n": 20,
+                  "name": "Escola Sant Joan",
+                  "info": "1,46 km · 17–22 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Roca de la Pila, s/n, Berga",
+                  "note": "Aproximadament un 25 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297829073"
                 }
               ]
             }

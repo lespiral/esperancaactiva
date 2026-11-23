@@ -94,8 +94,8 @@
     },
     {
       "course": "cuidar",
-      "text": "Hi ha dos tipus de rutes: 6 rutes, de 2,4 a 2,6 km, que surten d'entitats del Tercer Sector Social, i 3 rutes més curtes, de 1,21 a 1,43 km, que surten de biblioteques i centres cívics i culturals. Totes són circulars i tornen al punt de sortida.",
-      "summary": "9 rutes des d'entitats del Tercer Sector Social, biblioteques i centres",
+      "text": "Hi ha tres tipus de rutes: 6 rutes, de 2,40 a 2,60 km, que surten d'entitats del Tercer Sector Social, 3 rutes, de 1,21 a 1,43 km, que surten de biblioteques i centres cívics i culturals i 7 rutes, de 0,84 a 1,91 km, que surten de centres educatius públics. Totes tornen al punt de sortida.",
+      "summary": "16 rutes des d'entitats del Tercer Sector Social, biblioteques i centres educatius",
       "parts": [
         {
           "id": "tercer-sector",
@@ -236,6 +236,121 @@
                   "address": "Carrer del Doctor Raguer, 20, Ripoll",
                   "note": "El recorregut creua el pont d'Olot i voreja la carretera de Sant Joan, amb més trànsit.",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297216290"
+                }
+              ]
+            }
+          ],
+          "tele": true
+        },
+        {
+          "id": "centres-educatius",
+          "title": "Rutes des de centres educatius",
+          "nav": "Centres educatius",
+          "text": "7 rutes circulars curtes, de 0,84 a 1,91 km (de 10 a 29 minuts caminant), que surten d'un centre educatiu públic de Ripoll (escola, institut, llar d'infants, escola de música o d'adults) i hi tornen: una ruta per centre. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria el centre que et quedi més a prop.",
+          "notice": {
+            "title": "Traçats orientatius",
+            "html": [
+              "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada centre: no són traçats oficials i no s'han revisat a peu. Algunes rutes tornen per una part del mateix camí (la fitxa de cada ruta ho diu). Camina amb atenció al trànsit i a l'estat dels camins. El centre només és el punt de sortida de la ruta: no l'organitza ni la recomana.",
+              "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+            ]
+          },
+          "groups": [
+            {
+              "id": "centres-educatius-1",
+              "title": "Mapa 1 de 3 (2 rutes)",
+              "maps": [
+                {
+                  "mid": "1YOT5u5_yMkANwmnc4oUmqWPNg3FVslU",
+                  "title": "Ripollès · mapa 01 de 03 · Ogassa, Sant Joan de les Abadesses i 3 municipis més",
+                  "ll": "42.2316,2.2770",
+                  "z": 11,
+                  "label": "Ripollès · mapa 1 de 3",
+                  "routes": [
+                    10,
+                    11
+                  ]
+                }
+              ],
+              "routes": [
+                {
+                  "n": 10,
+                  "name": "Llar d'infants Mare de Déu de Núria",
+                  "info": "1,34 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Avinguda Comte Guifré, s/n, Ripoll",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297797847"
+                },
+                {
+                  "n": 11,
+                  "name": "Esc. de Música Comarcal del Ripollès",
+                  "info": "0,84 km · 10–13 min caminant · 20–35 min amb pauses · circular",
+                  "address": "Carrer 27 de maig, 1-5, Ripoll",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297797891"
+                }
+              ]
+            },
+            {
+              "id": "centres-educatius-2",
+              "title": "Mapa 2 de 3 (5 rutes)",
+              "maps": [
+                {
+                  "mid": "1H_TiBrPr30wOqMQVEj2OYQ3pkohep8E",
+                  "title": "Ripollès · mapa 02 de 03 · Ripoll, Campdevànol i 1 municipi més",
+                  "ll": "42.1924,2.1417",
+                  "z": 12,
+                  "label": "Ripollès · mapa 2 de 3",
+                  "routes": [
+                    12,
+                    13,
+                    14,
+                    15,
+                    16
+                  ]
+                }
+              ],
+              "routes": [
+                {
+                  "n": 12,
+                  "name": "Institut Abat Oliba",
+                  "info": "1,63 km · 20–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carretera Barcelona, 57, Ripoll",
+                  "note": "Aproximadament un 27 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297797929"
+                },
+                {
+                  "n": 13,
+                  "name": "CFA Ripollès",
+                  "info": "1,56 km · 19–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carretera de Barcelona, 57, Ripoll",
+                  "note": "Aproximadament un 26 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Centre públic de formació de persones adultes.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297797980"
+                },
+                {
+                  "n": 14,
+                  "name": "Escola Joan Maragall",
+                  "info": "1,59 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carretera Barcelona, 8, Ripoll",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297798047"
+                },
+                {
+                  "n": 15,
+                  "name": "Escola Tomàs Raguer",
+                  "info": "1,91 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Avinguda Comte Guifré, 18-20, Ripoll",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297798159"
+                },
+                {
+                  "n": 16,
+                  "name": "CEE Doctor Ramon Suriñach",
+                  "info": "1,42 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Avinguda Comte Guifré, 18-20, Ripoll",
+                  "desc": "Centre públic d'educació especial.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297798249"
                 }
               ]
             }

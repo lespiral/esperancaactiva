@@ -172,8 +172,8 @@
     },
     {
       "course": "cuidar",
-      "text": "Hi ha dos tipus de rutes: 7 rutes, de 2,4 a 2,6 km, que surten d'entitats del Tercer Sector Social, i 4 rutes més curtes, de 1,17 a 1,36 km, que surten de biblioteques i centres cívics i culturals. Totes són circulars i tornen al punt de sortida.",
-      "summary": "11 rutes des d'entitats del Tercer Sector Social, biblioteques i centres",
+      "text": "Hi ha tres tipus de rutes: 7 rutes, d'2,50 km, que surten d'entitats del Tercer Sector Social, 4 rutes, de 1,17 a 1,36 km, que surten de biblioteques i centres cívics i culturals i 18 rutes, de 1,13 a 1,98 km, que surten de centres educatius públics. Totes tornen al punt de sortida.",
+      "summary": "29 rutes des d'entitats del Tercer Sector Social, biblioteques i centres educatius",
       "parts": [
         {
           "id": "tercer-sector",
@@ -326,6 +326,245 @@
                   "name": "Casino Olotí",
                   "info": "1,36 km · 16–20 min caminant · 25–40 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297216482"
+                }
+              ]
+            }
+          ],
+          "tele": true
+        },
+        {
+          "id": "centres-educatius",
+          "title": "Rutes des de centres educatius",
+          "nav": "Centres educatius",
+          "text": "18 rutes circulars curtes, de 1,13 a 1,98 km (de 14 a 30 minuts caminant), que surten d'un centre educatiu públic d'Olot (escola, institut, llar d'infants, escola de música o d'adults) i hi tornen: una ruta per centre. Són un temps per caminar i reflexionar: portar a la vida quotidiana el que has après al curs «Quan cuidar-nos és una tasca col·lectiva», adonar-te de com et sents i pensar en petites accions que contribueixin al teu benestar i al de les persones que t'envolten. Tria el centre que et quedi més a prop.",
+          "notice": {
+            "title": "Traçats orientatius",
+            "html": [
+              "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada centre: no són traçats oficials i no s'han revisat a peu. Algunes rutes tornen per una part del mateix camí (la fitxa de cada ruta ho diu). Camina amb atenció al trànsit i a l'estat dels camins. El centre només és el punt de sortida de la ruta: no l'organitza ni la recomana.",
+              "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+            ]
+          },
+          "groups": [
+            {
+              "id": "centres-educatius-1",
+              "title": "Mapa 2 de 5 (5 rutes)",
+              "maps": [
+                {
+                  "mid": "1ZDGlB6PM8hWjIiGER05-EyJKPAnNZdsb",
+                  "title": "Garrotxa · mapa 02 de 05 · La Vall d'en Bas, Riudaura i 1 municipi més",
+                  "ll": "42.1542,2.4448",
+                  "z": 12,
+                  "label": "Garrotxa · mapa 2 de 5",
+                  "routes": [
+                    12,
+                    13,
+                    14,
+                    15,
+                    16
+                  ]
+                }
+              ],
+              "routes": [
+                {
+                  "n": 12,
+                  "name": "Institut La Garrotxa",
+                  "info": "1,49 km · 18–22 min caminant · 30–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carretera de Riudaura, 110, Olot",
+                  "note": "Aproximadament un 34 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297816534"
+                },
+                {
+                  "n": 13,
+                  "name": "Escola Sant Roc",
+                  "info": "1,36 km · 16–20 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Còrdova, 1, Olot",
+                  "note": "Aproximadament un 35 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297816566"
+                },
+                {
+                  "n": 14,
+                  "name": "Llar d'infants Sant Roc",
+                  "info": "1,25 km · 15–19 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Sant Feliu, 60, Olot",
+                  "note": "Aproximadament un 22 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297816597"
+                },
+                {
+                  "n": 15,
+                  "name": "Institut Bosc de la Coma",
+                  "info": "1,66 km · 20–25 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Toledo, s/n, Olot",
+                  "note": "Aproximadament un 15 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297816637"
+                },
+                {
+                  "n": 16,
+                  "name": "CFA La Garrotxa",
+                  "info": "1,52 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Avinguda de l'Estació, 13, Olot",
+                  "note": "Aproximadament un 14 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Centre públic de formació de persones adultes.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297816667"
+                }
+              ]
+            },
+            {
+              "id": "centres-educatius-2",
+              "title": "Mapa 3 de 5 (9 rutes)",
+              "maps": [
+                {
+                  "mid": "1onorvxC18kJVerN3Xg-BeVzQNgcKtHf0",
+                  "title": "Garrotxa · mapa 03 de 05 · Olot",
+                  "ll": "42.1823,2.4861",
+                  "z": 13,
+                  "label": "Garrotxa · mapa 3 de 5",
+                  "routes": [
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25
+                  ]
+                }
+              ],
+              "routes": [
+                {
+                  "n": 17,
+                  "name": "Llar d'infants Sant Pere Màrtir",
+                  "info": "1,37 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer Clavells, 1 - Circumval·lació Jaume I, Olot",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297816733"
+                },
+                {
+                  "n": 18,
+                  "name": "Escola Pla de Dalt",
+                  "info": "1,13 km · 14–17 min caminant · 25–35 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Alforja, 2-4, Olot",
+                  "note": "Aproximadament un 16 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297816768"
+                },
+                {
+                  "n": 19,
+                  "name": "Llar d'infants Municipal la gredera del Morrot",
+                  "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Avinguda Morrot, 23, Olot",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297816793"
+                },
+                {
+                  "n": 20,
+                  "name": "EOI d'Olot",
+                  "info": "1,14 km · 14–17 min caminant · 25–35 min amb pauses · circular",
+                  "address": "Avinguda Sant Joan de les Abadesses, 20-22, Olot",
+                  "desc": "Escola oficial d'idiomes.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297816851"
+                },
+                {
+                  "n": 21,
+                  "name": "EA d'Olot",
+                  "info": "1,26 km · 15–19 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Pare Antoni Soler, 1-3, Olot",
+                  "note": "Aproximadament un 13 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola d'art pública.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297816871"
+                },
+                {
+                  "n": 22,
+                  "name": "Llar d'infants Les Fonts",
+                  "info": "1,49 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "address": "Ronda de les Fonts, 25, Olot",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297816916"
+                },
+                {
+                  "n": 23,
+                  "name": "Escola Malagrida",
+                  "info": "1,25 km · 15–19 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Avinguda de les Corts Catalanes, 30, Olot",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297816954"
+                },
+                {
+                  "n": 24,
+                  "name": "Esc. de Música Municipal Xavier Montsalvatge",
+                  "info": "1,49 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "address": "Avinguda Anselm Clavé, 7, Olot",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297816968"
+                },
+                {
+                  "n": 25,
+                  "name": "Escola Volcà Bisaroques",
+                  "info": "1,50 km · 18–22 min caminant · 30–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Pare Nolasc del Molar, 6, Olot",
+                  "note": "Aproximadament un 11 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297817039"
+                }
+              ]
+            },
+            {
+              "id": "centres-educatius-3",
+              "title": "Mapa 4 de 5 (4 rutes)",
+              "maps": [
+                {
+                  "mid": "148Y9s5lzdzC9vb6ru4K0p7KOZVSgW3zD",
+                  "title": "Garrotxa · mapa 04 de 05 · Olot, Castellfollit de la Roca i 2 municipis més",
+                  "ll": "42.2037,2.5145",
+                  "z": 12,
+                  "label": "Garrotxa · mapa 4 de 5",
+                  "routes": [
+                    26,
+                    27,
+                    28,
+                    29
+                  ]
+                }
+              ],
+              "routes": [
+                {
+                  "n": 26,
+                  "name": "Institut Escola Greda",
+                  "info": "1,17 km · 14–18 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer dels Garganta, 11, Olot",
+                  "note": "Aproximadament un 10 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Institut escola públic, amb educació infantil, primària i secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297817058"
+                },
+                {
+                  "n": 27,
+                  "name": "Llar d'infants Sant Miquel",
+                  "info": "1,60 km · 19–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Circumval·lació Jaume I, s/n, Olot",
+                  "note": "Aproximadament un 25 % del recorregut es fa d'anada i tornada pel mateix camí.",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297817082"
+                },
+                {
+                  "n": 28,
+                  "name": "Institut Montsacopa",
+                  "info": "1,56 km · 19–23 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Avinguda Joan de Cabirol, s/n, Olot",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297817122"
+                },
+                {
+                  "n": 29,
+                  "name": "Escola El Morrot",
+                  "info": "1,98 km · 24–30 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Avinguda del Morrot, 25, Olot",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297817150"
                 }
               ]
             }
