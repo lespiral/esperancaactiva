@@ -3,7 +3,7 @@
   "name": "El Prat de Llobregat",
   "title": "Caminar pel Prat de Llobregat",
   "region": "Baix Llobregat",
-  "summary": "7 rutes des dels CAP, el riu, la platja i l'Ajuntament; 7 des dels equipaments i 13 des d'entitats del Tercer Sector Social; 9 pel Delta i 17 circuits urbans; i 15 des de l'economia social.",
+  "summary": "7 rutes des dels CAP, el riu, la platja i l'Ajuntament; 7 des dels equipaments i 13 des d'entitats del Tercer Sector Social; 9 pel Delta, 17 circuits urbans i 11 des de miradors; i 15 des de l'economia social.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa. Cada curs té les seves rutes: tria el teu i camina.",
   "blocks": [
     {
@@ -345,8 +345,8 @@
     },
     {
       "course": "mon",
-      "text": "Hi ha dos tipus de rutes: 9 rutes pels espais naturals del Delta del Llobregat (el riu, les llacunes, la platja i el Parc Agrari) i 17 circuits urbans curts, de 10 a 15 minuts caminant, que surten de places, parcs i jardins de tots els barris del Prat. Abans d'anar als espais naturals, comprova els horaris d'obertura.",
-      "summary": "9 rutes pel Delta i 17 circuits urbans",
+      "text": "Hi ha tres tipus de rutes: 9 rutes pels espais naturals del Delta del Llobregat (el riu, les llacunes, la platja i el Parc Agrari), 17 circuits urbans curts, de 10 a 15 minuts caminant, que surten de places, parcs i jardins de tots els barris del Prat, i 11 rutes curtes que surten d'un mirador. Abans d'anar als espais naturals, comprova els horaris d'obertura.",
+      "summary": "9 rutes pel Delta, 17 circuits urbans i 11 des de miradors",
       "parts": [
         {
           "id": "delta",
@@ -608,6 +608,152 @@
                 }
               ],
               "id": "circuits-urbans-rutes"
+            }
+          ]
+        },
+        {
+          "id": "miradors",
+          "title": "Rutes des de miradors",
+          "nav": "Rutes des de miradors",
+          "text": "11 rutes curtes (de 0,4 a 1,7 km) que surten d'un mirador i hi tornen. Mira el món des d'on ets, escolta l'àudio, camina i torna al mateix lloc, però des d'un lloc intern diferent, amb una mirada diferent. Els traçats estan reconstruïts sobre OpenStreetMap i encara no s'han revisat a peu: revisa l'estat del camí i les normes d'accés dels espais naturals abans d'anar-hi.",
+          "groups": [
+            {
+              "id": "miradors-1",
+              "title": "Miradors · mapa 1 (rutes 10–15)",
+              "maps": [
+                {
+                  "mid": "18pPCufXmv8FoBgf99Gx91UwjnTFTJVw",
+                  "title": "El Prat · miradors (mapa 1/2, rutes 10–15)",
+                  "ll": "41.2990,2.1050",
+                  "z": 13
+                }
+              ],
+              "routes": [
+                {
+                  "n": 10,
+                  "name": "Mirador de la Platja",
+                  "start": "Inici i final: Mirador de la Platja",
+                  "info": "1,32 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "desc": "El recorregut transcorre pel passeig de la Platja, amb una volta pels accessos 9 i 10 a la platja i per camins de vianants i un carril bici paral·lels al passeig, abans de tornar al mirador de la Platja.",
+                  "note": "Accessibilitat i seguretat: Camins de vianants i passeig asfaltat al costat de la platja; alguns trams de grava fina. Tram compartit amb carril bici.",
+                  "dest": "41.280910,2.084410",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297833438"
+                },
+                {
+                  "n": 11,
+                  "name": "Mirador de la Roberta",
+                  "start": "Inici i final: Mirador de la Roberta",
+                  "info": "1,32 km · 16–20 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "desc": "El recorregut baixa del mirador de la Roberta fins al passeig de la Platja i segueix per camins de fusta i un carril bici paral·lel al passeig, fins a un punt a uns 650 m del mirador, on gira per tornar pel mateix camí.",
+                  "note": "Accessibilitat i seguretat: Camins de vianants de fusta i carril bici al costat de la platja. Tram compartit amb ciclistes.",
+                  "dest": "41.281490,2.084830",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297833663"
+                },
+                {
+                  "n": 12,
+                  "name": "Mirador de l'Estany de l'Illa",
+                  "start": "Inici i final: Mirador de l'Estany de l'Illa",
+                  "info": "0,39 km · 5–6 min caminant · 15–25 min amb pauses · anada i tornada",
+                  "desc": "El recorregut surt del mirador de l’Estany de l’Illa i segueix un camí de fusta amb escales metàl·liques fins a la zona de Can Camins, a uns 200 m, i torna pel mateix camí.",
+                  "note": "Accessibilitat i seguretat: Camí curt amb passarel·les de fusta i escales metàl·liques; hi ha escales, així que no és un camí accessible per a cadires de rodes ni cotxets.",
+                  "dest": "41.288330,2.105970",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297833727"
+                },
+                {
+                  "n": 13,
+                  "name": "Mirador del Semàfor",
+                  "start": "Inici i final: Mirador del Semàfor",
+                  "info": "1,09 km · 14–17 min caminant · 25–35 min amb pauses · anada i tornada",
+                  "desc": "El recorregut surt del mirador del Semàfor i segueix un camí de vianants i el camí de la Bunyola fins a prop del mirador de la Bunyola, a uns 540 m, i torna pel mateix camí.",
+                  "note": "Accessibilitat i seguretat: Camí de vianants i pista de terra paral·lels a la platja.",
+                  "dest": "41.293780,2.119290",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297833835"
+                },
+                {
+                  "n": 14,
+                  "name": "Mirador d'Avions",
+                  "start": "Inici i final: Mirador d'Avions",
+                  "info": "0,97 km · 12–15 min caminant · 20–35 min amb pauses · anada i tornada",
+                  "desc": "El recorregut surt del mirador d’Avions i segueix un camí de vianants i un carril bici cap al nord fins a un punt a uns 480 m del mirador, on gira per tornar pel mateix camí.",
+                  "note": "Accessibilitat i seguretat: Camí de vianants i carril bici asfaltat; tram compartit amb ciclistes.",
+                  "dest": "41.308330,2.109890",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297833877"
+                },
+                {
+                  "n": 15,
+                  "name": "Mirador de Cal Lluquer",
+                  "start": "Inici i final: Mirador de Cal Lluquer",
+                  "info": "1,18 km · 15–18 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "desc": "El recorregut surt del mirador de Cal Lluquer per una pista de terra compactada i continua pel Camí Reial de València i el camí de València fins a un punt a uns 580 m del mirador, on gira per tornar pel mateix camí.",
+                  "note": "Accessibilitat i seguretat: Pista de terra compactada i camins d’accés compartits amb vehicles de servei. Revisa les normes d’accés de l’espai natural abans d’anar-hi.",
+                  "dest": "41.312670,2.116190",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297833909"
+                }
+              ]
+            },
+            {
+              "id": "miradors-2",
+              "title": "Miradors · mapa 2 (rutes 16–20)",
+              "maps": [
+                {
+                  "mid": "16mQxhetAJQGNKLZgvVGHiRGUEL67nk8",
+                  "title": "El Prat · miradors (mapa 2/2, rutes 16–20)",
+                  "ll": "41.3050,2.1245",
+                  "z": 14
+                }
+              ],
+              "routes": [
+                {
+                  "n": 16,
+                  "name": "Mirador de la Fillola de les Quatre Hores",
+                  "start": "Inici i final: Mirador de la Fillola de les Quatre Hores",
+                  "info": "1,32 km · 16–20 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "desc": "El recorregut surt del mirador de la Fillola de les Quatre Hores i segueix un camí de terra i una pista compactada cap al riu, entre llacunes, fins a prop de la ribera del Llobregat, i torna pel mateix camí.",
+                  "note": "Accessibilitat i seguretat: Camí de terra i pista compactada dins l’espai natural; revisa l’estat del camí i les normes d’accés de l’espai abans d’anar-hi.",
+                  "dest": "41.305610,2.119300",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297833949"
+                },
+                {
+                  "n": 17,
+                  "name": "Mirador de Cal Tet",
+                  "start": "Inici i final: Mirador de Cal Tet",
+                  "info": "1,23 km · 15–19 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "desc": "El recorregut surt del mirador de Cal Tet per pistes de terra i segueix el camí de la Bunyola al costat del canal, fins a un punt a uns 615 m del mirador, on gira per tornar pel mateix camí.",
+                  "note": "Accessibilitat i seguretat: Pistes de terra al costat d’un canal; revisa l’estat del camí i les normes d’accés de l’espai natural abans d’anar-hi.",
+                  "dest": "41.303880,2.118540",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297834023"
+                },
+                {
+                  "n": 18,
+                  "name": "Mirador de Cal Malet",
+                  "start": "Inici i final: Mirador de Cal Malet",
+                  "info": "1,66 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+                  "desc": "El recorregut transcorre per pistes de terra compactada, pel camí de la Marina i pel camí de Cal Tet, fent una volta al voltant de les llacunes, abans de tornar al mirador de Cal Malet.",
+                  "note": "Accessibilitat i seguretat: Pistes de terra compactada i camins dins l’espai natural; revisa l’estat del camí i les normes d’accés de l’espai abans d’anar-hi.",
+                  "dest": "41.307900,2.123130",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297834120"
+                },
+                {
+                  "n": 19,
+                  "name": "Mirador de Cal Beitas",
+                  "start": "Inici i final: Mirador de Cal Beitas",
+                  "info": "1,67 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "desc": "El recorregut transcorre pel camí de Cal Tet, per pistes de terra compactada i pel camí de la Marina, fent una volta al voltant de les llacunes, abans de tornar al mirador de Cal Beitas.",
+                  "note": "Accessibilitat i seguretat: Pistes de terra compactada i camins dins l’espai natural; revisa l’estat del camí i les normes d’accés de l’espai abans d’anar-hi. El mateix circuit que la ruta des del mirador de Cal Malet, amb un altre punt d’inici.",
+                  "dest": "41.303350,2.127990",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297834168"
+                },
+                {
+                  "n": 20,
+                  "name": "Mirador de la Desembocadura",
+                  "start": "Inici i final: Mirador de la Desembocadura",
+                  "info": "1,25 km · 16–19 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "desc": "El recorregut surt del mirador de la Desembocadura i segueix pistes de terra compactada per la ribera del Llobregat, fins a un punt a uns 630 m del mirador, on gira per tornar pel mateix camí.",
+                  "note": "Accessibilitat i seguretat: Pistes de terra compactada dins l’espai natural; revisa l’estat del camí i les normes d’accés de l’espai abans d’anar-hi.",
+                  "dest": "41.301290,2.131870",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297834198"
+                }
+              ]
             }
           ]
         }
