@@ -54,7 +54,7 @@ def route(r, n):
     x = {"n": n, "name": r["nom"], "info": info(r)}
     if r["adreca"]: x["address"] = r["adreca"]
     x["desc"] = r["desc"]
-    x["wikiloc"] = f"https://ca.wikiloc.com/wikiloc/view.do?id={r['wikiloc']}"
+    if r["wikiloc"]: x["wikiloc"] = f"https://ca.wikiloc.com/wikiloc/view.do?id={r['wikiloc']}"   # 17004992: només a My Maps
     return x
 
 
