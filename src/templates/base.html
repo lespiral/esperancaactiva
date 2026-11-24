@@ -101,9 +101,18 @@
         <a href="{{ root }}avis-legal/">Avís legal</a>
         <a href="{{ root }}politica-de-privacitat/">Política de privacitat</a>
         <a href="{{ root }}politica-de-galetes/">Política de galetes</a>
+        <button type="button" class="footer__prefs" data-consent="open">{{ site.consent.prefs }}</button>
       </nav>
     </div>
   </footer>
+
+  <div class="consent" id="consent" role="region" aria-label="{{ site.consent.aria }}" hidden>
+    <p>{{ site.consent.text }} <a href="{{ root }}politica-de-galetes/">{{ site.consent.link }}</a></p>
+    <div class="consent__btns">
+      <button type="button" class="btn btn--primary" data-consent="accept">{{ site.consent.accept }}</button>
+      <button type="button" class="btn btn--outline" data-consent="reject">{{ site.consent.reject }}</button>
+    </div>
+  </div>
 
   <script src="{{ root }}assets/site.js?v={{ version }}" defer></script>
 </body>

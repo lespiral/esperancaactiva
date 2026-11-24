@@ -344,3 +344,28 @@
     h1.classList.add('is-split');
   }
 })();
+
+/* Mapes de Google My Maps: només es carreguen si la persona ho accepta (es recorda al navegador) */
+(function () {
+  var KEY = 'ea-consent-mapes', st = null;
+  try { st = localStorage.getItem(KEY); } catch (e) {}
+  var banner = document.getElementById('consent');
+  var frames = document.querySelectorAll('iframe[data-src]');
+  function save(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+  function load() {
+    Array.prototype.forEach.call(frames, function (f) {
+      if (!f.getAttribute('src')) { f.setAttribute('loading', 'lazy'); f.setAttribute('src', f.getAttribute('data-src')); }
+      var c = f.parentNode.querySelector('.map__consent'); if (c) c.hidden = true;
+    });
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest ? e.target.closest('[data-consent]') : null;
+    if (!b) return;
+    var a = b.getAttribute('data-consent');
+    if (a === 'accept') { save('yes'); load(); if (banner) banner.hidden = true; }
+    else if (a === 'reject') { var was = st === 'yes'; save('no'); st = 'no'; if (banner) banner.hidden = true; if (was) location.reload(); }
+    else if (a === 'open' && banner) { banner.hidden = false; }
+  });
+  if (st === 'yes') load();
+  else if (st === null && frames.length && banner) banner.hidden = false;
+})();

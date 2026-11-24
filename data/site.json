@@ -822,5 +822,15 @@
       ["centres-de-salut", "https://elarasocial.com/entitats/camins/#salut"],
       ["centres-educatius", "https://elarasocial.com/entitats/camins/#escoles"]
     ]
+  },
+  "consent": {
+      "text": "Si acceptes, veuràs aquí els mapes de Google My Maps: el teu navegador es connectarà a Google (rep la teva IP i pot fer servir galetes). Si no, pots seguir cada ruta amb el seu enllaç de Wikiloc, quan n'hi ha.",
+      "link": "Política de galetes",
+      "accept": "Accepta",
+      "reject": "Rebutja",
+      "prefs": "Preferències de galetes",
+      "aria": "Mapes de Google i galetes",
+      "placeholder": "El mapa de Google My Maps no es carrega fins que acceptis les galetes dels mapes.",
+      "show": "Accepta i mostra els mapes"
   }
 }
