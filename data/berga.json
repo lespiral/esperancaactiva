@@ -461,8 +461,8 @@
     },
     {
       "course": "mon",
-      "text": "2 rutes circulars: un sender fins al santuari de Queralt i un circuit pels parcs. Surten d'un lloc concret de la ciutat i hi tornen. Tria la que s'adapti al teu dia i fes-hi el temps de reflexió de cada passa.",
-      "summary": "2 rutes: senders i parcs",
+      "text": "2 rutes circulars (un sender fins al santuari de Queralt i un circuit pels parcs) i 3 rutes curtes des de miradors. Surten d'un lloc concret de la ciutat i hi tornen. Tria la que s'adapti al teu dia i fes-hi el temps de reflexió de cada passa. Els traçats dels miradors estan reconstruïts sobre OpenStreetMap i encara no s'han revisat a peu.",
+      "summary": "5 rutes: senders, parcs i miradors",
       "notice": {
         "title": "Traçats i punts d'inici",
         "html": [
@@ -498,6 +498,42 @@
               "address": "Parc del Pla de l'Alemany, Berga",
               "note": "Circuit urbà curt per parcs i carrers; travessa amb atenció els carrers amb trànsit. Alguns trams tenen pendent suau.",
               "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297506623"
+            }
+          ]
+        },
+        {
+          "id": "miradors",
+          "title": "Les 3 rutes des de miradors",
+          "maps": [
+            {
+              "mid": "1OvXFbuiJUDPriDueVDTjSDWxku1633k",
+              "ll": "42.1750,1.8500",
+              "z": 10,
+              "title": "Berga i el Berguedà · miradors",
+              "label": "Mapa de miradors · 10 rutes"
+            }
+          ],
+          "routes": [
+            {
+              "n": 3,
+              "name": "Mirador de la Figuerassa",
+              "start": "Inici i final: Mirador de la Figuerassa",
+              "info": "1,43 km · 18–22 min caminant · 30–40 min amb pauses · anada i tornada",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022735"
+            },
+            {
+              "n": 4,
+              "name": "Mirador Balcó del Garreta",
+              "start": "Inici i final: Mirador Balcó del Garreta",
+              "info": "1,32 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022783"
+            },
+            {
+              "n": 5,
+              "name": "Mirador de Queralt",
+              "start": "Inici i final: Mirador de Queralt",
+              "info": "1,43 km · 18–22 min caminant · 30–40 min amb pauses · anada i tornada",
+              "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022785"
             }
           ]
         }

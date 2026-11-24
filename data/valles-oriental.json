@@ -4,8 +4,8 @@
   "kind": "territory",
   "title": "Caminar pel Vallès Oriental",
   "region": "Vallès Oriental",
-  "summary": "7 rutes de l'economia social i solidària en 5 municipis.",
-  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària.",
+  "summary": "7 rutes de l'economia social i solidària i 3 de miradors en 7 municipis.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària i de miradors.",
   "zones": {
     "by": "section",
     "label": "Vés directament al teu poble",
@@ -109,6 +109,83 @@
                   "address": "Carrer de Font i Boet, 7, Caldes de Montbui",
                   "desc": "Cooperativa 70 promou serveis i activitats de consum responsable, cultura, formació i participació social a Caldes de Montbui.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-caldes-de-montbui-cooperativa-70-295088260"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "course": "mon",
+      "text": "3 rutes curtes (de 1,42 a 1,65 km) que surten d'un mirador. Mira el món des d'on ets, escolta l'àudio, camina i torna al mateix lloc, però des d'un lloc intern diferent, amb una mirada diferent. Els traçats estan reconstruïts sobre OpenStreetMap i encara no s'han revisat a peu: revisa l'estat del camí abans d'anar-hi. Algunes són d'anada i tornada, no circulars; la fitxa de cada ruta ho diu.",
+      "summary": "3 rutes des de miradors",
+      "notice": {
+        "title": "Accessibilitat i seguretat",
+        "html": [
+          "Els traçats estan reconstruïts sobre OpenStreetMap a partir de la ubicació de cada mirador i no s'han revisat a peu: són orientatius. Els temps són aproximats, caminant a un ritme tranquil i amb pauses per descansar. Alguns camins tenen escales o pendents i no són adaptats per a cadires de rodes ni cotxets. Camina amb atenció al trànsit i a l'estat dels camins.",
+          "El mirador és només el punt de referència del recorregut. Més informació a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "id": "quan-el-mon-miradors-1pl6hw",
+          "title": "Sant Feliu de Codines",
+          "maps": [
+            {
+              "mid": "1pL6hwHhEdUwADTKCMjwEjK1qJgW9ZrM",
+              "ll": "41.5550,2.3250",
+              "z": 9,
+              "title": "Sant Feliu de Codines, Santa Coloma de Gramenet i 7 municipis més · miradors",
+              "label": "Mapa de miradors · 9 rutes"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Sant Feliu de Codines",
+              "id": "sant-feliu-de-codines-miradors",
+              "routes": [
+                {
+                  "n": 1123,
+                  "name": "Mirador San Feliu",
+                  "start": "Inici i final: Mirador San Feliu",
+                  "info": "1,47 km · 18–23 min caminant · 30–45 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022594"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quan-el-mon-miradors-1sctoq",
+          "title": "Gualba",
+          "maps": [
+            {
+              "mid": "1sCtOq6xBxUjLNz5g5FJ2z7EDXiB1Xs4",
+              "ll": "41.8775,2.4000",
+              "z": 9,
+              "title": "Les Masies de Voltregà, Tavèrnoles i 3 municipis més · miradors",
+              "label": "Mapa de miradors · 8 rutes"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Gualba",
+              "id": "gualba-miradors",
+              "routes": [
+                {
+                  "n": 1150,
+                  "name": "Mirador de la Pedra Plana",
+                  "start": "Inici i final: Mirador de la Pedra Plana",
+                  "info": "1,42 km · 18–22 min caminant · 30–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022761"
+                },
+                {
+                  "n": 1151,
+                  "name": "Mirador del Salt de Gualba",
+                  "start": "Inici i final: Mirador del Salt de Gualba",
+                  "info": "1,65 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022765"
                 }
               ]
             }

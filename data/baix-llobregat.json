@@ -4,8 +4,8 @@
   "kind": "territory",
   "title": "Caminar pel Baix Llobregat",
   "region": "Baix Llobregat",
-  "summary": "5 rutes de l'economia social i solidària en 5 municipis.",
-  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària.",
+  "summary": "5 rutes de l'economia social i solidària i 12 de miradors en 10 municipis.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària i de miradors.",
   "see_also": [
     {
       "text": "El Prat de Llobregat té pàgina pròpia, amb 15 rutes d'aquest curs.",
@@ -100,6 +100,185 @@
                   "address": "Carrer de Santa Oliva, 9, Olesa de Montserrat",
                   "desc": "Crearsa és una cooperativa dedicada a la producció audiovisual, la comunicació responsable i la formació. Acompanya projectes amb vocació social i utilitza l'audiovisual per donar visibilitat a iniciatives i afavorir la transformació ecosocial.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-crearsa-olesa-de-montserrat-295071255"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "course": "mon",
+      "text": "12 rutes curtes (de 1,38 a 1,49 km) que surten d'un mirador. Mira el món des d'on ets, escolta l'àudio, camina i torna al mateix lloc, però des d'un lloc intern diferent, amb una mirada diferent. Els traçats estan reconstruïts sobre OpenStreetMap i encara no s'han revisat a peu: revisa l'estat del camí abans d'anar-hi. Algunes són d'anada i tornada, no circulars; la fitxa de cada ruta ho diu.",
+      "summary": "12 rutes des de miradors",
+      "notice": {
+        "title": "Accessibilitat i seguretat",
+        "html": [
+          "Els traçats estan reconstruïts sobre OpenStreetMap a partir de la ubicació de cada mirador i no s'han revisat a peu: són orientatius. Els temps són aproximats, caminant a un ritme tranquil i amb pauses per descansar. Alguns camins tenen escales o pendents i no són adaptats per a cadires de rodes ni cotxets. Camina amb atenció al trànsit i a l'estat dels camins.",
+          "El mirador és només el punt de referència del recorregut. Més informació a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "id": "quan-el-mon-miradors-1xbxte",
+          "title": "Viladecans i Sant Just Desvern",
+          "maps": [
+            {
+              "mid": "1xBXTexXDaPbnop38hYtFVJNa0BuCi8Y",
+              "ll": "41.3085,1.8700",
+              "z": 10,
+              "title": "Viladecans, Sitges i 3 municipis més · miradors",
+              "label": "Mapa de miradors · 10 rutes"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Viladecans",
+              "id": "viladecans-miradors",
+              "routes": [
+                {
+                  "n": 1115,
+                  "name": "Mirador del Delta",
+                  "start": "Inici i final: Mirador del Delta",
+                  "info": "1,38 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022542"
+                },
+                {
+                  "n": 1116,
+                  "name": "Mirador de la Vidala",
+                  "start": "Inici i final: Mirador de la Vidala",
+                  "info": "1,49 km · 18–23 min caminant · 30–45 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022569"
+                },
+                {
+                  "n": 1117,
+                  "name": "Mirador de la Bassa dels Pollancres",
+                  "start": "Inici i final: Mirador de la Bassa dels Pollancres",
+                  "info": "1,39 km · 17–21 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022571"
+                },
+                {
+                  "n": 1118,
+                  "name": "Mirador de la Maresma",
+                  "start": "Inici i final: Mirador de la Maresma",
+                  "info": "1,41 km · 17–22 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022573"
+                },
+                {
+                  "n": 1119,
+                  "name": "Mirador de la Reguera Salabrosa",
+                  "start": "Inici i final: Mirador de la Reguera Salabrosa",
+                  "info": "1,41 km · 17–22 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022576"
+                }
+              ]
+            },
+            {
+              "title": "Sant Just Desvern",
+              "id": "sant-just-desvern-miradors",
+              "routes": [
+                {
+                  "n": 1157,
+                  "name": "Mirador del Cerro de las Cortes",
+                  "start": "Inici i final: Mirador del Cerro de las Cortes",
+                  "info": "1,38 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022808"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quan-el-mon-miradors-1bqy0n",
+          "title": "Collbató, Esparreguera i 1 municipi més",
+          "maps": [
+            {
+              "mid": "1bQY0NwaZ1uI9lpIr8GDtphp_edX_Y_8",
+              "ll": "41.5400,1.9050",
+              "z": 11,
+              "title": "Collbató, Monistrol de Montserrat i 4 municipis més · miradors",
+              "label": "Mapa de miradors · 10 rutes"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Collbató",
+              "id": "collbato-miradors",
+              "routes": [
+                {
+                  "n": 1133,
+                  "name": "Mirador Vos Sou",
+                  "start": "Inici i final: Mirador Vos Sou",
+                  "info": "1,46 km · 18–22 min caminant · 30–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022688"
+                },
+                {
+                  "n": 1141,
+                  "name": "Mirador de Montserrat",
+                  "start": "Inici i final: Mirador de Montserrat",
+                  "info": "1,48 km · 18–23 min caminant · 30–45 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022711"
+                },
+                {
+                  "n": 1142,
+                  "name": "Miranda de Santa Magdalena",
+                  "start": "Inici i final: Miranda de Santa Magdalena",
+                  "info": "1,39 km · 17–21 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022713"
+                }
+              ]
+            },
+            {
+              "title": "Esparreguera",
+              "id": "esparreguera-miradors",
+              "routes": [
+                {
+                  "n": 1148,
+                  "name": "Mirador Roques Blaves",
+                  "start": "Inici i final: Mirador Roques Blaves",
+                  "info": "1,38 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022743"
+                }
+              ]
+            },
+            {
+              "title": "Martorell",
+              "id": "martorell-miradors",
+              "routes": [
+                {
+                  "n": 1175,
+                  "name": "Balcó de Montserrat",
+                  "start": "Inici i final: Balcó de Montserrat",
+                  "info": "1,40 km · 17–22 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022871"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quan-el-mon-miradors-1pl6hw",
+          "title": "Pallejà",
+          "maps": [
+            {
+              "mid": "1pL6hwHhEdUwADTKCMjwEjK1qJgW9ZrM",
+              "ll": "41.5550,2.3250",
+              "z": 9,
+              "title": "Sant Feliu de Codines, Santa Coloma de Gramenet i 7 municipis més · miradors",
+              "label": "Mapa de miradors · 9 rutes"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Pallejà",
+              "id": "palleja-miradors",
+              "routes": [
+                {
+                  "n": 1162,
+                  "name": "Mirador de Les Planes",
+                  "start": "Inici i final: Mirador de Les Planes",
+                  "info": "1,46 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022823"
                 }
               ]
             }

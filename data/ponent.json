@@ -4,8 +4,8 @@
   "kind": "territory",
   "title": "Caminar per Ponent",
   "region": "Ponent",
-  "summary": "12 rutes de l'economia social i solidària i 193 de centres educatius en 78 municipis.",
-  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària i de centres educatius.",
+  "summary": "12 rutes de l'economia social i solidària, 193 de centres educatius i 5 de miradors en 81 municipis.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària, de centres educatius i de miradors.",
   "zones": {
     "by": "section",
     "label": "Vés directament al teu poble",
@@ -2596,6 +2596,94 @@
                   "address": "Camí de Tarrós, s/n, Tornabous",
                   "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
                   "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297910402"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "course": "mon",
+      "text": "5 rutes curtes (de 1,23 a 1,69 km) que surten d'un mirador. Mira el món des d'on ets, escolta l'àudio, camina i torna al mateix lloc, però des d'un lloc intern diferent, amb una mirada diferent. Els traçats estan reconstruïts sobre OpenStreetMap i encara no s'han revisat a peu: revisa l'estat del camí abans d'anar-hi. Algunes són d'anada i tornada, no circulars; la fitxa de cada ruta ho diu.",
+      "summary": "5 rutes des de miradors",
+      "notice": {
+        "title": "Accessibilitat i seguretat",
+        "html": [
+          "Els traçats estan reconstruïts sobre OpenStreetMap a partir de la ubicació de cada mirador i no s'han revisat a peu: són orientatius. Els temps són aproximats, caminant a un ritme tranquil i amb pauses per descansar. Alguns camins tenen escales o pendents i no són adaptats per a cadires de rodes ni cotxets. Camina amb atenció al trànsit i a l'estat dels camins.",
+          "El mirador és només el punt de referència del recorregut. Més informació a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "id": "quan-el-mon-miradors-1gxsvd",
+          "title": "Almatret, Camarasa i 2 municipis més",
+          "maps": [
+            {
+              "mid": "1gxSvDvzf7sBe9reCTR-CtkjM0_NpgVU",
+              "ll": "41.7195,0.9500",
+              "z": 8,
+              "title": "Odèn, Peramola i 4 municipis més · miradors",
+              "label": "Mapa de miradors · 7 rutes"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Almatret",
+              "id": "almatret-miradors",
+              "routes": [
+                {
+                  "n": 1038,
+                  "name": "Mirador",
+                  "start": "Inici i final: Mirador",
+                  "info": "1,69 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297998727"
+                }
+              ]
+            },
+            {
+              "title": "Camarasa",
+              "id": "camarasa-miradors",
+              "routes": [
+                {
+                  "n": 1039,
+                  "name": "Mirador de la Penalta",
+                  "start": "Inici i final: Mirador de la Penalta",
+                  "info": "1,50 km · 18–23 min caminant · 30–45 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297998729"
+                }
+              ]
+            },
+            {
+              "title": "Torres de Segre",
+              "id": "torres-de-segre-miradors",
+              "routes": [
+                {
+                  "n": 1040,
+                  "name": "Mirador de les Comportes",
+                  "start": "Inici i final: Mirador de les Comportes",
+                  "info": "1,41 km · 17–22 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297998731"
+                }
+              ]
+            },
+            {
+              "title": "La Baronia de Rialb",
+              "id": "la-baronia-de-rialb-miradors",
+              "routes": [
+                {
+                  "n": 1041,
+                  "name": "Mirador del Pantà de Rialb",
+                  "start": "Inici i final: Mirador del Pantà de Rialb",
+                  "info": "1,23 km · 15–19 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297998735"
+                },
+                {
+                  "n": 1048,
+                  "name": "Mirador del Pantà",
+                  "start": "Inici i final: Mirador del Pantà",
+                  "info": "1,35 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297998769"
                 }
               ]
             }

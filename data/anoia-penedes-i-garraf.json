@@ -4,8 +4,8 @@
   "kind": "territory",
   "title": "Caminar per l'Anoia, el Penedès i el Garraf",
   "region": "Anoia, Penedès i Garraf",
-  "summary": "9 rutes de l'economia social i solidària en 6 municipis.",
-  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària.",
+  "summary": "9 rutes de l'economia social i solidària i 11 de miradors en 13 municipis.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària i de miradors.",
   "zones": {
     "by": "section",
     "label": "Vés directament al teu poble",
@@ -130,6 +130,175 @@
                   "address": "Carrer de l'Ametller, 3, Vilanova i la Geltrú",
                   "desc": "La Vinagreta organitza el consum col·lectiu de productes ecològics i de proximitat a Vilanova i la Geltrú, promovent la relació directa amb les productores i un consum responsable.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-associacio-de-consum-responsable-la-vinagreta-vilanova-i-la-geltru-295073501"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "course": "mon",
+      "text": "11 rutes curtes (de 1,08 a 1,65 km) que surten d'un mirador. Mira el món des d'on ets, escolta l'àudio, camina i torna al mateix lloc, però des d'un lloc intern diferent, amb una mirada diferent. Els traçats estan reconstruïts sobre OpenStreetMap i encara no s'han revisat a peu: revisa l'estat del camí abans d'anar-hi. Algunes són d'anada i tornada, no circulars; la fitxa de cada ruta ho diu.",
+      "summary": "11 rutes des de miradors",
+      "notice": {
+        "title": "Accessibilitat i seguretat",
+        "html": [
+          "Els traçats estan reconstruïts sobre OpenStreetMap a partir de la ubicació de cada mirador i no s'han revisat a peu: són orientatius. Els temps són aproximats, caminant a un ritme tranquil i amb pauses per descansar. Alguns camins tenen escales o pendents i no són adaptats per a cadires de rodes ni cotxets. Camina amb atenció al trànsit i a l'estat dels camins.",
+          "El mirador és només el punt de referència del recorregut. Més informació a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "id": "quan-el-mon-miradors-1xbxte",
+          "title": "Sitges, Subirats i 1 municipi més",
+          "maps": [
+            {
+              "mid": "1xBXTexXDaPbnop38hYtFVJNa0BuCi8Y",
+              "ll": "41.3085,1.8700",
+              "z": 10,
+              "title": "Viladecans, Sitges i 3 municipis més · miradors",
+              "label": "Mapa de miradors · 10 rutes"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Sitges",
+              "id": "sitges-miradors",
+              "routes": [
+                {
+                  "n": 1131,
+                  "name": "Mirador de Canòpolis",
+                  "start": "Inici i final: Mirador de Canòpolis",
+                  "info": "1,34 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022673"
+                },
+                {
+                  "n": 1132,
+                  "name": "Mirador de la Serra del Lladre",
+                  "start": "Inici i final: Mirador de la Serra del Lladre",
+                  "info": "1,43 km · 18–22 min caminant · 30–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022685"
+                }
+              ]
+            },
+            {
+              "title": "Subirats",
+              "id": "subirats-miradors",
+              "routes": [
+                {
+                  "n": 1156,
+                  "name": "Mirador del Castell de Subirats",
+                  "start": "Inici i final: Mirador del Castell de Subirats",
+                  "info": "1,08 km · 13–17 min caminant · 25–35 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022806"
+                }
+              ]
+            },
+            {
+              "title": "Vilobí del Penedès",
+              "id": "vilobi-del-penedes-miradors",
+              "routes": [
+                {
+                  "n": 1160,
+                  "name": "Mirador del Pèlag Gran",
+                  "start": "Inici i final: Mirador del Pèlag Gran",
+                  "info": "1,65 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022817"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quan-el-mon-miradors-1cyed2",
+          "title": "Calafell, El Vendrell i 3 municipis més",
+          "maps": [
+            {
+              "mid": "1CYED225VgNQviWmpQOd2QDjMS746NfE",
+              "ll": "41.2200,1.4600",
+              "z": 10,
+              "title": "Torredembarra, Calafell i 5 municipis més · miradors",
+              "label": "Mapa de miradors · 10 rutes"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Calafell",
+              "id": "calafell-miradors",
+              "routes": [
+                {
+                  "n": 1217,
+                  "name": "Mirador de Segur de Calafell",
+                  "start": "Inici i final: Mirador de Segur de Calafell",
+                  "info": "1,53 km · 19–23 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028383"
+                },
+                {
+                  "n": 1218,
+                  "name": "Mirador de Sant Miquel",
+                  "start": "Inici i final: Mirador de Sant Miquel",
+                  "info": "1,61 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028387"
+                }
+              ]
+            },
+            {
+              "title": "El Vendrell",
+              "id": "el-vendrell-miradors",
+              "routes": [
+                {
+                  "n": 1219,
+                  "name": "Mirador Comarruga",
+                  "start": "Inici i final: Mirador Comarruga",
+                  "info": "1,48 km · 18–23 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028391"
+                },
+                {
+                  "n": 1220,
+                  "name": "Mirador del Parc de Sant Vicenç",
+                  "start": "Inici i final: Mirador del Parc de Sant Vicenç",
+                  "info": "1,42 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028393"
+                }
+              ]
+            },
+            {
+              "title": "Albinyana",
+              "id": "albinyana-miradors",
+              "routes": [
+                {
+                  "n": 1221,
+                  "name": "Mirador Ermita de Sant Antoni",
+                  "start": "Inici i final: Mirador Ermita de Sant Antoni",
+                  "info": "1,37 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028396"
+                }
+              ]
+            },
+            {
+              "title": "La Bisbal del Penedès",
+              "id": "la-bisbal-del-penedes-miradors",
+              "routes": [
+                {
+                  "n": 1222,
+                  "name": "Mirador Dipòsit",
+                  "start": "Inici i final: Mirador Dipòsit",
+                  "info": "1,41 km · 17–22 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028399"
+                }
+              ]
+            },
+            {
+              "title": "Masllorenç",
+              "id": "masllorenc-miradors",
+              "routes": [
+                {
+                  "n": 1223,
+                  "name": "Mirador Camí de Masarbonès",
+                  "start": "Inici i final: Mirador Camí de Masarbonès",
+                  "info": "1,41 km · 17–22 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028401"
                 }
               ]
             }

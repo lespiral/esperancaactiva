@@ -4,8 +4,8 @@
   "kind": "territory",
   "title": "Caminar pel Barcelonès Nord",
   "region": "Barcelonès Nord",
-  "summary": "12 rutes de l'economia social i solidària en 3 municipis.",
-  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària.",
+  "summary": "12 rutes de l'economia social i solidària i 2 de miradors en 3 municipis.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària i de miradors.",
   "zones": {
     "by": "section",
     "label": "Vés directament al teu poble",
@@ -154,6 +154,61 @@
                   "address": "Via Trajana, 15, Sant Adrià de Besòs",
                   "desc": "Tallers Guinardó acompanya persones en situació de vulnerabilitat en la inclusió social i laboral, amb serveis de suport i producció en paper i cartró.",
                   "wikiloc": "https://ca.wikiloc.com/rutes-senderisme/camins-desperanca-activa-tallers-guinardo-sant-adria-de-besos-295074390"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "course": "mon",
+      "text": "2 rutes curtes (de 1,38 a 1,53 km) que surten d'un mirador. Mira el món des d'on ets, escolta l'àudio, camina i torna al mateix lloc, però des d'un lloc intern diferent, amb una mirada diferent. Els traçats estan reconstruïts sobre OpenStreetMap i encara no s'han revisat a peu: revisa l'estat del camí abans d'anar-hi.",
+      "summary": "2 rutes des de miradors",
+      "notice": {
+        "title": "Accessibilitat i seguretat",
+        "html": [
+          "Els traçats estan reconstruïts sobre OpenStreetMap a partir de la ubicació de cada mirador i no s'han revisat a peu: són orientatius. Els temps són aproximats, caminant a un ritme tranquil i amb pauses per descansar. Alguns camins tenen escales o pendents i no són adaptats per a cadires de rodes ni cotxets. Camina amb atenció al trànsit i a l'estat dels camins.",
+          "El mirador és només el punt de referència del recorregut. Més informació a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "id": "quan-el-mon-miradors-1pl6hw",
+          "title": "Santa Coloma de Gramenet i Badalona",
+          "maps": [
+            {
+              "mid": "1pL6hwHhEdUwADTKCMjwEjK1qJgW9ZrM",
+              "ll": "41.5550,2.3250",
+              "z": 9,
+              "title": "Sant Feliu de Codines, Santa Coloma de Gramenet i 7 municipis més · miradors",
+              "label": "Mapa de miradors · 9 rutes"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Santa Coloma de Gramenet",
+              "id": "santa-coloma-de-gramenet-miradors",
+              "routes": [
+                {
+                  "n": 1145,
+                  "name": "Mirador de Puig Castellar",
+                  "start": "Inici i final: Mirador de Puig Castellar",
+                  "info": "1,53 km · 19–23 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022733"
+                }
+              ]
+            },
+            {
+              "title": "Badalona",
+              "id": "badalona-miradors",
+              "routes": [
+                {
+                  "n": 1165,
+                  "name": "Mirador de la Vallensana",
+                  "start": "Inici i final: Mirador de la Vallensana",
+                  "info": "1,38 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298022832"
                 }
               ]
             }

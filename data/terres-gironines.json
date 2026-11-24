@@ -4,8 +4,8 @@
   "kind": "territory",
   "title": "Caminar per les Terres Gironines",
   "region": "Alt Empordà, Baix Empordà, Garrotxa (sense Olot), Gironès, Pla de l'Estany, Ripollès (sense Ripoll) i Selva",
-  "summary": "12 rutes de l'economia social i solidària i 478 de centres educatius en 144 municipis.",
-  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària i de centres educatius.",
+  "summary": "12 rutes de l'economia social i solidària, 478 de centres educatius i 14 de miradors en 145 municipis.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària, de centres educatius i de miradors.",
   "see_also": [
     {
       "text": "Olot té pàgina pròpia, amb 3 rutes d'aquest curs.",
@@ -5939,6 +5939,196 @@
           "text": "Ripoll té pàgina pròpia, amb 7 rutes d'aquest curs.",
           "city": "ripoll",
           "course": "cuidar"
+        }
+      ]
+    },
+    {
+      "course": "mon",
+      "text": "14 rutes curtes (de 1,33 a 1,75 km) que surten d'un mirador. Mira el món des d'on ets, escolta l'àudio, camina i torna al mateix lloc, però des d'un lloc intern diferent, amb una mirada diferent. Els traçats estan reconstruïts sobre OpenStreetMap i encara no s'han revisat a peu: revisa l'estat del camí abans d'anar-hi. Algunes són d'anada i tornada, no circulars; la fitxa de cada ruta ho diu.",
+      "summary": "14 rutes des de miradors",
+      "notice": {
+        "title": "Accessibilitat i seguretat",
+        "html": [
+          "Els traçats estan reconstruïts sobre OpenStreetMap a partir de la ubicació de cada mirador i no s'han revisat a peu: són orientatius. Els temps són aproximats, caminant a un ritme tranquil i amb pauses per descansar. Alguns camins tenen escales o pendents i no són adaptats per a cadires de rodes ni cotxets. Camina amb atenció al trànsit i a l'estat dels camins.",
+          "El mirador és només el punt de referència del recorregut. Més informació a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "id": "quan-el-mon-miradors-1h6ywm",
+          "title": "Blanes, Calonge i Sant Antoni i 2 municipis més",
+          "maps": [
+            {
+              "mid": "1h6YwmpArv1sTdaXOOv2sA61nmWmbr4k",
+              "ll": "41.7955,2.9765",
+              "z": 10,
+              "title": "Blanes, Calonge i Sant Antoni i 2 municipis més · miradors",
+              "label": "Mapa de miradors · 10 rutes"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Blanes",
+              "id": "blanes-miradors",
+              "routes": [
+                {
+                  "n": 1021,
+                  "name": "Mirador de Ramon Margalef",
+                  "start": "Inici i final: Mirador de Ramon Margalef",
+                  "info": "1,46 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297997133"
+                },
+                {
+                  "n": 1022,
+                  "name": "Mirador de Sant Joan",
+                  "start": "Inici i final: Mirador de Sant Joan",
+                  "info": "1,45 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297997146"
+                }
+              ]
+            },
+            {
+              "title": "Calonge i Sant Antoni",
+              "id": "calonge-i-sant-antoni-miradors",
+              "routes": [
+                {
+                  "n": 1023,
+                  "name": "Mirador de la Creu de Castellar",
+                  "start": "Inici i final: Mirador de la Creu de Castellar",
+                  "info": "1,43 km · 18–22 min caminant · 30–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297997148"
+                }
+              ]
+            },
+            {
+              "title": "Palamós",
+              "id": "palamos-miradors",
+              "routes": [
+                {
+                  "n": 1024,
+                  "name": "Mirador de la Plaça de la Murada",
+                  "start": "Inici i final: Mirador de la Plaça de la Murada",
+                  "info": "1,42 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297997151"
+                },
+                {
+                  "n": 1025,
+                  "name": "Mirador Port Marina",
+                  "start": "Inici i final: Mirador Port Marina",
+                  "info": "1,43 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297997155"
+                },
+                {
+                  "n": 1026,
+                  "name": "Mirador del Cap Gros",
+                  "start": "Inici i final: Mirador del Cap Gros",
+                  "info": "1,51 km · 19–23 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297997157"
+                },
+                {
+                  "n": 1027,
+                  "name": "Mirador de la Foradada",
+                  "start": "Inici i final: Mirador de la Foradada",
+                  "info": "1,39 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297997171"
+                },
+                {
+                  "n": 1028,
+                  "name": "Mirador Punta de Canyers",
+                  "start": "Inici i final: Mirador Punta de Canyers",
+                  "info": "1,33 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297997173"
+                }
+              ]
+            },
+            {
+              "title": "Palafrugell",
+              "id": "palafrugell-miradors",
+              "routes": [
+                {
+                  "n": 1029,
+                  "name": "Mirador de Manuel Juanola",
+                  "start": "Inici i final: Mirador de Manuel Juanola",
+                  "info": "1,42 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297997176"
+                },
+                {
+                  "n": 1030,
+                  "name": "Mirador de la Divina Pastora",
+                  "start": "Inici i final: Mirador de la Divina Pastora",
+                  "info": "1,36 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297997179"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quan-el-mon-miradors-1qx4bq",
+          "title": "L'Escala, El Port de la Selva i 2 municipis més",
+          "maps": [
+            {
+              "mid": "1qx4BQLIrPgJ4xNIxZGeabgpG5VohaBs",
+              "ll": "42.1785,2.5765",
+              "z": 8,
+              "title": "L'Escala, El Port de la Selva i 3 municipis més · miradors",
+              "label": "Mapa de miradors · 5 rutes"
+            }
+          ],
+          "sections": [
+            {
+              "title": "L'Escala",
+              "id": "l-escala-miradors",
+              "routes": [
+                {
+                  "n": 1031,
+                  "name": "Mirador de la Flama",
+                  "start": "Inici i final: Mirador de la Flama",
+                  "info": "1,36 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297997183"
+                }
+              ]
+            },
+            {
+              "title": "El Port de la Selva",
+              "id": "el-port-de-la-selva-miradors",
+              "routes": [
+                {
+                  "n": 1032,
+                  "name": "Mirador",
+                  "start": "Inici i final: Mirador",
+                  "info": "1,75 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297997189"
+                }
+              ]
+            },
+            {
+              "title": "Cruïlles, Monells i Sant Sadurní de l'Heura",
+              "id": "cruilles-monells-i-sant-sadurni-de-l-heura-miradors",
+              "routes": [
+                {
+                  "n": 1034,
+                  "name": "Mirador Pla de Can Sabaté",
+                  "start": "Inici i final: Mirador Pla de Can Sabaté",
+                  "info": "1,41 km · 17–22 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297997199"
+                }
+              ]
+            },
+            {
+              "title": "Vilallonga de Ter",
+              "id": "vilallonga-de-ter-miradors",
+              "routes": [
+                {
+                  "n": 1035,
+                  "name": "Mirador de la Roca",
+                  "start": "Inici i final: Mirador de la Roca",
+                  "info": "1,43 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297997203"
+                }
+              ]
+            }
+          ]
         }
       ]
     }

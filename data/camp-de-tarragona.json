@@ -4,8 +4,8 @@
   "kind": "territory",
   "title": "Caminar pel Camp de Tarragona",
   "region": "Camp de Tarragona",
-  "summary": "16 rutes de l'economia social i solidària, 94 de centres educatius i 8 de miradors en 47 municipis.",
-  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària i de centres educatius.",
+  "summary": "16 rutes de l'economia social i solidària, 94 de centres educatius i 58 de miradors en 65 municipis.",
+  "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària, de centres educatius i de miradors.",
   "zones": {
     "by": "section",
     "label": "Vés directament al teu poble",
@@ -1438,8 +1438,8 @@
     },
     {
       "course": "mon",
-      "text": "8 rutes curtes (de 1,37 a 1,80 km) que surten d'un mirador. Mira el món des d'on ets, escolta l'àudio, camina i torna al mateix lloc, però des d'un lloc intern diferent, amb una mirada diferent. Els traçats estan reconstruïts sobre OpenStreetMap i encara no s'han revisat a peu: revisa l'estat del camí abans d'anar-hi.",
-      "summary": "8 rutes des de miradors",
+      "text": "58 rutes curtes (de 1,00 a 1,80 km) que surten d'un mirador. Mira el món des d'on ets, escolta l'àudio, camina i torna al mateix lloc, però des d'un lloc intern diferent, amb una mirada diferent. Els traçats estan reconstruïts sobre OpenStreetMap i encara no s'han revisat a peu: revisa l'estat del camí abans d'anar-hi. Algunes són d'anada i tornada, no circulars; la fitxa de cada ruta ho diu.",
+      "summary": "58 rutes des de miradors",
       "notice": {
         "title": "Accessibilitat i seguretat",
         "html": [
@@ -1522,6 +1522,584 @@
                   "start": "Inici i final: Mirador del Mèdol",
                   "info": "1,39 km · 17–21 min caminant · 25–40 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297941525"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quan-el-mon-miradors-1ahh-m",
+          "title": "Salou",
+          "maps": [
+            {
+              "mid": "1AhH-Ml9maV5vLILM-XXUaNh8zYawU8s",
+              "ll": "41.0770,1.1400",
+              "z": 14,
+              "title": "Salou · miradors",
+              "label": "Mapa de miradors · 10 rutes"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Salou",
+              "id": "salou-miradors",
+              "routes": [
+                {
+                  "n": 1177,
+                  "name": "Mirador del Far",
+                  "start": "Inici i final: Mirador del Far",
+                  "info": "1,33 km · 16–20 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028272"
+                },
+                {
+                  "n": 1178,
+                  "name": "Mirador del Camí de Ronda",
+                  "start": "Inici i final: Mirador del Camí de Ronda",
+                  "info": "1,53 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028300"
+                },
+                {
+                  "n": 1179,
+                  "name": "Mirador de Cala Crancs",
+                  "start": "Inici i final: Mirador de Cala Crancs",
+                  "info": "1,38 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028302"
+                },
+                {
+                  "n": 1180,
+                  "name": "Mirador Penya Tallada",
+                  "start": "Inici i final: Mirador Penya Tallada",
+                  "info": "1,38 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028304"
+                },
+                {
+                  "n": 1181,
+                  "name": "Mirador Punta Prima",
+                  "start": "Inici i final: Mirador Punta Prima",
+                  "info": "1,45 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028308"
+                },
+                {
+                  "n": 1182,
+                  "name": "Mirador de Punta de Porroig",
+                  "start": "Inici i final: Mirador de Punta de Porroig",
+                  "info": "1,44 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028310"
+                },
+                {
+                  "n": 1183,
+                  "name": "Mirador Platja Llarga",
+                  "start": "Inici i final: Mirador Platja Llarga",
+                  "info": "1,41 km · 17–22 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028313"
+                },
+                {
+                  "n": 1184,
+                  "name": "Mirador",
+                  "start": "Inici i final: Mirador",
+                  "info": "1,41 km · 17–22 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028314"
+                },
+                {
+                  "n": 1185,
+                  "name": "Mirador",
+                  "start": "Inici i final: Mirador",
+                  "info": "1,41 km · 17–22 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028318"
+                },
+                {
+                  "n": 1186,
+                  "name": "Mirador de la Bocana",
+                  "start": "Inici i final: Mirador de la Bocana",
+                  "info": "1,37 km · 17–21 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028319"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quan-el-mon-miradors-1fyp6g",
+          "title": "Cornudella de Montsant, Arbolí i 1 municipi més",
+          "maps": [
+            {
+              "mid": "1fyP6gDi5MPCfXfwy8AyL1b_gsSFuCo4",
+              "ll": "41.2300,0.8800",
+              "z": 10,
+              "title": "Cornudella de Montsant, Arbolí i 1 municipi més · miradors",
+              "label": "Mapa de miradors · 9 rutes"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Cornudella de Montsant",
+              "id": "cornudella-de-montsant-miradors",
+              "routes": [
+                {
+                  "n": 1187,
+                  "name": "Mirador La Punta",
+                  "start": "Inici i final: Mirador La Punta",
+                  "info": "1,00 km · 12–15 min caminant · 20–35 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028324"
+                },
+                {
+                  "n": 1188,
+                  "name": "Mirador del Salto de la Reina",
+                  "start": "Inici i final: Mirador del Salto de la Reina",
+                  "info": "1,63 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028325"
+                },
+                {
+                  "n": 1189,
+                  "name": "Mirador de Siurana",
+                  "start": "Inici i final: Mirador de Siurana",
+                  "info": "1,41 km · 17–22 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028327"
+                },
+                {
+                  "n": 1190,
+                  "name": "Mirador de Siurana 2",
+                  "start": "Inici i final: Mirador de Siurana 2",
+                  "info": "1,33 km · 16–20 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028329"
+                },
+                {
+                  "n": 1191,
+                  "name": "Mirador del Vent",
+                  "start": "Inici i final: Mirador del Vent",
+                  "info": "1,49 km · 18–23 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028330"
+                },
+                {
+                  "n": 1192,
+                  "name": "Mirador La Trona",
+                  "start": "Inici i final: Mirador La Trona",
+                  "info": "1,47 km · 18–23 min caminant · 30–45 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028331"
+                }
+              ]
+            },
+            {
+              "title": "Arbolí",
+              "id": "arboli-miradors",
+              "routes": [
+                {
+                  "n": 1193,
+                  "name": "Mirador de Arbolí",
+                  "start": "Inici i final: Mirador de Arbolí",
+                  "info": "1,48 km · 18–23 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028333"
+                },
+                {
+                  "n": 1194,
+                  "name": "Mirador Natural Mussara",
+                  "start": "Inici i final: Mirador Natural Mussara",
+                  "info": "1,41 km · 17–22 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028335"
+                }
+              ]
+            },
+            {
+              "title": "Torroja del Priorat",
+              "id": "torroja-del-priorat-miradors",
+              "routes": [
+                {
+                  "n": 1195,
+                  "name": "Mirador El Balconet",
+                  "start": "Inici i final: Mirador El Balconet",
+                  "info": "1,44 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028336"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quan-el-mon-miradors-1enik8",
+          "title": "Falset, Prades i 2 municipis més",
+          "maps": [
+            {
+              "mid": "1EniK8Gbu0u78AN_ctLJ_aNIKqrKDkRM",
+              "ll": "41.2050,0.9350",
+              "z": 10,
+              "title": "Falset, Prades i 2 municipis més · miradors",
+              "label": "Mapa de miradors · 10 rutes"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Falset",
+              "id": "falset-miradors",
+              "routes": [
+                {
+                  "n": 1196,
+                  "name": "Mirador de la U",
+                  "start": "Inici i final: Mirador de la U",
+                  "info": "1,40 km · 17–22 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028341"
+                },
+                {
+                  "n": 1197,
+                  "name": "Mirador de Falset",
+                  "start": "Inici i final: Mirador de Falset",
+                  "info": "1,20 km · 15–18 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028342"
+                }
+              ]
+            },
+            {
+              "title": "Prades",
+              "id": "prades-miradors",
+              "routes": [
+                {
+                  "n": 1198,
+                  "name": "Mirador de Sant Roc",
+                  "start": "Inici i final: Mirador de Sant Roc",
+                  "info": "1,41 km · 17–22 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028344"
+                },
+                {
+                  "n": 1199,
+                  "name": "Mirador Pla de la Guàrdia",
+                  "start": "Inici i final: Mirador Pla de la Guàrdia",
+                  "info": "1,77 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028345"
+                },
+                {
+                  "n": 1200,
+                  "name": "Mirador del Tossal de la Baltasana",
+                  "start": "Inici i final: Mirador del Tossal de la Baltasana",
+                  "info": "1,53 km · 19–23 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028346"
+                }
+              ]
+            },
+            {
+              "title": "Vilaplana",
+              "id": "vilaplana-miradors",
+              "routes": [
+                {
+                  "n": 1201,
+                  "name": "Mirador de Antenas de la Mussara",
+                  "start": "Inici i final: Mirador de Antenas de la Mussara",
+                  "info": "1,40 km · 17–21 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028349"
+                },
+                {
+                  "n": 1202,
+                  "name": "Mirador de la Mussara",
+                  "start": "Inici i final: Mirador de la Mussara",
+                  "info": "1,45 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028353"
+                }
+              ]
+            },
+            {
+              "title": "Les Borges del Camp",
+              "id": "les-borges-del-camp-miradors",
+              "routes": [
+                {
+                  "n": 1203,
+                  "name": "Mirador Petit",
+                  "start": "Inici i final: Mirador Petit",
+                  "info": "1,40 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028355"
+                },
+                {
+                  "n": 1204,
+                  "name": "Mirador d'Alforja",
+                  "start": "Inici i final: Mirador d'Alforja",
+                  "info": "1,40 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028356"
+                },
+                {
+                  "n": 1205,
+                  "name": "Mirador de les Borges del Camp",
+                  "start": "Inici i final: Mirador de les Borges del Camp",
+                  "info": "1,58 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028359"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quan-el-mon-miradors-1ucpy9",
+          "title": "Mont-roig del Camp, Vandellòs i l'Hospitalet de l'Infant i 4 municipis més",
+          "maps": [
+            {
+              "mid": "1UCPY9adGt48lIlF-AGHIbqQJy_QF-Kw",
+              "ll": "41.0800,1.1750",
+              "z": 9,
+              "title": "Mont-roig del Camp, Vandellòs i l'Hospitalet de l'Infant i 4 municipis més · miradors",
+              "label": "Mapa de miradors · 10 rutes"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Mont-roig del Camp",
+              "id": "mont-roig-del-camp-miradors",
+              "routes": [
+                {
+                  "n": 1206,
+                  "name": "Mirador de la Playa de Cristal",
+                  "start": "Inici i final: Mirador de la Playa de Cristal",
+                  "info": "1,36 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028361"
+                },
+                {
+                  "n": 1207,
+                  "name": "Mirador del Torreón",
+                  "start": "Inici i final: Mirador del Torreón",
+                  "info": "1,38 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028363"
+                },
+                {
+                  "n": 1208,
+                  "name": "Mirador de la Ermita de la Roca",
+                  "start": "Inici i final: Mirador de la Ermita de la Roca",
+                  "info": "1,40 km · 17–22 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028364"
+                }
+              ]
+            },
+            {
+              "title": "Vandellòs i l'Hospitalet de l'Infant",
+              "id": "vandellos-i-l-hospitalet-de-l-infant-miradors",
+              "routes": [
+                {
+                  "n": 1209,
+                  "name": "Mirador Plaça de la Marina",
+                  "start": "Inici i final: Mirador Plaça de la Marina",
+                  "info": "1,41 km · 17–22 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028366"
+                }
+              ]
+            },
+            {
+              "title": "L'Albiol",
+              "id": "l-albiol-miradors",
+              "routes": [
+                {
+                  "n": 1210,
+                  "name": "Mirador de l'Albiol",
+                  "start": "Inici i final: Mirador de l'Albiol",
+                  "info": "1,41 km · 17–22 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028367"
+                },
+                {
+                  "n": 1211,
+                  "name": "Mirador del Grauet",
+                  "start": "Inici i final: Mirador del Grauet",
+                  "info": "1,43 km · 18–22 min caminant · 30–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028369"
+                }
+              ]
+            },
+            {
+              "title": "Maspujols",
+              "id": "maspujols-miradors",
+              "routes": [
+                {
+                  "n": 1212,
+                  "name": "Mirador de les Muntanyes de Prades",
+                  "start": "Inici i final: Mirador de les Muntanyes de Prades",
+                  "info": "1,43 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028370"
+                }
+              ]
+            },
+            {
+              "title": "Roda de Berà",
+              "id": "roda-de-bera-miradors",
+              "routes": [
+                {
+                  "n": 1213,
+                  "name": "Mirador Roc de Sant Gaietà",
+                  "start": "Inici i final: Mirador Roc de Sant Gaietà",
+                  "info": "1,41 km · 17–22 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028372"
+                },
+                {
+                  "n": 1214,
+                  "name": "Mirador Pujol de la Morella",
+                  "start": "Inici i final: Mirador Pujol de la Morella",
+                  "info": "1,76 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028375"
+                }
+              ]
+            },
+            {
+              "title": "Creixell",
+              "id": "creixell-miradors",
+              "routes": [
+                {
+                  "n": 1215,
+                  "name": "Mirador de la Puebla",
+                  "start": "Inici i final: Mirador de la Puebla",
+                  "info": "1,29 km · 16–20 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028379"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quan-el-mon-miradors-1cyed2",
+          "title": "Torredembarra i La Nou de Gaià",
+          "maps": [
+            {
+              "mid": "1CYED225VgNQviWmpQOd2QDjMS746NfE",
+              "ll": "41.2200,1.4600",
+              "z": 10,
+              "title": "Torredembarra, Calafell i 5 municipis més · miradors",
+              "label": "Mapa de miradors · 10 rutes"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Torredembarra",
+              "id": "torredembarra-miradors",
+              "routes": [
+                {
+                  "n": 1216,
+                  "name": "Mirador",
+                  "start": "Inici i final: Mirador",
+                  "info": "1,38 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028381"
+                }
+              ]
+            },
+            {
+              "title": "La Nou de Gaià",
+              "id": "la-nou-de-gaia-miradors",
+              "routes": [
+                {
+                  "n": 1224,
+                  "name": "Mirador del Cercat",
+                  "start": "Inici i final: Mirador del Cercat",
+                  "info": "1,47 km · 18–23 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028402"
+                },
+                {
+                  "n": 1225,
+                  "name": "Mirador de la Pleta",
+                  "start": "Inici i final: Mirador de la Pleta",
+                  "info": "1,49 km · 18–23 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028403"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quan-el-mon-miradors-1mf8oz",
+          "title": "Vespella de Gaià, La Riera de Gaià i 5 municipis més",
+          "maps": [
+            {
+              "mid": "1mf8OZhUtT5S-29TyrdJ-C8_Q4XFIXys",
+              "ll": "41.2800,1.1950",
+              "z": 10,
+              "title": "Vespella de Gaià, La Riera de Gaià i 5 municipis més · miradors",
+              "label": "Mapa de miradors · 8 rutes"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Vespella de Gaià",
+              "id": "vespella-de-gaia-miradors",
+              "routes": [
+                {
+                  "n": 1226,
+                  "name": "Mirador Vespella de Gaià",
+                  "start": "Inici i final: Mirador Vespella de Gaià",
+                  "info": "1,77 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028404"
+                },
+                {
+                  "n": 1227,
+                  "name": "Mirador Pantà Gaià",
+                  "start": "Inici i final: Mirador Pantà Gaià",
+                  "info": "1,40 km · 17–22 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028406"
+                }
+              ]
+            },
+            {
+              "title": "La Riera de Gaià",
+              "id": "la-riera-de-gaia-miradors",
+              "routes": [
+                {
+                  "n": 1228,
+                  "name": "Mirador de la Riera de Gayá",
+                  "start": "Inici i final: Mirador de la Riera de Gayá",
+                  "info": "1,56 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028414"
+                }
+              ]
+            },
+            {
+              "title": "Valls",
+              "id": "valls-miradors",
+              "routes": [
+                {
+                  "n": 1229,
+                  "name": "Mirador Serra Alta",
+                  "start": "Inici i final: Mirador Serra Alta",
+                  "info": "1,37 km · 17–21 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028427"
+                }
+              ]
+            },
+            {
+              "title": "La Pobla de Montornès",
+              "id": "la-pobla-de-montornes-miradors",
+              "routes": [
+                {
+                  "n": 1230,
+                  "name": "Mirador Pobla de Montornès",
+                  "start": "Inici i final: Mirador Pobla de Montornès",
+                  "info": "1,39 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028428"
+                }
+              ]
+            },
+            {
+              "title": "Almoster",
+              "id": "almoster-miradors",
+              "routes": [
+                {
+                  "n": 1231,
+                  "name": "Mirador del Baix Camp",
+                  "start": "Inici i final: Mirador del Baix Camp",
+                  "info": "1,51 km · 19–23 min caminant · 30–45 min amb pauses · circular",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028430"
+                }
+              ]
+            },
+            {
+              "title": "Vimbodí i Poblet",
+              "id": "vimbodi-i-poblet-miradors",
+              "routes": [
+                {
+                  "n": 1232,
+                  "name": "Mirador de la Pena",
+                  "start": "Inici i final: Mirador de la Pena",
+                  "info": "1,39 km · 17–21 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028432"
+                }
+              ]
+            },
+            {
+              "title": "L'Espluga de Francolí",
+              "id": "l-espluga-de-francoli-miradors",
+              "routes": [
+                {
+                  "n": 1233,
+                  "name": "Mirador L'Espluga de Francolí",
+                  "start": "Inici i final: Mirador L'Espluga de Francolí",
+                  "info": "1,15 km · 14–18 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=298028433"
                 }
               ]
             }
