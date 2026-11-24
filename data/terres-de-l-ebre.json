@@ -4,7 +4,7 @@
   "kind": "territory",
   "title": "Caminar per les Terres de l'Ebre",
   "region": "Baix Ebre, Montsià, Ribera d'Ebre i Terra Alta",
-  "summary": "5 rutes de l'economia social i solidària i 166 de centres educatius en 52 municipis.",
+  "summary": "5 rutes de l'economia social i solidària, 166 de centres educatius i 5 de miradors en 52 municipis.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària i de centres educatius.",
   "zones": {
     "by": "section",
@@ -2133,6 +2133,78 @@
                   "address": "Carrer La Bassa, 66, La Pobla de Massaluca",
                   "desc": "Escola pública d'educació infantil i primària.",
                   "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297850269"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "course": "mon",
+      "text": "5 rutes curtes (de 1,26 a 1,55 km) que surten d'un mirador. Mira el món des d'on ets, escolta l'àudio, camina i torna al mateix lloc, però des d'un lloc intern diferent, amb una mirada diferent. Els traçats estan reconstruïts sobre OpenStreetMap i encara no s'han revisat a peu: revisa l'estat del camí abans d'anar-hi. Totes són d'anada i tornada, no circulars.",
+      "summary": "5 rutes des de miradors",
+      "notice": {
+        "title": "Accessibilitat i seguretat",
+        "html": [
+          "Els temps són aproximats: caminant a un ritme tranquil i amb pauses per descansar. Alguns camins tenen escales o pendents i no són adaptats per a cadires de rodes ni cotxets.",
+          "El mirador és només el punt de referència del recorregut. Més informació a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+        ]
+      },
+      "groups": [
+        {
+          "id": "quan-el-mon-terres-miradors",
+          "title": "Amposta",
+          "maps": [
+            {
+              "mid": "1uFIKYqnwom8z_pnALJWA38Dn5lVvNLk",
+              "ll": "40.7140,0.5810",
+              "z": 12,
+              "title": "Amposta · miradors (rutes 902–908)",
+              "label": "Rutes 902 a 908 · Miradors"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Amposta",
+              "id": "amposta-miradors",
+              "route_prefix": "amposta-miradors",
+              "nav": "Amposta (miradors)",
+              "routes": [
+                {
+                  "n": 902,
+                  "name": "Mirador del Carreter",
+                  "start": "Inici i final: Mirador del Carreter",
+                  "info": "1,47 km · 18–23 min caminant · 30–45 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297941315"
+                },
+                {
+                  "n": 903,
+                  "name": "Mirador de l'Embut",
+                  "start": "Inici i final: Mirador de l'Embut",
+                  "info": "1,26 km · 16–19 min caminant · 25–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297941320"
+                },
+                {
+                  "n": 906,
+                  "name": "Mirador del Pont del Través",
+                  "start": "Inici i final: Mirador del Pont del Través",
+                  "info": "1,55 km · 19–24 min caminant · 30–45 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297941325"
+                },
+                {
+                  "n": 907,
+                  "name": "Mirador Casa de Fusta",
+                  "start": "Inici i final: Mirador Casa de Fusta",
+                  "info": "1,42 km · 18–22 min caminant · 30–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297941330"
+                },
+                {
+                  "n": 908,
+                  "name": "Mirador",
+                  "start": "Inici i final: Mirador",
+                  "info": "1,42 km · 18–22 min caminant · 30–40 min amb pauses · anada i tornada",
+                  "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297941301"
                 }
               ]
             }
