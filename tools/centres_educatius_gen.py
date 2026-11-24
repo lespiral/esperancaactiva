@@ -29,9 +29,9 @@ NOTICE = {"title": "Traçats orientatius", "html": [
     "Algunes rutes tornen per una part del mateix camí (la fitxa de cada ruta ho diu). Camina amb atenció al trànsit i a l'estat dels camins. "
     "El centre només és el punt de sortida de la ruta: no l'organitza ni la recomana.", LINK]}
 TXT = "Surten de centres educatius públics (escoles, instituts, llars d'infants, escoles de música i d'adults): espais on la gent aprèn, es troba i fa comunitat. Tria el centre que tinguis més a prop i fes-hi el temps de reflexió de cada passa. El centre només és el punt de sortida de la ruta: no l'organitza ni la recomana."
-CITY_FILE = {"berga": "berga", "ripoll": "ripoll", "olot": "olot", "seu": "la-seu-d-urgell"}
-CITY_NAME = {"berga": "Berga", "ripoll": "Ripoll", "olot": "Olot", "seu": "la Seu d'Urgell"}
-CITY_DE = {"berga": "de Berga", "ripoll": "de Ripoll", "olot": "d'Olot", "seu": "de la Seu d'Urgell"}
+CITY_FILE = {"berga": "berga", "ripoll": "ripoll", "olot": "olot", "seu": "la-seu-d-urgell", "vic": "vic"}
+CITY_NAME = {"berga": "Berga", "ripoll": "Ripoll", "olot": "Olot", "seu": "la Seu d'Urgell", "vic": "Vic"}
+CITY_DE = {"berga": "de Berga", "ripoll": "de Ripoll", "olot": "d'Olot", "seu": "de la Seu d'Urgell", "vic": "de Vic"}
 
 
 def slug(s):
@@ -165,7 +165,7 @@ def territory(page):
 
 
 used_n = {}
-SEE = {"catalunya-central": ["berga"], "alt-pirineu-i-aran": ["seu"], "terres-gironines": ["olot", "ripoll"]}
+SEE = {"catalunya-central": ["berga", "vic"], "alt-pirineu-i-aran": ["seu"], "terres-gironines": ["olot", "ripoll"]}
 TERR_REGION = {
     "alt-pirineu-i-aran": "Alt Urgell (sense la Seu d'Urgell), Alta Ribagorça, Cerdanya, Pallars Jussà i Pallars Sobirà",
     "catalunya-central": "Bages, Berguedà (sense Berga), Lluçanès, Moianès, Osona (sense Vic) i Solsonès",
@@ -194,7 +194,7 @@ for page in ("alt-pirineu-i-aran", "catalunya-central", "camp-de-tarragona", "po
 
 # ---------- Pàgines de ciutat ----------
 LABEL = {"tercer-sector": "d'entitats del Tercer Sector Social", "biblioteques-i-centres": "de biblioteques i centres cívics i culturals",
-         PID: "de centres educatius públics"}
+         PID: "de centres educatius públics", "equipaments": "d'equipaments comunitaris"}
 for key, fname in CITY_FILE.items():
     path = ROOT / f"data/{fname}.json"
     d = json.loads(path.read_text(encoding="utf-8"))
@@ -236,10 +236,12 @@ for key, fname in CITY_FILE.items():
         km = [float(r["info"].split(" km")[0].replace(",", ".")) for r in rr]
         assert p["id"] in LABEL, p["id"]
         desc.append((len(rr), km, LABEL[p["id"]]))
-    names = ["tres", "dos"]
     frases = [f"{c} {'ruta' if c == 1 else 'rutes'}, {cuina(min(km), max(km))}, que surten {lab}" for c, km, lab in desc]
-    b["text"] = f"Hi ha {'tres' if len(desc) == 3 else 'dos'} tipus de rutes: " + ", ".join(frases[:-1]) + " i " + frases[-1] + ". Totes tornen al punt de sortida."
-    b["summary"] = f"{sum(c for c, _, _ in desc)} rutes des d'entitats del Tercer Sector Social, biblioteques i centres educatius"
+    sep = "; " if len(desc) > 3 else ", "
+    b["text"] = f"Hi ha {({2: 'dos', 3: 'tres', 4: 'quatre'})[len(desc)]} tipus de rutes: " + sep.join(frases[:-1]) + (";" if len(desc) > 3 else "") + " i " + frases[-1] + ". Totes tornen al punt de sortida."
+    tot_n = sum(c for c, _, _ in desc)
+    b["summary"] = (f"{tot_n} rutes des d'equipaments, entitats socials, biblioteques i centres educatius" if len(desc) > 3
+                    else f"{tot_n} rutes des d'entitats del Tercer Sector Social, biblioteques i centres educatius")
     path.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     cur = inicis.setdefault(fname, {})
     last = max((k for k in cur if k.startswith(ANCHOR + "-ruta-")), key=lambda k: list(cur).index(k))

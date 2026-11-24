@@ -148,8 +148,8 @@
     },
     {
       "course": "cuidar",
-      "text": "Hi ha tres tipus de rutes: 16 rutes curtes, d'1,8 a 2 km, que surten d'equipaments comunitaris; 1 ruta d'1,2 km, que surt d'un centre cívic i cultural; i 19 rutes més llargues, de 3,7 a 4,2 km, que surten d'entitats del Tercer Sector Social. Totes són circulars i tornen al punt de sortida.",
-      "summary": "36 rutes des d'equipaments, biblioteques, centres i entitats socials",
+      "text": "Hi ha quatre tipus de rutes: 16 rutes, de 1,80 a 2,02 km, que surten d'equipaments comunitaris; 19 rutes, de 3,70 a 4,20 km, que surten d'entitats del Tercer Sector Social; 1 ruta, d'1,24 km, que surten de biblioteques i centres cívics i culturals; i 19 rutes, de 1,22 a 2,39 km, que surten de centres educatius públics. Totes tornen al punt de sortida.",
+      "summary": "55 rutes des d'equipaments, entitats socials, biblioteques i centres educatius",
       "parts": [
         {
           "id": "equipaments",
@@ -581,6 +581,244 @@
                   "name": "Casino de Vic",
                   "info": "1,24 km · 15–19 min caminant · 25–40 min amb pauses · circular",
                   "wikiloc": "https://www.wikiloc.com/wikiloc/view.do?id=297216541"
+                }
+              ]
+            }
+          ],
+          "tele": true
+        },
+        {
+          "id": "centres-educatius",
+          "title": "Rutes des de centres educatius",
+          "nav": "Centres educatius",
+          "text": "Surten de centres educatius públics (escoles, instituts, llars d'infants, escoles de música i d'adults): espais on la gent aprèn, es troba i fa comunitat. Tria el centre que tinguis més a prop i fes-hi el temps de reflexió de cada passa. El centre només és el punt de sortida de la ruta: no l'organitza ni la recomana.",
+          "notice": {
+            "title": "Traçats orientatius",
+            "html": [
+              "Els traçats s'han reconstruït sobre OpenStreetMap a partir de la ubicació de cada centre: no són traçats oficials i no s'han revisat a peu. Algunes rutes tornen per una part del mateix camí (la fitxa de cada ruta ho diu). Camina amb atenció al trànsit i a l'estat dels camins. El centre només és el punt de sortida de la ruta: no l'organitza ni la recomana.",
+              "Més propostes i recursos a <a href=\"https://elarasocial.com/\" target=\"_blank\" rel=\"noopener\">elarasocial.com</a>."
+            ]
+          },
+          "groups": [
+            {
+              "id": "centres-educatius-1",
+              "title": "Mapa 5 de 12 (4 rutes)",
+              "maps": [
+                {
+                  "mid": "1lICue_X9Y9f1XvEG8XShCoVd-bPFiwQ",
+                  "title": "Osona · mapa 05 de 12 · Taradell, Calldetenes i 2 municipis més",
+                  "ll": "41.8983,2.2366",
+                  "z": 12,
+                  "label": "Osona · mapa 5 de 12",
+                  "routes": [
+                    37,
+                    38,
+                    39,
+                    40
+                  ]
+                }
+              ],
+              "routes": [
+                {
+                  "n": 37,
+                  "name": "Institut La Plana",
+                  "info": "2,39 km · 29–36 min caminant · 40–55 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Rector de Vallfogona, 65, Vic",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027723"
+                },
+                {
+                  "n": 38,
+                  "name": "Llar d'infants Horta Vermella",
+                  "info": "1,44 km · 17–22 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Josep M. Pratdesaba, 3, Vic",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027987"
+                },
+                {
+                  "n": 39,
+                  "name": "Llar d'infants de la Serra de Sanferm",
+                  "info": "1,44 km · 17–22 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Gurri, s/n, Vic",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027995"
+                },
+                {
+                  "n": 40,
+                  "name": "Escola Doctor Joaquim Salarich",
+                  "info": "1,41 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Avinguda Rafael Casanova, 33, Vic",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027212"
+                }
+              ]
+            },
+            {
+              "id": "centres-educatius-2",
+              "title": "Mapa 6 de 12 (10 rutes)",
+              "maps": [
+                {
+                  "mid": "15VIOAfRvOikHrpyMS7iDWGajdRqLnI0",
+                  "title": "Osona · mapa 06 de 12 · Vic",
+                  "ll": "41.9233,2.2453",
+                  "z": 13,
+                  "label": "Osona · mapa 6 de 12",
+                  "routes": [
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50
+                  ]
+                }
+              ],
+              "routes": [
+                {
+                  "n": 41,
+                  "name": "Escola La Sínia",
+                  "info": "1,41 km · 17–21 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Avinguda Països Catalans, 44, Vic",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027966"
+                },
+                {
+                  "n": 42,
+                  "name": "CFA Montseny",
+                  "info": "1,82 km · 22–27 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Avinguda Montseny, 16, Vic",
+                  "desc": "Centre públic de formació de persones adultes.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027606"
+                },
+                {
+                  "n": 43,
+                  "name": "Escola Sentfores",
+                  "info": "1,79 km · 21–27 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Pla del Maset, 5, Vic",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027210"
+                },
+                {
+                  "n": 44,
+                  "name": "Escola Andersen",
+                  "info": "1,66 km · 20–25 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Avinguda Olímpia, s/n, Vic",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027569"
+                },
+                {
+                  "n": 45,
+                  "name": "Institut Jaume Callís",
+                  "info": "1,53 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Avinguda Olímpia, 2, Vic",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027218"
+                },
+                {
+                  "n": 46,
+                  "name": "EA de Vic",
+                  "info": "1,43 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Rambla Sant Domènec, 24, Vic",
+                  "desc": "Escola d'art pública.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027227"
+                },
+                {
+                  "n": 47,
+                  "name": "Escola Vic-centre",
+                  "info": "1,50 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer de Joan Pau II, 3, Vic",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027989"
+                },
+                {
+                  "n": 48,
+                  "name": "Esc. de Música Municipal de Vic",
+                  "info": "1,74 km · 21–26 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Torras i Bages, 6, Vic",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027542"
+                },
+                {
+                  "n": 49,
+                  "name": "Cons. de Música de Vic",
+                  "info": "1,22 km · 15–18 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Francesc Maria Masferrer, 4, Vic",
+                  "desc": "Conservatori públic de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027639"
+                },
+                {
+                  "n": 50,
+                  "name": "EOI Osona",
+                  "info": "1,83 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Pla de Balenyà, 30-32, Vic",
+                  "desc": "Escola oficial d'idiomes.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027693"
+                }
+              ]
+            },
+            {
+              "id": "centres-educatius-3",
+              "title": "Mapa 7 de 12 (5 rutes)",
+              "maps": [
+                {
+                  "mid": "1bDf2u7pfDuchIudl9OqAXhOF-x4SD4k",
+                  "title": "Osona · mapa 07 de 12 · Vic, Santa Eulàlia de Riuprimer i 1 municipi més",
+                  "ll": "41.9285,2.2268",
+                  "z": 12,
+                  "label": "Osona · mapa 7 de 12",
+                  "routes": [
+                    51,
+                    52,
+                    53,
+                    54,
+                    55
+                  ]
+                }
+              ],
+              "routes": [
+                {
+                  "n": 51,
+                  "name": "Institut Comtat d'Osona",
+                  "info": "1,42 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Avinguda de Sant Bernat Calbó, 8, Vic",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028223"
+                },
+                {
+                  "n": 52,
+                  "name": "Institut de Vic",
+                  "info": "1,58 km · 19–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer del Dr. Fleming, s/n, Vic",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027214"
+                },
+                {
+                  "n": 53,
+                  "name": "HDA Hospital de Dia de Vic - HDA",
+                  "info": "1,52 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Sant Miquel Xic, 2, Vic",
+                  "desc": "Hospital de dia.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027734"
+                },
+                {
+                  "n": 54,
+                  "name": "Escola Bressol Caputxins",
+                  "info": "1,77 km · 21–27 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Avinguda Bernat Calbó/ctra. de Roda, Vic",
+                  "desc": "Escola bressol pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027997"
+                },
+                {
+                  "n": 55,
+                  "name": "Escola Guillem de Mont-rodon",
+                  "info": "1,46 km · 18–22 min caminant · 30–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer de Sant Miquel Xic, 2, Vic",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027567"
                 }
               ]
             }

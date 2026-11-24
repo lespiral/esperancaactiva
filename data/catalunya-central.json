@@ -4,7 +4,7 @@
   "kind": "territory",
   "title": "Caminar per la Catalunya Central",
   "region": "Bages, Berguedà (sense Berga), Lluçanès, Moianès, Osona (sense Vic) i Solsonès",
-  "summary": "14 rutes de l'economia social i solidària i 68 de centres educatius en 45 municipis.",
+  "summary": "14 rutes de l'economia social i solidària i 279 de centres educatius en 99 municipis.",
   "intro": "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària i de centres educatius.",
   "see_also": [
     {
@@ -225,7 +225,7 @@
     {
       "course": "cuidar",
       "text": "Surten de centres educatius públics (escoles, instituts, llars d'infants, escoles de música i d'adults): espais on la gent aprèn, es troba i fa comunitat. Tria el centre que tinguis més a prop i fes-hi el temps de reflexió de cada passa. El centre només és el punt de sortida de la ruta: no l'organitza ni la recomana.",
-      "summary": "68 rutes des de centres educatius",
+      "summary": "279 rutes des de centres educatius",
       "notice": {
         "title": "Traçats orientatius",
         "html": [
@@ -234,6 +234,1318 @@
         ]
       },
       "groups": [
+        {
+          "id": "centres-educatius-bages-1",
+          "title": "Castellfollit del Boix, Cardona i 2 municipis més",
+          "maps": [
+            {
+              "mid": "1-kQR2PGpZFGWfVh_dggykcYx5c_YAlA",
+              "title": "Bages · mapa 01 de 12 · Castellfollit del Boix, Cardona i 2 municipis més",
+              "ll": "41.7903,1.6929",
+              "z": 10,
+              "label": "Bages · mapa 1 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Castellfollit del Boix",
+              "id": "castellfollit-del-boix-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants de Castellfollit del Boix",
+                  "info": "1,33 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer de les escoles, s/n (Pla de S. Maria), Castellfollit del Boix",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027703"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola El Boix-ZER Tres Branques",
+                  "info": "1,26 km · 15–19 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Santa Maria, s/n, Castellfollit del Boix",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028182"
+                }
+              ]
+            },
+            {
+              "title": "Cardona",
+              "id": "cardona-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Joan de Palà - ZER El Cardener",
+                  "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Bisbe Guix, s/n, Cardona",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026875"
+                },
+                {
+                  "n": 2,
+                  "name": "Institut Sant Ramon",
+                  "info": "1,19 km · 14–18 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Plaça de Les Fabricantes, 1, Cardona",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027323"
+                },
+                {
+                  "n": 3,
+                  "name": "Escola Patrocini",
+                  "info": "1,94 km · 23–29 min caminant · 35–50 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Ramon Puig i de Molins, 2, Cardona",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026872"
+                },
+                {
+                  "n": 4,
+                  "name": "Llar d'infants Aliret",
+                  "info": "1,51 km · 18–23 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer de Ramon Folch II, 3, Cardona",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027752"
+                },
+                {
+                  "n": 5,
+                  "name": "Esc. de Música Municipal Musicant",
+                  "info": "1,66 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Plaça de les Escoles Escasany, 4, Cardona",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027603"
+                }
+              ]
+            },
+            {
+              "title": "Sant Mateu de Bages",
+              "id": "sant-mateu-de-bages-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants de Valls de Torruella",
+                  "info": "1,35 km · 16–20 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Galeries, 2, Sant Mateu de Bages",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027749"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Sant Esteve - ZER El Cardener",
+                  "info": "1,92 km · 23–29 min caminant · 35–50 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Església, s/n (Valls de Torroella), Sant Mateu de Bages",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027234"
+                }
+              ]
+            },
+            {
+              "title": "Fonollosa",
+              "id": "fonollosa-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Agrupació Sant Jordi",
+                  "info": "1,57 km · 19–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carretera de Manresa a Calaf, s/n, Fonollosa",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026898"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-bages-2",
+          "title": "Fonollosa i Sant Joan de Vilatorrada",
+          "maps": [
+            {
+              "mid": "11fzz-n_Mn_1hNeA9n0bfdAk8D1_9ZFs",
+              "title": "Bages · mapa 02 de 12 · Fonollosa, Sant Joan de Vilatorrada",
+              "ll": "41.7511,1.7742",
+              "z": 12,
+              "label": "Bages · mapa 2 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Fonollosa",
+              "id": "fonollosa-centres-educatius-2",
+              "route_prefix": "fonollosa-centres-educatius",
+              "nav": "Fonollosa (mapa 2)",
+              "routes": [
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Rexics",
+                  "info": "1,17 km · 14–18 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer Pla de la Vila, s/n, Canet de Fals, Fonollosa",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027365"
+                }
+              ]
+            },
+            {
+              "title": "Sant Joan de Vilatorrada",
+              "id": "sant-joan-de-vilatorrada-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Ametllers",
+                  "info": "1,93 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer de Frederica Montseny, s/n, Sant Joan de Vilatorrada",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027718"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Collbaix",
+                  "info": "1,61 km · 19–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Salvador Espriu, 22, Sant Joan de Vilatorrada",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027335"
+                },
+                {
+                  "n": 3,
+                  "name": "Escola Joncadella",
+                  "info": "1,51 km · 18–23 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Escoles, s/n, Sant Joan de Vilatorrada",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027035"
+                },
+                {
+                  "n": 4,
+                  "name": "Esc. de Música Municipal",
+                  "info": "1,61 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027329"
+                },
+                {
+                  "n": 5,
+                  "name": "Llar d'infants El Xiulet",
+                  "info": "1,69 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Passatge Mas Sant Joan, 7, Sant Joan de Vilatorrada",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027808"
+                },
+                {
+                  "n": 6,
+                  "name": "Institut Cardener",
+                  "info": "1,35 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer del Sol, 13, Sant Joan de Vilatorrada",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027899"
+                },
+                {
+                  "n": 7,
+                  "name": "Llar d'infants Barrufets",
+                  "info": "1,55 km · 19–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Passeig de Gallifa, s/n, Sant Joan de Vilatorrada",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027412"
+                },
+                {
+                  "n": 8,
+                  "name": "CFA municipal de formació de persones adultes",
+                  "info": "1,51 km · 18–23 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Passeig Gallifa,1,2a pl.(c.cívic Cal Gallifa, Sant Joan de Vilatorrada",
+                  "desc": "Centre públic de formació de persones adultes.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027558"
+                },
+                {
+                  "n": 9,
+                  "name": "Institut Quercus",
+                  "info": "1,51 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Avinguda Montserrat, 95, Sant Joan de Vilatorrada",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027231"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-bages-3",
+          "title": "Sant Joan de Vilatorrada, Súria i 1 municipi més",
+          "maps": [
+            {
+              "mid": "1Qa9N-inu1J2-Qdrpg3CDbHwxYaXrIPU",
+              "title": "Bages · mapa 03 de 12 · Sant Joan de Vilatorrada, Súria i 1 municipi més",
+              "ll": "41.7865,1.7918",
+              "z": 11,
+              "label": "Bages · mapa 3 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Sant Joan de Vilatorrada",
+              "id": "sant-joan-de-vilatorrada-centres-educatius-2",
+              "route_prefix": "sant-joan-de-vilatorrada-centres-educatius",
+              "nav": "Sant Joan de Vilatorrada (mapa 3)",
+              "routes": [
+                {
+                  "n": 10,
+                  "name": "CFA Carme Karr",
+                  "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carretera de Manresa a Solsona, km. 37, Sant Joan de Vilatorrada",
+                  "desc": "Centre públic de formació de persones adultes.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027992"
+                }
+              ]
+            },
+            {
+              "title": "Súria",
+              "id": "suria-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Salipota",
+                  "info": "1,61 km · 19–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Font del Ferro, 1, Súria",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027157"
+                },
+                {
+                  "n": 2,
+                  "name": "Institut Mig-Món",
+                  "info": "1,52 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Ramon i Cajal, 9-11, Súria",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027278"
+                },
+                {
+                  "n": 3,
+                  "name": "Llar d'infants El Petit Estel",
+                  "info": "1,48 km · 18–22 min caminant · 30–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer d'Ernest Solvay, 15, Súria",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027624"
+                },
+                {
+                  "n": 4,
+                  "name": "Escola Francesc Macià",
+                  "info": "1,65 km · 20–25 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carretera de la Mina, s/n, Súria",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027167"
+                },
+                {
+                  "n": 5,
+                  "name": "Esc. de Música Municipal",
+                  "info": "1,82 km · 22–27 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Tarragona, 15, Súria",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027357"
+                }
+              ]
+            },
+            {
+              "title": "Manresa",
+              "id": "manresa-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Les Bases",
+                  "info": "1,55 km · 19–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Puigmal, 16, Manresa",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028138"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants La Ginesta",
+                  "info": "1,55 km · 19–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Concòrdia, s/n, Manresa",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027404"
+                },
+                {
+                  "n": 3,
+                  "name": "Escola La Sèquia",
+                  "info": "1,11 km · 13–17 min caminant · 25–35 min amb pauses · circular",
+                  "address": "Carrer Camí Vell de Santpedor, 36-38, Manresa",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027790"
+                },
+                {
+                  "n": 4,
+                  "name": "Institut Pius Font i Quer",
+                  "info": "1,12 km · 13–17 min caminant · 25–35 min amb pauses · circular",
+                  "address": "Carrer Amadeu Vives, s/n, Manresa",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027224"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-bages-4",
+          "title": "Manresa",
+          "maps": [
+            {
+              "mid": "1k4PV4VSW4Y3HcTVhJIjyyscwr4eLHgk",
+              "title": "Bages · mapa 04 de 12 · Manresa",
+              "ll": "41.7296,1.8396",
+              "z": 14,
+              "label": "Bages · mapa 4 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Manresa",
+              "id": "manresa-centres-educatius-2",
+              "route_prefix": "manresa-centres-educatius",
+              "nav": "Manresa (mapa 4)",
+              "routes": [
+                {
+                  "n": 5,
+                  "name": "Llar d'infants Petit Príncep",
+                  "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Avinguda dels Dolors, 33, Manresa",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027968"
+                },
+                {
+                  "n": 6,
+                  "name": "EOI de Manresa",
+                  "info": "1,28 km · 15–19 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Plaça Espanya, 2, Manresa",
+                  "desc": "Escola oficial d'idiomes.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027594"
+                },
+                {
+                  "n": 7,
+                  "name": "Institut Guillem Catà",
+                  "info": "1,62 km · 19–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer de Rosa Sensat, 6-8, Manresa",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027369"
+                },
+                {
+                  "n": 8,
+                  "name": "Institut Cal Gravat",
+                  "info": "1,57 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Puig i Cadafalch,54-56, Manresa",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027881"
+                },
+                {
+                  "n": 9,
+                  "name": "Escola La Font",
+                  "info": "1,41 km · 17–21 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Sant Cristòfol, 43-45, Manresa",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027601"
+                },
+                {
+                  "n": 10,
+                  "name": "Escola Ítaca",
+                  "info": "1,46 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "address": "Carrer de Sant Cristòfol, 70, Manresa",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027837"
+                },
+                {
+                  "n": 11,
+                  "name": "HDA Althaia - HDA",
+                  "info": "1,38 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer Doctor Llatjós, s/n (Edifici CSAM), Manresa",
+                  "desc": "Hospital de dia.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027728"
+                },
+                {
+                  "n": 12,
+                  "name": "Llar d'infants Picarol",
+                  "info": "1,47 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "address": "Carrer Viladordís, 5-7, Manresa",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027407"
+                },
+                {
+                  "n": 13,
+                  "name": "Escola Pare Algué",
+                  "info": "1,41 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer Jacint Verdaguer, 16-22, Manresa",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026921"
+                },
+                {
+                  "n": 14,
+                  "name": "CFA Jacint Carrió i Vilaseca",
+                  "info": "1,48 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "address": "Plaça Cots, 5-7, Manresa",
+                  "desc": "Centre públic de formació de persones adultes.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027610"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-bages-5",
+          "title": "Manresa",
+          "maps": [
+            {
+              "mid": "1KnQDZikuy49d3PUXQ_H_PSvmDUQjYNI",
+              "title": "Bages · mapa 05 de 12 · Manresa",
+              "ll": "41.7293,1.8227",
+              "z": 14,
+              "label": "Bages · mapa 5 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Manresa",
+              "id": "manresa-centres-educatius-3",
+              "route_prefix": "manresa-centres-educatius",
+              "nav": "Manresa (mapa 5)",
+              "routes": [
+                {
+                  "n": 15,
+                  "name": "Escola Bages",
+                  "info": "1,35 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer La Sèquia, 55, Manresa",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026923"
+                },
+                {
+                  "n": 16,
+                  "name": "Institut Lacetània",
+                  "info": "1,71 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Avinguda Bases de Manresa, 51-59, Manresa",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026925"
+                },
+                {
+                  "n": 17,
+                  "name": "Escola agrària de Manresa",
+                  "info": "1,79 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Ramon d'Iglésies, 5-7, Manresa",
+                  "desc": "Escola agrària pública de formació professional.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026983"
+                },
+                {
+                  "n": 18,
+                  "name": "Llar d'infants La Llum",
+                  "info": "1,25 km · 15–19 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer de Sant Antoni Abad, s/n, Manresa",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028076"
+                },
+                {
+                  "n": 19,
+                  "name": "Institut Lluís de Peguera",
+                  "info": "1,16 km · 14–17 min caminant · 25–35 min amb pauses · circular",
+                  "address": "Plaça Espanya, 2, Manresa",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026962"
+                },
+                {
+                  "n": 20,
+                  "name": "Llar d'infants L'Espurna",
+                  "info": "1,73 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Plaça de Catalunya, s/n, Manresa",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027402"
+                },
+                {
+                  "n": 21,
+                  "name": "Escola Sant Ignasi",
+                  "info": "2,63 km · 32–39 min caminant · 40–60 min amb pauses · circular",
+                  "address": "Carrer Mestre Albages, 1-3, Manresa",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026918"
+                },
+                {
+                  "n": 22,
+                  "name": "Escola Puigberenguer",
+                  "info": "1,51 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Núria, s/n, Manresa",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027262"
+                },
+                {
+                  "n": 23,
+                  "name": "Institut Escola Manresa",
+                  "info": "1,49 km · 18–22 min caminant · 30–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "desc": "Institut escola públic, amb educació infantil, primària i secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028198"
+                },
+                {
+                  "n": 24,
+                  "name": "Escola Valldaura",
+                  "info": "1,57 km · 19–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Ausiàs March / c. Dos de Maig, Manresa",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027957"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-bages-6",
+          "title": "Manresa",
+          "maps": [
+            {
+              "mid": "1fo4-p-xRmhH5NilIBJC--AVVM5OO5zE",
+              "title": "Bages · mapa 06 de 12 · Manresa",
+              "ll": "41.7204,1.8253",
+              "z": 13,
+              "label": "Bages · mapa 6 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Manresa",
+              "id": "manresa-centres-educatius-4",
+              "route_prefix": "manresa-centres-educatius",
+              "nav": "Manresa (mapa 6)",
+              "routes": [
+                {
+                  "n": 25,
+                  "name": "Escola La Renaixença",
+                  "info": "1,42 km · 17–21 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026915"
+                },
+                {
+                  "n": 26,
+                  "name": "Llar d'infants L'Estel",
+                  "info": "1,37 km · 16–21 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027672"
+                },
+                {
+                  "n": 27,
+                  "name": "EA de Manresa",
+                  "info": "1,57 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carretera de Vic, 16/c. Infants, 2-6, Manresa",
+                  "desc": "Escola d'art pública.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027281"
+                },
+                {
+                  "n": 28,
+                  "name": "Cons. de Música de Manresa",
+                  "info": "1,40 km · 17–21 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "desc": "Conservatori públic de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027255"
+                },
+                {
+                  "n": 29,
+                  "name": "Esc. de Música Municipal de Manresa",
+                  "info": "1,36 km · 16–20 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Ignasi Balcells, 12-14, Manresa",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027562"
+                },
+                {
+                  "n": 30,
+                  "name": "Institut Manresa Sis",
+                  "info": "1,43 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027964"
+                },
+                {
+                  "n": 31,
+                  "name": "Escola Muntanya del Drac",
+                  "info": "1,27 km · 15–19 min caminant · 25–40 min amb pauses · circular",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026912"
+                },
+                {
+                  "n": 32,
+                  "name": "Escola Serra i Húnter",
+                  "info": "1,96 km · 24–29 min caminant · 35–50 min amb pauses · circular amb tram d'anada i tornada",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027236"
+                },
+                {
+                  "n": 33,
+                  "name": "Llar d'infants La Lluna",
+                  "info": "1,30 km · 16–19 min caminant · 25–40 min amb pauses · circular",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027686"
+                },
+                {
+                  "n": 34,
+                  "name": "Llar d'infants Bressolvent",
+                  "info": "1,45 km · 17–22 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer Edison, 8 B (pol. ind. Bufalvent), Manresa",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028128"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-bages-7",
+          "title": "El Pont de Vilomara i Rocafort, Navarcles i 1 municipi més",
+          "maps": [
+            {
+              "mid": "1tBCSnTDtuCUNKvbZ3qdbe_zlHA3IRuI",
+              "title": "Bages · mapa 07 de 12 · El Pont de Vilomara i Rocafort, Navarcles i 1 municipi més",
+              "ll": "41.7303,1.8748",
+              "z": 12,
+              "label": "Bages · mapa 7 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "El Pont de Vilomara i Rocafort",
+              "id": "el-pont-de-vilomara-i-rocafort-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants La Pau",
+                  "info": "1,33 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer de la Pau, s/n, El Pont de Vilomara i Rocafort",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027759"
+                },
+                {
+                  "n": 2,
+                  "name": "Institut Escola Pompeu Fabra",
+                  "info": "1,55 km · 19–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Jesús, 95-115, El Pont de Vilomara i Rocafort",
+                  "desc": "Institut escola públic, amb educació infantil, primària i secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028143"
+                }
+              ]
+            },
+            {
+              "title": "Navarcles",
+              "id": "navarcles-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Esc. de Música Municipal",
+                  "info": "1,80 km · 22–27 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Creueta, 50, Navarcles",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027327"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Tinet",
+                  "info": "1,50 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Avinguda Lluís Companys, s/n, Navarcles",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027951"
+                },
+                {
+                  "n": 3,
+                  "name": "Escola Catalunya",
+                  "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Avinguda Piscines i Esports, 30, Navarcles",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027006"
+                },
+                {
+                  "n": 4,
+                  "name": "Institut de Navarcles",
+                  "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Camí de l'Angla, 8, Navarcles",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027592"
+                }
+              ]
+            },
+            {
+              "title": "Sant Fruitós de Bages",
+              "id": "sant-fruitos-de-bages-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Flama",
+                  "info": "1,44 km · 17–22 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer Comtes de Barcelona, s/n, Sant Fruitós de Bages",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027331"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Les Oliveres",
+                  "info": "1,33 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer de les Oliveres, 18, Sant Fruitós de Bages",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027711"
+                },
+                {
+                  "n": 3,
+                  "name": "Escola Monsenyor Gibert",
+                  "info": "1,25 km · 15–19 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Plaça Pau Casals, 1, Sant Fruitós de Bages",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027031"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-bages-8",
+          "title": "Sant Fruitós de Bages, Artés i 1 municipi més",
+          "maps": [
+            {
+              "mid": "1CyGqznHq2GwV12JMTcc9iBM-TyYgRxM",
+              "title": "Bages · mapa 08 de 12 · Sant Fruitós de Bages, Artés i 1 municipi més",
+              "ll": "41.7870,1.9147",
+              "z": 12,
+              "label": "Bages · mapa 8 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Sant Fruitós de Bages",
+              "id": "sant-fruitos-de-bages-centres-educatius-2",
+              "route_prefix": "sant-fruitos-de-bages-centres-educatius",
+              "nav": "Sant Fruitós de Bages (mapa 8)",
+              "routes": [
+                {
+                  "n": 4,
+                  "name": "Institut Gerbert d'Aurillac",
+                  "info": "1,68 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Avinguda Lluís Companys, 7-9, Sant Fruitós de Bages",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027422"
+                },
+                {
+                  "n": 5,
+                  "name": "Escola Pla del Puig",
+                  "info": "1,29 km · 15–19 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Passatge de les Barraques de vinya, 4, Sant Fruitós de Bages",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027843"
+                }
+              ]
+            },
+            {
+              "title": "Artés",
+              "id": "artes-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Bressol Moixaines",
+                  "info": "1,44 km · 17–22 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Manresa-Arquitecte Gaudí, Artés",
+                  "desc": "Escola bressol pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027636"
+                },
+                {
+                  "n": 2,
+                  "name": "Institut Miquel Bosch i Jover",
+                  "info": "1,56 km · 19–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Arquitecte Gaudí, 2-4, Artés",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027373"
+                },
+                {
+                  "n": 3,
+                  "name": "Escola Doctor Ferrer",
+                  "info": "1,55 km · 19–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Barcelona, 23, Artés",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026752"
+                },
+                {
+                  "n": 4,
+                  "name": "Esc. de Música Municipal d'Artés",
+                  "info": "1,29 km · 15–19 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer de les Parres, 44, Artés",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027572"
+                }
+              ]
+            },
+            {
+              "title": "Sallent",
+              "id": "sallent-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Els Pins - ZER El Moianès Ponent",
+                  "info": "1,37 km · 16–21 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer de Montserrat, s/n, Sallent",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027259"
+                },
+                {
+                  "n": 2,
+                  "name": "Esc. de Música Municipal",
+                  "info": "1,41 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer del Pont, 1, Sallent",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027560"
+                },
+                {
+                  "n": 3,
+                  "name": "Escola Torres Amat",
+                  "info": "1,17 km · 14–18 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Passeig 1 d'octubre de 2017, 3, Sallent",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027019"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-bages-9",
+          "title": "Sallent, Castellnou de Bages i 2 municipis més",
+          "maps": [
+            {
+              "mid": "1pgaS5JhF5_M506QPxZCj2Z3smvUcgU4",
+              "title": "Bages · mapa 09 de 12 · Sallent, Castellnou de Bages i 2 municipis més",
+              "ll": "41.8019,1.8415",
+              "z": 11,
+              "label": "Bages · mapa 9 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Sallent",
+              "id": "sallent-centres-educatius-2",
+              "route_prefix": "sallent-centres-educatius",
+              "nav": "Sallent (mapa 9)",
+              "routes": [
+                {
+                  "n": 4,
+                  "name": "Llar d'infants L'Esquitx",
+                  "info": "0,83 km · 10–12 min caminant · 20–30 min amb pauses · circular",
+                  "address": "Passeig 1 d'octubre de 2017, s/n, Sallent",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027409"
+                },
+                {
+                  "n": 5,
+                  "name": "Institut Llobregat",
+                  "info": "1,44 km · 17–22 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Estació, 11-21, Sallent",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027399"
+                }
+              ]
+            },
+            {
+              "title": "Castellnou de Bages",
+              "id": "castellnou-de-bages-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola L'Olivar",
+                  "info": "1,47 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "address": "Carrer Onze de Setembre, s/n El Serrat, Castellnou de Bages",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027786"
+                }
+              ]
+            },
+            {
+              "title": "Santpedor",
+              "id": "santpedor-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants Els Gallarets",
+                  "info": "1,60 km · 19–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Ronda de Sant Pere, 248, Santpedor",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027891"
+                },
+                {
+                  "n": 2,
+                  "name": "Institut d'Auro",
+                  "info": "1,38 km · 17–21 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer del Convent, 20, Santpedor",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027426"
+                },
+                {
+                  "n": 3,
+                  "name": "Escola Riu d'Or",
+                  "info": "1,54 km · 18–23 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer les Verges, 15, Santpedor",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027021"
+                },
+                {
+                  "n": 4,
+                  "name": "Esc. de Música Municipal de Santpedor",
+                  "info": "1,51 km · 18–23 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Plaça Gran, 10, Santpedor",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027441"
+                },
+                {
+                  "n": 5,
+                  "name": "Escola La Serreta",
+                  "info": "1,35 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer Pau Casals, 35, Santpedor",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027932"
+                }
+              ]
+            },
+            {
+              "title": "Callús",
+              "id": "callus-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Esc. de Música Municipal de Callús",
+                  "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Jacint Verdaguer, 20, Callús",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027984"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-bages-10",
+          "title": "Callús, Navàs i 2 municipis més",
+          "maps": [
+            {
+              "mid": "1VKGXz1MfZ_8IjHVAdfBJ4yTk8HlPIRc",
+              "title": "Bages · mapa 10 de 12 · Callús, Navàs i 2 municipis més",
+              "ll": "41.8426,1.8785",
+              "z": 11,
+              "label": "Bages · mapa 10 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Callús",
+              "id": "callus-centres-educatius-2",
+              "route_prefix": "callus-centres-educatius",
+              "nav": "Callús (mapa 10)",
+              "routes": [
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Mainada",
+                  "info": "1,70 km · 20–25 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027360"
+                },
+                {
+                  "n": 3,
+                  "name": "Escola Joventut",
+                  "info": "1,33 km · 16–20 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Anselm Clavé, s/n, Callús",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026870"
+                }
+              ]
+            },
+            {
+              "title": "Navàs",
+              "id": "navas-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Sant Jordi",
+                  "info": "2,02 km · 24–30 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer de Puig-reig, s/n, Navàs",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028220"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Quitxalla",
+                  "info": "1,61 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Plaça 1 d'octubre,2, Navàs",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027347"
+                },
+                {
+                  "n": 3,
+                  "name": "Institut de Navàs",
+                  "info": "1,42 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer de Pau Casals, s/n, Navàs",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028208"
+                },
+                {
+                  "n": 4,
+                  "name": "Esc. de Música Mestre Josep Maria Castella i Molins",
+                  "info": "1,57 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Pau Duarri, 38, Navàs",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027612"
+                }
+              ]
+            },
+            {
+              "title": "Balsareny",
+              "id": "balsareny-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Institut Escola Guillem de Balsareny",
+                  "info": "1,24 km · 15–19 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer del Carrilet, 8, Balsareny",
+                  "desc": "Institut escola públic, amb educació infantil, primària i secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028179"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Sant Marc",
+                  "info": "1,60 km · 19–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Sant Marc/ctra. de Moià, Balsareny",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028115"
+                }
+              ]
+            },
+            {
+              "title": "Avinyó",
+              "id": "avinyo-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants Nou Estel",
+                  "info": "1,29 km · 15–19 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Indústria/c. Entitats, Avinyó",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028120"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-bages-11",
+          "title": "Avinyó, Sant Feliu Sasserra i 3 municipis més",
+          "maps": [
+            {
+              "mid": "1iYJHu0Gmj2VBHJzkyeQrPaq_1ypjNCQ",
+              "title": "Bages · mapa 11 de 12 · Avinyó, Sant Feliu Sasserra i 3 municipis més",
+              "ll": "41.7882,1.9381",
+              "z": 10,
+              "label": "Bages · mapa 11 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Avinyó",
+              "id": "avinyo-centres-educatius-2",
+              "route_prefix": "avinyo-centres-educatius",
+              "nav": "Avinyó (mapa 11)",
+              "routes": [
+                {
+                  "n": 2,
+                  "name": "Institut Escola Barnola",
+                  "info": "1,36 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer Indústria, 6, Avinyó",
+                  "desc": "Institut escola públic, amb educació infantil, primària i secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028146"
+                }
+              ]
+            },
+            {
+              "title": "Sant Feliu Sasserra",
+              "id": "sant-feliu-sasserra-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Els Roures - ZER Gavarresa",
+                  "info": "1,96 km · 23–29 min caminant · 35–50 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Sant Roc, s/n, Sant Feliu Sasserra",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027028"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Els Petits Roures",
+                  "info": "1,54 km · 19–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Plaça Major, 1, Sant Feliu Sasserra",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027597"
+                }
+              ]
+            },
+            {
+              "title": "Mura",
+              "id": "mura-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Vall de Néspola - ZER El Moianès Ponent",
+                  "info": "1,14 km · 14–17 min caminant · 25–35 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer de les Escoles, s/n, Mura",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027642"
+                }
+              ]
+            },
+            {
+              "title": "Castellbell i el Vilar",
+              "id": "castellbell-i-el-vilar-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Institut Bages Sud",
+                  "info": "1,04 km · 12–16 min caminant · 20–35 min amb pauses · circular",
+                  "address": "Carrer Salt del Rec, 10, Castellbell i el Vilar",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027978"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Bressol Colors",
+                  "info": "1,51 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Avinguda Catalunya, 171, Castellbell i el Vilar",
+                  "desc": "Escola bressol pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027627"
+                },
+                {
+                  "n": 3,
+                  "name": "Escola Jaume Balmes",
+                  "info": "1,46 km · 17–22 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Avinguda Pare Claret, 18, Castellbell i el Vilar",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026878"
+                }
+              ]
+            },
+            {
+              "title": "Sant Vicenç de Castellet",
+              "id": "sant-vicenc-de-castellet-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Sant Vicenç",
+                  "info": "0,91 km · 11–14 min caminant · 20–35 min amb pauses · circular",
+                  "address": "Plaça Onze de setembre, s/n, Sant Vicenç de Castellet",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027148"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants El Niu",
+                  "info": "1,79 km · 22–27 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Gran, 104, Sant Vicenç de Castellet",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027396"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-bages-12",
+          "title": "Sant Vicenç de Castellet, Castellgalí i 2 municipis més",
+          "maps": [
+            {
+              "mid": "1tmJF4VyAK3nqzaszo7zgo5xyP-eOUK0",
+              "title": "Bages · mapa 12 de 12 · Sant Vicenç de Castellet, Castellgalí i 2 municipis més",
+              "ll": "41.6443,1.8186",
+              "z": 12,
+              "label": "Bages · mapa 12 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Sant Vicenç de Castellet",
+              "id": "sant-vicenc-de-castellet-centres-educatius-2",
+              "route_prefix": "sant-vicenc-de-castellet-centres-educatius",
+              "nav": "Sant Vicenç de Castellet (mapa 12)",
+              "routes": [
+                {
+                  "n": 3,
+                  "name": "Institut Castellet",
+                  "info": "1,48 km · 18–22 min caminant · 30–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Bisbe Perelló, s/n, Sant Vicenç de Castellet",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027371"
+                },
+                {
+                  "n": 4,
+                  "name": "Esc. de Música Municipal Francesc Vila - Sant Vicenç de Castellet",
+                  "info": "1,70 km · 20–25 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Poeta Maragall, s/n (Esc.Puigsoler), Sant Vicenç de Castellet",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028122"
+                },
+                {
+                  "n": 5,
+                  "name": "Escola Puigsoler",
+                  "info": "1,27 km · 15–19 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer del Poeta Maragall, s/n, Sant Vicenç de Castellet",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027878"
+                }
+              ]
+            },
+            {
+              "title": "Castellgalí",
+              "id": "castellgali-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants de Castellgalí",
+                  "info": "1,95 km · 23–29 min caminant · 35–50 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Renaixença, s/n, Castellgalí",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027756"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Sant Miquel",
+                  "info": "1,55 km · 19–23 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Renaixença, s/n, Castellgalí",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026891"
+                }
+              ]
+            },
+            {
+              "title": "Sant Salvador de Guardiola",
+              "id": "sant-salvador-de-guardiola-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Montserrat",
+                  "info": "2,05 km · 25–31 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Marganell, s/n, Sant Salvador de Guardiola",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026901"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Bressol Dentetes",
+                  "info": "1,75 km · 21–26 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Marganell/Moreneta, Sant Salvador de Guardiola",
+                  "desc": "Escola bressol pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027746"
+                }
+              ]
+            },
+            {
+              "title": "Monistrol de Montserrat",
+              "id": "monistrol-de-montserrat-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Sant Pere",
+                  "info": "1,48 km · 18–22 min caminant · 30–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Escoles, 23, Monistrol de Montserrat",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026988"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants El Cuc Verd",
+                  "info": "1,34 km · 16–20 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Escoles, 27, Monistrol de Montserrat",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027393"
+                }
+              ]
+            }
+          ]
+        },
         {
           "id": "centres-educatius-bergueda-1",
           "title": "Gósol, Montmajor i 3 municipis més",
@@ -890,6 +2202,1223 @@
                   "address": "Carrer del Toll, 9-11, Collsuspina",
                   "desc": "Escola pública d'educació infantil i primària.",
                   "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=297789759"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-osona-1",
+          "title": "Olost, Sant Martí de Centelles i 3 municipis més",
+          "maps": [
+            {
+              "mid": "1EBUROnTbh6NvchKa1vfI3QxFuVUZbbw",
+              "title": "Osona · mapa 01 de 12 · Olost, Sant Martí de Centelles i 3 municipis més",
+              "ll": "41.8737,2.1758",
+              "z": 10,
+              "label": "Osona · mapa 1 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Olost",
+              "id": "olost-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants Estel",
+                  "info": "1,44 km · 17–22 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Avinguda de l'Esport, 1, Olost",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027645"
+                }
+              ]
+            },
+            {
+              "title": "Sant Martí de Centelles",
+              "id": "sant-marti-de-centelles-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants L'Arc de Sant Martí",
+                  "info": "1,74 km · 21–26 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Sant Jaume, s/n, Sant Martí de Centelles",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028096"
+                }
+              ]
+            },
+            {
+              "title": "Aiguafreda",
+              "id": "aiguafreda-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola La Muntanya",
+                  "info": "1,45 km · 17–22 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Núria, s/n, Aiguafreda",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026756"
+                },
+                {
+                  "n": 2,
+                  "name": "Esc. de Música Municipal d'Aiguafreda",
+                  "info": "1,61 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Núria, 56, Aiguafreda",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027824"
+                }
+              ]
+            },
+            {
+              "title": "Balenyà",
+              "id": "balenya-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Institut Escola Carles Capdevila",
+                  "info": "1,27 km · 15–19 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer Escoles, s/n, Balenyà",
+                  "desc": "Institut escola públic, amb educació infantil, primària i secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028150"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Bressol El Roc Petit",
+                  "info": "1,30 km · 16–19 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer Doctor Coll Rovira, s/n, Balenyà",
+                  "desc": "Escola bressol pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028117"
+                }
+              ]
+            },
+            {
+              "title": "Centelles",
+              "id": "centelles-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Xoriguer",
+                  "info": "1,65 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer dels Casals, s/n, Centelles",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027948"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Ildefons Cerdà",
+                  "info": "1,66 km · 20–25 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Avinguda Pere Barnils, s/n, Centelles",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026894"
+                },
+                {
+                  "n": 3,
+                  "name": "Institut Pere Barnils",
+                  "info": "1,67 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Avinguda Pere Barnils, s/n, Centelles",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027342"
+                },
+                {
+                  "n": 4,
+                  "name": "CFA Centelles",
+                  "info": "1,64 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Jesús, 25, Centelles",
+                  "desc": "Centre públic de formació de persones adultes.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028079"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-osona-2",
+          "title": "Centelles, Seva i 1 municipi més",
+          "maps": [
+            {
+              "mid": "12GDjxor9hM3vEVo8i_zGyrpKuCrOPx0",
+              "title": "Osona · mapa 02 de 12 · Centelles, Seva i 1 municipi més",
+              "ll": "41.8234,2.2503",
+              "z": 12,
+              "label": "Osona · mapa 2 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Centelles",
+              "id": "centelles-centres-educatius-2",
+              "route_prefix": "centelles-centres-educatius",
+              "nav": "Centelles (mapa 2)",
+              "routes": [
+                {
+                  "n": 5,
+                  "name": "Esc. de Música Municipal",
+                  "info": "1,50 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Anselm Clavé, 5, Centelles",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027588"
+                },
+                {
+                  "n": 6,
+                  "name": "Llar d'infants Niu d'Infants",
+                  "info": "1,37 km · 16–21 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Plaça dels Àngels, s/n, Centelles",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027738"
+                }
+              ]
+            },
+            {
+              "title": "Seva",
+              "id": "seva-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants El Menut",
+                  "info": "1,51 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer de les Escoles,(S. Miquel de Balenyà), Seva",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027981"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Les Basseroles",
+                  "info": "1,58 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Escoles, s/n, Seva",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027275"
+                },
+                {
+                  "n": 3,
+                  "name": "Llar d'infants El Bressol",
+                  "info": "1,10 km · 13–16 min caminant · 25–35 min amb pauses · circular",
+                  "address": "Passeig Rafael Casanovas, 1, Seva",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028002"
+                },
+                {
+                  "n": 4,
+                  "name": "Escola Farigola",
+                  "info": "1,33 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer dels Esports, s/n, Seva",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027155"
+                }
+              ]
+            },
+            {
+              "title": "Tona",
+              "id": "tona-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Institut de Tona",
+                  "info": "1,51 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Torres i Bages, 32, Tona",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027433"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola L'Era de Dalt",
+                  "info": "1,56 km · 19–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Andreu Molera, 5, Tona",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027194"
+                },
+                {
+                  "n": 3,
+                  "name": "CFA Tona",
+                  "info": "1,55 km · 19–23 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Nou, 1-3, Tona",
+                  "desc": "Centre públic de formació de persones adultes.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027437"
+                },
+                {
+                  "n": 4,
+                  "name": "Esc. de Música Municipal de Tona",
+                  "info": "1,53 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carretera de Manresa, 2, Tona",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028019"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-osona-3",
+          "title": "Tona, Viladrau i 3 municipis més",
+          "maps": [
+            {
+              "mid": "1O-kXrQhq5upUhJ4LJg9PKCDsz1DimFw",
+              "title": "Osona · mapa 03 de 12 · Tona, Viladrau i 3 municipis més",
+              "ll": "41.9176,2.3080",
+              "z": 11,
+              "label": "Osona · mapa 3 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Tona",
+              "id": "tona-centres-educatius-2",
+              "route_prefix": "tona-centres-educatius",
+              "nav": "Tona (mapa 3)",
+              "routes": [
+                {
+                  "n": 5,
+                  "name": "Llar d'infants Pa amb xocolata",
+                  "info": "0,98 km · 12–15 min caminant · 20–35 min amb pauses · circular",
+                  "address": "Camí del Verinal, s/n, Tona",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027955"
+                }
+              ]
+            },
+            {
+              "title": "Viladrau",
+              "id": "viladrau-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Els Castanyers - ZER Guilleries",
+                  "info": "1,59 km · 19–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Passatge Pomaret, s/n, Viladrau",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028260"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Les Paitides",
+                  "info": "1,78 km · 21–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Migdia, 1 baixos, Viladrau",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028262"
+                }
+              ]
+            },
+            {
+              "title": "Vilanova de Sau",
+              "id": "vilanova-de-sau-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Les Roques",
+                  "info": "1,94 km · 23–29 min caminant · 35–50 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Escoles, s/n, Vilanova de Sau",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027220"
+                }
+              ]
+            },
+            {
+              "title": "Les Masies de Roda",
+              "id": "les-masies-de-roda-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants de les Masies de Roda",
+                  "info": "1,52 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carretera de Manlleu, s/n, Les Masies de Roda",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028124"
+                }
+              ]
+            },
+            {
+              "title": "Roda de Ter",
+              "id": "roda-de-ter-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Esc. de Música Municipal El Faristol",
+                  "info": "1,81 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Avinguda Tecla Sala, 35, Roda de Ter",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027818"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Emili Teixidor",
+                  "info": "1,34 km · 16–20 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer dels Pèlics, 2, Roda de Ter",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027839"
+                },
+                {
+                  "n": 3,
+                  "name": "Escola Bressol La Llavor",
+                  "info": "1,90 km · 23–28 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Carrer Bonamic, 34, Roda de Ter",
+                  "desc": "Escola bressol pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027375"
+                },
+                {
+                  "n": 4,
+                  "name": "Institut Miquel Martí i Pol",
+                  "info": "1,85 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Avinguda Miquel Martí i Pol, 1-3, Roda de Ter",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027414"
+                },
+                {
+                  "n": 5,
+                  "name": "Escola Mare de Déu del Sòl del Pont",
+                  "info": "1,81 km · 22–27 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Escoles, s/n, Roda de Ter",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027011"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-osona-4",
+          "title": "Folgueroles, Sant Julià de Vilatorta i 2 municipis més",
+          "maps": [
+            {
+              "mid": "1Ktay0GaXnDCbax_ZTU1_nqf2hUpBzFo",
+              "title": "Osona · mapa 04 de 12 · Folgueroles, Sant Julià de Vilatorta i 2 municipis més",
+              "ll": "41.9025,2.3036",
+              "z": 12,
+              "label": "Osona · mapa 4 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Folgueroles",
+              "id": "folgueroles-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants Patufet",
+                  "info": "1,29 km · 15–19 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer Rambla, 17, Folgueroles",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027897"
+                },
+                {
+                  "n": 2,
+                  "name": "Institut Escola Mossen Cinto",
+                  "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Plaça Roviretes, 1, Folgueroles",
+                  "desc": "Institut escola públic, amb educació infantil, primària i secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028159"
+                }
+              ]
+            },
+            {
+              "title": "Sant Julià de Vilatorta",
+              "id": "sant-julia-de-vilatorta-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Bellpuig",
+                  "info": "1,44 km · 17–22 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Calldetenes, 9, Sant Julià de Vilatorta",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027045"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Patuleia",
+                  "info": "1,55 km · 19–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Montseny, 27-29, Sant Julià de Vilatorta",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027621"
+                }
+              ]
+            },
+            {
+              "title": "Santa Eugènia de Berga",
+              "id": "santa-eugenia-de-berga-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants Ralet ralet",
+                  "info": "1,68 km · 20–25 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer de Lleida, 22, Santa Eugènia de Berga",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027708"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Jacint Verdaguer",
+                  "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Carrer Escoles, s/n, Santa Eugènia de Berga",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027143"
+                }
+              ]
+            },
+            {
+              "title": "Taradell",
+              "id": "taradell-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Les Pinediques",
+                  "info": "1,15 km · 14–17 min caminant · 25–35 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Passeig de les Pinediques, s/n, Taradell",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027182"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Bressol Municipal La Xarranca",
+                  "info": "1,51 km · 18–23 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Catalunya, 77, Taradell",
+                  "desc": "Escola bressol pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027355"
+                },
+                {
+                  "n": 3,
+                  "name": "Institut Taradell",
+                  "info": "1,58 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Pompeu Fabra, 12, Taradell",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027430"
+                },
+                {
+                  "n": 4,
+                  "name": "Esc. de Música Municipal de Taradell",
+                  "info": "1,65 km · 20–25 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027893"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-osona-5",
+          "title": "Taradell, Calldetenes i 1 municipi més",
+          "maps": [
+            {
+              "mid": "1lICue_X9Y9f1XvEG8XShCoVd-bPFiwQ",
+              "title": "Osona · mapa 05 de 12 · Taradell, Calldetenes i 2 municipis més",
+              "ll": "41.8983,2.2366",
+              "z": 12,
+              "label": "Osona · mapa 5 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Taradell",
+              "id": "taradell-centres-educatius-2",
+              "route_prefix": "taradell-centres-educatius",
+              "nav": "Taradell (mapa 5)",
+              "routes": [
+                {
+                  "n": 5,
+                  "name": "Escola El Gurri - ZER Guilleries",
+                  "info": "1,38 km · 17–21 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Ramon Llull, Taradell",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027169"
+                }
+              ]
+            },
+            {
+              "title": "Calldetenes",
+              "id": "calldetenes-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Institut Les Margues",
+                  "info": "1,66 km · 20–25 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Avinguda de Francesc Macià, 14, Calldetenes",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027782"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Municipal de Calldetenes",
+                  "info": "1,57 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Girona, s/n, Calldetenes",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027584"
+                },
+                {
+                  "n": 3,
+                  "name": "Escola Sant Marc",
+                  "info": "1,40 km · 17–21 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Joan Fuster, s/n, Calldetenes",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026758"
+                }
+              ]
+            },
+            {
+              "title": "Muntanyola",
+              "id": "muntanyola-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants de Muntanyola",
+                  "info": "0,91 km · 11–14 min caminant · 20–35 min amb pauses · circular",
+                  "address": "Carrer dels Esports, s/n, Muntanyola",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027974"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Muntanyola",
+                  "info": "1,72 km · 21–26 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer dels esports, s/n, bústia 90, Muntanyola",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027795"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-osona-7",
+          "title": "Santa Eulàlia de Riuprimer i Gurb",
+          "maps": [
+            {
+              "mid": "1bDf2u7pfDuchIudl9OqAXhOF-x4SD4k",
+              "title": "Osona · mapa 07 de 12 · Vic, Santa Eulàlia de Riuprimer i 1 municipi més",
+              "ll": "41.9285,2.2268",
+              "z": 12,
+              "label": "Osona · mapa 7 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Santa Eulàlia de Riuprimer",
+              "id": "santa-eulalia-de-riuprimer-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola El Roure Gros",
+                  "info": "1,38 km · 17–21 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Jaume Balmes, 3, Santa Eulàlia de Riuprimer",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027145"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants El Roure Xic",
+                  "info": "1,12 km · 13–17 min caminant · 25–35 min amb pauses · circular",
+                  "address": "Carrer Call del Soler, Santa Eulàlia de Riuprimer",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027833"
+                }
+              ]
+            },
+            {
+              "title": "Gurb",
+              "id": "gurb-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Institut Gurb",
+                  "info": "1,47 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "address": "Carrer de l'Olivera, 1, Gurb",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027976"
+                },
+                {
+                  "n": 2,
+                  "name": "Esc. de Música Municipal de Gurb",
+                  "info": "1,44 km · 17–22 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Vallès, s/n, Gurb",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027812"
+                },
+                {
+                  "n": 3,
+                  "name": "Escola Les Escoles",
+                  "info": "1,59 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Vallès, s/n, Gurb",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026906"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-osona-8",
+          "title": "Gurb, Sant Bartomeu del Grau i 3 municipis més",
+          "maps": [
+            {
+              "mid": "1HxyINvgEQCc8k6tlvCl7-x7NgxvdNOs",
+              "title": "Osona · mapa 08 de 12 · Gurb, Sant Bartomeu del Grau i 3 municipis més",
+              "ll": "42.0049,2.2192",
+              "z": 11,
+              "label": "Osona · mapa 8 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Gurb",
+              "id": "gurb-centres-educatius-2",
+              "route_prefix": "gurb-centres-educatius",
+              "nav": "Gurb (mapa 8)",
+              "routes": [
+                {
+                  "n": 4,
+                  "name": "Llar d'infants La Quitxalla",
+                  "info": "0,92 km · 11–14 min caminant · 20–35 min amb pauses · circular",
+                  "address": "Carrer Vallès, s/n, Gurb",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027742"
+                }
+              ]
+            },
+            {
+              "title": "Sant Bartomeu del Grau",
+              "id": "sant-bartomeu-del-grau-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola La Monjoia",
+                  "info": "1,88 km · 23–28 min caminant · 35–50 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Tres Creus, 2, Sant Bartomeu del Grau",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027023"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants El Patufet",
+                  "info": "1,84 km · 22–28 min caminant · 30–50 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer de Ponent, s/n, Sant Bartomeu del Grau",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027552"
+                }
+              ]
+            },
+            {
+              "title": "Sant Hipòlit de Voltregà",
+              "id": "sant-hipolit-de-voltrega-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Esc. de Música Municipal de Sant Hipòlit de Voltregà",
+                  "info": "1,61 km · 19–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Batlle Serrallonga / ptge. Parés, Sant Hipòlit de Voltregà",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027525"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Voltregà",
+                  "info": "1,26 km · 15–19 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer Balmes, 1, Sant Hipòlit de Voltregà",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028169"
+                }
+              ]
+            },
+            {
+              "title": "Les Masies de Voltregà",
+              "id": "les-masies-de-voltrega-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants Can Riva",
+                  "info": "1,63 km · 20–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carretera C-17, Qm. 77,2, Les Masies de Voltregà",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027940"
+                },
+                {
+                  "n": 2,
+                  "name": "Institut del Voltreganès",
+                  "info": "1,46 km · 17–22 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer Matagalls, 48, Les Masies de Voltregà",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027634"
+                },
+                {
+                  "n": 3,
+                  "name": "Escola Comtes de Lacambra",
+                  "info": "1,91 km · 23–29 min caminant · 35–50 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Esperança, 3, Les Masies de Voltregà",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026985"
+                }
+              ]
+            },
+            {
+              "title": "Sant Vicenç de Torelló",
+              "id": "sant-vicenc-de-torello-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants Els Gallarets",
+                  "info": "1,42 km · 17–21 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carretera de Vila-seca, s/n, Sant Vicenç de Torelló",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027619"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Lloriana",
+                  "info": "1,43 km · 17–21 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carretera de Vila-seca, s/n, Sant Vicenç de Torelló",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027151"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-osona-9",
+          "title": "Montesquiu i Torelló",
+          "maps": [
+            {
+              "mid": "13Pb8clr2Vo18JpRUKAK1DylJ5dJdJfM",
+              "title": "Osona · mapa 09 de 12 · Montesquiu, Torelló",
+              "ll": "42.0795,2.2384",
+              "z": 12,
+              "label": "Osona · mapa 9 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Montesquiu",
+              "id": "montesquiu-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola El Rocal",
+                  "info": "1,36 km · 16–20 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Plaçola, s/n, Montesquiu",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027003"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Els Putxinel·lis",
+                  "info": "2,21 km · 27–33 min caminant · 35–55 min amb pauses · circular",
+                  "address": "Carrer Plaçola, s/n, Montesquiu",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027944"
+                }
+              ]
+            },
+            {
+              "title": "Torelló",
+              "id": "torello-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Vall del Ges",
+                  "info": "1,75 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Catalunya, 1, Torelló",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027202"
+                },
+                {
+                  "n": 2,
+                  "name": "CFA La Cooperativa",
+                  "info": "1,63 km · 20–24 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Enric Prat de la Riba, 17, Torelló",
+                  "desc": "Centre públic de formació de persones adultes.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027780"
+                },
+                {
+                  "n": 3,
+                  "name": "Institut Cirviànum de Torelló",
+                  "info": "1,76 km · 21–26 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Ausiàs March-Molina A. correus 69, Torelló",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027578"
+                },
+                {
+                  "n": 4,
+                  "name": "Llar d'infants Blancaneus",
+                  "info": "1,53 km · 18–23 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Avinguda Montserrat, 2, Torelló",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027972"
+                },
+                {
+                  "n": 5,
+                  "name": "Institut Escola Marta Mata",
+                  "info": "1,53 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Avinguda del Castell, 42, Torelló",
+                  "desc": "Institut escola públic, amb educació infantil, primària i secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028140"
+                },
+                {
+                  "n": 6,
+                  "name": "Esc. de Música Municipal de Torelló: MUSIT",
+                  "info": "1,66 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Plaça Germà Donat, s/n, Torelló",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027576"
+                },
+                {
+                  "n": 7,
+                  "name": "Escola Doctor Fortià i Solà",
+                  "info": "1,14 km · 14–17 min caminant · 25–35 min amb pauses · circular",
+                  "address": "Avinguda Pompeu Fabra, 6, Torelló",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027197"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-osona-10",
+          "title": "Torelló, Santa Maria de Besora i 4 municipis més",
+          "maps": [
+            {
+              "mid": "1mdilcOxlTy0SToszBkEQDnfn-1wDwD4",
+              "title": "Osona · mapa 10 de 12 · Torelló, Santa Maria de Besora i 4 municipis més",
+              "ll": "42.0674,2.2642",
+              "z": 11,
+              "label": "Osona · mapa 10 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Torelló",
+              "id": "torello-centres-educatius-2",
+              "route_prefix": "torello-centres-educatius",
+              "nav": "Torelló (mapa 10)",
+              "routes": [
+                {
+                  "n": 8,
+                  "name": "Llar d'infants La Cabanya",
+                  "info": "1,44 km · 17–22 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Passeig de la Vall del Ges, s/n, Torelló",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028088"
+                }
+              ]
+            },
+            {
+              "title": "Santa Maria de Besora",
+              "id": "santa-maria-de-besora-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola La Baumeta - ZER Els Castells",
+                  "info": "1,77 km · 21–27 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Plaça Major, s/n, Santa Maria de Besora",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027253"
+                }
+              ]
+            },
+            {
+              "title": "Sant Quirze de Besora",
+              "id": "sant-quirze-de-besora-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Segimon Comas",
+                  "info": "1,51 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Mestre Quer, 11, Sant Quirze de Besora",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027047"
+                },
+                {
+                  "n": 2,
+                  "name": "Institut Bisaura",
+                  "info": "1,52 km · 18–23 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Mestre Quer, 13, Sant Quirze de Besora",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027581"
+                },
+                {
+                  "n": 3,
+                  "name": "Llar d'infants Els Quirzets",
+                  "info": "1,60 km · 19–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Passatge de les Escoles, 2, Sant Quirze de Besora",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027830"
+                }
+              ]
+            },
+            {
+              "title": "Sant Pere de Torelló",
+              "id": "sant-pere-de-torello-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Bressol L'Avet",
+                  "info": "1,58 km · 19–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Avinguda Joan Maragall, 16, Sant Pere de Torelló",
+                  "desc": "Escola bressol pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027351"
+                },
+                {
+                  "n": 2,
+                  "name": "Institut Escola Josep Maria Xandri",
+                  "info": "1,58 km · 19–24 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer José Badrena, 13, Sant Pere de Torelló",
+                  "desc": "Institut escola públic, amb educació infantil, primària i secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028155"
+                }
+              ]
+            },
+            {
+              "title": "Vidrà",
+              "id": "vidra-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Santa Bàrbara - ZER Els Castells",
+                  "info": "1,69 km · 20–25 min caminant · 30–45 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carretera de Ciuret, Vidrà",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028258"
+                }
+              ]
+            },
+            {
+              "title": "Manlleu",
+              "id": "manlleu-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Quatre Vents",
+                  "info": "1,65 km · 20–25 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Avinguda Pirineus, 19, Manlleu",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027630"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-osona-11",
+          "title": "Manlleu i L'Esquirol",
+          "maps": [
+            {
+              "mid": "19DUx44Uks5UssWVymWLQb6dYbQbtBw4",
+              "title": "Osona · mapa 11 de 12 · Manlleu, L'Esquirol",
+              "ll": "42.0162,2.3217",
+              "z": 12,
+              "label": "Osona · mapa 11 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Manlleu",
+              "id": "manlleu-centres-educatius-2",
+              "route_prefix": "manlleu-centres-educatius",
+              "nav": "Manlleu (mapa 11)",
+              "routes": [
+                {
+                  "n": 2,
+                  "name": "Institut Antoni Pous i Argila",
+                  "info": "1,53 km · 18–23 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Avinguda Roma, 260, Manlleu",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027272"
+                },
+                {
+                  "n": 3,
+                  "name": "Esc. de Música Municipal de Manlleu",
+                  "info": "1,33 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027474"
+                },
+                {
+                  "n": 4,
+                  "name": "Escola Bressol Colors",
+                  "info": "1,52 km · 18–23 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Ter, 54, Manlleu",
+                  "desc": "Escola bressol pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027946"
+                },
+                {
+                  "n": 5,
+                  "name": "Escola Puig-Agut",
+                  "info": "1,40 km · 17–21 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carrer Bellfort, 12, Manlleu",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298026909"
+                },
+                {
+                  "n": 6,
+                  "name": "Escola Bressol Els Picarols",
+                  "info": "1,47 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "address": "Carrer Indústria, s/n, Manlleu",
+                  "desc": "Escola bressol pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028073"
+                },
+                {
+                  "n": 7,
+                  "name": "CFA Martí i Pol",
+                  "info": "1,31 km · 16–20 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Avinguda Roma, 260, Manlleu",
+                  "desc": "Centre públic de formació de persones adultes.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027763"
+                },
+                {
+                  "n": 8,
+                  "name": "Escola Pompeu Fabra",
+                  "info": "1,60 km · 19–24 min caminant · 30–45 min amb pauses · circular",
+                  "address": "Carrer Pompeu Fabra, 34-38, Manlleu",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027266"
+                },
+                {
+                  "n": 9,
+                  "name": "Institut del Ter",
+                  "info": "1,27 km · 15–19 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Eduard Rifà, 24, Manlleu",
+                  "desc": "Institut públic d'educació secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028109"
+                }
+              ]
+            },
+            {
+              "title": "L'Esquirol",
+              "id": "l-esquirol-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Bressol L'Esquirol",
+                  "info": "1,87 km · 22–28 min caminant · 30–50 min amb pauses · circular",
+                  "address": "Carrer Jaume Balmes/c. Osona, L'Esquirol",
+                  "desc": "Escola bressol pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028083"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "centres-educatius-osona-12",
+          "title": "L'Esquirol, Rupit i Pruit i 5 municipis més",
+          "maps": [
+            {
+              "mid": "1GL2M5kUZCSVCPKd10u-a3u5VAtIgQVk",
+              "title": "Osona · mapa 12 de 12 · L'Esquirol, Rupit i Pruit i 5 municipis més",
+              "ll": "42.0617,2.2480",
+              "z": 9,
+              "label": "Osona · mapa 12 de 12"
+            }
+          ],
+          "sections": [
+            {
+              "title": "L'Esquirol",
+              "id": "l-esquirol-centres-educatius-2",
+              "route_prefix": "l-esquirol-centres-educatius",
+              "nav": "L'Esquirol (mapa 12)",
+              "routes": [
+                {
+                  "n": 2,
+                  "name": "Institut Escola El Cabrerès",
+                  "info": "1,44 km · 17–22 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Pedró, 11, L'Esquirol",
+                  "desc": "Institut escola públic, amb educació infantil, primària i secundària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028204"
+                }
+              ]
+            },
+            {
+              "title": "Rupit i Pruit",
+              "id": "rupit-i-pruit-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola L'Agullola",
+                  "info": "1,25 km · 15–19 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Plaça Major, s/n, Rupit i Pruit",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027270"
+                }
+              ]
+            },
+            {
+              "title": "Sora",
+              "id": "sora-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants de Sora",
+                  "info": "1,36 km · 16–20 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer de l'Església, 1, Sora",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028148"
+                }
+              ]
+            },
+            {
+              "title": "Sant Boi de Lluçanès",
+              "id": "sant-boi-de-llucanes-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Escola Aurora - ZER Alt Lluçanès",
+                  "info": "1,49 km · 18–22 min caminant · 30–40 min amb pauses · circular",
+                  "address": "Carrer de Sant Roc/c.Sant Agusti de LLuçanès, Sant Boi de Lluçanès",
+                  "desc": "Escola pública d'educació infantil i primària.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027026"
+                },
+                {
+                  "n": 2,
+                  "name": "Llar d'infants Municipal El Cargol",
+                  "info": "1,47 km · 18–22 min caminant · 30–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Sant Roc, s/n, Sant Boi de Lluçanès",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027999"
+                }
+              ]
+            },
+            {
+              "title": "Perafita",
+              "id": "perafita-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants Petit Heurom",
+                  "info": "1,44 km · 17–22 min caminant · 25–40 min amb pauses · circular",
+                  "address": "Carretera Vella, 2, Perafita",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028100"
+                }
+              ]
+            },
+            {
+              "title": "Lluçà",
+              "id": "lluca-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Llar d'infants Gafarronets",
+                  "info": "0,91 km · 11–14 min caminant · 20–35 min amb pauses · circular",
+                  "address": "Carrer Rourets, 1, Lluçà",
+                  "desc": "Llar d'infants pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028130"
+                }
+              ]
+            },
+            {
+              "title": "Prats de Lluçanès",
+              "id": "prats-de-llucanes-centres-educatius",
+              "routes": [
+                {
+                  "n": 1,
+                  "name": "Esc. de Música del Lluçanès",
+                  "info": "1,27 km · 15–19 min caminant · 25–40 min amb pauses · circular amb tram d'anada i tornada",
+                  "address": "Carrer Mateu Garreta, s/n, Prats de Lluçanès",
+                  "desc": "Escola pública de música.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298027888"
+                },
+                {
+                  "n": 2,
+                  "name": "Escola Bressol La Pitota",
+                  "info": "1,99 km · 24–30 min caminant · 35–50 min amb pauses · circular",
+                  "address": "Avinguda Pau Casals, 47, Prats de Lluçanès",
+                  "desc": "Escola bressol pública d'educació infantil de 0 a 3 anys.",
+                  "wikiloc": "https://ca.wikiloc.com/wikiloc/view.do?id=298028112"
                 }
               ]
             }
