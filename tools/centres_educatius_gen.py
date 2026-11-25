@@ -119,10 +119,13 @@ def territory(page):
     rs = [r for r in by_page[page] if mid(r["mapa_url"]) not in have]   # els mapes que ja hi són no es toquen
     if not rs:
         print(page, ": ja hi és; res a fer"); return None
-    if blk:
-        old_mun = {s["title"] for g in blk["groups"] for s in g["sections"]}
-        assert not old_mun & {r["municipi"] for r in rs}, "municipi en un mapa nou i en un d'antic"
     groups, used, ids = [], {}, {}
+    used_n.clear()
+    if blk:   # un municipi que ja té seccions (mapes antics) continua la numeració de les rutes i dels ids
+        for g in blk["groups"]:
+            for sec in g["sections"]:
+                used[sec["title"]] = used.get(sec["title"], 0) + 1
+                used_n[sec["title"]] = used_n.get(sec["title"], 0) + len(sec["routes"])
     for mp in sorted({r["mapa"] for r in rs}, key=lambda m: map_order(by_map[m][0])):
         here = [r for r in by_map[mp] if r["pagina"] == page]
         secs = OrderedDict()
