@@ -169,10 +169,11 @@ SEE = {"catalunya-central": ["berga", "vic"], "alt-pirineu-i-aran": ["seu"], "te
 TERR_REGION = {
     "alt-pirineu-i-aran": "Alt Urgell (sense la Seu d'Urgell), Alta Ribagorça, Cerdanya, Pallars Jussà i Pallars Sobirà",
     "catalunya-central": "Bages, Berguedà (sense Berga), Lluçanès, Moianès, Osona (sense Vic) i Solsonès",
+    "anoia-penedes-i-garraf": "Alt Penedès, Anoia, Baix Penedès i Garraf",
     "terres-de-l-ebre": "Baix Ebre, Montsià, Ribera d'Ebre i Terra Alta",
     "terres-gironines": "Alt Empordà, Garrotxa (sense Olot), Gironès, Pla de l'Estany, Ripollès (sense Ripoll) i Selva",
 }
-for page in ("alt-pirineu-i-aran", "catalunya-central", "camp-de-tarragona", "ponent", "terres-de-l-ebre", "terres-gironines"):
+for page in ("alt-pirineu-i-aran", "anoia-penedes-i-garraf", "catalunya-central", "camp-de-tarragona", "ponent", "terres-de-l-ebre", "terres-gironines"):
     used_n.clear()
     res = territory(page)
     if res is None: continue
@@ -181,12 +182,17 @@ for page in ("alt-pirineu-i-aran", "catalunya-central", "camp-de-tarragona", "po
         b["see_also"] = [{"text": f"{CITY_NAME[c][0].upper() + CITY_NAME[c][1:]} té pàgina pròpia, amb {sum(1 for r in by_page[c])} rutes d'aquest curs.", "city": c if c != "seu" else "la-seu-d-urgell", "course": "cuidar"}
                          for c in SEE.get(page, [])]
         if not b["see_also"]: del b["see_also"]
-        d["blocks"].append(b)
-    ess = sum(len(s["routes"]) for bl in d["blocks"] if bl["course"] == "dia" for g in bl["groups"] for s in g["sections"])
+        pos = max((i + 1 for i, x in enumerate(d["blocks"]) if x["course"] == "dia"), default=0)   # ordre dels cursos: dia, cuidar, mon
+        d["blocks"].insert(pos, b)
+    cnt = lambda c: sum(len(s["routes"]) for bl in d["blocks"] if bl["course"] == c for g in bl["groups"] for s in g["sections"])
     nmun = len({s["title"] for bl in d["blocks"] for g in bl["groups"] for s in g.get("sections", [])})
-    ncur = sum(len(s["routes"]) for g in b["groups"] for s in g["sections"])
-    d["summary"] = f"{ess} rutes de l'economia social i solidària i {ncur} de centres educatius en {nmun} municipis."
-    d["intro"] = "Rutes a peu per fer el temps de reflexió de cada passa, des d'entitats de l'economia social i solidària i de centres educatius."
+    ess, ncur, nmon = cnt("dia"), cnt("cuidar"), cnt("mon")
+    frag = [(ess, "de l'economia social i solidària"), (ncur, "de centres educatius"), (nmon, "de miradors")]
+    frag = [(n, t) for n, t in frag if n]
+    txt = [f"{frag[0][0]} rutes {frag[0][1]}"] + [f"{n} {t}" for n, t in frag[1:]]
+    d["summary"] = (txt[0] if len(txt) == 1 else ", ".join(txt[:-1]) + " i " + txt[-1]) + f" en {nmun} municipis."
+    srcs = [t.replace("de l'economia social i solidària", "d'entitats de l'economia social i solidària") for _, t in frag]
+    d["intro"] = "Rutes a peu per fer el temps de reflexió de cada passa, des " + (srcs[0] if len(srcs) == 1 else ", ".join(srcs[:-1]) + " i " + srcs[-1]) + "."
     if page in TERR_REGION and not extended: d["region"] = TERR_REGION[page]
     (ROOT / f"data/{page}.json").write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     put_inicis(page, ids)

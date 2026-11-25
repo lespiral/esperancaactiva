@@ -63,7 +63,7 @@
 
   "territories": [
     {"slug": "alt-pirineu-i-aran", "name": "Alt Pirineu i Aran", "region": "Alta Ribagorça, Pallars Jussà i Pallars Sobirà", "icon": "tree"},
-    {"slug": "anoia-penedes-i-garraf", "name": "Anoia, Penedès i Garraf", "region": "Alt Penedès, Baix Penedès i Garraf", "icon": "plant"},
+    {"slug": "anoia-penedes-i-garraf", "name": "Anoia, Penedès i Garraf", "region": "Alt Penedès, Anoia, Baix Penedès i Garraf", "icon": "plant"},
     {"slug": "baix-llobregat", "name": "Baix Llobregat", "region": "Castelldefels, Cornellà de Llobregat, Olesa de Montserrat, Sant Feliu de Llobregat i Viladecans (sense el Prat)", "icon": "map"},
     {"slug": "barcelones-nord", "name": "Barcelonès Nord", "region": "Badalona, Sant Adrià de Besòs i Santa Coloma de Gramenet", "icon": "buildings"},
     {"slug": "camp-de-tarragona", "name": "Camp de Tarragona", "region": "Alt Camp, Baix Camp, Conca de Barberà, Priorat i Tarragonès", "icon": "sun"},
