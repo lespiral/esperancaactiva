@@ -34,12 +34,19 @@
 {% if is_territory %}
 {{ page_head(site.territories_page.kicker ~ ' · ' ~ city.region, city.title, city.intro|hl) }}
 
-<nav class="pills wrap" aria-label="Canvia de territori">
-  {% for c in territories %}
-  <a class="pill" href="{{ root }}{{ c.slug }}/"{% if c.slug == city.slug %} aria-current="page"{% endif %}>{{ icon(c.icon) }}{{ c.name }}</a>
-  {% endfor %}
-  <a class="pill" href="{{ root }}ciutats/">{{ icon('pin') }}{{ site.cities_page.title }}</a>
-</nav>
+<div class="wrap">
+<div class="picker picker--center">
+  <label class="picker__label" for="altre-territori">{{ icon('pin') }}<span>{{ site.territories_page.switch_label }}</span></label>
+  <div class="picker__box">
+    <select id="altre-territori" class="picker__select" data-go>
+      <option value="">{{ site.territories_page.switch_placeholder }}</option>
+      {% for c in territories %}<option value="{{ root }}{{ c.slug }}/"{% if c.slug == city.slug %} selected{% endif %}>{{ c.name }}</option>{% endfor %}
+      <option value="{{ root }}ciutats/">{{ site.cities_page.title }}</option>
+    </select>
+    {{ icon('caret', 'picker__caret') }}
+  </div>
+</div>
+</div>
 {% elif city.kind == 'subpage' %}
 {{ page_head(site.cities_page.cities_title ~ ' · ' ~ city.name, city.title, city.intro|hl) }}
 {% else %}

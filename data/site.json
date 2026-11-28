@@ -361,6 +361,8 @@
     "intro": "Les rutes del curs «Quan sostenir la vida es fa difícil» surten de cooperatives i d'espais on ja hi ha persones que treballen i es relacionen cooperant en lloc de competir. Les trobaràs per territoris o, directament, pel teu poble.",
     "places_label": "Vés directament al teu poble",
     "places_placeholder": "Tria un poble o una ciutat",
+    "switch_label": "Vols mirar un altre territori?",
+    "switch_placeholder": "Tria un territori",
     "kicker": "Pobles i comarques"
   },
 
